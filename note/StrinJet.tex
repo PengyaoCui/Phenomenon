@@ -1,0 +1,33 @@
+\makeatletter
+\def\input@path{{etc/}{body/}}
+\makeatother
+
+\documentclass[ALICE,manyauthors]{StrinJet}
+\usepackage{StrinJet}
+
+\begin{document}
+
+
+\title{Strange particle in jets and underlying events with different models}
+
+\setcounter{page}{1}
+\input{c01Rope}
+
+
+
+
+\newenvironment{acknowledgement}{\relax}{\relax}
+\begin{acknowledgement}
+\section*{Acknowledgements}
+%\input{acknowledgements.tex}
+
+\end{acknowledgement}
+
+\bibliographystyle{etc/utphys}
+\bibliography{StrinJet}
+
+\newpage
+\appendix
+%\input{} % put your appendices here (if any)
+ 
+\end{document}
