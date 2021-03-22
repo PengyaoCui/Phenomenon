@@ -1,20 +1,20 @@
 #include "inc/PyJetUtils.h"
 
-void dLKRatio(){
+void dXKRatio(){
    //auto g = new TGraph(Spectrum("Kshort", sj, "C04", "PC"));
    auto hJCK = (TH1D*)Spectrum("Kshort", "Jet10", "C04");
    auto hPCK = (TH1D*)Spectrum("Kshort", "Jet10", "C04", "PC");
    auto hInK = (TH1D*)Spectrum("Kshort" );
    auto hJEK = (TH1D*)hJCK->Clone("hJEK"); hJEK->Add(hPCK, -0.25);
    
-   auto hJCL = (TH1D*)Spectrum("Lambda", "Jet10", "C04");
-   auto hPCL = (TH1D*)Spectrum("Lambda", "Jet10", "C04", "PC");
-   auto hInL = (TH1D*)Spectrum("Lambda" );
+   auto hJCL = (TH1D*)Spectrum("XiNeg", "Jet10", "C04");
+   auto hPCL = (TH1D*)Spectrum("XiNeg", "Jet10", "C04", "PC");
+   auto hInL = (TH1D*)Spectrum("XiNeg" );
    auto hJEL = (TH1D*)hJCL->Clone("hJEL"); hJEL->Add(hPCL, -0.25);
    
-   auto hJCA = (TH1D*)Spectrum("AntiLa", "Jet10", "C04");
-   auto hPCA = (TH1D*)Spectrum("AntiLa", "Jet10", "C04", "PC");
-   auto hInA = (TH1D*)Spectrum("AntiLa" );
+   auto hJCA = (TH1D*)Spectrum("XiPos", "Jet10", "C04");
+   auto hPCA = (TH1D*)Spectrum("XiPos", "Jet10", "C04", "PC");
+   auto hInA = (TH1D*)Spectrum("XiPos" );
    auto hJEA = (TH1D*)hJCA->Clone("hJEA"); hJEA->Add(hPCA, -0.25);
 
 
@@ -27,14 +27,14 @@ void dLKRatio(){
 
 //=============================================================================
   auto dflx(0.), dfux(12.);
-  auto dfly(0.), dfuy(1.);
+  auto dfly(0.), dfuy(0.36);
   
   auto dlsx(0.05), dlsy(0.05);
   auto dtsx(0.05), dtsy(0.05);
   auto dtox(1.30), dtoy(1.10);
   
   TString stnx("#it{p}_{T} (GeV/#it{c})");
-  TString stny("(#Lambda + #bar{#Lambda})/2K^{0}_{S}");
+  TString stny("(#Xi^{-} + #bar{#Xi}^{+})/2K^{0}_{S}");
 
   SetStyle(kTRUE);
   
@@ -66,9 +66,9 @@ void dLKRatio(){
   tex->DrawLatex(0.16, 0.92, "pp at #sqrt{#it{s}} = 13 TeV");
   tex->DrawLatex(0.16, 0.82, Form("PYTHIA 8"));
   tex->DrawLatex(0.16, 0.72, "sQCD + CR + rope");
-  can->SaveAs(Form("./figure/eps/LKRatio_sQCD_CR_rope.eps"));
-  can->SaveAs(Form("./figure/pdf/LKRatio_sQCD_CR_rope.pdf"));
-  can->SaveAs(Form("./figure/png/LKRatio_sQCD_CR_rope.png"));
+  can->SaveAs(Form("./figure/eps/XKRatio_sQCD_CR_rope.eps"));
+  can->SaveAs(Form("./figure/pdf/XKRatio_sQCD_CR_rope.pdf"));
+  can->SaveAs(Form("./figure/png/XKRatio_sQCD_CR_rope.png"));
   CanvasEnd(can);
   
   return;  

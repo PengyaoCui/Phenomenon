@@ -1,11 +1,16 @@
 #include "inc/PyJetUtils.h"
 
-void dLKRatio(){
+void dXLRatio(){
    //auto g = new TGraph(Spectrum("Kshort", sj, "C04", "PC"));
-   auto hJCK = (TH1D*)Spectrum("Kshort", "Jet10", "C04");
-   auto hPCK = (TH1D*)Spectrum("Kshort", "Jet10", "C04", "PC");
-   auto hInK = (TH1D*)Spectrum("Kshort" );
-   auto hJEK = (TH1D*)hJCK->Clone("hJEK"); hJEK->Add(hPCK, -0.25);
+   auto hJC1 = (TH1D*)Spectrum("XiNeg", "Jet10", "C04");
+   auto hPC1 = (TH1D*)Spectrum("XiNeg", "Jet10", "C04", "PC");
+   auto hIn1 = (TH1D*)Spectrum("XiNeg" );
+   auto hJE1 = (TH1D*)hJC1->Clone("hJE1"); hJE1->Add(hPC1, -0.25);
+   
+   auto hJC2 = (TH1D*)Spectrum("XiPos", "Jet10", "C04");
+   auto hPC2 = (TH1D*)Spectrum("XiPos", "Jet10", "C04", "PC");
+   auto hIn2 = (TH1D*)Spectrum("XiPos" );
+   auto hJE2 = (TH1D*)hJC2->Clone("hJE2"); hJE1->Add(hPC2, -0.25);
    
    auto hJCL = (TH1D*)Spectrum("Lambda", "Jet10", "C04");
    auto hPCL = (TH1D*)Spectrum("Lambda", "Jet10", "C04", "PC");
@@ -18,9 +23,10 @@ void dLKRatio(){
    auto hJEA = (TH1D*)hJCA->Clone("hJEA"); hJEA->Add(hPCA, -0.25);
 
 
-   auto hInRatio = (TH1D*)hInL->Clone("hInRatio"); hInRatio->Add(hInA); hInRatio->Divide(hInK); hInRatio->Scale(0.5);
-   auto hPCRatio = (TH1D*)hPCL->Clone("hPCRatio"); hPCRatio->Add(hPCA); hPCRatio->Divide(hPCK); hPCRatio->Scale(0.5);
-   auto hJERatio = (TH1D*)hJEL->Clone("hJERatio"); hJERatio->Add(hJEA); hJERatio->Divide(hJEK); hJERatio->Scale(0.5);
+   auto hInRatio = (TH1D*)hIn1->Clone("hInRatio"); hInRatio->Add(hIn2); hInL->Add(hInA); hInRatio->Divide(hInL); 
+   auto hJERatio = (TH1D*)hJE1->Clone("hJERatio"); hJERatio->Add(hJE2); hJEL->Add(hJEA); hJERatio->Divide(hJEL); 
+   auto hPCRatio = (TH1D*)hPC1->Clone("hPCRatio"); hPCRatio->Add(hPC2); hPCL->Add(hPCA); hPCRatio->Divide(hPCL); 
+   
    auto gIn = new TGraph(hInRatio);
    auto gPC = new TGraph(hPCRatio);
    auto gJE = new TGraph(hJERatio);
@@ -34,7 +40,7 @@ void dLKRatio(){
   auto dtox(1.30), dtoy(1.10);
   
   TString stnx("#it{p}_{T} (GeV/#it{c})");
-  TString stny("(#Lambda + #bar{#Lambda})/2K^{0}_{S}");
+  TString stny("(#Xi^{-} + #bar{#Xi}^{+})/(#Lambda + #bar{#Lambda})");
 
   SetStyle(kTRUE);
   
@@ -66,9 +72,9 @@ void dLKRatio(){
   tex->DrawLatex(0.16, 0.92, "pp at #sqrt{#it{s}} = 13 TeV");
   tex->DrawLatex(0.16, 0.82, Form("PYTHIA 8"));
   tex->DrawLatex(0.16, 0.72, "sQCD + CR + rope");
-  can->SaveAs(Form("./figure/eps/LKRatio_sQCD_CR_rope.eps"));
-  can->SaveAs(Form("./figure/pdf/LKRatio_sQCD_CR_rope.pdf"));
-  can->SaveAs(Form("./figure/png/LKRatio_sQCD_CR_rope.png"));
+  can->SaveAs(Form("./figure/eps/XLRatio_sQCD_CR_rope.eps"));
+  can->SaveAs(Form("./figure/pdf/XLRatio_sQCD_CR_rope.pdf"));
+  can->SaveAs(Form("./figure/png/XLRatio_sQCD_CR_rope.png"));
   CanvasEnd(can);
   
   return;  
