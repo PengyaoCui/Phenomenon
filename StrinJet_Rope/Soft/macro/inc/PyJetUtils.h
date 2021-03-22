@@ -15,21 +15,19 @@ const TString sm[] { "BLCmode0", "Monash", "BLCmode2", "BLCmode3" };
 const auto nm(sizeof(sm) / sizeof(TString));
 //=============================================================================
 
-TH1D *Spectrum(const int m,
-               const TString sd,
-               const TString ss,
+TH1D *Spectrum(const TString ss,
                const TString sj = "Jet10",
                const TString st = "",
                const TString sb = "")
 {
-  const TString sf(Form("data/PySjets/PySjets_%s/AnalysisOutputs_%s.root",sd.Data(),sm[m].Data()));
+  const TString sf(Form("/home/cuipengyao/Phenomenon/StrinJet_Rope/Soft/pp13TeV/AnalysisResults_merged.root"));
   if (gSystem->AccessPathName(sf)) {
     ::Error("utils::Spectrum", "No file: %s", sf.Data());
     exit(-1);
   }
 
   auto file(TFile::Open(sf));
-  const TString sl(Form("list_%s_%s",ss.Data(),sj.Data()));
+  const TString sl(Form("list_results"));
   auto list(static_cast<TList*>(file->Get(sl)));
   file->Close();
 
@@ -40,13 +38,13 @@ TH1D *Spectrum(const int m,
 //=============================================================================
 
   const auto b(st.IsNull());
-  auto hf(static_cast<TH1D*>(list->FindObject(("h" + ss + (b ? st : ("_" + st))).Data())));
+  auto hf(static_cast<TH1D*>(list->FindObject(("h" + ss + (b ? st : ("_" + sb + sj + "_" + st))).Data())));
 
-  if (!(st.IsNull() || sb.IsNull())) {
-    auto hf(static_cast<TH1D*>(list->FindObject(("h" + ss + "_" + sb).Data())));
-    hf->SetName(Form("%s_%s",hf->GetName(),sb.Data()));
-    hf->Add(hf, -1.);
-  }
+  //if (!(st.IsNull() || sb.IsNull())) {
+  //  auto hf(static_cast<TH1D*>(list->FindObject(("h" + ss + "_" + sb + sj + "_" + st).Data())));
+  //  hf->SetName(Form("%s_%s",hf->GetName(),sb.Data()));
+  //  hf->Add(hf, -1.);
+  //}
 //=============================================================================
 
   auto hr(static_cast<TH1D*>(hf->Rebin((b ? nIn : nJE), Form("%s_RB",hf->GetName()), (b ? dIn : dJE))));
@@ -58,8 +56,9 @@ TH1D *Spectrum(const int m,
 //=============================================================================
 
   return hr;
+  //return hf;
 }
-
+#if 0
 //_____________________________________________________________________________
 TH1D *RatioLK(const int m,
               const TString sd,
@@ -183,4 +182,4 @@ TH1D *RatioOX(const int m,
 
   return hR;
 }
-
+#endif
