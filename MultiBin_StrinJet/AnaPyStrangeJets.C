@@ -1,5 +1,9 @@
 #include "utils.h"
 //=============================================================================
+const auto bsQCD(kTRUE);
+const auto bCR(kTRUE);
+const auto bRope(kFALSE);
+const auto bhQCD = !bsQCD;
 
 int main(int argc, char *argv[])
 {
@@ -34,7 +38,47 @@ int main(int argc, char *argv[])
   auto &pyReco(pythia.event);
   auto &pyInfo(pythia.info);
 
-  pythia.readFile(Form("%s.cmnd",sf.Data()));
+  //pythia.readFile(Form("%s.cmnd",sf.Data()));
+
+//=============================================================================
+  pythia.readString("Beams:idA = 2212");
+  pythia.readString("Beams:idB = 2212");
+  pythia.readString("Main:numberOfEvents = 1001");
+  pythia.readString("Beams:eCM = 13000.");
+  if(bsQCD) pythia.readString("SoftQCD:all = on");
+  if(bhQCD){ pythia.readString("HardQCD:all = on"); pythia.readString("PhaseSpace:pTHatMin = 20."); }
+ 
+  if(bCR){ 
+    pythia.readString("MultiPartonInteractions:pT0Ref = 2.15");
+    pythia.readString("BeamRemnants:remnantMode = 1");
+    pythia.readString("BeamRemnants:saturation = 5");
+    pythia.readString("ColourReconnection:reconnect = on");
+    pythia.readString("ColourReconnection:mode = 1");
+    pythia.readString("ColourReconnection:allowDoubleJunRem = off");
+    pythia.readString("ColourReconnection:m0 = 0.3");
+    pythia.readString("ColourReconnection:allowJunctions = on");
+    pythia.readString("ColourReconnection:junctionCorrection = 1.2");
+    pythia.readString("ColourReconnection:timeDilationMode = 2");
+    pythia.readString("ColourReconnection:timeDilationPar = 0.18");
+  }
+  if(bRope){
+    pythia.readString("Ropewalk:RopeHadronization = on");
+    pythia.readString("Ropewalk:doShoving = on");
+    pythia.readString("Ropewalk:tInit = 1.5 # Propagation time");
+    pythia.readString("Ropewalk:deltat = 0.05");
+    pythia.readString("Ropewalk:tShove = 0.1");
+    pythia.readString("Ropewalk:gAmplitude = 0."); //# Set shoving strength to 0 explicitly
+    
+    pythia.readString("Ropewalk:doFlavour = on");
+    pythia.readString("Ropewalk:r0 = 0.5");
+    pythia.readString("Ropewalk:m0 = 0.2");
+    pythia.readString("Ropewalk:beta = 0.1");
+  }
+  // Enabling setting of vertex information.
+  pythia.readString("PartonVertex:setVertex = on");
+  pythia.readString("PartonVertex:protonRadius = 0.7");
+  pythia.readString("PartonVertex:emissionWidth = 0.1");
+//=============================================================================
 
   //pythia.readString("Tune:pp = 14");
   pythia.readString("Next:numberShowInfo = 0");
@@ -85,9 +129,11 @@ int main(int argc, char *argv[])
 
   auto hXsect (new TProfile("hXsect",  "", 1, 0., 1.));
   list_pyxsect->Add(hXsect);
+  CallSumw2(list_pyxsect);
+//=============================================================================
 
   auto list_results(new TList());
-  auto hPtHat(new TH1D("hPtHat", "", 1000, 0., 1000.));
+  auto hPtHat(new TH2D("hPtHat", "", 1000, 0., 1000., 2000, -0.5, 1999.5));
   list_results->Add(hPtHat);
 
   auto hJet(new TH1D("hJet", "", 500, 0., 500.));
@@ -119,6 +165,7 @@ int main(int argc, char *argv[])
   for (auto iEvent=0; iEvent<pythia.mode("Main:numberOfEvents"); ++iEvent) if (pythia.next()) {
     vConstis.resize(0);
     vStrgs.resize(0);
+    auto dFwdCh(0.);
 //=============================================================================
 
     for (auto i=0; i<pyReco.size(); ++i) {
@@ -237,7 +284,7 @@ int main(int argc, char *argv[])
     }
 //=============================================================================
 
-    hPtHat->Fill(pyInfo.pTHat());
+    hPtHat->Fill(pyInfo.pTHat(), dFwdCh);
   }
 
   timer.Stop();

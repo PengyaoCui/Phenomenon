@@ -15,6 +15,7 @@
 #include "TList.h"
 
 #include "TH1D.h"
+#include "TH2D.h"
 #include "TProfile.h"
 
 #include "Pythia8/Pythia.h"
@@ -55,6 +56,10 @@ float JetVal(TString s)
 
 const TString gksStrgJCs[] = { "C02", "C03", "C04" };
 const auto gknStrgJCs(sizeof(gksStrgJCs) / sizeof(TString));
+
+const TString gksStrgOCs[] = { "C04", "C06", "C08" };
+const auto gknOCs(sizeof(gksStrgOCs) / sizeof(TString));
+
 
 float StrgJC(TString s)
 {
@@ -98,6 +103,19 @@ int RandomSeed()
 
   const auto kInit(kTime - kProc);
   return ((int)kInit - (int)(((int)(kInit/1e8))*1e8));
+}
+
+//=============================================================================
+void CallSumw2(TList *list)
+{
+  TObject *p(nullptr);
+  TIter next(list);
+  while ((p = next())) {
+    auto h(dynamic_cast<TH1*>(p));
+    if (h) h->Sumw2();
+  }
+
+  return;
 }
 
 #endif
