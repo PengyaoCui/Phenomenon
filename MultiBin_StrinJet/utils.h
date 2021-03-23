@@ -34,14 +34,16 @@
 //#include "fastjet/tools/Filter.hh"
 //=============================================================================
 
-const TString gksStrgs[] = { "Kshort", "Lambda", "AntiLa", "LambdaFd", "AntiLaFd", "XiNeg", "XiPos", "OmegaNeg", "OmegaPos" };
-enum struct EStrg : unsigned int { Kshort=0, Lambda, AntiLa, LambdaFd, AntiLaFd, XiNeg, XiPos, OmegaNeg, OmegaPos, Undef };
-
+//const TString gksStrgs[] = { "Kshort", "Lambda", "AntiLa", "LambdaFd", "AntiLaFd", "XiNeg", "XiPos", "OmegaNeg", "OmegaPos" };
+//enum struct EStrg : unsigned int { Kshort=0, Lambda, AntiLa, LambdaFd, AntiLaFd, XiNeg, XiPos, OmegaNeg, OmegaPos, Undef };
+const TString gksStrgs[] = {"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"};
+enum struct EStrg : unsigned int {  Kshort=0, Lambda, Xi, Omega, Phi, Pion, Kion, Proton, Undef };
 TString StrgName(EStrg e)
 {
   if (e==EStrg::Undef) return TString("");
   return gksStrgs[static_cast<unsigned int>(e)];
 }
+
 //=============================================================================
 
 //const TString gksJets[] = { "Jet08", "Jet09", "Jet10", "Jet11", "Jet12", "Jet15", "Jet18", "Jet20", "Jet22" };
