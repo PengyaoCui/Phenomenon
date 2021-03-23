@@ -16,6 +16,7 @@
 
 #include "TH1D.h"
 #include "TH2D.h"
+#include "THnSparse.h"
 #include "TProfile.h"
 
 #include "Pythia8/Pythia.h"
@@ -43,9 +44,8 @@ TString StrgName(EStrg e)
 }
 //=============================================================================
 
-const TString gksJets[] = {
-  "Jet08", "Jet09", "Jet10", "Jet11", "Jet12",
-  "Jet15", "Jet18", "Jet20", "Jet22" };
+//const TString gksJets[] = { "Jet08", "Jet09", "Jet10", "Jet11", "Jet12", "Jet15", "Jet18", "Jet20", "Jet22" };
+const TString gksJets[] = { "Jet10"};
 
 float JetVal(TString s)
 {
@@ -54,10 +54,12 @@ float JetVal(TString s)
 }
 //=============================================================================
 
-const TString gksStrgJCs[] = { "C02", "C03", "C04" };
+//const TString gksStrgJCs[] = { "C02", "C03", "C04" };
+const TString gksStrgJCs[] = { "C04" };
 const auto gknStrgJCs(sizeof(gksStrgJCs) / sizeof(TString));
 
-const TString gksStrgOCs[] = { "C04", "C06", "C08" };
+//const TString gksStrgOCs[] = { "C04", "C06", "C08" };
+const TString gksStrgOCs[] = { "C06" };
 const auto gknOCs(sizeof(gksStrgOCs) / sizeof(TString));
 
 

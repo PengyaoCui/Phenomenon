@@ -98,6 +98,11 @@ int main(int argc, char *argv[])
 
   pythia.init();
 //=============================================================================
+  //cuts
+  const auto dTrkPtCut(0.15);
+  const auto dfEtaMin(2.);//forward rapidity eta min
+  const auto dfEtaMax(5.);//forward rapidity eta max
+  const auto dcEtaCut(1.);
 
   const auto dJetPtMin(1.00);
   const auto dJetEtaMin(-0.35 + dEtaShift);
@@ -117,7 +122,10 @@ int main(int argc, char *argv[])
 
   const auto aSelEta(fastjet::SelectorEtaRange(dJetEtaMin,dJetEtaMax));
 
+  TVector3 vec_tmp;
   std::vector<fastjet::PseudoJet> vConstis, vStrgs;
+  std::vector<int> iTrIndex;;
+  std::vector<TVector3> vTrArray;
 //=============================================================================
 
   auto file(TFile::Open(Form("AnalysisResults_%d_%d.root",kClusID,kProcID),"NEW"));
@@ -142,15 +150,67 @@ int main(int argc, char *argv[])
   auto hConsti(new TH1D("hConsti", "", 1000, 0., 100.));
   list_results->Add(hConsti);
 
-  for (const auto &ss : gksStrgs) {
-    list_results->Add(new TH1D(Form("h%s",ss.Data()), "", 1000, 0., 100.));
+  auto hFwdVsMid(new TH2D("hFwdVsMid", ";N_{trk}^{Mid}; N_{trk}^{Fwd}", 2000, -0.5, 1999.5, 2000, -0.5, 1999.5));
+  list_results->Add(hFwdVsMid);
 
-    for (const auto &sj : gksJets) for (const auto &sc : gksStrgJCs) {
-      list_results->Add(new TH1D(Form("h%s_%s_%s",ss.Data(),sj.Data(),sc.Data()), "", 1000, 0., 100.));
-      list_results->Add(new TH1D(Form("h%s_PC%s_%s",ss.Data(),sj.Data(),sc.Data()), "", 1000, 0., 100.));//NEW
-      list_results->Add(new TH1D(Form("h%s_OC%s_%s",ss.Data(),sj.Data(),sc.Data()), "", 1000, 0., 100.));//NEW
-    }
-  }
+//-----------------------------------------------------------------------------
+  TH1D *hTrPt  = new TH1D("hTrPt", ";p_{T}; N_{trig}", 200, 0, 20.);
+  list_results->Add(hTrPt);
+
+  TH1D *hTrEta     = new TH1D("hTrEta", ";#eta; N_{trig}", 1000, -5., 5.);
+  list_results->Add(hTrEta);
+
+  TH2D *hTrkPtEta  = new TH2D("hTrkPtEta", "Eta vs p_{T}; p_{T} [GeV]; Eta", 200, 0., 20., 1000, -5., 5.);
+  list_results->Add(hTrkPtEta);
+
+//-----------------------------------------------------------------------------
+  TH1D *hFwdTrPt  = new TH1D("hFwdTrPt", ";p_{T}; N_{trig}", 200, 0, 20.);
+  list_results->Add(hFwdTrPt);
+
+  TH1D *hFwdTrEta     = new TH1D("hFwdTrEta", ";#eta; N_{trig}", 1000, -5., 5.);
+  list_results->Add(hFwdTrEta);
+//-----------------------------------------------------------------------------
+  TH1D *hMidTrPt  = new TH1D("hMidTrPt", ";p_{T}; N_{trig}", 200, 0, 20.);
+  list_results->Add(hMidTrPt);
+
+  TH1D *hMidTrEta     = new TH1D("hMidTrEta", ";#eta; N_{trig}", 1000, -5., 5.);
+  list_results->Add(hFwdTrEta);
+
+//=============================================================================
+  const auto nAxis(6);
+  Int_t nBin[nAxis]    = { 7,   2000,   2000, 200, 1000, 4 }; // 0: particle type   , 
+  Double_t nMin[nAxis] = {0.,   -0.5,   -0.5,  0.,  -5., 0.}; //     ==0, pi 
+  Double_t nMax[nAxis] = { 6, 1999.5, 1999.5, 20.,  5. , 3.}; //     ==1, K 
+                                                              //     ==2, p 
+                                                              //     ==3, Kshort 
+                                                              //     ==4, Lambda 
+                                                              //     ==5, Xi 
+                                                              //     ==6, Omega 
+							      // 1: Fwdtrack
+							      // 2:MidTrack
+							      // 3:Pt
+							      // 4:Eta
+							      // 5:Acceptance
+							      //     ==0 Inclusive
+							      //     ==1 in JetCone
+							      //     ==2 in PC
+							      //     ==3 in OC
+
+
+  auto hN(new THnSparseD("hN", "", nAxis, nBin, nMin, nMax));
+  const TString sAxis[nAxis] { "Paritcle type", "pT", "FwdTrack", "MidTrack", "eta", "Acceptance" };
+  for (auto i=0; i<nAxis; ++i) hN->GetAxis(i)->SetName(sAxis[i].Data()); 
+  list_results->Add(hN);
+  //for (const auto &ss : gksStrgs) {
+  //  //list_results->Add(new TH1D(Form("h%s",ss.Data()), "", 1000, 0., 100.));
+
+  //  //for (const auto &sj : gksJets) for (const auto &sc : gksStrgJCs) {
+  //  //  list_results->Add(new TH1D(Form("h%s_%s_J%s",ss.Data(),sj.Data(),sc.Data()), "", 1000, 0., 100.));
+  //  //  list_results->Add(new TH1D(Form("h%s_%s_P%s",ss.Data(),sj.Data(),sc.Data()), "", 1000, 0., 100.));//NEW
+  //  //  list_results->Add(new TH1D(Form("h%s_%s_O%s",ss.Data(),sj.Data(),sc.Data()), "", 1000, 0., 100.));//NEW
+  //  //}
+  //}
+  CallSumw2(list_results);
 //=============================================================================
 
   TObject *p(nullptr);
@@ -166,6 +226,33 @@ int main(int argc, char *argv[])
     vConstis.resize(0);
     vStrgs.resize(0);
     auto dFwdCh(0.);
+    auto dMidCh(0.);
+    for (auto i=0; i<pyReco.size(); i++) if (pyReco[i].isFinal()   &&
+                                          pyReco[i].isVisible() &&
+                                          //pyReco[i].isCharged() &&
+                                          (pyReco[i].pT()>dTrkPtCut)) {
+      const auto &ap(pyReco[i]);
+      Double_t dEtaAbs = TMath::Abs(ap.eta());
+      if( ap.isCharged() ){
+        iTrIndex.push_back(i);
+        vec_tmp.SetXYZ(ap.px(), ap.py(), ap.pz());
+        vTrArray.push_back(vec_tmp);
+        hTrEta->Fill(vec_tmp.Eta());
+        hTrPt->Fill(vec_tmp.Pt());
+        hTrkPtEta->Fill(vec_tmp.Pt(), vec_tmp.Eta());
+        if ((dEtaAbs>dfEtaMin) && (dEtaAbs<=dfEtaMax)){ //2<|\eta|<5
+          dFwdCh += 1.;
+          hFwdTrEta->Fill(vec_tmp.Eta());
+	  hFwdTrPt->Fill(vec_tmp.Pt());
+        }
+        if( dEtaAbs<dcEtaCut ){ //|\eta|<2
+          dMidCh++;
+          hMidTrEta->Fill(vec_tmp.Eta());
+          hMidTrPt->Fill(vec_tmp.Pt());
+        }
+      }
+    }
+    hFwdVsMid->Fill(dMidCh, dFwdCh);
 //=============================================================================
 
     for (auto i=0; i<pyReco.size(); ++i) {
@@ -222,7 +309,7 @@ int main(int argc, char *argv[])
       vStrgs.back().set_user_info(new StrgInfo(ks));
 
       const auto ss(StrgName(ks));
-      if (!ss.IsNull()) (static_cast<TH1D*>(list_results->FindObject(Form("h%s",ss.Data()))))->Fill(dpPt);
+      //if (!ss.IsNull()) (static_cast<TH1D*>(list_results->FindObject(Form("h%s",ss.Data()))))->Fill(dpPt);
     }
 //=============================================================================
 
@@ -267,19 +354,19 @@ int main(int argc, char *argv[])
 	  }
 	}
 
-        for (unsigned long i=0; i<gknStrgJCs; ++i) {
-	  if (bJC[i]) {
-            const TString s(Form("h%s_%s_%s",ss.Data(),sj.Data(),gksStrgJCs[i].Data()));
-            (static_cast<TH1D*>(list_results->FindObject(s.Data())))->Fill(av.pt());
-	  }else{
-            const TString s(Form("h%s_OC%s_%s",ss.Data(),sj.Data(),gksStrgJCs[i].Data()));
-            (static_cast<TH1D*>(list_results->FindObject(s.Data())))->Fill(av.pt());
-	  }
-	  if(bPC[i]){
-            const TString s(Form("h%s_PC%s_%s",ss.Data(),sj.Data(),gksStrgJCs[i].Data()));
-            (static_cast<TH1D*>(list_results->FindObject(s.Data())))->Fill(av.pt());
-	  }
-	} 
+        //for (unsigned long i=0; i<gknStrgJCs; ++i) {
+	//  if (bJC[i]) {
+        //    const TString s(Form("h%s_%s_J%s",ss.Data(),sj.Data(),gksStrgJCs[i].Data()));
+        //    (static_cast<TH1D*>(list_results->FindObject(s.Data())))->Fill(av.pt());
+	//  }else{
+        //    const TString s(Form("h%s_%s_O%s",ss.Data(),sj.Data(),gksStrgJCs[i].Data()));
+        //    (static_cast<TH1D*>(list_results->FindObject(s.Data())))->Fill(av.pt());
+	//  }
+	//  if(bPC[i]){
+        //    const TString s(Form("h%s_%s_P%s",ss.Data(),sj.Data(),gksStrgJCs[i].Data()));
+        //    (static_cast<TH1D*>(list_results->FindObject(s.Data())))->Fill(av.pt());
+	//  }
+	//} 
       }
     }
 //=============================================================================
