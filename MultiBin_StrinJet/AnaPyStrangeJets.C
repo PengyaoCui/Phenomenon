@@ -7,7 +7,7 @@ const auto bhQCD = !bsQCD;
 
 int main(int argc, char *argv[])
 {
-  assert(argc>1);
+  assert(argc>0);
 //=============================================================================
 
   TString sf(__FILE__);
@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 //=============================================================================
   pythia.readString("Beams:idA = 2212");
   pythia.readString("Beams:idB = 2212");
-  pythia.readString("Main:numberOfEvents = 1001");
+  pythia.readString("Main:numberOfEvents = 100001");
   pythia.readString("Beams:eCM = 13000.");
   if(bsQCD) pythia.readString("SoftQCD:all = on");
   if(bhQCD){ pythia.readString("HardQCD:all = on"); pythia.readString("PhaseSpace:pTHatMin = 20."); }
@@ -64,7 +64,7 @@ int main(int argc, char *argv[])
   if(bRope){
     pythia.readString("Ropewalk:RopeHadronization = on");
     pythia.readString("Ropewalk:doShoving = on");
-    pythia.readString("Ropewalk:tInit = 1.5 # Propagation time");
+    pythia.readString("Ropewalk:tInit = 1.5");// # Propagation time
     pythia.readString("Ropewalk:deltat = 0.05");
     pythia.readString("Ropewalk:tShove = 0.1");
     pythia.readString("Ropewalk:gAmplitude = 0."); //# Set shoving strength to 0 explicitly
@@ -150,6 +150,9 @@ int main(int argc, char *argv[])
 
   auto hJet(new TH1D("hJet", "", 500, 0., 500.));
   list_results->Add(hJet);
+  
+  auto hJetEta(new TH1D("hJetEta", "", 1000, -5., 5.));
+  list_results->Add(hJetEta);
 
   auto hConsti(new TH1D("hConsti", "", 1000, 0., 100.));
   list_results->Add(hConsti);
@@ -182,9 +185,9 @@ int main(int argc, char *argv[])
 
 //=============================================================================
   const auto nAxis(6);
-  Int_t nBin[nAxis-1]    = { 8 ,   2000,   2000, 200, 1000};   // 0: particle type, 
-  Double_t nMin[nAxis-1] = {0.5,   -0.5,   -0.5,  0.,  -5.};   //   ==1, Kshort     
-  Double_t nMax[nAxis-1] = {8.5, 1999.5, 1999.5, 20.,  5. };   //   ==2, Lambda    
+  Int_t nBin[nAxis-1]    = { 8 ,   2000,   2000, 200, 1000};  // 0: particle type, 
+  Double_t nMin[nAxis-1] = {0.5,   -0.5,   -0.5,  0.,  -5.};  //    ==1, Kshort     
+  Double_t nMax[nAxis-1] = {8.5, 1999.5, 1999.5, 20.,  5. };  //    ==2, Lambda    
                                                               //    ==3, Xi        
                                                               //    ==4, Omega    
                                                               //    ==5, Phi    
@@ -198,7 +201,7 @@ int main(int argc, char *argv[])
 
   Double_t dStrVal[nAxis-1];
   auto hInclN(new THnSparseD("hInclN", "", nAxis-1, nBin, nMin, nMax));
-  const TString sAxis[nAxis-1] { "Paritcle type", "pT", "FwdTrack", "MidTrack", "eta" };
+  const TString sAxis[nAxis-1] { "Paritcle type", "FwdTrack", "MidTrack", "pT", "eta" };
   for (auto i=0; i<nAxis-1; ++i) hInclN->GetAxis(i)->SetName(sAxis[i].Data()); 
   list_results->Add(hInclN);
 
@@ -223,19 +226,10 @@ int main(int argc, char *argv[])
 
   Double_t dStrJVal[nAxis];
   auto hStrJetN(new THnSparseD("hStrJetN", "", nAxis, nJBin, nJMin, nJMax));
-  const TString sJAxis[nAxis] { "Paritcle type", "pT", "FwdTrack", "MidTrack", "eta", "Acceptance" };
+  const TString sJAxis[nAxis] { "Paritcle type", "FwdTrack", "MidTrack", "pT", "eta", "Acceptance" };
   for (auto i=0; i<nAxis; ++i) hStrJetN->GetAxis(i)->SetName(sJAxis[i].Data());
   list_results->Add(hStrJetN);
 //=============================================================================
-  //for (const auto &ss : gksStrgs) {
-  //  //list_results->Add(new TH1D(Form("h%s",ss.Data()), "", 1000, 0., 100.));
-
-  //  //for (const auto &sj : gksJets) for (const auto &sc : gksStrgJCs) {
-  //  //  list_results->Add(new TH1D(Form("h%s_%s_J%s",ss.Data(),sj.Data(),sc.Data()), "", 1000, 0., 100.));
-  //  //  list_results->Add(new TH1D(Form("h%s_%s_P%s",ss.Data(),sj.Data(),sc.Data()), "", 1000, 0., 100.));//NEW
-  //  //  list_results->Add(new TH1D(Form("h%s_%s_O%s",ss.Data(),sj.Data(),sc.Data()), "", 1000, 0., 100.));//NEW
-  //  //}
-  //}
   CallSumw2(list_results);
 //=============================================================================
 
@@ -303,16 +297,17 @@ int main(int argc, char *argv[])
 
       auto ks(EStrg::Undef);
       const auto id(ap.id());
-      if (id==310) {ks = EStrg::Kshort; dStrVal[0] = 1;}
-      if (id==3122) { ks = EStrg::Lambda; dStrVal[0] = 2; }
-      if (id==3312) {ks = EStrg::Xi; dStrVal[0] = 3;}
-      if (id==3334) {ks = EStrg::Omega; dStrVal[0] = 4;}
-      if(id==333) {ks = EStrg::Phi; dStrVal[0] = 5;}
+      if(id==310) { ks = EStrg::Kshort; dStrVal[0] = 1; }
+      if(id==3122){ ks = EStrg::Lambda; dStrVal[0] = 2; }
+      if(id==3312){ ks = EStrg::Xi;     dStrVal[0] = 3; }
+      if(id==3334){ ks = EStrg::Omega;  dStrVal[0] = 4; }
+      if(id==333) { ks = EStrg::Phi;    dStrVal[0] = 5; }
       
-      if(id==211) { ks=EStrg::Pion; dStrVal[0] = 6;}
-      if(id==321) { ks=EStrg::Kion; dStrVal[0] = 7;}
-      if(id==2212){ ks=EStrg::Proton; dStrVal[0] = 8;}
-      if (ks==EStrg::Undef) continue;
+      if(id==211) { ks=EStrg::Pion;     dStrVal[0] = 6;}
+      if(id==321) { ks=EStrg::Kion;     dStrVal[0] = 7;}
+      if(id==2212){ ks=EStrg::Proton;   dStrVal[0] = 8;}
+      
+      if(ks==EStrg::Undef) continue;
 //===========================================================================
 
       vStrgs.emplace_back(ap);
@@ -320,88 +315,66 @@ int main(int argc, char *argv[])
       vStrgs.back().set_user_info(new StrgInfo(ks));
 
       const auto ss(StrgName(ks));
-      //if (!ss.IsNull()) (static_cast<TH1D*>(list_results->FindObject(Form("h%s",ss.Data()))))->Fill(dpPt);
       if (!ss.IsNull()) {dStrVal[3] = dpPt; dStrVal[4] = dpEta; }
+      
       hInclN->Fill(dStrVal);
-    }
+    }//end all particles loop in one event
 //=============================================================================
 
     fastjet::ClusterSequenceArea acs(vConstis, aJetDef, aAreaDef);
     const auto &vJets(aSelEta(acs.inclusive_jets(dJetPtMin)));
-    for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) hJet->Fill(aj.pt());
+    for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) {hJet->Fill(aj.pt()); hJetEta->Fill(aj.eta());}
 //=============================================================================
 
-    for (const auto &av : vStrgs) {
+    for (const auto &av : vStrgs) { //loop all particles of intreast
       auto ps(av.user_info_shared_ptr());
       const auto ks((static_cast<StrgInfo*>(ps.get()))->GetType());
       const auto ss(StrgName(ks));
-      if(ss == "Kshort"){
-        dStrJVal[0] = 1; 
-      }else if(ss == "Lambda"){
-        dStrJVal[0] = 2; 
-      }else if(ss == "Xi"){
-        dStrJVal[0] = 3;
-      }else if(ss == "Omega"){
-        dStrJVal[0] = 4;
-      }else if(ss == "Phi"){
-        dStrJVal[0] = 5;
-      }else if(ss == "Pion"){
-        dStrJVal[0] = 6;
-      }else if(ss == "Kion"){
-        dStrJVal[0] = 7;
-      }else if(ss == "Proton"){
-        dStrJVal[0] = 8;
-      }
+      if(ss == "Kshort") dStrJVal[0] = 1; 
+      if(ss == "Lambda") dStrJVal[0] = 2; 
+      if(ss == "Xi")     dStrJVal[0] = 3;
+      if(ss == "Omega")  dStrJVal[0] = 4;
+      if(ss == "Phi")    dStrJVal[0] = 5;
+      if(ss == "Pion")   dStrJVal[0] = 6;
+      if(ss == "Kion")   dStrJVal[0] = 7;
+      if(ss == "Proton") dStrJVal[0] = 8;
 
       TVector3 strg, vj, vl1, vl2, vu1, vu2;
       strg.SetPtEtaPhi(av.pt(), av.eta(), av.phi());
       dStrJVal[3] = av.pt(); dStrJVal[4] = av.eta();
       
-      bool bJC[gknStrgJCs];
-      bool bPC[gknStrgJCs];
-      bool bOC[gknStrgJCs];
-      for (const auto &sj : gksJets) {
-        for (auto &b : bJC) b = false;
-        for (auto &b : bOC) b = false;
+      bool bJC; bool bPC; bool bOC;
+      const auto sj = gksJets;
+      bJC = false;
+      bOC = false;
+      bPC = false;
+
+      const auto dJetPtCut(JetVal(sj));
+      for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) {//loop all jet to check particle-jet relations
+        const auto dj(aj.pt());
+        if (dj<dJetPtCut) continue;
+        vj.SetPtEtaPhi( dj, aj.eta(),     aj.phi());
+        vl1.SetPtEtaPhi(dj, aj.eta(),     aj.phi()); vl1.RotateZ(TMath::PiOver2());
+        vl2.SetPtEtaPhi(dj, aj.eta(),     aj.phi()); vl2.RotateZ(-1.*TMath::PiOver2());
+        vu1.SetPtEtaPhi(dj, -1.*aj.eta(), aj.phi()); vu1.RotateZ(TMath::PiOver2());
+        vu2.SetPtEtaPhi(dj, -1.*aj.eta(), aj.phi()); vu2.RotateZ(-1.*TMath::PiOver2());
         
-	for (auto &b : bPC) b = false;
-
-        const auto dJetPtCut(JetVal(sj));
-        for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) {
-          const auto dj(aj.pt());
-          if (dj<dJetPtCut) continue;
-          vj.SetPtEtaPhi(dj, aj.eta(), aj.phi());
-          vl1.SetPtEtaPhi(dj, aj.eta(), aj.phi()); vl1.RotateZ(TMath::PiOver2());
-          vl2.SetPtEtaPhi(dj, aj.eta(), aj.phi()); vl2.RotateZ(-1.*TMath::PiOver2());
-          vu1.SetPtEtaPhi(dj, -1.*aj.eta(), aj.phi()); vu1.RotateZ(TMath::PiOver2());
-          vu2.SetPtEtaPhi(dj, -1.*aj.eta(), aj.phi()); vu2.RotateZ(-1.*TMath::PiOver2());
-          
-	  double d(vj.DeltaR(strg));
-	  double dl1(vl1.DeltaR(strg));
-	  double dl2(vl2.DeltaR(strg));
-	  double du1(vu1.DeltaR(strg));
-	  double du2(vu2.DeltaR(strg));
-          for (unsigned long i=0; i<gknStrgJCs; ++i) {
-            if (d<StrgJC(gksStrgJCs[i])) bJC[i] = true;
-            if (d>StrgJC(gksStrgJCs[i])) bOC[i] = true;
-	    if (dl1<StrgJC(gksStrgJCs[i]) || dl2<StrgJC(gksStrgJCs[i]) || du1<StrgJC(gksStrgJCs[i]) || du2<StrgJC(gksStrgJCs[i])) bPC[i] = true; 
-	  }
-	}
-
-        for (unsigned long i=0; i<gknStrgJCs; ++i) {
-	  if (bJC[i]) {
-            dStrJVal[5] = 1;
-	  }
-	  if (bOC[i]){
-            dStrJVal[5] = 3;
-	  }
-	  if(bPC[i]){
-            dStrJVal[5] = 2;
-	  }
-	  if(bOC[i] && bPC[i]) dStrJVal[5] = 2;//if bPC == 1; then !bJC == true;
-          if(bJC[i] || bOC[i] || bPC[i]) hStrJetN->Fill(dStrJVal);
-	} 
+        double d(vj.DeltaR(strg));
+        double dl1(vl1.DeltaR(strg));
+        double dl2(vl2.DeltaR(strg));
+        double du1(vu1.DeltaR(strg));
+        double du2(vu2.DeltaR(strg));
+        if (d<StrgJC(gksStrgJCs)) bJC = true;
+        if (d>StrgJC(gksStrgJCs)) bOC = true;
+        if (dl1<StrgJC(gksStrgJCs) || dl2<StrgJC(gksStrgJCs) || du1<StrgJC(gksStrgJCs) || du2<StrgJC(gksStrgJCs)) bPC = true; 
+        if (bJC){bOC = bPC = false;}
       }
+
+      if(bJC) dStrJVal[5] = 1;
+      if(bOC) dStrJVal[5] = 3;
+      if(bPC) dStrJVal[5] = 2;
+      if(bOC && bPC) dStrJVal[5] = 2;//if bPC == 1; then !bJC == true;
+      if(bJC || bOC || bPC) hStrJetN->Fill(dStrJVal);
     }
 //=============================================================================
 
