@@ -1,6 +1,7 @@
 #ifndef ROOT_PY_FJ_UTILS_H
 #define ROOT_PY_FJ_UTILS_H
 
+#include "PyParticle.h"
 #include <cassert>
 
 #include "TSystem.h"
