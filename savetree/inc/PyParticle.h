@@ -1,7 +1,8 @@
-#ifndef ALIPYPARTICLE_H
-#define ALIPYPARTICLE_H
+#ifndef PYPARTICLE_H
+#define PYPARTICLE_H
 
 #include "TVector3.h"
+#include "TMath.h"
 #include "TObject.h"
 
 class PyParticle : public TObject {
@@ -11,6 +12,7 @@ class PyParticle : public TObject {
   //PyParticle() = default;
   PyParticle();
   PyParticle(Int_t ID,
+	     Double_t dCharge,//-1., 0., 1.
 	     Double_t dX,
 	     Double_t dY,
 	     Double_t dZ,
@@ -27,6 +29,7 @@ class PyParticle : public TObject {
 
  protected :
   Int_t fID = 0;
+  Double_t fCharge = 0.;
   Double_t fX = 0.;
   Double_t fY = 0.;
   Double_t fZ = 0.;

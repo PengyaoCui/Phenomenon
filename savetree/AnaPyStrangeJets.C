@@ -1,4 +1,5 @@
 #include "inc/utils.h"
+#include "inc/PyParticle.cxx"
 //=============================================================================
 const auto bsQCD(kTRUE);
 const auto bCR(kTRUE);
@@ -134,8 +135,14 @@ int main(int argc, char *argv[])
 
   auto file(TFile::Open(Form("AnalysisResults_%d_%d.root",kClusID,kProcID),"NEW"));
   //auto file(TFile::Open(Form("AnalysisResults_%d_%d_%d.root",kSeed,kClusID,kProcID),"NEW"));
+//=============================================================================
   auto tree (new TTree("tree","tree"));
 
+  //assign branch address
+  auto nEvent(0);
+  auto cTrk(new TClonesArray("PyParticle"));
+
+//=============================================================================
   auto list_pyxsect(new TList());
   auto hTrials(new TH1D("hTrials",     "", 1, 0., 1.));
   list_pyxsect->Add(hTrials);
@@ -247,10 +254,6 @@ int main(int argc, char *argv[])
     if (h) h->Sumw2();
   }
 //=============================================================================
-//assign branch address
-  auto dFwdChTrk(0.);
-  auto dMidChTrk(0.);
-  auto nEvent(0);
   
   TStopwatch timer; timer.Start();
   for (auto iEvent=0; iEvent<pythia.mode("Main:numberOfEvents"); ++iEvent) if (pythia.next()) {
@@ -264,6 +267,8 @@ int main(int argc, char *argv[])
                                           (pyReco[i].pT()>dTrkPtCut)) {
       const auto &ap(pyReco[i]);
       Double_t dEtaAbs = TMath::Abs(ap.eta());
+      auto nTrk(cTrk->GetEntriesFast());
+      
       if( ap.isCharged() ){
         iTrIndex.push_back(i);
         vec_tmp.SetXYZ(ap.px(), ap.py(), ap.pz());
@@ -281,16 +286,23 @@ int main(int argc, char *argv[])
           hMidTrEta->Fill(vec_tmp.Eta());
           hMidTrPt->Fill(vec_tmp.Pt());
         }
+	PyParticle *Trk = new PyParticle(ap.id(),
+			                 ap.isCharged(),
+			                 1.,
+			                 1.,
+			                 1.,
+			                 ap.px(),
+			                 ap.py(),
+			                 ap.pz(),
+			                 ap.eta());
+        new ((*cTrk)[nTrk++]) PyParticle(*Trk);
       }
     }
 
     dStrJVal[1] = dStrVal[1] = dFwdCh;
     dStrJVal[2] = dStrVal[2] = dMidCh;
     hFwdVsMid->Fill(dMidCh, dFwdCh);
-    
     tree->Branch("nEvent", &nEvent);
-    tree->Branch("dFwdChTrk", &dFwdChTrk);
-    tree->Branch("dMidChTrk", &dMidChTrk);
     tree->Fill();
  //=============================================================================
 

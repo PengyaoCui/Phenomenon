@@ -1,24 +1,22 @@
 #include <TH2D.h>
 #include <TMath.h>
-#include <TLorentzVector.h>
 
-#include "AliPicoV0RD.h"
-#include "AliPicoV0MC.h"
-#include "PyParticle.h"
+#include "./PyParticle.h"
 
 ClassImp(PyParticle)
 
 //_____________________________________________________________________________
 PyParticle::PyParticle() :
 TObject(),
-Int_t ID(0),
-dX(0.),
-dY(0.),
-dZ(0.),
-dPx(0.),
-dPy(0.),
-dPz(0.),
-dEta(0.)
+fID(0),
+fCharge(0.),
+fX(0.),
+fY(0.),
+fZ(0.),
+fPx(0.),
+fPy(0.),
+fPz(0.),
+fEta(0.)
 {
 //
 //  PyParticle::PyParticle
@@ -26,6 +24,7 @@ dEta(0.)
 }
 
 PyParticle::PyParticle(Int_t ID,
+                       Double_t dCharge,
                        Double_t dX,
                        Double_t dY,
                        Double_t dZ,
@@ -36,6 +35,7 @@ PyParticle::PyParticle(Int_t ID,
                        ) :
 TObject(),
 fID(ID),
+fCharge(dCharge),
 fX(dX),
 fY(dY),
 fZ(dZ),
@@ -53,7 +53,8 @@ fvP(dX, dY, dZ)
 //_____________________________________________________________________________
 PyParticle::PyParticle(const PyParticle &src) :
 TObject(src),
-fID(src.ID),
+fID(src.fID),
+fCharge(src.fCharge),
 fX(src.fX),
 fY(src.fY),
 fZ(src.fZ),
@@ -78,15 +79,16 @@ PyParticle& PyParticle::operator=(const PyParticle &src)
   if (&src==this) return *this;
 
   TObject::operator=(src);
-  fID  = src.ID;
-  fX   = src.fX;
-  fY   = src.fY;
-  fZ   = src.fZ;
-  fPx  = src.fPx;
-  fPy  = src.fPy;
-  fPz  = src.fPz;
-  fEta = src.fEta;
-  fvP  = src.fvP;
+  fID     = src.fID;
+  fCharge = src.fCharge;
+  fX      = src.fX;
+  fY      = src.fY;
+  fZ      = src.fZ;
+  fPx     = src.fPx;
+  fPy     = src.fPy;
+  fPz     = src.fPz;
+  fEta    = src.fEta;
+  fvP     = src.fvP;
   return *this;
 }
 
@@ -96,7 +98,6 @@ PyParticle::~PyParticle()
 //
 //  PyParticle::~PyParticle
 //
-  if (fID) { delete fID; fID = 0; }
 }
 
 
