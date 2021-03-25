@@ -1,0 +1,62 @@
+dependent_variables:
+- header: {name: '$(h/\pi) / (h/\pi)^{pp}_{INEL>0}$'}
+  qualifiers:
+  - {name: RATIO, value: '$(\Xi^{-}+\bar{\Xi}^{+})/(\pi^{+}+\pi^{-})$ DOUBLE-RATIO'}
+  - {name: RE, value: 'P P --> $(\pi^{+}+\pi^{-})$ + X'}
+  - {name: RE, value: 'P P --> $(\Xi^{-}+\bar{\Xi}^{+})$ + X'}
+  - {name: SQRT(S), units: GEV, value: '7000.0'}
+  - {name: YRAP(CM), value: -0.5 0.5}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.02159}
+    - {label: 'sys,uncorr', symerror: 0.04577}
+    value: 1.298
+  - errors:
+    - {label: stat, symerror: 0.01279}
+    - {label: 'sys,uncorr', symerror: 0.0439}
+    value: 1.233
+  - errors:
+    - {label: stat, symerror: 0.0131}
+    - {label: 'sys,uncorr', symerror: 0.04987}
+    value: 1.244
+  - errors:
+    - {label: stat, symerror: 0.01316}
+    - {label: 'sys,uncorr', symerror: 0.05137}
+    value: 1.179
+  - errors:
+    - {label: stat, symerror: 0.01378}
+    - {label: 'sys,uncorr', symerror: 0.05827}
+    value: 1.126
+  - errors:
+    - {label: stat, symerror: 0.01161}
+    - {label: 'sys,uncorr', symerror: 0.05886}
+    value: 1.091
+  - errors:
+    - {label: stat, symerror: 0.01197}
+    - {label: 'sys,uncorr', symerror: 0.06235}
+    value: 1.013
+  - errors:
+    - {label: stat, symerror: 0.01422}
+    - {label: 'sys,uncorr', symerror: 0.06873}
+    value: 0.9484
+  - errors:
+    - {label: stat, symerror: 0.01191}
+    - {label: 'sys,uncorr', symerror: 0.07593}
+    value: 0.8211
+  - errors:
+    - {label: stat, symerror: 0.01198}
+    - {label: 'sys,uncorr', symerror: 0.07689}
+    value: 0.5825
+independent_variables:
+- header: {name: '$\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$'}
+  values:
+  - {high: 21.93, low: 20.65, value: 21.29}
+  - {high: 17.01, low: 16.01, value: 16.51}
+  - {high: 13.86, low: 13.06, value: 13.46}
+  - {high: 11.86, low: 11.16, value: 11.51}
+  - {high: 10.38, low: 9.78, value: 10.08}
+  - {high: 8.7, low: 8.2, value: 8.45}
+  - {high: 6.93, low: 6.51, value: 6.72}
+  - {high: 5.57, low: 5.23, value: 5.4}
+  - {high: 4.04, low: 3.76, value: 3.9}
+  - {high: 2.38, low: 2.14, value: 2.26}

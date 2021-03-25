@@ -12,10 +12,12 @@ const auto nJE(sizeof(dJE) / sizeof(Double_t) - 1);
 const TString sm[] { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", "HardQCD_CR", "HardQCD_Rope", "HardQCD_CRandRope" };
 const auto nm(sizeof(sm) / sizeof(TString));
 
-const Double_t dCent[] = { 0., 0.01, 0.1, 0.4,  1. };
-const auto nc(sizeof(dCent)/sizeof(Double_t));
-Double_t dFwdTrk[nc];
+const TString sp[] = {"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"};
+const auto np(sizeof(sp) / sizeof(TString));
 
+const Double_t dCent[] = { 0., 0.95, 4.7, 9.5, 14., 19., 28., 38., 48., 68., 100. };
+const auto nc(sizeof(dCent)/sizeof(Double_t));
+auto dEta = 2.;
 
 //=============================================================================
 
@@ -41,16 +43,15 @@ TH2D* FwdMidTrk(const int m)
 }
 
 //_____________________________________________________________________________
-TH1D* Cent(const int m)
+void CentToFwdTrk(const int m,
+		  Double_t dFwdTrk[nc])
 {
   auto h2D = (TH2D*)FwdMidTrk(m);
   auto hf = (TH1D*) h2D->ProjectionY();
   auto dt = (Double_t)hf->Integral();//number of event
   Int_t b = hf->GetNbinsX(); dFwdTrk[0]=(Double_t)hf->GetBinCenter(b);
   for(Int_t i = 1; i<nc; i++){
-    auto da = (Double_t)(dCent[i] - dCent[i-1])*dt;
-    cout<<"==dArea=="<<da<<endl; 
-
+    auto da = (Double_t)(dCent[i] - dCent[i-1])*dt/100.;
     for(Int_t j = b; j>0; j--){
       if(hf->Integral(j, b) >= da){
       dFwdTrk[i] = (Double_t)hf->GetBinCenter(j);
@@ -58,59 +59,94 @@ TH1D* Cent(const int m)
       break;
       }
     } 
-
   }
-  
-  for(Int_t i = 0; i< nc; i++)cout<<"dFwdTrk=="<<dFwdTrk[i]<<endl;
-  return hf;
+  return;
 }		
 
 //_____________________________________________________________________________
-TH1D *Spectrum(const int m,
-               const TString sd,
-               const TString ss,
-               const TString sj = "Jet10",
-               const TString st = "",
-               const TString sb = "")
+void CentTodNdEta(const int m,
+	          Double_t dNdEta[nc-1])
 {
-  const TString sf(Form("data/PySjets/PySjets_%s/AnalysisOutputs_%s.root",sd.Data(),sm[m].Data()));
+  Double_t dFwdTrk[nc];
+  CentToFwdTrk(m, dFwdTrk);
+  
+  Int_t b[nc];
+  auto h2D = (TH2D*)FwdMidTrk(m);
+  for(Int_t i = 0; i< nc; i++){ b[i] = (Int_t)h2D->GetYaxis()->FindBin(dFwdTrk[i]); }
+  for(Int_t i = 1; i< nc; i++){
+    auto hm = (TH1D*)h2D->ProjectionX(Form("hm_%d", i), b[i], b[i-1]);
+    auto ne = (Double_t)hm->Integral();
+    auto nt =0.;
+    for(Int_t j = 1; j<=hm->GetNbinsX(); j++){ 
+      auto nT= (Double_t)(hm->GetBinCenter(j)*hm->GetBinContent(j));
+      nt = nt+nT;
+    }
+    dNdEta[i-1] = (Double_t)(nt/(ne*dEta)); 
+  }
+
+  return;
+}
+
+//_____________________________________________________________________________
+void IntegralSpectrum(const int m,
+		      const int p,
+		      Double_t nP[nc-1])
+{
+  Double_t dFwdTrk[nc];  CentToFwdTrk(m, dFwdTrk);
+  Double_t dNdEta[nc-1]; CentTodNdEta(m, dNdEta);
+  
+  const TString sf(Form("sim/%s.root", sm[m].Data()));
   if (gSystem->AccessPathName(sf)) {
     ::Error("utils::Spectrum", "No file: %s", sf.Data());
     exit(-1);
   }
-
-  auto file(TFile::Open(sf));
-  const TString sl(Form("list_%s_%s",ss.Data(),sj.Data()));
-  auto list(static_cast<TList*>(file->Get(sl)));
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get("list_results")));
   file->Close();
-
+  
   if (list==nullptr) {
-    ::Error("utils::Spectrum", "No list: %s", sl.Data());
+    ::Error("utils::Spectrum", "No list: list_results");
     exit(-2);
   }
-//=============================================================================
+  
+  const auto hN((THnSparseD*)list->FindObject("hInclN"));
+  TH1D* h1[nc-1];
 
-  const auto b(st.IsNull());
-  auto hf(static_cast<TH1D*>(list->FindObject(("h" + ss + (b ? st : ("_" + st))).Data())));
-
-  if (!(st.IsNull() || sb.IsNull())) {
-    auto hf(static_cast<TH1D*>(list->FindObject(("h" + ss + "_" + sb).Data())));
-    hf->SetName(Form("%s_%s",hf->GetName(),sb.Data()));
-    hf->Add(hf, -1.);
-  }
-//=============================================================================
-
-  auto hr(static_cast<TH1D*>(hf->Rebin((b ? nIn : nJE), Form("%s_RB",hf->GetName()), (b ? dIn : dJE))));
-  NormBinningHistogram(hr);
-//=============================================================================
-
-  delete list;
-  list = nullptr;
-//=============================================================================
-
-  return hr;
+  for(Int_t ft = 1; ft<nc; ft++){
+    auto h = (THnSparseD*)hN->Clone(("hN"+ sp[p] + "_" + dNdEta[ft-1]).Data());
+    auto bp = (Int_t)h->GetAxis(0)->FindBin(p+1);
+    h->GetAxis(0)->SetRange(bp, bp);
+    auto bfmin = (Int_t)h->GetAxis(1)->FindBin(dFwdTrk[ft]); 
+    auto bfmax = (Int_t)h->GetAxis(1)->FindBin(dFwdTrk[ft-1]);
+    h->GetAxis(1)->SetRange(bfmin, bfmax);
+    h1[ft-1] = (TH1D*)h->Projection(0); h1[ft-1]->SetName(("h"+ sp[p] + "_" + dNdEta[ft-1]).Data());
+    nP[ft-1] = h1[ft-1]->Integral();
+  } 
+  //auto gI = new TGraph(nc-1, dNdEta, nP);
+  //return gI;
 }
 
+TGraph* RatioToPi(const int m,
+                  const int p)
+{
+  Double_t dNdEta[nc-1]; CentTodNdEta(m, dNdEta);
+  
+  //auto gPa(IntegralSpectrum(m, p));
+  //auto gPi(IntegralSpectrum(m, 5));
+  //Double_t *dPa(gPa->GetY()); 
+  //Double_t *dPi(gPi->GetY());
+  Double_t dPa[nc-1];IntegralSpectrum(m, p, dPa);
+  Double_t dPi[nc-1];IntegralSpectrum(m, 5, dPi);
+  Double_t dR[nc-1];
+  for(Int_t i = 1; i<nc-1; i++) { 
+        cout<<dPa[i]<<endl;	  
+	  dR[i-1] = dPa[i-1]/dPi[i-1]; 
+  
+  }
+  auto gR = new TGraph(nc-1, dNdEta, dR);
+  return gR;
+}
+#if 0
 //_____________________________________________________________________________
 TH1D *RatioLK(const int m,
               const TString sd,
@@ -131,4 +167,4 @@ TH1D *RatioLK(const int m,
 
   return hR;
 }
-
+#endif

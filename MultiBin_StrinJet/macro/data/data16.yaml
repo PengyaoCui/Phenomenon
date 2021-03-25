@@ -1,0 +1,107 @@
+dependent_variables:
+- header: {name: '$\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$'}
+  qualifiers:
+  - {name: Multiplicity, value: V0M Class VI}
+  - {name: RE, value: 'P P --> $\Lambda+\bar{\Lambda}$ + X'}
+  - {name: SQRT(S), units: GEV, value: '7000.0'}
+  - {name: YRAP(CM), value: -0.5 0.5}
+  values:
+  - errors:
+    - {label: stat, symerror: 0.00222}
+    - {label: 'sys,total', symerror: 0.01325}
+    - {label: 'sys,uncorr', symerror: 0.005536}
+    value: 0.224
+  - errors:
+    - {label: stat, symerror: 0.001401}
+    - {label: 'sys,total', symerror: 0.01332}
+    - {label: 'sys,uncorr', symerror: 0.005482}
+    value: 0.2251
+  - errors:
+    - {label: stat, symerror: 0.001115}
+    - {label: 'sys,total', symerror: 0.01089}
+    - {label: 'sys,uncorr', symerror: 0.004519}
+    value: 0.196
+  - errors:
+    - {label: stat, symerror: 0.0009443}
+    - {label: 'sys,total', symerror: 0.009043}
+    - {label: 'sys,uncorr', symerror: 0.003744}
+    value: 0.1584
+  - errors:
+    - {label: stat, symerror: 0.0008032}
+    - {label: 'sys,total', symerror: 0.008659}
+    - {label: 'sys,uncorr', symerror: 0.003446}
+    value: 0.1226
+  - errors:
+    - {label: stat, symerror: 0.0006694}
+    - {label: 'sys,total', symerror: 0.005917}
+    - {label: 'sys,uncorr', symerror: 0.002386}
+    value: 0.0929
+  - errors:
+    - {label: stat, symerror: 0.000542}
+    - {label: 'sys,total', symerror: 0.004242}
+    - {label: 'sys,uncorr', symerror: 0.001712}
+    value: 0.0678
+  - errors:
+    - {label: stat, symerror: 0.0004483}
+    - {label: 'sys,total', symerror: 0.003372}
+    - {label: 'sys,uncorr', symerror: 0.001347}
+    value: 0.05016
+  - errors:
+    - {label: stat, symerror: 0.0003614}
+    - {label: 'sys,total', symerror: 0.002501}
+    - {label: 'sys,uncorr', symerror: 0.0009874}
+    value: 0.03489
+  - errors:
+    - {label: stat, symerror: 0.0002354}
+    - {label: 'sys,total', symerror: 0.001841}
+    - {label: 'sys,uncorr', symerror: 0.0007189}
+    value: 0.02365
+  - errors:
+    - {label: stat, symerror: 0.000148}
+    - {label: 'sys,total', symerror: 0.001086}
+    - {label: 'sys,uncorr', symerror: 0.0003556}
+    value: 0.01331
+  - errors:
+    - {label: stat, symerror: 8.992e-05}
+    - {label: 'sys,total', symerror: 0.0005031}
+    - {label: 'sys,uncorr', symerror: 0.0001654}
+    value: 0.006425
+  - errors:
+    - {label: stat, symerror: 5.258e-05}
+    - {label: 'sys,total', symerror: 0.0002264}
+    - {label: 'sys,uncorr', symerror: 7.359e-05}
+    value: 0.002739
+  - errors:
+    - {label: stat, symerror: 2.432e-05}
+    - {label: 'sys,total', symerror: 8.289e-05}
+    - {label: 'sys,uncorr', symerror: 2.719e-05}
+    value: 0.001033
+  - errors:
+    - {label: stat, symerror: 9.354e-06}
+    - {label: 'sys,total', symerror: 1.847e-05}
+    - {label: 'sys,uncorr', symerror: 8.902e-06}
+    value: 0.0002357
+  - errors:
+    - {label: stat, symerror: 5.009e-06}
+    - {label: 'sys,total', symerror: 7.87e-06}
+    - {label: 'sys,uncorr', symerror: 3.723e-06}
+    value: 6.989e-05
+independent_variables:
+- header: {name: '$p_{T}$ (GeV/c)'}
+  values:
+  - {high: 0.6, low: 0.4, value: 0.5}
+  - {high: 0.8, low: 0.6, value: 0.7}
+  - {high: 1.0, low: 0.8, value: 0.9}
+  - {high: 1.2, low: 1.0, value: 1.1}
+  - {high: 1.4, low: 1.2, value: 1.3}
+  - {high: 1.6, low: 1.4, value: 1.5}
+  - {high: 1.8, low: 1.6, value: 1.7}
+  - {high: 2.0, low: 1.8, value: 1.9}
+  - {high: 2.2, low: 2.0, value: 2.1}
+  - {high: 2.5, low: 2.2, value: 2.35}
+  - {high: 2.9, low: 2.5, value: 2.7}
+  - {high: 3.4, low: 2.9, value: 3.15}
+  - {high: 4.0, low: 3.4, value: 3.7}
+  - {high: 5.0, low: 4.0, value: 4.5}
+  - {high: 6.5, low: 5.0, value: 5.75}
+  - {high: 8.0, low: 6.5, value: 7.25}
