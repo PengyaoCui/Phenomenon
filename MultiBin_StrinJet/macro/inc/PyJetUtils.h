@@ -9,8 +9,13 @@ const auto nIn(sizeof(dIn) / sizeof(Double_t) - 1);
 const Double_t dJE[] = { 0.6, 1.6, 2.2, 2.8, 3.7, 5., 8., 12., 15. };
 const auto nJE(sizeof(dJE) / sizeof(Double_t) - 1);
 
-const TString sm[] { "HardQCD_CR", "HardQCD_Rope", "HardQCD_CRandRope", "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope" };
+const TString sm[] { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", "HardQCD_CR", "HardQCD_Rope", "HardQCD_CRandRope" };
 const auto nm(sizeof(sm) / sizeof(TString));
+
+const Double_t dCent[] = { 0., 0.01, 0.1, 0.4,  1. };
+const auto nc(sizeof(dCent)/sizeof(Double_t));
+Double_t dFwdTrk[nc];
+
 
 //=============================================================================
 
@@ -34,6 +39,31 @@ TH2D* FwdMidTrk(const int m)
   auto h((TH2D*)list->FindObject("hFwdVsMid"));
   return h;
 }
+
+//_____________________________________________________________________________
+TH1D* Cent(const int m)
+{
+  auto h2D = (TH2D*)FwdMidTrk(m);
+  auto hf = (TH1D*) h2D->ProjectionY();
+  auto dt = (Double_t)hf->Integral();//number of event
+  Int_t b = hf->GetNbinsX(); dFwdTrk[0]=(Double_t)hf->GetBinCenter(b);
+  for(Int_t i = 1; i<nc; i++){
+    auto da = (Double_t)(dCent[i] - dCent[i-1])*dt;
+    cout<<"==dArea=="<<da<<endl; 
+
+    for(Int_t j = b; j>0; j--){
+      if(hf->Integral(j, b) >= da){
+      dFwdTrk[i] = (Double_t)hf->GetBinCenter(j);
+      b = j;
+      break;
+      }
+    } 
+
+  }
+  
+  for(Int_t i = 0; i< nc; i++)cout<<"dFwdTrk=="<<dFwdTrk[i]<<endl;
+  return hf;
+}		
 
 //_____________________________________________________________________________
 TH1D *Spectrum(const int m,

@@ -194,7 +194,7 @@ int main(int argc, char *argv[])
                                                               //    ==6, Pion       
                                                               //    ==7, Kion
                                                               //    ==8, Proton 
-							      // 1: Fwdtrack
+							      // 1:Fwdtrack
 							      // 2:MidTrack
 							      // 3:Pt
 							      // 4:Eta
@@ -265,7 +265,7 @@ int main(int argc, char *argv[])
           hFwdTrEta->Fill(vec_tmp.Eta());
 	  hFwdTrPt->Fill(vec_tmp.Pt());
         }
-        if( dEtaAbs<dcEtaCut ){ //|\eta|<2
+        if( dEtaAbs<dcEtaCut ){ //|\eta|<1
           dMidCh++;
           hMidTrEta->Fill(vec_tmp.Eta());
           hMidTrPt->Fill(vec_tmp.Pt());
