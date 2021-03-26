@@ -1,8 +1,8 @@
 #include "utils.h"
 //=============================================================================
 const auto bsQCD(kTRUE);
-const auto bCR(kTRUE);
-const auto bRope(kFALSE);
+const auto bCR(kFALSE);
+const auto bRope(kTRUE);
 const auto bhQCD = !bsQCD;
 
 int main(int argc, char *argv[])
@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
   pythia.readString("Beams:idA = 2212");
   pythia.readString("Beams:idB = 2212");
   pythia.readString("Main:numberOfEvents = 100001");
-  pythia.readString("Beams:eCM = 13000.");
+  pythia.readString("Beams:eCM = 7000.");
   if(bsQCD) pythia.readString("SoftQCD:all = on");
   if(bhQCD){ pythia.readString("HardQCD:all = on"); pythia.readString("PhaseSpace:pTHatMin = 20."); }
  
@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
   const auto dTrkPtCut(0.15);
   const auto dfEtaMin(2.);//forward rapidity eta min
   const auto dfEtaMax(5.);//forward rapidity eta max
-  const auto dcEtaCut(1.);
+  const auto dcEtaCut(0.5);
 
   const auto dJetPtMin(1.00);
   const auto dJetEtaMin(-0.35 + dEtaShift);

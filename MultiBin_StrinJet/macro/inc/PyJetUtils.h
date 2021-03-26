@@ -9,6 +9,9 @@ const auto nIn(sizeof(dIn) / sizeof(Double_t) - 1);
 const Double_t dJE[] = { 0.6, 1.6, 2.2, 2.8, 3.7, 5., 8., 12., 15. };
 const auto nJE(sizeof(dJE) / sizeof(Double_t) - 1);
 
+const TString ss[] { "pp13TeV", "pp7TeV" };
+const auto ns(sizeof(ss)/sizeof(TString));
+
 const TString sm[] { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", "HardQCD_CR", "HardQCD_Rope", "HardQCD_CRandRope" };
 const auto nm(sizeof(sm) / sizeof(TString));
 
@@ -16,15 +19,17 @@ const TString sp[] = {"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", 
 const auto np(sizeof(sp) / sizeof(TString));
 
 const Double_t dCent[] = { 0., 0.95, 4.7, 9.5, 14., 19., 28., 38., 48., 68., 100. };
+//const Double_t dCent[] = { 0., 1., 5., 10., 68., 100. };
 const auto nc(sizeof(dCent)/sizeof(Double_t));
-auto dEta = 2.;
+auto dEta = 1.;
 
 //=============================================================================
 
 //_____________________________________________________________________________
-TH2D* FwdMidTrk(const int m)
+TH2D* FwdMidTrk(const int s,
+		const int m)
 {
-  const TString sf(Form("sim/%s.root", sm[m].Data()));
+  const TString sf(Form("sim/%s/%s.root", ss[s].Data(), sm[m].Data()));
   if (gSystem->AccessPathName(sf)) {
     ::Error("utils::Spectrum", "No file: %s", sf.Data());
     exit(-1);
@@ -43,10 +48,11 @@ TH2D* FwdMidTrk(const int m)
 }
 
 //_____________________________________________________________________________
-void CentToFwdTrk(const int m,
+void CentToFwdTrk(const int s,
+		  const int m,
 		  Double_t dFwdTrk[nc])
 {
-  auto h2D = (TH2D*)FwdMidTrk(m);
+  auto h2D = (TH2D*)FwdMidTrk(s, m);
   auto hf = (TH1D*) h2D->ProjectionY();
   auto dt = (Double_t)hf->Integral();//number of event
   Int_t b = hf->GetNbinsX(); dFwdTrk[0]=(Double_t)hf->GetBinCenter(b);
@@ -64,14 +70,15 @@ void CentToFwdTrk(const int m,
 }		
 
 //_____________________________________________________________________________
-void CentTodNdEta(const int m,
+void CentTodNdEta(const int s,
+		  const int m,
 	          Double_t dNdEta[nc-1])
 {
   Double_t dFwdTrk[nc];
-  CentToFwdTrk(m, dFwdTrk);
+  CentToFwdTrk(s, m, dFwdTrk);
   
   Int_t b[nc];
-  auto h2D = (TH2D*)FwdMidTrk(m);
+  auto h2D = (TH2D*)FwdMidTrk(s, m);
   for(Int_t i = 0; i< nc; i++){ b[i] = (Int_t)h2D->GetYaxis()->FindBin(dFwdTrk[i]); }
   for(Int_t i = 1; i< nc; i++){
     auto hm = (TH1D*)h2D->ProjectionX(Form("hm_%d", i), b[i], b[i-1]);
@@ -88,14 +95,15 @@ void CentTodNdEta(const int m,
 }
 
 //_____________________________________________________________________________
-void IntegralSpectrum(const int m,
+void IntegralSpectrum(const int s,
+		      const int m,
 		      const int p,
 		      Double_t nP[nc-1])
 {
-  Double_t dFwdTrk[nc];  CentToFwdTrk(m, dFwdTrk);
-  Double_t dNdEta[nc-1]; CentTodNdEta(m, dNdEta);
+  Double_t dFwdTrk[nc];  CentToFwdTrk(s, m, dFwdTrk);
+  Double_t dNdEta[nc-1]; CentTodNdEta(s, m, dNdEta);
   
-  const TString sf(Form("sim/%s.root", sm[m].Data()));
+  const TString sf(Form("sim/%s/%s.root", ss[s].Data(), sm[m].Data()));
   if (gSystem->AccessPathName(sf)) {
     ::Error("utils::Spectrum", "No file: %s", sf.Data());
     exit(-1);
@@ -126,45 +134,77 @@ void IntegralSpectrum(const int m,
   //return gI;
 }
 
-TGraph* RatioToPi(const int m,
+//_____________________________________________________________________________
+TGraph* RatioToPi(const int s,
+		  const int m,
                   const int p)
 {
-  Double_t dNdEta[nc-1]; CentTodNdEta(m, dNdEta);
+  Double_t dNdEta[nc-1]; CentTodNdEta(s, m, dNdEta);
+  auto gR = new TGraph();
   
-  //auto gPa(IntegralSpectrum(m, p));
-  //auto gPi(IntegralSpectrum(m, 5));
+  //auto gPa(IntegralSpectrum(s, m, p));
+  //auto gPi(IntegralSpectrum(s, m, 5));
   //Double_t *dPa(gPa->GetY()); 
   //Double_t *dPi(gPi->GetY());
-  Double_t dPa[nc-1];IntegralSpectrum(m, p, dPa);
-  Double_t dPi[nc-1];IntegralSpectrum(m, 5, dPi);
+  Double_t dPa[nc-1];IntegralSpectrum(s, m, p, dPa);
+  Double_t dPi[nc-1];IntegralSpectrum(s, m, 5, dPi);
   Double_t dR[nc-1];
-  for(Int_t i = 1; i<nc-1; i++) { 
-        cout<<dPa[i]<<endl;	  
-	  dR[i-1] = dPa[i-1]/dPi[i-1]; 
-  
+  for(Int_t i = 1; i<nc; i++) { 
+        //cout<<dPa[i]<<endl;	  
+    dR[i-1] = dPa[i-1]/dPi[i-1]; 
+    gR->SetPoint(i-1, dNdEta[i-1], dR[i-1]);
+    cout<<"Ratio = "<<dR[i-1]<<endl; 
   }
-  auto gR = new TGraph(nc-1, dNdEta, dR);
   return gR;
 }
-#if 0
+
 //_____________________________________________________________________________
-TH1D *RatioLK(const int m,
-              const TString sd,
-              const TString sj = "Jet10",
-              const TString st = "",
-              const TString sb = "")
+TGraphErrors* GetDataE(TString sf = "data/HEPData.root",
+		      int t = 36, 
+		      TString sGraph = "Graph1D_y1")
 {
-  auto hK(Spectrum(m, sd, "Kshort", sj, st, sb));
-  auto hL(Spectrum(m, sd, "Lambda", sj, st, sb));
-//=============================================================================
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list((TDirectoryFile*)file->Get(Form("Table %d", t)));
 
-  const TString sh("hRatioV" + sm[m] + sj + (st.IsNull() ? st : ("_" + st)) + (sb.IsNull() ? sb : ("_" + sb)));
-  auto hR(static_cast<TH1D*>(hL->Clone(sh.Data())));
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list");
+    exit(-2);
+  }
 
-  hR->Reset();
-  hR->Divide(hL, hK, 1., 2.);
-//=============================================================================
-
-  return hR;
+  auto gD((TGraphErrors*)list->Get(sGraph));
+  file->Close();
+  return gD;
 }
-#endif
+
+//_____________________________________________________________________________
+TH1D* GetDataC(TString sf = "data/HEPData.root",
+               int t = 36,
+               TString sHist = "Hist1D_y1",
+	       TString sE = "Hist1D_y1_e1")
+{
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list((TDirectoryFile*)file->Get(Form("Table %d", t)));
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list");
+    exit(-2);
+  }
+
+  auto hD((TH1D*)list->Get(sHist));
+  auto he((TH1D*)list->Get(sE));
+
+  for(Int_t i = 1; i<= hD->GetNbinsX(); i++) hD->SetBinError(i, he->GetBinContent(i)); 
+
+  return hD;
+
+}
+
+//_____________________________________________________________________________
