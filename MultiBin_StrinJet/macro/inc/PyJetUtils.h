@@ -18,8 +18,8 @@ const auto nm(sizeof(sm) / sizeof(TString));
 const TString sp[] = {"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"};
 const auto np(sizeof(sp) / sizeof(TString));
 
-const Double_t dCent[] = { 0., 0.95, 4.7, 9.5, 14., 19., 28., 38., 48., 68., 100. };
-//const Double_t dCent[] = { 0., 1., 5., 10., 68., 100. };
+//const Double_t dCent[] = { 0., 0.95, 4.7, 9.5, 14., 19., 28., 38., 48., 68., 100. };
+const Double_t dCent[] = { 0., 100. };
 const auto nc(sizeof(dCent)/sizeof(Double_t));
 auto dEta = 1.;
 
@@ -95,6 +95,32 @@ void CentTodNdEta(const int s,
 }
 
 //_____________________________________________________________________________
+TH1D* TrkEta(const int s,
+            const int m)
+{
+
+  const TString sf(Form("sim/%s/%s.root", ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get("list_results")));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list: list_results");
+    exit(-2);
+  }
+
+  auto h((TH1D*)list->FindObject("hTrEta"));
+  h->Scale(1./(h->GetEntries()));
+  h->Rebin(20); 
+
+  return h;
+}
+
+//_____________________________________________________________________________
 void IntegralSpectrum(const int s,
 		      const int m,
 		      const int p,
@@ -129,9 +155,42 @@ void IntegralSpectrum(const int s,
     h->GetAxis(1)->SetRange(bfmin, bfmax);
     h1[ft-1] = (TH1D*)h->Projection(0); h1[ft-1]->SetName(("h"+ sp[p] + "_" + dNdEta[ft-1]).Data());
     nP[ft-1] = h1[ft-1]->Integral();
-  } 
-  //auto gI = new TGraph(nc-1, dNdEta, nP);
-  //return gI;
+    //if(p == 0) nP[ft-1]= 2*nP[ft-1];
+  }
+
+  return; 
+}
+
+//_____________________________________________________________________________
+TH1D* PtSpectrum(const int s,
+                 const int m,
+                 const int p)
+{
+  Double_t dFwdTrk[nc];  CentToFwdTrk(s, m, dFwdTrk);
+  Double_t dNdEta[nc-1]; CentTodNdEta(s, m, dNdEta);
+
+  const TString sf(Form("sim/%s/%s.root", ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get("list_results")));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list: list_results");
+    exit(-2);
+  }
+
+  const auto hN((THnSparseD*)list->FindObject("hInclN"));
+  TH1D* h1;
+
+  auto h = (THnSparseD*)hN->Clone(("hN"+ sp[p]).Data());
+  auto bp = (Int_t)h->GetAxis(0)->FindBin(p+1);
+  h->GetAxis(0)->SetRange(bp, bp);
+  h1 = (TH1D*)h->Projection(3); h1->SetName(("hPt"+ sp[p]).Data());
+  return h1;
 }
 
 //_____________________________________________________________________________
@@ -142,18 +201,12 @@ TGraph* RatioToPi(const int s,
   Double_t dNdEta[nc-1]; CentTodNdEta(s, m, dNdEta);
   auto gR = new TGraph();
   
-  //auto gPa(IntegralSpectrum(s, m, p));
-  //auto gPi(IntegralSpectrum(s, m, 5));
-  //Double_t *dPa(gPa->GetY()); 
-  //Double_t *dPi(gPi->GetY());
   Double_t dPa[nc-1];IntegralSpectrum(s, m, p, dPa);
   Double_t dPi[nc-1];IntegralSpectrum(s, m, 5, dPi);
   Double_t dR[nc-1];
   for(Int_t i = 1; i<nc; i++) { 
-        //cout<<dPa[i]<<endl;	  
     dR[i-1] = dPa[i-1]/dPi[i-1]; 
     gR->SetPoint(i-1, dNdEta[i-1], dR[i-1]);
-    cout<<"Ratio = "<<dR[i-1]<<endl; 
   }
   return gR;
 }

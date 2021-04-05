@@ -5,7 +5,7 @@
 
 TCanvas *MakeCanvas(const TString s)
 {
-  auto c(new TCanvas(Form("c%s",s.Data()), s.Data(), 700, 500));
+  auto c(new TCanvas(Form("%s",s.Data()), s.Data(), 700, 500));
   c->Range(0., 0., 1., 1.);
   c->SetFillColor(0);
   c->SetBorderMode(0);
