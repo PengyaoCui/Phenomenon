@@ -70,6 +70,38 @@ void CentToFwdTrk(const int s,
 }		
 
 //_____________________________________________________________________________
+void CentToFwdTrk(const int s,
+                  const int m,
+                  Double_t dCentMin,
+		  Double_t dCentMax,
+		  Double_t cmin,
+		  Double_t cmax)
+{
+  auto h2D = (TH2D*)FwdMidTrk(s, m);
+  auto hf = (TH1D*) h2D->ProjectionY();
+  auto dt = (Double_t)hf->Integral();//number of event
+  Int_t b = hf->GetNbinsX(); auto c =(Double_t)hf->GetBinCenter(b);
+
+  auto dr = (Double_t)(100. - dCentMax)*dt/100.;
+  auto da = (Double_t)(dCentMax - dCentMin)*dt/100.;
+  for(Int_t j = b; j>0; j--){
+    if(hf->Integral(j, b) >= dr){
+    cmax = (Double_t)hf->GetBinCenter(j);
+    b = j;
+    break;
+    }
+  }
+  for(Int_t j = b; j>0; j--){
+    if(hf->Integral(j, b) >= da){
+    cmin = (Double_t)hf->GetBinCenter(j);
+    break;
+    }
+  }
+
+  return;
+}
+
+//_____________________________________________________________________________
 void CentTodNdEta(const int s,
 		  const int m,
 	          Double_t dNdEta[nc-1])
@@ -169,9 +201,6 @@ TH1D* PtSpectrum(const int s,
 		 bool u = kFALSE)
 {
 
-  Double_t dFwdTrk[nc];  CentToFwdTrk(s, m, dFwdTrk);
-  Double_t dNdEta[nc-1]; CentTodNdEta(s, m, dNdEta);
-
   const TString sf(Form("sim/%s/%s.root", ss[s].Data(), sm[m].Data()));
   if (gSystem->AccessPathName(sf)) {
     ::Error("utils::Spectrum", "No file: %s", sf.Data());
@@ -197,6 +226,55 @@ TH1D* PtSpectrum(const int s,
   auto h1 = (TH1D*)h->Projection(3); h1->SetName(("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data());
   h1->Sumw2();
   
+  Double_t bin[]= {0., 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 16., 20.};
+  Int_t nbin=sizeof(bin)/sizeof(Double_t)-1;
+  Double_t jbin[] = {0., 0.6, 1.6, 2.2, 2.8, 3.7, 5, 8, 12., 20.};
+  Int_t njbin=sizeof(jbin)/sizeof(Double_t)-1;
+  TH1D* h2;
+  if(!j && !u) h2 = (TH1D*)h1->Rebin(nbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), bin);
+  if(j || u) h2 = (TH1D*)h1->Rebin(njbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), jbin);
+  return h2;
+}
+//_____________________________________________________________________________
+TH1D* PtSpectrum(const int s,
+                 const int m,
+                 const int p,
+                 const int dCentMin,
+		 const int dCentMax,
+		 bool j = kFALSE,
+                 bool u = kFALSE)
+{
+
+  Double_t dMin ; Double_t dMax;  CentToFwdTrk(s, m, dCentMin, dCentMax, dMin, dMax);
+
+  const TString sf(Form("sim/%s/%s.root", ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get("list_results")));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list: list_results");
+    exit(-2);
+  }
+
+  auto hN((THnSparseD*)list->FindObject("hInclN"));
+  if (j || u) hN = (THnSparseD*)list->FindObject("hStrJetN");
+  auto h = (THnSparseD*)hN->Clone(("hN"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data());
+
+  auto bp = (Int_t)h->GetAxis(0)->FindBin(p+1);
+  h->GetAxis(0)->SetRange(bp, bp);
+  if(j)h->GetAxis(5)->SetRange(1, 1);
+  if(u)h->GetAxis(5)->SetRange(2, 2);
+  auto bfmin = (Int_t)h->GetAxis(1)->FindBin(dMax);//Max cent === min trk
+  auto bfmax = (Int_t)h->GetAxis(1)->FindBin(dMin);
+  h->GetAxis(1)->SetRange(bfmin, bfmax); 
+  auto h1 = (TH1D*)h->Projection(3); h1->SetName(("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data());
+  h1->Sumw2();
+
   Double_t bin[]= {0., 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 16., 20.};
   Int_t nbin=sizeof(bin)/sizeof(Double_t)-1;
   Double_t jbin[] = {0., 0.6, 1.6, 2.2, 2.8, 3.7, 5, 8, 12., 20.};
