@@ -18,8 +18,8 @@ const auto nm(sizeof(sm) / sizeof(TString));
 const TString sp[] = {"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"};
 const auto np(sizeof(sp) / sizeof(TString));
 
-//const Double_t dCent[] = { 0., 0.95, 4.7, 9.5, 14., 19., 28., 38., 48., 68., 100. };
-const Double_t dCent[] = { 0., 100. };
+const Double_t dCent[] = { 0., 0.95, 4.7, 9.5, 14., 19., 28., 38., 48., 68., 100. };
+//const Double_t dCent[] = { 0., 100. };
 const auto nc(sizeof(dCent)/sizeof(Double_t));
 auto dEta = 1.;
 
@@ -164,8 +164,11 @@ void IntegralSpectrum(const int s,
 //_____________________________________________________________________________
 TH1D* PtSpectrum(const int s,
                  const int m,
-                 const int p)
+                 const int p,
+		 bool j = kFALSE,
+		 bool u = kFALSE)
 {
+
   Double_t dFwdTrk[nc];  CentToFwdTrk(s, m, dFwdTrk);
   Double_t dNdEta[nc-1]; CentTodNdEta(s, m, dNdEta);
 
@@ -183,14 +186,25 @@ TH1D* PtSpectrum(const int s,
     exit(-2);
   }
 
-  const auto hN((THnSparseD*)list->FindObject("hInclN"));
-  TH1D* h1;
-
-  auto h = (THnSparseD*)hN->Clone(("hN"+ sp[p]).Data());
+  auto hN((THnSparseD*)list->FindObject("hInclN"));
+  if (j || u) hN = (THnSparseD*)list->FindObject("hStrJetN");
+  auto h = (THnSparseD*)hN->Clone(("hN"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data());
+  
   auto bp = (Int_t)h->GetAxis(0)->FindBin(p+1);
   h->GetAxis(0)->SetRange(bp, bp);
-  h1 = (TH1D*)h->Projection(3); h1->SetName(("hPt"+ sp[p]).Data());
-  return h1;
+  if(j)h->GetAxis(5)->SetRange(1, 1); 
+  if(u)h->GetAxis(5)->SetRange(2, 2); 
+  auto h1 = (TH1D*)h->Projection(3); h1->SetName(("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data());
+  h1->Sumw2();
+  
+  Double_t bin[]= {0., 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 16., 20.};
+  Int_t nbin=sizeof(bin)/sizeof(Double_t)-1;
+  Double_t jbin[] = {0., 0.6, 1.6, 2.2, 2.8, 3.7, 5, 8, 12., 20.};
+  Int_t njbin=sizeof(jbin)/sizeof(Double_t)-1;
+  TH1D* h2;
+  if(!j && !u) h2 = (TH1D*)h1->Rebin(nbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), bin);
+  if(j || u) h2 = (TH1D*)h1->Rebin(njbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), jbin);
+  return h2;
 }
 
 //_____________________________________________________________________________
