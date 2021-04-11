@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 //=============================================================================
   pythia.readString("Beams:idA = 2212");
   pythia.readString("Beams:idB = 2212");
-  pythia.readString("Main:numberOfEvents = 100001");
+  pythia.readString("Main:numberOfEvents = 1001");
   pythia.readString("Beams:eCM = 7000.");
   if(bsQCD) pythia.readString("SoftQCD:all = on");
   if(bhQCD){ pythia.readString("HardQCD:all = on"); pythia.readString("PhaseSpace:pTHatMin = 20."); }
@@ -185,9 +185,9 @@ int main(int argc, char *argv[])
 
 //=============================================================================
   const auto nAxis(6);
-  Int_t nBin[nAxis-1]    = { 8 ,   2000,   2000, 200, 1000};  // 0: particle type, 
+  Int_t nBin[nAxis-1]    = { 8 ,   1000,   1000, 200, 500};  // 0: particle type, 
   Double_t nMin[nAxis-1] = {0.5,   -0.5,   -0.5,  0.,  -5.};  //    ==1, Kshort     
-  Double_t nMax[nAxis-1] = {8.5, 1999.5, 1999.5, 20.,  5. };  //    ==2, Lambda    
+  Double_t nMax[nAxis-1] = {8.5, 1999.5, 999.5, 20.,  5. };  //    ==2, Lambda    
                                                               //    ==3, Xi        
                                                               //    ==4, Omega    
                                                               //    ==5, Phi    
@@ -206,9 +206,9 @@ int main(int argc, char *argv[])
   list_results->Add(hInclN);
 
 //=============================================================================
-  Int_t nJBin[nAxis]    = { 8 ,   2000,   2000, 200, 1000, 3 }; // 0: particle type,
+  Int_t nJBin[nAxis]    = { 8 ,   1000,   1000, 200, 500, 3 }; // 0: particle type,
   Double_t nJMin[nAxis] = {0.5,   -0.5,   -0.5,  0.,  -5., 0.5}; //   ==1, Kshort
-  Double_t nJMax[nAxis] = {8.5, 1999.5, 1999.5, 20.,  5. , 3.5}; //   ==2, Lambda
+  Double_t nJMax[nAxis] = {8.5, 1999.5, 999.5, 20.,  5. , 3.5}; //   ==2, Lambda
                                                                  //    ==3, Xi
                                                                  //    ==4, Omega
                                                                  //    ==5, Phi

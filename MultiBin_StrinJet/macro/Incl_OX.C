@@ -50,7 +50,7 @@ void Incl_OX(){
   tex->SetTextSizePixels(24);
   tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
   tex->DrawLatex(0.16, 0.8, "sQCD");
-  tex->DrawLatex(0.16, 0.7, "Inclusive #Omega/#Xi");
+  tex->DrawLatex(0.16, 0.7, Form("Inclusive %s", stny.Data()));
 
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
