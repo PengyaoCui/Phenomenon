@@ -1,7 +1,7 @@
 #include "inc/AnaSinJ.h"
 
 Int_t s = 1;// s: { "pp13TeV", "pp7TeV" };
-Int_t m = 0;;// m: { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", ... see inc/.h };
+Int_t m = 2;;// m: { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", ... see inc/.h };
 Int_t c[] = {0, 10, 40, 100}; Int_t nC = sizeof(c)/sizeof(Int_t);
 
 //_____________________________________________________________________________
@@ -13,6 +13,7 @@ void AnaSinJ(){
 //=============================================================================
   auto levent(new TList());
   auto hEvent(new TH1D("hEvent", "", 10, 0.5, 10.5)); hEvent->SetBinContent(1, nEvent(s,m));levent->Add(hEvent);
+  auto hFwdTrk((TH1D*)FwdTrk(s, m));levent->Add(hFwdTrk);
   auto hTrkEta((TH1D*)TrkEta(s, m)); hTrkEta->SetName("hTrkEta"); levent->Add(hTrkEta);
   auto hdNfwddEta((TH1D*)dNfwddEta(s, m)); hdNfwddEta->SetName("hdNfwddEta"); levent->Add(hdNfwddEta);
   
@@ -39,11 +40,10 @@ void AnaSinJ(){
   Double_t dFwdTrk[nc];  CentToFwdTrk(s, m, dFwdTrk);
   Double_t dNdEta[nc-1]; CentTodNdEta(s, m, dNdEta);
 
-  //_____________________________________________________________________________
   Double_t df[nC]; for(Int_t i = 0; i<nC-1; i++) CentToFwdTrk(s, m, c[i], c[i+1], df[i], df[i+1]);//nfwdtrk larger->small
 
-//=============================================================================
 
+//_____________________________________________________________________________
   auto chain((TChain*)CreateChain(s, m));
                                          
  
@@ -63,11 +63,12 @@ void AnaSinJ(){
   chain->SetBranchAddress("Eta",&Eta);//Eta
   chain->SetBranchAddress("Acceptence",&Accep);//1=in jet cone; 2=PC; 3=OC; 10=wo accepted jet in event
  
-//=============================================================================
+//_____________________________________________________________________________
   for(int p=0;p<chain->GetEntries();p++) {
     if(p%1000000==0) cout<<"Analysised particles ~ "<<p/1000000<< "M"<<endl;
     chain->GetEntry(p);
   
+//=============================================================================
     //np 1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton
     for(Int_t i = 0; i<np; i++) if(Par == i+1 ){
       for(Int_t j = 0; j<nc-1; j++) if (Fwdtrk<dFwdTrk[j] && Fwdtrk>dFwdTrk[j+1]){
@@ -86,17 +87,12 @@ void AnaSinJ(){
     }
     
   
-  
-  
-  
-  
-  
-  
-  
-  
+//=============================================================================
   
   
   }  
+
+  
 //_____________________________________________________________________________
   levent->Print();
   for (unsigned int i=0; i<np; ++i) l[i]->Print();
@@ -108,6 +104,4 @@ void AnaSinJ(){
   f->Close();
   return;
 }
-
-//_____________________________________________________________________________
 

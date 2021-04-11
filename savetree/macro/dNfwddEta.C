@@ -1,33 +1,34 @@
 #include "inc/PyJetUtils.h"
 
-void TrkEta(){
+void dNfwddEta(){
 
   TH1D* h[3];
-  h[0] = TrkEta(1, 0);    //Para1: "pp13TeV", "pp7TeV"
-  h[1] = TrkEta(1, 1);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
-  h[2] = TrkEta(1, 2);
+  h[0] = dNfwddEta(1, 0);    //Para1: "pp13TeV", "pp7TeV"
+  h[1] = dNfwddEta(1, 1);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
+  h[2] = dNfwddEta(1, 2);
 
   TH1D* hR[2];
   hR[0]=(TH1D*)h[0]->Clone("hR0");hR[0]->Divide(h[2]);
   hR[1]=(TH1D*)h[1]->Clone("hR1");hR[1]->Divide(h[2]);
 //=============================================================================
-  auto dflx(-5.), dfux(5.);
-  auto dfly(2.), dfuy(7.);
+  auto dflx(0.), dfux(210.);
+  auto dfly(1e-7), dfuy(2e2);
   
   auto dlsx(0.05), dlsy(0.06);
   auto dtsx(0.05), dtsy(0.06);
   auto dtox(1.30), dtoy(0.80);
   
-  TString stnx("#eta_{trk}");
-  TString stny("#frac{d#it{N}}{#it{N}_{ev}d#eta}");
+  TString stnx("d#it{N}_{fwd}/d#eta");
+  TString stny("Probability density");
   
   SetStyle(kTRUE);
   gStyle->SetErrorX(0);
   
-  auto can(MakeCanvas("TrkEta"));
+  auto can(MakeCanvas("dNfwddEta"));
   auto padT = MakePadT("padT"); can->cd();
   auto padB = MakePadB("padB"); can->cd();
   padT->cd(); 
+  padT->SetLogy();
   auto hfm(padT->DrawFrame(dflx, dfly, dfux, dfuy));
   SetupFrame(hfm, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);
   hfm->GetXaxis()->SetNdivisions(505);
@@ -51,7 +52,7 @@ void TrkEta(){
 
   can->cd();
   padB->cd(); 
-  dfly = 0.95, dfuy = 1.01;
+  dfly = 0.85, dfuy = 1.6;
   
   dlsx = 0.11; dlsy = 0.11;
   dtsx = 0.11; dtsy = 0.11;

@@ -70,6 +70,15 @@ TH2D* FwdMidTrk(const Int_t s,
   return h;
 }
 
+//=============================================================================
+TH1D* FwdTrk(const Int_t s,
+             const Int_t m){
+
+    auto h((TH1D*)FwdMidTrk(s, m)->ProjectionY());
+    return h;
+}
+
+
 //_____________________________________________________________________________
 TH1D* TrkEta(const int s,
              const int m)
