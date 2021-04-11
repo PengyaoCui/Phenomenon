@@ -4,10 +4,6 @@ Int_t s = 1;// s: { "pp13TeV", "pp7TeV" };
 Int_t m = 0;;// m: { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", ... see inc/.h };
 Int_t c[] = {0, 10, 40, 100}; Int_t nC = sizeof(c)/sizeof(Int_t);
 
-
-
-
-
 //_____________________________________________________________________________
 
 void AnaSinJ(){
@@ -43,7 +39,6 @@ void AnaSinJ(){
   Double_t dFwdTrk[nc];  CentToFwdTrk(s, m, dFwdTrk);
   Double_t dNdEta[nc-1]; CentTodNdEta(s, m, dNdEta);
 
-Int_t c[] = {0, 10, 40, 100}; Int_t nC = sizeof(c)/sizeof(Int_t);
   //_____________________________________________________________________________
   Double_t df[nC]; for(Int_t i = 0; i<nC-1; i++) CentToFwdTrk(s, m, c[i], c[i+1], df[i], df[i+1]);//nfwdtrk larger->small
 
