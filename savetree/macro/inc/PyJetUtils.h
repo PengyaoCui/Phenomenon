@@ -85,6 +85,7 @@ void dNdEtaVal(const int s,
   }
 }
 
+//=============================================================================
 void IntegralVal(const int s,
                  const int m,
                  const int p,
@@ -128,22 +129,20 @@ TGraph* InteSpectrum(const int s,
   Double_t dNdEta[nc-1];
   Double_t dPa[nc-1]; IntegralVal(s, m, p, dNdEta, dPa, j, u);
   
-  for(int i = 0; i<nc-1; i++){cout<<dPa[i]<<endl; }
+  //for(int i = 0; i<nc-1; i++){cout<<dPa[i]<<endl; }
  
   auto g = new TGraph();
-  for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]);
+  for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(0.75*2.*TMath::TwoPi()));
 
   return g;
 }
 
-
-#if 0
 //=============================================================================
-TGraph* RatiotoPi(const int s,
-                      const int m,
-                      const int p,
-		      bool j = kFALSE,
-		      bool u = kFALSE)
+TGraph* RatioToPi(const int s,
+                  const int m,
+                  const int p,
+		  bool j = kFALSE,
+		  bool u = kFALSE)
 {
  
   const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
@@ -160,30 +159,27 @@ TGraph* RatiotoPi(const int s,
     exit(-2);
   }
 
-  auto h((TH1D*)list->FindObject(Form("Integral_%s_In", sp[p].Data())));
-  if(j) h=(TH1D*)list->FindObject(Form("Integral_%s_JC", sp[p].Data()));
-  if(u) h=(TH1D*)list->FindObject(Form("Integral_%s_PC", sp[p].Data()));
-
   Double_t dNdEta[nc-1];
-  Double_t dPa[nc-1];
-  Double_t dPi[nc-1];
-  dNdEtaVal(s, m, h, dNdEta);
-
-  for(int i = 0; i<nc-1; i++){dPa[i] = h->GetBinContent(h->FindBin(dNdEta[j]));}
-
-
-
-
-  Double_t dPa[nc-1];IntegralSpectrum(s, m, p, dPa);
-  Double_t dPi[nc-1];IntegralSpectrum(s, m, 5, dPi);
+  Double_t dPa[nc-1]; IntegralVal(s, m, p, dNdEta, dPa, j, u);
+  Double_t dPi[nc-1]; IntegralVal(s, m, 5, dNdEta, dPi, j, u);
+  for(int i = 0; i< nc-1; i++) cout<<dPa[i]/dPi[i]<<endl;
+  //if(j){
+  //  Double_t dPaU[nc-1]; IntegralVal(s, m, p, dNdEta, dPaU, kFALSE, kTRUE);
+  //  Double_t dPiU[nc-1]; IntegralVal(s, m, 5, dNdEta, dPiU, kFALSE, kTRUE);
+  //  for(int i = 0; i< nc-1; i++){
+  //    dPa[i] = dPa[i] - 0.25*dPaU[i];
+  //    dPi[i] = dPi[i] - 0.25*dPiU[i];
+  //  } 
+  //}
   Double_t dR[nc-1];
+  TGraph *gR = new TGraph();
+  
   for(Int_t i = 1; i<nc; i++) { 
     dR[i-1] = dPa[i-1]/dPi[i-1]; 
     gR->SetPoint(i-1, dNdEta[i-1], dR[i-1]);
   }
   return gR;
 }
-#endif
 //_____________________________________________________________________________
 TGraphErrors* GetDataE(TString sf = "data/HEPData.root",
 		      int t = 36, 
@@ -234,3 +230,39 @@ TH1D* GetDataC(TString sf = "data/HEPData.root",
 }
 
 //_____________________________________________________________________________
+TH1D* PtSpectrum(const int s,
+                 const int m,
+                 const int p,
+                 bool j = kFALSE,
+                 bool u = kFALSE)
+{
+
+  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get(sp[p])));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list: list_results");
+    exit(-2);
+  }
+
+  auto h((TH1D*)list->FindObject(Form("%s_In", sp[p].Data())));
+  if(j) h=(TH1D*)list->FindObject(Form("%s_JC", sp[p].Data()));
+  if(u) h=(TH1D*)list->FindObject(Form("%s_PC", sp[p].Data()));
+  
+  Double_t bin[]= {0., 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 16., 20.};
+  Int_t nbin=sizeof(bin)/sizeof(Double_t)-1;
+  Double_t jbin[] = {0., 0.6, 1.6, 2.2, 2.8, 3.7, 5, 8, 12., 20.};
+  Int_t njbin=sizeof(jbin)/sizeof(Double_t)-1;
+  TH1D* h2;
+  if(!j && !u) h2 = (TH1D*)h->Rebin(nbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), bin);
+  if(j || u) h2 = (TH1D*)h->Rebin(njbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), jbin);
+  h2->Sumw2();
+  return h2;
+}
+

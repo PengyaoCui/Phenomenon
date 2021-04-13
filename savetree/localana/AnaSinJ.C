@@ -13,12 +13,11 @@ void AnaSinJ(){
 //=============================================================================
   auto levent(new TList());
   auto hEvent(new TH1D("hEvent", "", 10, 0.5, 10.5)); hEvent->SetBinContent(1, nEvent(s,m));levent->Add(hEvent);
-  auto hFwdTrk((TH1D*)FwdTrk(s, m));levent->Add(hFwdTrk);
+  auto hFwdTrk((TH1D*)FwdTrk(s, m));hFwdTrk->SetName("hFwdTrk");levent->Add(hFwdTrk);
   auto hTrkEta((TH1D*)TrkEta(s, m)); hTrkEta->SetName("hTrkEta"); levent->Add(hTrkEta);
   auto hdNfwddEta((TH1D*)dNfwddEta(s, m)); hdNfwddEta->SetName("hdNfwddEta"); levent->Add(hdNfwddEta);
-  
-  CallSumw2(levent);
 
+  CallSumw2(levent);
 //=============================================================================
   TList *l[np];
   for (Int_t i=0; i<np; i++) {
@@ -72,12 +71,14 @@ void AnaSinJ(){
     //np 1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton
     for(Int_t i = 0; i<np; i++) if(Par == i+1 ){
       for(Int_t j = 0; j<nc-1; j++) if (Fwdtrk<dFwdTrk[j] && Fwdtrk>dFwdTrk[j+1]){
-        (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_In", sp[i].Data()))))->Fill(dNdEta[j]);
+	auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwdTrk[j+1]), hFwdTrk->FindBin(dFwdTrk[j]));
+        (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_In", sp[i].Data()))))->Fill(dNdEta[j], 1./dEvent);
         if(Accep == 1) (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_JC", sp[i].Data()))))->Fill(dNdEta[j]);
         if(Accep == 2) (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_PC", sp[i].Data()))))->Fill(dNdEta[j]);
       }
       for(Int_t k = 0; k<nC-1; k++) if(Fwdtrk<df[k] && Fwdtrk>df[k+1]){
-        (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt);
+        auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(df[k+1]), hFwdTrk->FindBin(df[k]));
+        (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt, 1./dEvent);
         if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt);
         if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt);
       }
@@ -90,7 +91,7 @@ void AnaSinJ(){
 //=============================================================================
   
   
-  }  
+  }
 
   
 //_____________________________________________________________________________
