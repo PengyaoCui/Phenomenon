@@ -2,21 +2,25 @@
 
 void Incl_LK(){
 //=============================================================================
+  auto hD(GetDataC("data/HEPData-ins1797443-v1-root.root", 43)); 
+  auto gD = GetDataE("data/HEPData-ins1797443-v1-root.root", 43); 
+//=============================================================================
 
-  TH1D* h1[3]; TH1D*h2[3]; TH1D* hR[3];
+  TH1D* h1[3]; TH1D*h2[3]; TH1D* hR[3]; TGraph* g[3];
   for(int i=0; i<3; i++)h1[i] = PtSpectrum(1, i, 0, kFALSE, kFALSE); //Para1: "pp13TeV", "pp7TeV" 
   for(int i=0; i<3; i++)h2[i] = PtSpectrum(1, i, 1, kFALSE, kFALSE); //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
                                                                       //Para3:"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"
   for(int i=0; i<3; i++){                                             //Para4: jet cone: kTRUE, kFALSE 
     hR[i] = (TH1D*)h2[i]->Clone(Form("hR_%d", i));                    //Para5: PC: kTRUE, kFALSE 
     hR[i]->Divide(h1[i]); 
+    g[i] = new TGraph(hR[i]);
   }
 
 
   
 //=============================================================================
-  auto dflx(0.), dfux(20.);
-  auto dfly(0.), dfuy(1.3);
+  auto dflx(0.), dfux(12.);
+  auto dfly(0.), dfuy(1.1);
   
   auto dlsx(0.05), dlsy(0.05);
   auto dtsx(0.05), dtsy(0.05);
@@ -33,16 +37,22 @@ void Incl_LK(){
   auto hfm(can->DrawFrame(dflx, dfly, dfux, dfuy));
   SetupFrame(hfm, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);
   hfm->GetXaxis()->SetNdivisions(510);
-  hfm->GetYaxis()->SetNdivisions(510);
+  hfm->GetYaxis()->SetNdivisions(505);
 
-  DrawHisto(hR[0], wcl[0], wmk[0], "same");
-  DrawHisto(hR[1], wcl[1], wmk[1], "same");
-  DrawHisto(hR[2], wcl[2], wmk[2], "same");
+  g[0]->SetLineStyle(0);
+  g[1]->SetLineStyle(1);
+  g[2]->SetLineStyle(2);
+  DrawHisto(hD, wcl[0], wmk[0], "same");
+  DrawGraph(gD, wcl[0], "E2");
+  DrawGraph(g[0], wcl[0], "C");
+  DrawGraph(g[1], wcl[1], "C");
+  DrawGraph(g[2], wcl[2], "C");
 
   auto leg(new TLegend(0.65, 0.70, 0.9, 0.92)); SetupLegend(leg);
-  leg->AddEntry(hR[0], "CR",  "P")->SetTextSizePixels(24);
-  leg->AddEntry(hR[1], "Rope",  "P")->SetTextSizePixels(24);
-  leg->AddEntry(hR[2], "CR+Rope",  "P")->SetTextSizePixels(24);
+  leg->AddEntry(hD, "Data(13 TeV)",  "P")->SetTextSizePixels(24);
+  leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
 
   auto tex(new TLatex());

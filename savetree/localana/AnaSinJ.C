@@ -1,7 +1,7 @@
 #include "inc/AnaSinJ.h"
 
 Int_t s = 1;// s: { "pp13TeV", "pp7TeV" };
-Int_t m = 2;;// m: { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", ... see inc/.h };
+Int_t m = 1;;// m: { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", ... see inc/.h };
 Int_t c[] = {0, 10, 40, 100}; Int_t nC = sizeof(c)/sizeof(Int_t);
 
 //_____________________________________________________________________________

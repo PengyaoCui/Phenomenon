@@ -65,7 +65,7 @@ TH1D* dNfwddEta(const int s,
   }
 
   auto h((TH1D*)list->FindObject("hdNfwddEta"));
-  h->Rebin(10);
+  h->Rebin(5);
 
   return h;
 }
@@ -255,7 +255,7 @@ TH1D* PtSpectrum(const int s,
   if(j) h=(TH1D*)list->FindObject(Form("%s_JC", sp[p].Data()));
   if(u) h=(TH1D*)list->FindObject(Form("%s_PC", sp[p].Data()));
   
-  Double_t bin[]= {0., 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 16., 20.};
+  Double_t bin[]= {0., 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 16.,  24};
   Int_t nbin=sizeof(bin)/sizeof(Double_t)-1;
   Double_t jbin[] = {0., 0.6, 1.6, 2.2, 2.8, 3.7, 5, 8, 12., 20.};
   Int_t njbin=sizeof(jbin)/sizeof(Double_t)-1;

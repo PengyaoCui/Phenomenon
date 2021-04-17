@@ -51,7 +51,7 @@ void TrkEta(){
 
   can->cd();
   padB->cd(); 
-  dfly = 0.95, dfuy = 1.01;
+  dfly = 0.85, dfuy = 1.21;
   
   dlsx = 0.11; dlsy = 0.11;
   dtsx = 0.11; dtsy = 0.11;
@@ -66,6 +66,12 @@ void TrkEta(){
   
   DrawHisto(hR[0], wcl[0], wmk[0], "same");
   DrawHisto(hR[1], wcl[1], wmk[1], "same");
+
+  TLine* l = new TLine(dflx, 1., dfux, 1.);
+  l->SetLineColor(kRed);
+  l->SetLineWidth(2);
+  l->SetLineStyle(2);
+  l->Draw("same");
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));

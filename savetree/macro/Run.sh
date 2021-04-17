@@ -4,6 +4,7 @@ echo ==========================================
 echo run TrkEta distribution
 
 root -l -b -q TrkEta.C
+root -l -b -q InteSpect.C 
 
 #echo ==========================================
 #echo run Integral Yield to Pi ratio

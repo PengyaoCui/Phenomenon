@@ -3,7 +3,7 @@ Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: StrinJet.aux
 The style file: etc/utphys.bst
 I couldn't open database file StrinJet.bib
----line 20 of file StrinJet.aux
+---line 22 of file StrinJet.aux
  : \bibdata{StrinJet
  :                  }
 I'm skipping whatever remains of this command

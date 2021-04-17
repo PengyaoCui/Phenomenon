@@ -2,12 +2,11 @@
 
 void InteRatio_JE(){
 //=============================================================================
-  for(int i = 3; i< 4; i++){
+  for(int i = 1; i< 3; i++){
     auto hD(GetDataC("data/HEPData.root", 36+i)); 
     auto gD = GetDataE("data/HEPData.root", 36+i); 
     TGraph* g[3];
     g[0] = RatioToPi(1, 0, i, kTRUE, kFALSE);    //Para1: "pp13TeV", "pp7TeV" 
-    cout<<"=============================="<<endl;
     g[1] = RatioToPi(1, 1, i, kTRUE, kFALSE);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
     g[2] = RatioToPi(1, 2, i, kTRUE, kFALSE);    //Para3:"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"
 
