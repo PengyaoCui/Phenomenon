@@ -163,19 +163,63 @@ TGraph* RatioToPi(const int s,
   Double_t dPa[nc-1]; IntegralVal(s, m, p, dNdEta, dPa, j, u);
   Double_t dPi[nc-1]; IntegralVal(s, m, 5, dNdEta, dPi, j, u);
   for(int i = 0; i< nc-1; i++) cout<<dPa[i]/dPi[i]<<endl;
-  //if(j){
-  //  Double_t dPaU[nc-1]; IntegralVal(s, m, p, dNdEta, dPaU, kFALSE, kTRUE);
-  //  Double_t dPiU[nc-1]; IntegralVal(s, m, 5, dNdEta, dPiU, kFALSE, kTRUE);
-  //  for(int i = 0; i< nc-1; i++){
-  //    dPa[i] = dPa[i] - 0.25*dPaU[i];
-  //    dPi[i] = dPi[i] - 0.25*dPiU[i];
-  //  } 
-  //}
+  if(j){
+    Double_t dPaU[nc-1]; IntegralVal(s, m, p, dNdEta, dPaU, kFALSE, kTRUE);
+    Double_t dPiU[nc-1]; IntegralVal(s, m, 5, dNdEta, dPiU, kFALSE, kTRUE);
+    for(int i = 0; i< nc-1; i++){
+      dPa[i] = dPa[i] - 0.25*dPaU[i];
+      dPi[i] = dPi[i] - 0.25*dPiU[i];
+    } 
+  }
   Double_t dR[nc-1];
   TGraph *gR = new TGraph();
   
   for(Int_t i = 1; i<nc; i++) { 
     dR[i-1] = dPa[i-1]/dPi[i-1]; 
+    gR->SetPoint(i-1, dNdEta[i-1], dR[i-1]);
+  }
+  return gR;
+}
+//=============================================================================
+TGraph* InteRatio(const int s,
+                  const int m,
+                  const int p,
+		  const int p0,
+                  bool j = kFALSE,
+                  bool u = kFALSE)
+{
+
+  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get(sp[p])));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list: list_results");
+    exit(-2);
+  }
+
+  Double_t dNdEta[nc-1];
+  Double_t dP[nc-1];  IntegralVal(s, m, p,  dNdEta, dP,  j, u);
+  Double_t dP0[nc-1]; IntegralVal(s, m, p0, dNdEta, dP0, j, u);
+  for(int i = 0; i< nc-1; i++) cout<<dP[i]/dP0[i]<<endl;
+  if(j){
+    Double_t dPaU[nc-1]; IntegralVal(s, m, p, dNdEta, dPaU, kFALSE, kTRUE);
+    Double_t dPiU[nc-1]; IntegralVal(s, m, p0, dNdEta, dPiU, kFALSE, kTRUE);
+    for(int i = 0; i< nc-1; i++){
+      dP[i]  = dP[i] - 0.25*dPaU[i];
+      dP0[i] = dP0[i] - 0.25*dPiU[i];
+    }
+  }
+  Double_t dR[nc-1];
+  TGraph *gR = new TGraph();
+
+  for(Int_t i = 1; i<nc; i++) {
+    dR[i-1] = dP[i-1]/dP0[i-1];
     gR->SetPoint(i-1, dNdEta[i-1], dR[i-1]);
   }
   return gR;

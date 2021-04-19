@@ -1,4 +1,5 @@
 #include "inc/AnaSinJ.h"
+#include <stdio.h>
 
 Int_t s = 1;// s: { "pp13TeV", "pp7TeV" };
 Int_t m = 1;;// m: { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", ... see inc/.h };
@@ -39,7 +40,21 @@ void AnaSinJ(){
   Double_t dFwdTrk[nc];  CentToFwdTrk(s, m, dFwdTrk);
   Double_t dNdEta[nc-1]; CentTodNdEta(s, m, dNdEta);
 
-  Double_t df[nC]; for(Int_t i = 0; i<nC-1; i++) CentToFwdTrk(s, m, c[i], c[i+1], df[i], df[i+1]);//nfwdtrk larger->small
+  ofstream OutFile;
+  OutFile.open(Form("CenttodNdEta_%s_%s.txt", ss[s].Data(), sm[m].Data()));
+
+  for(Int_t i = 0; i< nc-1; i++){
+    OutFile<<left<<setw(15)<<Form("%.1f--%.1f", dCent[i], dCent[i+1])<<Form("<dNdEta> = %.1f", dNdEta[i]);
+    OutFile<<endl;
+  }
+  OutFile<<left<<"================================ "<<endl;
+
+  Double_t df[nC]; for(Int_t i = 0; i<nC-1; i++) {  CentToFwdTrk(s, m, c[i], c[i+1], df[i], df[i+1]);}//nfwdtrk larger->small
+  Double_t dm[nC-1]; for(Int_t i = 0; i<nC-1; i++){
+    CentTodNdEta(s, m, c[i], c[i+1], dm[i]);
+    OutFile<<left<<setw(15)<<Form("%d--%d", c[i], c[i+1])<<Form("<dNdEta> = %.1f", dm[i]);
+    OutFile<<endl;
+  }//dNdEta larger->small
 
 
 //_____________________________________________________________________________
@@ -92,7 +107,6 @@ void AnaSinJ(){
   
   
   }
-
   
 //_____________________________________________________________________________
   levent->Print();

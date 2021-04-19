@@ -52,8 +52,7 @@ void InteSpect(){
     tex->SetNDC();
     tex->SetTextSizePixels(24);
     tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-    tex->DrawLatex(0.16, 0.8, "2<|#eta_{fwd}|<5");
-    tex->DrawLatex(0.16, 0.7, Form("Integrated yield of %s", sp[p].Data()));
+    tex->DrawLatex(0.16, 0.8, Form("Inclusive integrated yield of %s", sp[p].Data()));
 
     can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
     can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));

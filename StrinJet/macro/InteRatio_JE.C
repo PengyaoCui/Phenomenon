@@ -2,7 +2,7 @@
 
 void InteRatio_JE(){
 //=============================================================================
-  for(int i = 1; i< 3; i++){
+  for(int i = 0; i< 4; i++){
     auto hD(GetDataC("data/HEPData.root", 36+i)); 
     auto gD = GetDataE("data/HEPData.root", 36+i); 
     TGraph* g[3];
@@ -42,8 +42,8 @@ void InteRatio_JE(){
     DrawGraph(g[1], wcl[1], "C");
     DrawGraph(g[2], wcl[2], "C");
 
-    auto leg(new TLegend(0.6, 0.60, 0.9, 0.92)); SetupLegend(leg);
-    leg->AddEntry(hD, "Data(7 TeV)",  "P")->SetTextSizePixels(24);
+    auto leg(new TLegend(0.55, 0.60, 0.9, 0.92)); SetupLegend(leg);
+    leg->AddEntry(hD, "Data(inclusive 7 TeV)",  "P")->SetTextSizePixels(24);
     leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
@@ -53,8 +53,7 @@ void InteRatio_JE(){
     tex->SetNDC();
     tex->SetTextSizePixels(24);
     tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-    tex->DrawLatex(0.16, 0.8, "2<|#eta_{fwd}|<5");
-    tex->DrawLatex(0.16, 0.7, "Particle in jet (PYTHIA)");
+    tex->DrawLatex(0.16, 0.8, "Particle in jet (PYTHIA)");
 
 
     can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
