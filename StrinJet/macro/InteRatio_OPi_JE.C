@@ -1,14 +1,13 @@
 #include "inc/PyJetUtils.h"
 
-void InteRatio_PC(){
+void InteRatio_OPi_JE(){
 //=============================================================================
-  for(int i = 0; i< 3; i++){
-    auto hD(GetDataC("data/HEPData.root", 36+i)); 
-    auto gD = GetDataE("data/HEPData.root", 36+i); 
+    auto hD(GetDataC("data/HEPData_1606.07424v2.root", 39)); 
+    auto gD = GetDataE("data/HEPData_1606.07424v2.root", 39); 
     TGraph* g[3];
-    g[0] = RatioToPi(1, 0, i, kFALSE, kTRUE);    //Para1: "pp13TeV", "pp7TeV" 
-    g[1] = RatioToPi(1, 1, i, kFALSE, kTRUE);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
-    g[2] = RatioToPi(1, 2, i, kFALSE, kTRUE);    //Para3:"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"
+    g[0] = RatioToPi(1, 0, 3, kTRUE, kFALSE);    //Para1: "pp13TeV", "pp7TeV" 
+    g[1] = RatioToPi(1, 1, 3, kTRUE, kFALSE);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
+    g[2] = RatioToPi(1, 2, 3, kTRUE, kFALSE);    //Para3:"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"
 
 //  =============================================================================
     auto y = (Double_t)hD->GetMaximum();
@@ -20,13 +19,12 @@ void InteRatio_PC(){
     auto dtox(1.30), dtoy(1.10);
     
     TString stnx("<d#it{N}_{ch}/d#eta>_{|#eta|<0.5}");
-    TString stny("K^{0}_{S}/#pi");
-    if(i!=0) stny = Form("#%s/#pi", sp[i].Data()); 
+    TString stny("#Omega/#pi");
     
     SetStyle(kTRUE);
     gStyle->SetErrorX(0);
     
-    auto can(MakeCanvas((sp[i]+"_PiRatio_PC").Data()));
+    auto can(MakeCanvas("Omega_PiRatio_JE"));
     //can->SetLogy();
     auto hfm(can->DrawFrame(dflx, dfly, dfux, dfuy));
     SetupFrame(hfm, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);
@@ -42,8 +40,8 @@ void InteRatio_PC(){
     DrawGraph(g[1], wcl[1], "C");
     DrawGraph(g[2], wcl[2], "C");
 
-    auto leg(new TLegend(0.6, 0.60, 0.9, 0.92)); SetupLegend(leg);
-    leg->AddEntry(hD, "Data(7 TeV)",  "P")->SetTextSizePixels(24);
+    auto leg(new TLegend(0.55, 0.60, 0.9, 0.92)); SetupLegend(leg);
+    leg->AddEntry(hD, "Data(inclusive 7 TeV)",  "P")->SetTextSizePixels(24);
     leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
@@ -53,15 +51,13 @@ void InteRatio_PC(){
     tex->SetNDC();
     tex->SetTextSizePixels(24);
     tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-    tex->DrawLatex(0.16, 0.8, "2<|#eta_{fwd}|<5");
-    tex->DrawLatex(0.16, 0.7, "Particle in jet (PYTHIA)");
+    tex->DrawLatex(0.16, 0.8, "Particle in jet (PYTHIA)");
 
 
     can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
     can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));
     can->SaveAs(Form("./figure/png/%s.png", can->GetName()));
     CanvasEnd(can);
-  }
   return;
 }
 

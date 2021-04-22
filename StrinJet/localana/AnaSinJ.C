@@ -1,13 +1,13 @@
 #include "inc/AnaSinJ.h"
 #include <stdio.h>
 
-Int_t s = 1;// s: { "pp13TeV", "pp7TeV" };
-Int_t m = 1;;// m: { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", ... see inc/.h };
+//Int_t s = 1;// s: { "pp13TeV", "pp7TeV" };
+//Int_t m = 2;;// m: { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", ... see inc/.h };
 Int_t c[] = {0, 10, 40, 100}; Int_t nC = sizeof(c)/sizeof(Int_t);
 
 //_____________________________________________________________________________
 
-void AnaSinJ(){
+void AnaSinJ(Int_t s = 1, Int_t m = 0){
 
   TFile* f(TFile::Open(("Results_" + ss[s] + "_" + sm[m] + ".root").Data() , "recreate"));
 
@@ -34,6 +34,12 @@ void AnaSinJ(){
       list->Add(new TH1D(Form("%s_JC_%d%d", sp[i].Data(), c[j], c[j+1]), "", 500, 0., 25.));
       list->Add(new TH1D(Form("%s_PC_%d%d", sp[i].Data(), c[j], c[j+1]), "", 500, 0., 25.));
     }
+    for(Int_t j=0; j<nc-1; j++){
+      list->Add(new TH1D(Form("%s_In_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 500, 0., 25.));
+      list->Add(new TH1D(Form("%s_JC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 500, 0., 25.));
+      list->Add(new TH1D(Form("%s_PC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 500, 0., 25.));
+    }
+    CallSumw2(l[i]);
   }
 
 //_____________________________________________________________________________
@@ -90,6 +96,10 @@ void AnaSinJ(){
         (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_In", sp[i].Data()))))->Fill(dNdEta[j], 1./dEvent);
         if(Accep == 1) (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_JC", sp[i].Data()))))->Fill(dNdEta[j]);
         if(Accep == 2) (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_PC", sp[i].Data()))))->Fill(dNdEta[j]);
+	
+	(static_cast<TH1D*>(l[i]->FindObject(Form("%s_In_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt, 1./dEvent);
+        if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt);
+        if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt);
       }
       for(Int_t k = 0; k<nC-1; k++) if(Fwdtrk<df[k] && Fwdtrk>df[k+1]){
         auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(df[k+1]), hFwdTrk->FindBin(df[k]));

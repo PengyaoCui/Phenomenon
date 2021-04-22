@@ -22,7 +22,8 @@ void InteSpect(){
     auto dtox(1.30), dtoy(1.10);
     
     TString stnx("<d#it{N}_{ch}/d#eta>_{|#eta|<0.5}");
-    TString stny("#it{N}_{par} / (#it{N}_{ev} #Delta#eta #Delta#varphi)");
+    //TString stny("#it{N}_{par} / (#it{N}_{ev} #Delta#eta #Delta#varphi)");
+    TString stny("#it{N}_{par} / (#it{N}_{ev} #Delta#eta)");
  
     SetStyle(kTRUE);
     gStyle->SetErrorX(0);

@@ -2,9 +2,9 @@
 
 void InteRatio(){
 //=============================================================================
-  for(int i = 0; i< 4; i++){
-    auto hD(GetDataC("data/HEPData.root", 36+i)); 
-    auto gD = GetDataE("data/HEPData.root", 36+i); 
+  for(int i = 0; i< 5; i++){
+    auto hD(GetDataC("data/HEPData_1606.07424v2.root", 36+i)); 
+    auto gD = GetDataE("data/HEPData_1606.07424v2.root", 36+i); 
     TGraph* g[3];
     g[0] = RatioToPi(1, 0, i);    //Para1: "pp13TeV", "pp7TeV" 
     g[1] = RatioToPi(1, 1, i);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"

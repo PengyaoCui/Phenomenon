@@ -2,8 +2,8 @@
 
 void Incl_OmegaPhi(){
 //=============================================================================
-  auto hD(GetDataC("data/HEPData-ins1797443-v1-root.root", 46)); 
-  auto gD = GetDataE("data/HEPData-ins1797443-v1-root.root", 46); 
+  auto hD(GetDataC("data/HEPData_2005.11120.root", 46)); 
+  auto gD = GetDataE("data/HEPData_2005.11120.root", 46); 
 //=============================================================================
 
   TH1D* h1[3]; TH1D*h2[3]; TH1D* hR[3]; TGraph* g[3];

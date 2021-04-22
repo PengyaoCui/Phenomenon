@@ -20,7 +20,7 @@ void Incl_OX_Cent(){
   
 //=============================================================================
   auto dflx(0.), dfux(9.);
-  auto dfly(0.), dfuy(0.36);
+  auto dfly(0.), dfuy(0.28);
   
   auto dlsx(0.05), dlsy(0.05);
   auto dtsx(0.05), dtsy(0.05);

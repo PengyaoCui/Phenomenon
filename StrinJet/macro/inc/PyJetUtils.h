@@ -132,7 +132,8 @@ TGraph* InteSpectrum(const int s,
   //for(int i = 0; i<nc-1; i++){cout<<dPa[i]<<endl; }
  
   auto g = new TGraph();
-  for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(0.75*2.*TMath::TwoPi()));
+  //for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(0.75*2.*TMath::TwoPi()));
+  for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(0.75*2.));
 
   return g;
 }
@@ -309,6 +310,7 @@ TH1D* PtSpectrum(const int s,
   h2->Sumw2();
   return h2;
 }
+
 //_____________________________________________________________________________
 TH1D* PtSpectrum(const int s,
                  const int m,
@@ -344,6 +346,49 @@ TH1D* PtSpectrum(const int s,
   TH1D* h2;
   if(!j && !u) h2 = (TH1D*)h->Rebin(nbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), bin);
   if(j || u) h2 = (TH1D*)h->Rebin(njbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), jbin);
+  NormBinningHistogram(h2);
+  h2->Scale(1./(0.75*2.));
+  h2->Sumw2();
+  return h2;
+}
+
+//=============================================================================
+TH1D* PtSpectrum(const int s,
+                 const int m,
+                 const int p,
+                 const Double_t dCentMin,
+                 const Double_t dCentMax,
+                 bool j = kFALSE,
+                 bool u = kFALSE)
+{
+
+  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get(sp[p])));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list: list_results");
+    exit(-2);
+  }
+
+  auto h((TH1D*)list->FindObject(Form("%s_In_%.2f%.2f",  sp[p].Data(), dCentMin, dCentMax)));
+  if(j) h=(TH1D*)list->FindObject(Form("%s_JC_%.2f%.2f", sp[p].Data(), dCentMin, dCentMax));
+  if(u) h=(TH1D*)list->FindObject(Form("%s_PC_%.2f%.2f", sp[p].Data(), dCentMin, dCentMax));
+
+  Double_t bin[]= {0., 0.3, 0.5, 0.8, 1.0, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 16.,  20};
+  Int_t nbin=sizeof(bin)/sizeof(Double_t)-1;
+  Double_t jbin[] = {0., 0.6, 1.6, 2.2, 2.8, 3.7, 5, 8, 12., 16., 20.};
+  Int_t njbin=sizeof(jbin)/sizeof(Double_t)-1;
+  TH1D* h2;
+  if(!j && !u) h2 = (TH1D*)h->Rebin(nbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), bin);
+  if(j || u) h2 = (TH1D*)h->Rebin(njbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), jbin);
+  NormBinningHistogram(h2);
+  h2->Scale(1./(0.75*2.));
   h2->Sumw2();
   return h2;
 }
