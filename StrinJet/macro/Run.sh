@@ -60,13 +60,25 @@ root -l -b -q Incl_XK_Cent.C
 root -l -b -q Incl_XL_Cent.C
 root -l -b -q Incl_OL_Cent.C
 root -l -b -q Incl_OX_Cent.C
- 
+root -l -b -q Incl_KPhi_Cent.C
+root -l -b -q Incl_LPhi_Cent.C
+root -l -b -q Incl_XPhi_Cent.C
+root -l -b -q Incl_OPhi_Cent.C
+
+root -l -b -q Incl_LK_Cent_Data.C
+root -l -b -q Incl_LK_Cent_CR_Data.C
+root -l -b -q Incl_LK_Cent_Rope_Data.C
+
 root -l -b -q Incl_LK_Cent_CR.C
 root -l -b -q Incl_OK_Cent_CR.C
 root -l -b -q Incl_XK_Cent_CR.C
 root -l -b -q Incl_XL_Cent_CR.C
 root -l -b -q Incl_OL_Cent_CR.C
 root -l -b -q Incl_OX_Cent_CR.C
+root -l -b -q Incl_KPhi_Cent_CR.C
+root -l -b -q Incl_LPhi_Cent_CR.C
+root -l -b -q Incl_XPhi_Cent_CR.C
+root -l -b -q Incl_OPhi_Cent_CR.C
  
 root -l -b -q Incl_LK_Cent_Rope.C
 root -l -b -q Incl_OK_Cent_Rope.C
@@ -74,6 +86,10 @@ root -l -b -q Incl_XK_Cent_Rope.C
 root -l -b -q Incl_XL_Cent_Rope.C
 root -l -b -q Incl_OL_Cent_Rope.C
 root -l -b -q Incl_OX_Cent_Rope.C
+root -l -b -q Incl_KPhi_Cent_Rope.C
+root -l -b -q Incl_LPhi_Cent_Rope.C
+root -l -b -q Incl_XPhi_Cent_Rope.C
+root -l -b -q Incl_OPhi_Cent_Rope.C
 
 echo ==========================================
 echo JERatio
