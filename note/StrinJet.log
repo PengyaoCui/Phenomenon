@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.3)  23 APR 2021 17:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.3)  24 APR 2021 16:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1019,7 +1019,7 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 
 ]
 Package epstopdf Info: Source file: <figures/rope/TrkEta.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 19263 bytes
 (epstopdf)             Output file: <figures/rope/TrkEta-eps-converted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:44:53
@@ -1027,7 +1027,12 @@ Package epstopdf Info: Source file: <figures/rope/TrkEta.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/TrkEta-eps-co
 nverted-to.pdf figures/rope/TrkEta.eps>
 (epstopdf)             \includegraphics on input line 8.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/TrkEta-eps-converted-to.pdf figures/
+rope/TrkEta.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/TrkEta-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:01
+(epstopdf)                    size: 20185 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/TrkEta-eps-converted-to.
@@ -1044,7 +1049,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 10.
 Package epstopdf Info: Source file: <figures/rope/dNfwddEta.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 18793 bytes
 (epstopdf)             Output file: <figures/rope/dNfwddEta-eps-converted-to.pd
 f>
@@ -1053,7 +1058,13 @@ f>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/dNfwddEta-eps
 -converted-to.pdf figures/rope/dNfwddEta.eps>
 (epstopdf)             \includegraphics on input line 16.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/dNfwddEta-eps-converted-to.pdf figur
+es/rope/dNfwddEta.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/dNfwddEta-eps-converted-to.pd
+f>
+(epstopdf)                    date: 2021-04-24 16:37:02
+(epstopdf)                    size: 17495 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/dNfwddEta-eps-converted-
@@ -1066,8 +1077,8 @@ Package pdftex.def Info: figures/rope/dNfwddEta-eps-converted-to.pdf  used on i
 nput line 16.
 (pdftex.def)             Requested size: 273.14922pt x 184.99733pt.
 Package epstopdf Info: Source file: <figures/rope/Kshort_InteSpectrum.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 11654 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 11645 bytes
 (epstopdf)             Output file: <figures/rope/Kshort_InteSpectrum-eps-conve
 rted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:44:53
@@ -1075,23 +1086,29 @@ rted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Kshort_InteSp
 ectrum-eps-converted-to.pdf figures/rope/Kshort_InteSpectrum.eps>
 (epstopdf)             \includegraphics on input line 25.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Kshort_InteSpectrum-eps-converted-to
+.pdf figures/rope/Kshort_InteSpectrum.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Kshort_InteSpectrum-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:02
+(epstopdf)                    size: 9627 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Kshort_InteSpectrum-eps-
 converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version 
 <1.5> allowed
 <figures/rope/Kshort_InteSpectrum-eps-converted-to.pdf, id=27, 569.12625pt x 38
-4.43625pt>
+5.44pt>
 File: figures/rope/Kshort_InteSpectrum-eps-converted-to.pdf Graphic file (type 
 pdf)
 <use figures/rope/Kshort_InteSpectrum-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/Kshort_InteSpectrum-eps-converted-to.pdf 
  used on input line 25.
-(pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
+(pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Lambda_InteSpectrum.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 11711 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 11700 bytes
 (epstopdf)             Output file: <figures/rope/Lambda_InteSpectrum-eps-conve
 rted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:44:54
@@ -1099,23 +1116,29 @@ rted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Lambda_InteSp
 ectrum-eps-converted-to.pdf figures/rope/Lambda_InteSpectrum.eps>
 (epstopdf)             \includegraphics on input line 26.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Lambda_InteSpectrum-eps-converted-to
+.pdf figures/rope/Lambda_InteSpectrum.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Lambda_InteSpectrum-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:02
+(epstopdf)                    size: 9771 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Lambda_InteSpectrum-eps-
 converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version 
 <1.5> allowed
 <figures/rope/Lambda_InteSpectrum-eps-converted-to.pdf, id=28, 569.12625pt x 38
-4.43625pt>
+5.44pt>
 File: figures/rope/Lambda_InteSpectrum-eps-converted-to.pdf Graphic file (type 
 pdf)
 <use figures/rope/Lambda_InteSpectrum-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/Lambda_InteSpectrum-eps-converted-to.pdf 
  used on input line 26.
-(pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
+(pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Xi_InteSpectrum.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 11639 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 11629 bytes
 (epstopdf)             Output file: <figures/rope/Xi_InteSpectrum-eps-converted
 -to.pdf>
 (epstopdf)                    date: 2021-04-23 17:44:54
@@ -1123,23 +1146,29 @@ Package epstopdf Info: Source file: <figures/rope/Xi_InteSpectrum.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Xi_InteSpectr
 um-eps-converted-to.pdf figures/rope/Xi_InteSpectrum.eps>
 (epstopdf)             \includegraphics on input line 27.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Xi_InteSpectrum-eps-converted-to.pdf
+ figures/rope/Xi_InteSpectrum.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Xi_InteSpectrum-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:03
+(epstopdf)                    size: 9613 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Xi_InteSpectrum-eps-conv
 erted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<figures/rope/Xi_InteSpectrum-eps-converted-to.pdf, id=29, 569.12625pt x 384.43
-625pt>
+<figures/rope/Xi_InteSpectrum-eps-converted-to.pdf, id=29, 569.12625pt x 385.44
+pt>
 File: figures/rope/Xi_InteSpectrum-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/rope/Xi_InteSpectrum-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/Xi_InteSpectrum-eps-converted-to.pdf  use
 d on input line 27.
-(pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
+(pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Omega_InteSpectrum.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 11550 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 11538 bytes
 (epstopdf)             Output file: <figures/rope/Omega_InteSpectrum-eps-conver
 ted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:44:54
@@ -1147,23 +1176,29 @@ ted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Omega_InteSpe
 ctrum-eps-converted-to.pdf figures/rope/Omega_InteSpectrum.eps>
 (epstopdf)             \includegraphics on input line 28.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Omega_InteSpectrum-eps-converted-to.
+pdf figures/rope/Omega_InteSpectrum.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Omega_InteSpectrum-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:03
+(epstopdf)                    size: 9702 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Omega_InteSpectrum-eps-c
 onverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <
 1.5> allowed
-<figures/rope/Omega_InteSpectrum-eps-converted-to.pdf, id=30, 569.12625pt x 384
-.43625pt>
+<figures/rope/Omega_InteSpectrum-eps-converted-to.pdf, id=30, 569.12625pt x 385
+.44pt>
 File: figures/rope/Omega_InteSpectrum-eps-converted-to.pdf Graphic file (type p
 df)
 <use figures/rope/Omega_InteSpectrum-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/Omega_InteSpectrum-eps-converted-to.pdf  
 used on input line 28.
-(pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
+(pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Phi_InteSpectrum.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 11885 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 11877 bytes
 (epstopdf)             Output file: <figures/rope/Phi_InteSpectrum-eps-converte
 d-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:44:55
@@ -1171,23 +1206,29 @@ d-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Phi_InteSpect
 rum-eps-converted-to.pdf figures/rope/Phi_InteSpectrum.eps>
 (epstopdf)             \includegraphics on input line 29.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Phi_InteSpectrum-eps-converted-to.pd
+f figures/rope/Phi_InteSpectrum.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Phi_InteSpectrum-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:03
+(epstopdf)                    size: 9691 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Phi_InteSpectrum-eps-con
 verted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
 5> allowed
-<figures/rope/Phi_InteSpectrum-eps-converted-to.pdf, id=31, 569.12625pt x 384.4
-3625pt>
+<figures/rope/Phi_InteSpectrum-eps-converted-to.pdf, id=31, 569.12625pt x 385.4
+4pt>
 File: figures/rope/Phi_InteSpectrum-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures/rope/Phi_InteSpectrum-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/Phi_InteSpectrum-eps-converted-to.pdf  us
 ed on input line 29.
-(pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
+(pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Pion_InteSpectrum.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 11673 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 11664 bytes
 (epstopdf)             Output file: <figures/rope/Pion_InteSpectrum-eps-convert
 ed-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:44:55
@@ -1195,23 +1236,29 @@ ed-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Pion_InteSpec
 trum-eps-converted-to.pdf figures/rope/Pion_InteSpectrum.eps>
 (epstopdf)             \includegraphics on input line 30.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Pion_InteSpectrum-eps-converted-to.p
+df figures/rope/Pion_InteSpectrum.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Pion_InteSpectrum-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:04
+(epstopdf)                    size: 9668 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Pion_InteSpectrum-eps-co
 nverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1
 .5> allowed
-<figures/rope/Pion_InteSpectrum-eps-converted-to.pdf, id=32, 569.12625pt x 384.
-43625pt>
+<figures/rope/Pion_InteSpectrum-eps-converted-to.pdf, id=32, 569.12625pt x 385.
+44pt>
 File: figures/rope/Pion_InteSpectrum-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figures/rope/Pion_InteSpectrum-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/Pion_InteSpectrum-eps-converted-to.pdf  u
 sed on input line 30.
-(pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
+(pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Kion_InteSpectrum.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 11641 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 11633 bytes
 (epstopdf)             Output file: <figures/rope/Kion_InteSpectrum-eps-convert
 ed-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:44:55
@@ -1219,23 +1266,29 @@ ed-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Kion_InteSpec
 trum-eps-converted-to.pdf figures/rope/Kion_InteSpectrum.eps>
 (epstopdf)             \includegraphics on input line 31.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Kion_InteSpectrum-eps-converted-to.p
+df figures/rope/Kion_InteSpectrum.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Kion_InteSpectrum-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:04
+(epstopdf)                    size: 9614 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Kion_InteSpectrum-eps-co
 nverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1
 .5> allowed
-<figures/rope/Kion_InteSpectrum-eps-converted-to.pdf, id=33, 569.12625pt x 384.
-43625pt>
+<figures/rope/Kion_InteSpectrum-eps-converted-to.pdf, id=33, 569.12625pt x 385.
+44pt>
 File: figures/rope/Kion_InteSpectrum-eps-converted-to.pdf Graphic file (type pd
 f)
 <use figures/rope/Kion_InteSpectrum-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/Kion_InteSpectrum-eps-converted-to.pdf  u
 sed on input line 31.
-(pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
+(pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Proton_InteSpectrum.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 11764 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 11755 bytes
 (epstopdf)             Output file: <figures/rope/Proton_InteSpectrum-eps-conve
 rted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:44:56
@@ -1243,22 +1296,28 @@ rted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Proton_InteSp
 ectrum-eps-converted-to.pdf figures/rope/Proton_InteSpectrum.eps>
 (epstopdf)             \includegraphics on input line 32.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Proton_InteSpectrum-eps-converted-to
+.pdf figures/rope/Proton_InteSpectrum.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Proton_InteSpectrum-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:04
+(epstopdf)                    size: 9647 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Proton_InteSpectrum-eps-
 converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version 
 <1.5> allowed
 <figures/rope/Proton_InteSpectrum-eps-converted-to.pdf, id=34, 569.12625pt x 38
-4.43625pt>
+5.44pt>
 File: figures/rope/Proton_InteSpectrum-eps-converted-to.pdf Graphic file (type 
 pdf)
 <use figures/rope/Proton_InteSpectrum-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/Proton_InteSpectrum-eps-converted-to.pdf 
  used on input line 32.
-(pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
+(pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Kshort_PiRatio.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12838 bytes
 (epstopdf)             Output file: <figures/rope/Kshort_PiRatio-eps-converted-
 to.pdf>
@@ -1267,7 +1326,13 @@ to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Kshort_PiRati
 o-eps-converted-to.pdf figures/rope/Kshort_PiRatio.eps>
 (epstopdf)             \includegraphics on input line 41.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Kshort_PiRatio-eps-converted-to.pdf 
+figures/rope/Kshort_PiRatio.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Kshort_PiRatio-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:05
+(epstopdf)                    size: 10104 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Kshort_PiRatio-eps-conve
@@ -1281,7 +1346,7 @@ Package pdftex.def Info: figures/rope/Kshort_PiRatio-eps-converted-to.pdf  used
  on input line 41.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Lambda_PiRatio.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12275 bytes
 (epstopdf)             Output file: <figures/rope/Lambda_PiRatio-eps-converted-
 to.pdf>
@@ -1290,7 +1355,13 @@ to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Lambda_PiRati
 o-eps-converted-to.pdf figures/rope/Lambda_PiRatio.eps>
 (epstopdf)             \includegraphics on input line 42.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Lambda_PiRatio-eps-converted-to.pdf 
+figures/rope/Lambda_PiRatio.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Lambda_PiRatio-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:05
+(epstopdf)                    size: 9885 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Lambda_PiRatio-eps-conve
@@ -1304,7 +1375,7 @@ Package pdftex.def Info: figures/rope/Lambda_PiRatio-eps-converted-to.pdf  used
  on input line 42.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Xi_PiRatio.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12374 bytes
 (epstopdf)             Output file: <figures/rope/Xi_PiRatio-eps-converted-to.p
 df>
@@ -1313,7 +1384,13 @@ df>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Xi_PiRatio-ep
 s-converted-to.pdf figures/rope/Xi_PiRatio.eps>
 (epstopdf)             \includegraphics on input line 43.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Xi_PiRatio-eps-converted-to.pdf figu
+res/rope/Xi_PiRatio.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Xi_PiRatio-eps-converted-to.p
+df>
+(epstopdf)                    date: 2021-04-24 16:37:05
+(epstopdf)                    size: 9922 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Xi_PiRatio-eps-converted
@@ -1326,7 +1403,7 @@ Package pdftex.def Info: figures/rope/Xi_PiRatio-eps-converted-to.pdf  used on
 input line 43.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Omega_PiRatio.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12367 bytes
 (epstopdf)             Output file: <figures/rope/Omega_PiRatio-eps-converted-t
 o.pdf>
@@ -1335,7 +1412,13 @@ o.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Omega_PiRatio
 -eps-converted-to.pdf figures/rope/Omega_PiRatio.eps>
 (epstopdf)             \includegraphics on input line 44.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Omega_PiRatio-eps-converted-to.pdf f
+igures/rope/Omega_PiRatio.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Omega_PiRatio-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:06
+(epstopdf)                    size: 9728 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Omega_PiRatio-eps-conver
@@ -1349,7 +1432,7 @@ Package pdftex.def Info: figures/rope/Omega_PiRatio-eps-converted-to.pdf  used
 on input line 44.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Phi_PiRatio.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12182 bytes
 (epstopdf)             Output file: <figures/rope/Phi_PiRatio-eps-converted-to.
 pdf>
@@ -1358,7 +1441,13 @@ pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Phi_PiRatio-e
 ps-converted-to.pdf figures/rope/Phi_PiRatio.eps>
 (epstopdf)             \includegraphics on input line 45.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Phi_PiRatio-eps-converted-to.pdf fig
+ures/rope/Phi_PiRatio.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Phi_PiRatio-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2021-04-24 16:37:06
+(epstopdf)                    size: 9837 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Phi_PiRatio-eps-converte
@@ -1371,7 +1460,7 @@ Package pdftex.def Info: figures/rope/Phi_PiRatio-eps-converted-to.pdf  used on
  input line 45.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Inte_KshortPhiRatio.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12356 bytes
 (epstopdf)             Output file: <figures/rope/Inte_KshortPhiRatio-eps-conve
 rted-to.pdf>
@@ -1380,7 +1469,13 @@ rted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Inte_KshortPh
 iRatio-eps-converted-to.pdf figures/rope/Inte_KshortPhiRatio.eps>
 (epstopdf)             \includegraphics on input line 53.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Inte_KshortPhiRatio-eps-converted-to
+.pdf figures/rope/Inte_KshortPhiRatio.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Inte_KshortPhiRatio-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:06
+(epstopdf)                    size: 9212 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Inte_KshortPhiRatio-eps-
@@ -1395,7 +1490,7 @@ Package pdftex.def Info: figures/rope/Inte_KshortPhiRatio-eps-converted-to.pdf
  used on input line 53.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Inte_LambdaPhiRatio.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12153 bytes
 (epstopdf)             Output file: <figures/rope/Inte_LambdaPhiRatio-eps-conve
 rted-to.pdf>
@@ -1404,7 +1499,13 @@ rted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Inte_LambdaPh
 iRatio-eps-converted-to.pdf figures/rope/Inte_LambdaPhiRatio.eps>
 (epstopdf)             \includegraphics on input line 54.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Inte_LambdaPhiRatio-eps-converted-to
+.pdf figures/rope/Inte_LambdaPhiRatio.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Inte_LambdaPhiRatio-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:06
+(epstopdf)                    size: 9173 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Inte_LambdaPhiRatio-eps-
@@ -1419,7 +1520,7 @@ Package pdftex.def Info: figures/rope/Inte_LambdaPhiRatio-eps-converted-to.pdf
  used on input line 54.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Inte_XiPhiRatio.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 11735 bytes
 (epstopdf)             Output file: <figures/rope/Inte_XiPhiRatio-eps-converted
 -to.pdf>
@@ -1428,7 +1529,13 @@ Package epstopdf Info: Source file: <figures/rope/Inte_XiPhiRatio.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Inte_XiPhiRat
 io-eps-converted-to.pdf figures/rope/Inte_XiPhiRatio.eps>
 (epstopdf)             \includegraphics on input line 55.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Inte_XiPhiRatio-eps-converted-to.pdf
+ figures/rope/Inte_XiPhiRatio.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Inte_XiPhiRatio-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:07
+(epstopdf)                    size: 8944 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Inte_XiPhiRatio-eps-conv
@@ -1443,7 +1550,7 @@ Package pdftex.def Info: figures/rope/Inte_XiPhiRatio-eps-converted-to.pdf  use
 d on input line 55.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Inte_OmegaPhiRatio.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12127 bytes
 (epstopdf)             Output file: <figures/rope/Inte_OmegaPhiRatio-eps-conver
 ted-to.pdf>
@@ -1452,7 +1559,13 @@ ted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Inte_OmegaPhi
 Ratio-eps-converted-to.pdf figures/rope/Inte_OmegaPhiRatio.eps>
 (epstopdf)             \includegraphics on input line 56.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Inte_OmegaPhiRatio-eps-converted-to.
+pdf figures/rope/Inte_OmegaPhiRatio.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Inte_OmegaPhiRatio-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:07
+(epstopdf)                    size: 9162 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Inte_OmegaPhiRatio-eps-c
@@ -1467,7 +1580,7 @@ Package pdftex.def Info: figures/rope/Inte_OmegaPhiRatio-eps-converted-to.pdf
 used on input line 56.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Inte_XiLambdaRatio.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12204 bytes
 (epstopdf)             Output file: <figures/rope/Inte_XiLambdaRatio-eps-conver
 ted-to.pdf>
@@ -1476,7 +1589,13 @@ ted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Inte_XiLambda
 Ratio-eps-converted-to.pdf figures/rope/Inte_XiLambdaRatio.eps>
 (epstopdf)             \includegraphics on input line 64.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Inte_XiLambdaRatio-eps-converted-to.
+pdf figures/rope/Inte_XiLambdaRatio.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Inte_XiLambdaRatio-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:07
+(epstopdf)                    size: 9194 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Inte_XiLambdaRatio-eps-c
@@ -1491,7 +1610,7 @@ Package pdftex.def Info: figures/rope/Inte_XiLambdaRatio-eps-converted-to.pdf
 used on input line 64.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Inte_OmegaLambdaRatio.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12119 bytes
 (epstopdf)             Output file: <figures/rope/Inte_OmegaLambdaRatio-eps-con
 verted-to.pdf>
@@ -1500,7 +1619,13 @@ verted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Inte_OmegaLam
 bdaRatio-eps-converted-to.pdf figures/rope/Inte_OmegaLambdaRatio.eps>
 (epstopdf)             \includegraphics on input line 65.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Inte_OmegaLambdaRatio-eps-converted-
+to.pdf figures/rope/Inte_OmegaLambdaRatio.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Inte_OmegaLambdaRatio-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:08
+(epstopdf)                    size: 9011 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Inte_OmegaLambdaRatio-ep
@@ -1515,7 +1640,7 @@ Package pdftex.def Info: figures/rope/Inte_OmegaLambdaRatio-eps-converted-to.pd
 f  used on input line 65.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Kshort_PiRatio_JE.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12974 bytes
 (epstopdf)             Output file: <figures/rope/Kshort_PiRatio_JE-eps-convert
 ed-to.pdf>
@@ -1524,7 +1649,13 @@ ed-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Kshort_PiRati
 o_JE-eps-converted-to.pdf figures/rope/Kshort_PiRatio_JE.eps>
 (epstopdf)             \includegraphics on input line 74.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Kshort_PiRatio_JE-eps-converted-to.p
+df figures/rope/Kshort_PiRatio_JE.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Kshort_PiRatio_JE-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:08
+(epstopdf)                    size: 11010 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Kshort_PiRatio_JE-eps-co
@@ -1539,7 +1670,7 @@ Package pdftex.def Info: figures/rope/Kshort_PiRatio_JE-eps-converted-to.pdf  u
 sed on input line 74.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Lambda_PiRatio_JE.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12646 bytes
 (epstopdf)             Output file: <figures/rope/Lambda_PiRatio_JE-eps-convert
 ed-to.pdf>
@@ -1548,7 +1679,13 @@ ed-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Lambda_PiRati
 o_JE-eps-converted-to.pdf figures/rope/Lambda_PiRatio_JE.eps>
 (epstopdf)             \includegraphics on input line 75.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Lambda_PiRatio_JE-eps-converted-to.p
+df figures/rope/Lambda_PiRatio_JE.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Lambda_PiRatio_JE-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:08
+(epstopdf)                    size: 11074 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Lambda_PiRatio_JE-eps-co
@@ -1563,7 +1700,7 @@ Package pdftex.def Info: figures/rope/Lambda_PiRatio_JE-eps-converted-to.pdf  u
 sed on input line 75.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Xi_PiRatio_JE.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12848 bytes
 (epstopdf)             Output file: <figures/rope/Xi_PiRatio_JE-eps-converted-t
 o.pdf>
@@ -1572,7 +1709,13 @@ o.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Xi_PiRatio_JE
 -eps-converted-to.pdf figures/rope/Xi_PiRatio_JE.eps>
 (epstopdf)             \includegraphics on input line 76.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Xi_PiRatio_JE-eps-converted-to.pdf f
+igures/rope/Xi_PiRatio_JE.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Xi_PiRatio_JE-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:09
+(epstopdf)                    size: 11132 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Xi_PiRatio_JE-eps-conver
@@ -1586,7 +1729,7 @@ Package pdftex.def Info: figures/rope/Xi_PiRatio_JE-eps-converted-to.pdf  used
 on input line 76.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Omega_PiRatio_JE.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 13029 bytes
 (epstopdf)             Output file: <figures/rope/Omega_PiRatio_JE-eps-converte
 d-to.pdf>
@@ -1595,7 +1738,13 @@ d-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Omega_PiRatio
 _JE-eps-converted-to.pdf figures/rope/Omega_PiRatio_JE.eps>
 (epstopdf)             \includegraphics on input line 77.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Omega_PiRatio_JE-eps-converted-to.pd
+f figures/rope/Omega_PiRatio_JE.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Omega_PiRatio_JE-eps-converte
+d-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:09
+(epstopdf)                    size: 11038 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Omega_PiRatio_JE-eps-con
@@ -1610,7 +1759,7 @@ Package pdftex.def Info: figures/rope/Omega_PiRatio_JE-eps-converted-to.pdf  us
 ed on input line 77.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/Phi_PiRatio_JE.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 13106 bytes
 (epstopdf)             Output file: <figures/rope/Phi_PiRatio_JE-eps-converted-
 to.pdf>
@@ -1619,7 +1768,13 @@ to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/Phi_PiRatio_J
 E-eps-converted-to.pdf figures/rope/Phi_PiRatio_JE.eps>
 (epstopdf)             \includegraphics on input line 78.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/Phi_PiRatio_JE-eps-converted-to.pdf 
+figures/rope/Phi_PiRatio_JE.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/Phi_PiRatio_JE-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:09
+(epstopdf)                    size: 11347 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/Phi_PiRatio_JE-eps-conve
@@ -1641,7 +1796,7 @@ m/m/it/10 ^^Q\OMS/ztmcm/m/n/10 i$\T1/ptm/m/n/10 . (Data taken from
  []
 
 Package epstopdf Info: Source file: <figures/rope/LKRatio_Incl.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14708 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_Incl-eps-converted-to
 .pdf>
@@ -1650,7 +1805,13 @@ Package epstopdf Info: Source file: <figures/rope/LKRatio_Incl.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LKRatio_Incl-
 eps-converted-to.pdf figures/rope/LKRatio_Incl.eps>
 (epstopdf)             \includegraphics on input line 87.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LKRatio_Incl-eps-converted-to.pdf fi
+gures/rope/LKRatio_Incl.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/LKRatio_Incl-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:10
+(epstopdf)                    size: 12391 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LKRatio_Incl-eps-convert
@@ -1664,7 +1825,7 @@ Package pdftex.def Info: figures/rope/LKRatio_Incl-eps-converted-to.pdf  used o
 n input line 87.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/XKRatio_Incl.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14755 bytes
 (epstopdf)             Output file: <figures/rope/XKRatio_Incl-eps-converted-to
 .pdf>
@@ -1673,7 +1834,13 @@ Package epstopdf Info: Source file: <figures/rope/XKRatio_Incl.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XKRatio_Incl-
 eps-converted-to.pdf figures/rope/XKRatio_Incl.eps>
 (epstopdf)             \includegraphics on input line 88.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XKRatio_Incl-eps-converted-to.pdf fi
+gures/rope/XKRatio_Incl.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XKRatio_Incl-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:10
+(epstopdf)                    size: 13137 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XKRatio_Incl-eps-convert
@@ -1687,7 +1854,7 @@ Package pdftex.def Info: figures/rope/XKRatio_Incl-eps-converted-to.pdf  used o
 n input line 88.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/OKRatio_Incl.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 15379 bytes
 (epstopdf)             Output file: <figures/rope/OKRatio_Incl-eps-converted-to
 .pdf>
@@ -1696,7 +1863,13 @@ Package epstopdf Info: Source file: <figures/rope/OKRatio_Incl.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OKRatio_Incl-
 eps-converted-to.pdf figures/rope/OKRatio_Incl.eps>
 (epstopdf)             \includegraphics on input line 89.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OKRatio_Incl-eps-converted-to.pdf fi
+gures/rope/OKRatio_Incl.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OKRatio_Incl-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:10
+(epstopdf)                    size: 13352 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OKRatio_Incl-eps-convert
@@ -1710,7 +1883,7 @@ Package pdftex.def Info: figures/rope/OKRatio_Incl-eps-converted-to.pdf  used o
 n input line 89.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/XLRatio_Incl.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14047 bytes
 (epstopdf)             Output file: <figures/rope/XLRatio_Incl-eps-converted-to
 .pdf>
@@ -1719,7 +1892,13 @@ Package epstopdf Info: Source file: <figures/rope/XLRatio_Incl.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XLRatio_Incl-
 eps-converted-to.pdf figures/rope/XLRatio_Incl.eps>
 (epstopdf)             \includegraphics on input line 90.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XLRatio_Incl-eps-converted-to.pdf fi
+gures/rope/XLRatio_Incl.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XLRatio_Incl-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:11
+(epstopdf)                    size: 12708 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XLRatio_Incl-eps-convert
@@ -1733,7 +1912,7 @@ Package pdftex.def Info: figures/rope/XLRatio_Incl-eps-converted-to.pdf  used o
 n input line 90.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/OLRatio_Incl.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 13928 bytes
 (epstopdf)             Output file: <figures/rope/OLRatio_Incl-eps-converted-to
 .pdf>
@@ -1742,7 +1921,13 @@ Package epstopdf Info: Source file: <figures/rope/OLRatio_Incl.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OLRatio_Incl-
 eps-converted-to.pdf figures/rope/OLRatio_Incl.eps>
 (epstopdf)             \includegraphics on input line 91.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OLRatio_Incl-eps-converted-to.pdf fi
+gures/rope/OLRatio_Incl.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OLRatio_Incl-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:11
+(epstopdf)                    size: 12763 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OLRatio_Incl-eps-convert
@@ -1756,7 +1941,7 @@ Package pdftex.def Info: figures/rope/OLRatio_Incl-eps-converted-to.pdf  used o
 n input line 91.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/OXRatio_Incl.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14713 bytes
 (epstopdf)             Output file: <figures/rope/OXRatio_Incl-eps-converted-to
 .pdf>
@@ -1765,7 +1950,13 @@ Package epstopdf Info: Source file: <figures/rope/OXRatio_Incl.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OXRatio_Incl-
 eps-converted-to.pdf figures/rope/OXRatio_Incl.eps>
 (epstopdf)             \includegraphics on input line 92.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OXRatio_Incl-eps-converted-to.pdf fi
+gures/rope/OXRatio_Incl.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OXRatio_Incl-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:11
+(epstopdf)                    size: 12973 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OXRatio_Incl-eps-convert
@@ -1779,11 +1970,11 @@ Package pdftex.def Info: figures/rope/OXRatio_Incl-eps-converted-to.pdf  used o
 n input line 92.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/LKRatio_Incl.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14708 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_Incl-eps-converted-to
 .pdf>
-(epstopdf)                    date: 2021-04-23 17:45:01
+(epstopdf)                    date: 2021-04-24 16:37:10
 (epstopdf)                    size: 12391 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LKRatio_Incl-
 eps-converted-to.pdf figures/rope/LKRatio_Incl.eps>
@@ -1795,7 +1986,7 @@ Package pdftex.def Info: figures/rope/LKRatio_Incl-eps-converted-to.pdf  used o
 n input line 100.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/ProtonPionRatio_Incl.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 17169 bytes
 (epstopdf)             Output file: <figures/rope/ProtonPionRatio_Incl-eps-conv
 erted-to.pdf>
@@ -1804,7 +1995,13 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/ProtonPionRat
 io_Incl-eps-converted-to.pdf figures/rope/ProtonPionRatio_Incl.eps>
 (epstopdf)             \includegraphics on input line 101.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/ProtonPionRatio_Incl-eps-converted-t
+o.pdf figures/rope/ProtonPionRatio_Incl.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/ProtonPionRatio_Incl-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:11
+(epstopdf)                    size: 13882 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/ProtonPionRatio_Incl-eps
@@ -1819,8 +2016,8 @@ Package pdftex.def Info: figures/rope/ProtonPionRatio_Incl-eps-converted-to.pdf
   used on input line 101.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/XiPhiRatio_Incl.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 15361 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 15351 bytes
 (epstopdf)             Output file: <figures/rope/XiPhiRatio_Incl-eps-converted
 -to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:03
@@ -1828,22 +2025,28 @@ Package epstopdf Info: Source file: <figures/rope/XiPhiRatio_Incl.eps>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XiPhiRatio_In
 cl-eps-converted-to.pdf figures/rope/XiPhiRatio_Incl.eps>
 (epstopdf)             \includegraphics on input line 102.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XiPhiRatio_Incl-eps-converted-to.pdf
+ figures/rope/XiPhiRatio_Incl.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XiPhiRatio_Incl-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:12
+(epstopdf)                    size: 11971 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XiPhiRatio_Incl-eps-conv
 erted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<figures/rope/XiPhiRatio_Incl-eps-converted-to.pdf, id=58, 569.12625pt x 384.43
-625pt>
+<figures/rope/XiPhiRatio_Incl-eps-converted-to.pdf, id=58, 569.12625pt x 385.44
+pt>
 File: figures/rope/XiPhiRatio_Incl-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figures/rope/XiPhiRatio_Incl-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/XiPhiRatio_Incl-eps-converted-to.pdf  use
 d on input line 102.
-(pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
+(pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/OmegaPhiRatio_Incl.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 15199 bytes
 (epstopdf)             Output file: <figures/rope/OmegaPhiRatio_Incl-eps-conver
 ted-to.pdf>
@@ -1852,7 +2055,13 @@ ted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OmegaPhiRatio
 _Incl-eps-converted-to.pdf figures/rope/OmegaPhiRatio_Incl.eps>
 (epstopdf)             \includegraphics on input line 103.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OmegaPhiRatio_Incl-eps-converted-to.
+pdf figures/rope/OmegaPhiRatio_Incl.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OmegaPhiRatio_Incl-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:12
+(epstopdf)                    size: 11705 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OmegaPhiRatio_Incl-eps-c
@@ -1875,7 +2084,7 @@ re taken from
 
 Package epstopdf Info: Source file: <figures/rope/LKRatio_Incl_Cent_cr_rope.eps
 >
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 13510 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_Incl_Cent_cr_rope-eps
 -converted-to.pdf>
@@ -1884,7 +2093,14 @@ Package epstopdf Info: Source file: <figures/rope/LKRatio_Incl_Cent_cr_rope.eps
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LKRatio_Incl_
 Cent_cr_rope-eps-converted-to.pdf figures/rope/LKRatio_Incl_Cent_cr_rope.eps>
 (epstopdf)             \includegraphics on input line 111.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LKRatio_Incl_Cent_cr_rope-eps-conver
+ted-to.pdf figures/rope/LKRatio_Incl_Cent_cr_rope.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <figures/rope/LKRatio_Incl_Cent_cr_rope-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:12
+(epstopdf)                    size: 12942 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LKRatio_Incl_Cent_cr_rop
@@ -1900,7 +2116,7 @@ o.pdf  used on input line 111.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/XKRatio_Incl_Cent_cr_rope.eps
 >
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14150 bytes
 (epstopdf)             Output file: <figures/rope/XKRatio_Incl_Cent_cr_rope-eps
 -converted-to.pdf>
@@ -1909,7 +2125,14 @@ Package epstopdf Info: Source file: <figures/rope/XKRatio_Incl_Cent_cr_rope.eps
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XKRatio_Incl_
 Cent_cr_rope-eps-converted-to.pdf figures/rope/XKRatio_Incl_Cent_cr_rope.eps>
 (epstopdf)             \includegraphics on input line 112.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XKRatio_Incl_Cent_cr_rope-eps-conver
+ted-to.pdf figures/rope/XKRatio_Incl_Cent_cr_rope.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <figures/rope/XKRatio_Incl_Cent_cr_rope-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:13
+(epstopdf)                    size: 13057 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XKRatio_Incl_Cent_cr_rop
@@ -1925,7 +2148,7 @@ o.pdf  used on input line 112.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OKRatio_Incl_Cent_cr_rope.eps
 >
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14129 bytes
 (epstopdf)             Output file: <figures/rope/OKRatio_Incl_Cent_cr_rope-eps
 -converted-to.pdf>
@@ -1934,7 +2157,14 @@ Package epstopdf Info: Source file: <figures/rope/OKRatio_Incl_Cent_cr_rope.eps
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OKRatio_Incl_
 Cent_cr_rope-eps-converted-to.pdf figures/rope/OKRatio_Incl_Cent_cr_rope.eps>
 (epstopdf)             \includegraphics on input line 113.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OKRatio_Incl_Cent_cr_rope-eps-conver
+ted-to.pdf figures/rope/OKRatio_Incl_Cent_cr_rope.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <figures/rope/OKRatio_Incl_Cent_cr_rope-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:13
+(epstopdf)                    size: 13203 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OKRatio_Incl_Cent_cr_rop
@@ -1950,7 +2180,7 @@ o.pdf  used on input line 113.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/XLRatio_Incl_Cent_cr_rope.eps
 >
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14175 bytes
 (epstopdf)             Output file: <figures/rope/XLRatio_Incl_Cent_cr_rope-eps
 -converted-to.pdf>
@@ -1959,7 +2189,14 @@ Package epstopdf Info: Source file: <figures/rope/XLRatio_Incl_Cent_cr_rope.eps
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XLRatio_Incl_
 Cent_cr_rope-eps-converted-to.pdf figures/rope/XLRatio_Incl_Cent_cr_rope.eps>
 (epstopdf)             \includegraphics on input line 114.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XLRatio_Incl_Cent_cr_rope-eps-conver
+ted-to.pdf figures/rope/XLRatio_Incl_Cent_cr_rope.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <figures/rope/XLRatio_Incl_Cent_cr_rope-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:13
+(epstopdf)                    size: 13197 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XLRatio_Incl_Cent_cr_rop
@@ -1975,7 +2212,7 @@ o.pdf  used on input line 114.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OLRatio_Incl_Cent_cr_rope.eps
 >
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14419 bytes
 (epstopdf)             Output file: <figures/rope/OLRatio_Incl_Cent_cr_rope-eps
 -converted-to.pdf>
@@ -1984,7 +2221,14 @@ Package epstopdf Info: Source file: <figures/rope/OLRatio_Incl_Cent_cr_rope.eps
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OLRatio_Incl_
 Cent_cr_rope-eps-converted-to.pdf figures/rope/OLRatio_Incl_Cent_cr_rope.eps>
 (epstopdf)             \includegraphics on input line 115.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OLRatio_Incl_Cent_cr_rope-eps-conver
+ted-to.pdf figures/rope/OLRatio_Incl_Cent_cr_rope.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <figures/rope/OLRatio_Incl_Cent_cr_rope-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:14
+(epstopdf)                    size: 13293 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OLRatio_Incl_Cent_cr_rop
@@ -2000,7 +2244,7 @@ o.pdf  used on input line 115.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OXRatio_Incl_Cent_cr_rope.eps
 >
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14238 bytes
 (epstopdf)             Output file: <figures/rope/OXRatio_Incl_Cent_cr_rope-eps
 -converted-to.pdf>
@@ -2009,7 +2253,14 @@ Package epstopdf Info: Source file: <figures/rope/OXRatio_Incl_Cent_cr_rope.eps
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OXRatio_Incl_
 Cent_cr_rope-eps-converted-to.pdf figures/rope/OXRatio_Incl_Cent_cr_rope.eps>
 (epstopdf)             \includegraphics on input line 116.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OXRatio_Incl_Cent_cr_rope-eps-conver
+ted-to.pdf figures/rope/OXRatio_Incl_Cent_cr_rope.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <figures/rope/OXRatio_Incl_Cent_cr_rope-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:14
+(epstopdf)                    size: 13133 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OXRatio_Incl_Cent_cr_rop
@@ -2025,8 +2276,8 @@ o.pdf  used on input line 116.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/KPhiRatio_Incl_Cent_cr_rope.e
 ps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 13584 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 13580 bytes
 (epstopdf)             Output file: <figures/rope/KPhiRatio_Incl_Cent_cr_rope-e
 ps-converted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:06
@@ -2035,24 +2286,31 @@ ps-converted-to.pdf>
 l_Cent_cr_rope-eps-converted-to.pdf figures/rope/KPhiRatio_Incl_Cent_cr_rope.ep
 s>
 (epstopdf)             \includegraphics on input line 117.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/KPhiRatio_Incl_Cent_cr_rope-eps-conv
+erted-to.pdf figures/rope/KPhiRatio_Incl_Cent_cr_rope.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <figures/rope/KPhiRatio_Incl_Cent_cr_rope-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:14
+(epstopdf)                    size: 12897 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/KPhiRatio_Incl_Cent_cr_r
 ope-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most 
 version <1.5> allowed
 <figures/rope/KPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf, id=66, 569.1262
-5pt x 384.43625pt>
+5pt x 385.44pt>
 File: figures/rope/KPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figures/rope/KPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/KPhiRatio_Incl_Cent_cr_rope-eps-converted
 -to.pdf  used on input line 117.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/LPhiRatio_Incl_Cent_cr_rope.e
 ps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 13357 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 13366 bytes
 (epstopdf)             Output file: <figures/rope/LPhiRatio_Incl_Cent_cr_rope-e
 ps-converted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:06
@@ -2061,24 +2319,31 @@ ps-converted-to.pdf>
 l_Cent_cr_rope-eps-converted-to.pdf figures/rope/LPhiRatio_Incl_Cent_cr_rope.ep
 s>
 (epstopdf)             \includegraphics on input line 118.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LPhiRatio_Incl_Cent_cr_rope-eps-conv
+erted-to.pdf figures/rope/LPhiRatio_Incl_Cent_cr_rope.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <figures/rope/LPhiRatio_Incl_Cent_cr_rope-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:15
+(epstopdf)                    size: 13052 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LPhiRatio_Incl_Cent_cr_r
 ope-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most 
 version <1.5> allowed
 <figures/rope/LPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf, id=67, 569.1262
-5pt x 384.43625pt>
+5pt x 385.44pt>
 File: figures/rope/LPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figures/rope/LPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/LPhiRatio_Incl_Cent_cr_rope-eps-converted
 -to.pdf  used on input line 118.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/XPhiRatio_Incl_Cent_cr_rope.e
 ps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 13931 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 13936 bytes
 (epstopdf)             Output file: <figures/rope/XPhiRatio_Incl_Cent_cr_rope-e
 ps-converted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:06
@@ -2087,23 +2352,30 @@ ps-converted-to.pdf>
 l_Cent_cr_rope-eps-converted-to.pdf figures/rope/XPhiRatio_Incl_Cent_cr_rope.ep
 s>
 (epstopdf)             \includegraphics on input line 119.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XPhiRatio_Incl_Cent_cr_rope-eps-conv
+erted-to.pdf figures/rope/XPhiRatio_Incl_Cent_cr_rope.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <figures/rope/XPhiRatio_Incl_Cent_cr_rope-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:15
+(epstopdf)                    size: 13318 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XPhiRatio_Incl_Cent_cr_r
 ope-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most 
 version <1.5> allowed
 <figures/rope/XPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf, id=68, 569.1262
-5pt x 384.43625pt>
+5pt x 385.44pt>
 File: figures/rope/XPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figures/rope/XPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/XPhiRatio_Incl_Cent_cr_rope-eps-converted
 -to.pdf  used on input line 119.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OPhiRatio_Incl_Cent_cr_rope.e
 ps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14719 bytes
 (epstopdf)             Output file: <figures/rope/OPhiRatio_Incl_Cent_cr_rope-e
 ps-converted-to.pdf>
@@ -2113,25 +2385,32 @@ ps-converted-to.pdf>
 l_Cent_cr_rope-eps-converted-to.pdf figures/rope/OPhiRatio_Incl_Cent_cr_rope.ep
 s>
 (epstopdf)             \includegraphics on input line 120.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OPhiRatio_Incl_Cent_cr_rope-eps-conv
+erted-to.pdf figures/rope/OPhiRatio_Incl_Cent_cr_rope.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <figures/rope/OPhiRatio_Incl_Cent_cr_rope-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:15
+(epstopdf)                    size: 13571 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OPhiRatio_Incl_Cent_cr_r
 ope-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most 
 version <1.5> allowed
 <figures/rope/OPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf, id=69, 569.1262
-5pt x 384.43625pt>
+5pt x 385.44pt>
 File: figures/rope/OPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figures/rope/OPhiRatio_Incl_Cent_cr_rope-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/OPhiRatio_Incl_Cent_cr_rope-eps-converted
 -to.pdf  used on input line 120.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 
-LaTeX Warning: Float too large for page by 17.2709pt on input line 124.
+LaTeX Warning: Float too large for page by 17.94531pt on input line 124.
 
 Package epstopdf Info: Source file: <figures/rope/LKRatio_Incl_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 13493 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_Incl_Cent_cr-eps-conv
 erted-to.pdf>
@@ -2140,7 +2419,13 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LKRatio_Incl_
 Cent_cr-eps-converted-to.pdf figures/rope/LKRatio_Incl_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 128.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LKRatio_Incl_Cent_cr-eps-converted-t
+o.pdf figures/rope/LKRatio_Incl_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/LKRatio_Incl_Cent_cr-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:16
+(epstopdf)                    size: 12863 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LKRatio_Incl_Cent_cr-eps
@@ -2155,7 +2440,7 @@ Package pdftex.def Info: figures/rope/LKRatio_Incl_Cent_cr-eps-converted-to.pdf
   used on input line 128.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/XKRatio_Incl_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14104 bytes
 (epstopdf)             Output file: <figures/rope/XKRatio_Incl_Cent_cr-eps-conv
 erted-to.pdf>
@@ -2164,7 +2449,13 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XKRatio_Incl_
 Cent_cr-eps-converted-to.pdf figures/rope/XKRatio_Incl_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 129.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XKRatio_Incl_Cent_cr-eps-converted-t
+o.pdf figures/rope/XKRatio_Incl_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XKRatio_Incl_Cent_cr-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:16
+(epstopdf)                    size: 13015 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XKRatio_Incl_Cent_cr-eps
@@ -2179,7 +2470,7 @@ Package pdftex.def Info: figures/rope/XKRatio_Incl_Cent_cr-eps-converted-to.pdf
   used on input line 129.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OKRatio_Incl_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14076 bytes
 (epstopdf)             Output file: <figures/rope/OKRatio_Incl_Cent_cr-eps-conv
 erted-to.pdf>
@@ -2188,7 +2479,13 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OKRatio_Incl_
 Cent_cr-eps-converted-to.pdf figures/rope/OKRatio_Incl_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 130.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OKRatio_Incl_Cent_cr-eps-converted-t
+o.pdf figures/rope/OKRatio_Incl_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OKRatio_Incl_Cent_cr-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:16
+(epstopdf)                    size: 13041 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OKRatio_Incl_Cent_cr-eps
@@ -2203,7 +2500,7 @@ Package pdftex.def Info: figures/rope/OKRatio_Incl_Cent_cr-eps-converted-to.pdf
   used on input line 130.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/XLRatio_Incl_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14166 bytes
 (epstopdf)             Output file: <figures/rope/XLRatio_Incl_Cent_cr-eps-conv
 erted-to.pdf>
@@ -2212,7 +2509,13 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XLRatio_Incl_
 Cent_cr-eps-converted-to.pdf figures/rope/XLRatio_Incl_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 131.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XLRatio_Incl_Cent_cr-eps-converted-t
+o.pdf figures/rope/XLRatio_Incl_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XLRatio_Incl_Cent_cr-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:17
+(epstopdf)                    size: 13126 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XLRatio_Incl_Cent_cr-eps
@@ -2227,7 +2530,7 @@ Package pdftex.def Info: figures/rope/XLRatio_Incl_Cent_cr-eps-converted-to.pdf
   used on input line 131.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OLRatio_Incl_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14287 bytes
 (epstopdf)             Output file: <figures/rope/OLRatio_Incl_Cent_cr-eps-conv
 erted-to.pdf>
@@ -2236,7 +2539,13 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OLRatio_Incl_
 Cent_cr-eps-converted-to.pdf figures/rope/OLRatio_Incl_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 132.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OLRatio_Incl_Cent_cr-eps-converted-t
+o.pdf figures/rope/OLRatio_Incl_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OLRatio_Incl_Cent_cr-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:17
+(epstopdf)                    size: 13152 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OLRatio_Incl_Cent_cr-eps
@@ -2251,7 +2560,7 @@ Package pdftex.def Info: figures/rope/OLRatio_Incl_Cent_cr-eps-converted-to.pdf
   used on input line 132.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OXRatio_Incl_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14199 bytes
 (epstopdf)             Output file: <figures/rope/OXRatio_Incl_Cent_cr-eps-conv
 erted-to.pdf>
@@ -2260,7 +2569,13 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OXRatio_Incl_
 Cent_cr-eps-converted-to.pdf figures/rope/OXRatio_Incl_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 133.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OXRatio_Incl_Cent_cr-eps-converted-t
+o.pdf figures/rope/OXRatio_Incl_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OXRatio_Incl_Cent_cr-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:17
+(epstopdf)                    size: 13046 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OXRatio_Incl_Cent_cr-eps
@@ -2275,8 +2590,8 @@ Package pdftex.def Info: figures/rope/OXRatio_Incl_Cent_cr-eps-converted-to.pdf
   used on input line 133.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/KPhiRatio_Incl_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 13582 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 13574 bytes
 (epstopdf)             Output file: <figures/rope/KPhiRatio_Incl_Cent_cr-eps-co
 nverted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:09
@@ -2284,23 +2599,29 @@ nverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/KPhiRatio_Inc
 l_Cent_cr-eps-converted-to.pdf figures/rope/KPhiRatio_Incl_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 134.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/KPhiRatio_Incl_Cent_cr-eps-converted
+-to.pdf figures/rope/KPhiRatio_Incl_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/KPhiRatio_Incl_Cent_cr-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:18
+(epstopdf)                    size: 12867 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/KPhiRatio_Incl_Cent_cr-e
 ps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
 <figures/rope/KPhiRatio_Incl_Cent_cr-eps-converted-to.pdf, id=76, 569.12625pt x
- 384.43625pt>
+ 385.44pt>
 File: figures/rope/KPhiRatio_Incl_Cent_cr-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/rope/KPhiRatio_Incl_Cent_cr-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/KPhiRatio_Incl_Cent_cr-eps-converted-to.p
 df  used on input line 134.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/LPhiRatio_Incl_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 13402 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 13414 bytes
 (epstopdf)             Output file: <figures/rope/LPhiRatio_Incl_Cent_cr-eps-co
 nverted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:09
@@ -2308,23 +2629,29 @@ nverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LPhiRatio_Inc
 l_Cent_cr-eps-converted-to.pdf figures/rope/LPhiRatio_Incl_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 135.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LPhiRatio_Incl_Cent_cr-eps-converted
+-to.pdf figures/rope/LPhiRatio_Incl_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/LPhiRatio_Incl_Cent_cr-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:18
+(epstopdf)                    size: 13008 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LPhiRatio_Incl_Cent_cr-e
 ps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
 <figures/rope/LPhiRatio_Incl_Cent_cr-eps-converted-to.pdf, id=77, 569.12625pt x
- 384.43625pt>
+ 385.44pt>
 File: figures/rope/LPhiRatio_Incl_Cent_cr-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/rope/LPhiRatio_Incl_Cent_cr-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/LPhiRatio_Incl_Cent_cr-eps-converted-to.p
 df  used on input line 135.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/XPhiRatio_Incl_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 13855 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 13863 bytes
 (epstopdf)             Output file: <figures/rope/XPhiRatio_Incl_Cent_cr-eps-co
 nverted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:10
@@ -2332,23 +2659,29 @@ nverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XPhiRatio_Inc
 l_Cent_cr-eps-converted-to.pdf figures/rope/XPhiRatio_Incl_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 136.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XPhiRatio_Incl_Cent_cr-eps-converted
+-to.pdf figures/rope/XPhiRatio_Incl_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XPhiRatio_Incl_Cent_cr-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:18
+(epstopdf)                    size: 13191 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XPhiRatio_Incl_Cent_cr-e
 ps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
 <figures/rope/XPhiRatio_Incl_Cent_cr-eps-converted-to.pdf, id=78, 569.12625pt x
- 384.43625pt>
+ 385.44pt>
 File: figures/rope/XPhiRatio_Incl_Cent_cr-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/rope/XPhiRatio_Incl_Cent_cr-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/XPhiRatio_Incl_Cent_cr-eps-converted-to.p
 df  used on input line 136.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OPhiRatio_Incl_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 14663 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 14666 bytes
 (epstopdf)             Output file: <figures/rope/OPhiRatio_Incl_Cent_cr-eps-co
 nverted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:10
@@ -2356,25 +2689,31 @@ nverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OPhiRatio_Inc
 l_Cent_cr-eps-converted-to.pdf figures/rope/OPhiRatio_Incl_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 137.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OPhiRatio_Incl_Cent_cr-eps-converted
+-to.pdf figures/rope/OPhiRatio_Incl_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OPhiRatio_Incl_Cent_cr-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:18
+(epstopdf)                    size: 13438 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OPhiRatio_Incl_Cent_cr-e
 ps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most versi
 on <1.5> allowed
 <figures/rope/OPhiRatio_Incl_Cent_cr-eps-converted-to.pdf, id=79, 569.12625pt x
- 384.43625pt>
+ 385.44pt>
 File: figures/rope/OPhiRatio_Incl_Cent_cr-eps-converted-to.pdf Graphic file (ty
 pe pdf)
 <use figures/rope/OPhiRatio_Incl_Cent_cr-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/OPhiRatio_Incl_Cent_cr-eps-converted-to.p
 df  used on input line 137.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 
-LaTeX Warning: Float too large for page by 17.2709pt on input line 141.
+LaTeX Warning: Float too large for page by 17.94531pt on input line 141.
 
 Package epstopdf Info: Source file: <figures/rope/LKRatio_Incl_Cent_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 13497 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_Incl_Cent_rope-eps-co
 nverted-to.pdf>
@@ -2383,7 +2722,13 @@ nverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LKRatio_Incl_
 Cent_rope-eps-converted-to.pdf figures/rope/LKRatio_Incl_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 145.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LKRatio_Incl_Cent_rope-eps-converted
+-to.pdf figures/rope/LKRatio_Incl_Cent_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/LKRatio_Incl_Cent_rope-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:19
+(epstopdf)                    size: 12845 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LKRatio_Incl_Cent_rope-e
@@ -2398,7 +2743,7 @@ Package pdftex.def Info: figures/rope/LKRatio_Incl_Cent_rope-eps-converted-to.p
 df  used on input line 145.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/XKRatio_Incl_Cent_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14077 bytes
 (epstopdf)             Output file: <figures/rope/XKRatio_Incl_Cent_rope-eps-co
 nverted-to.pdf>
@@ -2407,7 +2752,13 @@ nverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XKRatio_Incl_
 Cent_rope-eps-converted-to.pdf figures/rope/XKRatio_Incl_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 146.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XKRatio_Incl_Cent_rope-eps-converted
+-to.pdf figures/rope/XKRatio_Incl_Cent_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XKRatio_Incl_Cent_rope-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:19
+(epstopdf)                    size: 13089 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XKRatio_Incl_Cent_rope-e
@@ -2422,7 +2773,7 @@ Package pdftex.def Info: figures/rope/XKRatio_Incl_Cent_rope-eps-converted-to.p
 df  used on input line 146.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OKRatio_Incl_Cent_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 13779 bytes
 (epstopdf)             Output file: <figures/rope/OKRatio_Incl_Cent_rope-eps-co
 nverted-to.pdf>
@@ -2431,7 +2782,13 @@ nverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OKRatio_Incl_
 Cent_rope-eps-converted-to.pdf figures/rope/OKRatio_Incl_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 147.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OKRatio_Incl_Cent_rope-eps-converted
+-to.pdf figures/rope/OKRatio_Incl_Cent_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OKRatio_Incl_Cent_rope-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:19
+(epstopdf)                    size: 12920 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OKRatio_Incl_Cent_rope-e
@@ -2446,7 +2803,7 @@ Package pdftex.def Info: figures/rope/OKRatio_Incl_Cent_rope-eps-converted-to.p
 df  used on input line 147.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/XLRatio_Incl_Cent_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14204 bytes
 (epstopdf)             Output file: <figures/rope/XLRatio_Incl_Cent_rope-eps-co
 nverted-to.pdf>
@@ -2455,7 +2812,13 @@ nverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XLRatio_Incl_
 Cent_rope-eps-converted-to.pdf figures/rope/XLRatio_Incl_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 148.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XLRatio_Incl_Cent_rope-eps-converted
+-to.pdf figures/rope/XLRatio_Incl_Cent_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XLRatio_Incl_Cent_rope-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:20
+(epstopdf)                    size: 13278 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XLRatio_Incl_Cent_rope-e
@@ -2470,7 +2833,7 @@ Package pdftex.def Info: figures/rope/XLRatio_Incl_Cent_rope-eps-converted-to.p
 df  used on input line 148.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OLRatio_Incl_Cent_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 14223 bytes
 (epstopdf)             Output file: <figures/rope/OLRatio_Incl_Cent_rope-eps-co
 nverted-to.pdf>
@@ -2479,7 +2842,13 @@ nverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OLRatio_Incl_
 Cent_rope-eps-converted-to.pdf figures/rope/OLRatio_Incl_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 149.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OLRatio_Incl_Cent_rope-eps-converted
+-to.pdf figures/rope/OLRatio_Incl_Cent_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OLRatio_Incl_Cent_rope-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:20
+(epstopdf)                    size: 13235 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OLRatio_Incl_Cent_rope-e
@@ -2494,7 +2863,7 @@ Package pdftex.def Info: figures/rope/OLRatio_Incl_Cent_rope-eps-converted-to.p
 df  used on input line 149.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OXRatio_Incl_Cent_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 13972 bytes
 (epstopdf)             Output file: <figures/rope/OXRatio_Incl_Cent_rope-eps-co
 nverted-to.pdf>
@@ -2503,7 +2872,13 @@ nverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OXRatio_Incl_
 Cent_rope-eps-converted-to.pdf figures/rope/OXRatio_Incl_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 150.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OXRatio_Incl_Cent_rope-eps-converted
+-to.pdf figures/rope/OXRatio_Incl_Cent_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OXRatio_Incl_Cent_rope-eps-co
+nverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:20
+(epstopdf)                    size: 12967 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OXRatio_Incl_Cent_rope-e
@@ -2519,8 +2894,8 @@ df  used on input line 150.
 (pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/KPhiRatio_Incl_Cent_rope.eps>
 
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 13552 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 13549 bytes
 (epstopdf)             Output file: <figures/rope/KPhiRatio_Incl_Cent_rope-eps-
 converted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:12
@@ -2528,24 +2903,31 @@ converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/KPhiRatio_Inc
 l_Cent_rope-eps-converted-to.pdf figures/rope/KPhiRatio_Incl_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 151.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/KPhiRatio_Incl_Cent_rope-eps-convert
+ed-to.pdf figures/rope/KPhiRatio_Incl_Cent_rope.eps)...executed safely (allowed
+).
+
+Package epstopdf Info: Result file: <figures/rope/KPhiRatio_Incl_Cent_rope-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:21
+(epstopdf)                    size: 12955 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/KPhiRatio_Incl_Cent_rope
 -eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most ver
 sion <1.5> allowed
 <figures/rope/KPhiRatio_Incl_Cent_rope-eps-converted-to.pdf, id=86, 569.12625pt
- x 384.43625pt>
+ x 385.44pt>
 File: figures/rope/KPhiRatio_Incl_Cent_rope-eps-converted-to.pdf Graphic file (
 type pdf)
 <use figures/rope/KPhiRatio_Incl_Cent_rope-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/KPhiRatio_Incl_Cent_rope-eps-converted-to
 .pdf  used on input line 151.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/LPhiRatio_Incl_Cent_rope.eps>
 
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 13340 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 13348 bytes
 (epstopdf)             Output file: <figures/rope/LPhiRatio_Incl_Cent_rope-eps-
 converted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:12
@@ -2553,24 +2935,31 @@ converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LPhiRatio_Inc
 l_Cent_rope-eps-converted-to.pdf figures/rope/LPhiRatio_Incl_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 152.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LPhiRatio_Incl_Cent_rope-eps-convert
+ed-to.pdf figures/rope/LPhiRatio_Incl_Cent_rope.eps)...executed safely (allowed
+).
+
+Package epstopdf Info: Result file: <figures/rope/LPhiRatio_Incl_Cent_rope-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:21
+(epstopdf)                    size: 12974 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LPhiRatio_Incl_Cent_rope
 -eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most ver
 sion <1.5> allowed
 <figures/rope/LPhiRatio_Incl_Cent_rope-eps-converted-to.pdf, id=87, 569.12625pt
- x 384.43625pt>
+ x 385.44pt>
 File: figures/rope/LPhiRatio_Incl_Cent_rope-eps-converted-to.pdf Graphic file (
 type pdf)
 <use figures/rope/LPhiRatio_Incl_Cent_rope-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/LPhiRatio_Incl_Cent_rope-eps-converted-to
 .pdf  used on input line 152.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/XPhiRatio_Incl_Cent_rope.eps>
 
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 13759 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 13763 bytes
 (epstopdf)             Output file: <figures/rope/XPhiRatio_Incl_Cent_rope-eps-
 converted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:13
@@ -2578,24 +2967,31 @@ converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XPhiRatio_Inc
 l_Cent_rope-eps-converted-to.pdf figures/rope/XPhiRatio_Incl_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 153.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XPhiRatio_Incl_Cent_rope-eps-convert
+ed-to.pdf figures/rope/XPhiRatio_Incl_Cent_rope.eps)...executed safely (allowed
+).
+
+Package epstopdf Info: Result file: <figures/rope/XPhiRatio_Incl_Cent_rope-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:21
+(epstopdf)                    size: 13131 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XPhiRatio_Incl_Cent_rope
 -eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most ver
 sion <1.5> allowed
 <figures/rope/XPhiRatio_Incl_Cent_rope-eps-converted-to.pdf, id=88, 569.12625pt
- x 384.43625pt>
+ x 385.44pt>
 File: figures/rope/XPhiRatio_Incl_Cent_rope-eps-converted-to.pdf Graphic file (
 type pdf)
 <use figures/rope/XPhiRatio_Incl_Cent_rope-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/XPhiRatio_Incl_Cent_rope-eps-converted-to
 .pdf  used on input line 153.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 Package epstopdf Info: Source file: <figures/rope/OPhiRatio_Incl_Cent_rope.eps>
 
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 14064 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 14069 bytes
 (epstopdf)             Output file: <figures/rope/OPhiRatio_Incl_Cent_rope-eps-
 converted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:13
@@ -2603,27 +2999,34 @@ converted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OPhiRatio_Inc
 l_Cent_rope-eps-converted-to.pdf figures/rope/OPhiRatio_Incl_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 154.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OPhiRatio_Incl_Cent_rope-eps-convert
+ed-to.pdf figures/rope/OPhiRatio_Incl_Cent_rope.eps)...executed safely (allowed
+).
+
+Package epstopdf Info: Result file: <figures/rope/OPhiRatio_Incl_Cent_rope-eps-
+converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:22
+(epstopdf)                    size: 13110 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OPhiRatio_Incl_Cent_rope
 -eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most ver
 sion <1.5> allowed
 <figures/rope/OPhiRatio_Incl_Cent_rope-eps-converted-to.pdf, id=89, 569.12625pt
- x 384.43625pt>
+ x 385.44pt>
 File: figures/rope/OPhiRatio_Incl_Cent_rope-eps-converted-to.pdf Graphic file (
 type pdf)
 <use figures/rope/OPhiRatio_Incl_Cent_rope-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/OPhiRatio_Incl_Cent_rope-eps-converted-to
 .pdf  used on input line 154.
-(pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
+(pdftex.def)             Requested size: 191.20168pt x 129.4893pt.
 
-LaTeX Warning: Float too large for page by 17.2709pt on input line 158.
+LaTeX Warning: Float too large for page by 17.94531pt on input line 158.
 
 Package epstopdf Info: Source file: <figures/rope/LKRatio_Incl_Cent_Data_cr_rop
 e.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 15044 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 15009 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_Incl_Cent_Data_cr_rop
 e-eps-converted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:13
@@ -2632,24 +3035,31 @@ e-eps-converted-to.pdf>
 Cent_Data_cr_rope-eps-converted-to.pdf figures/rope/LKRatio_Incl_Cent_Data_cr_r
 ope.eps>
 (epstopdf)             \includegraphics on input line 162.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LKRatio_Incl_Cent_Data_cr_rope-eps-c
+onverted-to.pdf figures/rope/LKRatio_Incl_Cent_Data_cr_rope.eps)...executed saf
+ely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/LKRatio_Incl_Cent_Data_cr_rop
+e-eps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:22
+(epstopdf)                    size: 13724 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LKRatio_Incl_Cent_Data_c
 r_rope-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at mo
 st version <1.5> allowed
 <figures/rope/LKRatio_Incl_Cent_Data_cr_rope-eps-converted-to.pdf, id=90, 569.1
-2625pt x 384.43625pt>
+2625pt x 385.44pt>
 File: figures/rope/LKRatio_Incl_Cent_Data_cr_rope-eps-converted-to.pdf Graphic 
 file (type pdf)
 <use figures/rope/LKRatio_Incl_Cent_Data_cr_rope-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/LKRatio_Incl_Cent_Data_cr_rope-eps-conver
 ted-to.pdf  used on input line 162.
-(pdftex.def)             Requested size: 145.68143pt x 98.40244pt.
+(pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/LKRatio_Incl_Cent_Data_cr.eps
 >
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 14999 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 15015 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_Incl_Cent_Data_cr-eps
 -converted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:14
@@ -2657,24 +3067,31 @@ Package epstopdf Info: Source file: <figures/rope/LKRatio_Incl_Cent_Data_cr.eps
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LKRatio_Incl_
 Cent_Data_cr-eps-converted-to.pdf figures/rope/LKRatio_Incl_Cent_Data_cr.eps>
 (epstopdf)             \includegraphics on input line 163.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LKRatio_Incl_Cent_Data_cr-eps-conver
+ted-to.pdf figures/rope/LKRatio_Incl_Cent_Data_cr.eps)...executed safely (allow
+ed).
+
+Package epstopdf Info: Result file: <figures/rope/LKRatio_Incl_Cent_Data_cr-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:22
+(epstopdf)                    size: 13641 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LKRatio_Incl_Cent_Data_c
 r-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most ve
 rsion <1.5> allowed
 <figures/rope/LKRatio_Incl_Cent_Data_cr-eps-converted-to.pdf, id=91, 569.12625p
-t x 384.43625pt>
+t x 385.44pt>
 File: figures/rope/LKRatio_Incl_Cent_Data_cr-eps-converted-to.pdf Graphic file 
 (type pdf)
 <use figures/rope/LKRatio_Incl_Cent_Data_cr-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/LKRatio_Incl_Cent_Data_cr-eps-converted-t
 o.pdf  used on input line 163.
-(pdftex.def)             Requested size: 145.68143pt x 98.40244pt.
+(pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/LKRatio_Incl_Cent_Data_rope.e
 ps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 15038 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 15050 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_Incl_Cent_Data_rope-e
 ps-converted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:14
@@ -2683,22 +3100,29 @@ ps-converted-to.pdf>
 Cent_Data_rope-eps-converted-to.pdf figures/rope/LKRatio_Incl_Cent_Data_rope.ep
 s>
 (epstopdf)             \includegraphics on input line 164.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LKRatio_Incl_Cent_Data_rope-eps-conv
+erted-to.pdf figures/rope/LKRatio_Incl_Cent_Data_rope.eps)...executed safely (a
+llowed).
+
+Package epstopdf Info: Result file: <figures/rope/LKRatio_Incl_Cent_Data_rope-e
+ps-converted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:23
+(epstopdf)                    size: 13748 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LKRatio_Incl_Cent_Data_r
 ope-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most 
 version <1.5> allowed
 <figures/rope/LKRatio_Incl_Cent_Data_rope-eps-converted-to.pdf, id=92, 569.1262
-5pt x 384.43625pt>
+5pt x 385.44pt>
 File: figures/rope/LKRatio_Incl_Cent_Data_rope-eps-converted-to.pdf Graphic fil
 e (type pdf)
 <use figures/rope/LKRatio_Incl_Cent_Data_rope-eps-converted-to.pdf>
 Package pdftex.def Info: figures/rope/LKRatio_Incl_Cent_Data_rope-eps-converted
 -to.pdf  used on input line 164.
-(pdftex.def)             Requested size: 145.68143pt x 98.40244pt.
+(pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/LKRatio_JE.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12944 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_JE-eps-converted-to.p
 df>
@@ -2707,7 +3131,13 @@ df>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LKRatio_JE-ep
 s-converted-to.pdf figures/rope/LKRatio_JE.eps>
 (epstopdf)             \includegraphics on input line 172.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LKRatio_JE-eps-converted-to.pdf figu
+res/rope/LKRatio_JE.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/LKRatio_JE-eps-converted-to.p
+df>
+(epstopdf)                    date: 2021-04-24 16:37:23
+(epstopdf)                    size: 10552 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LKRatio_JE-eps-converted
@@ -2720,7 +3150,7 @@ Package pdftex.def Info: figures/rope/LKRatio_JE-eps-converted-to.pdf  used on
 input line 172.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/XKRatio_JE.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12324 bytes
 (epstopdf)             Output file: <figures/rope/XKRatio_JE-eps-converted-to.p
 df>
@@ -2729,7 +3159,13 @@ df>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XKRatio_JE-ep
 s-converted-to.pdf figures/rope/XKRatio_JE.eps>
 (epstopdf)             \includegraphics on input line 173.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XKRatio_JE-eps-converted-to.pdf figu
+res/rope/XKRatio_JE.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XKRatio_JE-eps-converted-to.p
+df>
+(epstopdf)                    date: 2021-04-24 16:37:23
+(epstopdf)                    size: 10320 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XKRatio_JE-eps-converted
@@ -2742,7 +3178,7 @@ Package pdftex.def Info: figures/rope/XKRatio_JE-eps-converted-to.pdf  used on
 input line 173.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/OKRatio_JE.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12507 bytes
 (epstopdf)             Output file: <figures/rope/OKRatio_JE-eps-converted-to.p
 df>
@@ -2751,7 +3187,13 @@ df>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OKRatio_JE-ep
 s-converted-to.pdf figures/rope/OKRatio_JE.eps>
 (epstopdf)             \includegraphics on input line 174.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OKRatio_JE-eps-converted-to.pdf figu
+res/rope/OKRatio_JE.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OKRatio_JE-eps-converted-to.p
+df>
+(epstopdf)                    date: 2021-04-24 16:37:24
+(epstopdf)                    size: 10331 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OKRatio_JE-eps-converted
@@ -2764,7 +3206,7 @@ Package pdftex.def Info: figures/rope/OKRatio_JE-eps-converted-to.pdf  used on
 input line 174.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/XLRatio_JE.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12671 bytes
 (epstopdf)             Output file: <figures/rope/XLRatio_JE-eps-converted-to.p
 df>
@@ -2773,7 +3215,13 @@ df>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XLRatio_JE-ep
 s-converted-to.pdf figures/rope/XLRatio_JE.eps>
 (epstopdf)             \includegraphics on input line 175.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XLRatio_JE-eps-converted-to.pdf figu
+res/rope/XLRatio_JE.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XLRatio_JE-eps-converted-to.p
+df>
+(epstopdf)                    date: 2021-04-24 16:37:24
+(epstopdf)                    size: 10239 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XLRatio_JE-eps-converted
@@ -2786,7 +3234,7 @@ Package pdftex.def Info: figures/rope/XLRatio_JE-eps-converted-to.pdf  used on
 input line 175.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/OLRatio_JE.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12213 bytes
 (epstopdf)             Output file: <figures/rope/OLRatio_JE-eps-converted-to.p
 df>
@@ -2795,7 +3243,13 @@ df>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OLRatio_JE-ep
 s-converted-to.pdf figures/rope/OLRatio_JE.eps>
 (epstopdf)             \includegraphics on input line 176.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OLRatio_JE-eps-converted-to.pdf figu
+res/rope/OLRatio_JE.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OLRatio_JE-eps-converted-to.p
+df>
+(epstopdf)                    date: 2021-04-24 16:37:24
+(epstopdf)                    size: 10123 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OLRatio_JE-eps-converted
@@ -2808,7 +3262,7 @@ Package pdftex.def Info: figures/rope/OLRatio_JE-eps-converted-to.pdf  used on
 input line 176.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/OXRatio_JE.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12904 bytes
 (epstopdf)             Output file: <figures/rope/OXRatio_JE-eps-converted-to.p
 df>
@@ -2817,7 +3271,13 @@ df>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OXRatio_JE-ep
 s-converted-to.pdf figures/rope/OXRatio_JE.eps>
 (epstopdf)             \includegraphics on input line 177.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OXRatio_JE-eps-converted-to.pdf figu
+res/rope/OXRatio_JE.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OXRatio_JE-eps-converted-to.p
+df>
+(epstopdf)                    date: 2021-04-24 16:37:24
+(epstopdf)                    size: 10230 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OXRatio_JE-eps-converted
@@ -2830,8 +3290,8 @@ Package pdftex.def Info: figures/rope/OXRatio_JE-eps-converted-to.pdf  used on
 input line 177.
 (pdftex.def)             Requested size: 145.68143pt x 98.65936pt.
 Package epstopdf Info: Source file: <figures/rope/LKRatio_JE_Cent_cr_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 12819 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 12821 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_JE_Cent_cr_rope-eps-c
 onverted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:16
@@ -2839,7 +3299,13 @@ onverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LKRatio_JE_Ce
 nt_cr_rope-eps-converted-to.pdf figures/rope/LKRatio_JE_Cent_cr_rope.eps>
 (epstopdf)             \includegraphics on input line 185.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LKRatio_JE_Cent_cr_rope-eps-converte
+d-to.pdf figures/rope/LKRatio_JE_Cent_cr_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/LKRatio_JE_Cent_cr_rope-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:25
+(epstopdf)                    size: 10704 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LKRatio_JE_Cent_cr_rope-
@@ -2854,7 +3320,7 @@ Package pdftex.def Info: figures/rope/LKRatio_JE_Cent_cr_rope-eps-converted-to.
 pdf  used on input line 185.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/XKRatio_JE_Cent_cr_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12736 bytes
 (epstopdf)             Output file: <figures/rope/XKRatio_JE_Cent_cr_rope-eps-c
 onverted-to.pdf>
@@ -2863,7 +3329,13 @@ onverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XKRatio_JE_Ce
 nt_cr_rope-eps-converted-to.pdf figures/rope/XKRatio_JE_Cent_cr_rope.eps>
 (epstopdf)             \includegraphics on input line 186.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XKRatio_JE_Cent_cr_rope-eps-converte
+d-to.pdf figures/rope/XKRatio_JE_Cent_cr_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XKRatio_JE_Cent_cr_rope-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:25
+(epstopdf)                    size: 10799 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XKRatio_JE_Cent_cr_rope-
@@ -2878,7 +3350,7 @@ Package pdftex.def Info: figures/rope/XKRatio_JE_Cent_cr_rope-eps-converted-to.
 pdf  used on input line 186.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/OKRatio_JE_Cent_cr_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12310 bytes
 (epstopdf)             Output file: <figures/rope/OKRatio_JE_Cent_cr_rope-eps-c
 onverted-to.pdf>
@@ -2887,7 +3359,13 @@ onverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OKRatio_JE_Ce
 nt_cr_rope-eps-converted-to.pdf figures/rope/OKRatio_JE_Cent_cr_rope.eps>
 (epstopdf)             \includegraphics on input line 187.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OKRatio_JE_Cent_cr_rope-eps-converte
+d-to.pdf figures/rope/OKRatio_JE_Cent_cr_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OKRatio_JE_Cent_cr_rope-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:25
+(epstopdf)                    size: 10320 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OKRatio_JE_Cent_cr_rope-
@@ -2902,7 +3380,7 @@ Package pdftex.def Info: figures/rope/OKRatio_JE_Cent_cr_rope-eps-converted-to.
 pdf  used on input line 187.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/XLRatio_JE_Cent_cr_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12635 bytes
 (epstopdf)             Output file: <figures/rope/XLRatio_JE_Cent_cr_rope-eps-c
 onverted-to.pdf>
@@ -2911,7 +3389,13 @@ onverted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XLRatio_JE_Ce
 nt_cr_rope-eps-converted-to.pdf figures/rope/XLRatio_JE_Cent_cr_rope.eps>
 (epstopdf)             \includegraphics on input line 188.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XLRatio_JE_Cent_cr_rope-eps-converte
+d-to.pdf figures/rope/XLRatio_JE_Cent_cr_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XLRatio_JE_Cent_cr_rope-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:26
+(epstopdf)                    size: 10672 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XLRatio_JE_Cent_cr_rope-
@@ -2926,8 +3410,8 @@ Package pdftex.def Info: figures/rope/XLRatio_JE_Cent_cr_rope-eps-converted-to.
 pdf  used on input line 188.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/LKRatio_JE_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 12770 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 12771 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_JE_Cent_cr-eps-conver
 ted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:17
@@ -2935,7 +3419,13 @@ ted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LKRatio_JE_Ce
 nt_cr-eps-converted-to.pdf figures/rope/LKRatio_JE_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 196.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LKRatio_JE_Cent_cr-eps-converted-to.
+pdf figures/rope/LKRatio_JE_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/LKRatio_JE_Cent_cr-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:26
+(epstopdf)                    size: 10570 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LKRatio_JE_Cent_cr-eps-c
@@ -2950,8 +3440,8 @@ Package pdftex.def Info: figures/rope/LKRatio_JE_Cent_cr-eps-converted-to.pdf
 used on input line 196.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/XKRatio_JE_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 12624 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 12656 bytes
 (epstopdf)             Output file: <figures/rope/XKRatio_JE_Cent_cr-eps-conver
 ted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:18
@@ -2959,7 +3449,13 @@ ted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XKRatio_JE_Ce
 nt_cr-eps-converted-to.pdf figures/rope/XKRatio_JE_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 197.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XKRatio_JE_Cent_cr-eps-converted-to.
+pdf figures/rope/XKRatio_JE_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XKRatio_JE_Cent_cr-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:26
+(epstopdf)                    size: 10681 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XKRatio_JE_Cent_cr-eps-c
@@ -2974,8 +3470,8 @@ Package pdftex.def Info: figures/rope/XKRatio_JE_Cent_cr-eps-converted-to.pdf
 used on input line 197.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/OKRatio_JE_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 12058 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 12060 bytes
 (epstopdf)             Output file: <figures/rope/OKRatio_JE_Cent_cr-eps-conver
 ted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:18
@@ -2983,7 +3479,13 @@ ted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OKRatio_JE_Ce
 nt_cr-eps-converted-to.pdf figures/rope/OKRatio_JE_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 198.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OKRatio_JE_Cent_cr-eps-converted-to.
+pdf figures/rope/OKRatio_JE_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OKRatio_JE_Cent_cr-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:27
+(epstopdf)                    size: 10077 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OKRatio_JE_Cent_cr-eps-c
@@ -2998,7 +3500,7 @@ Package pdftex.def Info: figures/rope/OKRatio_JE_Cent_cr-eps-converted-to.pdf
 used on input line 198.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/XLRatio_JE_Cent_cr.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12606 bytes
 (epstopdf)             Output file: <figures/rope/XLRatio_JE_Cent_cr-eps-conver
 ted-to.pdf>
@@ -3007,7 +3509,13 @@ ted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XLRatio_JE_Ce
 nt_cr-eps-converted-to.pdf figures/rope/XLRatio_JE_Cent_cr.eps>
 (epstopdf)             \includegraphics on input line 199.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XLRatio_JE_Cent_cr-eps-converted-to.
+pdf figures/rope/XLRatio_JE_Cent_cr.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XLRatio_JE_Cent_cr-eps-conver
+ted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:27
+(epstopdf)                    size: 10582 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XLRatio_JE_Cent_cr-eps-c
@@ -3022,8 +3530,8 @@ Package pdftex.def Info: figures/rope/XLRatio_JE_Cent_cr-eps-converted-to.pdf
 used on input line 199.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/LKRatio_JE_Cent_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 12703 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 12735 bytes
 (epstopdf)             Output file: <figures/rope/LKRatio_JE_Cent_rope-eps-conv
 erted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:19
@@ -3031,7 +3539,13 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/LKRatio_JE_Ce
 nt_rope-eps-converted-to.pdf figures/rope/LKRatio_JE_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 206.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/LKRatio_JE_Cent_rope-eps-converted-t
+o.pdf figures/rope/LKRatio_JE_Cent_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/LKRatio_JE_Cent_rope-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:27
+(epstopdf)                    size: 10636 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/LKRatio_JE_Cent_rope-eps
@@ -3046,8 +3560,8 @@ Package pdftex.def Info: figures/rope/LKRatio_JE_Cent_rope-eps-converted-to.pdf
   used on input line 206.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/XKRatio_JE_Cent_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 12657 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 12689 bytes
 (epstopdf)             Output file: <figures/rope/XKRatio_JE_Cent_rope-eps-conv
 erted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:19
@@ -3055,7 +3569,13 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XKRatio_JE_Ce
 nt_rope-eps-converted-to.pdf figures/rope/XKRatio_JE_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 207.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XKRatio_JE_Cent_rope-eps-converted-t
+o.pdf figures/rope/XKRatio_JE_Cent_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XKRatio_JE_Cent_rope-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:28
+(epstopdf)                    size: 10762 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XKRatio_JE_Cent_rope-eps
@@ -3070,7 +3590,7 @@ Package pdftex.def Info: figures/rope/XKRatio_JE_Cent_rope-eps-converted-to.pdf
   used on input line 207.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/OKRatio_JE_Cent_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
+(epstopdf)                    date: 2021-04-23 17:51:27
 (epstopdf)                    size: 12028 bytes
 (epstopdf)             Output file: <figures/rope/OKRatio_JE_Cent_rope-eps-conv
 erted-to.pdf>
@@ -3079,7 +3599,13 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/OKRatio_JE_Ce
 nt_rope-eps-converted-to.pdf figures/rope/OKRatio_JE_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 208.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/OKRatio_JE_Cent_rope-eps-converted-t
+o.pdf figures/rope/OKRatio_JE_Cent_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/OKRatio_JE_Cent_rope-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:28
+(epstopdf)                    size: 10144 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/OKRatio_JE_Cent_rope-eps
@@ -3094,8 +3620,8 @@ Package pdftex.def Info: figures/rope/OKRatio_JE_Cent_rope-eps-converted-to.pdf
   used on input line 208.
 (pdftex.def)             Requested size: 218.51521pt x 147.99197pt.
 Package epstopdf Info: Source file: <figures/rope/XLRatio_JE_Cent_rope.eps>
-(epstopdf)                    date: 2021-04-23 17:42:45
-(epstopdf)                    size: 12556 bytes
+(epstopdf)                    date: 2021-04-23 17:51:27
+(epstopdf)                    size: 12557 bytes
 (epstopdf)             Output file: <figures/rope/XLRatio_JE_Cent_rope-eps-conv
 erted-to.pdf>
 (epstopdf)                    date: 2021-04-23 17:45:20
@@ -3103,7 +3629,13 @@ erted-to.pdf>
 (epstopdf)             Command: <repstopdf --outfile=figures/rope/XLRatio_JE_Ce
 nt_rope-eps-converted-to.pdf figures/rope/XLRatio_JE_Cent_rope.eps>
 (epstopdf)             \includegraphics on input line 209.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figures/rope/XLRatio_JE_Cent_rope-eps-converted-t
+o.pdf figures/rope/XLRatio_JE_Cent_rope.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <figures/rope/XLRatio_JE_Cent_rope-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2021-04-24 16:37:28
+(epstopdf)                    size: 10584 bytes.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures/rope/XLRatio_JE_Cent_rope-eps
@@ -3216,7 +3748,7 @@ hare/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on StrinJet.pdf (15 pages, 824948 bytes).
+Output written on StrinJet.pdf (15 pages, 824730 bytes).
 PDF statistics:
  1490 PDF objects out of 1728 (max. 8388607)
  981 compressed objects within 10 object streams

@@ -2,8 +2,13 @@
 
 void InteRatio_KPhi(){
 //=============================================================================
-  //auto hD(GetDataC("data/HEPData_1606.07424v2.root", 36+i)); 
-  //auto gD = GetDataE("data/HEPData_1606.07424v2.root", 36+i); 
+  //auto hDPhi  (GetDataC("data/HEPData_1807.11321v2.root", 97)); //PhiPi
+  //auto hDPK (GetDataC("data/HEPData_1606.07424v2.root", 36)); 
+  //auto hD = (TH1D*)hDPK->Divide(hDPhi); 
+
+  //auto gDPhi = GetDataE("data/HEPData_1807.11321v2.root", 97); 
+  //auto gDK = GetDataE("data/HEPData_1606.07424v2.root", 36); 
+
   TGraph* g[3];
   g[0] = InteRatio(1, 0, 0, 4);    //Para1: "pp13TeV", "pp7TeV" 
   g[1] = InteRatio(1, 1, 0, 4);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
