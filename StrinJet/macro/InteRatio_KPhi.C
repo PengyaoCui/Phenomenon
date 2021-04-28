@@ -2,13 +2,62 @@
 
 void InteRatio_KPhi(){
 //=============================================================================
-  //auto hDPhi  (GetDataC("data/HEPData_1807.11321v2.root", 97)); //PhiPi
-  //auto hDPK (GetDataC("data/HEPData_1606.07424v2.root", 36)); 
-  //auto hD = (TH1D*)hDPK->Divide(hDPhi); 
+#if 0  //different multiplicity bin number
+  auto hDPhi  (GetDataC("data/HEPData_1807.11321v2.root", 97)); //PhiPi
+  auto hDK (GetDataC("data/HEPData_1606.07424v2.root", 36)); 
 
-  //auto gDPhi = GetDataE("data/HEPData_1807.11321v2.root", 97); 
-  //auto gDK = GetDataE("data/HEPData_1606.07424v2.root", 36); 
-
+  Double_t dPhiVal[nc-1]; Double_t dKVal[nc-1]; Double_t dVal[nc-1]; 
+  Double_t dPhiErr[nc-1]; Double_t dKErr[nc-1];
+  Double_t dX[nc-1];
+  Int_t j = 0;
+  auto v(0.), e(0.);
+  for(Int_t i = 1; i<=hDPhi->GetNbinsX(); i++){
+    v = hDPhi->GetBinContent(i);
+    e = hDPhi->GetBinError(i);
+    if(v!=0.){
+      dPhiVal[j] = v;
+      dPhiErr[j] = e;
+      j=j+1;
+    }
+    v=e=0.;
+  }
+  
+  auto hD = (TH1D*)hDK->Clone("hD"); hD->Reset();
+  j=0;
+  for(Int_t i = 1; i<=hDK->GetNbinsX(); i++){
+    v=e=0.; 
+    v = hDK->GetBinContent(i);
+    e = hDK->GetBinError(i);
+    if(v==0.){
+      hD->SetBinContent(i, 0.); 
+      hD->SetBinError(i, 0.); 
+    }
+    if(v!=0.){
+      dKVal[j] = v;
+      dKErr[j] = e;
+      cout<<j<<endl;
+      cout<<dKVal[j]<<endl;
+      dVal[j] =  dKVal[j]/dPhiVal[j];
+      dX[j] = hD->GetBinCenter(i);
+      hD->SetBinContent(i, dVal[j]);
+      hD->SetBinError(i, TMath::Sqrt(dKErr[j]*dKErr[j] + dPhiErr[j]*dPhiErr[j]));
+      j=j+1;
+    }
+  }
+  auto gDPhi = GetDataE("data/HEPData_1807.11321v2.root", 97); 
+  auto gDK = GetDataE("data/HEPData_1606.07424v2.root", 36); 
+ 
+   
+  Double_t dPhiEy[nc-2]; Double_t dKEy[nc-2]; Double_t dEy[nc-2];
+  Double_t dPhiEx[nc-2]; Double_t dKEx[nc-2]; Double_t dEx[nc-2];
+  for(Int_t i=1; i<=nc-2; i++){
+    dPhiEy[i-1] = gDPhi->GetErrorY(i); dKEy[i-1] = gDK->GetErrorY(i); 
+    dPhiEx[i-1] = gDPhi->GetErrorX(i); dKEx[i-1] = gDK->GetErrorX(i); 
+    dEx[i-1] = dPhiEx[i-1];
+    dEy[i] = TMath::Sqrt(dPhiEy[i]*dPhiEy[i] + dKEy[i]*dKEy[i]);
+  }
+  auto gD(new TGraphErrors(nc-2, dX, dVal, dEx, dEy));
+#endif
   TGraph* g[3];
   g[0] = InteRatio(1, 0, 0, 4);    //Para1: "pp13TeV", "pp7TeV" 
   g[1] = InteRatio(1, 1, 0, 4);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
@@ -62,7 +111,6 @@ void InteRatio_KPhi(){
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));
   can->SaveAs(Form("./figure/png/%s.png", can->GetName()));
   CanvasEnd(can);
-  
   return;
 }
 

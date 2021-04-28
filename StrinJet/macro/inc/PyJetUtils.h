@@ -163,7 +163,7 @@ TGraph* RatioToPi(const int s,
   Double_t dNdEta[nc-1];
   Double_t dPa[nc-1]; IntegralVal(s, m, p, dNdEta, dPa, j, u);
   Double_t dPi[nc-1]; IntegralVal(s, m, 5, dNdEta, dPi, j, u);
-  for(int i = 0; i< nc-1; i++) cout<<dPa[i]/dPi[i]<<endl;
+  //for(int i = 0; i< nc-1; i++) cout<<dPa[i]/dPi[i]<<endl;
   if(j){
     Double_t dPaU[nc-1]; IntegralVal(s, m, p, dNdEta, dPaU, kFALSE, kTRUE);
     Double_t dPiU[nc-1]; IntegralVal(s, m, 5, dNdEta, dPiU, kFALSE, kTRUE);
@@ -207,7 +207,7 @@ TGraph* InteRatio(const int s,
   Double_t dNdEta[nc-1];
   Double_t dP[nc-1];  IntegralVal(s, m, p,  dNdEta, dP,  j, u);
   Double_t dP0[nc-1]; IntegralVal(s, m, p0, dNdEta, dP0, j, u);
-  for(int i = 0; i< nc-1; i++) cout<<dP[i]/dP0[i]<<endl;
+  //for(int i = 0; i< nc-1; i++) cout<<dP[i]/dP0[i]<<endl;
   if(j){
     Double_t dPaU[nc-1]; IntegralVal(s, m, p, dNdEta, dPaU, kFALSE, kTRUE);
     Double_t dPiU[nc-1]; IntegralVal(s, m, p0, dNdEta, dPiU, kFALSE, kTRUE);
@@ -269,6 +269,7 @@ TH1D* GetDataC(TString sf = "data/HEPData.root",
   auto he((TH1D*)list->Get(sE));
 
   for(Int_t i = 1; i<= hD->GetNbinsX(); i++) hD->SetBinError(i, he->GetBinContent(i)); 
+  //file->Close();
 
   return hD;
 
