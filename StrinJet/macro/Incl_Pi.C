@@ -44,7 +44,7 @@ void Incl_Pi(){
     for(int i=0; i<1; i++){
       DrawHisto(hD[i], wcl[i], wmk[i], "same");
       DrawGraph(gD[i], wcl[i], "E2");
-      DrawGraph(g[i], wcl[i], "C");
+      DrawGraph(g[i], wcl[i], "L");
     }
 
     auto leg(new TLegend(0.6, 0.60, 0.9, 0.92)); SetupLegend(leg);

@@ -38,9 +38,9 @@ void InteRatio(){
     g[2]->SetLineStyle(2);
     DrawHisto(hD, wcl[0], wmk[0], "same");
     DrawGraph(gD, wcl[0], "E2");
-    DrawGraph(g[0], wcl[0], "C");
-    DrawGraph(g[1], wcl[1], "C");
-    DrawGraph(g[2], wcl[2], "C");
+    DrawGraph(g[0], wcl[0], "L");
+    DrawGraph(g[1], wcl[1], "L");
+    DrawGraph(g[2], wcl[2], "L");
 
     auto leg(new TLegend(0.6, 0.60, 0.9, 0.92)); SetupLegend(leg);
     leg->AddEntry(hD, "Data(7 TeV)",  "P")->SetTextSizePixels(24);

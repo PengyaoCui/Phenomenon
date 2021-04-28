@@ -37,8 +37,8 @@
 
 //const TString gksStrgs[] = { "Kshort", "Lambda", "AntiLa", "LambdaFd", "AntiLaFd", "XiNeg", "XiPos", "OmegaNeg", "OmegaPos" };
 //enum struct EStrg : unsigned int { Kshort=0, Lambda, AntiLa, LambdaFd, AntiLaFd, XiNeg, XiPos, OmegaNeg, OmegaPos, Undef };
-const TString gksStrgs[] = {"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"};
-enum struct EStrg : unsigned int {  Kshort=0, Lambda, Xi, Omega, Phi, Pion, Kion, Proton, Undef };
+const TString gksStrgs[] = {"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton", "Kstar"};
+enum struct EStrg : unsigned int {  Kshort=0, Lambda, Xi, Omega, Phi, Pion, Kion, Proton, Kstar, Undef };
 TString StrgName(EStrg e)
 {
   if (e==EStrg::Undef) return TString("");

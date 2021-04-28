@@ -7,7 +7,7 @@ Int_t c[] = {0, 10, 40, 100}; Int_t nC = sizeof(c)/sizeof(Int_t);
 
 //_____________________________________________________________________________
 
-void AnaSinJ(Int_t s = 1, Int_t m = 0){
+void AnaSinJ(Int_t s = 1, Int_t m = 2){
 
   TFile* f(TFile::Open(("Results_" + ss[s] + "_" + sm[m] + ".root").Data() , "recreate"));
 
@@ -28,6 +28,7 @@ void AnaSinJ(Int_t s = 1, Int_t m = 0){
     list->Add(new TH1D(Form("Integral_%s_PC", sp[i].Data()), "", 1000, 0., 100.));
     list->Add(new TH1D(Form("%s_In", sp[i].Data()), "", 500, 0., 25.));
     list->Add(new TH1D(Form("%s_JC", sp[i].Data()), "", 500, 0., 25.));
+    list->Add(new TH1D(Form("%s_dJP", sp[i].Data()), "", 500, 0., 25.));
     list->Add(new TH1D(Form("%s_PC", sp[i].Data()), "", 500, 0., 25.));
     for(Int_t j=0; j<nC-1; j++){
       list->Add(new TH1D(Form("%s_In_%d%d", sp[i].Data(), c[j], c[j+1]), "", 500, 0., 25.));
@@ -76,12 +77,14 @@ void AnaSinJ(Int_t s = 1, Int_t m = 0){
   Double_t Pt;
   Double_t Eta;
   Double_t Accep;
+  Double_t DPartoJet;
   chain->SetBranchAddress("Species",&Par);//1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton
   chain->SetBranchAddress("FwdTrk",&Fwdtrk);//Fwdtrack
   chain->SetBranchAddress("MidTrk",&Midtrk);//MidTrack
   chain->SetBranchAddress("Pt",&Pt);//Pt
   chain->SetBranchAddress("Eta",&Eta);//Eta
   chain->SetBranchAddress("Acceptence",&Accep);//1=in jet cone; 2=PC; 3=OC; 10=wo accepted jet in event
+  chain->SetBranchAddress("DPartoJet",&DPartoJet);//distance of particle to jet axis
  
 //_____________________________________________________________________________
   for(int p=0;p<chain->GetEntries();p++) {
@@ -89,7 +92,7 @@ void AnaSinJ(Int_t s = 1, Int_t m = 0){
     chain->GetEntry(p);
   
 //=============================================================================
-    //np 1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton
+    //np 1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton; 9=Kstar
     for(Int_t i = 0; i<np; i++) if(Par == i+1 ){
       for(Int_t j = 0; j<nc-1; j++) if (Fwdtrk<dFwdTrk[j] && Fwdtrk>dFwdTrk[j+1]){
 	auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwdTrk[j+1]), hFwdTrk->FindBin(dFwdTrk[j]));
@@ -109,6 +112,7 @@ void AnaSinJ(Int_t s = 1, Int_t m = 0){
       }
       (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In", sp[i].Data()))))->Fill(Pt);
       if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC", sp[i].Data()))))->Fill(Pt);
+      if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP", sp[i].Data()))))->Fill(DPartoJet);
       if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC", sp[i].Data()))))->Fill(Pt);
     }
     

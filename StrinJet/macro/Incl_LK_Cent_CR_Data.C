@@ -48,8 +48,8 @@ void Incl_LK_Cent_CR_Data(){
   DrawGraph(gD[0], wcl[0], "E2");
   DrawHisto(hD[1], wcl[1], wmk[1], "same");
   DrawGraph(gD[1], wcl[1], "E2");
-  DrawGraph(gR[0], wcl[0], "C");
-  DrawGraph(gR[1], wcl[1], "C");
+  DrawGraph(gR[0], wcl[0], "L");
+  DrawGraph(gR[1], wcl[1], "L");
 
   auto leg(new TLegend(0.54, 0.60, 0.8, 0.80)); SetupLegend(leg);
   leg->AddEntry(hD[0], Form("%.0f-%.2f%%(18.5)", dCent[0], dCent[1]), "L")->SetTextSizePixels(24);

@@ -1,7 +1,7 @@
 #include "utils.h"
 //=============================================================================
 const auto bsQCD(kTRUE);
-const auto bCR(kFALSE);
+const auto bCR(kTRUE);
 const auto bRope(kTRUE);
 const auto bhQCD = !bsQCD;
 
@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 //=============================================================================
   pythia.readString("Beams:idA = 2212");
   pythia.readString("Beams:idB = 2212");
-  pythia.readString("Main:numberOfEvents = 1001");
+  pythia.readString("Main:numberOfEvents = 50001");
   pythia.readString("Beams:eCM = 7000.");
   if(bsQCD) pythia.readString("SoftQCD:all = on");
   if(bhQCD){ pythia.readString("HardQCD:all = on"); pythia.readString("PhaseSpace:pTHatMin = 20."); }
@@ -89,6 +89,7 @@ int main(int argc, char *argv[])
   pythia.readString("ParticleDecays:tau0Max = 10");
   
   pythia.readString("310:mayDecay = off");// \KShort will not decay
+  pythia.readString("313:mayDecay = off");// \K* will not decay
   pythia.readString("3122:mayDecay = off");// \Lambda will not decay
   pythia.readString("3312:mayDecay = off");// \Xi will not decay
   pythia.readString("3334:mayDecay = off");// \Omega will not decay
@@ -190,7 +191,7 @@ int main(int argc, char *argv[])
   //Double_t midtrk;
   //Double_t pt;
   //Double_t eta;
-  //tree->Branch("Particle",&par);//1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton 
+  //tree->Branch("Particle",&par);//1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton; 9=Kstar
   //tree->Branch("FwdTrk",&fwdtrk);//Fwdtrack
   //tree->Branch("MidTrk",&midtrk);//MidTrack
   //tree->Branch("Pt",&pt);//Pt
@@ -204,12 +205,14 @@ int main(int argc, char *argv[])
   Double_t Pt;
   Double_t Eta;
   Double_t Accep;
-  Tree->Branch("Species",&Par);//1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton 
+  Double_t DPartoJet;
+  Tree->Branch("Species",&Par);//1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton; 9=Kstar
   Tree->Branch("FwdTrk",&Fwdtrk);//Fwdtrack 
   Tree->Branch("MidTrk",&Midtrk);//MidTrack
   Tree->Branch("Pt",&Pt);//Pt
   Tree->Branch("Eta",&Eta);//Eta
   Tree->Branch("Acceptence",&Accep);//1=in jet cone; 2=PC; 3=OC
+  Tree->Branch("DPartoJet",&DPartoJet);//Distance particle to jet axis
 //=============================================================================
   
   CallSumw2(list_results);
@@ -289,6 +292,8 @@ int main(int argc, char *argv[])
       if(id==321) { ks=EStrg::Kion;     }//par = 7;}
       if(id==2212){ ks=EStrg::Proton;   }//par = 8;}
       
+      if(id==313) { ks = EStrg::Kstar; } //par = 9; }
+      
       if(ks==EStrg::Undef) continue;
 //===========================================================================
 
@@ -322,6 +327,7 @@ int main(int argc, char *argv[])
       if(ss == "Pion")   Par = 6;
       if(ss == "Kion")   Par = 7;
       if(ss == "Proton") Par = 8;
+      if(ss == "Kstar")  Par = 9; 
 
       TVector3 strg, vj, vl1, vl2, vu1, vu2;
       strg.SetPtEtaPhi(av.pt(), av.eta(), av.phi());
@@ -334,6 +340,7 @@ int main(int argc, char *argv[])
       bPC = false;
 
       const auto dJetPtCut(JetVal(sj));
+      double dmin = 1000.; 
       for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) {//loop all jet to check particle-jet relations
         const auto dj(aj.pt());
         if (dj<dJetPtCut) continue;
@@ -344,6 +351,7 @@ int main(int argc, char *argv[])
         vu2.SetPtEtaPhi(dj, -1.*aj.eta(), aj.phi()); vu2.RotateZ(-1.*TMath::PiOver2());
         
         double d(vj.DeltaR(strg));
+	if (d<= dmin) dmin=d;
         double dl1(vl1.DeltaR(strg));
         double dl2(vl2.DeltaR(strg));
         double du1(vu1.DeltaR(strg));
@@ -353,7 +361,9 @@ int main(int argc, char *argv[])
         if (dl1<StrgJC(gksStrgJCs) || dl2<StrgJC(gksStrgJCs) || du1<StrgJC(gksStrgJCs) || du2<StrgJC(gksStrgJCs)) bPC = true; 
         if (bJC){bOC = bPC = false;}
       }
-      
+
+      DPartoJet = dmin;
+
       Accep = 10;
       if(bJC) Accep = 1;
       if(bOC) Accep = 3;
