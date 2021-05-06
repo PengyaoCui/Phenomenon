@@ -22,7 +22,7 @@ void AnaSinJ(Int_t s = 1, Int_t m = 2){
 //=============================================================================
   TList *l[np];
   for (Int_t i=0; i<np; i++) {
-    auto list(l[i] = new TList());  //{"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"};
+    auto list(l[i] = new TList());  //{"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton", "Kstar"};
     list->Add(new TH1D(Form("Integral_%s_In", sp[i].Data()), "", 1000, 0., 100.));
     list->Add(new TH1D(Form("Integral_%s_JC", sp[i].Data()), "", 1000, 0., 100.));
     list->Add(new TH1D(Form("Integral_%s_PC", sp[i].Data()), "", 1000, 0., 100.));
@@ -34,11 +34,13 @@ void AnaSinJ(Int_t s = 1, Int_t m = 2){
       list->Add(new TH1D(Form("%s_In_%d%d", sp[i].Data(), c[j], c[j+1]), "", 500, 0., 25.));
       list->Add(new TH1D(Form("%s_JC_%d%d", sp[i].Data(), c[j], c[j+1]), "", 500, 0., 25.));
       list->Add(new TH1D(Form("%s_PC_%d%d", sp[i].Data(), c[j], c[j+1]), "", 500, 0., 25.));
+      list->Add(new TH1D(Form("%s_dJP_%d%d", sp[i].Data(), c[j], c[j+1]), "", 500, 0., 25.));
     }
     for(Int_t j=0; j<nc-1; j++){
       list->Add(new TH1D(Form("%s_In_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 500, 0., 25.));
       list->Add(new TH1D(Form("%s_JC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 500, 0., 25.));
       list->Add(new TH1D(Form("%s_PC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 500, 0., 25.));
+      list->Add(new TH1D(Form("%s_dJP_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 500, 0., 25.));
     }
     CallSumw2(l[i]);
   }
@@ -78,7 +80,7 @@ void AnaSinJ(Int_t s = 1, Int_t m = 2){
   Double_t Eta;
   Double_t Accep;
   Double_t DPartoJet;
-  chain->SetBranchAddress("Species",&Par);//1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton
+  chain->SetBranchAddress("Species",&Par);//1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton; 9=Kstar
   chain->SetBranchAddress("FwdTrk",&Fwdtrk);//Fwdtrack
   chain->SetBranchAddress("MidTrk",&Midtrk);//MidTrack
   chain->SetBranchAddress("Pt",&Pt);//Pt
@@ -103,17 +105,19 @@ void AnaSinJ(Int_t s = 1, Int_t m = 2){
 	(static_cast<TH1D*>(l[i]->FindObject(Form("%s_In_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt, 1./dEvent);
         if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt);
         if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt);
+        if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(DPartoJet);
       }
       for(Int_t k = 0; k<nC-1; k++) if(Fwdtrk<df[k] && Fwdtrk>df[k+1]){
         auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(df[k+1]), hFwdTrk->FindBin(df[k]));
         (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt, 1./dEvent);
         if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt);
         if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt);
+        if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(DPartoJet);
       }
       (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In", sp[i].Data()))))->Fill(Pt);
       if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC", sp[i].Data()))))->Fill(Pt);
-      if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP", sp[i].Data()))))->Fill(DPartoJet);
       if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC", sp[i].Data()))))->Fill(Pt);
+      if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP", sp[i].Data()))))->Fill(DPartoJet);
     }
     
   

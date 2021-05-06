@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 //=============================================================================
   pythia.readString("Beams:idA = 2212");
   pythia.readString("Beams:idB = 2212");
-  pythia.readString("Main:numberOfEvents = 50001");
+  pythia.readString("Main:numberOfEvents = 100001");
   pythia.readString("Beams:eCM = 7000.");
   if(bsQCD) pythia.readString("SoftQCD:all = on");
   if(bhQCD){ pythia.readString("HardQCD:all = on"); pythia.readString("PhaseSpace:pTHatMin = 20."); }
@@ -154,6 +154,15 @@ int main(int argc, char *argv[])
   
   auto hJetEta(new TH1D("hJetEta", "", 1000, -5., 5.));
   list_results->Add(hJetEta);
+  
+  auto hJEvent(new TH1D("hJEvent", "", 10, 0., 10.));
+  list_results->Add(hJEvent);
+  
+  auto hjet(new TH1D("hjet", "", 500, 0., 500.));
+  list_results->Add(hjet);
+  
+  auto hjetEta(new TH1D("hjetEta", "", 1000, -5., 5.));
+  list_results->Add(hjetEta);
 
   auto hConsti(new TH1D("hConsti", "", 1000, 0., 100.));
   list_results->Add(hConsti);
@@ -310,7 +319,16 @@ int main(int argc, char *argv[])
 
     fastjet::ClusterSequenceArea acs(vConstis, aJetDef, aAreaDef);
     const auto &vJets(aSelEta(acs.inclusive_jets(dJetPtMin)));
-    for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) {hJet->Fill(aj.pt()); hJetEta->Fill(aj.eta());}
+    for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) { hJet->Fill(aj.pt()); hJetEta->Fill(aj.eta()); }
+    Bool_t IsJet = kFALSE;
+    for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) { 
+      const auto dJ(aj.pt());
+      if (dJ<10.) continue; 
+      IsJet = kTRUE;
+      hjet->Fill(aj.pt()); hjetEta->Fill(aj.eta()); 
+    }
+    if(IsJet) {hJEvent->Fill(1.);} 
+    
 //=============================================================================
 
     for (const auto &av : vStrgs) { //loop all particles of intreast
