@@ -48,6 +48,31 @@ Int_t nEvent(const Int_t s,
 
 }
 
+//=============================================================================
+Int_t nJEvent(const Int_t s,
+             const Int_t m)
+{
+  const TString sf(Form("%s/sim/%s/%s.root", path.Data(), ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get("list_results")));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list: list_results");
+    exit(-2);
+  }
+
+  auto h((TH2D*)list->FindObject("hJEvent"));
+  auto n((Int_t)h->GetEntries());
+  return n;
+
+}
+
+
 //_____________________________________________________________________________
 TH2D* FwdMidTrk(const Int_t s,
 		const Int_t m)

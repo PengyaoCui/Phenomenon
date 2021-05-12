@@ -98,10 +98,11 @@ void AnaSinJ(Int_t s = 1, Int_t m = 2){
     //np 1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton; 9=Kstar
     for(Int_t i = 0; i<np; i++) if(Par == i+1 ){
       for(Int_t j = 0; j<nc-1; j++) if (Fwdtrk<dFwdTrk[j] && Fwdtrk>dFwdTrk[j+1]){
-        auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwdTrk[j+1]), hFwdTrk->FindBin(dFwdTrk[j]));
+	auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwdTrk[j+1]), hFwdTrk->FindBin(dFwdTrk[j]));
         (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_In", sp[i].Data()))))->Fill(dNdEta[j], 1./dEvent);
         if(Accep == 1) (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_JC", sp[i].Data()))))->Fill(dNdEta[j]);
         if(Accep == 2) (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_PC", sp[i].Data()))))->Fill(dNdEta[j]);
+      //if(Par==9)cout<<"Particle"<<sp[i]<<endl; 
 	
 	(static_cast<TH1D*>(l[i]->FindObject(Form("%s_In_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt, 1./dEvent);
         if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt);
@@ -109,46 +110,46 @@ void AnaSinJ(Int_t s = 1, Int_t m = 2){
         if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(DPartoJet);
       }
       for(Int_t k = 0; k<nC-1; k++) if(Fwdtrk<df[k] && Fwdtrk>df[k+1]){
-      auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(df[k+1]), hFwdTrk->FindBin(df[k]));
+        auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(df[k+1]), hFwdTrk->FindBin(df[k]));
         (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt, 1./dEvent);
         if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt);
         if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt);
         if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(DPartoJet);
       }
-
-      (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In", sp[i].Data()))))->Fill(Pt, 1./hEvent->GetBinContent(1));
-      if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC", sp[i].Data()))))->Fill(Pt, 1./hJEvent->GetBinContent(1));
-      if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC", sp[i].Data()))))->Fill(Pt, 1./hJEvent->GetBinContent(1));
+      (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In", sp[i].Data()))))->Fill(Pt);
+      if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC", sp[i].Data()))))->Fill(Pt);
+      if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC", sp[i].Data()))))->Fill(Pt);
       if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP", sp[i].Data()))))->Fill(DPartoJet);
     }
-  
+//=============================================================================
   }
 //_____________________________________________________________________________ scale
-  //for(Int_t i = 0; i<np; i++) if(Par == i+1 ){
-  //  (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In", sp[i].Data()))))->Scale(1./hEvent->GetBinContent(1));
-  //  (static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC", sp[i].Data()))))->Scale(1./hJEvent->GetBinContent(1));
-  //  (static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC", sp[i].Data()))))->Scale(1./hJEvent->GetBinContent(1));
-  //  //(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP", sp[i].Data()))))->Scale(DPartoJet);
-  // 
-  //  for(Int_t j = 0; j<nc-1; j++) if (Fwdtrk<dFwdTrk[j] && Fwdtrk>dFwdTrk[j+1]){
-  //    auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwdTrk[j+1]), hFwdTrk->FindBin(dFwdTrk[j]));
-  //    (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_In", sp[i].Data()))))->Scale(1./dEvent);
-  //    //(static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_JC", sp[i].Data()))))->Scale();
-  //    //(static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_PC", sp[i].Data()))))->Scale();
-  //    
-  //    (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Scale(1./dEvent);
-  //    //(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt);
-  //    //(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt);
-  //    //(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(DPartoJet);
-  //  }
-  //  for(Int_t k = 0; k<nC-1; k++) if(Fwdtrk<df[k] && Fwdtrk>df[k+1]){
-  //    auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(df[k+1]), hFwdTrk->FindBin(df[k]));
-  //    (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In_%d%d", sp[i].Data(), c[k], c[k+1]))))->Scale(1./dEvent);
-  //    //(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt);
-  //    //(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt);
-  //    //(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(DPartoJet);
-  //  }
-  //}
+  for(Int_t i = 0; i<np; i++) if(Par == i+1 ){
+    (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In", sp[i].Data()))))->Scale(1./hEvent->GetBinContent(1));
+    (static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC", sp[i].Data()))))->Scale(1./hJEvent->GetBinContent(1));
+    (static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC", sp[i].Data()))))->Scale(1./hJEvent->GetBinContent(1));
+   
+    for(Int_t j = 0; j<nc-1; j++) if (Fwdtrk<dFwdTrk[j] && Fwdtrk>dFwdTrk[j+1]){
+      auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwdTrk[j+1]), hFwdTrk->FindBin(dFwdTrk[j]));
+      (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_In", sp[i].Data()))))->Scale(1./dEvent);
+      if(Accep == 1) (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_JC", sp[i].Data()))))->Fill(dNdEta[j]);
+      if(Accep == 2) (static_cast<TH1D*>(l[i]->FindObject(Form("Integral_%s_PC", sp[i].Data()))))->Fill(dNdEta[j]);
+    //if(Par==9)cout<<"Particle"<<sp[i]<<endl; 
+      
+      (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt, 1./dEvent);
+      if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt);
+      if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt);
+      if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(DPartoJet);
+    }
+    for(Int_t k = 0; k<nC-1; k++) if(Fwdtrk<df[k] && Fwdtrk>df[k+1]){
+      auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(df[k+1]), hFwdTrk->FindBin(df[k]));
+      (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt, 1./dEvent);
+      if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt);
+      if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt);
+      if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(DPartoJet);
+    }
+    (static_cast<TH1D*>(l[i]->FindObject(Form("%s_In", sp[i].Data()))))->Fill(Pt);
+  }
 //_____________________________________________________________________________
   levent->Print();
   for (unsigned int i=0; i<np; ++i) l[i]->Print();

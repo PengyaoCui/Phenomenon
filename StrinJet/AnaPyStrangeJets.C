@@ -43,7 +43,8 @@ int main(int argc, char *argv[])
 //=============================================================================
   pythia.readString("Beams:idA = 2212");
   pythia.readString("Beams:idB = 2212");
-  pythia.readString("Main:numberOfEvents = 100001");
+  //pythia.readString("Main:numberOfEvents = 100001");
+  pythia.readString("Main:numberOfEvents = 10001");
   pythia.readString("Beams:eCM = 7000.");
   if(bsQCD) pythia.readString("SoftQCD:all = on");
   if(bhQCD){ pythia.readString("HardQCD:all = on"); pythia.readString("PhaseSpace:pTHatMin = 20."); }
@@ -169,6 +170,12 @@ int main(int argc, char *argv[])
 
   auto hFwdVsMid(new TH2D("hFwdVsMid", ";N_{trk}^{Mid}; N_{trk}^{Fwd}", 2000, -0.5, 1999.5, 2000, -0.5, 1999.5));
   list_results->Add(hFwdVsMid);
+  
+  auto hJFwdVsMid(new TH2D("hJFwdVsMid", ";JN_{trk}^{Mid}; JN_{trk}^{Fwd}", 2000, -0.5, 1999.5, 2000, -0.5, 1999.5));
+  list_results->Add(hJFwdVsMid);
+  
+  auto hParPtEta(new TH2D("hParPtEta", ";Pt; Eta", 200, 0., 20., 100., -5., 5.));
+  list_results->Add(hParPtEta);
 
 //-----------------------------------------------------------------------------
   TH1D *hTrPt  = new TH1D("hTrPt", ";p_{T}; N_{trig}", 200, 0, 20.);
@@ -192,6 +199,9 @@ int main(int argc, char *argv[])
 
   TH1D *hMidTrEta     = new TH1D("hMidTrEta", ";#eta; N_{trig}", 1000, -5., 5.);
   list_results->Add(hFwdTrEta);
+
+  TProfile *hProfAcc = new TProfile("hProfAcc", "", 4, -0.5, 3.5); list_results->Add(hProfAcc);
+  
 
 //=============================================================================
   //TTree *tree = new TTree("IncParticle","IncPar");
@@ -312,11 +322,14 @@ int main(int argc, char *argv[])
 
       const auto ss(StrgName(ks));
       //if (!ss.IsNull()) {pt = dpPt; eta = dpEta; }
+      hParPtEta->Fill(dpPt, dpEta); 
       
       //tree->Fill();  
     }//end all particles loop in one event
 //=============================================================================
 
+    TVector3 vJ, vL1, vL2, vU1, vU2, v3;
+    
     fastjet::ClusterSequenceArea acs(vConstis, aJetDef, aAreaDef);
     const auto &vJets(aSelEta(acs.inclusive_jets(dJetPtMin)));
     for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) { hJet->Fill(aj.pt()); hJetEta->Fill(aj.eta()); }
@@ -326,8 +339,46 @@ int main(int argc, char *argv[])
       if (dJ<10.) continue; 
       IsJet = kTRUE;
       hjet->Fill(aj.pt()); hjetEta->Fill(aj.eta()); 
+      vJ.SetPtEtaPhi(aj.pt(), aj.eta(),aj.phi());
+      vL1.SetPtEtaPhi(aj.pt(), aj.eta(),     aj.phi()); vL1.RotateZ(TMath::PiOver2());
+      vL2.SetPtEtaPhi(aj.pt(), aj.eta(),     aj.phi()); vL2.RotateZ(-1.*TMath::PiOver2());
+      vU1.SetPtEtaPhi(aj.pt(), -1.*aj.eta(), aj.phi()); vL1.RotateZ(TMath::PiOver2());
+      vU2.SetPtEtaPhi(aj.pt(), -1.*aj.eta(), aj.phi()); vL2.RotateZ(-1.*TMath::PiOver2());
+//=============================================================================
+      TRandom3 rdm3(0);
+      Double_t dAll = 0.;
+      Double_t dInC = 0.;
+      Double_t dOut = 0.;
+      Double_t dInP = 0.;
+      const Int_t ns = 1000;
+      for (Int_t i=0; i<ns; i++) {
+        bool bjc = false; bool bpc = false; bool boc = false;
+        Double_t dPt=0., dEta=0.; hParPtEta->GetRandom2(dPt,dEta);
+        v3.SetPtEtaPhi(dPt, dEta, rdm3.Uniform(0.,TMath::TwoPi()));
+        double D(vJ.DeltaR(v3));
+        double Dl1(vL1.DeltaR(v3));
+        double Dl2(vL2.DeltaR(v3));
+        double Du1(vU1.DeltaR(v3));
+        double Du2(vU2.DeltaR(v3));
+        if (D<StrgJC(gksStrgJCs)) bjc = true;
+        if (D>StrgJC(gksStrgJCs)) boc = true;
+        if (Dl1<StrgJC(gksStrgJCs) || Dl2<StrgJC(gksStrgJCs) || Du1<StrgJC(gksStrgJCs) || Du2<StrgJC(gksStrgJCs)) bpc = true; 
+        if (bjc){boc = bpc = false;}
+        
+        if(bjc) { dInC += 1.; }
+        if(bpc){ dInP += 1.; }
+        if(boc){ dOut += 1.; }
+        dAll += 1.;
+      }
+
+      hProfAcc->Fill(0., dAll);
+      hProfAcc->Fill(1., dInC);
+      hProfAcc->Fill(2., dInP);
+      hProfAcc->Fill(3., dOut);
+//=============================================================================
     }
     if(IsJet) {hJEvent->Fill(1.);} 
+    if(IsJet) hJFwdVsMid->Fill(dMidCh, dFwdCh);
     
 //=============================================================================
 
@@ -350,7 +401,6 @@ int main(int argc, char *argv[])
       TVector3 strg, vj, vl1, vl2, vu1, vu2;
       strg.SetPtEtaPhi(av.pt(), av.eta(), av.phi());
       Pt = av.pt(); Eta = av.eta();
-      
       bool bJC; bool bPC; bool bOC;
       const auto sj = gksJets;
       bJC = false;
@@ -378,6 +428,10 @@ int main(int argc, char *argv[])
         if (d>StrgJC(gksStrgJCs)) bOC = true;
         if (dl1<StrgJC(gksStrgJCs) || dl2<StrgJC(gksStrgJCs) || du1<StrgJC(gksStrgJCs) || du2<StrgJC(gksStrgJCs)) bPC = true; 
         if (bJC){bOC = bPC = false;}
+     
+
+      
+      
       }
 
       DPartoJet = dmin;
