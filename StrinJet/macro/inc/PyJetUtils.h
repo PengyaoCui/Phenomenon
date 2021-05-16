@@ -15,7 +15,7 @@ const auto ns(sizeof(ss)/sizeof(TString));
 const TString sm[] { "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope", "HardQCD_CR", "HardQCD_Rope", "HardQCD_CRandRope" };
 const auto nm(sizeof(sm) / sizeof(TString));
 
-const TString sp[] = {"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"};
+const TString sp[] = {"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton", "Kstar"};
 const auto np(sizeof(sp) / sizeof(TString));
 
 const Double_t dCent[] = { 0., 0.95, 4.7, 9.5, 14., 19., 28., 38., 48., 68., 100. };
@@ -134,6 +134,7 @@ TGraph* InteSpectrum(const int s,
   auto g = new TGraph();
   //for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(0.75*2.*TMath::TwoPi()));
   for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(0.75*2.));
+  if(p == 1 || p==2 || p==3)for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(0.75));
 
   return g;
 }
@@ -222,9 +223,11 @@ TGraph* InteRatio(const int s,
   for(Int_t i = 1; i<nc; i++) {
     dR[i-1] = dP[i-1]/dP0[i-1];
     gR->SetPoint(i-1, dNdEta[i-1], dR[i-1]);
+    if(p==2 && p0==4) gR->SetPoint(i-1, dNdEta[i-1], 2.*dR[i-1]);
   }
   return gR;
 }
+
 //_____________________________________________________________________________
 TGraphErrors* GetDataE(TString sf = "data/HEPData.root",
 		      int t = 36, 
@@ -393,4 +396,26 @@ TH1D* PtSpectrum(const int s,
   h2->Sumw2();
   return h2;
 }
+TH1D* PartoJet(const int s,
+               const int m,
+               const int p)
+{
 
+  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get(sp[p])));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list: list_results");
+    exit(-2);
+  }
+
+  auto h((TH1D*)list->FindObject(Form("%s_dJP", sp[p].Data())));
+
+ return h;
+}

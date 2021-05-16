@@ -2,29 +2,45 @@
 ######################################################################
 echo ==========================================
 echo track information
-root -l -b -q dNfwddEta.C
-root -l -b -q TrkEta.C
+root -l -b -q f1_TrkEta.C
+root -l -b -q f2_dNfwddEta.C
 
 echo ==========================================
 echo InteSpectra
-root -l -b -q InteSpect.C
+#root -l -b -q InteSpect.C
+root -l -b -q f3_InteSpect_Kshort.C
+root -l -b -q f3_InteSpect_Lambda.C
+root -l -b -q f3_InteSpect_Xi.C
+root -l -b -q f3_InteSpect_Omega.C
+root -l -b -q f3_InteSpect_Kstar.C
+root -l -b -q f3_InteSpect_Phi.C
 
 echo ==========================================
 echo InteRatio
 #root -l -b -q InteRatio.C
-root -l -b -q InteRatio_KPi.C
-root -l -b -q InteRatio_LPi.C
-root -l -b -q InteRatio_XPi.C
-root -l -b -q InteRatio_OPi.C
-root -l -b -q InteRatio_PhiPi.C
+root -l -b -q f5_InteRatio_KPi.C
+root -l -b -q f5_InteRatio_LPi.C
+root -l -b -q f5_InteRatio_XPi.C
+root -l -b -q f5_InteRatio_OPi.C
+root -l -b -q f5_InteRatio_PhiPi.C
+root -l -b -q f5_InteRatio_KstarPi.C
 
-root -l -b -q InteRatio_OL.C
-root -l -b -q InteRatio_XL.C
-root -l -b -q InteRatio_KPhi.C
-root -l -b -q InteRatio_LPhi.C
-root -l -b -q InteRatio_OPhi.C
-root -l -b -q InteRatio_XPhi.C
+root -l -b -q f7_InteRatio_OL.C
+root -l -b -q f7_InteRatio_XL.C
+root -l -b -q f7_InteRatio_PhiK.C
+root -l -b -q f7_InteRatio_LPhi.C
+root -l -b -q f7_InteRatio_OPhi.C
+root -l -b -q f7_InteRatio_XPhi.C
+root -l -b -q f7_InteRatio_KstarK.C
  
+root -l -b -q f8_InteRatio_KstarK_JE.C
+root -l -b -q f8_InteRatio_LPhi_JE.C
+root -l -b -q f8_InteRatio_OL_JE.C
+root -l -b -q f8_InteRatio_OPhi_JE.C
+root -l -b -q f8_InteRatio_PhiK_JE.C
+root -l -b -q f8_InteRatio_XL_JE.C
+root -l -b -q f8_InteRatio_XPhi_JE.C
+
 #root -l -b -q InteRatio_JE.C
 root -l -b -q InteRatio_KPi_JE.C
 root -l -b -q InteRatio_LPi_JE.C
@@ -34,7 +50,6 @@ root -l -b -q InteRatio_PhiPi_JE.C
 
 root -l -b -q InteRatio_OL_JE.C
 root -l -b -q InteRatio_XL_JE.C
-root -l -b -q InteRatio_KPhi_JE.C
 root -l -b -q InteRatio_LPhi_JE.C
 root -l -b -q InteRatio_OPhi_JE.C
 root -l -b -q InteRatio_XPhi_JE.C
@@ -54,13 +69,17 @@ root -l -b -q Incl_ProtonPion.C
 
 echo ==========================================
 echo InclRatio_Cent
+
+root -l -b -q Incl_KstarK_Center.C
+root -l -b -q Incl_KstarK_Peripheral.C
+root -l -b -q Incl_PhiK_Center.C
+root -l -b -q Incl_PhiK_Peripheral.C
 root -l -b -q Incl_LK_Cent.C
 root -l -b -q Incl_OK_Cent.C
 root -l -b -q Incl_XK_Cent.C
 root -l -b -q Incl_XL_Cent.C
 root -l -b -q Incl_OL_Cent.C
 root -l -b -q Incl_OX_Cent.C
-root -l -b -q Incl_KPhi_Cent.C
 root -l -b -q Incl_LPhi_Cent.C
 root -l -b -q Incl_XPhi_Cent.C
 root -l -b -q Incl_OPhi_Cent.C
@@ -75,7 +94,6 @@ root -l -b -q Incl_XK_Cent_CR.C
 root -l -b -q Incl_XL_Cent_CR.C
 root -l -b -q Incl_OL_Cent_CR.C
 root -l -b -q Incl_OX_Cent_CR.C
-root -l -b -q Incl_KPhi_Cent_CR.C
 root -l -b -q Incl_LPhi_Cent_CR.C
 root -l -b -q Incl_XPhi_Cent_CR.C
 root -l -b -q Incl_OPhi_Cent_CR.C
@@ -86,7 +104,6 @@ root -l -b -q Incl_XK_Cent_Rope.C
 root -l -b -q Incl_XL_Cent_Rope.C
 root -l -b -q Incl_OL_Cent_Rope.C
 root -l -b -q Incl_OX_Cent_Rope.C
-root -l -b -q Incl_KPhi_Cent_Rope.C
 root -l -b -q Incl_LPhi_Cent_Rope.C
 root -l -b -q Incl_XPhi_Cent_Rope.C
 root -l -b -q Incl_OPhi_Cent_Rope.C

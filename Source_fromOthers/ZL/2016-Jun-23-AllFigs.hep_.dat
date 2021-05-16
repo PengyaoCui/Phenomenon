@@ -1,0 +1,1578 @@
+*author: AAD
+*reference: ARXIV:XXXX : 2016
+*reference: CERN-EP-2016-153 : 2016
+*reference: GIVE JOURNAL CITATION (IF KNOWN) : 2016
+*reference: http:// : 2016
+*doi: GIVE DOI
+*status: Encoded 22 JUNE 2016 by ALICE
+*experiment: CERN-LHC-ALICE
+*detector: ALICE
+*inspireId: GIVE INSPIRE ID
+*cdsId: GIVE CDS ID
+*durhamId: 
+*title: Multiplicity-dependent enhancement of strange and multi-strange hadron production in proton-proton collisions at $\sqrt{s}=7$ TeV
+*comment: CERN-LHC. The yields of strange and multi-strange hadrons are measured at midrapidity in proton-proton (pp) collisions at $\sqrt{s}$ = 7 TeV as a function of the charged-particle multiplicity density ($dN_{ch}/d\eta$). The production rate of strange particles increases faster than that of non-strange hadrons, leading to an enhancement of strange particles relative to pions, similar to that found in nucleus-nucleus collisions as well as in proton-nucleus collisions at the LHC. This is the first observation of an enhanced production of strange particles in high-multiplicity pp collisions. The magnitude of this strangeness enhancement increases with the event activity, quantified by $dN_{ch}/d\eta$, and with hadron strangeness. It reaches almost a factor of two for the $\Omega$ at the highest multiplicity presented. No enhancement is observed for particles with no strange quark content, demonstrating that the observed effect is strangeness rather than mass related. The results are not reproduced by any of the Monte Carlo models commonly used at the LHC, suggesting that further developments are needed for a complete microscopic understanding of strangeness production and indicating the presence of a phenomenon novel in high-multiplicity pp collisions.
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $K^{0}_{S}$ transverse momentum spectrum: V0M Class I (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class I
+*qual: RE : P P --> $K^{0}_{S}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.05 (BIN=0 TO 0.1); 0.2349 +- 0.02708 (DSYS=0.01346:total,DSYS=0.00628:uncorr);
+ 0.15 (BIN=0.1 TO 0.2); 0.6653 +- 0.01412 (DSYS=0.03386:total,DSYS=0.01604:uncorr);
+ 0.25 (BIN=0.2 TO 0.3); 0.967 +- 0.0136 (DSYS=0.04643:total,DSYS=0.02224:uncorr);
+ 0.35 (BIN=0.3 TO 0.4); 1.119 +- 0.01314 (DSYS=0.05472:total,DSYS=0.02619:uncorr);
+ 0.45 (BIN=0.4 TO 0.5); 1.164 +- 0.01179 (DSYS=0.05734:total,DSYS=0.02736:uncorr);
+ 0.55 (BIN=0.5 TO 0.6); 1.159 +- 0.01033 (DSYS=0.05738:total,DSYS=0.02629:uncorr);
+ 0.65 (BIN=0.6 TO 0.7); 1.045 +- 0.008752 (DSYS=0.05204:total,DSYS=0.02383:uncorr);
+ 0.75 (BIN=0.7 TO 0.8); 0.9546 +- 0.00758 (DSYS=0.04821:total,DSYS=0.02203:uncorr);
+ 0.85 (BIN=0.8 TO 0.9); 0.8315 +- 0.006576 (DSYS=0.04301:total,DSYS=0.01959:uncorr);
+ 0.95 (BIN=0.9 TO 1); 0.7168 +- 0.005794 (DSYS=0.03713:total,DSYS=0.0169:uncorr);
+ 1.05 (BIN=1 TO 1.1); 0.6281 +- 0.0052 (DSYS=0.03279:total,DSYS=0.01454:uncorr);
+ 1.15 (BIN=1.1 TO 1.2); 0.5361 +- 0.004644 (DSYS=0.02819:total,DSYS=0.01248:uncorr);
+ 1.25 (BIN=1.2 TO 1.3); 0.4515 +- 0.004199 (DSYS=0.02415:total,DSYS=0.01068:uncorr);
+ 1.35 (BIN=1.3 TO 1.4); 0.3969 +- 0.003889 (DSYS=0.0216:total,DSYS=0.009509:uncorr);
+ 1.45 (BIN=1.4 TO 1.5); 0.3318 +- 0.003514 (DSYS=0.01796:total,DSYS=0.007917:uncorr);
+ 1.55 (BIN=1.5 TO 1.6); 0.2937 +- 0.003276 (DSYS=0.01608:total,DSYS=0.007095:uncorr);
+ 1.65 (BIN=1.6 TO 1.7); 0.2483 +- 0.002984 (DSYS=0.01378:total,DSYS=0.006045:uncorr);
+ 1.75 (BIN=1.7 TO 1.8); 0.2133 +- 0.002716 (DSYS=0.01223:total,DSYS=0.00533:uncorr);
+ 1.85 (BIN=1.8 TO 1.9); 0.1799 +- 0.002484 (DSYS=0.01043:total,DSYS=0.004564:uncorr);
+ 1.95 (BIN=1.9 TO 2); 0.1572 +- 0.002297 (DSYS=0.009225:total,DSYS=0.004009:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.1242 +- 0.001442 (DSYS=0.007568:total,DSYS=0.002979:uncorr);
+ 2.3 (BIN=2.2 TO 2.4); 0.09262 +- 0.001229 (DSYS=0.005878:total,DSYS=0.002297:uncorr);
+ 2.5 (BIN=2.4 TO 2.6); 0.07129 +- 0.001071 (DSYS=0.004847:total,DSYS=0.001871:uncorr);
+ 2.7 (BIN=2.6 TO 2.8); 0.05157 +- 0.0009196 (DSYS=0.003584:total,DSYS=0.001387:uncorr);
+ 2.9 (BIN=2.8 TO 3); 0.04066 +- 0.0008054 (DSYS=0.002883:total,DSYS=0.00111:uncorr);
+ 3.15 (BIN=3 TO 3.3); 0.02839 +- 0.0005455 (DSYS=0.002064:total,DSYS=0.0007993:uncorr);
+ 3.45 (BIN=3.3 TO 3.6); 0.02005 +- 0.0004556 (DSYS=0.001453:total,DSYS=0.0005625:uncorr);
+ 3.75 (BIN=3.6 TO 3.9); 0.01385 +- 0.0003833 (DSYS=0.0009903:total,DSYS=0.0003606:uncorr);
+ 4.05 (BIN=3.9 TO 4.2); 0.009988 +- 0.0003153 (DSYS=0.0007125:total,DSYS=0.0002567:uncorr);
+ 4.4 (BIN=4.2 TO 4.6); 0.006921 +- 0.000228 (DSYS=0.0005226:total,DSYS=0.0001869:uncorr);
+ 4.8 (BIN=4.6 TO 5); 0.004371 +- 0.0001873 (DSYS=0.0003268:total,DSYS=0.000117:uncorr);
+ 5.2 (BIN=5 TO 5.4); 0.00306 +- 0.0001531 (DSYS=0.0002414:total,DSYS=8.591e-05:uncorr);
+ 5.65 (BIN=5.4 TO 5.9); 0.002146 +- 0.0001138 (DSYS=0.0001386:total,DSYS=7.389e-05:uncorr);
+ 6.2 (BIN=5.9 TO 6.5); 0.001336 +- 8.248e-05 (DSYS=9.337e-05:total,DSYS=4.954e-05:uncorr);
+ 6.75 (BIN=6.5 TO 7); 0.0008671 +- 7.324e-05 (DSYS=5.937e-05:total,DSYS=3.154e-05:uncorr);
+ 7.5 (BIN=7 TO 8); 0.0005507 +- 4.106e-05 (DSYS=3.375e-05:total,DSYS=1.805e-05:uncorr);
+ 9 (BIN=8 TO 10); 0.0002293 +- 1.954e-05 (DSYS=1.623e-05:total,DSYS=1.197e-05:uncorr);
+ 11 (BIN=10 TO 12); 8.98e-05 +- 1.27e-05 (DSYS=5.747e-06:total,DSYS=4.246e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $K^{0}_{S}$ transverse momentum spectrum: V0M Class II (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class II
+*qual: RE : P P --> $K^{0}_{S}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.05 (BIN=0 TO 0.1); 0.2288 +- 0.01352 (DSYS=0.01313:total,DSYS=0.006143:uncorr);
+ 0.15 (BIN=0.1 TO 0.2); 0.5677 +- 0.006706 (DSYS=0.02892:total,DSYS=0.01374:uncorr);
+ 0.25 (BIN=0.2 TO 0.3); 0.8096 +- 0.006401 (DSYS=0.03885:total,DSYS=0.01857:uncorr);
+ 0.35 (BIN=0.3 TO 0.4); 0.9332 +- 0.006188 (DSYS=0.04558:total,DSYS=0.02176:uncorr);
+ 0.45 (BIN=0.4 TO 0.5); 0.9576 +- 0.00555 (DSYS=0.04719:total,DSYS=0.02252:uncorr);
+ 0.55 (BIN=0.5 TO 0.6); 0.9009 +- 0.004744 (DSYS=0.04462:total,DSYS=0.02046:uncorr);
+ 0.65 (BIN=0.6 TO 0.7); 0.8291 +- 0.004074 (DSYS=0.04129:total,DSYS=0.01894:uncorr);
+ 0.75 (BIN=0.7 TO 0.8); 0.7378 +- 0.003525 (DSYS=0.03727:total,DSYS=0.01705:uncorr);
+ 0.85 (BIN=0.8 TO 0.9); 0.6431 +- 0.00308 (DSYS=0.03328:total,DSYS=0.01517:uncorr);
+ 0.95 (BIN=0.9 TO 1); 0.5495 +- 0.002708 (DSYS=0.02849:total,DSYS=0.013:uncorr);
+ 1.05 (BIN=1 TO 1.1); 0.4695 +- 0.002415 (DSYS=0.02449:total,DSYS=0.01082:uncorr);
+ 1.15 (BIN=1.1 TO 1.2); 0.3936 +- 0.002155 (DSYS=0.02071:total,DSYS=0.009179:uncorr);
+ 1.25 (BIN=1.2 TO 1.3); 0.3362 +- 0.00196 (DSYS=0.01797:total,DSYS=0.007929:uncorr);
+ 1.35 (BIN=1.3 TO 1.4); 0.2855 +- 0.001785 (DSYS=0.01553:total,DSYS=0.006825:uncorr);
+ 1.45 (BIN=1.4 TO 1.5); 0.2431 +- 0.001631 (DSYS=0.01316:total,DSYS=0.005798:uncorr);
+ 1.55 (BIN=1.5 TO 1.6); 0.207 +- 0.001491 (DSYS=0.01132:total,DSYS=0.00498:uncorr);
+ 1.65 (BIN=1.6 TO 1.7); 0.1781 +- 0.001365 (DSYS=0.009881:total,DSYS=0.004344:uncorr);
+ 1.75 (BIN=1.7 TO 1.8); 0.1515 +- 0.001246 (DSYS=0.008688:total,DSYS=0.003798:uncorr);
+ 1.85 (BIN=1.8 TO 1.9); 0.1281 +- 0.001141 (DSYS=0.007425:total,DSYS=0.003243:uncorr);
+ 1.95 (BIN=1.9 TO 2); 0.1105 +- 0.001052 (DSYS=0.006488:total,DSYS=0.002825:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.08684 +- 0.0006568 (DSYS=0.005287:total,DSYS=0.002075:uncorr);
+ 2.3 (BIN=2.2 TO 2.4); 0.06437 +- 0.0005597 (DSYS=0.004081:total,DSYS=0.001586:uncorr);
+ 2.5 (BIN=2.4 TO 2.6); 0.04785 +- 0.000478 (DSYS=0.003253:total,DSYS=0.001254:uncorr);
+ 2.7 (BIN=2.6 TO 2.8); 0.03591 +- 0.0004157 (DSYS=0.002493:total,DSYS=0.0009596:uncorr);
+ 2.9 (BIN=2.8 TO 3); 0.02775 +- 0.0003605 (DSYS=0.001966:total,DSYS=0.0007526:uncorr);
+ 3.15 (BIN=3 TO 3.3); 0.01939 +- 0.000244 (DSYS=0.001406:total,DSYS=0.000537:uncorr);
+ 3.45 (BIN=3.3 TO 3.6); 0.01357 +- 0.0002029 (DSYS=0.0009811:total,DSYS=0.0003748:uncorr);
+ 3.75 (BIN=3.6 TO 3.9); 0.009494 +- 0.0001688 (DSYS=0.0006777:total,DSYS=0.0002442:uncorr);
+ 4.05 (BIN=3.9 TO 4.2); 0.00644 +- 0.0001379 (DSYS=0.0004594:total,DSYS=0.0001655:uncorr);
+ 4.4 (BIN=4.2 TO 4.6); 0.004521 +- 0.0001003 (DSYS=0.0003413:total,DSYS=0.0001221:uncorr);
+ 4.8 (BIN=4.6 TO 5); 0.003081 +- 8.264e-05 (DSYS=0.0002304:total,DSYS=8.251e-05:uncorr);
+ 5.2 (BIN=5 TO 5.4); 0.00203 +- 6.681e-05 (DSYS=0.0001602:total,DSYS=5.7e-05:uncorr);
+ 5.65 (BIN=5.4 TO 5.9); 0.001404 +- 4.918e-05 (DSYS=9.073e-05:total,DSYS=4.836e-05:uncorr);
+ 6.2 (BIN=5.9 TO 6.5); 0.0009376 +- 3.711e-05 (DSYS=6.554e-05:total,DSYS=3.477e-05:uncorr);
+ 6.75 (BIN=6.5 TO 7); 0.0005809 +- 3.248e-05 (DSYS=3.978e-05:total,DSYS=2.113e-05:uncorr);
+ 7.5 (BIN=7 TO 8); 0.0003651 +- 1.815e-05 (DSYS=2.237e-05:total,DSYS=1.196e-05:uncorr);
+ 9 (BIN=8 TO 10); 0.0001663 +- 8.74e-06 (DSYS=1.177e-05:total,DSYS=8.678e-06:uncorr);
+ 11 (BIN=10 TO 12); 5.614e-05 +- 5.311e-06 (DSYS=3.593e-06:total,DSYS=2.654e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $K^{0}_{S}$ transverse momentum spectrum: V0M Class III (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class III
+*qual: RE : P P --> $K^{0}_{S}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.05 (BIN=0 TO 0.1); 0.1726 +- 0.01067 (DSYS=0.009911:total,DSYS=0.00465:uncorr);
+ 0.15 (BIN=0.1 TO 0.2); 0.4906 +- 0.005579 (DSYS=0.02501:total,DSYS=0.01191:uncorr);
+ 0.25 (BIN=0.2 TO 0.3); 0.7029 +- 0.005316 (DSYS=0.0338:total,DSYS=0.01626:uncorr);
+ 0.35 (BIN=0.3 TO 0.4); 0.7893 +- 0.00507 (DSYS=0.03859:total,DSYS=0.01849:uncorr);
+ 0.45 (BIN=0.4 TO 0.5); 0.7978 +- 0.004501 (DSYS=0.03934:total,DSYS=0.01882:uncorr);
+ 0.55 (BIN=0.5 TO 0.6); 0.7595 +- 0.003867 (DSYS=0.03765:total,DSYS=0.01732:uncorr);
+ 0.65 (BIN=0.6 TO 0.7); 0.6812 +- 0.003282 (DSYS=0.03394:total,DSYS=0.01559:uncorr);
+ 0.75 (BIN=0.7 TO 0.8); 0.5966 +- 0.002819 (DSYS=0.03015:total,DSYS=0.0138:uncorr);
+ 0.85 (BIN=0.8 TO 0.9); 0.5152 +- 0.002447 (DSYS=0.02667:total,DSYS=0.01218:uncorr);
+ 0.95 (BIN=0.9 TO 1); 0.4345 +- 0.002138 (DSYS=0.02254:total,DSYS=0.0103:uncorr);
+ 1.05 (BIN=1 TO 1.1); 0.373 +- 0.001912 (DSYS=0.01947:total,DSYS=0.008624:uncorr);
+ 1.15 (BIN=1.1 TO 1.2); 0.3075 +- 0.001686 (DSYS=0.01616:total,DSYS=0.007147:uncorr);
+ 1.25 (BIN=1.2 TO 1.3); 0.2615 +- 0.001533 (DSYS=0.01399:total,DSYS=0.006192:uncorr);
+ 1.35 (BIN=1.3 TO 1.4); 0.22 +- 0.001386 (DSYS=0.01197:total,DSYS=0.005281:uncorr);
+ 1.45 (BIN=1.4 TO 1.5); 0.1853 +- 0.00126 (DSYS=0.01003:total,DSYS=0.004426:uncorr);
+ 1.55 (BIN=1.5 TO 1.6); 0.1571 +- 0.001151 (DSYS=0.008594:total,DSYS=0.00378:uncorr);
+ 1.65 (BIN=1.6 TO 1.7); 0.1345 +- 0.001049 (DSYS=0.007459:total,DSYS=0.003271:uncorr);
+ 1.75 (BIN=1.7 TO 1.8); 0.113 +- 0.0009482 (DSYS=0.006486:total,DSYS=0.002841:uncorr);
+ 1.85 (BIN=1.8 TO 1.9); 0.09718 +- 0.0008775 (DSYS=0.005633:total,DSYS=0.002464:uncorr);
+ 1.95 (BIN=1.9 TO 2); 0.08126 +- 0.0007975 (DSYS=0.004772:total,DSYS=0.002081:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.06497 +- 0.0004988 (DSYS=0.003955:total,DSYS=0.001551:uncorr);
+ 2.3 (BIN=2.2 TO 2.4); 0.04749 +- 0.0004247 (DSYS=0.003013:total,DSYS=0.001174:uncorr);
+ 2.5 (BIN=2.4 TO 2.6); 0.03548 +- 0.0003618 (DSYS=0.002412:total,DSYS=0.0009303:uncorr);
+ 2.7 (BIN=2.6 TO 2.8); 0.02684 +- 0.0003148 (DSYS=0.001864:total,DSYS=0.0007182:uncorr);
+ 2.9 (BIN=2.8 TO 3); 0.02007 +- 0.0002709 (DSYS=0.001423:total,DSYS=0.0005478:uncorr);
+ 3.15 (BIN=3 TO 3.3); 0.01444 +- 0.0001858 (DSYS=0.001049:total,DSYS=0.000403:uncorr);
+ 3.45 (BIN=3.3 TO 3.6); 0.009628 +- 0.0001503 (DSYS=0.000697:total,DSYS=0.0002678:uncorr);
+ 3.75 (BIN=3.6 TO 3.9); 0.006663 +- 0.0001243 (DSYS=0.0004758:total,DSYS=0.0001717:uncorr);
+ 4.05 (BIN=3.9 TO 4.2); 0.004847 +- 0.0001066 (DSYS=0.0003461:total,DSYS=0.0001257:uncorr);
+ 4.4 (BIN=4.2 TO 4.6); 0.003295 +- 7.554e-05 (DSYS=0.0002488:total,DSYS=8.899e-05:uncorr);
+ 4.8 (BIN=4.6 TO 5); 0.002267 +- 6.215e-05 (DSYS=0.0001697:total,DSYS=6.119e-05:uncorr);
+ 5.2 (BIN=5 TO 5.4); 0.001508 +- 5.013e-05 (DSYS=0.0001191:total,DSYS=4.256e-05:uncorr);
+ 5.65 (BIN=5.4 TO 5.9); 0.00102 +- 3.672e-05 (DSYS=6.596e-05:total,DSYS=3.526e-05:uncorr);
+ 6.2 (BIN=5.9 TO 6.5); 0.0006437 +- 2.689e-05 (DSYS=4.505e-05:total,DSYS=2.397e-05:uncorr);
+ 6.75 (BIN=6.5 TO 7); 0.0004333 +- 2.443e-05 (DSYS=2.98e-05:total,DSYS=1.6e-05:uncorr);
+ 7.5 (BIN=7 TO 8); 0.000254 +- 1.328e-05 (DSYS=1.557e-05:total,DSYS=8.326e-06:uncorr);
+ 9 (BIN=8 TO 10); 0.0001079 +- 6.287e-06 (DSYS=7.64e-06:total,DSYS=5.633e-06:uncorr);
+ 11 (BIN=10 TO 12); 3.32e-05 +- 3.676e-06 (DSYS=2.125e-06:total,DSYS=1.57e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $K^{0}_{S}$ transverse momentum spectrum: V0M Class IV (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class IV
+*qual: RE : P P --> $K^{0}_{S}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.05 (BIN=0 TO 0.1); 0.1576 +- 0.009973 (DSYS=0.009055:total,DSYS=0.004261:uncorr);
+ 0.15 (BIN=0.1 TO 0.2); 0.4418 +- 0.005257 (DSYS=0.02255:total,DSYS=0.01079:uncorr);
+ 0.25 (BIN=0.2 TO 0.3); 0.6231 +- 0.004944 (DSYS=0.02999:total,DSYS=0.01447:uncorr);
+ 0.35 (BIN=0.3 TO 0.4); 0.7076 +- 0.004726 (DSYS=0.03465:total,DSYS=0.01667:uncorr);
+ 0.45 (BIN=0.4 TO 0.5); 0.7027 +- 0.004159 (DSYS=0.03469:total,DSYS=0.01664:uncorr);
+ 0.55 (BIN=0.5 TO 0.6); 0.6601 +- 0.003546 (DSYS=0.03274:total,DSYS=0.0151:uncorr);
+ 0.65 (BIN=0.6 TO 0.7); 0.5838 +- 0.002985 (DSYS=0.02911:total,DSYS=0.01341:uncorr);
+ 0.75 (BIN=0.7 TO 0.8); 0.5108 +- 0.002559 (DSYS=0.02584:total,DSYS=0.01187:uncorr);
+ 0.85 (BIN=0.8 TO 0.9); 0.4352 +- 0.002202 (DSYS=0.02255:total,DSYS=0.01034:uncorr);
+ 0.95 (BIN=0.9 TO 1); 0.3617 +- 0.001908 (DSYS=0.01877:total,DSYS=0.008593:uncorr);
+ 1.05 (BIN=1 TO 1.1); 0.3094 +- 0.001701 (DSYS=0.01616:total,DSYS=0.007192:uncorr);
+ 1.15 (BIN=1.1 TO 1.2); 0.2551 +- 0.0015 (DSYS=0.01343:total,DSYS=0.005967:uncorr);
+ 1.25 (BIN=1.2 TO 1.3); 0.2152 +- 0.00135 (DSYS=0.01152:total,DSYS=0.005105:uncorr);
+ 1.35 (BIN=1.3 TO 1.4); 0.1804 +- 0.001225 (DSYS=0.009825:total,DSYS=0.004337:uncorr);
+ 1.45 (BIN=1.4 TO 1.5); 0.151 +- 0.001107 (DSYS=0.008177:total,DSYS=0.00361:uncorr);
+ 1.55 (BIN=1.5 TO 1.6); 0.1276 +- 0.001007 (DSYS=0.006985:total,DSYS=0.003078:uncorr);
+ 1.65 (BIN=1.6 TO 1.7); 0.108 +- 0.0009136 (DSYS=0.005991:total,DSYS=0.002634:uncorr);
+ 1.75 (BIN=1.7 TO 1.8); 0.09075 +- 0.0008219 (DSYS=0.005206:total,DSYS=0.002277:uncorr);
+ 1.85 (BIN=1.8 TO 1.9); 0.07699 +- 0.0007551 (DSYS=0.004464:total,DSYS=0.001955:uncorr);
+ 1.95 (BIN=1.9 TO 2); 0.06501 +- 0.0006912 (DSYS=0.003818:total,DSYS=0.001665:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.05112 +- 0.00043 (DSYS=0.003113:total,DSYS=0.001223:uncorr);
+ 2.3 (BIN=2.2 TO 2.4); 0.03785 +- 0.0003652 (DSYS=0.002401:total,DSYS=0.0009366:uncorr);
+ 2.5 (BIN=2.4 TO 2.6); 0.02803 +- 0.0003126 (DSYS=0.001906:total,DSYS=0.0007379:uncorr);
+ 2.7 (BIN=2.6 TO 2.8); 0.02066 +- 0.0002679 (DSYS=0.001435:total,DSYS=0.0005546:uncorr);
+ 2.9 (BIN=2.8 TO 3); 0.01583 +- 0.0002321 (DSYS=0.001121:total,DSYS=0.0004297:uncorr);
+ 3.15 (BIN=3 TO 3.3); 0.01116 +- 0.0001573 (DSYS=0.0008096:total,DSYS=0.00031:uncorr);
+ 3.45 (BIN=3.3 TO 3.6); 0.007443 +- 0.0001271 (DSYS=0.000539:total,DSYS=0.0002075:uncorr);
+ 3.75 (BIN=3.6 TO 3.9); 0.005347 +- 0.0001081 (DSYS=0.0003818:total,DSYS=0.0001378:uncorr);
+ 4.05 (BIN=3.9 TO 4.2); 0.003789 +- 9.096e-05 (DSYS=0.0002705:total,DSYS=9.807e-05:uncorr);
+ 4.4 (BIN=4.2 TO 4.6); 0.002655 +- 6.56e-05 (DSYS=0.0002005:total,DSYS=7.172e-05:uncorr);
+ 4.8 (BIN=4.6 TO 5); 0.001649 +- 5.207e-05 (DSYS=0.0001234:total,DSYS=4.459e-05:uncorr);
+ 5.2 (BIN=5 TO 5.4); 0.001177 +- 4.304e-05 (DSYS=9.285e-05:total,DSYS=3.304e-05:uncorr);
+ 5.65 (BIN=5.4 TO 5.9); 0.0007763 +- 3.15e-05 (DSYS=5.015e-05:total,DSYS=2.673e-05:uncorr);
+ 6.2 (BIN=5.9 TO 6.5); 0.000497 +- 2.335e-05 (DSYS=3.477e-05:total,DSYS=1.849e-05:uncorr);
+ 6.75 (BIN=6.5 TO 7); 0.0003062 +- 1.981e-05 (DSYS=2.096e-05:total,DSYS=1.114e-05:uncorr);
+ 7.5 (BIN=7 TO 8); 0.0001977 +- 1.146e-05 (DSYS=1.213e-05:total,DSYS=6.516e-06:uncorr);
+ 9 (BIN=8 TO 10); 8.483e-05 +- 5.421e-06 (DSYS=6.004e-06:total,DSYS=4.427e-06:uncorr);
+ 11 (BIN=10 TO 12); 2.285e-05 +- 3.12e-06 (DSYS=1.462e-06:total,DSYS=1.08e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $K^{0}_{S}$ transverse momentum spectrum: V0M Class V (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class V
+*qual: RE : P P --> $K^{0}_{S}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.05 (BIN=0 TO 0.1); 0.1434 +- 0.009492 (DSYS=0.00825:total,DSYS=0.003899:uncorr);
+ 0.15 (BIN=0.1 TO 0.2); 0.394 +- 0.004905 (DSYS=0.02014:total,DSYS=0.009687:uncorr);
+ 0.25 (BIN=0.2 TO 0.3); 0.5652 +- 0.004667 (DSYS=0.02724:total,DSYS=0.01321:uncorr);
+ 0.35 (BIN=0.3 TO 0.4); 0.6399 +- 0.004453 (DSYS=0.03138:total,DSYS=0.01517:uncorr);
+ 0.45 (BIN=0.4 TO 0.5); 0.6321 +- 0.003904 (DSYS=0.03126:total,DSYS=0.01509:uncorr);
+ 0.55 (BIN=0.5 TO 0.6); 0.5845 +- 0.003298 (DSYS=0.02906:total,DSYS=0.01352:uncorr);
+ 0.65 (BIN=0.6 TO 0.7); 0.5156 +- 0.002768 (DSYS=0.02575:total,DSYS=0.01193:uncorr);
+ 0.75 (BIN=0.7 TO 0.8); 0.4467 +- 0.002356 (DSYS=0.02261:total,DSYS=0.01042:uncorr);
+ 0.85 (BIN=0.8 TO 0.9); 0.3759 +- 0.002016 (DSYS=0.01948:total,DSYS=0.008929:uncorr);
+ 0.95 (BIN=0.9 TO 1); 0.3099 +- 0.001736 (DSYS=0.01609:total,DSYS=0.007374:uncorr);
+ 1.05 (BIN=1 TO 1.1); 0.2637 +- 0.001543 (DSYS=0.01379:total,DSYS=0.00615:uncorr);
+ 1.15 (BIN=1.1 TO 1.2); 0.217 +- 0.001357 (DSYS=0.01143:total,DSYS=0.005101:uncorr);
+ 1.25 (BIN=1.2 TO 1.3); 0.1807 +- 0.001217 (DSYS=0.00968:total,DSYS=0.004305:uncorr);
+ 1.35 (BIN=1.3 TO 1.4); 0.1515 +- 0.001101 (DSYS=0.008254:total,DSYS=0.003654:uncorr);
+ 1.45 (BIN=1.4 TO 1.5); 0.1265 +- 0.0009915 (DSYS=0.006852:total,DSYS=0.003029:uncorr);
+ 1.55 (BIN=1.5 TO 1.6); 0.1081 +- 0.0009071 (DSYS=0.005924:total,DSYS=0.00262:uncorr);
+ 1.65 (BIN=1.6 TO 1.7); 0.08918 +- 0.0008098 (DSYS=0.004953:total,DSYS=0.002184:uncorr);
+ 1.75 (BIN=1.7 TO 1.8); 0.07606 +- 0.0007399 (DSYS=0.004366:total,DSYS=0.001914:uncorr);
+ 1.85 (BIN=1.8 TO 1.9); 0.06365 +- 0.0006713 (DSYS=0.00369:total,DSYS=0.001614:uncorr);
+ 1.95 (BIN=1.9 TO 2); 0.05413 +- 0.0006162 (DSYS=0.003181:total,DSYS=0.001391:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.04228 +- 0.0003814 (DSYS=0.002577:total,DSYS=0.001019:uncorr);
+ 2.3 (BIN=2.2 TO 2.4); 0.03072 +- 0.0003224 (DSYS=0.001951:total,DSYS=0.0007649:uncorr);
+ 2.5 (BIN=2.4 TO 2.6); 0.02317 +- 0.0002764 (DSYS=0.001576:total,DSYS=0.0006092:uncorr);
+ 2.7 (BIN=2.6 TO 2.8); 0.01713 +- 0.0002385 (DSYS=0.00119:total,DSYS=0.0004601:uncorr);
+ 2.9 (BIN=2.8 TO 3); 0.01275 +- 0.0002032 (DSYS=0.0009038:total,DSYS=0.0003478:uncorr);
+ 3.15 (BIN=3 TO 3.3); 0.008992 +- 0.0001386 (DSYS=0.0006534:total,DSYS=0.0002524:uncorr);
+ 3.45 (BIN=3.3 TO 3.6); 0.006113 +- 0.000114 (DSYS=0.0004423:total,DSYS=0.0001696:uncorr);
+ 3.75 (BIN=3.6 TO 3.9); 0.004233 +- 9.417e-05 (DSYS=0.0003024:total,DSYS=0.0001094:uncorr);
+ 4.05 (BIN=3.9 TO 4.2); 0.003056 +- 8.013e-05 (DSYS=0.000218:total,DSYS=7.856e-05:uncorr);
+ 4.4 (BIN=4.2 TO 4.6); 0.002039 +- 5.566e-05 (DSYS=0.000154:total,DSYS=5.509e-05:uncorr);
+ 4.8 (BIN=4.6 TO 5); 0.001459 +- 4.73e-05 (DSYS=0.0001091:total,DSYS=3.908e-05:uncorr);
+ 5.2 (BIN=5 TO 5.4); 0.0009207 +- 3.749e-05 (DSYS=7.265e-05:total,DSYS=2.586e-05:uncorr);
+ 5.65 (BIN=5.4 TO 5.9); 0.0006259 +- 2.785e-05 (DSYS=4.064e-05:total,DSYS=2.193e-05:uncorr);
+ 6.2 (BIN=5.9 TO 6.5); 0.0004037 +- 2.05e-05 (DSYS=2.822e-05:total,DSYS=1.497e-05:uncorr);
+ 6.75 (BIN=6.5 TO 7); 0.0002736 +- 1.873e-05 (DSYS=1.873e-05:total,DSYS=9.952e-06:uncorr);
+ 7.5 (BIN=7 TO 8); 0.0001627 +- 9.983e-06 (DSYS=9.993e-06:total,DSYS=5.374e-06:uncorr);
+ 9 (BIN=8 TO 10); 6.456e-05 +- 4.716e-06 (DSYS=4.578e-06:total,DSYS=3.381e-06:uncorr);
+ 11 (BIN=10 TO 12); 1.72e-05 +- 2.641e-06 (DSYS=1.109e-06:total,DSYS=8.244e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $K^{0}_{S}$ transverse momentum spectrum: V0M Class VI (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class VI
+*qual: RE : P P --> $K^{0}_{S}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.05 (BIN=0 TO 0.1); 0.1304 +- 0.006561 (DSYS=0.007551:total,DSYS=0.003643:uncorr);
+ 0.15 (BIN=0.1 TO 0.2); 0.3551 +- 0.003417 (DSYS=0.01828:total,DSYS=0.008992:uncorr);
+ 0.25 (BIN=0.2 TO 0.3); 0.4967 +- 0.003195 (DSYS=0.02414:total,DSYS=0.01201:uncorr);
+ 0.35 (BIN=0.3 TO 0.4); 0.5492 +- 0.003022 (DSYS=0.0271:total,DSYS=0.01337:uncorr);
+ 0.45 (BIN=0.4 TO 0.5); 0.5462 +- 0.002665 (DSYS=0.02717:total,DSYS=0.01337:uncorr);
+ 0.55 (BIN=0.5 TO 0.6); 0.4989 +- 0.002242 (DSYS=0.02491:total,DSYS=0.01177:uncorr);
+ 0.65 (BIN=0.6 TO 0.7); 0.4339 +- 0.001873 (DSYS=0.02177:total,DSYS=0.01026:uncorr);
+ 0.75 (BIN=0.7 TO 0.8); 0.3676 +- 0.00158 (DSYS=0.01869:total,DSYS=0.008745:uncorr);
+ 0.85 (BIN=0.8 TO 0.9); 0.3115 +- 0.001361 (DSYS=0.0162:total,DSYS=0.007527:uncorr);
+ 0.95 (BIN=0.9 TO 1); 0.2585 +- 0.001178 (DSYS=0.01346:total,DSYS=0.006235:uncorr);
+ 1.05 (BIN=1 TO 1.1); 0.2139 +- 0.001033 (DSYS=0.01121:total,DSYS=0.00505:uncorr);
+ 1.15 (BIN=1.1 TO 1.2); 0.1743 +- 0.000903 (DSYS=0.009201:total,DSYS=0.00414:uncorr);
+ 1.25 (BIN=1.2 TO 1.3); 0.1446 +- 0.0008089 (DSYS=0.007757:total,DSYS=0.003472:uncorr);
+ 1.35 (BIN=1.3 TO 1.4); 0.1222 +- 0.0007335 (DSYS=0.006677:total,DSYS=0.002986:uncorr);
+ 1.45 (BIN=1.4 TO 1.5); 0.1013 +- 0.0006592 (DSYS=0.005498:total,DSYS=0.002457:uncorr);
+ 1.55 (BIN=1.5 TO 1.6); 0.08454 +- 0.0005942 (DSYS=0.004641:total,DSYS=0.002069:uncorr);
+ 1.65 (BIN=1.6 TO 1.7); 0.07046 +- 0.0005342 (DSYS=0.003921:total,DSYS=0.001743:uncorr);
+ 1.75 (BIN=1.7 TO 1.8); 0.05985 +- 0.0004858 (DSYS=0.003441:total,DSYS=0.001519:uncorr);
+ 1.85 (BIN=1.8 TO 1.9); 0.05012 +- 0.0004426 (DSYS=0.00291:total,DSYS=0.001281:uncorr);
+ 1.95 (BIN=1.9 TO 2); 0.04249 +- 0.0004042 (DSYS=0.0025:total,DSYS=0.001099:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.03286 +- 0.0002496 (DSYS=0.002005:total,DSYS=0.000795:uncorr);
+ 2.3 (BIN=2.2 TO 2.4); 0.02404 +- 0.0002111 (DSYS=0.001528:total,DSYS=0.000601:uncorr);
+ 2.5 (BIN=2.4 TO 2.6); 0.01769 +- 0.0001791 (DSYS=0.001204:total,DSYS=0.0004669:uncorr);
+ 2.7 (BIN=2.6 TO 2.8); 0.01296 +- 0.0001528 (DSYS=0.0009014:total,DSYS=0.0003501:uncorr);
+ 2.9 (BIN=2.8 TO 3); 0.009767 +- 0.0001315 (DSYS=0.0006932:total,DSYS=0.0002681:uncorr);
+ 3.15 (BIN=3 TO 3.3); 0.006829 +- 8.847e-05 (DSYS=0.0004963:total,DSYS=0.0001918:uncorr);
+ 3.45 (BIN=3.3 TO 3.6); 0.00462 +- 7.232e-05 (DSYS=0.0003347:total,DSYS=0.0001291:uncorr);
+ 3.75 (BIN=3.6 TO 3.9); 0.003167 +- 5.978e-05 (DSYS=0.0002267:total,DSYS=8.311e-05:uncorr);
+ 4.05 (BIN=3.9 TO 4.2); 0.002222 +- 5.003e-05 (DSYS=0.0001588:total,DSYS=5.805e-05:uncorr);
+ 4.4 (BIN=4.2 TO 4.6); 0.001578 +- 3.621e-05 (DSYS=0.0001194:total,DSYS=4.318e-05:uncorr);
+ 4.8 (BIN=4.6 TO 5); 0.001051 +- 2.941e-05 (DSYS=7.871e-05:total,DSYS=2.84e-05:uncorr);
+ 5.2 (BIN=5 TO 5.4); 0.0007113 +- 2.418e-05 (DSYS=5.612e-05:total,DSYS=1.997e-05:uncorr);
+ 5.65 (BIN=5.4 TO 5.9); 0.000447 +- 1.71e-05 (DSYS=2.898e-05:total,DSYS=1.559e-05:uncorr);
+ 6.2 (BIN=5.9 TO 6.5); 0.0003103 +- 1.324e-05 (DSYS=2.181e-05:total,DSYS=1.173e-05:uncorr);
+ 6.75 (BIN=6.5 TO 7); 0.0001946 +- 1.132e-05 (DSYS=1.334e-05:total,DSYS=7.098e-06:uncorr);
+ 7.5 (BIN=7 TO 8); 0.0001212 +- 6.378e-06 (DSYS=7.441e-06:total,DSYS=3.995e-06:uncorr);
+ 9 (BIN=8 TO 10); 4.919e-05 +- 2.943e-06 (DSYS=3.486e-06:total,DSYS=2.573e-06:uncorr);
+ 11 (BIN=10 TO 12); 1.602e-05 +- 1.816e-06 (DSYS=1.029e-06:total,DSYS=7.631e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $K^{0}_{S}$ transverse momentum spectrum: V0M Class VII (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class VII
+*qual: RE : P P --> $K^{0}_{S}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.05 (BIN=0 TO 0.1); 0.1267 +- 0.006334 (DSYS=0.00736:total,DSYS=0.003589:uncorr);
+ 0.15 (BIN=0.1 TO 0.2); 0.3033 +- 0.003101 (DSYS=0.01579:total,DSYS=0.008027:uncorr);
+ 0.25 (BIN=0.2 TO 0.3); 0.41 +- 0.002857 (DSYS=0.02014:total,DSYS=0.01033:uncorr);
+ 0.35 (BIN=0.3 TO 0.4); 0.4579 +- 0.002717 (DSYS=0.02291:total,DSYS=0.01176:uncorr);
+ 0.45 (BIN=0.4 TO 0.5); 0.4455 +- 0.00236 (DSYS=0.02237:total,DSYS=0.01133:uncorr);
+ 0.55 (BIN=0.5 TO 0.6); 0.3998 +- 0.001966 (DSYS=0.02012:total,DSYS=0.009763:uncorr);
+ 0.65 (BIN=0.6 TO 0.7); 0.3432 +- 0.001624 (DSYS=0.01729:total,DSYS=0.008267:uncorr);
+ 0.75 (BIN=0.7 TO 0.8); 0.2913 +- 0.001372 (DSYS=0.01488:total,DSYS=0.007081:uncorr);
+ 0.85 (BIN=0.8 TO 0.9); 0.2424 +- 0.00117 (DSYS=0.01267:total,DSYS=0.005992:uncorr);
+ 0.95 (BIN=0.9 TO 1); 0.1988 +- 0.001004 (DSYS=0.01041:total,DSYS=0.004925:uncorr);
+ 1.05 (BIN=1 TO 1.1); 0.1625 +- 0.0008731 (DSYS=0.008549:total,DSYS=0.003911:uncorr);
+ 1.15 (BIN=1.1 TO 1.2); 0.1323 +- 0.000763 (DSYS=0.007003:total,DSYS=0.00318:uncorr);
+ 1.25 (BIN=1.2 TO 1.3); 0.1093 +- 0.0006788 (DSYS=0.005879:total,DSYS=0.002664:uncorr);
+ 1.35 (BIN=1.3 TO 1.4); 0.09011 +- 0.0006051 (DSYS=0.004916:total,DSYS=0.002188:uncorr);
+ 1.45 (BIN=1.4 TO 1.5); 0.07362 +- 0.0005411 (DSYS=0.004002:total,DSYS=0.001797:uncorr);
+ 1.55 (BIN=1.5 TO 1.6); 0.06183 +- 0.0004918 (DSYS=0.00341:total,DSYS=0.001548:uncorr);
+ 1.65 (BIN=1.6 TO 1.7); 0.05167 +- 0.0004407 (DSYS=0.002877:total,DSYS=0.001283:uncorr);
+ 1.75 (BIN=1.7 TO 1.8); 0.04203 +- 0.0003928 (DSYS=0.002425:total,DSYS=0.001085:uncorr);
+ 1.85 (BIN=1.8 TO 1.9); 0.03584 +- 0.0003586 (DSYS=0.002085:total,DSYS=0.0009244:uncorr);
+ 1.95 (BIN=1.9 TO 2); 0.03081 +- 0.0003313 (DSYS=0.001817:total,DSYS=0.0008064:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.02369 +- 0.0002033 (DSYS=0.001449:total,DSYS=0.0005814:uncorr);
+ 2.3 (BIN=2.2 TO 2.4); 0.01704 +- 0.0001707 (DSYS=0.001085:total,DSYS=0.00043:uncorr);
+ 2.5 (BIN=2.4 TO 2.6); 0.01232 +- 0.0001426 (DSYS=0.0008392:total,DSYS=0.000327:uncorr);
+ 2.7 (BIN=2.6 TO 2.8); 0.009164 +- 0.0001228 (DSYS=0.0006376:total,DSYS=0.0002484:uncorr);
+ 2.9 (BIN=2.8 TO 3); 0.006779 +- 0.0001045 (DSYS=0.0004808:total,DSYS=0.0001852:uncorr);
+ 3.15 (BIN=3 TO 3.3); 0.004803 +- 7.126e-05 (DSYS=0.0003486:total,DSYS=0.0001338:uncorr);
+ 3.45 (BIN=3.3 TO 3.6); 0.003215 +- 5.774e-05 (DSYS=0.0002325:total,DSYS=8.882e-05:uncorr);
+ 3.75 (BIN=3.6 TO 3.9); 0.002185 +- 4.795e-05 (DSYS=0.000157:total,DSYS=5.889e-05:uncorr);
+ 4.05 (BIN=3.9 TO 4.2); 0.00159 +- 4.064e-05 (DSYS=0.0001137:total,DSYS=4.17e-05:uncorr);
+ 4.4 (BIN=4.2 TO 4.6); 0.001042 +- 2.803e-05 (DSYS=7.868e-05:total,DSYS=2.815e-05:uncorr);
+ 4.8 (BIN=4.6 TO 5); 0.0007158 +- 2.373e-05 (DSYS=5.373e-05:total,DSYS=1.975e-05:uncorr);
+ 5.2 (BIN=5 TO 5.4); 0.0004413 +- 1.832e-05 (DSYS=3.482e-05:total,DSYS=1.239e-05:uncorr);
+ 5.65 (BIN=5.4 TO 5.9); 0.0003011 +- 1.367e-05 (DSYS=1.963e-05:total,DSYS=1.071e-05:uncorr);
+ 6.2 (BIN=5.9 TO 6.5); 0.0001921 +- 1.021e-05 (DSYS=1.356e-05:total,DSYS=7.379e-06:uncorr);
+ 6.75 (BIN=6.5 TO 7); 0.0001351 +- 9.205e-06 (DSYS=9.254e-06:total,DSYS=4.916e-06:uncorr);
+ 7.5 (BIN=7 TO 8); 7.487e-05 +- 4.896e-06 (DSYS=4.682e-06:total,DSYS=2.625e-06:uncorr);
+ 9 (BIN=8 TO 10); 3.183e-05 +- 2.338e-06 (DSYS=2.253e-06:total,DSYS=1.661e-06:uncorr);
+ 11 (BIN=10 TO 12); 1.153e-05 +- 1.445e-06 (DSYS=7.379e-07:total,DSYS=5.452e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $K^{0}_{S}$ transverse momentum spectrum: V0M Class VIII (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class VIII
+*qual: RE : P P --> $K^{0}_{S}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.05 (BIN=0 TO 0.1); 0.1024 +- 0.005627 (DSYS=0.00613:total,DSYS=0.003259:uncorr);
+ 0.15 (BIN=0.1 TO 0.2); 0.2514 +- 0.00278 (DSYS=0.01346:total,DSYS=0.007372:uncorr);
+ 0.25 (BIN=0.2 TO 0.3); 0.3482 +- 0.002576 (DSYS=0.01768:total,DSYS=0.009856:uncorr);
+ 0.35 (BIN=0.3 TO 0.4); 0.3794 +- 0.002418 (DSYS=0.01951:total,DSYS=0.01074:uncorr);
+ 0.45 (BIN=0.4 TO 0.5); 0.3658 +- 0.002084 (DSYS=0.01884:total,DSYS=0.0102:uncorr);
+ 0.55 (BIN=0.5 TO 0.6); 0.3257 +- 0.001727 (DSYS=0.01679:total,DSYS=0.008754:uncorr);
+ 0.65 (BIN=0.6 TO 0.7); 0.2775 +- 0.001424 (DSYS=0.01431:total,DSYS=0.007339:uncorr);
+ 0.75 (BIN=0.7 TO 0.8); 0.2301 +- 0.001182 (DSYS=0.01195:total,DSYS=0.005996:uncorr);
+ 0.85 (BIN=0.8 TO 0.9); 0.1876 +- 0.000994 (DSYS=0.009938:total,DSYS=0.004907:uncorr);
+ 0.95 (BIN=0.9 TO 1); 0.1521 +- 0.0008466 (DSYS=0.008041:total,DSYS=0.003933:uncorr);
+ 1.05 (BIN=1 TO 1.1); 0.123 +- 0.0007311 (DSYS=0.006543:total,DSYS=0.003113:uncorr);
+ 1.15 (BIN=1.1 TO 1.2); 0.1003 +- 0.000639 (DSYS=0.005362:total,DSYS=0.002525:uncorr);
+ 1.25 (BIN=1.2 TO 1.3); 0.08253 +- 0.0005679 (DSYS=0.004478:total,DSYS=0.002093:uncorr);
+ 1.35 (BIN=1.3 TO 1.4); 0.06762 +- 0.0005055 (DSYS=0.003734:total,DSYS=0.00174:uncorr);
+ 1.45 (BIN=1.4 TO 1.5); 0.05487 +- 0.0004484 (DSYS=0.003012:total,DSYS=0.001403:uncorr);
+ 1.55 (BIN=1.5 TO 1.6); 0.04532 +- 0.0004028 (DSYS=0.002513:total,DSYS=0.001164:uncorr);
+ 1.65 (BIN=1.6 TO 1.7); 0.03789 +- 0.0003612 (DSYS=0.002127:total,DSYS=0.0009789:uncorr);
+ 1.75 (BIN=1.7 TO 1.8); 0.03089 +- 0.0003231 (DSYS=0.001792:total,DSYS=0.0008203:uncorr);
+ 1.85 (BIN=1.8 TO 1.9); 0.026 +- 0.0002934 (DSYS=0.001523:total,DSYS=0.0006944:uncorr);
+ 1.95 (BIN=1.9 TO 2); 0.02197 +- 0.0002674 (DSYS=0.001305:total,DSYS=0.0005969:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.01691 +- 0.0001637 (DSYS=0.001039:total,DSYS=0.0004272:uncorr);
+ 2.3 (BIN=2.2 TO 2.4); 0.01186 +- 0.0001361 (DSYS=0.000759:total,DSYS=0.00031:uncorr);
+ 2.5 (BIN=2.4 TO 2.6); 0.008751 +- 0.0001152 (DSYS=0.0005993:total,DSYS=0.0002408:uncorr);
+ 2.7 (BIN=2.6 TO 2.8); 0.00649 +- 9.886e-05 (DSYS=0.0004537:total,DSYS=0.0001814:uncorr);
+ 2.9 (BIN=2.8 TO 3); 0.004821 +- 8.492e-05 (DSYS=0.000344:total,DSYS=0.0001372:uncorr);
+ 3.15 (BIN=3 TO 3.3); 0.003372 +- 5.749e-05 (DSYS=0.0002461:total,DSYS=9.749e-05:uncorr);
+ 3.45 (BIN=3.3 TO 3.6); 0.002267 +- 4.692e-05 (DSYS=0.0001652:total,DSYS=6.581e-05:uncorr);
+ 3.75 (BIN=3.6 TO 3.9); 0.001543 +- 3.835e-05 (DSYS=0.0001107:total,DSYS=4.119e-05:uncorr);
+ 4.05 (BIN=3.9 TO 4.2); 0.001112 +- 3.262e-05 (DSYS=7.99e-05:total,DSYS=3.01e-05:uncorr);
+ 4.4 (BIN=4.2 TO 4.6); 0.0007495 +- 2.289e-05 (DSYS=5.684e-05:total,DSYS=2.093e-05:uncorr);
+ 4.8 (BIN=4.6 TO 5); 0.0004827 +- 1.852e-05 (DSYS=3.628e-05:total,DSYS=1.345e-05:uncorr);
+ 5.2 (BIN=5 TO 5.4); 0.0003108 +- 1.482e-05 (DSYS=2.462e-05:total,DSYS=9.003e-06:uncorr);
+ 5.65 (BIN=5.4 TO 5.9); 0.000211 +- 1.102e-05 (DSYS=1.374e-05:total,DSYS=7.467e-06:uncorr);
+ 6.2 (BIN=5.9 TO 6.5); 0.0001276 +- 7.943e-06 (DSYS=8.972e-06:total,DSYS=4.831e-06:uncorr);
+ 6.75 (BIN=6.5 TO 7); 0.0001012 +- 7.546e-06 (DSYS=6.959e-06:total,DSYS=3.732e-06:uncorr);
+ 7.5 (BIN=7 TO 8); 5.481e-05 +- 3.957e-06 (DSYS=3.385e-06:total,DSYS=1.845e-06:uncorr);
+ 9 (BIN=8 TO 10); 2.379e-05 +- 2.019e-06 (DSYS=1.693e-06:total,DSYS=1.254e-06:uncorr);
+ 11 (BIN=10 TO 12); 7.192e-06 +- 1.167e-06 (DSYS=4.64e-07:total,DSYS=3.45e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $K^{0}_{S}$ transverse momentum spectrum: V0M Class IX (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class IX
+*qual: RE : P P --> $K^{0}_{S}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.05 (BIN=0 TO 0.1); 0.07904 +- 0.0036 (DSYS=0.005453:total,DSYS=0.003698:uncorr);
+ 0.15 (BIN=0.1 TO 0.2); 0.1946 +- 0.001779 (DSYS=0.01238:total,DSYS=0.008781:uncorr);
+ 0.25 (BIN=0.2 TO 0.3); 0.269 +- 0.001651 (DSYS=0.01642:total,DSYS=0.01187:uncorr);
+ 0.35 (BIN=0.3 TO 0.4); 0.2916 +- 0.001546 (DSYS=0.01781:total,DSYS=0.01267:uncorr);
+ 0.45 (BIN=0.4 TO 0.5); 0.2728 +- 0.001314 (DSYS=0.01666:total,DSYS=0.01174:uncorr);
+ 0.55 (BIN=0.5 TO 0.6); 0.2392 +- 0.001079 (DSYS=0.01439:total,DSYS=0.009815:uncorr);
+ 0.65 (BIN=0.6 TO 0.7); 0.1992 +- 0.0008797 (DSYS=0.01192:total,DSYS=0.008021:uncorr);
+ 0.75 (BIN=0.7 TO 0.8); 0.1609 +- 0.000721 (DSYS=0.009499:total,DSYS=0.006165:uncorr);
+ 0.85 (BIN=0.8 TO 0.9); 0.1292 +- 0.0006019 (DSYS=0.007699:total,DSYS=0.004883:uncorr);
+ 0.95 (BIN=0.9 TO 1); 0.1027 +- 0.0005069 (DSYS=0.006067:total,DSYS=0.00379:uncorr);
+ 1.05 (BIN=1 TO 1.1); 0.0828 +- 0.000437 (DSYS=0.004877:total,DSYS=0.002964:uncorr);
+ 1.15 (BIN=1.1 TO 1.2); 0.06592 +- 0.0003768 (DSYS=0.003889:total,DSYS=0.002336:uncorr);
+ 1.25 (BIN=1.2 TO 1.3); 0.05266 +- 0.0003286 (DSYS=0.003132:total,DSYS=0.001851:uncorr);
+ 1.35 (BIN=1.3 TO 1.4); 0.04207 +- 0.000288 (DSYS=0.002518:total,DSYS=0.001455:uncorr);
+ 1.45 (BIN=1.4 TO 1.5); 0.03441 +- 0.0002554 (DSYS=0.002045:total,DSYS=0.001178:uncorr);
+ 1.55 (BIN=1.5 TO 1.6); 0.02832 +- 0.0002287 (DSYS=0.001694:total,DSYS=0.0009662:uncorr);
+ 1.65 (BIN=1.6 TO 1.7); 0.02311 +- 0.0002037 (DSYS=0.00142:total,DSYS=0.00083:uncorr);
+ 1.75 (BIN=1.7 TO 1.8); 0.01887 +- 0.0001805 (DSYS=0.001181:total,DSYS=0.0006685:uncorr);
+ 1.85 (BIN=1.8 TO 1.9); 0.01587 +- 0.0001642 (DSYS=0.0009985:total,DSYS=0.0005594:uncorr);
+ 1.95 (BIN=1.9 TO 2); 0.01319 +- 0.000149 (DSYS=0.0008401:total,DSYS=0.0004691:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.01004 +- 9.092e-05 (DSYS=0.0006618:total,DSYS=0.0003493:uncorr);
+ 2.3 (BIN=2.2 TO 2.4); 0.007155 +- 7.555e-05 (DSYS=0.0004884:total,DSYS=0.0002526:uncorr);
+ 2.5 (BIN=2.4 TO 2.6); 0.005087 +- 6.334e-05 (DSYS=0.0003689:total,DSYS=0.0001852:uncorr);
+ 2.7 (BIN=2.6 TO 2.8); 0.003693 +- 5.339e-05 (DSYS=0.0002712:total,DSYS=0.0001326:uncorr);
+ 2.9 (BIN=2.8 TO 3); 0.002771 +- 4.567e-05 (DSYS=0.0002074:total,DSYS=0.0001006:uncorr);
+ 3.15 (BIN=3 TO 3.3); 0.001895 +- 3.07e-05 (DSYS=0.0001447:total,DSYS=6.932e-05:uncorr);
+ 3.45 (BIN=3.3 TO 3.6); 0.001293 +- 2.517e-05 (DSYS=9.928e-05:total,DSYS=4.882e-05:uncorr);
+ 3.75 (BIN=3.6 TO 3.9); 0.0008549 +- 2.023e-05 (DSYS=6.411e-05:total,DSYS=2.948e-05:uncorr);
+ 4.05 (BIN=3.9 TO 4.2); 0.0006155 +- 1.735e-05 (DSYS=4.615e-05:total,DSYS=2.126e-05:uncorr);
+ 4.4 (BIN=4.2 TO 4.6); 0.0003882 +- 1.171e-05 (DSYS=3.079e-05:total,DSYS=1.411e-05:uncorr);
+ 4.8 (BIN=4.6 TO 5); 0.0002643 +- 9.75e-06 (DSYS=2.043e-05:total,DSYS=8.774e-06:uncorr);
+ 5.2 (BIN=5 TO 5.4); 0.0001763 +- 7.865e-06 (DSYS=1.449e-05:total,DSYS=6.401e-06:uncorr);
+ 5.65 (BIN=5.4 TO 5.9); 0.000117 +- 5.904e-06 (DSYS=8.085e-06:total,DSYS=4.95e-06:uncorr);
+ 6.2 (BIN=5.9 TO 6.5); 6.669e-05 +- 4.058e-06 (DSYS=4.885e-06:total,DSYS=2.872e-06:uncorr);
+ 6.75 (BIN=6.5 TO 7); 4.751e-05 +- 3.761e-06 (DSYS=3.392e-06:total,DSYS=1.977e-06:uncorr);
+ 7.5 (BIN=7 TO 8); 3.135e-05 +- 2.123e-06 (DSYS=2.018e-06:total,DSYS=1.198e-06:uncorr);
+ 9 (BIN=8 TO 10); 1.028e-05 +- 8.928e-07 (DSYS=7.635e-07:total,DSYS=5.842e-07:uncorr);
+ 11 (BIN=10 TO 12); 3.978e-06 +- 5.895e-07 (DSYS=2.729e-07:total,DSYS=2.122e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $K^{0}_{S}$ transverse momentum spectrum: V0M Class X (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class X
+*qual: RE : P P --> $K^{0}_{S}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.05 (BIN=0 TO 0.1); 0.04443 +- 0.002135 (DSYS=0.004133:total,DSYS=0.003466:uncorr);
+ 0.15 (BIN=0.1 TO 0.2); 0.1248 +- 0.001141 (DSYS=0.01135:total,DSYS=0.009877:uncorr);
+ 0.25 (BIN=0.2 TO 0.3); 0.1669 +- 0.001038 (DSYS=0.01504:total,DSYS=0.01329:uncorr);
+ 0.35 (BIN=0.3 TO 0.4); 0.1791 +- 0.0009637 (DSYS=0.01598:total,DSYS=0.01401:uncorr);
+ 0.45 (BIN=0.4 TO 0.5); 0.1646 +- 0.0008099 (DSYS=0.01451:total,DSYS=0.01264:uncorr);
+ 0.55 (BIN=0.5 TO 0.6); 0.1366 +- 0.0006449 (DSYS=0.01173:total,DSYS=0.01008:uncorr);
+ 0.65 (BIN=0.6 TO 0.7); 0.1092 +- 0.0005122 (DSYS=0.009043:total,DSYS=0.007644:uncorr);
+ 0.75 (BIN=0.7 TO 0.8); 0.08437 +- 0.0004084 (DSYS=0.006692:total,DSYS=0.005515:uncorr);
+ 0.85 (BIN=0.8 TO 0.9); 0.06483 +- 0.0003321 (DSYS=0.004996:total,DSYS=0.004005:uncorr);
+ 0.95 (BIN=0.9 TO 1); 0.04935 +- 0.0002723 (DSYS=0.003683:total,DSYS=0.002896:uncorr);
+ 1.05 (BIN=1 TO 1.1); 0.03766 +- 0.0002273 (DSYS=0.002713:total,DSYS=0.002063:uncorr);
+ 1.15 (BIN=1.1 TO 1.2); 0.02849 +- 0.0001899 (DSYS=0.002032:total,DSYS=0.001524:uncorr);
+ 1.25 (BIN=1.2 TO 1.3); 0.02229 +- 0.0001636 (DSYS=0.00159:total,DSYS=0.001177:uncorr);
+ 1.35 (BIN=1.3 TO 1.4); 0.01728 +- 0.0001417 (DSYS=0.001238:total,DSYS=0.0009055:uncorr);
+ 1.45 (BIN=1.4 TO 1.5); 0.01373 +- 0.0001237 (DSYS=0.0009744:total,DSYS=0.0007103:uncorr);
+ 1.55 (BIN=1.5 TO 1.6); 0.01109 +- 0.0001089 (DSYS=0.0007932:total,DSYS=0.0005764:uncorr);
+ 1.65 (BIN=1.6 TO 1.7); 0.008804 +- 9.576e-05 (DSYS=0.0006337:total,DSYS=0.0004573:uncorr);
+ 1.75 (BIN=1.7 TO 1.8); 0.007108 +- 8.45e-05 (DSYS=0.0005215:total,DSYS=0.0003708:uncorr);
+ 1.85 (BIN=1.8 TO 1.9); 0.005901 +- 7.606e-05 (DSYS=0.0004356:total,DSYS=0.0003084:uncorr);
+ 1.95 (BIN=1.9 TO 2); 0.004821 +- 6.801e-05 (DSYS=0.0003609:total,DSYS=0.0002557:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.003561 +- 4.103e-05 (DSYS=0.0002697:total,DSYS=0.0001816:uncorr);
+ 2.3 (BIN=2.2 TO 2.4); 0.002449 +- 3.353e-05 (DSYS=0.000192:total,DSYS=0.0001281:uncorr);
+ 2.5 (BIN=2.4 TO 2.6); 0.001699 +- 2.77e-05 (DSYS=0.0001374:total,DSYS=8.679e-05:uncorr);
+ 2.7 (BIN=2.6 TO 2.8); 0.001254 +- 2.365e-05 (DSYS=0.0001035:total,DSYS=6.53e-05:uncorr);
+ 2.9 (BIN=2.8 TO 3); 0.0008924 +- 1.979e-05 (DSYS=7.512e-05:total,DSYS=4.724e-05:uncorr);
+ 3.15 (BIN=3 TO 3.3); 0.0006354 +- 1.346e-05 (DSYS=5.407e-05:total,DSYS=3.331e-05:uncorr);
+ 3.45 (BIN=3.3 TO 3.6); 0.0004031 +- 1.064e-05 (DSYS=3.403e-05:total,DSYS=2.078e-05:uncorr);
+ 3.75 (BIN=3.6 TO 3.9); 0.0002559 +- 8.48e-06 (DSYS=2.133e-05:total,DSYS=1.283e-05:uncorr);
+ 4.05 (BIN=3.9 TO 4.2); 0.0001875 +- 7.162e-06 (DSYS=1.557e-05:total,DSYS=9.322e-06:uncorr);
+ 4.4 (BIN=4.2 TO 4.6); 0.0001235 +- 5.076e-06 (DSYS=1.085e-05:total,DSYS=6.47e-06:uncorr);
+ 4.8 (BIN=4.6 TO 5); 7.399e-05 +- 4.02e-06 (DSYS=6.393e-06:total,DSYS=3.767e-06:uncorr);
+ 5.2 (BIN=5 TO 5.4); 4.874e-05 +- 3.246e-06 (DSYS=4.367e-06:total,DSYS=2.481e-06:uncorr);
+ 5.65 (BIN=5.4 TO 5.9); 2.985e-05 +- 2.342e-06 (DSYS=2.273e-06:total,DSYS=1.583e-06:uncorr);
+ 6.2 (BIN=5.9 TO 6.5); 2.234e-05 +- 1.764e-06 (DSYS=1.779e-06:total,DSYS=1.189e-06:uncorr);
+ 6.75 (BIN=6.5 TO 7); 1.105e-05 +- 1.539e-06 (DSYS=8.552e-07:total,DSYS=5.661e-07:uncorr);
+ 7.5 (BIN=7 TO 8); 8.123e-06 +- 8.416e-07 (DSYS=5.837e-07:total,DSYS=4.047e-07:uncorr);
+ 9 (BIN=8 TO 10); 3.686e-06 +- 4.29e-07 (DSYS=2.843e-07:total,DSYS=2.231e-07:uncorr);
+ 11 (BIN=10 TO 12); 4.91e-07 +- 1.93e-07 (DSYS=3.797e-08:total,DSYS=3.152e-08:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Lambda+\bar{\Lambda}$ transverse momentum spectrum: V0M Class I (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class I
+*qual: RE : P P --> $\Lambda+\bar{\Lambda}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.5 (BIN=0.4 TO 0.6); 0.4016 +- 0.008632 (DSYS=0.02352:total,DSYS=0.009305:uncorr);
+ 0.7 (BIN=0.6 TO 0.8); 0.456 +- 0.005629 (DSYS=0.02679:total,DSYS=0.01063:uncorr);
+ 0.9 (BIN=0.8 TO 1); 0.4562 +- 0.004726 (DSYS=0.02517:total,DSYS=0.01011:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.419 +- 0.004283 (DSYS=0.02379:total,DSYS=0.009572:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.3663 +- 0.003897 (DSYS=0.0258:total,DSYS=0.01011:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.3075 +- 0.003424 (DSYS=0.01953:total,DSYS=0.007748:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.2427 +- 0.002899 (DSYS=0.01515:total,DSYS=0.006032:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.1977 +- 0.002524 (DSYS=0.01325:total,DSYS=0.005218:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.1474 +- 0.00213 (DSYS=0.01055:total,DSYS=0.004136:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.107 +- 0.001439 (DSYS=0.008319:total,DSYS=0.003222:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.06502 +- 0.000958 (DSYS=0.0053:total,DSYS=0.001717:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.03541 +- 0.0006249 (DSYS=0.002768:total,DSYS=0.0008984:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.01563 +- 0.0003796 (DSYS=0.001291:total,DSYS=0.0004159:uncorr);
+ 4.5 (BIN=4 TO 5); 0.00579 +- 0.0001763 (DSYS=0.0004639:total,DSYS=0.00015:uncorr);
+ 5.75 (BIN=5 TO 6.5); 0.001652 +- 7.482e-05 (DSYS=0.0001292:total,DSYS=6.198e-05:uncorr);
+ 7.25 (BIN=6.5 TO 8); 0.0003892 +- 3.75e-05 (DSYS=4.381e-05:total,DSYS=2.07e-05:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Lambda+\bar{\Lambda}$ transverse momentum spectrum: V0M Class II (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class II
+*qual: RE : P P --> $\Lambda+\bar{\Lambda}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.5 (BIN=0.4 TO 0.6); 0.3552 +- 0.004317 (DSYS=0.02081:total,DSYS=0.008258:uncorr);
+ 0.7 (BIN=0.6 TO 0.8); 0.383 +- 0.002795 (DSYS=0.02249:total,DSYS=0.008895:uncorr);
+ 0.9 (BIN=0.8 TO 1); 0.3677 +- 0.00235 (DSYS=0.02029:total,DSYS=0.008142:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.3283 +- 0.00212 (DSYS=0.01864:total,DSYS=0.007517:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.2775 +- 0.001914 (DSYS=0.01955:total,DSYS=0.007661:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.2249 +- 0.001668 (DSYS=0.01428:total,DSYS=0.005654:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.1782 +- 0.001421 (DSYS=0.01112:total,DSYS=0.004419:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.137 +- 0.001213 (DSYS=0.009183:total,DSYS=0.003612:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.103 +- 0.001029 (DSYS=0.007368:total,DSYS=0.002881:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.07191 +- 0.0006859 (DSYS=0.005592:total,DSYS=0.00217:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.04302 +- 0.0004492 (DSYS=0.003506:total,DSYS=0.001131:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.02219 +- 0.0002847 (DSYS=0.001735:total,DSYS=0.0005629:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.0103 +- 0.0001741 (DSYS=0.0008514:total,DSYS=0.0002756:uncorr);
+ 4.5 (BIN=4 TO 5); 0.003629 +- 7.71e-05 (DSYS=0.0002908:total,DSYS=9.405e-05:uncorr);
+ 5.75 (BIN=5 TO 6.5); 0.0009534 +- 3.091e-05 (DSYS=7.459e-05:total,DSYS=3.577e-05:uncorr);
+ 7.25 (BIN=6.5 TO 8); 0.0002627 +- 1.63e-05 (DSYS=2.957e-05:total,DSYS=1.398e-05:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Lambda+\bar{\Lambda}$ transverse momentum spectrum: V0M Class III (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class III
+*qual: RE : P P --> $\Lambda+\bar{\Lambda}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.5 (BIN=0.4 TO 0.6); 0.3128 +- 0.003645 (DSYS=0.01835:total,DSYS=0.007318:uncorr);
+ 0.7 (BIN=0.6 TO 0.8); 0.3294 +- 0.002336 (DSYS=0.01937:total,DSYS=0.007718:uncorr);
+ 0.9 (BIN=0.8 TO 1); 0.3025 +- 0.001919 (DSYS=0.01669:total,DSYS=0.006708:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.2666 +- 0.001709 (DSYS=0.01515:total,DSYS=0.006123:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.2176 +- 0.001504 (DSYS=0.01532:total,DSYS=0.006:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.1742 +- 0.0013 (DSYS=0.01106:total,DSYS=0.004392:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.1318 +- 0.001078 (DSYS=0.008231:total,DSYS=0.003281:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.1009 +- 0.0009125 (DSYS=0.00677:total,DSYS=0.002673:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.07478 +- 0.0007644 (DSYS=0.00535:total,DSYS=0.002088:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.05166 +- 0.0005045 (DSYS=0.004015:total,DSYS=0.001554:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.03038 +- 0.0003261 (DSYS=0.002476:total,DSYS=0.0008001:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.01536 +- 0.0002045 (DSYS=0.001202:total,DSYS=0.0003915:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.00702 +- 0.0001231 (DSYS=0.0005799:total,DSYS=0.0001871:uncorr);
+ 4.5 (BIN=4 TO 5); 0.002479 +- 5.476e-05 (DSYS=0.0001987:total,DSYS=6.455e-05:uncorr);
+ 5.75 (BIN=5 TO 6.5); 0.0006548 +- 2.222e-05 (DSYS=5.123e-05:total,DSYS=2.457e-05:uncorr);
+ 7.25 (BIN=6.5 TO 8); 0.0001691 +- 1.132e-05 (DSYS=1.903e-05:total,DSYS=8.996e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Lambda+\bar{\Lambda}$ transverse momentum spectrum: V0M Class IV (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class IV
+*qual: RE : P P --> $\Lambda+\bar{\Lambda}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.5 (BIN=0.4 TO 0.6); 0.2765 +- 0.003355 (DSYS=0.01624:total,DSYS=0.006524:uncorr);
+ 0.7 (BIN=0.6 TO 0.8); 0.2924 +- 0.002149 (DSYS=0.0172:total,DSYS=0.006879:uncorr);
+ 0.9 (BIN=0.8 TO 1); 0.2651 +- 0.001743 (DSYS=0.01465:total,DSYS=0.005924:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.2227 +- 0.00151 (DSYS=0.01267:total,DSYS=0.005143:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.179 +- 0.001317 (DSYS=0.01261:total,DSYS=0.004953:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.1424 +- 0.001128 (DSYS=0.009047:total,DSYS=0.003596:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.1064 +- 0.0009281 (DSYS=0.006643:total,DSYS=0.002644:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.07995 +- 0.0007762 (DSYS=0.005364:total,DSYS=0.002119:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.05793 +- 0.000642 (DSYS=0.004146:total,DSYS=0.001623:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.03949 +- 0.0004201 (DSYS=0.00307:total,DSYS=0.001189:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.02248 +- 0.0002669 (DSYS=0.001833:total,DSYS=0.0005948:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.01178 +- 0.0001702 (DSYS=0.0009213:total,DSYS=0.0003008:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.005013 +- 9.982e-05 (DSYS=0.000414:total,DSYS=0.0001334:uncorr);
+ 4.5 (BIN=4 TO 5); 0.001842 +- 4.556e-05 (DSYS=0.0001476:total,DSYS=4.783e-05:uncorr);
+ 5.75 (BIN=5 TO 6.5); 0.0004821 +- 1.858e-05 (DSYS=3.772e-05:total,DSYS=1.809e-05:uncorr);
+ 7.25 (BIN=6.5 TO 8); 0.0001294 +- 9.826e-06 (DSYS=1.458e-05:total,DSYS=6.905e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Lambda+\bar{\Lambda}$ transverse momentum spectrum: V0M Class V (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class V
+*qual: RE : P P --> $\Lambda+\bar{\Lambda}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.5 (BIN=0.4 TO 0.6); 0.2553 +- 0.003175 (DSYS=0.01501:total,DSYS=0.006067:uncorr);
+ 0.7 (BIN=0.6 TO 0.8); 0.2623 +- 0.001998 (DSYS=0.01544:total,DSYS=0.006197:uncorr);
+ 0.9 (BIN=0.8 TO 1); 0.2346 +- 0.001604 (DSYS=0.01298:total,DSYS=0.005291:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.1927 +- 0.001369 (DSYS=0.01096:total,DSYS=0.004465:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.1534 +- 0.001182 (DSYS=0.01082:total,DSYS=0.004268:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.1163 +- 0.0009878 (DSYS=0.007391:total,DSYS=0.002947:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.08916 +- 0.0008186 (DSYS=0.00557:total,DSYS=0.002229:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.0651 +- 0.0006747 (DSYS=0.004368:total,DSYS=0.001727:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.04714 +- 0.0005553 (DSYS=0.003375:total,DSYS=0.001323:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.0319 +- 0.0003629 (DSYS=0.002481:total,DSYS=0.0009629:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.0181 +- 0.0002301 (DSYS=0.001476:total,DSYS=0.0004788:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.009196 +- 0.0001447 (DSYS=0.0007197:total,DSYS=0.0002354:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.003958 +- 8.527e-05 (DSYS=0.0003271:total,DSYS=0.0001061:uncorr);
+ 4.5 (BIN=4 TO 5); 0.001355 +- 3.81e-05 (DSYS=0.0001086:total,DSYS=3.512e-05:uncorr);
+ 5.75 (BIN=5 TO 6.5); 0.0003709 +- 1.578e-05 (DSYS=2.908e-05:total,DSYS=1.403e-05:uncorr);
+ 7.25 (BIN=6.5 TO 8); 9.242e-05 +- 8.082e-06 (DSYS=1.041e-05:total,DSYS=4.936e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Lambda+\bar{\Lambda}$ transverse momentum spectrum: V0M Class VI (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class VI
+*qual: RE : P P --> $\Lambda+\bar{\Lambda}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.5 (BIN=0.4 TO 0.6); 0.224 +- 0.00222 (DSYS=0.01325:total,DSYS=0.005536:uncorr);
+ 0.7 (BIN=0.6 TO 0.8); 0.2251 +- 0.001401 (DSYS=0.01332:total,DSYS=0.005482:uncorr);
+ 0.9 (BIN=0.8 TO 1); 0.196 +- 0.001115 (DSYS=0.01089:total,DSYS=0.004519:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.1584 +- 0.0009443 (DSYS=0.009043:total,DSYS=0.003744:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.1226 +- 0.0008032 (DSYS=0.008659:total,DSYS=0.003446:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.0929 +- 0.0006694 (DSYS=0.005917:total,DSYS=0.002386:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.0678 +- 0.000542 (DSYS=0.004242:total,DSYS=0.001712:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.05016 +- 0.0004483 (DSYS=0.003372:total,DSYS=0.001347:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.03489 +- 0.0003614 (DSYS=0.002501:total,DSYS=0.0009874:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.02365 +- 0.0002354 (DSYS=0.001841:total,DSYS=0.0007189:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.01331 +- 0.000148 (DSYS=0.001086:total,DSYS=0.0003556:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.006425 +- 8.992e-05 (DSYS=0.0005031:total,DSYS=0.0001654:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.002739 +- 5.258e-05 (DSYS=0.0002264:total,DSYS=7.359e-05:uncorr);
+ 4.5 (BIN=4 TO 5); 0.001033 +- 2.432e-05 (DSYS=8.289e-05:total,DSYS=2.719e-05:uncorr);
+ 5.75 (BIN=5 TO 6.5); 0.0002357 +- 9.354e-06 (DSYS=1.847e-05:total,DSYS=8.902e-06:uncorr);
+ 7.25 (BIN=6.5 TO 8); 6.989e-05 +- 5.009e-06 (DSYS=7.87e-06:total,DSYS=3.723e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Lambda+\bar{\Lambda}$ transverse momentum spectrum: V0M Class VII (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class VII
+*qual: RE : P P --> $\Lambda+\bar{\Lambda}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.5 (BIN=0.4 TO 0.6); 0.1883 +- 0.001982 (DSYS=0.01124:total,DSYS=0.004889:uncorr);
+ 0.7 (BIN=0.6 TO 0.8); 0.1846 +- 0.001226 (DSYS=0.01098:total,DSYS=0.004644:uncorr);
+ 0.9 (BIN=0.8 TO 1); 0.1571 +- 0.0009573 (DSYS=0.008754:total,DSYS=0.00369:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.1221 +- 0.0007899 (DSYS=0.006997:total,DSYS=0.002946:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.09224 +- 0.0006597 (DSYS=0.006525:total,DSYS=0.002616:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.06744 +- 0.0005397 (DSYS=0.004306:total,DSYS=0.001758:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.04801 +- 0.00043 (DSYS=0.00301:total,DSYS=0.001226:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.03436 +- 0.0003502 (DSYS=0.00232:total,DSYS=0.0009484:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.02379 +- 0.0002813 (DSYS=0.001712:total,DSYS=0.0006896:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.01572 +- 0.0001799 (DSYS=0.001226:total,DSYS=0.0004852:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.008913 +- 0.0001132 (DSYS=0.0007289:total,DSYS=0.0002421:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.00425 +- 6.871e-05 (DSYS=0.0003332:total,DSYS=0.0001105:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.001814 +- 4.042e-05 (DSYS=0.0001504:total,DSYS=5.014e-05:uncorr);
+ 4.5 (BIN=4 TO 5); 0.0006532 +- 1.831e-05 (DSYS=5.254e-05:total,DSYS=1.756e-05:uncorr);
+ 5.75 (BIN=5 TO 6.5); 0.0001569 +- 7.282e-06 (DSYS=1.232e-05:total,DSYS=5.986e-06:uncorr);
+ 7.25 (BIN=6.5 TO 8); 4.713e-05 +- 3.999e-06 (DSYS=5.305e-06:total,DSYS=2.507e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Lambda+\bar{\Lambda}$ transverse momentum spectrum: V0M Class VIII (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class VIII
+*qual: RE : P P --> $\Lambda+\bar{\Lambda}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.5 (BIN=0.4 TO 0.6); 0.1609 +- 0.001777 (DSYS=0.0099:total,DSYS=0.004813:uncorr);
+ 0.7 (BIN=0.6 TO 0.8); 0.1479 +- 0.001056 (DSYS=0.008998:total,DSYS=0.004162:uncorr);
+ 0.9 (BIN=0.8 TO 1); 0.1213 +- 0.0008027 (DSYS=0.006874:total,DSYS=0.003108:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.09439 +- 0.0006578 (DSYS=0.005467:total,DSYS=0.002412:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.06747 +- 0.0005335 (DSYS=0.004802:total,DSYS=0.001985:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.04783 +- 0.0004286 (DSYS=0.003077:total,DSYS=0.001302:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.03371 +- 0.0003382 (DSYS=0.00213:total,DSYS=0.0009023:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.02348 +- 0.0002715 (DSYS=0.001589:total,DSYS=0.0006575:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.01624 +- 0.000218 (DSYS=0.001174:total,DSYS=0.0004836:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.01079 +- 0.0001399 (DSYS=0.0008454:total,DSYS=0.0003415:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.005811 +- 8.645e-05 (DSYS=0.0004761:total,DSYS=0.0001606:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.002807 +- 5.262e-05 (DSYS=0.0002208:total,DSYS=7.535e-05:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.001159 +- 3.06e-05 (DSYS=9.618e-05:total,DSYS=3.231e-05:uncorr);
+ 4.5 (BIN=4 TO 5); 0.0004247 +- 1.406e-05 (DSYS=3.422e-05:total,DSYS=1.157e-05:uncorr);
+ 5.75 (BIN=5 TO 6.5); 0.0001113 +- 5.853e-06 (DSYS=8.751e-06:total,DSYS=4.26e-06:uncorr);
+ 7.25 (BIN=6.5 TO 8); 2.395e-05 +- 2.779e-06 (DSYS=2.701e-06:total,DSYS=1.284e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Lambda+\bar{\Lambda}$ transverse momentum spectrum: V0M Class IX (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class IX
+*qual: RE : P P --> $\Lambda+\bar{\Lambda}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.5 (BIN=0.4 TO 0.6); 0.1173 +- 0.001116 (DSYS=0.008441:total,DSYS=0.005609:uncorr);
+ 0.7 (BIN=0.6 TO 0.8); 0.1053 +- 0.000656 (DSYS=0.007223:total,DSYS=0.004461:uncorr);
+ 0.9 (BIN=0.8 TO 1); 0.0825 +- 0.0004852 (DSYS=0.005257:total,DSYS=0.003201:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.05997 +- 0.0003812 (DSYS=0.003818:total,DSYS=0.002206:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.04148 +- 0.0003016 (DSYS=0.003137:total,DSYS=0.001617:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.02901 +- 0.0002389 (DSYS=0.001998:total,DSYS=0.001064:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.01996 +- 0.0001862 (DSYS=0.001357:total,DSYS=0.0007321:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.01339 +- 0.000145 (DSYS=0.0009601:total,DSYS=0.0004908:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.009163 +- 0.0001157 (DSYS=0.0006991:total,DSYS=0.0003529:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.005674 +- 7.194e-05 (DSYS=0.0004664:total,DSYS=0.0002283:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.003057 +- 4.393e-05 (DSYS=0.0002608:total,DSYS=0.0001115:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.001423 +- 2.642e-05 (DSYS=0.0001174:total,DSYS=5.188e-05:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.0005829 +- 1.531e-05 (DSYS=5.046e-05:total,DSYS=2.166e-05:uncorr);
+ 4.5 (BIN=4 TO 5); 0.0001961 +- 6.788e-06 (DSYS=1.649e-05:total,DSYS=7.137e-06:uncorr);
+ 5.75 (BIN=5 TO 6.5); 4.836e-05 +- 2.814e-06 (DSYS=3.935e-06:total,DSYS=2.112e-06:uncorr);
+ 7.25 (BIN=6.5 TO 8); 1.613e-05 +- 1.625e-06 (DSYS=1.869e-06:total,DSYS=9.659e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Lambda+\bar{\Lambda}$ transverse momentum spectrum: V0M Class X (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class X
+*qual: RE : P P --> $\Lambda+\bar{\Lambda}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.5 (BIN=0.4 TO 0.6); 0.06211 +- 0.0006323 (DSYS=0.006459:total,DSYS=0.005528:uncorr);
+ 0.7 (BIN=0.6 TO 0.8); 0.05162 +- 0.0003507 (DSYS=0.004791:total,DSYS=0.003899:uncorr);
+ 0.9 (BIN=0.8 TO 1); 0.03588 +- 0.0002395 (DSYS=0.002933:total,DSYS=0.002305:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.02358 +- 0.0001773 (DSYS=0.001846:total,DSYS=0.001381:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.01518 +- 0.0001348 (DSYS=0.00131:total,DSYS=0.0008647:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.01005 +- 0.0001036 (DSYS=0.0008067:total,DSYS=0.0005549:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.006204 +- 7.639e-05 (DSYS=0.0004898:total,DSYS=0.0003372:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.004195 +- 5.973e-05 (DSYS=0.0003452:total,DSYS=0.0002287:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.002687 +- 4.643e-05 (DSYS=0.0002312:total,DSYS=0.0001488:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.00162 +- 2.823e-05 (DSYS=0.0001468:total,DSYS=8.991e-05:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.0008477 +- 1.717e-05 (DSYS=7.918e-05:total,DSYS=4.467e-05:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.0003706 +- 1.014e-05 (DSYS=3.367e-05:total,DSYS=1.956e-05:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.0001494 +- 5.839e-06 (DSYS=1.403e-05:total,DSYS=7.757e-06:uncorr);
+ 4.5 (BIN=4 TO 5); 4.935e-05 +- 2.608e-06 (DSYS=4.516e-06:total,DSYS=2.529e-06:uncorr);
+ 5.75 (BIN=5 TO 6.5); 1.256e-05 +- 1.084e-06 (DSYS=1.121e-06:total,DSYS=7.158e-07:uncorr);
+ 7.25 (BIN=6.5 TO 8); 4.254e-06 +- 6.36e-07 (DSYS=5.046e-07:total,DSYS=2.766e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Xi^{-}+\bar{\Xi}^{+}$ transverse momentum spectrum: V0M Class I (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class I
+*qual: RE : P P --> $\Xi^{-}+\bar{\Xi}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.8 (BIN=0.6 TO 1); 0.0484 +- 0.002813 (DSYS=0.002899:total,DSYS=0.00145:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.05089 +- 0.002544 (DSYS=0.002687:total,DSYS=0.001341:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.04265 +- 0.001964 (DSYS=0.002231:total,DSYS=0.001109:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.03867 +- 0.00165 (DSYS=0.002007:total,DSYS=0.0009165:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.03481 +- 0.001361 (DSYS=0.001784:total,DSYS=0.0008238:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.02933 +- 0.001112 (DSYS=0.001475:total,DSYS=0.0006926:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.02415 +- 0.0009496 (DSYS=0.00124:total,DSYS=0.000573:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.01753 +- 0.0006162 (DSYS=0.0009422:total,DSYS=0.0004184:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.01163 +- 0.0004073 (DSYS=0.0006052:total,DSYS=0.0002764:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.006194 +- 0.0002551 (DSYS=0.0003213:total,DSYS=0.0001565:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.003553 +- 0.0001726 (DSYS=0.000192:total,DSYS=9.066e-05:uncorr);
+ 4.5 (BIN=4 TO 5); 0.001307 +- 7.967e-05 (DSYS=8.128e-05:total,DSYS=3.462e-05:uncorr);
+ 5.75 (BIN=5 TO 6.5); 0.0003175 +- 3.233e-05 (DSYS=2.149e-05:total,DSYS=8.638e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Xi^{-}+\bar{\Xi}^{+}$ transverse momentum spectrum: V0M Class II (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class II
+*qual: RE : P P --> $\Xi^{-}+\bar{\Xi}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.8 (BIN=0.6 TO 1); 0.03865 +- 0.001327 (DSYS=0.002319:total,DSYS=0.001167:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.03599 +- 0.001135 (DSYS=0.001898:total,DSYS=0.0009446:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.03471 +- 0.0009181 (DSYS=0.001815:total,DSYS=0.0009028:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.03005 +- 0.0007547 (DSYS=0.00156:total,DSYS=0.0007123:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.02575 +- 0.0006363 (DSYS=0.00132:total,DSYS=0.0006094:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.01926 +- 0.0004995 (DSYS=0.0009723:total,DSYS=0.0004631:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.01573 +- 0.0004254 (DSYS=0.0008076:total,DSYS=0.0003732:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.01165 +- 0.000282 (DSYS=0.0006288:total,DSYS=0.000284:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.0072 +- 0.0001773 (DSYS=0.0003747:total,DSYS=0.0001711:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.004029 +- 0.0001132 (DSYS=0.0002104:total,DSYS=0.0001047:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.002111 +- 7.155e-05 (DSYS=0.000114:total,DSYS=5.386e-05:uncorr);
+ 4.5 (BIN=4 TO 5); 0.0008026 +- 3.292e-05 (DSYS=4.992e-05:total,DSYS=2.126e-05:uncorr);
+ 5.75 (BIN=5 TO 6.5); 0.0001996 +- 1.353e-05 (DSYS=1.35e-05:total,DSYS=5.429e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Xi^{-}+\bar{\Xi}^{+}$ transverse momentum spectrum: V0M Class III (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class III
+*qual: RE : P P --> $\Xi^{-}+\bar{\Xi}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.8 (BIN=0.6 TO 1); 0.03552 +- 0.001133 (DSYS=0.002131:total,DSYS=0.001072:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.03143 +- 0.0009333 (DSYS=0.001659:total,DSYS=0.0008268:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.0282 +- 0.0007298 (DSYS=0.001478:total,DSYS=0.0007401:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.02353 +- 0.0005849 (DSYS=0.001225:total,DSYS=0.0005669:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.0198 +- 0.0004866 (DSYS=0.001016:total,DSYS=0.0004724:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.01407 +- 0.0003722 (DSYS=0.0007103:total,DSYS=0.0003377:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.0111 +- 0.0003086 (DSYS=0.0005702:total,DSYS=0.0002635:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.008271 +- 0.0002056 (DSYS=0.0004454:total,DSYS=0.0001996:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.005348 +- 0.0001334 (DSYS=0.0002787:total,DSYS=0.000128:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.002769 +- 8.043e-05 (DSYS=0.0001437:total,DSYS=6.999e-05:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.001429 +- 5.138e-05 (DSYS=7.721e-05:total,DSYS=3.646e-05:uncorr);
+ 4.5 (BIN=4 TO 5); 0.0004751 +- 2.233e-05 (DSYS=2.955e-05:total,DSYS=1.259e-05:uncorr);
+ 5.75 (BIN=5 TO 6.5); 0.0001166 +- 8.867e-06 (DSYS=7.889e-06:total,DSYS=3.172e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Xi^{-}+\bar{\Xi}^{+}$ transverse momentum spectrum: V0M Class IV (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class IV
+*qual: RE : P P --> $\Xi^{-}+\bar{\Xi}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.8 (BIN=0.6 TO 1); 0.02892 +- 0.0009974 (DSYS=0.001736:total,DSYS=0.0008741:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.02692 +- 0.0008417 (DSYS=0.001421:total,DSYS=0.0007076:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.02281 +- 0.0006426 (DSYS=0.001197:total,DSYS=0.0006026:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.01926 +- 0.000518 (DSYS=0.001003:total,DSYS=0.0004625:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.01455 +- 0.0004041 (DSYS=0.0007491:total,DSYS=0.0003513:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.01151 +- 0.0003239 (DSYS=0.0005805:total,DSYS=0.0002753:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.009188 +- 0.0002713 (DSYS=0.0004733:total,DSYS=0.0002213:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.006574 +- 0.0001767 (DSYS=0.0003539:total,DSYS=0.0001584:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.004044 +- 0.0001107 (DSYS=0.0002107:total,DSYS=9.665e-05:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.002152 +- 6.797e-05 (DSYS=0.0001117:total,DSYS=5.44e-05:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.00102 +- 4.06e-05 (DSYS=5.525e-05:total,DSYS=2.631e-05:uncorr);
+ 4.5 (BIN=4 TO 5); 0.0003547 +- 1.858e-05 (DSYS=2.206e-05:total,DSYS=9.396e-06:uncorr);
+ 5.75 (BIN=5 TO 6.5); 8.918e-05 +- 7.409e-06 (DSYS=6.035e-06:total,DSYS=2.426e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Xi^{-}+\bar{\Xi}^{+}$ transverse momentum spectrum: V0M Class V (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class V
+*qual: RE : P P --> $\Xi^{-}+\bar{\Xi}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.8 (BIN=0.6 TO 1); 0.02551 +- 0.000932 (DSYS=0.001535:total,DSYS=0.0007793:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.02193 +- 0.0007503 (DSYS=0.001158:total,DSYS=0.0005777:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.01878 +- 0.0005736 (DSYS=0.0009835:total,DSYS=0.0004916:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.01559 +- 0.0004517 (DSYS=0.0008101:total,DSYS=0.0003718:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.0123 +- 0.0003613 (DSYS=0.0006309:total,DSYS=0.0002923:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.009428 +- 0.0002842 (DSYS=0.0004747:total,DSYS=0.0002239:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.007237 +- 0.0002318 (DSYS=0.0003727:total,DSYS=0.0001741:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.005047 +- 0.0001497 (DSYS=0.0002716:total,DSYS=0.0001212:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.003108 +- 9.475e-05 (DSYS=0.0001623:total,DSYS=7.499e-05:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.001655 +- 5.809e-05 (DSYS=8.609e-05:total,DSYS=4.226e-05:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.0007314 +- 3.382e-05 (DSYS=3.952e-05:total,DSYS=1.866e-05:uncorr);
+ 4.5 (BIN=4 TO 5); 0.0002846 +- 1.624e-05 (DSYS=1.776e-05:total,DSYS=7.674e-06:uncorr);
+ 5.75 (BIN=5 TO 6.5); 7.109e-05 +- 6.605e-06 (DSYS=4.81e-06:total,DSYS=1.934e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Xi^{-}+\bar{\Xi}^{+}$ transverse momentum spectrum: V0M Class VI (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class VI
+*qual: RE : P P --> $\Xi^{-}+\bar{\Xi}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.8 (BIN=0.6 TO 1); 0.02117 +- 0.0006158 (DSYS=0.001281:total,DSYS=0.0006596:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.01863 +- 0.0005128 (DSYS=0.0009905:total,DSYS=0.0005044:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.01575 +- 0.0003866 (DSYS=0.0008305:total,DSYS=0.0004234:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.01255 +- 0.0003006 (DSYS=0.0006575:total,DSYS=0.0003103:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.009503 +- 0.0002362 (DSYS=0.0004894:total,DSYS=0.0002299:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.007078 +- 0.0001824 (DSYS=0.000358:total,DSYS=0.0001716:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.00518 +- 0.0001457 (DSYS=0.000267:total,DSYS=0.0001251:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.003979 +- 9.911e-05 (DSYS=0.0002148:total,DSYS=9.718e-05:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.002205 +- 5.855e-05 (DSYS=0.0001151:total,DSYS=5.305e-05:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.001186 +- 3.602e-05 (DSYS=6.163e-05:total,DSYS=3.016e-05:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.0005628 +- 2.177e-05 (DSYS=3.058e-05:total,DSYS=1.471e-05:uncorr);
+ 4.5 (BIN=4 TO 5); 0.0001956 +- 9.662e-06 (DSYS=1.218e-05:total,DSYS=5.213e-06:uncorr);
+ 5.75 (BIN=5 TO 6.5); 4.655e-05 +- 3.892e-06 (DSYS=3.155e-06:total,DSYS=1.28e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Xi^{-}+\bar{\Xi}^{+}$ transverse momentum spectrum: V0M Class VII (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class VII
+*qual: RE : P P --> $\Xi^{-}+\bar{\Xi}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.8 (BIN=0.6 TO 1); 0.01647 +- 0.0005288 (DSYS=0.001006:total,DSYS=0.0005314:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.01387 +- 0.0004248 (DSYS=0.0007443:total,DSYS=0.0003891:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.01107 +- 0.0003099 (DSYS=0.0005867:total,DSYS=0.0003032:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.009127 +- 0.0002463 (DSYS=0.0004757:total,DSYS=0.0002206:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.00713 +- 0.0001997 (DSYS=0.0003772:total,DSYS=0.0001931:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.004965 +- 0.0001455 (DSYS=0.0002517:total,DSYS=0.0001215:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.003645 +- 0.0001186 (DSYS=0.0001913:total,DSYS=9.516e-05:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.002486 +- 7.255e-05 (DSYS=0.0001336:total,DSYS=5.93e-05:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.001482 +- 4.469e-05 (DSYS=7.712e-05:total,DSYS=3.522e-05:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.0007314 +- 2.656e-05 (DSYS=3.795e-05:total,DSYS=1.849e-05:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.000356 +- 1.641e-05 (DSYS=1.923e-05:total,DSYS=9.083e-06:uncorr);
+ 4.5 (BIN=4 TO 5); 0.0001228 +- 7.352e-06 (DSYS=7.639e-06:total,DSYS=3.254e-06:uncorr);
+ 5.75 (BIN=5 TO 6.5); 2.691e-05 +- 2.87e-06 (DSYS=1.821e-06:total,DSYS=7.32e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Xi^{-}+\bar{\Xi}^{+}$ transverse momentum spectrum: V0M Class VIII (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class VIII
+*qual: RE : P P --> $\Xi^{-}+\bar{\Xi}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.8 (BIN=0.6 TO 1); 0.01319 +- 0.0004587 (DSYS=0.0008286:total,DSYS=0.0004679:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.01032 +- 0.0003506 (DSYS=0.000563:total,DSYS=0.0003069:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.008518 +- 0.0002626 (DSYS=0.0004596:total,DSYS=0.0002487:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.006341 +- 0.0001967 (DSYS=0.0003377:total,DSYS=0.0001683:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.004623 +- 0.0001495 (DSYS=0.0002425:total,DSYS=0.0001209:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.003514 +- 0.0001164 (DSYS=0.0001805:total,DSYS=9.07e-05:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.0025 +- 9.206e-05 (DSYS=0.0001308:total,DSYS=6.428e-05:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.001728 +- 5.84e-05 (DSYS=9.451e-05:total,DSYS=4.481e-05:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.000991 +- 3.571e-05 (DSYS=5.253e-05:total,DSYS=2.557e-05:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.0005252 +- 2.171e-05 (DSYS=2.783e-05:total,DSYS=1.443e-05:uncorr);
+ 3.7 (BIN=3.4 TO 4); 0.0002099 +- 1.203e-05 (DSYS=1.148e-05:total,DSYS=5.641e-06:uncorr);
+ 4.5 (BIN=4 TO 5); 6.698e-05 +- 5.353e-06 (DSYS=4.207e-06:total,DSYS=1.868e-06:uncorr);
+ 5.75 (BIN=5 TO 6.5); 2.114e-05 +- 2.316e-06 (DSYS=1.436e-06:total,DSYS=5.889e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Xi^{-}+\bar{\Xi}^{+}$ transverse momentum spectrum: V0M Class IX (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class IX
+*qual: RE : P P --> $\Xi^{-}+\bar{\Xi}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.8 (BIN=0.6 TO 1); 0.008945 +- 0.0002751 (DSYS=0.0006491:total,DSYS=0.000454:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.006489 +- 0.0001996 (DSYS=0.0003977:total,DSYS=0.0002646:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.004952 +- 0.0001429 (DSYS=0.0002994:total,DSYS=0.0001979:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.003511 +- 0.0001039 (DSYS=0.0002106:total,DSYS=0.0001344:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.002554 +- 8.005e-05 (DSYS=0.0001505:total,DSYS=9.583e-05:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.001878 +- 6.072e-05 (DSYS=0.0001102:total,DSYS=7.2e-05:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.001359 +- 4.784e-05 (DSYS=7.787e-05:total,DSYS=4.726e-05:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.0008698 +- 2.895e-05 (DSYS=5.061e-05:total,DSYS=2.841e-05:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.000497 +- 1.793e-05 (DSYS=3.009e-05:total,DSYS=1.939e-05:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 0.0002451 +- 1.045e-05 (DSYS=1.439e-05:total,DSYS=9.15e-06:uncorr);
+ 3.7 (BIN=3.4 TO 4); 9.949e-05 +- 5.864e-06 (DSYS=5.807e-06:total,DSYS=3.357e-06:uncorr);
+ 4.5 (BIN=4 TO 5); 3.402e-05 +- 2.643e-06 (DSYS=2.281e-06:total,DSYS=1.241e-06:uncorr);
+ 5.75 (BIN=5 TO 6.5); 1.009e-05 +- 1.131e-06 (DSYS=7.185e-07:total,DSYS=3.545e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Xi^{-}+\bar{\Xi}^{+}$ transverse momentum spectrum: V0M Class X (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class X
+*qual: RE : P P --> $\Xi^{-}+\bar{\Xi}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 0.8 (BIN=0.6 TO 1); 0.004131 +- 0.0001473 (DSYS=0.0004612:total,DSYS=0.0004084:uncorr);
+ 1.1 (BIN=1 TO 1.2); 0.002473 +- 9.363e-05 (DSYS=0.0001999:total,DSYS=0.0001648:uncorr);
+ 1.3 (BIN=1.2 TO 1.4); 0.001951 +- 6.763e-05 (DSYS=0.0001477:total,DSYS=0.0001182:uncorr);
+ 1.5 (BIN=1.4 TO 1.6); 0.001307 +- 4.764e-05 (DSYS=9.504e-05:total,DSYS=7.34e-05:uncorr);
+ 1.7 (BIN=1.6 TO 1.8); 0.0008011 +- 3.335e-05 (DSYS=5.694e-05:total,DSYS=4.377e-05:uncorr);
+ 1.9 (BIN=1.8 TO 2); 0.0005702 +- 2.484e-05 (DSYS=3.875e-05:total,DSYS=2.934e-05:uncorr);
+ 2.1 (BIN=2 TO 2.2); 0.0004183 +- 1.975e-05 (DSYS=2.884e-05:total,DSYS=2.165e-05:uncorr);
+ 2.35 (BIN=2.2 TO 2.5); 0.000245 +- 1.169e-05 (DSYS=1.74e-05:total,DSYS=1.279e-05:uncorr);
+ 2.7 (BIN=2.5 TO 2.9); 0.0001327 +- 6.959e-06 (DSYS=9.032e-06:total,DSYS=6.618e-06:uncorr);
+ 3.15 (BIN=2.9 TO 3.4); 6.087e-05 +- 3.892e-06 (DSYS=4.121e-06:total,DSYS=3.062e-06:uncorr);
+ 3.7 (BIN=3.4 TO 4); 2.67e-05 +- 2.37e-06 (DSYS=1.814e-06:total,DSYS=1.293e-06:uncorr);
+ 4.5 (BIN=4 TO 5); 8.957e-06 +- 1.01e-06 (DSYS=6.536e-07:total,DSYS=4.162e-07:uncorr);
+ 5.75 (BIN=5 TO 6.5); 2.102e-06 +- 4.105e-07 (DSYS=1.668e-07:total,DSYS=1.042e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Omega^{-}+\bar{\Omega}^{+}$ transverse momentum spectrum: V0M Class I+II (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class I+II
+*qual: RE : P P --> $\Omega^{-}+\bar{\Omega}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 1.25 (BIN=0.9 TO 1.6); 0.003748 +- 0.0002807 (DSYS=0.0003:total,DSYS=0.0001138:uncorr);
+ 1.9 (BIN=1.6 TO 2.2); 0.00253 +- 0.0001572 (DSYS=0.0001953:total,DSYS=6.398e-05:uncorr);
+ 2.4 (BIN=2.2 TO 2.6); 0.001864 +- 0.0001364 (DSYS=0.0001667:total,DSYS=4.919e-05:uncorr);
+ 2.8 (BIN=2.6 TO 3); 0.001158 +- 0.0001028 (DSYS=0.0001044:total,DSYS=3.063e-05:uncorr);
+ 3.4 (BIN=3 TO 3.8); 0.0006658 +- 5.361e-05 (DSYS=8.748e-05:total,DSYS=2.509e-05:uncorr);
+ 4.65 (BIN=3.8 TO 5.5); 0.0001367 +- 1.604e-05 (DSYS=1.66e-05:total,DSYS=4.901e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Omega^{-}+\bar{\Omega}^{+}$ transverse momentum spectrum: V0M Class III+IV (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class III+IV
+*qual: RE : P P --> $\Omega^{-}+\bar{\Omega}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 1.25 (BIN=0.9 TO 1.6); 0.00235 +- 0.0001576 (DSYS=0.0001886:total,DSYS=7.249e-05:uncorr);
+ 1.9 (BIN=1.6 TO 2.2); 0.001579 +- 8.5e-05 (DSYS=0.0001219:total,DSYS=3.993e-05:uncorr);
+ 2.4 (BIN=2.2 TO 2.6); 0.0009869 +- 7.169e-05 (DSYS=8.825e-05:total,DSYS=2.604e-05:uncorr);
+ 2.8 (BIN=2.6 TO 3); 0.0005731 +- 4.646e-05 (DSYS=5.168e-05:total,DSYS=1.516e-05:uncorr);
+ 3.4 (BIN=3 TO 3.8); 0.000361 +- 2.596e-05 (DSYS=4.763e-05:total,DSYS=1.427e-05:uncorr);
+ 4.65 (BIN=3.8 TO 5.5); 6.952e-05 +- 8.042e-06 (DSYS=8.443e-06:total,DSYS=2.492e-06:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Omega^{-}+\bar{\Omega}^{+}$ transverse momentum spectrum: V0M Class V+VI (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class V+VI
+*qual: RE : P P --> $\Omega^{-}+\bar{\Omega}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 1.25 (BIN=0.9 TO 1.6); 0.001446 +- 9.8e-05 (DSYS=0.0001163:total,DSYS=4.553e-05:uncorr);
+ 1.9 (BIN=1.6 TO 2.2); 0.0009142 +- 5.035e-05 (DSYS=7.078e-05:total,DSYS=2.369e-05:uncorr);
+ 2.4 (BIN=2.2 TO 2.6); 0.0005132 +- 4.104e-05 (DSYS=4.589e-05:total,DSYS=1.354e-05:uncorr);
+ 2.8 (BIN=2.6 TO 3); 0.0003315 +- 2.971e-05 (DSYS=3.018e-05:total,DSYS=9.687e-06:uncorr);
+ 3.4 (BIN=3 TO 3.8); 0.0001595 +- 1.427e-05 (DSYS=2.095e-05:total,DSYS=6.009e-06:uncorr);
+ 4.65 (BIN=3.8 TO 5.5); 2.636e-05 +- 4.012e-06 (DSYS=3.202e-06:total,DSYS=9.45e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Omega^{-}+\bar{\Omega}^{+}$ transverse momentum spectrum: V0M Class VII+VIII (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class VII+VIII
+*qual: RE : P P --> $\Omega^{-}+\bar{\Omega}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 1.25 (BIN=0.9 TO 1.6); 0.0009058 +- 6.635e-05 (DSYS=7.647e-05:total,DSYS=3.671e-05:uncorr);
+ 1.9 (BIN=1.6 TO 2.2); 0.0004383 +- 3.091e-05 (DSYS=3.562e-05:total,DSYS=1.569e-05:uncorr);
+ 2.4 (BIN=2.2 TO 2.6); 0.0002462 +- 2.463e-05 (DSYS=2.258e-05:total,DSYS=8.203e-06:uncorr);
+ 2.8 (BIN=2.6 TO 3); 0.0001227 +- 1.57e-05 (DSYS=1.127e-05:total,DSYS=3.881e-06:uncorr);
+ 3.4 (BIN=3 TO 3.8); 6.446e-05 +- 7.569e-06 (DSYS=8.592e-06:total,DSYS=2.828e-06:uncorr);
+ 4.65 (BIN=3.8 TO 5.5); 1.305e-05 +- 2.521e-06 (DSYS=1.6e-06:total,DSYS=5.193e-07:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 1
+*dscomment: $\Omega^{-}+\bar{\Omega}^{+}$ transverse momentum spectrum: V0M Class IX+X (pp at $\sqrt{s}=7$ TeV)
+*obskey: $p_{T}$-differential yields measured in $|y|<0.5$ for a selection of event classes (see Table 1)
+*qual: Multiplicity : V0M Class IX+X
+*qual: RE : P P --> $\Omega^{-}+\bar{\Omega}^{+}$ + X
+*qual: SQRT(S) IN GEV : 7000.0
+*qual: YRAP(CM) : -0.5 0.5
+*yheader: $\frac{1}{N_{ev}}\frac{d^2N}{dy dp_{T}}$ (GeV/c)$^{-1}$
+*xheader: $p_{T}$ (GeV/c)
+*data: x : y
+ 1.25 (BIN=0.9 TO 1.6); 0.000267 +- 2.245e-05 (DSYS=2.278e-05:total,DSYS=1.131e-05:uncorr);
+ 1.9 (BIN=1.6 TO 2.2); 0.0001077 +- 9.591e-06 (DSYS=8.523e-06:total,DSYS=3.301e-06:uncorr);
+ 2.4 (BIN=2.2 TO 2.6); 5.269e-05 +- 7.203e-06 (DSYS=4.832e-06:total,DSYS=1.757e-06:uncorr);
+ 2.8 (BIN=2.6 TO 3); 2.246e-05 +- 4.642e-06 (DSYS=2.118e-06:total,DSYS=8.594e-07:uncorr);
+ 3.4 (BIN=3 TO 3.8); 1.399e-05 +- 2.205e-06 (DSYS=1.836e-06:total,DSYS=5.186e-07:uncorr);
+ 4.65 (BIN=3.8 TO 5.5); 2.457e-06 +- 5.498e-07 (DSYS=2.973e-07:total,DSYS=8.457e-08:uncorr);
+*dataend:
+
+*dataset:
+*location: Figure 2
+*dscomment: $2K^{0}_{S}/(\pi^{+}+\pi^{-})$ ratio for pp collisions at $\sqrt{s}=7$ TeV as a function of the average charged particle multiplicity density at midrapidity.
+*obskey: Ratios of yields to pions
+*qual: RATIO : $2K^{0}_{S}/(\pi^{+}+\pi^{-})$ 
+*qual: RE : P P --> $(\pi^{+}+\pi^{-})$ + X 
+*qual: RE : P P --> $2K^{0}_{S}$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*obskey: (statistical and systematic uncertainties on <dNch/deta>) 
+*yheader: Ratios of yields to $(\pi^{+}+\pi^{-})$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 0.1332 +- 0.000441 (DSYS=0.009564:total,DSYS=0.0044:uncorr);
+ 16.51 +- 0.01 +- 0.495; 0.132 +- 0.0002729 (DSYS=0.009088:total,DSYS=0.004072:uncorr);
+ 13.46 +- 0.01 +- 0.404; 0.1302 +- 0.0002485 (DSYS=0.008898:total,DSYS=0.00405:uncorr);
+ 11.51 +- 0.01 +- 0.345; 0.1294 +- 0.0002852 (DSYS=0.008805:total,DSYS=0.004046:uncorr);
+ 10.08 +- 0.01 +- 0.303; 0.1285 +- 0.0003077 (DSYS=0.008691:total,DSYS=0.004056:uncorr);
+ 8.447 +- 0 +- 0.254; 0.1276 +- 0.0002322 (DSYS=0.008627:total,DSYS=0.004063:uncorr);
+ 6.724 +- 0 +- 0.207; 0.1262 +- 0.000277 (DSYS=0.008525:total,DSYS=0.004119:uncorr);
+ 5.398 +- 0 +- 0.173; 0.1239 +- 0.0003039 (DSYS=0.00848:total,DSYS=0.004239:uncorr);
+ 3.897 +- 0 +- 0.143; 0.1204 +- 0.0002641 (DSYS=0.009451:total,DSYS=0.005485:uncorr);
+ 2.261 +- 0 +- 0.117; 0.1081 +- 0.000252 (DSYS=0.0118:total,DSYS=0.008011:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 2
+*dscomment: $(\Lambda+\bar{\Lambda})/(\pi^{+}+\pi^{-})$ ratio for pp collisions at $\sqrt{s}=7$ TeV as a function of the average charged particle multiplicity density at midrapidity.
+*obskey: Ratios of yields to pions
+*qual: RATIO : $(\Lambda+\bar{\Lambda})/(\pi^{+}+\pi^{-})$ 
+*qual: RE : P P --> $(\pi^{+}+\pi^{-})$ + X 
+*qual: RE : P P --> $(\Lambda+\bar{\Lambda})$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*obskey: (statistical and systematic uncertainties on <dNch/deta>) 
+*yheader: Ratios of yields to $(\pi^{+}+\pi^{-})$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 0.03864 +- 0.0001462 (DSYS=0.003255:total,DSYS=0.001577:uncorr);
+ 16.51 +- 0.01 +- 0.495; 0.03837 +- 9.496e-05 (DSYS=0.003109:total,DSYS=0.00142:uncorr);
+ 13.46 +- 0.01 +- 0.404; 0.03785 +- 8.965e-05 (DSYS=0.003079:total,DSYS=0.001529:uncorr);
+ 11.51 +- 0.01 +- 0.345; 0.03735 +- 9.612e-05 (DSYS=0.003033:total,DSYS=0.001676:uncorr);
+ 10.08 +- 0.01 +- 0.303; 0.03698 +- 9.723e-05 (DSYS=0.002993:total,DSYS=0.001587:uncorr);
+ 8.447 +- 0 +- 0.254; 0.03626 +- 8.702e-05 (DSYS=0.002954:total,DSYS=0.001665:uncorr);
+ 6.724 +- 0 +- 0.207; 0.03556 +- 8.616e-05 (DSYS=0.002934:total,DSYS=0.00177:uncorr);
+ 5.398 +- 0 +- 0.173; 0.03423 +- 0.0001043 (DSYS=0.00276:total,DSYS=0.001374:uncorr);
+ 3.897 +- 0 +- 0.143; 0.0316 +- 8.698e-05 (DSYS=0.002986:total,DSYS=0.001906:uncorr);
+ 2.261 +- 0 +- 0.117; 0.02409 +- 8.393e-05 (DSYS=0.003337:total,DSYS=0.002589:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 2
+*dscomment: $(\Xi^{-}+\bar{\Xi}^{+})/(\pi^{+}+\pi^{-})$ ratio for pp collisions at $\sqrt{s}=7$ TeV as a function of the average charged particle multiplicity density at midrapidity.
+*obskey: Ratios of yields to pions
+*qual: RATIO : $(\Xi^{-}+\bar{\Xi}^{+})/(\pi^{+}+\pi^{-})$ 
+*qual: RE : P P --> $(\pi^{+}+\pi^{-})$ + X 
+*qual: RE : P P --> $(\Xi^{-}+\bar{\Xi}^{+})$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*obskey: (statistical and systematic uncertainties on <dNch/deta>) 
+*yheader: Ratios of yields to $(\pi^{+}+\pi^{-})$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 0.004792 +- 7.969e-05 (DSYS=0.0003832:total,DSYS=0.0001689:uncorr);
+ 16.51 +- 0.01 +- 0.495; 0.00455 +- 4.722e-05 (DSYS=0.0003576:total,DSYS=0.000162:uncorr);
+ 13.46 +- 0.01 +- 0.404; 0.004592 +- 4.835e-05 (DSYS=0.0003696:total,DSYS=0.0001841:uncorr);
+ 11.51 +- 0.01 +- 0.345; 0.00435 +- 4.857e-05 (DSYS=0.000357:total,DSYS=0.0001896:uncorr);
+ 10.08 +- 0.01 +- 0.303; 0.004158 +- 5.085e-05 (DSYS=0.0003593:total,DSYS=0.0002151:uncorr);
+ 8.447 +- 0 +- 0.254; 0.004027 +- 4.284e-05 (DSYS=0.0003536:total,DSYS=0.0002172:uncorr);
+ 6.724 +- 0 +- 0.207; 0.003737 +- 4.416e-05 (DSYS=0.0003466:total,DSYS=0.0002301:uncorr);
+ 5.398 +- 0 +- 0.173; 0.003501 +- 5.249e-05 (DSYS=0.0003489:total,DSYS=0.0002537:uncorr);
+ 3.897 +- 0 +- 0.143; 0.003031 +- 4.394e-05 (DSYS=0.0003538:total,DSYS=0.0002802:uncorr);
+ 2.261 +- 0 +- 0.117; 0.00215 +- 4.422e-05 (DSYS=0.0003424:total,DSYS=0.0002838:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 2
+*dscomment: $(\Omega^{-}+\bar{\Omega}^{+})/(\pi^{+}+\pi^{-})$ ratio for pp collisions at $\sqrt{s}=7$ TeV as a function of the average charged particle multiplicity density at midrapidity.
+*obskey: Ratios of yields to pions
+*qual: RATIO : $(\Omega^{-}+\bar{\Omega}^{+})/(\pi^{+}+\pi^{-})$ 
+*qual: RE : P P --> $(\pi^{+}+\pi^{-})$ + X 
+*qual: RE : P P --> $(\Omega^{-}+\bar{\Omega}^{+})$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*obskey: (statistical and systematic uncertainties on <dNch/deta>) 
+*yheader: Ratios of yields to $(\pi^{+}+\pi^{-})$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 17.47 +- 0.016 +- 0.524; 0.0004976 +- 1.588e-05 (DSYS=5.209e-05:total,DSYS=1.832e-05:uncorr);
+ 12.48 +- 0.01 +- 0.375; 0.0004221 +- 1.62e-05 (DSYS=4.728e-05:total,DSYS=2.474e-05:uncorr);
+ 8.99 +- 0 +- 0.271; 0.0003376 +- 1.079e-05 (DSYS=3.676e-05:total,DSYS=1.813e-05:uncorr);
+ 6.057 +- 0 +- 0.19; 0.0003093 +- 1.958e-05 (DSYS=4.157e-05:total,DSYS=2.985e-05:uncorr);
+ 2.886 +- 0 +- 0.135; 0.0001912 +- 1.998e-05 (DSYS=3.658e-05:total,DSYS=2.739e-05:uncorr);
+*dataend:
+
+*dataset:
+*location: Figure 2
+*dscomment: $\pi^{+}+\pi^{-}$ integrated yields, pp at $\sqrt{s}=7$ TeV (V0M Multiplicity Classes)
+*obskey: Integrated yields (dN/dy)
+*qual: RE : P P --> $\pi^{+}+\pi^{-}$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: $dN/dy$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 20.07 +- 0.01363 (DSYS=1.037:total,DSYS=0.5404:uncorr);
+ 16.51 +- 0.01 +- 0.495; 15.76 +- 0.003777 (DSYS=0.7545:total,DSYS=0.3906:uncorr);
+ 13.46 +- 0.01 +- 0.404; 12.92 +- 0.002704 (DSYS=0.6114:total,DSYS=0.3237:uncorr);
+ 11.51 +- 0.01 +- 0.345; 11.11 +- 0.002297 (DSYS=0.5225:total,DSYS=0.2799:uncorr);
+ 10.08 +- 0.01 +- 0.303; 9.785 +- 0.00211 (DSYS=0.4555:total,DSYS=0.249:uncorr);
+ 8.447 +- 0 +- 0.254; 8.277 +- 0.001396 (DSYS=0.3842:total,DSYS=0.21:uncorr);
+ 6.724 +- 0 +- 0.207; 6.652 +- 0.001186 (DSYS=0.3064:total,DSYS=0.1705:uncorr);
+ 5.398 +- 0 +- 0.173; 5.397 +- 0.001011 (DSYS=0.2496:total,DSYS=0.1377:uncorr);
+ 3.897 +- 0 +- 0.143; 3.977 +- 0.0006002 (DSYS=0.2067:total,DSYS=0.1005:uncorr);
+ 2.261 +- 0 +- 0.117; 2.42 +- 0.0003606 (DSYS=0.1715:total,DSYS=0.0602:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 2
+*dscomment: $p+\bar{p}$ integrated yields, pp at $\sqrt{s}=7$ TeV (V0M Multiplicity Classes)
+*obskey: Integrated yields (dN/dy)
+*qual: RE : P P --> $p+\bar{p}$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: $dN/dy$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 1.098 +- 0.002409 (DSYS=0.07869:total,DSYS=0.02945:uncorr);
+ 16.51 +- 0.01 +- 0.495; 0.8738 +- 0.00102 (DSYS=0.06015:total,DSYS=0.0222:uncorr);
+ 13.46 +- 0.01 +- 0.404; 0.7198 +- 0.0007631 (DSYS=0.04911:total,DSYS=0.01798:uncorr);
+ 11.51 +- 0.01 +- 0.345; 0.6212 +- 0.0006747 (DSYS=0.04196:total,DSYS=0.01533:uncorr);
+ 10.08 +- 0.01 +- 0.303; 0.5483 +- 0.000593 (DSYS=0.03705:total,DSYS=0.01349:uncorr);
+ 8.447 +- 0 +- 0.254; 0.4633 +- 0.0004 (DSYS=0.0312:total,DSYS=0.01123:uncorr);
+ 6.724 +- 0 +- 0.207; 0.372 +- 0.0003504 (DSYS=0.02505:total,DSYS=0.008657:uncorr);
+ 5.398 +- 0 +- 0.173; 0.2982 +- 0.0003042 (DSYS=0.02018:total,DSYS=0.006869:uncorr);
+ 3.897 +- 0 +- 0.143; 0.214 +- 0.0001868 (DSYS=0.01602:total,DSYS=0.004933:uncorr);
+ 2.261 +- 0 +- 0.117; 0.1171 +- 0.0001087 (DSYS=0.01064:total,DSYS=0.002792:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 2
+*dscomment: $K^{0}_{S}$ integrated yields, pp at $\sqrt{s}=7$ TeV (V0M Multiplicity Classes)
+*obskey: Integrated yields (dN/dy)
+*qual: RE : P P --> $K^{0}_{S}$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: $dN/dy$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 1.337 +- 0.004331 (DSYS=0.07021:total,DSYS=0.03172:uncorr);
+ 16.51 +- 0.01 +- 0.495; 1.04 +- 0.002135 (DSYS=0.05436:total,DSYS=0.02463:uncorr);
+ 13.46 +- 0.01 +- 0.404; 0.8412 +- 0.001595 (DSYS=0.04385:total,DSYS=0.01996:uncorr);
+ 11.51 +- 0.01 +- 0.345; 0.7189 +- 0.001577 (DSYS=0.0374:total,DSYS=0.01711:uncorr);
+ 10.08 +- 0.01 +- 0.303; 0.6285 +- 0.001499 (DSYS=0.03267:total,DSYS=0.01503:uncorr);
+ 8.447 +- 0 +- 0.254; 0.5278 +- 0.0009568 (DSYS=0.02749:total,DSYS=0.01288:uncorr);
+ 6.724 +- 0 +- 0.207; 0.4196 +- 0.0009179 (DSYS=0.02195:total,DSYS=0.01054:uncorr);
+ 5.398 +- 0 +- 0.173; 0.3343 +- 0.0008175 (DSYS=0.0178:total,DSYS=0.00911:uncorr);
+ 3.897 +- 0 +- 0.143; 0.2392 +- 0.0005236 (DSYS=0.01463:total,DSYS=0.009746:uncorr);
+ 2.261 +- 0 +- 0.117; 0.1307 +- 0.0003041 (DSYS=0.01105:total,DSYS=0.009311:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 2
+*dscomment: $\Lambda+\bar{\Lambda}$ integrated yields, pp at $\sqrt{s}=7$ TeV (V0M Multiplicity Classes)
+*obskey: Integrated yields (dN/dy)
+*qual: RE : P P --> $\Lambda+\bar{\Lambda}$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: $dN/dy$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 0.7754 +- 0.002885 (DSYS=0.05315:total,DSYS=0.02615:uncorr);
+ 16.51 +- 0.01 +- 0.495; 0.6046 +- 0.001489 (DSYS=0.0408:total,DSYS=0.01891:uncorr);
+ 13.46 +- 0.01 +- 0.404; 0.489 +- 0.001154 (DSYS=0.0334:total,DSYS=0.01713:uncorr);
+ 11.51 +- 0.01 +- 0.345; 0.4149 +- 0.001064 (DSYS=0.02836:total,DSYS=0.01661:uncorr);
+ 10.08 +- 0.01 +- 0.303; 0.3618 +- 0.0009481 (DSYS=0.02474:total,DSYS=0.01362:uncorr);
+ 8.447 +- 0 +- 0.254; 0.3001 +- 0.0007183 (DSYS=0.02074:total,DSYS=0.01233:uncorr);
+ 6.724 +- 0 +- 0.207; 0.2364 +- 0.0005714 (DSYS=0.01669:total,DSYS=0.01069:uncorr);
+ 5.398 +- 0 +- 0.173; 0.1847 +- 0.0005616 (DSYS=0.0126:total,DSYS=0.006355:uncorr);
+ 3.897 +- 0 +- 0.143; 0.1256 +- 0.0003452 (DSYS=0.01013:total,DSYS=0.007129:uncorr);
+ 2.261 +- 0 +- 0.117; 0.05825 +- 0.0002028 (DSYS=0.006997:total,DSYS=0.006146:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 2
+*dscomment: $\Xi^{-}+\bar{\Xi}^{+}$ integrated yields, pp at $\sqrt{s}=7$ TeV (V0M Multiplicity Classes)
+*obskey: Integrated yields (dN/dy)
+*qual: RE : P P --> $\Xi^{-}+\bar{\Xi}^{+}$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: $dN/dy$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 0.09616 +- 0.001598 (DSYS=0.006081:total,DSYS=0.002571:uncorr);
+ 16.51 +- 0.01 +- 0.495; 0.07169 +- 0.0007437 (DSYS=0.004629:total,DSYS=0.002123:uncorr);
+ 13.46 +- 0.01 +- 0.404; 0.05931 +- 0.0006245 (DSYS=0.003992:total,DSYS=0.002057:uncorr);
+ 11.51 +- 0.01 +- 0.345; 0.04832 +- 0.0005393 (DSYS=0.003352:total,DSYS=0.001864:uncorr);
+ 10.08 +- 0.01 +- 0.303; 0.04068 +- 0.0004974 (DSYS=0.003042:total,DSYS=0.00193:uncorr);
+ 8.447 +- 0 +- 0.254; 0.03333 +- 0.0003545 (DSYS=0.002549:total,DSYS=0.001663:uncorr);
+ 6.724 +- 0 +- 0.207; 0.02485 +- 0.0002936 (DSYS=0.002045:total,DSYS=0.00144:uncorr);
+ 5.398 +- 0 +- 0.173; 0.01889 +- 0.0002831 (DSYS=0.001698:total,DSYS=0.001312:uncorr);
+ 3.897 +- 0 +- 0.143; 0.01205 +- 0.0001746 (DSYS=0.001275:total,DSYS=0.001086:uncorr);
+ 2.261 +- 0 +- 0.117; 0.005199 +- 0.0001069 (DSYS=0.0007461:total,DSYS=0.0006779:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 2
+*dscomment: $\Omega^{-}+\bar{\Omega}^{+}$ integrated yields, pp at $\sqrt{s}=7$ TeV (V0M Multiplicity Classes)
+*obskey: Integrated yields (dN/dy)
+*qual: RE : P P --> $\Omega^{-}+\bar{\Omega}^{+}$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: $dN/dy$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 17.47 +- 0.016 +- 0.524; 0.008274 +- 0.000264 (DSYS=0.0007787:total,DSYS=0.0002527:uncorr);
+ 12.48 +- 0.01 +- 0.375; 0.005082 +- 0.0001951 (DSYS=0.0005235:total,DSYS=0.0002797:uncorr);
+ 8.99 +- 0 +- 0.271; 0.002976 +- 9.51e-05 (DSYS=0.0002974:total,DSYS=0.0001476:uncorr);
+ 6.057 +- 0 +- 0.19; 0.001863 +- 0.0001179 (DSYS=0.0002373:total,DSYS=0.0001756:uncorr);
+ 2.886 +- 0 +- 0.135; 0.0005767 +- 6.029e-05 (DSYS=0.000105:total,DSYS=8.178e-05:uncorr);
+*dataend:
+
+*dataset:
+*location: Figure 3
+*dscomment: $(\Lambda+\bar{\Lambda})/2K^{0}_{S}$ ratio for pp collisions at $\sqrt{s}=7$ TeV as a function of charged particle multiplicity density at midrapidity.
+*obskey: Baryon to meson ratio
+*qual: RATIO : $(\Lambda+\bar{\Lambda})/2K^{0}_{S}$ 
+*qual: RE : P P --> $2K^{0}_{S}$ + X 
+*qual: RE : P P --> $(\Lambda+\bar{\Lambda})$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: Baryon to meson ratio
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 0.2901 +- 0.001431 (DSYS=0.02505:total,DSYS=0.01196:uncorr);
+ 16.51 +- 0.01 +- 0.495; 0.2908 +- 0.0009327 (DSYS=0.02482:total,DSYS=0.01141:uncorr);
+ 13.46 +- 0.01 +- 0.404; 0.2906 +- 0.0008797 (DSYS=0.02497:total,DSYS=0.0123:uncorr);
+ 11.51 +- 0.01 +- 0.345; 0.2886 +- 0.000974 (DSYS=0.02479:total,DSYS=0.01344:uncorr);
+ 10.08 +- 0.01 +- 0.303; 0.2878 +- 0.00102 (DSYS=0.02472:total,DSYS=0.01284:uncorr);
+ 8.447 +- 0 +- 0.254; 0.2842 +- 0.0008535 (DSYS=0.0246:total,DSYS=0.01359:uncorr);
+ 6.724 +- 0 +- 0.207; 0.2817 +- 0.0009183 (DSYS=0.02475:total,DSYS=0.01457:uncorr);
+ 5.398 +- 0 +- 0.173; 0.2762 +- 0.001078 (DSYS=0.0239:total,DSYS=0.01212:uncorr);
+ 3.897 +- 0 +- 0.143; 0.2625 +- 0.0009223 (DSYS=0.02657:total,DSYS=0.01834:uncorr);
+ 2.261 +- 0 +- 0.117; 0.2229 +- 0.000933 (DSYS=0.03274:total,DSYS=0.02837:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 3
+*dscomment: $(p+\bar{p})/(\pi^{+}+\pi^{-})$ ratio for pp collisions at $\sqrt{s}=7$ TeV as a function of charged particle multiplicity density at midrapidity.
+*obskey: Baryon to meson ratio
+*qual: RATIO : $(p+\bar{p})/(\pi^{+}+\pi^{-})$ 
+*qual: RE : P P --> $(\pi^{+}+\pi^{-})$ + X 
+*qual: RE : P P --> $(p+\bar{p})$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: Baryon to meson ratio
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 0.0547 +- 0.0001254 (DSYS=0.004724:total,DSYS=0.002116:uncorr);
+ 16.51 +- 0.01 +- 0.495; 0.05546 +- 6.569e-05 (DSYS=0.004527:total,DSYS=0.001974:uncorr);
+ 13.46 +- 0.01 +- 0.404; 0.05572 +- 6.02e-05 (DSYS=0.004498:total,DSYS=0.002007:uncorr);
+ 11.51 +- 0.01 +- 0.345; 0.05592 +- 6.206e-05 (DSYS=0.004469:total,DSYS=0.00204:uncorr);
+ 10.08 +- 0.01 +- 0.303; 0.05604 +- 6.178e-05 (DSYS=0.004462:total,DSYS=0.002076:uncorr);
+ 8.447 +- 0 +- 0.254; 0.05597 +- 4.878e-05 (DSYS=0.004442:total,DSYS=0.002079:uncorr);
+ 6.724 +- 0 +- 0.207; 0.05593 +- 5.352e-05 (DSYS=0.004421:total,DSYS=0.002109:uncorr);
+ 5.398 +- 0 +- 0.173; 0.05525 +- 5.732e-05 (DSYS=0.00439:total,DSYS=0.002099:uncorr);
+ 3.897 +- 0 +- 0.143; 0.05381 +- 4.755e-05 (DSYS=0.004784:total,DSYS=0.002062:uncorr);
+ 2.261 +- 0 +- 0.117; 0.0484 +- 4.547e-05 (DSYS=0.005498:total,DSYS=0.001922:uncorr);
+*dataend:
+
+*dataset:
+*location: Figure 4
+*dscomment: $(2K^{0}_{S})/(\pi^{+}+\pi^{-})$ double-ratio vs multiplicity for pp collisions at $\sqrt{s}=7$ TeV
+*obskey: Particle yield ratios to pions normalised to the values measured in the inclusive INEL>0 pp sample
+*qual: RATIO : $(2K^{0}_{S})/(\pi^{+}+\pi^{-})$ DOUBLE-RATIO 
+*qual: RE : P P --> $(\pi^{+}+\pi^{-})$ + X 
+*qual: RE : P P --> $(2K^{0}_{S})$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: $(h/\pi) / (h/\pi)^{pp}_{INEL>0}$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 1.068 +- 0.003535 (DSYS=0.03527:uncorr);
+ 16.51 +- 0.01 +- 0.495; 1.058 +- 0.002187 (DSYS=0.03264:uncorr);
+ 13.46 +- 0.01 +- 0.404; 1.044 +- 0.001992 (DSYS=0.03247:uncorr);
+ 11.51 +- 0.01 +- 0.345; 1.038 +- 0.002287 (DSYS=0.03244:uncorr);
+ 10.08 +- 0.01 +- 0.303; 1.03 +- 0.002467 (DSYS=0.03252:uncorr);
+ 8.447 +- 0 +- 0.254; 1.023 +- 0.001862 (DSYS=0.03257:uncorr);
+ 6.724 +- 0 +- 0.207; 1.012 +- 0.002221 (DSYS=0.03302:uncorr);
+ 5.398 +- 0 +- 0.173; 0.9934 +- 0.002436 (DSYS=0.03398:uncorr);
+ 3.897 +- 0 +- 0.143; 0.965 +- 0.002117 (DSYS=0.04397:uncorr);
+ 2.261 +- 0 +- 0.117; 0.8666 +- 0.00202 (DSYS=0.06422:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 4
+*dscomment: $(\Lambda+\bar{\Lambda})/(\pi^{+}+\pi^{-})$ double-ratio vs multiplicity for pp collisions at $\sqrt{s}=7$ TeV
+*obskey: Particle yield ratios to pions normalised to the values measured in the inclusive INEL>0 pp sample
+*qual: RATIO : $(\Lambda+\bar{\Lambda})/(\pi^{+}+\pi^{-})$ DOUBLE-RATIO 
+*qual: RE : P P --> $(\pi^{+}+\pi^{-})$ + X 
+*qual: RE : P P --> $(\Lambda+\bar{\Lambda})$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: $(h/\pi) / (h/\pi)^{pp}_{INEL>0}$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 1.132 +- 0.004282 (DSYS=0.0462:uncorr);
+ 16.51 +- 0.01 +- 0.495; 1.124 +- 0.002782 (DSYS=0.0416:uncorr);
+ 13.46 +- 0.01 +- 0.404; 1.109 +- 0.002627 (DSYS=0.0448:uncorr);
+ 11.51 +- 0.01 +- 0.345; 1.094 +- 0.002816 (DSYS=0.04911:uncorr);
+ 10.08 +- 0.01 +- 0.303; 1.084 +- 0.002849 (DSYS=0.0465:uncorr);
+ 8.447 +- 0 +- 0.254; 1.062 +- 0.002549 (DSYS=0.04878:uncorr);
+ 6.724 +- 0 +- 0.207; 1.042 +- 0.002524 (DSYS=0.05186:uncorr);
+ 5.398 +- 0 +- 0.173; 1.003 +- 0.003056 (DSYS=0.04026:uncorr);
+ 3.897 +- 0 +- 0.143; 0.9258 +- 0.002548 (DSYS=0.05584:uncorr);
+ 2.261 +- 0 +- 0.117; 0.7058 +- 0.002459 (DSYS=0.07586:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 4
+*dscomment: $(\Xi^{-}+\bar{\Xi}^{+})/(\pi^{+}+\pi^{-})$ double-ratio vs multiplicity for pp collisions at $\sqrt{s}=7$ TeV
+*obskey: Particle yield ratios to pions normalised to the values measured in the inclusive INEL>0 pp sample
+*qual: RATIO : $(\Xi^{-}+\bar{\Xi}^{+})/(\pi^{+}+\pi^{-})$ DOUBLE-RATIO 
+*qual: RE : P P --> $(\pi^{+}+\pi^{-})$ + X 
+*qual: RE : P P --> $(\Xi^{-}+\bar{\Xi}^{+})$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: $(h/\pi) / (h/\pi)^{pp}_{INEL>0}$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 21.29 +- 0.038 +- 0.639; 1.298 +- 0.02159 (DSYS=0.04577:uncorr);
+ 16.51 +- 0.01 +- 0.495; 1.233 +- 0.01279 (DSYS=0.0439:uncorr);
+ 13.46 +- 0.01 +- 0.404; 1.244 +- 0.0131 (DSYS=0.04987:uncorr);
+ 11.51 +- 0.01 +- 0.345; 1.179 +- 0.01316 (DSYS=0.05137:uncorr);
+ 10.08 +- 0.01 +- 0.303; 1.126 +- 0.01378 (DSYS=0.05827:uncorr);
+ 8.447 +- 0 +- 0.254; 1.091 +- 0.01161 (DSYS=0.05886:uncorr);
+ 6.724 +- 0 +- 0.207; 1.013 +- 0.01197 (DSYS=0.06235:uncorr);
+ 5.398 +- 0 +- 0.173; 0.9484 +- 0.01422 (DSYS=0.06873:uncorr);
+ 3.897 +- 0 +- 0.143; 0.8211 +- 0.01191 (DSYS=0.07593:uncorr);
+ 2.261 +- 0 +- 0.117; 0.5825 +- 0.01198 (DSYS=0.07689:uncorr);
+*dataend:
+
+
+*dataset:
+*location: Figure 4
+*dscomment: $(\Omega^{-}+\bar{\Omega}^{+})/(\pi^{+}+\pi^{-})$ double-ratio vs multiplicity for pp collisions at $\sqrt{s}=7$ TeV
+*obskey: Particle yield ratios to pions normalised to the values measured in the inclusive INEL>0 pp sample
+*qual: RATIO : $(\Omega^{-}+\bar{\Omega}^{+})/(\pi^{+}+\pi^{-})$ DOUBLE-RATIO 
+*qual: RE : P P --> $(\pi^{+}+\pi^{-})$ + X 
+*qual: RE : P P --> $(\Omega^{-}+\bar{\Omega}^{+})$ + X 
+*qual: SQRT(S) : 7000.0 GeV 
+*qual: YRAP(CM) : -0.5 0.5 
+*yheader: $(h/\pi) / (h/\pi)^{pp}_{INEL>0}$
+*xheader: $\langle dN_{ch}/d\eta \rangle_{|\eta|<0.5}$
+*data: x : y
+ 17.47 +- 0.016 +- 0.524; 1.547 +- 0.04936 (DSYS=0.05694:uncorr);
+ 12.48 +- 0.01 +- 0.375; 1.312 +- 0.05037 (DSYS=0.07691:uncorr);
+ 8.99 +- 0 +- 0.271; 1.05 +- 0.03354 (DSYS=0.05635:uncorr);
+ 6.057 +- 0 +- 0.19; 0.9614 +- 0.06085 (DSYS=0.0928:uncorr);
+ 2.886 +- 0 +- 0.135; 0.5943 +- 0.06213 (DSYS=0.08514:uncorr);
+*dataend:
+*E

@@ -35,13 +35,13 @@ void AnaSinJ(Int_t s = 1, Int_t m = 2){
       list->Add(new TH1D(Form("%s_In_%d%d", sp[i].Data(), c[j], c[j+1]), "", 500, 0., 25.));
       list->Add(new TH1D(Form("%s_JC_%d%d", sp[i].Data(), c[j], c[j+1]), "", 500, 0., 25.));
       list->Add(new TH1D(Form("%s_PC_%d%d", sp[i].Data(), c[j], c[j+1]), "", 500, 0., 25.));
-      list->Add(new TH1D(Form("%s_dJP_%d%d", sp[i].Data(), c[j], c[j+1]), "", 500, 0., 25.));
+      list->Add(new TH1D(Form("%s_dJP_%d%d", sp[i].Data(), c[j], c[j+1]), "", 200, 0., 2.));
     }
     for(Int_t j=0; j<nc-1; j++){
       list->Add(new TH1D(Form("%s_In_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 500, 0., 25.));
       list->Add(new TH1D(Form("%s_JC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 500, 0., 25.));
       list->Add(new TH1D(Form("%s_PC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 500, 0., 25.));
-      list->Add(new TH1D(Form("%s_dJP_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 500, 0., 25.));
+      list->Add(new TH1D(Form("%s_dJP_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]), "", 200, 0., 2.));
     }
     CallSumw2(l[i]);
   }
