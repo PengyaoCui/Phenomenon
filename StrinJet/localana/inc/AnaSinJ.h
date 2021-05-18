@@ -4,6 +4,7 @@
 #include "TH1D.h"
 
 const TString path("/home/cuipengyao/PythiaOutput");
+//const TString path("/home/cuipengyao/Phenomenon/StrinJet");
 //=============================================================================
 const Double_t dIn[] = { 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 18. };
 const auto nIn(sizeof(dIn) / sizeof(Double_t) - 1);
@@ -95,6 +96,27 @@ TH2D* FwdMidTrk(const Int_t s,
   return h;
 }
 
+TH2D* JFwdMidTrk(const Int_t s,
+                const Int_t m)
+{
+  const TString sf(Form("%s/sim/%s/%s.root", path.Data(), ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get("list_results")));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list: list_results");
+    exit(-2);
+  }
+
+  auto h((TH2D*)list->FindObject("hJFwdVsMid"));
+  return h;
+}
+
 //=============================================================================
 TH1D* FwdTrk(const Int_t s,
              const Int_t m){
@@ -103,6 +125,12 @@ TH1D* FwdTrk(const Int_t s,
     return h;
 }
 
+TH1D* JFwdTrk(const Int_t s,
+              const Int_t m){
+
+    auto h((TH1D*)JFwdMidTrk(s, m)->ProjectionY());
+    return h;
+}
 
 //_____________________________________________________________________________
 TH1D* TrkEta(const int s,

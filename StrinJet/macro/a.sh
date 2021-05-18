@@ -1,7 +1,6 @@
 #!/bin/bash
-mv InteRatio_KPhi_JE.C       f8_InteRatio_KPhi_JE.C
-mv InteRatio_LPhi_JE.C       f8_InteRatio_LPhi_JE.C
-mv InteRatio_OL_JE.C         f8_InteRatio_OL_JE.C
-mv InteRatio_OPhi_JE.C       f8_InteRatio_OPhi_JE.C
-mv InteRatio_XL_JE.C         f8_InteRatio_XL_JE.C
-mv InteRatio_XPhi_JE.C       f8_InteRatio_XPhi_JE.C
+mv InteRatio_KPi_JE.C    f6_InteRatio_KPi_JE.C    
+mv InteRatio_LPi_JE.C    f6_InteRatio_LPi_JE.C
+mv InteRatio_OPi_JE.C    f6_InteRatio_OPi_JE.C
+mv InteRatio_PhiPi_JE.C  f6_InteRatio_PhiPi_JE.C
+mv InteRatio_XPi_JE.C    f6_InteRatio_XPi_JE.C

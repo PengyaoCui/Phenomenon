@@ -15,6 +15,13 @@ root -l -b -q f3_InteSpect_Omega.C
 root -l -b -q f3_InteSpect_Kstar.C
 root -l -b -q f3_InteSpect_Phi.C
 
+root -l -b -q f4_InteSpect_Kshort_JE.C
+root -l -b -q f4_InteSpect_Kstar_JE.C
+root -l -b -q f4_InteSpect_Lambda_JE.C
+root -l -b -q f4_InteSpect_Omega_JE.C
+root -l -b -q f4_InteSpect_Phi_JE.C
+root -l -b -q f4_InteSpect_Xi_JE.C
+
 echo ==========================================
 echo InteRatio
 #root -l -b -q InteRatio.C

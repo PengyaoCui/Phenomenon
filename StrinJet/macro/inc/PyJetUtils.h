@@ -128,6 +128,17 @@ TGraph* InteSpectrum(const int s,
 
   Double_t dNdEta[nc-1];
   Double_t dPa[nc-1]; IntegralVal(s, m, p, dNdEta, dPa, j, u);
+  if(j){
+    Double_t dPaU[nc-1]; IntegralVal(s, m, p, dNdEta, dPaU, kFALSE, kTRUE);
+    for(int i = 0; i< nc-1; i++){
+      dPa[i] = (dPa[i] - 0.25*dPaU[i])/0.6;
+    } 
+  }
+  if(u){
+    for(int i = 0; i< nc-1; i++){
+      dPa[i] = 0.25*dPa[i]/0.6;
+    } 
+  }
   
   //for(int i = 0; i<nc-1; i++){cout<<dPa[i]<<endl; }
  
@@ -304,7 +315,8 @@ TH1D* PtSpectrum(const int s,
   if(j) h=(TH1D*)list->FindObject(Form("%s_JC", sp[p].Data()));
   if(u) h=(TH1D*)list->FindObject(Form("%s_PC", sp[p].Data()));
   
-  Double_t bin[]= {0., 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 16.,  24};
+  Double_t bin[]= {0., 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 16.,  20};
+  //Double_t bin[] = {0., 0.6, 1.6, 2.2, 2.8, 3.7, 5, 8, 12., 16., 20.};
   Int_t nbin=sizeof(bin)/sizeof(Double_t)-1;
   Double_t jbin[] = {0., 0.6, 1.6, 2.2, 2.8, 3.7, 5, 8, 12., 16., 20.};
   Int_t njbin=sizeof(jbin)/sizeof(Double_t)-1;
@@ -312,6 +324,8 @@ TH1D* PtSpectrum(const int s,
   if(!j && !u) h2 = (TH1D*)h->Rebin(nbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), bin);
   if(j || u) h2 = (TH1D*)h->Rebin(njbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), jbin);
   h2->Sumw2();
+  //if(p==1 || p==2 || p==3) h2->Scale(2.);
+  NormBinningHistogram(h2);
   return h2;
 }
 
@@ -353,6 +367,7 @@ TH1D* PtSpectrum(const int s,
   NormBinningHistogram(h2);
   h2->Scale(1./(0.75*2.));
   h2->Sumw2();
+  NormBinningHistogram(h2);
   return h2;
 }
 
@@ -394,6 +409,7 @@ TH1D* PtSpectrum(const int s,
   NormBinningHistogram(h2);
   h2->Scale(1./(0.75*2.));
   h2->Sumw2();
+  NormBinningHistogram(h2);
   return h2;
 }
 TH1D* PartoJet(const int s,
