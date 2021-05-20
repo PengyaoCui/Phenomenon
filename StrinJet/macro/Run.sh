@@ -48,111 +48,139 @@ root -l -b -q f8_InteRatio_PhiK_JE.C
 root -l -b -q f8_InteRatio_XL_JE.C
 root -l -b -q f8_InteRatio_XPhi_JE.C
 
-#root -l -b -q InteRatio_JE.C
-root -l -b -q InteRatio_KPi_JE.C
-root -l -b -q InteRatio_LPi_JE.C
-root -l -b -q InteRatio_XPi_JE.C
-root -l -b -q InteRatio_OPi_JE.C
-root -l -b -q InteRatio_PhiPi_JE.C
+echo ==========================================
+echo pT spect
+root -l -b -q f9_Incl_Kshort.C
+root -l -b -q f9_Incl_Kstar.C
+root -l -b -q f9_Incl_Lambda.C
+root -l -b -q f9_Incl_Omega.C
+root -l -b -q f9_Incl_Phi.C
+root -l -b -q f9_Incl_Xi.C
 
-root -l -b -q InteRatio_OL_JE.C
-root -l -b -q InteRatio_XL_JE.C
-root -l -b -q InteRatio_LPhi_JE.C
-root -l -b -q InteRatio_OPhi_JE.C
-root -l -b -q InteRatio_XPhi_JE.C
+root -l -b -q f10_JE_Kshort.C
+root -l -b -q f10_JE_Kstar.C
+root -l -b -q f10_JE_Lambda.C
+root -l -b -q f10_JE_Omega.C
+root -l -b -q f10_JE_Phi.C
+root -l -b -q f10_JE_Xi.C
 
 echo ==========================================
-echo InclRatio
-root -l -b -q Incl_LK.C
-root -l -b -q Incl_XK.C
-root -l -b -q Incl_OK.C
-root -l -b -q Incl_XL.C
-root -l -b -q Incl_OL.C
-root -l -b -q Incl_OX.C
- 
-root -l -b -q Incl_XiPhi.C
-root -l -b -q Incl_OmegaPhi.C
-root -l -b -q Incl_ProtonPion.C
+echo pT ratio
+root -l -b -q f11_Incl_KstarK.C
+root -l -b -q f11_Incl_LK.C
+root -l -b -q f11_Incl_OK.C
+root -l -b -q f11_Incl_OL.C
+root -l -b -q f11_Incl_OPhi.C
+root -l -b -q f11_Incl_OX.C
+root -l -b -q f11_Incl_PhiK.C
+root -l -b -q f11_Incl_XK.C
+root -l -b -q f11_Incl_XL.C
+root -l -b -q f11_Incl_XPhi.C
+
+root -l -b -q f12_JE_KstarK.C
+root -l -b -q f12_JE_LK.C
+root -l -b -q f12_JE_OK.C
+root -l -b -q f12_JE_OL.C
+root -l -b -q f12_JE_OPhi.C
+root -l -b -q f12_JE_OX.C
+root -l -b -q f12_JE_PhiK.C
+root -l -b -q f12_JE_XK.C
+root -l -b -q f12_JE_XL.C
+root -l -b -q f12_JE_XPhi.C
 
 echo ==========================================
-echo InclRatio_Cent
-
-root -l -b -q Incl_KstarK_Center.C
-root -l -b -q Incl_KstarK_Peripheral.C
-root -l -b -q Incl_PhiK_Center.C
-root -l -b -q Incl_PhiK_Peripheral.C
-root -l -b -q Incl_LK_Cent.C
-root -l -b -q Incl_OK_Cent.C
-root -l -b -q Incl_XK_Cent.C
-root -l -b -q Incl_XL_Cent.C
-root -l -b -q Incl_OL_Cent.C
-root -l -b -q Incl_OX_Cent.C
-root -l -b -q Incl_LPhi_Cent.C
-root -l -b -q Incl_XPhi_Cent.C
-root -l -b -q Incl_OPhi_Cent.C
-
-root -l -b -q Incl_LK_Cent_Data.C
-root -l -b -q Incl_LK_Cent_CR_Data.C
-root -l -b -q Incl_LK_Cent_Rope_Data.C
-
-root -l -b -q Incl_LK_Cent_CR.C
-root -l -b -q Incl_OK_Cent_CR.C
-root -l -b -q Incl_XK_Cent_CR.C
-root -l -b -q Incl_XL_Cent_CR.C
-root -l -b -q Incl_OL_Cent_CR.C
-root -l -b -q Incl_OX_Cent_CR.C
-root -l -b -q Incl_LPhi_Cent_CR.C
-root -l -b -q Incl_XPhi_Cent_CR.C
-root -l -b -q Incl_OPhi_Cent_CR.C
- 
-root -l -b -q Incl_LK_Cent_Rope.C
-root -l -b -q Incl_OK_Cent_Rope.C
-root -l -b -q Incl_XK_Cent_Rope.C
-root -l -b -q Incl_XL_Cent_Rope.C
-root -l -b -q Incl_OL_Cent_Rope.C
-root -l -b -q Incl_OX_Cent_Rope.C
-root -l -b -q Incl_LPhi_Cent_Rope.C
-root -l -b -q Incl_XPhi_Cent_Rope.C
-root -l -b -q Incl_OPhi_Cent_Rope.C
+echo Incl ratio in center and peripheral
+root -l -b -q f13_Incl_KstarK_Center.C
+root -l -b -q f13_Incl_KstarK_Peripheral.C
+root -l -b -q f13_Incl_LK_Center.C
+root -l -b -q f13_Incl_LK_Peripheral.C
+root -l -b -q f13_Incl_PhiK_Center.C
+root -l -b -q f13_Incl_PhiK_Peripheral.C
 
 echo ==========================================
-echo JERatio
-root -l -b -q JE_LK.C
-root -l -b -q JE_OK.C
-root -l -b -q JE_OL.C
-root -l -b -q JE_OX.C
-root -l -b -q JE_XK.C
-root -l -b -q JE_XL.C
+echo Incl ratio in diff centrality 
+root -l -b -q f14_Incl_KstarK_Cent_CRandRope.C
+root -l -b -q f14_Incl_LK_Cent_CRandRope.C
+root -l -b -q f14_Incl_OK_Cent_CRandRope.C
+root -l -b -q f14_Incl_OL_Cent_CRandRope.C
+root -l -b -q f14_Incl_OPhi_Cent_CRandRope.C
+root -l -b -q f14_Incl_OX_Cent_CRandRope.C
+root -l -b -q f14_Incl_PhiK_Cent_CRandRope.C
+root -l -b -q f14_Incl_XK_Cent_CRandRope.C
+root -l -b -q f14_Incl_XL_Cent_CRandRope.C
+root -l -b -q f14_Incl_XPhi_Cent_CRandRope.C
+
+root -l -b -q f15_Incl_KstarK_Cent_CR.C
+root -l -b -q f15_Incl_LK_Cent_CR.C
+root -l -b -q f15_Incl_OK_Cent_CR.C
+root -l -b -q f15_Incl_OL_Cent_CR.C
+root -l -b -q f15_Incl_OPhi_Cent_CR.C
+root -l -b -q f15_Incl_OX_Cent_CR.C
+root -l -b -q f15_Incl_PhiK_Cent_CR.C
+root -l -b -q f15_Incl_XK_Cent_CR.C
+root -l -b -q f15_Incl_XL_Cent_CR.C
+root -l -b -q f15_Incl_XPhi_Cent_CR.C
+
+root -l -b -q f16_Incl_KstarK_Cent_Rope.C
+root -l -b -q f16_Incl_LK_Cent_Rope.C
+root -l -b -q f16_Incl_OK_Cent_Rope.C
+root -l -b -q f16_Incl_OL_Cent_Rope.C
+root -l -b -q f16_Incl_OPhi_Cent_Rope.C
+root -l -b -q f16_Incl_OX_Cent_Rope.C
+root -l -b -q f16_Incl_PhiK_Cent_Rope.C
+root -l -b -q f16_Incl_XK_Cent_Rope.C
+root -l -b -q f16_Incl_XL_Cent_Rope.C
+root -l -b -q f16_Incl_XPhi_Cent_Rope.C
 
 echo ==========================================
-echo JERatio_Cent
-root -l -b -q JE_LK_Cent.C
-root -l -b -q JE_OK_Cent.C
-root -l -b -q JE_XK_Cent.C
-root -l -b -q JE_XL_Cent.C
-root -l -b -q JE_OL_Cent.C
-root -l -b -q JE_OX_Cent.C
+echo JE ratio in diff centrality 
+root -l -b -q f17_JE_KstarK_Cent_CRandRope.C
+root -l -b -q f17_JE_LK_Cent_CRandRope.C
+root -l -b -q f17_JE_OK_Cent_CRandRope.C
+root -l -b -q f17_JE_OL_Cent_CRandRope.C
+root -l -b -q f17_JE_OPhi_Cent_CRandRope.C
+root -l -b -q f17_JE_OX_Cent_CRandRope.C
+root -l -b -q f17_JE_PhiK_Cent_CRandRope.C
+root -l -b -q f17_JE_XK_Cent_CRandRope.C
+root -l -b -q f17_JE_XL_Cent_CRandRope.C
+root -l -b -q f17_JE_XPhi_Cent_CRandRope.C
 
-root -l -b -q JE_LK_Cent_CR.C
-root -l -b -q JE_OK_Cent_CR.C
-root -l -b -q JE_XK_Cent_CR.C
-root -l -b -q JE_XL_Cent_CR.C
-root -l -b -q JE_OL_Cent_CR.C
-root -l -b -q JE_OX_Cent_CR.C
+root -l -b -q f18_JE_KstarK_Cent_CR.C
+root -l -b -q f18_JE_LK_Cent_CR.C
+root -l -b -q f18_JE_OK_Cent_CR.C
+root -l -b -q f18_JE_OL_Cent_CR.C
+root -l -b -q f18_JE_OPhi_Cent_CR.C
+root -l -b -q f18_JE_OX_Cent_CR.C
+root -l -b -q f18_JE_PhiK_Cent_CR.C
+root -l -b -q f18_JE_XK_Cent_CR.C
+root -l -b -q f18_JE_XL_Cent_CR.C
+root -l -b -q f18_JE_XPhi_Cent_CR.C
 
-root -l -b -q JE_LK_Cent_Rope.C
-root -l -b -q JE_OK_Cent_Rope.C
-root -l -b -q JE_XK_Cent_Rope.C
-root -l -b -q JE_XL_Cent_Rope.C
-root -l -b -q JE_OL_Cent_Rope.C
-root -l -b -q JE_OX_Cent_Rope.C
+root -l -b -q f19_JE_KstarK_Cent_Rope.C
+root -l -b -q f19_JE_LK_Cent_Rope.C
+root -l -b -q f19_JE_OK_Cent_Rope.C
+root -l -b -q f19_JE_OL_Cent_Rope.C
+root -l -b -q f19_JE_OPhi_Cent_Rope.C
+root -l -b -q f19_JE_OX_Cent_Rope.C
+root -l -b -q f19_JE_PhiK_Cent_Rope.C
+root -l -b -q f19_JE_XK_Cent_Rope.C
+root -l -b -q f19_JE_XL_Cent_Rope.C
+root -l -b -q f19_JE_XPhi_Cent_Rope.C
 
+echo ==========================================
+echo particle ratio to jet axis
+root -l -b -q f20_KstarK_toJetRange.C
+root -l -b -q f20_LK_toJetRange.C
+root -l -b -q f20_OK_toJetRange.C
+root -l -b -q f20_OL_toJetRange.C
+root -l -b -q f20_OPhi_toJetRange.C
+root -l -b -q f20_OX_toJetRange.C
+root -l -b -q f20_PhiK_toJetRange.C
+root -l -b -q f20_XK_toJetRange.C
+root -l -b -q f20_XL_toJetRange.C
+root -l -b -q f20_XPhi_toJetRange.C
 echo ==========================================
 echo cp figures
-
 cp ./figure/eps/* /home/cuipengyao/Phenomenon/note/figures/rope
-
-
-
 
 exit 0
