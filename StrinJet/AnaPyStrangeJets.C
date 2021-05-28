@@ -43,8 +43,8 @@ int main(int argc, char *argv[])
 //=============================================================================
   pythia.readString("Beams:idA = 2212");
   pythia.readString("Beams:idB = 2212");
-  pythia.readString("Main:numberOfEvents = 100001");
-  //pythia.readString("Main:numberOfEvents = 10001");
+  //pythia.readString("Main:numberOfEvents = 100001");
+  pythia.readString("Main:numberOfEvents = 10001");
   pythia.readString("Beams:eCM = 7000.");
   if(bsQCD) pythia.readString("SoftQCD:all = on");
   if(bhQCD){ pythia.readString("HardQCD:all = on"); pythia.readString("PhaseSpace:pTHatMin = 20."); }
@@ -223,6 +223,7 @@ int main(int argc, char *argv[])
   Double_t Midtrk;
   Double_t Pt;
   Double_t Eta;
+  Double_t Rap;
   Double_t Accep;
   Double_t DPartoJet;
   Tree->Branch("Species",&Par);//1=Kshort; 2=Lambda; 3=Xi; 4=Omega; 5=Phi; 6=Pion; 7=Kion; 8=Proton; 9=Kstar
@@ -230,6 +231,7 @@ int main(int argc, char *argv[])
   Tree->Branch("MidTrk",&Midtrk);//MidTrack
   Tree->Branch("Pt",&Pt);//Pt
   Tree->Branch("Eta",&Eta);//Eta
+  Tree->Branch("Rapidity",&Rap);//Rapidity
   Tree->Branch("Acceptence",&Accep);//1=in jet cone; 2=PC; 3=OC
   Tree->Branch("DPartoJet",&DPartoJet);//Distance particle to jet axis
 //=============================================================================
@@ -283,7 +285,7 @@ int main(int argc, char *argv[])
 
     for (auto i=0; i<pyReco.size(); ++i) {
       const auto &ap(pyReco[i]);
-      const auto dpPt(ap.pT()), dpEta(ap.eta());
+      const auto dpPt(ap.pT()), dpEta(ap.eta()), dpRap(ap.y());
 
       if (ap.isFinal()       &&
           ap.isVisible()     &&
@@ -296,7 +298,9 @@ int main(int argc, char *argv[])
 //=============================================================================
 
       if (!(ap.isHadron())) continue;
-      if ((dpEta<dStrgEtaMin) || (dpEta>dStrgEtaMax)) continue;
+     
+      //if ((dpEta<dStrgEtaMin) || (dpEta>dStrgEtaMax)) continue;
+      if ((dpRap<-0.5) || (dpRap>0.5)) continue;
 //=============================================================================
 
       auto ks(EStrg::Undef);
@@ -400,7 +404,8 @@ int main(int argc, char *argv[])
 
       TVector3 strg, vj, vl1, vl2, vu1, vu2;
       strg.SetPtEtaPhi(av.pt(), av.eta(), av.phi());
-      Pt = av.pt(); Eta = av.eta();
+      Pt = av.pt(); Eta = av.eta(); Rap = av.rapidity();
+
       bool bJC; bool bPC; bool bOC;
       const auto sj = gksJets;
       bJC = false;
