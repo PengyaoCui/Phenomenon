@@ -4,7 +4,7 @@ echo ==========================================
 echo track information
 root -l -b -q f1_TrkEta.C
 root -l -b -q f2_dNfwddEta.C
-
+root -l -b -q f2_dNmiddEta.C
 echo ==========================================
 echo InteSpectra
 #root -l -b -q InteSpect.C

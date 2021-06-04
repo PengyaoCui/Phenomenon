@@ -2,8 +2,8 @@
 
 void f4_InteSpect_Kstar_JE(){
 //=============================================================================
-  auto hD(GetDataC("data/HEPData_1910.14397v1.root", 41)); 
-  auto gD = GetDataE("data/HEPData_1910.14397v1.root", 41); 
+  //auto hD(GetDataC("data/HEPData_1910.14397v1.root", 41)); 
+  //auto gD = GetDataE("data/HEPData_1910.14397v1.root", 41); 
 
   int i = 8; //{0="Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton", "Kstar"};
   int p = i;
@@ -15,9 +15,9 @@ void f4_InteSpect_Kstar_JE(){
 //=============================================================================
   //Double_t x, y;
   //g[2]->GetPoint(nc-2, x, y);
-  auto y = (Double_t)hD->GetMaximum();
+  //auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(0.), dfuy(2.*y);
+  auto dfly(0.), dfuy(0.3);
   
 
   auto dlsx(0.05), dlsy(0.05);
@@ -26,7 +26,7 @@ void f4_InteSpect_Kstar_JE(){
   
   TString stnx("<d#it{N}_{ch}/d#eta>_{|#eta|<0.5}");
   //TString stny("#it{N}_{par} / (#it{N}_{ev} #Delta#eta #Delta#varphi)");
-  TString stny("#it{N}_{par} / (#it{N}_{ev} #Delta#eta)");
+  TString stny("#it{N}_{par} / (#it{N}_{ev} #it{A}_{acc})");
  
   SetStyle(kTRUE);
   gStyle->SetErrorX(0);
@@ -41,14 +41,14 @@ void f4_InteSpect_Kstar_JE(){
   g[0]->SetLineStyle(0);
   g[1]->SetLineStyle(1);
   g[2]->SetLineStyle(2);
-  DrawHisto(hD, wcl[0], wmk[0], "same");
-  DrawGraph(gD, wcl[0], "E2");
+  //DrawHisto(hD, wcl[0], wmk[0], "same");
+  //DrawGraph(gD, wcl[0], "E2");
   DrawGraph(g[0], wcl[0], "L");
   DrawGraph(g[1], wcl[1], "L");
   DrawGraph(g[2], wcl[2], "L");
 
   auto leg(new TLegend(0.65, 0.65, 0.9, 0.92)); SetupLegend(leg);
-  leg->AddEntry(hD, "Data(13 TeV Incl)",  "P")->SetTextSizePixels(24);
+  //leg->AddEntry(hD, "Data(13 TeV Incl)",  "P")->SetTextSizePixels(24);
   leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);

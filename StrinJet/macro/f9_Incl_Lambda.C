@@ -14,7 +14,7 @@ void f9_Incl_Lambda(){
     h1[1] = PtSpectrum(1, 1, 1, kFALSE, kFALSE); 
     h1[2] = PtSpectrum(1, 2, 1, kFALSE, kFALSE); 
     for(int i = 0; i<3; i++){
-      h1[i]->Scale(1./(0.75));
+      //h1[i]->Scale(1./(0.75));
       g[i] = new TGraph(h1[i]);
     }
 //  =============================================================================

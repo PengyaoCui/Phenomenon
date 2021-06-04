@@ -14,7 +14,7 @@ void f9_Incl_Omega(){
     h1[1] = PtSpectrum(1, 1, 3, kFALSE, kFALSE); 
     h1[2] = PtSpectrum(1, 2, 3, kFALSE, kFALSE); 
     for(int i = 0; i<3; i++){
-      h1[i]->Scale(1./(0.75*2));
+     //h1[i]->Scale(1./(0.75*2));
       g[i] = new TGraph(h1[i]);
     }
 //  =============================================================================

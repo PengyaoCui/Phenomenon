@@ -14,7 +14,7 @@ void f9_Incl_Kshort(){
     h1[1] = PtSpectrum(1, 1, 0, kFALSE, kFALSE); 
     h1[2] = PtSpectrum(1, 2, 0, kFALSE, kFALSE); 
     for(int i = 0; i<3; i++){
-      h1[i]->Scale(1./(0.75*2.));
+      //h1[i]->Scale(1./(0.75*2.));
       g[i] = new TGraph(h1[i]);
     }
 //  =============================================================================

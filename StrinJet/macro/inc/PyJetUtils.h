@@ -21,6 +21,7 @@ const auto np(sizeof(sp) / sizeof(TString));
 const Double_t dCent[] = { 0., 0.95, 4.7, 9.5, 14., 19., 28., 38., 48., 68., 100. };
 const auto nc(sizeof(dCent)/sizeof(Double_t));
 
+const auto acc = 0.5;
 //_____________________________________________________________________________
 TH1D* TrkEta(const int s,
              const int m)
@@ -69,6 +70,30 @@ TH1D* dNfwddEta(const int s,
 
   return h;
 }
+
+TH1D* dNmiddEta(const int s,
+                const int m)
+{
+  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get("levent")));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::TrkEta", "No list: listevent");
+    exit(-2);
+  }
+
+  auto h((TH1D*)list->FindObject("hdNmiddEta"));
+  h->Rebin(5);
+
+  return h;
+}
+
 
 //=============================================================================
 void dNdEtaVal(const int s,
@@ -125,7 +150,7 @@ TGraph* InteSpectrum(const int s,
 		      bool j = kFALSE,
 		      bool u = kFALSE)
 {
-
+  auto Acc(acc); if(j || u) Acc = 0.75;
   Double_t dNdEta[nc-1];
   Double_t dPa[nc-1]; IntegralVal(s, m, p, dNdEta, dPa, j, u);
   if(j){
@@ -143,9 +168,9 @@ TGraph* InteSpectrum(const int s,
   //for(int i = 0; i<nc-1; i++){cout<<dPa[i]<<endl; }
  
   auto g = new TGraph();
-  //for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(0.75*2.*TMath::TwoPi()));
-  for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(0.75*2.));
-  if(p == 1 || p==2 || p==3)for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(0.75));
+  //for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(acc*2.*TMath::TwoPi()));
+  for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(Acc*2.));
+  if(p == 1 || p==2 || p==3)for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(Acc));
 
   return g;
 }
@@ -297,6 +322,7 @@ TH1D* PtSpectrum(const int s,
                  bool u = kFALSE)
 {
 
+  auto Acc(acc); if(j || u) Acc = 0.75;
   const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
   if (gSystem->AccessPathName(sf)) {
     ::Error("utils::Spectrum", "No file: %s", sf.Data());
@@ -332,6 +358,7 @@ TH1D* PtSpectrum(const int s,
   h2->Sumw2();
   //if(p==1 || p==2 || p==3) h2->Scale(2.);
   NormBinningHistogram(h2);
+  h2->Scale(1./(Acc*2.));
   return h2;
 }
 
@@ -345,6 +372,8 @@ TH1D* PtSpectrum(const int s,
                  bool u = kFALSE)
 {
 
+  auto Acc(acc); if(j || u) Acc = 0.75;
+  Double_t dNdEta[nc-1];
   const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
   if (gSystem->AccessPathName(sf)) {
     ::Error("utils::Spectrum", "No file: %s", sf.Data());
@@ -376,7 +405,7 @@ TH1D* PtSpectrum(const int s,
   if(!j && !u) h2 = (TH1D*)h->Rebin(nbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), bin);
   h2 = (TH1D*)h->Rebin(njbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), jbin);
   NormBinningHistogram(h2);
-  h2->Scale(1./(0.75*2.));
+  h2->Scale(1./(Acc*2.));
   h2->Sumw2();
   NormBinningHistogram(h2);
   return h2;
@@ -392,6 +421,7 @@ TH1D* PtSpectrum(const int s,
                  bool u = kFALSE)
 {
 
+  auto Acc(acc); if(j || u) Acc = 0.75;
   const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
   if (gSystem->AccessPathName(sf)) {
     ::Error("utils::Spectrum", "No file: %s", sf.Data());
@@ -422,7 +452,7 @@ TH1D* PtSpectrum(const int s,
   if(!j && !u) h2 = (TH1D*)h->Rebin(nbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), bin);
   h2 = (TH1D*)h->Rebin(njbin, ("hPt"+ sp[p] + (j ? "_Jet" : "") + (u ? "_UE" : "")).Data(), jbin);
   NormBinningHistogram(h2);
-  h2->Scale(1./(0.75*2.));
+  h2->Scale(1./(Acc*2.));
   h2->Sumw2();
   NormBinningHistogram(h2);
   return h2;

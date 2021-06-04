@@ -12,7 +12,7 @@ void f7_InteRatio_LPhi(){
 //=============================================================================
   //auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(25.);
-  auto dfly(12.), dfuy(18.5);
+  auto dfly(9.), dfuy(14.);
   
   auto dlsx(0.05), dlsy(0.05);
   auto dtsx(0.05), dtsy(0.05);
