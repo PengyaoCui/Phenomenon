@@ -7,7 +7,7 @@ Int_t c[] = {0, 10, 40, 100}; Int_t nC = sizeof(c)/sizeof(Int_t);
 
 //_____________________________________________________________________________
 
-void AnaSinJ(Int_t m = 0){
+void AnaSinJ(Int_t m = 2){
   Int_t s = 1;// s: { "pp13TeV", "pp7TeV_Eta", "pp7TeV_Rap" };
   //TFile* f(TFile::Open(("Results_" + ss[s] + "_" + sm[m] + ".root").Data() , "recreate"));
   TFile* f(TFile::Open(("Results_pp7TeV_" + sm[m] + ".root").Data() , "recreate"));
@@ -21,7 +21,6 @@ void AnaSinJ(Int_t m = 0){
   auto hTrkEta((TH1D*)TrkEta(s, m)); hTrkEta->SetName("hTrkEta"); levent->Add(hTrkEta);
   auto hdNfwddEta((TH1D*)dNfwddEta(s, m)); hdNfwddEta->SetName("hdNfwddEta"); levent->Add(hdNfwddEta);
   auto hdNmiddEta((TH1D*)dNmiddEta(s, m)); hdNmiddEta->SetName("hdNmiddEta"); levent->Add(hdNmiddEta);
-
 //=============================================================================
   TList *l[np];
   for (Int_t i=0; i<np; i++) {
@@ -122,7 +121,7 @@ void AnaSinJ(Int_t m = 0){
 	(static_cast<TH1D*>(l[i]->FindObject(Form("%s_EtaIn_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt, 1./dEvent);
         if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt, 1./dJEvent);
         if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(Pt, 1./dJEvent);
-        if(Accep == 1 || Accep ==2 || Accep ==3)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(DPartoJet, 1./dJEvent);
+        if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%.2f%.2f", sp[i].Data(), dCent[j], dCent[j+1]))))->Fill(DPartoJet, 1./dJEvent);
       }
 
       for(Int_t k = 0; k<nC-1; k++) if(Fwdtrk<df[k] && Fwdtrk>df[k+1]){
@@ -135,13 +134,13 @@ void AnaSinJ(Int_t m = 0){
 	(static_cast<TH1D*>(l[i]->FindObject(Form("%s_EtaIn_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt, 1./dEvent);
         if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt, 1./dJEvent);
         if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(Pt, 1./dJEvent);
-        if(Accep == 1 || Accep ==2 || Accep ==3)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(DPartoJet, 1./dJEvent);
+        if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP_%d%d", sp[i].Data(), c[k], c[k+1]))))->Fill(DPartoJet, 1./dJEvent);
       }
 
       (static_cast<TH1D*>(l[i]->FindObject(Form("%s_EtaIn", sp[i].Data()))))->Fill(Pt, 1./hEvent->GetBinContent(1));
       if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_JC", sp[i].Data()))))->Fill(Pt, 1./hJEvent->GetBinContent(1));
       if(Accep == 2)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_PC", sp[i].Data()))))->Fill(Pt, 1./hJEvent->GetBinContent(1));
-      if(Accep == 1 || Accep ==2 || Accep ==3)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP", sp[i].Data()))))->Fill(DPartoJet, 1./hJEvent->GetBinContent(1));
+      if(Accep == 1)(static_cast<TH1D*>(l[i]->FindObject(Form("%s_dJP", sp[i].Data()))))->Fill(DPartoJet, 1./hJEvent->GetBinContent(1));
     }
   
   }

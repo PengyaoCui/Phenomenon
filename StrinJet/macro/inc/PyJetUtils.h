@@ -482,3 +482,33 @@ TH1D* PartoJet(const int s,
 
  return h;
 }
+
+
+//=============================================================================
+TH1D* PartoJet(const int s,
+               const int m,
+               const int p,
+	       const int dCentMin,
+               const int dCentMax)
+{
+
+  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get(sp[p])));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list: list_results");
+    exit(-2);
+  }
+
+  auto h((TH1D*)list->FindObject(Form("%s_dJP_%d%d", sp[p].Data(), dCentMin, dCentMax)));
+
+  h->Rebin(5);
+ return h;
+}
+

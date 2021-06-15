@@ -179,6 +179,39 @@ root -l -b -q f20_PhiK_toJetRange.C
 root -l -b -q f20_XK_toJetRange.C
 root -l -b -q f20_XL_toJetRange.C
 root -l -b -q f20_XPhi_toJetRange.C
+
+root -l -b -q f21_KstarK_toJetRange_CR.C
+root -l -b -q f21_LK_toJetRange_CR.C
+root -l -b -q f21_OK_toJetRange_CR.C
+root -l -b -q f21_OL_toJetRange_CR.C
+root -l -b -q f21_OPhi_toJetRange_CR.C
+root -l -b -q f21_OX_toJetRange_CR.C
+root -l -b -q f21_PhiK_toJetRange_CR.C
+root -l -b -q f21_XK_toJetRange_CR.C
+root -l -b -q f21_XL_toJetRange_CR.C
+root -l -b -q f21_XPhi_toJetRange_CR.C
+
+root -l -b -q f22_KstarK_toJetRange_CRandRope.C
+root -l -b -q f22_LK_toJetRange_CRandRope.C
+root -l -b -q f22_OK_toJetRange_CRandRope.C
+root -l -b -q f22_OL_toJetRange_CRandRope.C
+root -l -b -q f22_OPhi_toJetRange_CRandRope.C
+root -l -b -q f22_OX_toJetRange_CRandRope.C
+root -l -b -q f22_PhiK_toJetRange_CRandRope.C
+root -l -b -q f22_XK_toJetRange_CRandRope.C
+root -l -b -q f22_XL_toJetRange_CRandRope.C
+root -l -b -q f22_XPhi_toJetRange_CRandRope.C
+
+root -l -b -q f23_KstarK_toJetRange_Rope.C
+root -l -b -q f23_LK_toJetRange_Rope.C
+root -l -b -q f23_OK_toJetRange_Rope.C
+root -l -b -q f23_OL_toJetRange_Rope.C
+root -l -b -q f23_OPhi_toJetRange_Rope.C
+root -l -b -q f23_OX_toJetRange_Rope.C
+root -l -b -q f23_PhiK_toJetRange_Rope.C
+root -l -b -q f23_XK_toJetRange_Rope.C
+root -l -b -q f23_XL_toJetRange_Rope.C
+root -l -b -q f23_XPhi_toJetRange_Rope.C
 echo ==========================================
 echo cp figures
 cp ./figure/eps/* /home/cuipengyao/Phenomenon/note/figures/rope

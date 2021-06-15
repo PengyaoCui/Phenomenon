@@ -11,14 +11,14 @@ void f2_dNmiddEta(){
   hR[0]=(TH1D*)h[0]->Clone("hR0");hR[0]->Divide(h[2]);
   hR[1]=(TH1D*)h[1]->Clone("hR1");hR[1]->Divide(h[2]);
 //=============================================================================
-  auto dflx(0.), dfux(210.);
-  auto dfly(1e-10), dfuy(2e3);
+  auto dflx(0.), dfux(15.);
+  auto dfly(1e-7), dfuy(2e3);
   
   auto dlsx(0.05), dlsy(0.06);
   auto dtsx(0.05), dtsy(0.06);
   auto dtox(1.30), dtoy(0.80);
   
-  TString stnx("d#it{N}_{mid}/d#eta");
+  TString stnx("#it{N}_{mid}/<#it{N}_{mid}>");
   TString stny("Probability density");
   
   SetStyle(kTRUE);
@@ -48,7 +48,7 @@ void f2_dNmiddEta(){
   tex->SetNDC();
   tex->SetTextSizePixels(24);
   tex->DrawLatex(0.16, 0.85, "pp #sqrt{#it{s}} = 7 TeV");
-  tex->DrawLatex(0.16, 0.75, "d#it{N}_{mid}/d#eta");
+  tex->DrawLatex(0.16, 0.75, stnx);
 
   can->cd();
   padB->cd(); 
