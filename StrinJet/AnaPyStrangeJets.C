@@ -43,8 +43,8 @@ int main(int argc, char *argv[])
 //=============================================================================
   pythia.readString("Beams:idA = 2212");
   pythia.readString("Beams:idB = 2212");
-  //pythia.readString("Main:numberOfEvents = 100001");
-  pythia.readString("Main:numberOfEvents = 10001");
+  pythia.readString("Main:numberOfEvents = 100001");
+  //pythia.readString("Main:numberOfEvents = 10001");
   pythia.readString("Beams:eCM = 7000.");
   if(bsQCD) pythia.readString("SoftQCD:all = on");
   if(bhQCD){ pythia.readString("HardQCD:all = on"); pythia.readString("PhaseSpace:pTHatMin = 20."); }
