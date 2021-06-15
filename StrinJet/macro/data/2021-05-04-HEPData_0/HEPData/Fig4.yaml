@@ -1,0 +1,56 @@
+independent_variables:
+- header: { name: '$R({\rm V}^{0},{\rm jet})$' }
+  values:
+  - { low:  0.0, high:  0.2 }
+  - { low:  0.2, high:  0.3 }
+  - { low:  0.3, high:  0.4 }
+  - { low:  0.4, high:  0.6 }
+  - { low:  0.6, high:  0.8 }
+  - { low:  0.8, high:  1.1 }
+  - { low:  1.1, high:  1.5 }
+dependent_variables:
+- header: { name: '$(\Lambda + \overline{\Lambda})/2{\rm K}_{\rm S}^{0}$' }
+  qualifiers:
+  - { name: 'RE',      value: 'P PB --> JET V0 X' }
+  - { name: 'SQRT(S)', value: '5020', units: 'GeV' }
+  - { name: 'YRAP',    value: '$-0.35 < \eta_{\rm lab}^{\rm jet} < 0.35$, $-0.75 < \eta_{\rm lab}^{{\rm V}^{0}} < 0.75$' }
+  - { name: 'PT JET',  value: '$> 10$', units: 'GeV/$c$' }
+  - { name: '$p_{{\rm T},{\rm V}^{0}}$', value: '[0.6, 1.8]', units: 'GeV/$c$' }
+  values:
+  - { value: 0.193, errors: [ {symerror: 0.007, label: stat}, {symerror: 0.025, label: sys} ] }
+  - { value: 0.213, errors: [ {symerror: 0.012, label: stat}, {symerror: 0.027, label: sys} ] }
+  - { value: 0.221, errors: [ {symerror: 0.013, label: stat}, {symerror: 0.028, label: sys} ] }
+  - { value: 0.239, errors: [ {symerror: 0.008, label: stat}, {symerror: 0.031, label: sys} ] }
+  - { value: 0.247, errors: [ {symerror: 0.010, label: stat}, {symerror: 0.032, label: sys} ] }
+  - { value: 0.247, errors: [ {symerror: 0.008, label: stat}, {symerror: 0.032, label: sys} ] }
+  - { value: 0.248, errors: [ {symerror: 0.009, label: stat}, {symerror: 0.032, label: sys} ] }
+- header: { name: '$(\Lambda + \overline{\Lambda})/2{\rm K}_{\rm S}^{0}$' }
+  qualifiers:
+  - { name: 'RE',      value: 'P PB --> JET V0 X' }
+  - { name: 'SQRT(S)', value: '5020', units: 'GeV' }
+  - { name: 'YRAP',    value: '$-0.35 < \eta_{\rm lab}^{\rm jet} < 0.35$, $-0.75 < \eta_{\rm lab}^{{\rm V}^{0}} < 0.75$' }
+  - { name: 'PT JET',  value: '$> 10$', units: 'GeV/$c$' }
+  - { name: '$p_{{\rm T},{\rm V}^{0}}$', value: '[2.2, 3.7]', units: 'GeV/$c$' }
+  values:
+  - { value: 0.301, errors: [ {symerror: 0.010, label: stat}, {symerror: 0.040, label: sys} ] }
+  - { value: 0.428, errors: [ {symerror: 0.030, label: stat}, {symerror: 0.057, label: sys} ] }
+  - { value: 0.503, errors: [ {symerror: 0.048, label: stat}, {symerror: 0.067, label: sys} ] }
+  - { value: 0.604, errors: [ {symerror: 0.038, label: stat}, {symerror: 0.080, label: sys} ] }
+  - { value: 0.612, errors: [ {symerror: 0.048, label: stat}, {symerror: 0.081, label: sys} ] }
+  - { value: 0.615, errors: [ {symerror: 0.043, label: stat}, {symerror: 0.081, label: sys} ] }
+  - { value: 0.634, errors: [ {symerror: 0.047, label: stat}, {symerror: 0.084, label: sys} ] }
+- header: { name: '$(\Lambda + \overline{\Lambda})/2{\rm K}_{\rm S}^{0}$' }
+  qualifiers:
+  - { name: 'RE',      value: 'P PB --> JET V0 X' }
+  - { name: 'SQRT(S)', value: '5020', units: 'GeV' }
+  - { name: 'YRAP',    value: '$-0.35 < \eta_{\rm lab}^{\rm jet} < 0.35$, $-0.75 < \eta_{\rm lab}^{{\rm V}^{0}} < 0.75$' }
+  - { name: 'PT JET',  value: '$> 10$', units: 'GeV/$c$' }
+  - { name: '$p_{{\rm T},{\rm V}^{0}}$', value: '[4.2, 12.]', units: 'GeV/$c$' }
+  values:
+  - { value: 0.283, errors: [ {symerror: 0.011, label: stat}, {symerror: 0.037, label: sys} ] }
+  - { value: 0.429, errors: [ {symerror: 0.082, label: stat}, {symerror: 0.056, label: sys} ] }
+  - { value: 0.481, errors: [ {symerror: 0.175, label: stat}, {symerror: 0.063, label: sys} ] }
+  - { value: 0.505, errors: [ {symerror: 0.143, label: stat}, {symerror: 0.066, label: sys} ] }
+  - { value: 0.445, errors: [ {symerror: 0.168, label: stat}, {symerror: 0.058, label: sys} ] }
+  - { value: 0.460, errors: [ {symerror: 0.144, label: stat}, {symerror: 0.060, label: sys} ] }
+  - { value: 0.448, errors: [ {symerror: 0.142, label: stat}, {symerror: 0.058, label: sys} ] }

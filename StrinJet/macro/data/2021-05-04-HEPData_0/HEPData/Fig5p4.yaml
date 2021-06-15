@@ -1,0 +1,41 @@
+independent_variables:
+- header: { name: '$p_{{\rm T},{\rm V}^{0}}$' }
+  values:
+  - { low:  0.6, high:  1.6 }
+  - { low:  1.6, high:  2.2 }
+  - { low:  2.2, high:  2.8 }
+  - { low:  2.8, high:  3.7 }
+  - { low:  3.7, high:  5.0 }
+  - { low:  5.0, high:  8.0 }
+  - { low:  8.0, high: 12.0 }
+dependent_variables:
+- header: { name: '$(\Lambda + \overline{\Lambda})/2{\rm K}_{\rm S}^{0}$' }
+  qualifiers:
+  - { name: 'RE',        value: 'P PB --> JET V0 X' }
+  - { name: 'SQRT(S)',   value: '5020', units: 'GeV' }
+  - { name: 'YRAP',      value: '$-0.35 < \eta_{\rm lab}^{\rm jet} < 0.35$, $-0.75 < \eta_{\rm lab}^{{\rm V}^{0}} < 0.75$' }
+  - { name: 'PT JET',    value: '$> 10$', units: 'GeV/$c$' }
+  - { name: 'SELECTION', value: 'Produced in jets' }
+  values:
+  - { value: 0.094, errors: [ {symerror: 0.012, label: stat}, {symerror: 0.026, label: sys} ] }
+  - { value: 0.219, errors: [ {symerror: 0.013, label: stat}, {symerror: 0.031, label: sys} ] }
+  - { value: 0.301, errors: [ {symerror: 0.014, label: stat}, {symerror: 0.039, label: sys} ] }
+  - { value: 0.322, errors: [ {symerror: 0.013, label: stat}, {symerror: 0.043, label: sys} ] }
+  - { value: 0.317, errors: [ {symerror: 0.014, label: stat}, {symerror: 0.047, label: sys} ] }
+  - { value: 0.303, errors: [ {symerror: 0.014, label: stat}, {symerror: 0.033, label: sys} ] }
+  - { value: 0.282, errors: [ {symerror: 0.026, label: stat}, {symerror: 0.028, label: sys} ] }
+- header: { name: '$(\Lambda + \overline{\Lambda})/2{\rm K}_{\rm S}^{0}$' }
+  qualifiers:
+  - { name: 'RE',        value: 'P P --> JET V0 X' }
+  - { name: 'SQRT(S)',   value: '7000', units: 'GeV' }
+  - { name: 'YRAP',      value: '$-0.35 < \eta_{\rm lab}^{\rm jet} < 0.35$, $-0.75 < \eta_{\rm lab}^{{\rm V}^{0}} < 0.75$' }
+  - { name: 'PT JET',    value: '$> 10$', units: 'GeV/$c$' }
+  - { name: 'SELECTION', value: 'Produced in jets' }
+  values:
+  - { value: 0.116, errors: [ {symerror: 0.020, label: stat}, {symerror: 0.012, label: sys} ] }
+  - { value: 0.190, errors: [ {symerror: 0.020, label: stat}, {symerror: 0.021, label: sys} ] }
+  - { value: 0.214, errors: [ {symerror: 0.019, label: stat}, {symerror: 0.022, label: sys} ] }
+  - { value: 0.227, errors: [ {symerror: 0.019, label: stat}, {symerror: 0.023, label: sys} ] }
+  - { value: 0.230, errors: [ {symerror: 0.019, label: stat}, {symerror: 0.024, label: sys} ] }
+  - { value: 0.235, errors: [ {symerror: 0.022, label: stat}, {symerror: 0.024, label: sys} ] }
+  - { value: 0.236, errors: [ {symerror: 0.040, label: stat}, {symerror: 0.030, label: sys} ] }

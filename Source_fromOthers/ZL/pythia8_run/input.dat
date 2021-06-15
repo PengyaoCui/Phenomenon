@@ -1,0 +1,26 @@
+#/*************************************************************************
+#    > File Name: input.dat
+#    > Author: Liang Zheng
+#    > Mail: liangzhphy@gmail.com 
+#    > Created Time: Thu Sep 17 22:18:34 2020
+# ************************************************************************/
+
+Main:numberOfEvents = 100
+
+#beam configuration
+#asymmetry lab frame
+#Beams:frameType = 2
+#Beams:idA = 2212
+#Beams:idB = 1000822080
+#Beams:eA = 4000
+#Beams:eB = 1570
+
+#symmetry c.m.s frame
+Beams:frameType = 1
+Beams:eCM = 7000
+Beams:idA = 2212
+Beams:idB = 2212 
+HeavyIon:mode = 2
+
+#Fragmentation:setVertices = on
+#HadronLevel:Decay = off
