@@ -157,63 +157,63 @@ TH1D* TrkEta(const int s,
   return h;
 }
 
-//TH1D* dNfwddEta(const int s,
-//	     const int m)
-//{
-//  auto h2D = (TH2D*)FwdMidTrk(s, m);
-//  auto hf = (TH1D*) h2D->ProjectionY();
-//  hf->Scale(1./6.);//FwdTrk 2<|eta|<5
-//  hf->Scale(1./hf->Integral(1, hf->GetNbinsX()));
-//  hf->GetXaxis()->SetTitle("dN_{fwd}/d#eta"); 
-//  return hf;
-//
-//}
 TH1D* dNfwddEta(const int s,
-	     const int m){
+	     const int m)
+{
   auto h2D = (TH2D*)FwdMidTrk(s, m);
   auto hf = (TH1D*) h2D->ProjectionY();
-  auto dAvNfwd = 0.;
-  for(Int_t i = 1; i<=hf->GetNbinsX(); i++){
-    dAvNfwd  += hf->GetBinContent(i)*hf->GetBinCenter(i)/hf->Integral(1, hf->GetNbinsX()); 
-  }
-  //auto hF=(TH1D*)hf->Clone("Nfwd/<Nfwd>");
-  auto hF=new TH1D("Nfwd/<Nfwd>", "", 1000, 0., 100.);
-  for(Int_t i = 1; i<=hf->GetNbinsX(); i++){
-    hF->SetBinContent(hF->FindBin(hf->GetBinCenter(i)/dAvNfwd), hf->GetBinContent(i));
-  }
-  hF->Scale(1./hF->Integral(1, hF->GetNbinsX()));
-  //NormBinningHistogram(hF);
-  //hF->Rebin(5);
-  return hF;
+  hf->Scale(1./6.);//FwdTrk 2<|eta|<5
+  hf->Scale(1./hf->Integral(1, hf->GetNbinsX()));
+  hf->GetXaxis()->SetTitle("dN_{fwd}/d#eta"); 
+  return hf;
+
 }
-//TH1D* dNmiddEta(const int s,
-//	     const int m)
-//{
+//TH1D* dNfwddEta(const int s,
+//	     const int m){
 //  auto h2D = (TH2D*)FwdMidTrk(s, m);
-//  auto hm = (TH1D*) h2D->ProjectionX();
-//  hm->Scale(1./1.);//MidTrk |eta|<0.5
-//  hm->Scale(1./hm->Integral(1, hm->GetNbinsX()));
-//  hm->GetXaxis()->SetTitle("dN_{mid}/d#eta"); 
-//  return hm;
-//
+//  auto hf = (TH1D*) h2D->ProjectionY();
+//  auto dAvNfwd = 0.;
+//  for(Int_t i = 1; i<=hf->GetNbinsX(); i++){
+//    dAvNfwd  += hf->GetBinContent(i)*hf->GetBinCenter(i)/hf->Integral(1, hf->GetNbinsX()); 
+//  }
+//  //auto hF=(TH1D*)hf->Clone("Nfwd/<Nfwd>");
+//  auto hF=new TH1D("Nfwd/<Nfwd>", "", 1000, 0., 100.);
+//  for(Int_t i = 1; i<=hf->GetNbinsX(); i++){
+//    hF->SetBinContent(hF->FindBin(hf->GetBinCenter(i)/dAvNfwd), hf->GetBinContent(i));
+//  }
+//  hF->Scale(1./hF->Integral(1, hF->GetNbinsX()));
+//  //NormBinningHistogram(hF);
+//  //hF->Rebin(5);
+//  return hF;
 //}
 TH1D* dNmiddEta(const int s,
-	     const int m){
+	     const int m)
+{
   auto h2D = (TH2D*)FwdMidTrk(s, m);
   auto hm = (TH1D*) h2D->ProjectionX();
-  auto dAvNmid = 0.;
-  for(Int_t i = 1; i<=hm->GetNbinsX(); i++){
-    dAvNmid  += hm->GetBinContent(i)*hm->GetBinCenter(i)/hm->Integral(1, hm->GetNbinsX()); 
-  }
-  auto hM=new TH1D("Nmid/<Nmid>", "", 1000, 0., 100.);
-  for(Int_t i = 1; i<=hm->GetNbinsX(); i++){
-    hM->SetBinContent(hM->FindBin(hm->GetBinCenter(i)/dAvNmid), hm->GetBinContent(i));
-  }
-  hM->Scale(1./hM->Integral(1, hM->GetNbinsX()));
-  //NormBinningHistogram(hM);
-  //hM->Rebin(5);
-  return hM;
+  hm->Scale(1./1.);//MidTrk |eta|<0.5
+  hm->Scale(1./hm->Integral(1, hm->GetNbinsX()));
+  hm->GetXaxis()->SetTitle("dN_{mid}/d#eta"); 
+  return hm;
+
 }
+//TH1D* dNmiddEta(const int s,
+//	     const int m){
+//  auto h2D = (TH2D*)FwdMidTrk(s, m);
+//  auto hm = (TH1D*) h2D->ProjectionX();
+//  auto dAvNmid = 0.;
+//  for(Int_t i = 1; i<=hm->GetNbinsX(); i++){
+//    dAvNmid  += hm->GetBinContent(i)*hm->GetBinCenter(i)/hm->Integral(1, hm->GetNbinsX()); 
+//  }
+//  auto hM=new TH1D("Nmid/<Nmid>", "", 1000, 0., 100.);
+//  for(Int_t i = 1; i<=hm->GetNbinsX(); i++){
+//    hM->SetBinContent(hM->FindBin(hm->GetBinCenter(i)/dAvNmid), hm->GetBinContent(i));
+//  }
+//  hM->Scale(1./hM->Integral(1, hM->GetNbinsX()));
+//  //NormBinningHistogram(hM);
+//  //hM->Rebin(5);
+//  return hM;
+//}
 //=============================================================================
 void CentToFwdTrk(const int s,
                   const int m,
