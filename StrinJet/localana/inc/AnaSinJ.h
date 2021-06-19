@@ -3,8 +3,8 @@
 #include "TUtilHisto.h"
 #include "TH1D.h"
 
-const TString path("/home/cuipengyao/PythiaOutput");
-//const TString path("/home/cuipengyao/Phenomenon/StrinJet");
+//const TString path("/home/cuipengyao/PythiaOutput");
+const TString path("/home/cuipengyao/Phenomenon/StrinJet");
 //=============================================================================
 const Double_t dIn[] = { 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 18. };
 const auto nIn(sizeof(dIn) / sizeof(Double_t) - 1);
@@ -162,9 +162,10 @@ TH1D* dNfwddEta(const int s,
 {
   auto h2D = (TH2D*)FwdMidTrk(s, m);
   auto hf = (TH1D*) h2D->ProjectionY();
-  hf->Scale(1./6.);//FwdTrk 2<|eta|<5
+  //hf->Scale(1./6.);//FwdTrk 2<|eta|<5
   hf->Scale(1./hf->Integral(1, hf->GetNbinsX()));
   hf->GetXaxis()->SetTitle("dN_{fwd}/d#eta"); 
+  NormBinningHistogram(hf);
   return hf;
 
 }
@@ -191,9 +192,13 @@ TH1D* dNmiddEta(const int s,
 {
   auto h2D = (TH2D*)FwdMidTrk(s, m);
   auto hm = (TH1D*) h2D->ProjectionX();
-  hm->Scale(1./1.);//MidTrk |eta|<0.5
+  //auto hM = new TH1D("Nmid", "", 1000, 0., 200.); 
+  //for(Int_t i = 1; i<=hm->GetNbinsX(); i++){
+  //  hM->SetBinContent(hM->FindBin(hf->GetBinCenter(i)/2.), hf->GetBinContent(i)); 
+  //}//MidTrk |eta|<0.5
   hm->Scale(1./hm->Integral(1, hm->GetNbinsX()));
   hm->GetXaxis()->SetTitle("dN_{mid}/d#eta"); 
+  NormBinningHistogram(hm);
   return hm;
 
 }

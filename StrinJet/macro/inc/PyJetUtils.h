@@ -91,6 +91,7 @@ TH1D* dNmiddEta(const int s,
   auto h((TH1D*)list->FindObject("hdNmiddEta"));
   h->Rebin(5);
 
+  NormBinningHistogram(h);
   return h;
 }
 

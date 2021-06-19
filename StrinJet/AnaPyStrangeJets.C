@@ -108,7 +108,7 @@ int main(int argc, char *argv[])
   const auto dTrkPtCut(0.15);
   const auto dfEtaMin(2.);//forward rapidity eta min
   const auto dfEtaMax(5.);//forward rapidity eta max
-  const auto dcEtaCut(0.5);
+  const auto dcEtaCut(1.);
 
   const auto dJetPtMin(1.00);
   const auto dJetEtaMin(-0.35 + dEtaShift);
@@ -280,7 +280,8 @@ int main(int argc, char *argv[])
     }
     //fwdtrk=dFwdCh;
     //midtrk=dMidCh;
-    hFwdVsMid->Fill(dMidCh, dFwdCh);
+    //hFwdVsMid->Fill(dMidCh/(2.*dcEtaCut), dFwdCh/(2.*(dfEtaMax-dfEtaMin)));
+    hFwdVsMid->Fill(dMidCh, dFwdCh/(2.*(dfEtaMax-dfEtaMin)));
 //=============================================================================
 
     for (auto i=0; i<pyReco.size(); ++i) {
