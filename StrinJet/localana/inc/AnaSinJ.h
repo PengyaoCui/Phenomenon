@@ -3,8 +3,8 @@
 #include "TUtilHisto.h"
 #include "TH1D.h"
 
-//const TString path("/home/cuipengyao/PythiaOutput");
-const TString path("/home/cuipengyao/Phenomenon/StrinJet");
+const TString path("/home/cuipengyao/PythiaOutput");
+//const TString path("/home/cuipengyao/Phenomenon/StrinJet");
 //=============================================================================
 const Double_t dIn[] = { 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 18. };
 const auto nIn(sizeof(dIn) / sizeof(Double_t) - 1);
@@ -24,7 +24,7 @@ const auto np(sizeof(sp) / sizeof(TString));
 
 const Double_t dCent[] = { 0., 0.95, 4.7, 9.5, 14., 19., 28., 38., 48., 68., 100. };
 const auto nc(sizeof(dCent)/sizeof(Double_t));
-auto dEta = 1.;
+auto dEta = 2.;
 
 Int_t nEvent(const Int_t s,
              const Int_t m)
