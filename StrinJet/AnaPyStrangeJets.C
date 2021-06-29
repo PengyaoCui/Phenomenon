@@ -46,7 +46,10 @@ int main(int argc, char *argv[])
   pythia.readString("Main:numberOfEvents = 100001");
   //pythia.readString("Main:numberOfEvents = 10001");
   pythia.readString("Beams:eCM = 7000.");
-  if(bsQCD) pythia.readString("SoftQCD:all = on");
+  if(bsQCD){ 
+	  //pythia.readString("SoftQCD:all = on");
+          pythia.readString("SoftQCD:nonDiffractive = on");//NSD 
+  }
   if(bhQCD){ pythia.readString("HardQCD:all = on"); pythia.readString("PhaseSpace:pTHatMin = 20."); }
  
   if(bCR){ 
@@ -198,7 +201,7 @@ int main(int argc, char *argv[])
   list_results->Add(hMidTrPt);
 
   TH1D *hMidTrEta     = new TH1D("hMidTrEta", ";#eta; N_{trig}", 1000, -5., 5.);
-  list_results->Add(hFwdTrEta);
+  list_results->Add(hMidTrEta);
 
   TProfile *hProfAcc = new TProfile("hProfAcc", "", 4, -0.5, 3.5); list_results->Add(hProfAcc);
   
@@ -281,7 +284,7 @@ int main(int argc, char *argv[])
     //fwdtrk=dFwdCh;
     //midtrk=dMidCh;
     //hFwdVsMid->Fill(dMidCh/(2.*dcEtaCut), dFwdCh/(2.*(dfEtaMax-dfEtaMin)));
-    hFwdVsMid->Fill(dMidCh, dFwdCh/(2.*(dfEtaMax-dfEtaMin)));
+    hFwdVsMid->Fill(dMidCh, dFwdCh);
 //=============================================================================
 
     for (auto i=0; i<pyReco.size(); ++i) {
