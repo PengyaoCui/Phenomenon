@@ -81,9 +81,8 @@ void AnaSinJ(Int_t m = 2){
 
 //_____________________________________________________________________________
   auto Chain((TChain*)CreateChain(s, m));
-                                         
- 
-  printf("Number of particle: %d\n",(Int_t)Chain->GetEntries());
+  long int nEv = Chain->GetEntries();   
+  cout<<"Number of particle: "<< nEv<<endl;
 
 //=============================================================================
   Int_t Par;
@@ -104,7 +103,7 @@ void AnaSinJ(Int_t m = 2){
   Chain->SetBranchAddress("DPartoJet",&DPartoJet);//distance of particle to jet axis
  
 //_____________________________________________________________________________
-  for(int p=0;p<Chain->GetEntries();p++) {
+  for(long int p=0;p<nEv;p++) {
     if(p%1000000==0) cout<<"Analysised particles ~ "<<p/1000000<< "M"<<endl;
     Chain->GetEntry(p);
  
@@ -163,8 +162,9 @@ void AnaSinJ(Int_t m = 2){
   Double_t dF[nC]; for(Int_t i = 0; i<nC-1; i++)   CentToFwdTrk(s, m, c[i], c[i+1], dF[i], dF[i+1]);//nfwdtrk larger->small
   Double_t dM[nC-1]; for(Int_t i = 0; i<nC-1; i++) CentTodNdEta(s, m, c[i], c[i+1], dM[i]);
 
-  auto chain((TChain*)CreateChain(s, m));
-  printf("Number of particle: %d\n",(Int_t)chain->GetEntries());
+  auto chain((TChain*)CreateChain(s, m)); 
+  long int nev = chain->GetEntries();
+  cout<<"Number of particle: "<< nev <<endl;
 
 //=============================================================================
   Int_t par;
@@ -186,7 +186,7 @@ void AnaSinJ(Int_t m = 2){
 
 
   //_____________________________________________________________________________
-  for(int p=0;p<chain->GetEntries();p++) {
+  for(long int p=0;p<nev;p++) {
     if(p%1000000==0) cout<<"Analysised particles ~ "<<p/1000000<< "M"<<endl;
     chain->GetEntry(p);
 
