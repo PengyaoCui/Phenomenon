@@ -2,14 +2,18 @@
 
 void f1_TrkEta(){
 
+  auto hD(GetDataC("data/HEPData_1004.3514v3.root", 6)); 
+  auto gD = GetDataE("data/HEPData_1004.3514v3.root", 6); 
   TH1D* h[3];
   h[0] = TrkEta(1, 0);    //Para1: "pp13TeV", "pp7TeV"
-  h[1] = TrkEta(1, 1);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
-  h[2] = TrkEta(1, 2);
+  //h[1] = TrkEta(1, 1);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
+  //h[2] = TrkEta(1, 2);
+  
+  TGraph* g[3];
+  g[0] = new TGraph(h[0]);  
+  //g[1] = new TGraph(h[1]); 
+  //g[2] = new TGraph(h[2]); 
 
-  TH1D* hR[2];
-  hR[0]=(TH1D*)h[0]->Clone("hR0");hR[0]->Divide(h[2]);
-  hR[1]=(TH1D*)h[1]->Clone("hR1");hR[1]->Divide(h[2]);
 //=============================================================================
   auto dflx(-5.), dfux(5.);
   auto dfly(2.), dfuy(7.);
@@ -25,22 +29,26 @@ void f1_TrkEta(){
   gStyle->SetErrorX(0);
   
   auto can(MakeCanvas("TrkEta"));
-  auto padT = MakePadT("padT"); can->cd();
-  auto padB = MakePadB("padB"); can->cd();
-  padT->cd(); 
-  auto hfm(padT->DrawFrame(dflx, dfly, dfux, dfuy));
+  //can->SetLogy();
+  auto hfm(can->DrawFrame(dflx, dfly, dfux, dfuy));
   SetupFrame(hfm, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);
   hfm->GetXaxis()->SetNdivisions(505);
-  hfm->GetYaxis()->SetNdivisions(503);
-  
-  DrawHisto(h[0], wcl[0], wmk[0], "same");
-  DrawHisto(h[1], wcl[1], wmk[1], "same");
-  DrawHisto(h[2], wcl[2], wmk[2], "same");
- 
-  auto leg(new TLegend(0.6, 0.60, 0.9, 0.92)); SetupLegend(leg);
-  leg->AddEntry(h[0], "CR",  "P")->SetTextSizePixels(24);
-  leg->AddEntry(h[1], "Rope",  "P")->SetTextSizePixels(24);
-  leg->AddEntry(h[2], "CR + Rope",  "P")->SetTextSizePixels(24);
+  hfm->GetYaxis()->SetNdivisions(505);
+
+  g[0]->SetLineStyle(0);
+  //g[1]->SetLineStyle(1);
+  //g[2]->SetLineStyle(2);
+  DrawHisto(hD, wcl[0], wmk[0], "same");
+  DrawGraph(gD, wcl[0], "E2");
+  DrawGraph(g[0], wcl[0], "L");
+  //DrawGraph(g[1], wcl[1], "L");
+  //DrawGraph(g[2], wcl[2], "L");
+
+  auto leg(new TLegend(0.65, 0.65, 0.9, 0.92)); SetupLegend(leg);
+  leg->AddEntry(hD, "Data(7 TeV)",  "P")->SetTextSizePixels(24);
+  leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
+  //leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
+  //leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
 
   auto tex(new TLatex());
@@ -49,29 +57,6 @@ void f1_TrkEta(){
   tex->DrawLatex(0.16, 0.85, "pp #sqrt{#it{s}} = 7 TeV");
   tex->DrawLatex(0.16, 0.75, "Track #eta distribution");
 
-  can->cd();
-  padB->cd(); 
-  dfly = 0.85, dfuy = 1.21;
-  
-  dlsx = 0.11; dlsy = 0.11;
-  dtsx = 0.11; dtsy = 0.11;
-  dtox = 1.10; dtoy = 0.40;
-  stny = "CR+Rope as Ref.";
-  
-  auto hfmb(padB->DrawFrame(dflx, dfly, dfux, dfuy));
-  SetupFrame(hfmb, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);
-  hfmb->GetXaxis()->SetNdivisions(505);
-  hfmb->GetYaxis()->SetNdivisions(503);
-  hfmb->GetXaxis()->SetTickLength(0.07);
-  
-  DrawHisto(hR[0], wcl[0], wmk[0], "same");
-  DrawHisto(hR[1], wcl[1], wmk[1], "same");
-
-  TLine* l = new TLine(dflx, 1., dfux, 1.);
-  l->SetLineColor(kRed);
-  l->SetLineWidth(2);
-  l->SetLineStyle(2);
-  l->Draw("same");
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));
