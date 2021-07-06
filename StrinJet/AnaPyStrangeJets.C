@@ -303,8 +303,8 @@ int main(int argc, char *argv[])
 
       if (!(ap.isHadron())) continue;
      
-      //if ((dpEta<dStrgEtaMin) || (dpEta>dStrgEtaMax)) continue;
-      if ((dpRap<-0.5) || (dpRap>0.5)) continue;
+      if ((dpEta<dStrgEtaMin) || (dpEta>dStrgEtaMax)) continue;
+      //if ((dpRap<-0.5) || (dpRap>0.5)) continue;
 //=============================================================================
 
       auto ks(EStrg::Undef);

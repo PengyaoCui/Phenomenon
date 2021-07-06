@@ -2,9 +2,9 @@
 
 root -l -b -q AnaSinJ.C\(0\)
 
-echo mv pp7TeV
-mv *7TeV*.root /home/cuipengyao/Phenomenon/StrinJet/macro/sim/pp7TeV
-mv *7TeV*.txt /home/cuipengyao/Phenomenon/StrinJet/macro/sim/pp7TeV
+#echo mv pp7TeV
+#mv *7TeV*.root /home/cuipengyao/Phenomenon/StrinJet/macro/sim/pp7TeV
+#mv *7TeV*.txt /home/cuipengyao/Phenomenon/StrinJet/macro/sim/pp7TeV
 
 #
 #echo mv pp13TeV

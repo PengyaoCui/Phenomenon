@@ -12,7 +12,7 @@ void f5_InteRatio_KstarPi(){
 //  =============================================================================
     //auto y = (Double_t)hD->GetMaximum();
     auto dflx(0.), dfux(25.);
-    auto dfly(0.), dfuy(0.07);
+    auto dfly(0.03), dfuy(0.07);
     
     auto dlsx(0.05), dlsy(0.05);
     auto dtsx(0.05), dtsy(0.05);
