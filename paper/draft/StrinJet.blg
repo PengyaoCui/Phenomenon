@@ -1,46 +1,72 @@
-This is BibTeX, Version 0.99d (TeX Live 2019/Debian)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: StrinJet.aux
 The style file: etc/utphys.bst
 Database file #1: StrinJet.bib
-You've used 14 entries,
+Warning--I didn't find a database entry for "Adams:2005dq"
+Warning--I didn't find a database entry for "Adcox:2004mh"
+Warning--I didn't find a database entry for "Arsene:2004fa"
+Warning--I didn't find a database entry for "Back:2004je"
+Warning--I didn't find a database entry for "Schukraft:2011na"
+Warning--I didn't find a database entry for "Abelev:2012sk"
+Warning--I didn't find a database entry for "Chatrchyan:2013eya"
+Warning--I didn't find a database entry for "Khachatryan:2010gv"
+Warning--I didn't find a database entry for "CMS:2012qk"
+Warning--I didn't find a database entry for "Abelev:2012ola"
+Warning--I didn't find a database entry for "Aad:2012gla"
+Warning--I didn't find a database entry for "Aad:2013fja"
+Warning--I didn't find a database entry for "Chatrchyan:2013nka"
+Warning--I didn't find a database entry for "Adare:2013esx"
+Warning--I didn't find a database entry for "Adams:2006nd"
+Warning--I didn't find a database entry for "Shuryak:2013ke"
+Warning--I didn't find a database entry for "Werner:2013ipa"
+Warning--I didn't find a database entry for "Bozek:2013ska"
+Warning--I didn't find a database entry for "Dumitru:2010iy"
+Warning--I didn't find a database entry for "Schenke:2015aqa"
+Warning--I didn't find a database entry for "Ma:2014pva"
+Warning--I didn't find a database entry for "Ortiz:2013yxa"
+Warning--I didn't find a database entry for "Rafelski:1982pu"
+Warning--I didn't find a database entry for "Andersen:1998vu"
+Warning--I didn't find a database entry for ""
+You've used 0 entries,
             2395 wiz_defined-function locations,
-            697 strings with 7074 characters,
-and the built_in function-call counts, 2914 in all, are:
-= -- 237
-> -- 108
+            617 strings with 4719 characters,
+and the built_in function-call counts, 21 in all, are:
+= -- 0
+> -- 0
 < -- 0
-+ -- 41
-- -- 27
-* -- 472
-:= -- 388
-add.period$ -- 14
-call.type$ -- 14
-change.case$ -- 14
++ -- 0
+- -- 0
+* -- 3
+:= -- 9
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 14
-duplicate$ -- 140
-empty$ -- 337
-format.name$ -- 27
-if$ -- 697
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 56
-newline$ -- 45
-num.names$ -- 14
-pop$ -- 42
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 26
+skip$ -- 1
 stack$ -- 0
 substring$ -- 0
-swap$ -- 28
+swap$ -- 0
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 14
-width$ -- 16
-write$ -- 128
+while$ -- 0
+width$ -- 0
+write$ -- 2
+(There were 25 warnings)
