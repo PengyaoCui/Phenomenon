@@ -15,8 +15,8 @@ void f1_TrkEta(){
   g[2] = new TGraph(h[2]); 
 
 //=============================================================================
-  auto dflx(-2.), dfux(2.);
-  auto dfly(2.), dfuy(11.);
+  auto dflx(-3.), dfux(3.);
+  auto dfly(5.), dfuy(8.9);
   
   auto dlsx(0.05), dlsy(0.06);
   auto dtsx(0.05), dtsy(0.06);
@@ -45,7 +45,7 @@ void f1_TrkEta(){
   DrawGraph(g[2], wcl[2], "L");
 
   auto leg(new TLegend(0.65, 0.65, 0.9, 0.92)); SetupLegend(leg);
-  leg->AddEntry(hD, "Data(7 TeV)",  "P")->SetTextSizePixels(24);
+  leg->AddEntry(hD, "Exp data",  "P")->SetTextSizePixels(24);
   leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);

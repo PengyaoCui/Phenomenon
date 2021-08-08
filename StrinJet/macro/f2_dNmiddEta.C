@@ -25,7 +25,7 @@ void f2_dNmiddEta(){
   auto dtsx(0.05), dtsy(0.05);
   auto dtox(1.30), dtoy(1.10);
   
-  TString stnx("d#it{N}_{mid}");
+  TString stnx("#it{N}_{mid}");
   TString stny("Probability density");
  
   SetStyle(kTRUE);
@@ -48,7 +48,7 @@ void f2_dNmiddEta(){
   DrawGraph(g[2], wcl[2], "L");
 
   auto leg(new TLegend(0.65, 0.65, 0.9, 0.92)); SetupLegend(leg);
-  leg->AddEntry(hD, "Data(7 TeV)",  "P")->SetTextSizePixels(24);
+  leg->AddEntry(hD, "Exp data",  "P")->SetTextSizePixels(24);
   leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
@@ -58,7 +58,7 @@ void f2_dNmiddEta(){
   tex->SetNDC();
   tex->SetTextSizePixels(24);
   tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-  tex->DrawLatex(0.16, 0.8, "|#eta_{Trk}| < 0.5");
+  tex->DrawLatex(0.16, 0.8, "|#eta_{Trk}| < 1.");
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));

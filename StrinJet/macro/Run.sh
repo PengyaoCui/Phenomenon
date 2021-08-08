@@ -215,5 +215,6 @@ root -l -b -q f23_XPhi_toJetRange_Rope.C
 echo ==========================================
 echo cp figures
 cp ./figure/pdf/* /home/cuipengyao/Phenomenon/note/figures/rope
+cp ./figure/pdf/* /home/cuipengyao/Phenomenon/paper/draft/figures
 
 exit 0
