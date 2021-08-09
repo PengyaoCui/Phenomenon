@@ -58,7 +58,7 @@ void f4_InteSpect_Kshort_JE(){
   tex->SetNDC();
   tex->SetTextSizePixels(24);
   tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-  tex->DrawLatex(0.16, 0.8, Form("Integrated yield of %s in jet", sp[p].Data()));
+  tex->DrawLatex(0.16, 0.8, Form("Integrated yield of K^{0}_{S} in jet"));
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));

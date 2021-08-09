@@ -24,9 +24,9 @@ void f3_InteSpect_Kshort(){
   auto dtsx(0.05), dtsy(0.05);
   auto dtox(1.30), dtoy(1.10);
   
-  TString stnx("<d#it{N}_{ch}/d#eta>_{|#eta|<0.5}");
+  TString stnx("#LTd#it{N}_{ch}/d#eta#GT_{|#eta|<0.5}");
   //TString stny("#it{N}_{par} / (#it{N}_{ev} #Delta#eta #Delta#varphi)");
-  TString stny("#it{N}_{par} / (#it{N}_{ev} #Delta#eta)");
+  TString stny("d#it{N}/d#it{y}");
  
   SetStyle(kTRUE);
   gStyle->SetErrorX(0);
@@ -47,18 +47,23 @@ void f3_InteSpect_Kshort(){
   DrawGraph(g[1], wcl[1], "L");
   DrawGraph(g[2], wcl[2], "L");
 
-  auto leg(new TLegend(0.65, 0.65, 0.9, 0.92)); SetupLegend(leg);
-  leg->AddEntry(hD, "Data(7 TeV)",  "P")->SetTextSizePixels(24);
+  auto leg(new TLegend(0.67, 0.62, 0.9, 0.82)); SetupLegend(leg);
+  auto Leg(new TLegend(0.55, 0.85, 0.9, 0.92)); SetupLegend(Leg);
+  Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 7 TeV",  "P")->SetTextSizePixels(24);
   leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
+  Leg->Draw();
 
   auto tex(new TLatex());
   tex->SetNDC();
   tex->SetTextSizePixels(24);
-  tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-  tex->DrawLatex(0.16, 0.8, Form("Inclusive integrated yield of %s", sp[p].Data()));
+  tex->DrawLatex(0.16, 0.9, "Models: pp #sqrt{#it{s}} = 7 TeV");
+  auto Tex(new TLatex());
+  Tex->SetNDC();
+  Tex->SetTextSizePixels(34);
+  Tex->DrawLatex(0.2, 0.6, Form("K^{0}_{S}"));
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));
