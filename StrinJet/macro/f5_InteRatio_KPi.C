@@ -18,7 +18,7 @@ void f5_InteRatio_KPi(){
     auto dtsx(0.05), dtsy(0.05);
     auto dtox(1.30), dtoy(1.10);
     
-    TString stnx("<d#it{N}_{ch}/d#eta>_{|#eta|<0.5}");
+    TString stnx("#LTd#it{N}_{ch}/d#eta#GT_{|#eta|<0.5}");
     TString stny("K^{0}_{S}/#pi");
     
     SetStyle(kTRUE);
@@ -40,17 +40,19 @@ void f5_InteRatio_KPi(){
     DrawGraph(g[1], wcl[1], "L");
     DrawGraph(g[2], wcl[2], "L");
 
-    auto leg(new TLegend(0.6, 0.60, 0.9, 0.92)); SetupLegend(leg);
-    leg->AddEntry(hD, "Data(7 TeV)",  "P")->SetTextSizePixels(24);
+    auto leg(new TLegend(0.6, 0.50, 0.9, 0.82)); SetupLegend(leg);
+    auto Leg(new TLegend(0.55, 0.85, 0.9, 0.92)); SetupLegend(Leg);
+    Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 7 TeV",  "PF")->SetTextSizePixels(24);
     leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
     leg->Draw();
+    Leg->Draw();
 
     auto tex(new TLatex());
     tex->SetNDC();
     tex->SetTextSizePixels(24);
-    tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
+    tex->DrawLatex(0.16, 0.9, "Models: pp #sqrt{#it{s}} = 7 TeV");
 
 
     can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));

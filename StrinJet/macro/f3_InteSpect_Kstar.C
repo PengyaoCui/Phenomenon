@@ -17,7 +17,7 @@ void f3_InteSpect_Kstar(){
   //g[2]->GetPoint(nc-2, x, y);
   auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(0.), dfuy(1.1);
+  auto dfly(0.), dfuy(0.9);
   
 
   auto dlsx(0.05), dlsy(0.05);
@@ -35,8 +35,8 @@ void f3_InteSpect_Kstar(){
   //can->SetLogy();
   auto hfm(can->DrawFrame(dflx, dfly, dfux, dfuy));
   SetupFrame(hfm, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);
-  hfm->GetXaxis()->SetNdivisions(503);
-  hfm->GetYaxis()->SetNdivisions(503);
+  hfm->GetXaxis()->SetNdivisions(505);
+  hfm->GetYaxis()->SetNdivisions(505);
 
   g[0]->SetLineStyle(0);
   g[1]->SetLineStyle(1);
@@ -47,13 +47,13 @@ void f3_InteSpect_Kstar(){
   DrawGraph(g[1], wcl[1], "L");
   DrawGraph(g[2], wcl[2], "L");
 
-  auto leg(new TLegend(0.67, 0.62, 0.9, 0.82)); SetupLegend(leg);
-  auto Leg(new TLegend(0.52, 0.85, 0.9, 0.9)); SetupLegend(Leg);
-  Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 13 TeV",  "P")->SetTextSizePixels(24);
+  auto leg(new TLegend(0.7, 0.72, 1., 0.92)); SetupLegend(leg);
   leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
+  auto Leg(new TLegend(0.55, 0.2, 0.9, 0.3)); SetupLegend(Leg);
+  Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 7 TeV",  "PF")->SetTextSizePixels(24);
   Leg->Draw();
 
   auto tex(new TLatex());
