@@ -12,7 +12,7 @@ void f5_InteRatio_KPi(){
 //  =============================================================================
     auto y = (Double_t)hD->GetMaximum();
     auto dflx(0.), dfux(25.);
-    auto dfly(0.), dfuy(3.*y);
+    auto dfly(0.08), dfuy(0.2);
     
     auto dlsx(0.05), dlsy(0.05);
     auto dtsx(0.05), dtsy(0.05);
@@ -40,9 +40,10 @@ void f5_InteRatio_KPi(){
     DrawGraph(g[1], wcl[1], "L");
     DrawGraph(g[2], wcl[2], "L");
 
-    auto leg(new TLegend(0.6, 0.50, 0.9, 0.82)); SetupLegend(leg);
-    auto Leg(new TLegend(0.55, 0.85, 0.9, 0.92)); SetupLegend(Leg);
-    Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 7 TeV",  "PF")->SetTextSizePixels(24);
+    auto leg(new TLegend(0.73, 0.70, 0.95, 0.95)); SetupLegend(leg);
+    auto Leg(new TLegend(0.16, 0.75, 0.5, 0.85)); SetupLegend(Leg);
+    //Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 7 TeV",  "PF")->SetTextSizePixels(24);
+    Leg->AddEntry(hD, "Exp data",  "PF")->SetTextSizePixels(24);
     leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
@@ -52,7 +53,7 @@ void f5_InteRatio_KPi(){
     auto tex(new TLatex());
     tex->SetNDC();
     tex->SetTextSizePixels(24);
-    tex->DrawLatex(0.16, 0.9, "Models: pp #sqrt{#it{s}} = 7 TeV");
+    tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
 
 
     can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));

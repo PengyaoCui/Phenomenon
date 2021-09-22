@@ -17,7 +17,7 @@ void f3_InteSpect_Xi(){
   //g[2]->GetPoint(nc-2, x, y);
   auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(0.), dfuy(2.*y);
+  auto dfly(0.), dfuy(0.17);
   
 
   auto dlsx(0.05), dlsy(0.05);
@@ -47,13 +47,13 @@ void f3_InteSpect_Xi(){
   DrawGraph(g[1], wcl[1], "L");
   DrawGraph(g[2], wcl[2], "L");
 
-  auto leg(new TLegend(0.67, 0.62, 0.9, 0.82)); SetupLegend(leg);
-  auto Leg(new TLegend(0.55, 0.85, 0.9, 0.92)); SetupLegend(Leg);
-  Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 7 TeV",  "P")->SetTextSizePixels(24);
+  auto leg(new TLegend(0.7, 0.72, 1., 0.92)); SetupLegend(leg);
   leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
+  auto Leg(new TLegend(0.16, 0.75, 0.6, 0.85)); SetupLegend(Leg);
+  Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 7 TeV",  "PF")->SetTextSizePixels(24);
   Leg->Draw();
 
   auto tex(new TLatex());

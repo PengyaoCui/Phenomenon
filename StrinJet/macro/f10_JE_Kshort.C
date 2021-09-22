@@ -30,8 +30,9 @@ void f10_JE_Kshort(){
     auto dtsx(0.05), dtsy(0.05);
     auto dtox(1.30), dtoy(1.10);
     
-    TString stnx("#it{p}_{T}");
-    TString stny("1/#it{N}_{ev} #times d^{2}#it{N}/(d#it{p}_{T}d#etad#varphi)");
+    TString stnx("#it{p}_{T} (GeV/#it{c})");
+    //TString stny("1/#it{N}_{ev} #times d^{2}#it{N}/(d#it{p}_{T}d#etad#varphi)");
+    TString stny("1/#it{N}_{ev} #times 1/#it{A}_{acc} #times d#it{N}/d#it{p}_{T} (#it{c}/GeV)");
     TString sPar("K^{0}_{S}");
     
     SetStyle(kTRUE);
@@ -65,7 +66,7 @@ void f10_JE_Kshort(){
     tex->SetNDC();
     tex->SetTextSizePixels(24);
     tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-    tex->DrawLatex(0.16, 0.8, Form("%s in JE spectra", sPar.Data()));
+    tex->DrawLatex(0.16, 0.8, Form("%s in jets spectra", sPar.Data()));
 
 
     can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));

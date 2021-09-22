@@ -27,7 +27,7 @@ void f12_JE_LK(){
   auto dtox(1.30), dtoy(1.10);
   
   TString stnx("#it{p}_{T} (GeV/#it{c})");
-  TString stny("#Lambda/K^{0}_{S}");
+  TString stny("(#Lambda + #bar{#Lambda})/2K^{0}_{S}");
   
   SetStyle(kTRUE);
   gStyle->SetErrorX(0);
@@ -42,14 +42,14 @@ void f12_JE_LK(){
   g[0]->SetLineStyle(0);
   g[1]->SetLineStyle(1);
   g[2]->SetLineStyle(2);
-  DrawHisto(hD, wcl[0], wmk[0], "same");
-  DrawGraph(gD, wcl[0], "E2");
+  //DrawHisto(hD, wcl[0], wmk[0], "same");
+  //DrawGraph(gD, wcl[0], "E2");
   DrawGraph(g[0], wcl[0], "L");
   DrawGraph(g[1], wcl[1], "L");
   DrawGraph(g[2], wcl[2], "L");
 
   auto leg(new TLegend(0.5, 0.70, 0.9, 0.92)); SetupLegend(leg);
-  leg->AddEntry(hD, "Data(Inclusive 13 TeV)",  "P")->SetTextSizePixels(24);
+  //leg->AddEntry(hD, "Data(Inclusive 13 TeV)",  "P")->SetTextSizePixels(24);
   leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
@@ -59,8 +59,8 @@ void f12_JE_LK(){
   tex->SetNDC();
   tex->SetTextSizePixels(24);
   tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-  tex->DrawLatex(0.16, 0.8, "sQCD");
-  tex->DrawLatex(0.16, 0.7, Form("%s in jet", stny.Data()));
+  //tex->DrawLatex(0.16, 0.8, "sQCD");
+  tex->DrawLatex(0.16, 0.8, Form("%s in jets", stny.Data()));
 
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));

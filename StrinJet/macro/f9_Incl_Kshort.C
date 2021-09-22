@@ -28,8 +28,8 @@ void f9_Incl_Kshort(){
     auto dtsx(0.05), dtsy(0.05);
     auto dtox(1.30), dtoy(1.10);
     
-    TString stnx("#it{p}_{T}");
-    TString stny("1/#it{N}_{ev} #times d^{2}#it{N}/(d#it{p}_{T}d#eta)");
+    TString stnx("#it{p}_{T} (GeV/#it{c})");
+    TString stny("1/#it{N}_{ev} #times d^{2}#it{N}/(d#it{p}_{T}d#eta) (#it{c}/GeV)");
     TString sPar("K^{0}_{S}");
     
     SetStyle(kTRUE);
@@ -53,11 +53,14 @@ void f9_Incl_Kshort(){
 
     auto leg(new TLegend(0.6, 0.60, 0.9, 0.92)); SetupLegend(leg);
 
-    leg->AddEntry(hD, "Data(7 TeV)",  "P")->SetTextSizePixels(24);
+    leg->AddEntry(hD, "Exp data",  "PF")->SetTextSizePixels(24);
     leg->AddEntry(g[0], "CR",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[2], "CR+Rope",  "L")->SetTextSizePixels(24);
     leg->Draw();
+    //auto Leg(new TLegend(0.55, 0.2, 0.9, 0.3)); SetupLegend(Leg);
+    //Leg->AddEntry(hD, "Exp data",  "PF")->SetTextSizePixels(24);
+    //Leg->Draw();
 
     auto tex(new TLatex());
     tex->SetNDC();

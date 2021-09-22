@@ -28,7 +28,7 @@ void f18_JE_LK_Cent_CR(){
   auto dtox(1.30), dtoy(1.10);
   
   TString stnx("#it{p}_{T} (GeV/#it{c})");
-  TString stny("#Lambda/K^{0}_{S}");
+  TString stny("(#Lambda + #bar{#Lambda})/2K^{0}_{S}");
   
   SetStyle(kTRUE);
   gStyle->SetErrorX(0);
@@ -60,10 +60,10 @@ void f18_JE_LK_Cent_CR(){
   tex->SetNDC();
   tex->SetTextSizePixels(24);
   tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-  tex->DrawLatex(0.16, 0.8, "sQCD + CR");
-  tex->DrawLatex(0.16, 0.7, Form("%s in jet", stny.Data()));
+  tex->DrawLatex(0.16, 0.8, "CR");
+  tex->DrawLatex(0.16, 0.7, Form("%s in jets", stny.Data()));
   //tex->DrawLatex(0.55, 0.86, "Cent (<d#it{N}_{ch}/d#eta>_{|#eta|<0.5})");
-  tex->DrawLatex(0.62, 0.86, "Centrality");
+  tex->DrawLatex(0.62, 0.86, "Multiplicity");
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));

@@ -49,7 +49,7 @@ In this work, inspired by this paper~\cite{ALICE:2021cvd}, we study the "strange
 In this contribution we consider two of the models: the new colour reconnection (CR) model~\cite{Christiansen:2015yqa, Sjostrand:2014zea} and the colour rope model~\cite{Biro:1984cf, Bierlich:2014xba, Flensburg:2011kk} in the PYTHIA 8 generator.
 Both considered colour reconnection models are built upon the Lund model for string hadronization~\cite{Andersson:1983ia, Buckley:2011ms}.  In these models, outgoing partons are connected with string-like color fields, which fragment into hadrons when moving apart.
 
-The paper is structured as follows: in Sec.~\ref{sec:model} will give a brief introduction about the models we used, the results compared to data are provided in Sec.~\ref{sec:com2da}, the predictions results can be find in Sec.~\ref{sec:predic}, and in the end, the paper will be summarized in Sec.~\ref{sec:sum},
+The paper is structured as follows: the Sec.~\ref{sec:model} will give a brief introduction about the models which used, the results compared to data are provided in Sec.~\ref{sec:com2da}, the predictions results can be find in Sec.~\ref{sec:predic}, and in the end, the paper will be summarized in Sec.~\ref{sec:sum},
 %===========================================
 %1906.03145
 %This comprehensive set of data does allow for a detailed test of production models.
@@ -94,7 +94,7 @@ At LHC energies many overlapping strings are also expected in \pp scattering, wh
 \section{Compare to data}
 \label{sec:com2da}
 %1507.02091v2
-The models performs as intended when comparing to existing data.
+The models perform as intended when comparing to existing data. An event and particle selection was implemented to mimic a possible experimental setup.
 %1806.11390
 The inclusive measurements on the charged particle pseudo-rapidity and multiplicity distributions are presented in Figure~\ref{fig:trkinfo}.
 \begin{figure}[htp]
@@ -124,6 +124,10 @@ The $\pT$-integrated yields of $\kzero$, $\kstar$, $\lmb$, $\Xi$, $\Omega$ and $
 	\caption{$\pT$-integrated yields d$N/$d$y$ of various hadrons, $\kzero$, $\kstar$, $\lmb$, $\Xi$, $\Omega$ and $\phi$, as functions of $\dndeta_{|\eta| < 0.5}$. Model results are show for \pp collisions at \seven, data for \pp collisions at \seven and \thirteen (only for $\phi$ particle). The data point are taken from \cite{ALICE:2016fzo, ALICE:2019etb}.}
 	\label{fig:InclIntePar}
 \end{figure}
+
+The corresponding hadron to $\pi$ ratios,  $\kzero/\pi$, $\Lambda/\pi$, $\Xi/\pi$, $\Omega/\pi$ and $\phi/\pi$, as functions of $\avdndeta$ distributions are shown in Figure~\ref{fig:InclIntePartoPiRatio}. 
+%Due to the lack of experiment data reference for the $\kstar/\pi$ ratio, we only present the prediction results with the three models.
+All those models can quantitatively describe the experiment results well. For multi-strange baryon to $\pi$ ratios, the CR + Rope gives the best description. But this configuration overestimate the $\Lambda/\pi$ ratio and Rope describe the ratio well. For $\kzero/\pi$ and $\phi/\pi$ ratios, all the configuration slightly underestimate the data results.
 \begin{figure}[ht]
 	\begin{center}
 		\includegraphics[width=.49\textwidth]{Kshort_PiRatio}
@@ -137,10 +141,8 @@ The $\pT$-integrated yields of $\kzero$, $\kstar$, $\lmb$, $\Xi$, $\Omega$ and $
 	\label{fig:InclIntePartoPiRatio}
 \end{figure}
 
-The corresponding hadron to $\pi$ ratios,  $\kzero/\pi$, $\Lambda/\pi$, $\Xi/\pi$, $\Omega/\pi$ and $\phi/\pi$, as functions of $\avdndeta$ distributions are shown in Figure~\ref{fig:InclIntePartoPiRatio}. 
-%Due to the lack of experiment data reference for the $\kstar/\pi$ ratio, we only present the prediction results with the three models.
-All those models can quantitatively describe the experiment results well. For multi-strange baryon to $\pi$ ratios, the CR + Rope gives the best description. But this configuration overestimate the $\Lambda/\pi$ ratio and Rope describe the ratio well. For $\kzero/\pi$ and $\phi/\pi$ ratios, all the configuration slightly underestimate the data results.
 %===================================================================
+The $\pT$ spectra if strange hadrons at midrapidity in \pp collisions at \seven are given in Figure~\ref{fig:InclParSpect}. All those models can well describe the experimental data. Prediction results are almost no different among those three configurations. Only for $\Omega~(sss)$ particle, the CR + Rope can simulate well.
 \begin{figure}[ht]
 	\begin{center}
 		\includegraphics[width=.48\textwidth]{Incl_KshortSpect}
@@ -150,28 +152,29 @@ All those models can quantitatively describe the experiment results well. For mu
 		\includegraphics[width=.48\textwidth]{Incl_KstarSpect}
 		\includegraphics[width=.48\textwidth]{Incl_PhiSpect}
 	\end{center}
-	\caption{Inclusive particle $\pT$ spectra. The different acceptance with data(for PYTHIA $|\eta|<0.75$, data $|y|<0.5$)(Data taken from arXiv:2005.11120, arXiv:1204.0292v3 and arXiv:1910.14410)}
+	\caption{Transverse momentum spectra of strange hadrons measured at midrapidity $|y| < 0.5$ in \pp collisions at \seven TeV. Data taken from \cite{ALICE:2020jsh, Basak:2012jy, ALICE:2019hyb}.}
 	\label{fig:InclParSpect}
 \end{figure}
 
 %===================================================================
-\begin{figure}[ht]
-	\begin{center}
-		\includegraphics[width=.48\textwidth]{LKRatio_Incl_Center}
-		\includegraphics[width=.48\textwidth]{LKRatio_Incl_Peripheral}
-		\includegraphics[width=.48\textwidth]{PhiKRatio_Incl_Center}
-		\includegraphics[width=.48\textwidth]{PhiKRatio_Incl_Peripheral}
-		\includegraphics[width=.48\textwidth]{KstarKRatio_Incl_Center}
-		\includegraphics[width=.48\textwidth]{KstarKRatio_Incl_Peripheral}
-	\end{center}
-	\caption{Ratios of particle yields, $\Lambda/\kzero$, $\phi/\kzero$ and $\kstar/\kzero$ as functions of $\pT$ for high (II) and low (X) multiplicity classes. Data taken from arXiv:1807.11321v2 and arXiv:1910.14397v1}
-	\label{fig:InclParRatioCentPeri}
-\end{figure}
+%Transverse momentum dependence of $\Lambda/\kzero$, $\phi/\kzero$ and $\kstar/\kzero$ yields ratios in \pp collisions at \seven for high (II) and low (X) multiplicity classes are shown in Figure~\ref{fig:InclParRatioCentPeri}. The $\Lambda/\kzero$ ratio enhancement at intermediate $\pT$ for high multiplicity \pp collisions are shown in those there models. But the CR and CR + Rope model overestimate the enhancement, and the Rope model underestimate it. The $\phi/\kzero$ and $\kstar/\kzero$ yields ratios increase at low $\pT$ and saturate for $\pT \gtrsim 2.5$~\GeVc. The three models can describe this trend well. 
+%\begin{figure}[ht]
+%	\begin{center}
+%		\includegraphics[width=.48\textwidth]{LKRatio_Incl_Center}
+%		\includegraphics[width=.48\textwidth]{LKRatio_Incl_Peripheral}
+%		\includegraphics[width=.48\textwidth]{PhiKRatio_Incl_Center}
+%		\includegraphics[width=.48\textwidth]{PhiKRatio_Incl_Peripheral}
+%		\includegraphics[width=.48\textwidth]{KstarKRatio_Incl_Center}
+%		\includegraphics[width=.48\textwidth]{KstarKRatio_Incl_Peripheral}
+%	\end{center}
+%	\caption{Transverse momentum dependence of $\Lambda/\kzero$, $\phi/\kzero$ and $\kstar/\kzero$ yields ratios in \pp collisions at \seven for high (II) and low (X) multiplicity classes, respectively. Data taken from \cite{ALICE:2018pal, ALICE:2019etb}.}
+%	\label{fig:InclParRatioCentPeri}
+%\end{figure}
 
 \clearpage
 \section{Predictions}
 \label{sec:predic}
-
+In this work we used CR, Rope and CR + Rope models to predict the particles produced in jets distributions. The $\pT$-integrated yield and corresponding ratios as functions of $\dndeta$, the $\pT$-differential yields and corresponding ratios will be shown in this section. The jet selection criteria is the same as~\cite{ALICE:2021cvd}.
 %===================================================================
 \begin{figure}[ht]
 	\begin{center}
@@ -180,7 +183,7 @@ All those models can quantitatively describe the experiment results well. For mu
 		\includegraphics[width=.48\textwidth]{Kshort_InteSpectrum_JE}
 		\includegraphics[width=.48\textwidth]{Lambda_InteSpectrum_JE}
 		\includegraphics[width=.48\textwidth]{Xi_InteSpectrum_JE}
-		\includegraphics[width=.48\textwidth]{Omega_InteSpectrum_JE}
+%		\includegraphics[width=.48\textwidth]{Omega_InteSpectrum_JE}
 		\includegraphics[width=.48\textwidth]{Phi_InteSpectrum_JE}
 		\includegraphics[width=.48\textwidth]{Kstar_InteSpectrum_JE}
 	\end{center}
@@ -193,7 +196,7 @@ All those models can quantitatively describe the experiment results well. For mu
 		\includegraphics[width=.48\textwidth]{Kshort_PiRatio_JE}
 		\includegraphics[width=.48\textwidth]{Lambda_PiRatio_JE}
 		\includegraphics[width=.48\textwidth]{Xi_PiRatio_JE}
-		\includegraphics[width=.48\textwidth]{Omega_PiRatio_JE}
+%		\includegraphics[width=.48\textwidth]{Omega_PiRatio_JE}
 		\includegraphics[width=.48\textwidth]{Phi_PiRatio_JE}
 		\includegraphics[width=.48\textwidth]{Kstar_PiRatio_JE}
 	\end{center}
@@ -207,7 +210,7 @@ All those models can quantitatively describe the experiment results well. For mu
 		\includegraphics[width=.48\textwidth]{JE_KshortSpect}
 		\includegraphics[width=.48\textwidth]{JE_LambdaSpect}
 		\includegraphics[width=.48\textwidth]{JE_XiSpect}
-		\includegraphics[width=.48\textwidth]{JE_OmegaSpect}
+%		\includegraphics[width=.48\textwidth]{JE_OmegaSpect}
 		\includegraphics[width=.48\textwidth]{JE_KstarSpect}
 		\includegraphics[width=.48\textwidth]{JE_PhiSpect}
 	\end{center}
@@ -216,7 +219,44 @@ All those models can quantitatively describe the experiment results well. For mu
 \end{figure}
 
 
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=.6\textwidth]{LKRatio_JE}
+%		\includegraphics[width=.42\textwidth]{XKRatio_JE}
+%		\includegraphics[width=.42\textwidth]{OKRatio_JE}
+%		\includegraphics[width=.42\textwidth]{PhiKRatio_JE}
+%		\includegraphics[width=.42\textwidth]{KstarKRatio_JE}
+%		\includegraphics[width=.42\textwidth]{XLRatio_JE}
+%		\includegraphics[width=.42\textwidth]{OLRatio_JE}
+%		\includegraphics[width=.42\textwidth]{OXRatio_JE}
+%		\includegraphics[width=.42\textwidth]{XPhiRatio_JE}
+%		\includegraphics[width=.42\textwidth]{OPhiRatio_JE}
+		%\includegraphics[width=.32\textwidth]{ProtonPionRatio_Incl}
+	\end{center}
+	\caption{Particle ratios in jet with $\pT$ distribution. (Data taken from arXiv:2005.11120)}
+	\label{fig:JEParRatio}
+\end{figure}
 
+
+\begin{figure}[ht]
+	\begin{center}
+		\includegraphics[width=.42\textwidth]{LKRatio_JE_Cent_cr_rope}
+		\includegraphics[width=.42\textwidth]{LKRatio_JE_Cent_cr}
+		\includegraphics[width=.42\textwidth]{LKRatio_JE_Cent_rope}
+
+	\end{center}
+	\caption{Particle ratios in jet with $\pT$ distribution in different centrality bins.}
+	\label{fig:JEParRatioCent}
+\end{figure}
+
+%\begin{figure}[ht]
+%	\begin{center}
+%		\includegraphics[width=.42\textwidth]{LK_toJetRange}
+%	\end{center}
+%	\caption{Particle ratios to jet axis range ($R$(P, jet)) distribution. (The multi-strange hadrons ($\Xi$, $\Omega$) have strong enhance at small $R$(P, jet))}
+%	\label{fig:ParRatiotoJet}
+%\end{figure}
+\clearpage
 \section{Summary}
 \label{sec:sum}
 

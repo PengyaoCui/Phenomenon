@@ -17,7 +17,7 @@ void f4_InteSpect_Kshort_JE(){
   //g[2]->GetPoint(nc-2, x, y);
   //auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(0.), dfuy(0.3);
+  auto dfly(0.05), dfuy(0.25);
   
 
   auto dlsx(0.05), dlsy(0.05);

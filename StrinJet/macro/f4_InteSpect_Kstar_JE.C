@@ -17,7 +17,7 @@ void f4_InteSpect_Kstar_JE(){
   //g[2]->GetPoint(nc-2, x, y);
   //auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(0.), dfuy(0.3);
+  auto dfly(0.), dfuy(0.1);
   
 
   auto dlsx(0.05), dlsy(0.05);
@@ -58,7 +58,7 @@ void f4_InteSpect_Kstar_JE(){
   tex->SetNDC();
   tex->SetTextSizePixels(24);
   tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-  tex->DrawLatex(0.16, 0.8, Form("Integrated yield of %s JE", sp[p].Data()));
+  tex->DrawLatex(0.16, 0.8, Form("Integrated yield of K*^{0} JE"));
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));
