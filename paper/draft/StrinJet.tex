@@ -124,7 +124,7 @@ The $\pT$-integrated yields of $\kzero$, $\kstar$, $\phi$, $\lmb$, $\Xi$ and $\O
 		\includegraphics[width=.49\textwidth]{Phi_InteSpectrum}
 		\includegraphics[width=.49\textwidth]{Omega_InteSpectrum}
 	\end{center}
-	\caption{$\pT$-integrated yields d$N/$d$y$ of various hadrons, $\kzero$, $\kstar$, $\phi$, $\lmb$, $\Xi$, and $\Omega$, as functions of $\dndeta_{|\eta| < 0.5}$. The mesons yields are shown in the left plots, and the baryons yields are shown in the right plots. Model results are show for \pp collisions at \seven, data for \pp collisions at \seven and \thirteen (only for $\phi$ particle). The data point are taken from \cite{ALICE:2016fzo, ALICE:2019etb}.}
+	\caption{$\pT$-integrated yields d$N/$d$y$ of various hadrons, $\kzero$, $\kstar$, $\phi$, $\lmb$, $\Xi$, and $\Omega$, as functions of $\langle\dndeta\rangle_{|\eta| < 0.5}$. The mesons yields are shown in the left plots, and the baryons yields are shown in the right plots. Model results are show for \pp collisions at \seven, data for \pp collisions at \seven and \thirteen (only for $\phi$ particle). The data point are taken from \cite{ALICE:2016fzo, ALICE:2019etb}.}
 	\label{fig:InclIntePar}
 \end{figure}
 
@@ -144,7 +144,7 @@ The simulation results of mesons to $\pi$ ratio, $\kzero/\pi$, $\phi/\pi$ ,show 
 		\end{minipage}
 		\includegraphics[width=.49\textwidth]{Omega_PiRatio}
 	\end{center}
-	\caption{Hadrons to $\pi$ $\pT$-integrated ratios, $\kzero/\pi$, $\phi/\pi$, $\Lambda/\pi$, $\Xi/\pi$, and $\Omega/\pi$, as function of $\dndeta_{|\eta| < 0.5}$ distributions in \pp collisions at \seven.  The mesons to $\pi$ ratios are shown in the left plots, and the baryons to $\pi$ ratios are shown is the right plots. The data point are taken from  \cite{ALICE:2016fzo, ALICE:2018pal}.}
+	\caption{Hadrons to $\pi$ $\pT$-integrated ratios, $\kzero/\pi$, $\phi/\pi$, $\Lambda/\pi$, $\Xi/\pi$, and $\Omega/\pi$, as function of $\langle\dndeta\rangle_{|\eta| < 0.5}$ distributions in \pp collisions at \seven.  The mesons to $\pi$ ratios are shown in the left plots, and the baryons to $\pi$ ratios are shown is the right plots. The data point are taken from  \cite{ALICE:2016fzo, ALICE:2018pal}.}
 	\label{fig:InclIntePartoPiRatio}
 \end{figure}
 
@@ -160,7 +160,7 @@ The $\pT$-differential spectra of hadrons at midrapidity ($|y| < 0.5$) in minimu
 		\includegraphics[width=.48\textwidth]{Incl_PhiSpect}
 		\includegraphics[width=.48\textwidth]{Incl_OmegaSpect}
 	\end{center}
-	\caption{Transverse momentum spectra of strange hadrons measured at midrapidity $|y| < 0.5$ in \pp collisions at \seven TeV. Data taken from \cite{ALICE:2020jsh, Basak:2012jy, ALICE:2019hyb}.}
+	\caption{Transverse momentum spectra of strange hadrons measured at midrapidity $|y| < 0.5$ in minimum bias \pp collisions at \seven TeV. Data taken from \cite{ALICE:2020jsh, Basak:2012jy, ALICE:2019hyb}.}
 	\label{fig:InclParSpect}
 \end{figure}
 
@@ -182,13 +182,13 @@ The $\pT$-differential spectra of hadrons at midrapidity ($|y| < 0.5$) in minimu
 \clearpage
 \section{Predictions}
 \label{sec:predic}
-In this work, we used CR, Rope and CR + Rope models to predict the particles produced in charged-particle jets distributions in \pp collisions at \seven. The analysis strategy is following the Ref~\cite{ALICE:2021cvd} which is studied the production of \kzero and \lmb in jets by ALICE experiment. The strange hadrons studied in this paper are generated within $|\eta| < 0.75$. The charged-particle jets are reconstructed using the \akT\ algorithm~\cite{Cacciari:2008gp} from the FastJet package~\cite{Cacciari:2011ma, Cacciari:2005hq}, which is a commonly used jet finding algorithm with resolution parameter $R = 0.4$. A cut on transverse momentum of reconstructed charged-particle jet ($\pTj > 10$~\GeVc) is applied according the ALICE study~\cite{ALICE:2021cvd}. To obtain the yields of hadrons within the charged-particle jet, the particles are selected based on their distance from the jet axis in the pseudo-rapidity and azimuthal angle plane~($\eta - \varphi$)
+In this work, we used CR, Rope and CR + Rope models to predict the particles produced in charged-particle jets distributions in \pp collisions at \seven. The analysis strategy is following the Ref~\cite{ALICE:2021cvd} which is studied the production of \kzero and \lmb in jets by ALICE experiment. The strange hadrons studied in this paper are generated within $|\eta| < 0.75$. The charged-particle jets are reconstructed using the \akT\ algorithm~\cite{Cacciari:2008gp} from the FastJet package~\cite{Cacciari:2011ma, Cacciari:2005hq}, which is a commonly used jet finding algorithm with resolution parameter $R = 0.4$. A cut on transverse momentum of reconstructed charged-particle jet ($\pTj > 10$~\GeVc) is applied according the ALICE study~\cite{ALICE:2021cvd}. To obtain the yields of hadrons within the charged-particle jet, the particles are selected based on their distance from the jet axis in the pseudo-rapidity and azimuthal angle plane~($\eta - \varphi$ plane)
 \begin{equation}
-	R(\mathrm{Par, ~jets}) = \sqrt{\left( \eta_\mathrm{jet} - \eta_\mathrm{Par} \right)^{2} + \left( \varphi_\mathrm{jet} - \varphi_\mathrm{Par} \right)^{2}}.
+	R(\mathrm{par, ~jet}) = \sqrt{\left( \eta_\mathrm{jet} - \eta_\mathrm{par} \right)^{2} + \left( \varphi_\mathrm{jet} - \varphi_\mathrm{par} \right)^{2}}.
 \end{equation}
-A particle with a radial distance from a given jet $R (\mathrm{Par, ~jet}) < 0.4$ is considered matched to the charged-particle jets.
+A particle with a radial distance from a given jet $R (\mathrm{par, ~jet}) < 0.4$ is considered matched to the charged-particle jets. The the particle yields are normalized to the density per unit area: $N_\mathrm{par}/(N_\mathrm{ev}A_\mathrm{acc})$. Where the $(N_\mathrm{ev}$ is the number of generated events which contain the selected charged-particle jets, the $A_\mathrm{acc}$ is the area of th acceptance in pseudo-rapidity and azimuthal angle. The $\pT$-integrated yield as a function of $\langle\dndeta\rangle_{|\eta| < 0.5}$, the ratio between particle $\pT$-integrated yields as a functions of $\langle\dndeta\rangle_{|\eta| < 0.5}$ , the $\pT$-differential yield and the ratio between particle $\pT$-differential yields will be studied in charged-particle jets in this section.
 
-$\pT$-integrated yield and corresponding ratios as functions of $\dndeta$, the $\pT$-differential yields and corresponding ratios will be shown in this section. The jet selection criteria is the same as~\cite{ALICE:2021cvd}.
+The $\pT$-integrated yields of \kzero, \kstar, $\phi$, $\lmb$, $\Xi$, and $\Omega$ as a function of $\avdndeta_{|\eta| < 0.5}$ in charged-particle jets distributions are presented in Figure~\ref{fig:JCIntePar}. It is shown that the $\pT$-integrated yields as a function of $\avdndeta_{|\eta| < 0.5}$ are not presented the increasing behavior which observed in inclusive cases.
 %===================================================================
 \begin{figure}[ht]
 	\begin{center}
@@ -196,12 +196,12 @@ $\pT$-integrated yield and corresponding ratios as functions of $\dndeta$, the $
 		%		\includegraphics[width=.48\textwidth]{FinalYieldvsMultXiJet_0}
 		\includegraphics[width=.48\textwidth]{Kshort_InteSpectrum_JE}
 		\includegraphics[width=.48\textwidth]{Lambda_InteSpectrum_JE}
-		\includegraphics[width=.48\textwidth]{Xi_InteSpectrum_JE}
-%		\includegraphics[width=.48\textwidth]{Omega_InteSpectrum_JE}
-		\includegraphics[width=.48\textwidth]{Phi_InteSpectrum_JE}
 		\includegraphics[width=.48\textwidth]{Kstar_InteSpectrum_JE}
+		\includegraphics[width=.48\textwidth]{Xi_InteSpectrum_JE}
+		\includegraphics[width=.48\textwidth]{Phi_InteSpectrum_JE}
+		\includegraphics[width=.48\textwidth]{Omega_InteSpectrum_JE}
 	\end{center}
-	\caption{Integrated yields of particles in jet with $\avdndeta$.(Data point at 13 TeV is used hadron-strange correlation method)}
+	\caption{The $\pT$-integrated yields of \kzero, \kstar, $\phi$, $\lmb$, $\Xi$, and $\Omega$ in charged-particle jets as a function of $\avdndeta_{|\eta|<0.5}$ distributions.}
 	\label{fig:JCIntePar}
 \end{figure}
 
@@ -214,7 +214,7 @@ $\pT$-integrated yield and corresponding ratios as functions of $\dndeta$, the $
 		\includegraphics[width=.48\textwidth]{Phi_PiRatio_JE}
 		\includegraphics[width=.48\textwidth]{Kstar_PiRatio_JE}
 	\end{center}
-	\caption{Integrated yields ratios in jet of strange particle to $\pi$ with $\avdndeta$. (Data taken from arXiv:1606.07424v2 and arXiv:1807.11321v2)}
+	\caption{Integrated yields ratios in jet of strange particle to $\pi$ with $\avdndeta_{|\eta|<0.5}$. (Data taken from arXiv:1606.07424v2 and arXiv:1807.11321v2)}
 	\label{fig:JEIntePartoPiRatio}
 \end{figure}
 
@@ -339,7 +339,7 @@ $\pT$-integrated yield and corresponding ratios as functions of $\dndeta$, the $
 \begin{sidewaystable}[!ht]
 	\begin{center}
 		\caption{Definition of the event classes as fractions of the analyzed event sample and their
-			corresponding $\dndeta$ within $|\eta_\mathrm{lab}| < 0.5$.}
+			corresponding $\avdndeta_{|\eta|<0.5}$ within $|\eta_\mathrm{lab}| < 0.5$.}
 		\label{tab:eventclass}
 		{\small
 		\begin{tabularx}{\textwidth}{@{} lCCCCCCCCCC @{}}

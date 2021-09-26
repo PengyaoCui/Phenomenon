@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.3)  25 SEP 2021 17:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.3.3)  26 SEP 2021 09:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1297,118 +1297,112 @@ Package natbib Warning: Citation `Cacciari:2005hq' on page 6 undefined on input
 Package natbib Warning: Citation `ALICE:2021cvd' on page 6 undefined on input l
 ine 185.
 
-
-Package natbib Warning: Citation `ALICE:2021cvd' on page 6 undefined on input l
-ine 191.
-
-<figures/Kshort_InteSpectrum_JE.pdf, id=906, 569.12625pt x 384.43625pt>
+<figures/Kshort_InteSpectrum_JE.pdf, id=907, 569.12625pt x 384.43625pt>
 File: figures/Kshort_InteSpectrum_JE.pdf Graphic file (type pdf)
 <use figures/Kshort_InteSpectrum_JE.pdf>
 Package pdftex.def Info: figures/Kshort_InteSpectrum_JE.pdf  used on input line
  197.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/Lambda_InteSpectrum_JE.pdf, id=907, 569.12625pt x 384.43625pt>
+<figures/Lambda_InteSpectrum_JE.pdf, id=908, 569.12625pt x 384.43625pt>
 File: figures/Lambda_InteSpectrum_JE.pdf Graphic file (type pdf)
 <use figures/Lambda_InteSpectrum_JE.pdf>
 Package pdftex.def Info: figures/Lambda_InteSpectrum_JE.pdf  used on input line
  198.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/Xi_InteSpectrum_JE.pdf, id=908, 569.12625pt x 384.43625pt>
+<figures/Kstar_InteSpectrum_JE.pdf, id=909, 569.12625pt x 384.43625pt>
+File: figures/Kstar_InteSpectrum_JE.pdf Graphic file (type pdf)
+<use figures/Kstar_InteSpectrum_JE.pdf>
+Package pdftex.def Info: figures/Kstar_InteSpectrum_JE.pdf  used on input line 
+199.
+(pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
+<figures/Xi_InteSpectrum_JE.pdf, id=910, 569.12625pt x 384.43625pt>
 File: figures/Xi_InteSpectrum_JE.pdf Graphic file (type pdf)
 <use figures/Xi_InteSpectrum_JE.pdf>
-Package pdftex.def Info: figures/Xi_InteSpectrum_JE.pdf  used on input line 199
+Package pdftex.def Info: figures/Xi_InteSpectrum_JE.pdf  used on input line 200
 .
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/Phi_InteSpectrum_JE.pdf, id=909, 569.12625pt x 384.43625pt>
+<figures/Phi_InteSpectrum_JE.pdf, id=911, 569.12625pt x 384.43625pt>
 File: figures/Phi_InteSpectrum_JE.pdf Graphic file (type pdf)
 <use figures/Phi_InteSpectrum_JE.pdf>
 Package pdftex.def Info: figures/Phi_InteSpectrum_JE.pdf  used on input line 20
 1.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/Kstar_InteSpectrum_JE.pdf, id=910, 569.12625pt x 384.43625pt>
-File: figures/Kstar_InteSpectrum_JE.pdf Graphic file (type pdf)
-<use figures/Kstar_InteSpectrum_JE.pdf>
-Package pdftex.def Info: figures/Kstar_InteSpectrum_JE.pdf  used on input line 
+<figures/Omega_InteSpectrum_JE.pdf, id=912, 569.12625pt x 384.43625pt>
+File: figures/Omega_InteSpectrum_JE.pdf Graphic file (type pdf)
+<use figures/Omega_InteSpectrum_JE.pdf>
+Package pdftex.def Info: figures/Omega_InteSpectrum_JE.pdf  used on input line 
 202.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/Kshort_PiRatio_JE.pdf, id=911, 569.12625pt x 384.43625pt>
+<figures/Kshort_PiRatio_JE.pdf, id=913, 569.12625pt x 384.43625pt>
 File: figures/Kshort_PiRatio_JE.pdf Graphic file (type pdf)
 <use figures/Kshort_PiRatio_JE.pdf>
 Package pdftex.def Info: figures/Kshort_PiRatio_JE.pdf  used on input line 210.
 
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/Lambda_PiRatio_JE.pdf, id=912, 569.12625pt x 384.43625pt>
+<figures/Lambda_PiRatio_JE.pdf, id=914, 569.12625pt x 384.43625pt>
 File: figures/Lambda_PiRatio_JE.pdf Graphic file (type pdf)
 <use figures/Lambda_PiRatio_JE.pdf>
 Package pdftex.def Info: figures/Lambda_PiRatio_JE.pdf  used on input line 211.
 
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/Xi_PiRatio_JE.pdf, id=913, 569.12625pt x 384.43625pt>
+<figures/Xi_PiRatio_JE.pdf, id=915, 569.12625pt x 384.43625pt>
 File: figures/Xi_PiRatio_JE.pdf Graphic file (type pdf)
 <use figures/Xi_PiRatio_JE.pdf>
 Package pdftex.def Info: figures/Xi_PiRatio_JE.pdf  used on input line 212.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/Phi_PiRatio_JE.pdf, id=914, 569.12625pt x 384.43625pt>
+<figures/Phi_PiRatio_JE.pdf, id=916, 569.12625pt x 384.43625pt>
 File: figures/Phi_PiRatio_JE.pdf Graphic file (type pdf)
 <use figures/Phi_PiRatio_JE.pdf>
 Package pdftex.def Info: figures/Phi_PiRatio_JE.pdf  used on input line 214.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/Kstar_PiRatio_JE.pdf, id=915, 569.12625pt x 384.43625pt>
+<figures/Kstar_PiRatio_JE.pdf, id=917, 569.12625pt x 384.43625pt>
 File: figures/Kstar_PiRatio_JE.pdf Graphic file (type pdf)
 <use figures/Kstar_PiRatio_JE.pdf>
 Package pdftex.def Info: figures/Kstar_PiRatio_JE.pdf  used on input line 215.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-
-Underfull \hbox (badness 1184) in paragraph at lines 217--217
-[]\T1/ptm/b/n/10 Figure 6: []\T1/ptm/m/n/10 Integrated yields ra-tios in jet of
- strange par-ti-cle to $\OML/ztmcm/m/it/10 ^^Y$ \T1/ptm/m/n/10 with $\OMS/ztmcm
-/m/n/10 h\OT1/ztmcm/m/n/10 d\OML/ztmcm/m/it/10 N[]=\OT1/ztmcm/m/n/10 d\OML/ztmc
-m/m/it/10 ^^Q\OMS/ztmcm/m/n/10 i$\T1/ptm/m/n/10 . (Data taken from
- []
-
-<figures/JE_KshortSpect.pdf, id=916, 569.12625pt x 384.43625pt>
+<figures/JE_KshortSpect.pdf, id=918, 569.12625pt x 384.43625pt>
 File: figures/JE_KshortSpect.pdf Graphic file (type pdf)
 <use figures/JE_KshortSpect.pdf>
 Package pdftex.def Info: figures/JE_KshortSpect.pdf  used on input line 224.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/JE_LambdaSpect.pdf, id=917, 569.12625pt x 384.43625pt>
+<figures/JE_LambdaSpect.pdf, id=919, 569.12625pt x 384.43625pt>
 File: figures/JE_LambdaSpect.pdf Graphic file (type pdf)
 <use figures/JE_LambdaSpect.pdf>
 Package pdftex.def Info: figures/JE_LambdaSpect.pdf  used on input line 225.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/JE_XiSpect.pdf, id=918, 569.12625pt x 384.43625pt>
+<figures/JE_XiSpect.pdf, id=920, 569.12625pt x 384.43625pt>
 File: figures/JE_XiSpect.pdf Graphic file (type pdf)
 <use figures/JE_XiSpect.pdf>
 Package pdftex.def Info: figures/JE_XiSpect.pdf  used on input line 226.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/JE_KstarSpect.pdf, id=919, 569.12625pt x 384.43625pt>
+<figures/JE_KstarSpect.pdf, id=921, 569.12625pt x 384.43625pt>
 File: figures/JE_KstarSpect.pdf Graphic file (type pdf)
 <use figures/JE_KstarSpect.pdf>
 Package pdftex.def Info: figures/JE_KstarSpect.pdf  used on input line 228.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/JE_PhiSpect.pdf, id=920, 569.12625pt x 384.43625pt>
+<figures/JE_PhiSpect.pdf, id=922, 569.12625pt x 384.43625pt>
 File: figures/JE_PhiSpect.pdf Graphic file (type pdf)
 <use figures/JE_PhiSpect.pdf>
 Package pdftex.def Info: figures/JE_PhiSpect.pdf  used on input line 229.
 (pdftex.def)             Requested size: 218.51521pt x 147.60658pt.
-<figures/LKRatio_JE.pdf, id=921, 569.12625pt x 384.43625pt>
+<figures/LKRatio_JE.pdf, id=923, 569.12625pt x 384.43625pt>
 File: figures/LKRatio_JE.pdf Graphic file (type pdf)
 <use figures/LKRatio_JE.pdf>
 Package pdftex.def Info: figures/LKRatio_JE.pdf  used on input line 238.
 (pdftex.def)             Requested size: 273.14922pt x 184.51556pt.
-<figures/LKRatio_JE_Cent_cr_rope.pdf, id=922, 569.12625pt x 384.43625pt>
+<figures/LKRatio_JE_Cent_cr_rope.pdf, id=924, 569.12625pt x 384.43625pt>
 File: figures/LKRatio_JE_Cent_cr_rope.pdf Graphic file (type pdf)
 <use figures/LKRatio_JE_Cent_cr_rope.pdf>
 Package pdftex.def Info: figures/LKRatio_JE_Cent_cr_rope.pdf  used on input lin
 e 257.
 (pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
-<figures/LKRatio_JE_Cent_cr.pdf, id=923, 569.12625pt x 384.43625pt>
+<figures/LKRatio_JE_Cent_cr.pdf, id=925, 569.12625pt x 384.43625pt>
 File: figures/LKRatio_JE_Cent_cr.pdf Graphic file (type pdf)
 <use figures/LKRatio_JE_Cent_cr.pdf>
 Package pdftex.def Info: figures/LKRatio_JE_Cent_cr.pdf  used on input line 258
 .
 (pdftex.def)             Requested size: 191.20168pt x 129.1521pt.
-<figures/LKRatio_JE_Cent_rope.pdf, id=924, 569.12625pt x 384.43625pt>
+<figures/LKRatio_JE_Cent_rope.pdf, id=926, 569.12625pt x 384.43625pt>
 File: figures/LKRatio_JE_Cent_rope.pdf Graphic file (type pdf)
 <use figures/LKRatio_JE_Cent_rope.pdf>
 Package pdftex.def Info: figures/LKRatio_JE_Cent_rope.pdf  used on input line 2
@@ -1417,21 +1411,22 @@ Package pdftex.def Info: figures/LKRatio_JE_Cent_rope.pdf  used on input line 2
 [6
 
 ] [7 <./figures/Kshort_InteSpectrum_JE.pdf, page is rotated 90 degrees> <./figu
-res/Lambda_InteSpectrum_JE.pdf, page is rotated 90 degrees> <./figures/Xi_InteS
-pectrum_JE.pdf, page is rotated 90 degrees> <./figures/Phi_InteSpectrum_JE.pdf,
- page is rotated 90 degrees> <./figures/Kstar_InteSpectrum_JE.pdf, page is rota
-ted 90 degrees>] [8 <./figures/Kshort_PiRatio_JE.pdf, page is rotated 90 degree
-s> <./figures/Lambda_PiRatio_JE.pdf, page is rotated 90 degrees> <./figures/Xi_
-PiRatio_JE.pdf, page is rotated 90 degrees> <./figures/Phi_PiRatio_JE.pdf, page
- is rotated 90 degrees> <./figures/Kstar_PiRatio_JE.pdf, page is rotated 90 deg
-rees>] [9 <./figures/JE_KshortSpect.pdf, page is rotated 90 degrees> <./figures
-/JE_LambdaSpect.pdf, page is rotated 90 degrees> <./figures/JE_XiSpect.pdf, pag
-e is rotated 90 degrees> <./figures/JE_KstarSpect.pdf, page is rotated 90 degre
-es> <./figures/JE_PhiSpect.pdf, page is rotated 90 degrees>] [10 <./figures/LKR
-atio_JE.pdf, page is rotated 90 degrees> <./figures/LKRatio_JE_Cent_cr_rope.pdf
-, page is rotated 90 degrees> <./figures/LKRatio_JE_Cent_cr.pdf, page is rotate
-d 90 degrees> <./figures/LKRatio_JE_Cent_rope.pdf, page is rotated 90 degrees>]
- (./StrinJet.bbl
+res/Lambda_InteSpectrum_JE.pdf, page is rotated 90 degrees> <./figures/Kstar_In
+teSpectrum_JE.pdf, page is rotated 90 degrees> <./figures/Xi_InteSpectrum_JE.pd
+f, page is rotated 90 degrees> <./figures/Phi_InteSpectrum_JE.pdf, page is rota
+ted 90 degrees> <./figures/Omega_InteSpectrum_JE.pdf, page is rotated 90 degree
+s>] [8 <./figures/Kshort_PiRatio_JE.pdf, page is rotated 90 degrees> <./figures
+/Lambda_PiRatio_JE.pdf, page is rotated 90 degrees> <./figures/Xi_PiRatio_JE.pd
+f, page is rotated 90 degrees> <./figures/Phi_PiRatio_JE.pdf, page is rotated 9
+0 degrees> <./figures/Kstar_PiRatio_JE.pdf, page is rotated 90 degrees>]
+[9 <./figures/JE_KshortSpect.pdf, page is rotated 90 degrees> <./figures/JE_Lam
+bdaSpect.pdf, page is rotated 90 degrees> <./figures/JE_XiSpect.pdf, page is ro
+tated 90 degrees> <./figures/JE_KstarSpect.pdf, page is rotated 90 degrees> <./
+figures/JE_PhiSpect.pdf, page is rotated 90 degrees>] [10 <./figures/LKRatio_JE
+.pdf, page is rotated 90 degrees> <./figures/LKRatio_JE_Cent_cr_rope.pdf, page 
+is rotated 90 degrees> <./figures/LKRatio_JE_Cent_cr.pdf, page is rotated 90 de
+grees> <./figures/LKRatio_JE_Cent_rope.pdf, page is rotated 90 degrees>]
+(./StrinJet.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 3.
 
@@ -1454,10 +1449,10 @@ Package rerunfilecheck Info: File `StrinJet.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 361.
  ) 
 Here is how much of TeX's memory you used:
- 10388 strings out of 492982
- 146557 string characters out of 6134897
+ 10392 strings out of 492982
+ 146736 string characters out of 6134897
  268665 words of memory out of 5000000
- 13672 multiletter control sequences out of 15000+600000
+ 13676 multiletter control sequences out of 15000+600000
  63259 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,17n,60p,1522b,452s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1471,10 +1466,10 @@ r/share/texlive/texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/
 texmf-dist/fonts/type1/urw/symbol/usyr.pfb></usr/share/texlive/texmf-dist/fonts
 /type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/time
 s/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on StrinJet.pdf (13 pages, 570944 bytes).
+Output written on StrinJet.pdf (13 pages, 584098 bytes).
 PDF statistics:
- 1835 PDF objects out of 2073 (max. 8388607)
- 813 compressed objects within 9 object streams
+ 1880 PDF objects out of 2073 (max. 8388607)
+ 832 compressed objects within 9 object streams
  33 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 236 words of extra memory for PDF output out of 10000 (max. 10000000)
 
