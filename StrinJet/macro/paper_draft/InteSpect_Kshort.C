@@ -1,12 +1,12 @@
 #include "inc/PyJetUtils.h"
 
-void f3_InteSpect_Kstar(){
+void InteSpect_Kshort(){
 //=============================================================================
-  auto hD(GetDataC("data/HEPData_1910.14397v1.root", 41)); 
-  auto gD = GetDataE("data/HEPData_1910.14397v1.root", 41); 
+  auto hD(GetDataC("data/HEPData_1606.07424v2.root", 42)); 
+  auto gD = GetDataE("data/HEPData_1606.07424v2.root", 42); 
 
-  int i = 8; //{0="Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton", "Kstar"};
-  int p = i;
+  int p = 0;//{0="Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton", "Kstar"};
+  int i = 0;
   TGraph* g[3];
   g[0] = InteSpectrum(1, 0, p);g[0]->SetName((sp[i] + sm[0]).Data());//Para1: "pp13TeV", "pp7TeV" 
   g[1] = InteSpectrum(1, 1, p);g[1]->SetName((sp[i] + sm[1]).Data());//Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
@@ -17,7 +17,7 @@ void f3_InteSpect_Kstar(){
   //g[2]->GetPoint(nc-2, x, y);
   auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(0.), dfuy(0.9);
+  auto dfly(0.), dfuy(2.2);
   
 
   auto dlsx(0.05), dlsy(0.05);
@@ -63,7 +63,7 @@ void f3_InteSpect_Kstar(){
   auto Tex(new TLatex());
   Tex->SetNDC();
   Tex->SetTextSizePixels(34);
-  Tex->DrawLatex(0.2, 0.6, Form("K*^{0}"));
+  Tex->DrawLatex(0.2, 0.6, Form("K^{0}_{S}"));
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));
