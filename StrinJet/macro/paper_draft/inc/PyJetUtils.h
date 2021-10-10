@@ -184,7 +184,8 @@ TGraph* RatioToPi(const int s,
                   const int m,
                   const int p,
 		  bool j = kFALSE,
-		  bool u = kFALSE)
+		  bool u = kFALSE,
+		  const int t = 1)
 {
  
   const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
@@ -217,7 +218,7 @@ TGraph* RatioToPi(const int s,
   TGraph *gR = new TGraph();
   
   for(Int_t i = 1; i<nc; i++) { 
-    dR[i-1] = dPa[i-1]/dPi[i-1]; 
+    dR[i-1] = t*dPa[i-1]/dPi[i-1]; 
     gR->SetPoint(i-1, dNdEta[i-1], dR[i-1]);
   }
   return gR;

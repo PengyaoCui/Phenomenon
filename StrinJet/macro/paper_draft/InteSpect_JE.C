@@ -61,8 +61,8 @@ void InteSpect_JE(){
   can->SetLogy();
   auto hfm(can->DrawFrame(dflx, dfly, dfux, dfuy));
   SetupFrame(hfm, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);
-  hfm->GetXaxis()->SetNdivisions(503);
-  hfm->GetYaxis()->SetNdivisions(503);
+  hfm->GetXaxis()->SetNdivisions(505);
+  hfm->GetYaxis()->SetNdivisions(505);
 
   //DrawHisto(hD, wcl[0], wmk[0], "same");
   //DrawGraph(gD, wcl[0], "E2");
@@ -88,6 +88,9 @@ void InteSpect_JE(){
   tex->SetNDC();
   tex->SetTextSizePixels(28);
   tex->DrawLatex(0.16, 0.92, "pp #sqrt{#it{s}} = 7 TeV");
+  tex->DrawLatex(0.16, 0.2, "Strange particle in jets");
+  
+  
   tex->DrawLatex(0.74, 0.9, "#color[1]{K^{0}_{S} (#times 4)}");
   tex->DrawLatex(0.74, 0.81, "#color[799]{K*^{0} (#times 5)}");
   tex->DrawLatex(0.74, 0.74, "#color[617]{#phi (#times 12)}"); 
