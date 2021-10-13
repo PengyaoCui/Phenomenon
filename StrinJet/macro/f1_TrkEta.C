@@ -22,8 +22,8 @@ void f1_TrkEta(){
   auto dtsx(0.05), dtsy(0.06);
   auto dtox(1.30), dtoy(0.80);
   
-  TString stnx("#eta_{trk}");
-  TString stny("#frac{d#it{N}}{#it{N}_{ev}d#eta}");
+  TString stnx("#eta");
+  TString stny("d#it{N}/d#eta");
   
   SetStyle(kTRUE);
   gStyle->SetErrorX(0);

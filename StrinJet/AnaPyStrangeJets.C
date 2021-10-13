@@ -2,7 +2,7 @@
 //=============================================================================
 const auto bsQCD(kTRUE);
 const auto bCR(kTRUE);
-const auto bRope(kFALSE);
+const auto bRope(kTRUE);
 const auto bhQCD = !bsQCD;
 
 int main(int argc, char *argv[])
@@ -43,8 +43,9 @@ int main(int argc, char *argv[])
 //=============================================================================
   pythia.readString("Beams:idA = 2212");
   pythia.readString("Beams:idB = 2212");
-  pythia.readString("Main:numberOfEvents = 100001");
-  //pythia.readString("Main:numberOfEvents = 10001");
+  pythia.readString("Tune:pp = 14");
+  //pythia.readString("Main:numberOfEvents = 100001");
+  pythia.readString("Main:numberOfEvents = 10001");
   pythia.readString("Beams:eCM = 7000.");
   if(bsQCD){ 
 	  //pythia.readString("SoftQCD:all = on");
@@ -84,7 +85,6 @@ int main(int argc, char *argv[])
   pythia.readString("PartonVertex:emissionWidth = 0.1");
 //=============================================================================
 
-  //pythia.readString("Tune:pp = 14");
   pythia.readString("Next:numberShowInfo = 0");
   pythia.readString("Next:numberShowProcess = 0");
   pythia.readString("Next:numberShowEvent = 0");
