@@ -1,6 +1,6 @@
 #include "inc/PyJetUtils.h"
 
-void f3_InteSpect_Phi(){
+void InteSpect_Phi(){
 //=============================================================================
   auto hD(GetDataC("data/HEPData_1910.14397v1.root", 42)); 
   auto gD = GetDataE("data/HEPData_1910.14397v1.root", 42); 

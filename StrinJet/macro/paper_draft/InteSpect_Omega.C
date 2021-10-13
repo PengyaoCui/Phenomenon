@@ -1,8 +1,8 @@
 #include "inc/PyJetUtils.h"
 
-void f3_InteSpect_Xi(){
+void InteSpect_Omega(){
 //=============================================================================
-  int i = 2;
+  int i = 3;
   int p = i;//{0="Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton", "Kstar"};
   auto hD(GetDataC("data/HEPData_1606.07424v2.root", 42+i)); 
   auto gD = GetDataE("data/HEPData_1606.07424v2.root", 42+i); 
@@ -17,7 +17,7 @@ void f3_InteSpect_Xi(){
   //g[2]->GetPoint(nc-2, x, y);
   auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(0.), dfuy(0.17);
+  auto dfly(0.), dfuy(0.013);
   
 
   auto dlsx(0.05), dlsy(0.05);
@@ -63,7 +63,7 @@ void f3_InteSpect_Xi(){
   auto Tex(new TLatex());
   Tex->SetNDC();
   Tex->SetTextSizePixels(34);
-  Tex->DrawLatex(0.2, 0.6, Form("#Xi + #bar{#Xi}"));
+  Tex->DrawLatex(0.2, 0.6, Form("#Omega + #bar{#Omega}"));
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));

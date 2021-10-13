@@ -22,7 +22,7 @@ TCanvas *MakeCanvas(const TString s)
 
 TCanvas *MakeCanvas(const TString s, const int x, const int y)
 {
-  auto c(new TCanvas(Form("c%s",s.Data()), s.Data(), x, y));
+  auto c(new TCanvas(Form("%s",s.Data()), s.Data(), x, y));
   c->Range(0., 0., 1., 1.);
   c->SetFillColor(0);
   c->SetBorderMode(0);

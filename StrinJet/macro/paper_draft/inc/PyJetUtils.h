@@ -218,7 +218,8 @@ TGraph* RatioToPi(const int s,
   TGraph *gR = new TGraph();
   
   for(Int_t i = 1; i<nc; i++) { 
-    dR[i-1] = t*dPa[i-1]/dPi[i-1]; 
+    if(!(p == 1 || p==2 || p==3)) dR[i-1] = t*dPa[i-1]/dPi[i-1]; 
+    if(p == 1 || p==2 || p==3)  dR[i-1] = t*2.*dPa[i-1]/dPi[i-1]; 
     gR->SetPoint(i-1, dNdEta[i-1], dR[i-1]);
   }
   return gR;
