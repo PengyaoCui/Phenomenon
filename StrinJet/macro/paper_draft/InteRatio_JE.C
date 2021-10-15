@@ -70,6 +70,15 @@ void InteRatio_JE(){
     g[0][i]->SetLineStyle(5);
     g[1][i]->SetLineStyle(3);
     g[2][i]->SetLineStyle(0);
+    //g[0][i]->SetMarkerStyle(4);
+    //g[1][i]->SetMarkerStyle(20);
+    //g[2][i]->SetMarkerStyle(23);
+    //g[0][i]->SetMarkerColor(wcl[i]);
+    //g[1][i]->SetMarkerColor(wcl[i]);
+    //g[2][i]->SetMarkerColor(wcl[i]);
+    //g[0][i]->SetMarkerSize(1.);
+    //g[1][i]->SetMarkerSize(1.);
+    //g[2][i]->SetMarkerSize(1.);
     DrawGraph(g[0][i], wcl[i], "L");
     DrawGraph(g[1][i], wcl[i], "L");
     DrawGraph(g[2][i], wcl[i], "L");
@@ -79,9 +88,9 @@ void InteRatio_JE(){
   auto leg(new TLegend(0.15, 0.88, 0.8, 0.91)); SetupLegend(leg);
   leg->SetNColumns(3);
   //leg->AddEntry(hD, "Data(7 TeV Incl)",  "P")->SetTextSizePixels(24);
-  leg->AddEntry(g[0][0], "BLC",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(g[1][0], "Rope",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(g[2][0], "BLC + Rope",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[0][0], "BLC",  "LP")->SetTextSizePixels(24);
+  leg->AddEntry(g[1][0], "Rope",  "LP")->SetTextSizePixels(24);
+  leg->AddEntry(g[2][0], "BLC + Rope",  "LP")->SetTextSizePixels(24);
   leg->Draw();
 
 

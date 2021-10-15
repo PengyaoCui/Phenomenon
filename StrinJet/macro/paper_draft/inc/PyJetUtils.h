@@ -72,7 +72,8 @@ TH1D* dNfwddEta(const int s,
 }
 
 TH1D* dNmiddEta(const int s,
-                const int m)
+                const int m,
+		const bool r = kTRUE)
 {
   const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
   if (gSystem->AccessPathName(sf)) {
@@ -89,9 +90,10 @@ TH1D* dNmiddEta(const int s,
   }
 
   auto h((TH1D*)list->FindObject("hdNmiddEta"));
-  h->Rebin(5);
-
-  NormBinningHistogram(h);
+  if(r){
+    h->Rebin(5);
+    NormBinningHistogram(h);
+  }
   return h;
 }
 
@@ -516,5 +518,35 @@ TH1D* PartoJet(const int s,
 
   h->Rebin(5);
  return h;
+}
+//_____________________________________________________________________________
+TH1D* RebinTH1D(TH1D const *hRaw, TH1D const *hRef)
+{
+  if ((!hRaw) || (!hRef)) return 0x0;
+
+  const Int_t nRef = hRef->GetNbinsX();
+
+  const Double_t dLower = hRef->GetXaxis()->GetBinLowEdge(1);
+  const Double_t dUpper = hRef->GetXaxis()->GetBinUpEdge(nRef);
+
+  auto hNew =(TH1D*)hRef->Clone(Form("h_%s_%s", hRaw->GetName(),
+                                           hRef->GetName()));
+  hNew->Reset();
+  //=============================================================================
+
+  for (Int_t k=1; k<=hRaw->GetNbinsX(); k++) {
+    Double_t dXvar = hRaw->GetBinCenter(k);
+    if ((dXvar<dLower) || (dXvar>=dUpper)) continue;
+
+    Int_t iBinX = hNew->FindBin(dXvar);
+    Double_t dYvar = hRaw->GetBinContent(k);
+    Double_t dYerr = hRaw->GetBinError(k);
+    Double_t dYsw2 = hNew->GetBinError(iBinX);
+
+    hNew->SetBinContent(iBinX, hNew->GetBinContent(iBinX) + dYvar);
+    hNew->SetBinError(iBinX, TMath::Sqrt(dYsw2*dYsw2 + dYerr*dYerr));
+  }
+
+  return hNew;
 }
 
