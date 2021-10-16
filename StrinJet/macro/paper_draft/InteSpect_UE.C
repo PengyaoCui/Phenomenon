@@ -41,7 +41,7 @@ void InteSpect_UE(){
   //g[2]->GetPoint(nc-2, x, y);
   //auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(5e-3), dfuy(1.2);
+  auto dfly(2e-4), dfuy(7e-1);
   
 
   auto dlsx(0.04), dlsy(0.04);
@@ -88,8 +88,7 @@ void InteSpect_UE(){
   auto tex(new TLatex());
   tex->SetNDC();
   tex->SetTextSizePixels(28);
-  tex->DrawLatex(0.16, 0.92, "pp #sqrt{#it{s}} = 7 TeV  Strange particle in jets");
-  //tex->DrawLatex(0.16, 0.88, "Strange particle in jets");
+  tex->DrawLatex(0.16, 0.92, "pp #sqrt{#it{s}} = 7 TeV  Strange particle in UE");
   
   
   tex->DrawLatex(0.74, 0.85, "#color[1]{K^{0}_{S} (#times 4)}");

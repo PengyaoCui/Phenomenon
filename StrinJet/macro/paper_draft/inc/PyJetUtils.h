@@ -144,8 +144,55 @@ void IntegralVal(const int s,
   for(int i = 0; i<nc-1; i++){dVal[i] = h->GetBinContent(h->FindBin(dNdEta[i]));}
 
   return;
-
 }
+
+//=============================================================================
+TH1D* InteSpect(const int s,
+                 const int m,
+                 const int p,
+                 bool j = kFALSE,
+                 bool u = kFALSE,
+		 const int t = 1)
+{
+  auto Acc(acc); if(j || u) Acc = 0.75;
+  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
+  if (gSystem->AccessPathName(sf)) {
+    ::Error("utils::Spectrum", "No file: %s", sf.Data());
+    exit(-1);
+  }
+  auto file(TFile::Open(sf, "read"));
+  auto list(static_cast<TList*>(file->Get(sp[p])));
+  file->Close();
+
+  if (list==nullptr) {
+    ::Error("utils::Spectrum", "No list: list_results");
+    exit(-2);
+  }
+
+  TH1D* h;
+  if(!j && !u){
+    h = ((TH1D*)list->FindObject(Form("Integral_%s_In", sp[p].Data())));
+    h->Scale(t);
+  }
+  if(j){
+    h=(TH1D*)list->FindObject(Form("Integral_%s_JC", sp[p].Data()));
+    auto H=(TH1D*)list->FindObject(Form("Integral_%s_PC", sp[p].Data())); H->Scale(-1.*0.25);
+    h->Add(H);
+    h->Scale(1./0.6);
+    h->Scale(t);
+  }
+  if(u){
+    h=(TH1D*)list->FindObject(Form("Integral_%s_PC", sp[p].Data()));
+    h->Scale(0.25/0.6);
+    h->Scale(t);
+  }
+  
+  if(!(p == 1 || p==2 || p==3)) h->Scale(1./(Acc*2.));
+  if(p == 1 || p==2 || p==3) h->Scale(1./(Acc));//2.*dPa[i]/(Acc*2.)
+
+  return h;
+}
+
 //_____________________________________________________________________________
 TGraph* InteSpectrum(const int s,
                       const int m,
