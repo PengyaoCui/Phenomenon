@@ -91,19 +91,19 @@ void InteSpect_UE(){
   tex->DrawLatex(0.16, 0.92, "pp #sqrt{#it{s}} = 7 TeV  Strange particle in UE");
   
   
-  tex->DrawLatex(0.74, 0.85, "#color[1]{K^{0}_{S} (#times 4)}");
-  tex->DrawLatex(0.74, 0.74, "#color[799]{K*^{0} (#times 6)}");
-  tex->DrawLatex(0.74, 0.64, "#color[617]{#phi (#times 12)}"); 
-  tex->DrawLatex(0.74, 0.56, "#color[633]{#Lambda + #bar{#Lambda}}");
-  tex->DrawLatex(0.72, 0.46, "#color[601]{#Xi^{-} + #bar{#Xi}^{+} (#times 2)}");
-  tex->DrawLatex(0.72, 0.3, "#color[419]{#Omega^{-} + #bar{#Omega}^{+} (#times 12)}");
+  tex->DrawLatex(0.74, 0.86, "#color[1]{K^{0}_{S} (#times 4)}");
+  tex->DrawLatex(0.74, 0.8, "#color[799]{K*^{0} (#times 6)}");
+  tex->DrawLatex(0.74, 0.73, "#color[617]{#phi (#times 12)}"); 
+  tex->DrawLatex(0.74, 0.66, "#color[633]{#Lambda + #bar{#Lambda}}");
+  tex->DrawLatex(0.72, 0.5, "#color[601]{#Xi^{-} + #bar{#Xi}^{+} (#times 2)}");
+  tex->DrawLatex(0.72, 0.35, "#color[419]{#Omega^{-} + #bar{#Omega}^{+} (#times 12)}");
 
   //can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   //can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));
   //can->SaveAs(Form("./figure/png/%s.png", can->GetName()));
-  can->Print(Form("./figure/pdf/%s.eps", can->GetName()));
+  can->Print(Form("./figure/eps/%s.eps", can->GetName()));
   can->Print(Form("./figure/pdf/%s.pdf", can->GetName()));
-  can->Print(Form("./figure/pdf/%s.png", can->GetName()));
+  can->Print(Form("./figure/png/%s.png", can->GetName()));
   CanvasEnd(can);
     
   return;

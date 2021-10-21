@@ -534,6 +534,23 @@ TH1D* PartoJet(const int s,
   }
 
   auto h((TH1D*)list->FindObject(Form("%s_dJP", sp[p].Data())));
+  //auto hPC((TH1D*)list->FindObject(Form("%s_PC", sp[p].Data())));
+  //hPC->Scale(1./(4.*0.75*2.*0.06));
+  //auto u = hPC->Integral(1, hPC->GetNbinsX());
+
+  //for(Int_t i = 1; i<=h->GetNbinsX(); i++){
+  //  auto dVal = h->GetBinContent(i); 
+  //  auto dErr = h->GetBinError(i); 
+  //  Double_t dLower = h->GetXaxis()->GetBinLowEdge(i);
+  //  Double_t dUpper = h->GetXaxis()->GetBinUpEdge(i);
+  //  //h->SetBinContent(i, (dVal/(TMath::Pi()*(dUpper*dUpper - dLower*dLower))-u)); 
+  //  //h->SetBinError(i, (dErr/(TMath::Pi()*(dUpper*dUpper - dLower*dLower)))); 
+  //  Double_t dv = dVal-u*TMath::Pi()*(dUpper*dUpper - dLower*dLower);
+  //  if (dv < 0.) dv = 0.;
+  //  h->SetBinContent(i, dv); 
+  //  h->SetBinError(i, dErr); 
+  //} 
+   
 
  return h;
 }
