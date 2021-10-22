@@ -103,7 +103,7 @@ void AnaSinJ(Int_t m = 2){
   Chain->SetBranchAddress("DPartoJet",&DPartoJet);//distance of particle to jet axis
  
 //_____________________________________________________________________________
-  for(long int p=0;p<nEv;p++) {
+  for(long long int p=0;p<nEv;p++) {
     if(p%1000000==0) cout<<"Analysised particles ~ "<<p/1000000<< "M"<<endl;
     Chain->GetEntry(p);
  
@@ -185,7 +185,7 @@ void AnaSinJ(Int_t m = 2){
 
 
   //_____________________________________________________________________________
-  for(long int p=0;p<nev;p++) {
+  for(long long int p=0;p<nev;p++) {
     if(p%1000000==0) cout<<"Analysised particles ~ "<<p/1000000<< "M"<<endl;
     chain->GetEntry(p);
 

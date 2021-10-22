@@ -1,7 +1,7 @@
 nohup: ignoring input
 
 Processing AnaSinJ.C(0)...
-Number of particle: 2637551506
+Number of particle: 4275743769
 Analysised particles ~ 0M
 Analysised particles ~ 1M
 Analysised particles ~ 2M
@@ -2640,6 +2640,1644 @@ Analysised particles ~ 2634M
 Analysised particles ~ 2635M
 Analysised particles ~ 2636M
 Analysised particles ~ 2637M
+Analysised particles ~ 2638M
+Analysised particles ~ 2639M
+Analysised particles ~ 2640M
+Analysised particles ~ 2641M
+Analysised particles ~ 2642M
+Analysised particles ~ 2643M
+Analysised particles ~ 2644M
+Analysised particles ~ 2645M
+Analysised particles ~ 2646M
+Analysised particles ~ 2647M
+Analysised particles ~ 2648M
+Analysised particles ~ 2649M
+Analysised particles ~ 2650M
+Analysised particles ~ 2651M
+Analysised particles ~ 2652M
+Analysised particles ~ 2653M
+Analysised particles ~ 2654M
+Analysised particles ~ 2655M
+Analysised particles ~ 2656M
+Analysised particles ~ 2657M
+Analysised particles ~ 2658M
+Analysised particles ~ 2659M
+Analysised particles ~ 2660M
+Analysised particles ~ 2661M
+Analysised particles ~ 2662M
+Analysised particles ~ 2663M
+Analysised particles ~ 2664M
+Analysised particles ~ 2665M
+Analysised particles ~ 2666M
+Analysised particles ~ 2667M
+Analysised particles ~ 2668M
+Analysised particles ~ 2669M
+Analysised particles ~ 2670M
+Analysised particles ~ 2671M
+Analysised particles ~ 2672M
+Analysised particles ~ 2673M
+Analysised particles ~ 2674M
+Analysised particles ~ 2675M
+Analysised particles ~ 2676M
+Analysised particles ~ 2677M
+Analysised particles ~ 2678M
+Analysised particles ~ 2679M
+Analysised particles ~ 2680M
+Analysised particles ~ 2681M
+Analysised particles ~ 2682M
+Analysised particles ~ 2683M
+Analysised particles ~ 2684M
+Analysised particles ~ 2685M
+Analysised particles ~ 2686M
+Analysised particles ~ 2687M
+Analysised particles ~ 2688M
+Analysised particles ~ 2689M
+Analysised particles ~ 2690M
+Analysised particles ~ 2691M
+Analysised particles ~ 2692M
+Analysised particles ~ 2693M
+Analysised particles ~ 2694M
+Analysised particles ~ 2695M
+Analysised particles ~ 2696M
+Analysised particles ~ 2697M
+Analysised particles ~ 2698M
+Analysised particles ~ 2699M
+Analysised particles ~ 2700M
+Analysised particles ~ 2701M
+Analysised particles ~ 2702M
+Analysised particles ~ 2703M
+Analysised particles ~ 2704M
+Analysised particles ~ 2705M
+Analysised particles ~ 2706M
+Analysised particles ~ 2707M
+Analysised particles ~ 2708M
+Analysised particles ~ 2709M
+Analysised particles ~ 2710M
+Analysised particles ~ 2711M
+Analysised particles ~ 2712M
+Analysised particles ~ 2713M
+Analysised particles ~ 2714M
+Analysised particles ~ 2715M
+Analysised particles ~ 2716M
+Analysised particles ~ 2717M
+Analysised particles ~ 2718M
+Analysised particles ~ 2719M
+Analysised particles ~ 2720M
+Analysised particles ~ 2721M
+Analysised particles ~ 2722M
+Analysised particles ~ 2723M
+Analysised particles ~ 2724M
+Analysised particles ~ 2725M
+Analysised particles ~ 2726M
+Analysised particles ~ 2727M
+Analysised particles ~ 2728M
+Analysised particles ~ 2729M
+Analysised particles ~ 2730M
+Analysised particles ~ 2731M
+Analysised particles ~ 2732M
+Analysised particles ~ 2733M
+Analysised particles ~ 2734M
+Analysised particles ~ 2735M
+Analysised particles ~ 2736M
+Analysised particles ~ 2737M
+Analysised particles ~ 2738M
+Analysised particles ~ 2739M
+Analysised particles ~ 2740M
+Analysised particles ~ 2741M
+Analysised particles ~ 2742M
+Analysised particles ~ 2743M
+Analysised particles ~ 2744M
+Analysised particles ~ 2745M
+Analysised particles ~ 2746M
+Analysised particles ~ 2747M
+Analysised particles ~ 2748M
+Analysised particles ~ 2749M
+Analysised particles ~ 2750M
+Analysised particles ~ 2751M
+Analysised particles ~ 2752M
+Analysised particles ~ 2753M
+Analysised particles ~ 2754M
+Analysised particles ~ 2755M
+Analysised particles ~ 2756M
+Analysised particles ~ 2757M
+Analysised particles ~ 2758M
+Analysised particles ~ 2759M
+Analysised particles ~ 2760M
+Analysised particles ~ 2761M
+Analysised particles ~ 2762M
+Analysised particles ~ 2763M
+Analysised particles ~ 2764M
+Analysised particles ~ 2765M
+Analysised particles ~ 2766M
+Analysised particles ~ 2767M
+Analysised particles ~ 2768M
+Analysised particles ~ 2769M
+Analysised particles ~ 2770M
+Analysised particles ~ 2771M
+Analysised particles ~ 2772M
+Analysised particles ~ 2773M
+Analysised particles ~ 2774M
+Analysised particles ~ 2775M
+Analysised particles ~ 2776M
+Analysised particles ~ 2777M
+Analysised particles ~ 2778M
+Analysised particles ~ 2779M
+Analysised particles ~ 2780M
+Analysised particles ~ 2781M
+Analysised particles ~ 2782M
+Analysised particles ~ 2783M
+Analysised particles ~ 2784M
+Analysised particles ~ 2785M
+Analysised particles ~ 2786M
+Analysised particles ~ 2787M
+Analysised particles ~ 2788M
+Analysised particles ~ 2789M
+Analysised particles ~ 2790M
+Analysised particles ~ 2791M
+Analysised particles ~ 2792M
+Analysised particles ~ 2793M
+Analysised particles ~ 2794M
+Analysised particles ~ 2795M
+Analysised particles ~ 2796M
+Analysised particles ~ 2797M
+Analysised particles ~ 2798M
+Analysised particles ~ 2799M
+Analysised particles ~ 2800M
+Analysised particles ~ 2801M
+Analysised particles ~ 2802M
+Analysised particles ~ 2803M
+Analysised particles ~ 2804M
+Analysised particles ~ 2805M
+Analysised particles ~ 2806M
+Analysised particles ~ 2807M
+Analysised particles ~ 2808M
+Analysised particles ~ 2809M
+Analysised particles ~ 2810M
+Analysised particles ~ 2811M
+Analysised particles ~ 2812M
+Analysised particles ~ 2813M
+Analysised particles ~ 2814M
+Analysised particles ~ 2815M
+Analysised particles ~ 2816M
+Analysised particles ~ 2817M
+Analysised particles ~ 2818M
+Analysised particles ~ 2819M
+Analysised particles ~ 2820M
+Analysised particles ~ 2821M
+Analysised particles ~ 2822M
+Analysised particles ~ 2823M
+Analysised particles ~ 2824M
+Analysised particles ~ 2825M
+Analysised particles ~ 2826M
+Analysised particles ~ 2827M
+Analysised particles ~ 2828M
+Analysised particles ~ 2829M
+Analysised particles ~ 2830M
+Analysised particles ~ 2831M
+Analysised particles ~ 2832M
+Analysised particles ~ 2833M
+Analysised particles ~ 2834M
+Analysised particles ~ 2835M
+Analysised particles ~ 2836M
+Analysised particles ~ 2837M
+Analysised particles ~ 2838M
+Analysised particles ~ 2839M
+Analysised particles ~ 2840M
+Analysised particles ~ 2841M
+Analysised particles ~ 2842M
+Analysised particles ~ 2843M
+Analysised particles ~ 2844M
+Analysised particles ~ 2845M
+Analysised particles ~ 2846M
+Analysised particles ~ 2847M
+Analysised particles ~ 2848M
+Analysised particles ~ 2849M
+Analysised particles ~ 2850M
+Analysised particles ~ 2851M
+Analysised particles ~ 2852M
+Analysised particles ~ 2853M
+Analysised particles ~ 2854M
+Analysised particles ~ 2855M
+Analysised particles ~ 2856M
+Analysised particles ~ 2857M
+Analysised particles ~ 2858M
+Analysised particles ~ 2859M
+Analysised particles ~ 2860M
+Analysised particles ~ 2861M
+Analysised particles ~ 2862M
+Analysised particles ~ 2863M
+Analysised particles ~ 2864M
+Analysised particles ~ 2865M
+Analysised particles ~ 2866M
+Analysised particles ~ 2867M
+Analysised particles ~ 2868M
+Analysised particles ~ 2869M
+Analysised particles ~ 2870M
+Analysised particles ~ 2871M
+Analysised particles ~ 2872M
+Analysised particles ~ 2873M
+Analysised particles ~ 2874M
+Analysised particles ~ 2875M
+Analysised particles ~ 2876M
+Analysised particles ~ 2877M
+Analysised particles ~ 2878M
+Analysised particles ~ 2879M
+Analysised particles ~ 2880M
+Analysised particles ~ 2881M
+Analysised particles ~ 2882M
+Analysised particles ~ 2883M
+Analysised particles ~ 2884M
+Analysised particles ~ 2885M
+Analysised particles ~ 2886M
+Analysised particles ~ 2887M
+Analysised particles ~ 2888M
+Analysised particles ~ 2889M
+Analysised particles ~ 2890M
+Analysised particles ~ 2891M
+Analysised particles ~ 2892M
+Analysised particles ~ 2893M
+Analysised particles ~ 2894M
+Analysised particles ~ 2895M
+Analysised particles ~ 2896M
+Analysised particles ~ 2897M
+Analysised particles ~ 2898M
+Analysised particles ~ 2899M
+Analysised particles ~ 2900M
+Analysised particles ~ 2901M
+Analysised particles ~ 2902M
+Analysised particles ~ 2903M
+Analysised particles ~ 2904M
+Analysised particles ~ 2905M
+Analysised particles ~ 2906M
+Analysised particles ~ 2907M
+Analysised particles ~ 2908M
+Analysised particles ~ 2909M
+Analysised particles ~ 2910M
+Analysised particles ~ 2911M
+Analysised particles ~ 2912M
+Analysised particles ~ 2913M
+Analysised particles ~ 2914M
+Analysised particles ~ 2915M
+Analysised particles ~ 2916M
+Analysised particles ~ 2917M
+Analysised particles ~ 2918M
+Analysised particles ~ 2919M
+Analysised particles ~ 2920M
+Analysised particles ~ 2921M
+Analysised particles ~ 2922M
+Analysised particles ~ 2923M
+Analysised particles ~ 2924M
+Analysised particles ~ 2925M
+Analysised particles ~ 2926M
+Analysised particles ~ 2927M
+Analysised particles ~ 2928M
+Analysised particles ~ 2929M
+Analysised particles ~ 2930M
+Analysised particles ~ 2931M
+Analysised particles ~ 2932M
+Analysised particles ~ 2933M
+Analysised particles ~ 2934M
+Analysised particles ~ 2935M
+Analysised particles ~ 2936M
+Analysised particles ~ 2937M
+Analysised particles ~ 2938M
+Analysised particles ~ 2939M
+Analysised particles ~ 2940M
+Analysised particles ~ 2941M
+Analysised particles ~ 2942M
+Analysised particles ~ 2943M
+Analysised particles ~ 2944M
+Analysised particles ~ 2945M
+Analysised particles ~ 2946M
+Analysised particles ~ 2947M
+Analysised particles ~ 2948M
+Analysised particles ~ 2949M
+Analysised particles ~ 2950M
+Analysised particles ~ 2951M
+Analysised particles ~ 2952M
+Analysised particles ~ 2953M
+Analysised particles ~ 2954M
+Analysised particles ~ 2955M
+Analysised particles ~ 2956M
+Analysised particles ~ 2957M
+Analysised particles ~ 2958M
+Analysised particles ~ 2959M
+Analysised particles ~ 2960M
+Analysised particles ~ 2961M
+Analysised particles ~ 2962M
+Analysised particles ~ 2963M
+Analysised particles ~ 2964M
+Analysised particles ~ 2965M
+Analysised particles ~ 2966M
+Analysised particles ~ 2967M
+Analysised particles ~ 2968M
+Analysised particles ~ 2969M
+Analysised particles ~ 2970M
+Analysised particles ~ 2971M
+Analysised particles ~ 2972M
+Analysised particles ~ 2973M
+Analysised particles ~ 2974M
+Analysised particles ~ 2975M
+Analysised particles ~ 2976M
+Analysised particles ~ 2977M
+Analysised particles ~ 2978M
+Analysised particles ~ 2979M
+Analysised particles ~ 2980M
+Analysised particles ~ 2981M
+Analysised particles ~ 2982M
+Analysised particles ~ 2983M
+Analysised particles ~ 2984M
+Analysised particles ~ 2985M
+Analysised particles ~ 2986M
+Analysised particles ~ 2987M
+Analysised particles ~ 2988M
+Analysised particles ~ 2989M
+Analysised particles ~ 2990M
+Analysised particles ~ 2991M
+Analysised particles ~ 2992M
+Analysised particles ~ 2993M
+Analysised particles ~ 2994M
+Analysised particles ~ 2995M
+Analysised particles ~ 2996M
+Analysised particles ~ 2997M
+Analysised particles ~ 2998M
+Analysised particles ~ 2999M
+Analysised particles ~ 3000M
+Analysised particles ~ 3001M
+Analysised particles ~ 3002M
+Analysised particles ~ 3003M
+Analysised particles ~ 3004M
+Analysised particles ~ 3005M
+Analysised particles ~ 3006M
+Analysised particles ~ 3007M
+Analysised particles ~ 3008M
+Analysised particles ~ 3009M
+Analysised particles ~ 3010M
+Analysised particles ~ 3011M
+Analysised particles ~ 3012M
+Analysised particles ~ 3013M
+Analysised particles ~ 3014M
+Analysised particles ~ 3015M
+Analysised particles ~ 3016M
+Analysised particles ~ 3017M
+Analysised particles ~ 3018M
+Analysised particles ~ 3019M
+Analysised particles ~ 3020M
+Analysised particles ~ 3021M
+Analysised particles ~ 3022M
+Analysised particles ~ 3023M
+Analysised particles ~ 3024M
+Analysised particles ~ 3025M
+Analysised particles ~ 3026M
+Analysised particles ~ 3027M
+Analysised particles ~ 3028M
+Analysised particles ~ 3029M
+Analysised particles ~ 3030M
+Analysised particles ~ 3031M
+Analysised particles ~ 3032M
+Analysised particles ~ 3033M
+Analysised particles ~ 3034M
+Analysised particles ~ 3035M
+Analysised particles ~ 3036M
+Analysised particles ~ 3037M
+Analysised particles ~ 3038M
+Analysised particles ~ 3039M
+Analysised particles ~ 3040M
+Analysised particles ~ 3041M
+Analysised particles ~ 3042M
+Analysised particles ~ 3043M
+Analysised particles ~ 3044M
+Analysised particles ~ 3045M
+Analysised particles ~ 3046M
+Analysised particles ~ 3047M
+Analysised particles ~ 3048M
+Analysised particles ~ 3049M
+Analysised particles ~ 3050M
+Analysised particles ~ 3051M
+Analysised particles ~ 3052M
+Analysised particles ~ 3053M
+Analysised particles ~ 3054M
+Analysised particles ~ 3055M
+Analysised particles ~ 3056M
+Analysised particles ~ 3057M
+Analysised particles ~ 3058M
+Analysised particles ~ 3059M
+Analysised particles ~ 3060M
+Analysised particles ~ 3061M
+Analysised particles ~ 3062M
+Analysised particles ~ 3063M
+Analysised particles ~ 3064M
+Analysised particles ~ 3065M
+Analysised particles ~ 3066M
+Analysised particles ~ 3067M
+Analysised particles ~ 3068M
+Analysised particles ~ 3069M
+Analysised particles ~ 3070M
+Analysised particles ~ 3071M
+Analysised particles ~ 3072M
+Analysised particles ~ 3073M
+Analysised particles ~ 3074M
+Analysised particles ~ 3075M
+Analysised particles ~ 3076M
+Analysised particles ~ 3077M
+Analysised particles ~ 3078M
+Analysised particles ~ 3079M
+Analysised particles ~ 3080M
+Analysised particles ~ 3081M
+Analysised particles ~ 3082M
+Analysised particles ~ 3083M
+Analysised particles ~ 3084M
+Analysised particles ~ 3085M
+Analysised particles ~ 3086M
+Analysised particles ~ 3087M
+Analysised particles ~ 3088M
+Analysised particles ~ 3089M
+Analysised particles ~ 3090M
+Analysised particles ~ 3091M
+Analysised particles ~ 3092M
+Analysised particles ~ 3093M
+Analysised particles ~ 3094M
+Analysised particles ~ 3095M
+Analysised particles ~ 3096M
+Analysised particles ~ 3097M
+Analysised particles ~ 3098M
+Analysised particles ~ 3099M
+Analysised particles ~ 3100M
+Analysised particles ~ 3101M
+Analysised particles ~ 3102M
+Analysised particles ~ 3103M
+Analysised particles ~ 3104M
+Analysised particles ~ 3105M
+Analysised particles ~ 3106M
+Analysised particles ~ 3107M
+Analysised particles ~ 3108M
+Analysised particles ~ 3109M
+Analysised particles ~ 3110M
+Analysised particles ~ 3111M
+Analysised particles ~ 3112M
+Analysised particles ~ 3113M
+Analysised particles ~ 3114M
+Analysised particles ~ 3115M
+Analysised particles ~ 3116M
+Analysised particles ~ 3117M
+Analysised particles ~ 3118M
+Analysised particles ~ 3119M
+Analysised particles ~ 3120M
+Analysised particles ~ 3121M
+Analysised particles ~ 3122M
+Analysised particles ~ 3123M
+Analysised particles ~ 3124M
+Analysised particles ~ 3125M
+Analysised particles ~ 3126M
+Analysised particles ~ 3127M
+Analysised particles ~ 3128M
+Analysised particles ~ 3129M
+Analysised particles ~ 3130M
+Analysised particles ~ 3131M
+Analysised particles ~ 3132M
+Analysised particles ~ 3133M
+Analysised particles ~ 3134M
+Analysised particles ~ 3135M
+Analysised particles ~ 3136M
+Analysised particles ~ 3137M
+Analysised particles ~ 3138M
+Analysised particles ~ 3139M
+Analysised particles ~ 3140M
+Analysised particles ~ 3141M
+Analysised particles ~ 3142M
+Analysised particles ~ 3143M
+Analysised particles ~ 3144M
+Analysised particles ~ 3145M
+Analysised particles ~ 3146M
+Analysised particles ~ 3147M
+Analysised particles ~ 3148M
+Analysised particles ~ 3149M
+Analysised particles ~ 3150M
+Analysised particles ~ 3151M
+Analysised particles ~ 3152M
+Analysised particles ~ 3153M
+Analysised particles ~ 3154M
+Analysised particles ~ 3155M
+Analysised particles ~ 3156M
+Analysised particles ~ 3157M
+Analysised particles ~ 3158M
+Analysised particles ~ 3159M
+Analysised particles ~ 3160M
+Analysised particles ~ 3161M
+Analysised particles ~ 3162M
+Analysised particles ~ 3163M
+Analysised particles ~ 3164M
+Analysised particles ~ 3165M
+Analysised particles ~ 3166M
+Analysised particles ~ 3167M
+Analysised particles ~ 3168M
+Analysised particles ~ 3169M
+Analysised particles ~ 3170M
+Analysised particles ~ 3171M
+Analysised particles ~ 3172M
+Analysised particles ~ 3173M
+Analysised particles ~ 3174M
+Analysised particles ~ 3175M
+Analysised particles ~ 3176M
+Analysised particles ~ 3177M
+Analysised particles ~ 3178M
+Analysised particles ~ 3179M
+Analysised particles ~ 3180M
+Analysised particles ~ 3181M
+Analysised particles ~ 3182M
+Analysised particles ~ 3183M
+Analysised particles ~ 3184M
+Analysised particles ~ 3185M
+Analysised particles ~ 3186M
+Analysised particles ~ 3187M
+Analysised particles ~ 3188M
+Analysised particles ~ 3189M
+Analysised particles ~ 3190M
+Analysised particles ~ 3191M
+Analysised particles ~ 3192M
+Analysised particles ~ 3193M
+Analysised particles ~ 3194M
+Analysised particles ~ 3195M
+Analysised particles ~ 3196M
+Analysised particles ~ 3197M
+Analysised particles ~ 3198M
+Analysised particles ~ 3199M
+Analysised particles ~ 3200M
+Analysised particles ~ 3201M
+Analysised particles ~ 3202M
+Analysised particles ~ 3203M
+Analysised particles ~ 3204M
+Analysised particles ~ 3205M
+Analysised particles ~ 3206M
+Analysised particles ~ 3207M
+Analysised particles ~ 3208M
+Analysised particles ~ 3209M
+Analysised particles ~ 3210M
+Analysised particles ~ 3211M
+Analysised particles ~ 3212M
+Analysised particles ~ 3213M
+Analysised particles ~ 3214M
+Analysised particles ~ 3215M
+Analysised particles ~ 3216M
+Analysised particles ~ 3217M
+Analysised particles ~ 3218M
+Analysised particles ~ 3219M
+Analysised particles ~ 3220M
+Analysised particles ~ 3221M
+Analysised particles ~ 3222M
+Analysised particles ~ 3223M
+Analysised particles ~ 3224M
+Analysised particles ~ 3225M
+Analysised particles ~ 3226M
+Analysised particles ~ 3227M
+Analysised particles ~ 3228M
+Analysised particles ~ 3229M
+Analysised particles ~ 3230M
+Analysised particles ~ 3231M
+Analysised particles ~ 3232M
+Analysised particles ~ 3233M
+Analysised particles ~ 3234M
+Analysised particles ~ 3235M
+Analysised particles ~ 3236M
+Analysised particles ~ 3237M
+Analysised particles ~ 3238M
+Analysised particles ~ 3239M
+Analysised particles ~ 3240M
+Analysised particles ~ 3241M
+Analysised particles ~ 3242M
+Analysised particles ~ 3243M
+Analysised particles ~ 3244M
+Analysised particles ~ 3245M
+Analysised particles ~ 3246M
+Analysised particles ~ 3247M
+Analysised particles ~ 3248M
+Analysised particles ~ 3249M
+Analysised particles ~ 3250M
+Analysised particles ~ 3251M
+Analysised particles ~ 3252M
+Analysised particles ~ 3253M
+Analysised particles ~ 3254M
+Analysised particles ~ 3255M
+Analysised particles ~ 3256M
+Analysised particles ~ 3257M
+Analysised particles ~ 3258M
+Analysised particles ~ 3259M
+Analysised particles ~ 3260M
+Analysised particles ~ 3261M
+Analysised particles ~ 3262M
+Analysised particles ~ 3263M
+Analysised particles ~ 3264M
+Analysised particles ~ 3265M
+Analysised particles ~ 3266M
+Analysised particles ~ 3267M
+Analysised particles ~ 3268M
+Analysised particles ~ 3269M
+Analysised particles ~ 3270M
+Analysised particles ~ 3271M
+Analysised particles ~ 3272M
+Analysised particles ~ 3273M
+Analysised particles ~ 3274M
+Analysised particles ~ 3275M
+Analysised particles ~ 3276M
+Analysised particles ~ 3277M
+Analysised particles ~ 3278M
+Analysised particles ~ 3279M
+Analysised particles ~ 3280M
+Analysised particles ~ 3281M
+Analysised particles ~ 3282M
+Analysised particles ~ 3283M
+Analysised particles ~ 3284M
+Analysised particles ~ 3285M
+Analysised particles ~ 3286M
+Analysised particles ~ 3287M
+Analysised particles ~ 3288M
+Analysised particles ~ 3289M
+Analysised particles ~ 3290M
+Analysised particles ~ 3291M
+Analysised particles ~ 3292M
+Analysised particles ~ 3293M
+Analysised particles ~ 3294M
+Analysised particles ~ 3295M
+Analysised particles ~ 3296M
+Analysised particles ~ 3297M
+Analysised particles ~ 3298M
+Analysised particles ~ 3299M
+Analysised particles ~ 3300M
+Analysised particles ~ 3301M
+Analysised particles ~ 3302M
+Analysised particles ~ 3303M
+Analysised particles ~ 3304M
+Analysised particles ~ 3305M
+Analysised particles ~ 3306M
+Analysised particles ~ 3307M
+Analysised particles ~ 3308M
+Analysised particles ~ 3309M
+Analysised particles ~ 3310M
+Analysised particles ~ 3311M
+Analysised particles ~ 3312M
+Analysised particles ~ 3313M
+Analysised particles ~ 3314M
+Analysised particles ~ 3315M
+Analysised particles ~ 3316M
+Analysised particles ~ 3317M
+Analysised particles ~ 3318M
+Analysised particles ~ 3319M
+Analysised particles ~ 3320M
+Analysised particles ~ 3321M
+Analysised particles ~ 3322M
+Analysised particles ~ 3323M
+Analysised particles ~ 3324M
+Analysised particles ~ 3325M
+Analysised particles ~ 3326M
+Analysised particles ~ 3327M
+Analysised particles ~ 3328M
+Analysised particles ~ 3329M
+Analysised particles ~ 3330M
+Analysised particles ~ 3331M
+Analysised particles ~ 3332M
+Analysised particles ~ 3333M
+Analysised particles ~ 3334M
+Analysised particles ~ 3335M
+Analysised particles ~ 3336M
+Analysised particles ~ 3337M
+Analysised particles ~ 3338M
+Analysised particles ~ 3339M
+Analysised particles ~ 3340M
+Analysised particles ~ 3341M
+Analysised particles ~ 3342M
+Analysised particles ~ 3343M
+Analysised particles ~ 3344M
+Analysised particles ~ 3345M
+Analysised particles ~ 3346M
+Analysised particles ~ 3347M
+Analysised particles ~ 3348M
+Analysised particles ~ 3349M
+Analysised particles ~ 3350M
+Analysised particles ~ 3351M
+Analysised particles ~ 3352M
+Analysised particles ~ 3353M
+Analysised particles ~ 3354M
+Analysised particles ~ 3355M
+Analysised particles ~ 3356M
+Analysised particles ~ 3357M
+Analysised particles ~ 3358M
+Analysised particles ~ 3359M
+Analysised particles ~ 3360M
+Analysised particles ~ 3361M
+Analysised particles ~ 3362M
+Analysised particles ~ 3363M
+Analysised particles ~ 3364M
+Analysised particles ~ 3365M
+Analysised particles ~ 3366M
+Analysised particles ~ 3367M
+Analysised particles ~ 3368M
+Analysised particles ~ 3369M
+Analysised particles ~ 3370M
+Analysised particles ~ 3371M
+Analysised particles ~ 3372M
+Analysised particles ~ 3373M
+Analysised particles ~ 3374M
+Analysised particles ~ 3375M
+Analysised particles ~ 3376M
+Analysised particles ~ 3377M
+Analysised particles ~ 3378M
+Analysised particles ~ 3379M
+Analysised particles ~ 3380M
+Analysised particles ~ 3381M
+Analysised particles ~ 3382M
+Analysised particles ~ 3383M
+Analysised particles ~ 3384M
+Analysised particles ~ 3385M
+Analysised particles ~ 3386M
+Analysised particles ~ 3387M
+Analysised particles ~ 3388M
+Analysised particles ~ 3389M
+Analysised particles ~ 3390M
+Analysised particles ~ 3391M
+Analysised particles ~ 3392M
+Analysised particles ~ 3393M
+Analysised particles ~ 3394M
+Analysised particles ~ 3395M
+Analysised particles ~ 3396M
+Analysised particles ~ 3397M
+Analysised particles ~ 3398M
+Analysised particles ~ 3399M
+Analysised particles ~ 3400M
+Analysised particles ~ 3401M
+Analysised particles ~ 3402M
+Analysised particles ~ 3403M
+Analysised particles ~ 3404M
+Analysised particles ~ 3405M
+Analysised particles ~ 3406M
+Analysised particles ~ 3407M
+Analysised particles ~ 3408M
+Analysised particles ~ 3409M
+Analysised particles ~ 3410M
+Analysised particles ~ 3411M
+Analysised particles ~ 3412M
+Analysised particles ~ 3413M
+Analysised particles ~ 3414M
+Analysised particles ~ 3415M
+Analysised particles ~ 3416M
+Analysised particles ~ 3417M
+Analysised particles ~ 3418M
+Analysised particles ~ 3419M
+Analysised particles ~ 3420M
+Analysised particles ~ 3421M
+Analysised particles ~ 3422M
+Analysised particles ~ 3423M
+Analysised particles ~ 3424M
+Analysised particles ~ 3425M
+Analysised particles ~ 3426M
+Analysised particles ~ 3427M
+Analysised particles ~ 3428M
+Analysised particles ~ 3429M
+Analysised particles ~ 3430M
+Analysised particles ~ 3431M
+Analysised particles ~ 3432M
+Analysised particles ~ 3433M
+Analysised particles ~ 3434M
+Analysised particles ~ 3435M
+Analysised particles ~ 3436M
+Analysised particles ~ 3437M
+Analysised particles ~ 3438M
+Analysised particles ~ 3439M
+Analysised particles ~ 3440M
+Analysised particles ~ 3441M
+Analysised particles ~ 3442M
+Analysised particles ~ 3443M
+Analysised particles ~ 3444M
+Analysised particles ~ 3445M
+Analysised particles ~ 3446M
+Analysised particles ~ 3447M
+Analysised particles ~ 3448M
+Analysised particles ~ 3449M
+Analysised particles ~ 3450M
+Analysised particles ~ 3451M
+Analysised particles ~ 3452M
+Analysised particles ~ 3453M
+Analysised particles ~ 3454M
+Analysised particles ~ 3455M
+Analysised particles ~ 3456M
+Analysised particles ~ 3457M
+Analysised particles ~ 3458M
+Analysised particles ~ 3459M
+Analysised particles ~ 3460M
+Analysised particles ~ 3461M
+Analysised particles ~ 3462M
+Analysised particles ~ 3463M
+Analysised particles ~ 3464M
+Analysised particles ~ 3465M
+Analysised particles ~ 3466M
+Analysised particles ~ 3467M
+Analysised particles ~ 3468M
+Analysised particles ~ 3469M
+Analysised particles ~ 3470M
+Analysised particles ~ 3471M
+Analysised particles ~ 3472M
+Analysised particles ~ 3473M
+Analysised particles ~ 3474M
+Analysised particles ~ 3475M
+Analysised particles ~ 3476M
+Analysised particles ~ 3477M
+Analysised particles ~ 3478M
+Analysised particles ~ 3479M
+Analysised particles ~ 3480M
+Analysised particles ~ 3481M
+Analysised particles ~ 3482M
+Analysised particles ~ 3483M
+Analysised particles ~ 3484M
+Analysised particles ~ 3485M
+Analysised particles ~ 3486M
+Analysised particles ~ 3487M
+Analysised particles ~ 3488M
+Analysised particles ~ 3489M
+Analysised particles ~ 3490M
+Analysised particles ~ 3491M
+Analysised particles ~ 3492M
+Analysised particles ~ 3493M
+Analysised particles ~ 3494M
+Analysised particles ~ 3495M
+Analysised particles ~ 3496M
+Analysised particles ~ 3497M
+Analysised particles ~ 3498M
+Analysised particles ~ 3499M
+Analysised particles ~ 3500M
+Analysised particles ~ 3501M
+Analysised particles ~ 3502M
+Analysised particles ~ 3503M
+Analysised particles ~ 3504M
+Analysised particles ~ 3505M
+Analysised particles ~ 3506M
+Analysised particles ~ 3507M
+Analysised particles ~ 3508M
+Analysised particles ~ 3509M
+Analysised particles ~ 3510M
+Analysised particles ~ 3511M
+Analysised particles ~ 3512M
+Analysised particles ~ 3513M
+Analysised particles ~ 3514M
+Analysised particles ~ 3515M
+Analysised particles ~ 3516M
+Analysised particles ~ 3517M
+Analysised particles ~ 3518M
+Analysised particles ~ 3519M
+Analysised particles ~ 3520M
+Analysised particles ~ 3521M
+Analysised particles ~ 3522M
+Analysised particles ~ 3523M
+Analysised particles ~ 3524M
+Analysised particles ~ 3525M
+Analysised particles ~ 3526M
+Analysised particles ~ 3527M
+Analysised particles ~ 3528M
+Analysised particles ~ 3529M
+Analysised particles ~ 3530M
+Analysised particles ~ 3531M
+Analysised particles ~ 3532M
+Analysised particles ~ 3533M
+Analysised particles ~ 3534M
+Analysised particles ~ 3535M
+Analysised particles ~ 3536M
+Analysised particles ~ 3537M
+Analysised particles ~ 3538M
+Analysised particles ~ 3539M
+Analysised particles ~ 3540M
+Analysised particles ~ 3541M
+Analysised particles ~ 3542M
+Analysised particles ~ 3543M
+Analysised particles ~ 3544M
+Analysised particles ~ 3545M
+Analysised particles ~ 3546M
+Analysised particles ~ 3547M
+Analysised particles ~ 3548M
+Analysised particles ~ 3549M
+Analysised particles ~ 3550M
+Analysised particles ~ 3551M
+Analysised particles ~ 3552M
+Analysised particles ~ 3553M
+Analysised particles ~ 3554M
+Analysised particles ~ 3555M
+Analysised particles ~ 3556M
+Analysised particles ~ 3557M
+Analysised particles ~ 3558M
+Analysised particles ~ 3559M
+Analysised particles ~ 3560M
+Analysised particles ~ 3561M
+Analysised particles ~ 3562M
+Analysised particles ~ 3563M
+Analysised particles ~ 3564M
+Analysised particles ~ 3565M
+Analysised particles ~ 3566M
+Analysised particles ~ 3567M
+Analysised particles ~ 3568M
+Analysised particles ~ 3569M
+Analysised particles ~ 3570M
+Analysised particles ~ 3571M
+Analysised particles ~ 3572M
+Analysised particles ~ 3573M
+Analysised particles ~ 3574M
+Analysised particles ~ 3575M
+Analysised particles ~ 3576M
+Analysised particles ~ 3577M
+Analysised particles ~ 3578M
+Analysised particles ~ 3579M
+Analysised particles ~ 3580M
+Analysised particles ~ 3581M
+Analysised particles ~ 3582M
+Analysised particles ~ 3583M
+Analysised particles ~ 3584M
+Analysised particles ~ 3585M
+Analysised particles ~ 3586M
+Analysised particles ~ 3587M
+Analysised particles ~ 3588M
+Analysised particles ~ 3589M
+Analysised particles ~ 3590M
+Analysised particles ~ 3591M
+Analysised particles ~ 3592M
+Analysised particles ~ 3593M
+Analysised particles ~ 3594M
+Analysised particles ~ 3595M
+Analysised particles ~ 3596M
+Analysised particles ~ 3597M
+Analysised particles ~ 3598M
+Analysised particles ~ 3599M
+Analysised particles ~ 3600M
+Analysised particles ~ 3601M
+Analysised particles ~ 3602M
+Analysised particles ~ 3603M
+Analysised particles ~ 3604M
+Analysised particles ~ 3605M
+Analysised particles ~ 3606M
+Analysised particles ~ 3607M
+Analysised particles ~ 3608M
+Analysised particles ~ 3609M
+Analysised particles ~ 3610M
+Analysised particles ~ 3611M
+Analysised particles ~ 3612M
+Analysised particles ~ 3613M
+Analysised particles ~ 3614M
+Analysised particles ~ 3615M
+Analysised particles ~ 3616M
+Analysised particles ~ 3617M
+Analysised particles ~ 3618M
+Analysised particles ~ 3619M
+Analysised particles ~ 3620M
+Analysised particles ~ 3621M
+Analysised particles ~ 3622M
+Analysised particles ~ 3623M
+Analysised particles ~ 3624M
+Analysised particles ~ 3625M
+Analysised particles ~ 3626M
+Analysised particles ~ 3627M
+Analysised particles ~ 3628M
+Analysised particles ~ 3629M
+Analysised particles ~ 3630M
+Analysised particles ~ 3631M
+Analysised particles ~ 3632M
+Analysised particles ~ 3633M
+Analysised particles ~ 3634M
+Analysised particles ~ 3635M
+Analysised particles ~ 3636M
+Analysised particles ~ 3637M
+Analysised particles ~ 3638M
+Analysised particles ~ 3639M
+Analysised particles ~ 3640M
+Analysised particles ~ 3641M
+Analysised particles ~ 3642M
+Analysised particles ~ 3643M
+Analysised particles ~ 3644M
+Analysised particles ~ 3645M
+Analysised particles ~ 3646M
+Analysised particles ~ 3647M
+Analysised particles ~ 3648M
+Analysised particles ~ 3649M
+Analysised particles ~ 3650M
+Analysised particles ~ 3651M
+Analysised particles ~ 3652M
+Analysised particles ~ 3653M
+Analysised particles ~ 3654M
+Analysised particles ~ 3655M
+Analysised particles ~ 3656M
+Analysised particles ~ 3657M
+Analysised particles ~ 3658M
+Analysised particles ~ 3659M
+Analysised particles ~ 3660M
+Analysised particles ~ 3661M
+Analysised particles ~ 3662M
+Analysised particles ~ 3663M
+Analysised particles ~ 3664M
+Analysised particles ~ 3665M
+Analysised particles ~ 3666M
+Analysised particles ~ 3667M
+Analysised particles ~ 3668M
+Analysised particles ~ 3669M
+Analysised particles ~ 3670M
+Analysised particles ~ 3671M
+Analysised particles ~ 3672M
+Analysised particles ~ 3673M
+Analysised particles ~ 3674M
+Analysised particles ~ 3675M
+Analysised particles ~ 3676M
+Analysised particles ~ 3677M
+Analysised particles ~ 3678M
+Analysised particles ~ 3679M
+Analysised particles ~ 3680M
+Analysised particles ~ 3681M
+Analysised particles ~ 3682M
+Analysised particles ~ 3683M
+Analysised particles ~ 3684M
+Analysised particles ~ 3685M
+Analysised particles ~ 3686M
+Analysised particles ~ 3687M
+Analysised particles ~ 3688M
+Analysised particles ~ 3689M
+Analysised particles ~ 3690M
+Analysised particles ~ 3691M
+Analysised particles ~ 3692M
+Analysised particles ~ 3693M
+Analysised particles ~ 3694M
+Analysised particles ~ 3695M
+Analysised particles ~ 3696M
+Analysised particles ~ 3697M
+Analysised particles ~ 3698M
+Analysised particles ~ 3699M
+Analysised particles ~ 3700M
+Analysised particles ~ 3701M
+Analysised particles ~ 3702M
+Analysised particles ~ 3703M
+Analysised particles ~ 3704M
+Analysised particles ~ 3705M
+Analysised particles ~ 3706M
+Analysised particles ~ 3707M
+Analysised particles ~ 3708M
+Analysised particles ~ 3709M
+Analysised particles ~ 3710M
+Analysised particles ~ 3711M
+Analysised particles ~ 3712M
+Analysised particles ~ 3713M
+Analysised particles ~ 3714M
+Analysised particles ~ 3715M
+Analysised particles ~ 3716M
+Analysised particles ~ 3717M
+Analysised particles ~ 3718M
+Analysised particles ~ 3719M
+Analysised particles ~ 3720M
+Analysised particles ~ 3721M
+Analysised particles ~ 3722M
+Analysised particles ~ 3723M
+Analysised particles ~ 3724M
+Analysised particles ~ 3725M
+Analysised particles ~ 3726M
+Analysised particles ~ 3727M
+Analysised particles ~ 3728M
+Analysised particles ~ 3729M
+Analysised particles ~ 3730M
+Analysised particles ~ 3731M
+Analysised particles ~ 3732M
+Analysised particles ~ 3733M
+Analysised particles ~ 3734M
+Analysised particles ~ 3735M
+Analysised particles ~ 3736M
+Analysised particles ~ 3737M
+Analysised particles ~ 3738M
+Analysised particles ~ 3739M
+Analysised particles ~ 3740M
+Analysised particles ~ 3741M
+Analysised particles ~ 3742M
+Analysised particles ~ 3743M
+Analysised particles ~ 3744M
+Analysised particles ~ 3745M
+Analysised particles ~ 3746M
+Analysised particles ~ 3747M
+Analysised particles ~ 3748M
+Analysised particles ~ 3749M
+Analysised particles ~ 3750M
+Analysised particles ~ 3751M
+Analysised particles ~ 3752M
+Analysised particles ~ 3753M
+Analysised particles ~ 3754M
+Analysised particles ~ 3755M
+Analysised particles ~ 3756M
+Analysised particles ~ 3757M
+Analysised particles ~ 3758M
+Analysised particles ~ 3759M
+Analysised particles ~ 3760M
+Analysised particles ~ 3761M
+Analysised particles ~ 3762M
+Analysised particles ~ 3763M
+Analysised particles ~ 3764M
+Analysised particles ~ 3765M
+Analysised particles ~ 3766M
+Analysised particles ~ 3767M
+Analysised particles ~ 3768M
+Analysised particles ~ 3769M
+Analysised particles ~ 3770M
+Analysised particles ~ 3771M
+Analysised particles ~ 3772M
+Analysised particles ~ 3773M
+Analysised particles ~ 3774M
+Analysised particles ~ 3775M
+Analysised particles ~ 3776M
+Analysised particles ~ 3777M
+Analysised particles ~ 3778M
+Analysised particles ~ 3779M
+Analysised particles ~ 3780M
+Analysised particles ~ 3781M
+Analysised particles ~ 3782M
+Analysised particles ~ 3783M
+Analysised particles ~ 3784M
+Analysised particles ~ 3785M
+Analysised particles ~ 3786M
+Analysised particles ~ 3787M
+Analysised particles ~ 3788M
+Analysised particles ~ 3789M
+Analysised particles ~ 3790M
+Analysised particles ~ 3791M
+Analysised particles ~ 3792M
+Analysised particles ~ 3793M
+Analysised particles ~ 3794M
+Analysised particles ~ 3795M
+Analysised particles ~ 3796M
+Analysised particles ~ 3797M
+Analysised particles ~ 3798M
+Analysised particles ~ 3799M
+Analysised particles ~ 3800M
+Analysised particles ~ 3801M
+Analysised particles ~ 3802M
+Analysised particles ~ 3803M
+Analysised particles ~ 3804M
+Analysised particles ~ 3805M
+Analysised particles ~ 3806M
+Analysised particles ~ 3807M
+Analysised particles ~ 3808M
+Analysised particles ~ 3809M
+Analysised particles ~ 3810M
+Analysised particles ~ 3811M
+Analysised particles ~ 3812M
+Analysised particles ~ 3813M
+Analysised particles ~ 3814M
+Analysised particles ~ 3815M
+Analysised particles ~ 3816M
+Analysised particles ~ 3817M
+Analysised particles ~ 3818M
+Analysised particles ~ 3819M
+Analysised particles ~ 3820M
+Analysised particles ~ 3821M
+Analysised particles ~ 3822M
+Analysised particles ~ 3823M
+Analysised particles ~ 3824M
+Analysised particles ~ 3825M
+Analysised particles ~ 3826M
+Analysised particles ~ 3827M
+Analysised particles ~ 3828M
+Analysised particles ~ 3829M
+Analysised particles ~ 3830M
+Analysised particles ~ 3831M
+Analysised particles ~ 3832M
+Analysised particles ~ 3833M
+Analysised particles ~ 3834M
+Analysised particles ~ 3835M
+Analysised particles ~ 3836M
+Analysised particles ~ 3837M
+Analysised particles ~ 3838M
+Analysised particles ~ 3839M
+Analysised particles ~ 3840M
+Analysised particles ~ 3841M
+Analysised particles ~ 3842M
+Analysised particles ~ 3843M
+Analysised particles ~ 3844M
+Analysised particles ~ 3845M
+Analysised particles ~ 3846M
+Analysised particles ~ 3847M
+Analysised particles ~ 3848M
+Analysised particles ~ 3849M
+Analysised particles ~ 3850M
+Analysised particles ~ 3851M
+Analysised particles ~ 3852M
+Analysised particles ~ 3853M
+Analysised particles ~ 3854M
+Analysised particles ~ 3855M
+Analysised particles ~ 3856M
+Analysised particles ~ 3857M
+Analysised particles ~ 3858M
+Analysised particles ~ 3859M
+Analysised particles ~ 3860M
+Analysised particles ~ 3861M
+Analysised particles ~ 3862M
+Analysised particles ~ 3863M
+Analysised particles ~ 3864M
+Analysised particles ~ 3865M
+Analysised particles ~ 3866M
+Analysised particles ~ 3867M
+Analysised particles ~ 3868M
+Analysised particles ~ 3869M
+Analysised particles ~ 3870M
+Analysised particles ~ 3871M
+Analysised particles ~ 3872M
+Analysised particles ~ 3873M
+Analysised particles ~ 3874M
+Analysised particles ~ 3875M
+Analysised particles ~ 3876M
+Analysised particles ~ 3877M
+Analysised particles ~ 3878M
+Analysised particles ~ 3879M
+Analysised particles ~ 3880M
+Analysised particles ~ 3881M
+Analysised particles ~ 3882M
+Analysised particles ~ 3883M
+Analysised particles ~ 3884M
+Analysised particles ~ 3885M
+Analysised particles ~ 3886M
+Analysised particles ~ 3887M
+Analysised particles ~ 3888M
+Analysised particles ~ 3889M
+Analysised particles ~ 3890M
+Analysised particles ~ 3891M
+Analysised particles ~ 3892M
+Analysised particles ~ 3893M
+Analysised particles ~ 3894M
+Analysised particles ~ 3895M
+Analysised particles ~ 3896M
+Analysised particles ~ 3897M
+Analysised particles ~ 3898M
+Analysised particles ~ 3899M
+Analysised particles ~ 3900M
+Analysised particles ~ 3901M
+Analysised particles ~ 3902M
+Analysised particles ~ 3903M
+Analysised particles ~ 3904M
+Analysised particles ~ 3905M
+Analysised particles ~ 3906M
+Analysised particles ~ 3907M
+Analysised particles ~ 3908M
+Analysised particles ~ 3909M
+Analysised particles ~ 3910M
+Analysised particles ~ 3911M
+Analysised particles ~ 3912M
+Analysised particles ~ 3913M
+Analysised particles ~ 3914M
+Analysised particles ~ 3915M
+Analysised particles ~ 3916M
+Analysised particles ~ 3917M
+Analysised particles ~ 3918M
+Analysised particles ~ 3919M
+Analysised particles ~ 3920M
+Analysised particles ~ 3921M
+Analysised particles ~ 3922M
+Analysised particles ~ 3923M
+Analysised particles ~ 3924M
+Analysised particles ~ 3925M
+Analysised particles ~ 3926M
+Analysised particles ~ 3927M
+Analysised particles ~ 3928M
+Analysised particles ~ 3929M
+Analysised particles ~ 3930M
+Analysised particles ~ 3931M
+Analysised particles ~ 3932M
+Analysised particles ~ 3933M
+Analysised particles ~ 3934M
+Analysised particles ~ 3935M
+Analysised particles ~ 3936M
+Analysised particles ~ 3937M
+Analysised particles ~ 3938M
+Analysised particles ~ 3939M
+Analysised particles ~ 3940M
+Analysised particles ~ 3941M
+Analysised particles ~ 3942M
+Analysised particles ~ 3943M
+Analysised particles ~ 3944M
+Analysised particles ~ 3945M
+Analysised particles ~ 3946M
+Analysised particles ~ 3947M
+Analysised particles ~ 3948M
+Analysised particles ~ 3949M
+Analysised particles ~ 3950M
+Analysised particles ~ 3951M
+Analysised particles ~ 3952M
+Analysised particles ~ 3953M
+Analysised particles ~ 3954M
+Analysised particles ~ 3955M
+Analysised particles ~ 3956M
+Analysised particles ~ 3957M
+Analysised particles ~ 3958M
+Analysised particles ~ 3959M
+Analysised particles ~ 3960M
+Analysised particles ~ 3961M
+Analysised particles ~ 3962M
+Analysised particles ~ 3963M
+Analysised particles ~ 3964M
+Analysised particles ~ 3965M
+Analysised particles ~ 3966M
+Analysised particles ~ 3967M
+Analysised particles ~ 3968M
+Analysised particles ~ 3969M
+Analysised particles ~ 3970M
+Analysised particles ~ 3971M
+Analysised particles ~ 3972M
+Analysised particles ~ 3973M
+Analysised particles ~ 3974M
+Analysised particles ~ 3975M
+Analysised particles ~ 3976M
+Analysised particles ~ 3977M
+Analysised particles ~ 3978M
+Analysised particles ~ 3979M
+Analysised particles ~ 3980M
+Analysised particles ~ 3981M
+Analysised particles ~ 3982M
+Analysised particles ~ 3983M
+Analysised particles ~ 3984M
+Analysised particles ~ 3985M
+Analysised particles ~ 3986M
+Analysised particles ~ 3987M
+Analysised particles ~ 3988M
+Analysised particles ~ 3989M
+Analysised particles ~ 3990M
+Analysised particles ~ 3991M
+Analysised particles ~ 3992M
+Analysised particles ~ 3993M
+Analysised particles ~ 3994M
+Analysised particles ~ 3995M
+Analysised particles ~ 3996M
+Analysised particles ~ 3997M
+Analysised particles ~ 3998M
+Analysised particles ~ 3999M
+Analysised particles ~ 4000M
+Analysised particles ~ 4001M
+Analysised particles ~ 4002M
+Analysised particles ~ 4003M
+Analysised particles ~ 4004M
+Analysised particles ~ 4005M
+Analysised particles ~ 4006M
+Analysised particles ~ 4007M
+Analysised particles ~ 4008M
+Analysised particles ~ 4009M
+Analysised particles ~ 4010M
+Analysised particles ~ 4011M
+Analysised particles ~ 4012M
+Analysised particles ~ 4013M
+Analysised particles ~ 4014M
+Analysised particles ~ 4015M
+Analysised particles ~ 4016M
+Analysised particles ~ 4017M
+Analysised particles ~ 4018M
+Analysised particles ~ 4019M
+Analysised particles ~ 4020M
+Analysised particles ~ 4021M
+Analysised particles ~ 4022M
+Analysised particles ~ 4023M
+Analysised particles ~ 4024M
+Analysised particles ~ 4025M
+Analysised particles ~ 4026M
+Analysised particles ~ 4027M
+Analysised particles ~ 4028M
+Analysised particles ~ 4029M
+Analysised particles ~ 4030M
+Analysised particles ~ 4031M
+Analysised particles ~ 4032M
+Analysised particles ~ 4033M
+Analysised particles ~ 4034M
+Analysised particles ~ 4035M
+Analysised particles ~ 4036M
+Analysised particles ~ 4037M
+Analysised particles ~ 4038M
+Analysised particles ~ 4039M
+Analysised particles ~ 4040M
+Analysised particles ~ 4041M
+Analysised particles ~ 4042M
+Analysised particles ~ 4043M
+Analysised particles ~ 4044M
+Analysised particles ~ 4045M
+Analysised particles ~ 4046M
+Analysised particles ~ 4047M
+Analysised particles ~ 4048M
+Analysised particles ~ 4049M
+Analysised particles ~ 4050M
+Analysised particles ~ 4051M
+Analysised particles ~ 4052M
+Analysised particles ~ 4053M
+Analysised particles ~ 4054M
+Analysised particles ~ 4055M
+Analysised particles ~ 4056M
+Analysised particles ~ 4057M
+Analysised particles ~ 4058M
+Analysised particles ~ 4059M
+Analysised particles ~ 4060M
+Analysised particles ~ 4061M
+Analysised particles ~ 4062M
+Analysised particles ~ 4063M
+Analysised particles ~ 4064M
+Analysised particles ~ 4065M
+Analysised particles ~ 4066M
+Analysised particles ~ 4067M
+Analysised particles ~ 4068M
+Analysised particles ~ 4069M
+Analysised particles ~ 4070M
+Analysised particles ~ 4071M
+Analysised particles ~ 4072M
+Analysised particles ~ 4073M
+Analysised particles ~ 4074M
+Analysised particles ~ 4075M
+Analysised particles ~ 4076M
+Analysised particles ~ 4077M
+Analysised particles ~ 4078M
+Analysised particles ~ 4079M
+Analysised particles ~ 4080M
+Analysised particles ~ 4081M
+Analysised particles ~ 4082M
+Analysised particles ~ 4083M
+Analysised particles ~ 4084M
+Analysised particles ~ 4085M
+Analysised particles ~ 4086M
+Analysised particles ~ 4087M
+Analysised particles ~ 4088M
+Analysised particles ~ 4089M
+Analysised particles ~ 4090M
+Analysised particles ~ 4091M
+Analysised particles ~ 4092M
+Analysised particles ~ 4093M
+Analysised particles ~ 4094M
+Analysised particles ~ 4095M
+Analysised particles ~ 4096M
+Analysised particles ~ 4097M
+Analysised particles ~ 4098M
+Analysised particles ~ 4099M
+Analysised particles ~ 4100M
+Analysised particles ~ 4101M
+Analysised particles ~ 4102M
+Analysised particles ~ 4103M
+Analysised particles ~ 4104M
+Analysised particles ~ 4105M
+Analysised particles ~ 4106M
+Analysised particles ~ 4107M
+Analysised particles ~ 4108M
+Analysised particles ~ 4109M
+Analysised particles ~ 4110M
+Analysised particles ~ 4111M
+Analysised particles ~ 4112M
+Analysised particles ~ 4113M
+Analysised particles ~ 4114M
+Analysised particles ~ 4115M
+Analysised particles ~ 4116M
+Analysised particles ~ 4117M
+Analysised particles ~ 4118M
+Analysised particles ~ 4119M
+Analysised particles ~ 4120M
+Analysised particles ~ 4121M
+Analysised particles ~ 4122M
+Analysised particles ~ 4123M
+Analysised particles ~ 4124M
+Analysised particles ~ 4125M
+Analysised particles ~ 4126M
+Analysised particles ~ 4127M
+Analysised particles ~ 4128M
+Analysised particles ~ 4129M
+Analysised particles ~ 4130M
+Analysised particles ~ 4131M
+Analysised particles ~ 4132M
+Analysised particles ~ 4133M
+Analysised particles ~ 4134M
+Analysised particles ~ 4135M
+Analysised particles ~ 4136M
+Analysised particles ~ 4137M
+Analysised particles ~ 4138M
+Analysised particles ~ 4139M
+Analysised particles ~ 4140M
+Analysised particles ~ 4141M
+Analysised particles ~ 4142M
+Analysised particles ~ 4143M
+Analysised particles ~ 4144M
+Analysised particles ~ 4145M
+Analysised particles ~ 4146M
+Analysised particles ~ 4147M
+Analysised particles ~ 4148M
+Analysised particles ~ 4149M
+Analysised particles ~ 4150M
+Analysised particles ~ 4151M
+Analysised particles ~ 4152M
+Analysised particles ~ 4153M
+Analysised particles ~ 4154M
+Analysised particles ~ 4155M
+Analysised particles ~ 4156M
+Analysised particles ~ 4157M
+Analysised particles ~ 4158M
+Analysised particles ~ 4159M
+Analysised particles ~ 4160M
+Analysised particles ~ 4161M
+Analysised particles ~ 4162M
+Analysised particles ~ 4163M
+Analysised particles ~ 4164M
+Analysised particles ~ 4165M
+Analysised particles ~ 4166M
+Analysised particles ~ 4167M
+Analysised particles ~ 4168M
+Analysised particles ~ 4169M
+Analysised particles ~ 4170M
+Analysised particles ~ 4171M
+Analysised particles ~ 4172M
+Analysised particles ~ 4173M
+Analysised particles ~ 4174M
+Analysised particles ~ 4175M
+Analysised particles ~ 4176M
+Analysised particles ~ 4177M
+Analysised particles ~ 4178M
+Analysised particles ~ 4179M
+Analysised particles ~ 4180M
+Analysised particles ~ 4181M
+Analysised particles ~ 4182M
+Analysised particles ~ 4183M
+Analysised particles ~ 4184M
+Analysised particles ~ 4185M
+Analysised particles ~ 4186M
+Analysised particles ~ 4187M
+Analysised particles ~ 4188M
+Analysised particles ~ 4189M
+Analysised particles ~ 4190M
+Analysised particles ~ 4191M
+Analysised particles ~ 4192M
+Analysised particles ~ 4193M
+Analysised particles ~ 4194M
+Analysised particles ~ 4195M
+Analysised particles ~ 4196M
+Analysised particles ~ 4197M
+Analysised particles ~ 4198M
+Analysised particles ~ 4199M
+Analysised particles ~ 4200M
+Analysised particles ~ 4201M
+Analysised particles ~ 4202M
+Analysised particles ~ 4203M
+Analysised particles ~ 4204M
+Analysised particles ~ 4205M
+Analysised particles ~ 4206M
+Analysised particles ~ 4207M
+Analysised particles ~ 4208M
+Analysised particles ~ 4209M
+Analysised particles ~ 4210M
+Analysised particles ~ 4211M
+Analysised particles ~ 4212M
+Analysised particles ~ 4213M
+Analysised particles ~ 4214M
+Analysised particles ~ 4215M
+Analysised particles ~ 4216M
+Analysised particles ~ 4217M
+Analysised particles ~ 4218M
+Analysised particles ~ 4219M
+Analysised particles ~ 4220M
+Analysised particles ~ 4221M
+Analysised particles ~ 4222M
+Analysised particles ~ 4223M
+Analysised particles ~ 4224M
+Analysised particles ~ 4225M
+Analysised particles ~ 4226M
+Analysised particles ~ 4227M
+Analysised particles ~ 4228M
+Analysised particles ~ 4229M
+Analysised particles ~ 4230M
+Analysised particles ~ 4231M
+Analysised particles ~ 4232M
+Analysised particles ~ 4233M
+Analysised particles ~ 4234M
+Analysised particles ~ 4235M
+Analysised particles ~ 4236M
+Analysised particles ~ 4237M
+Analysised particles ~ 4238M
+Analysised particles ~ 4239M
+Analysised particles ~ 4240M
+Analysised particles ~ 4241M
+Analysised particles ~ 4242M
+Analysised particles ~ 4243M
+Analysised particles ~ 4244M
+Analysised particles ~ 4245M
+Analysised particles ~ 4246M
+Analysised particles ~ 4247M
+Analysised particles ~ 4248M
+Analysised particles ~ 4249M
+Analysised particles ~ 4250M
+Analysised particles ~ 4251M
+Analysised particles ~ 4252M
+Analysised particles ~ 4253M
+Analysised particles ~ 4254M
+Analysised particles ~ 4255M
+Analysised particles ~ 4256M
+Analysised particles ~ 4257M
+Analysised particles ~ 4258M
+Analysised particles ~ 4259M
+Analysised particles ~ 4260M
+Analysised particles ~ 4261M
+Analysised particles ~ 4262M
+Analysised particles ~ 4263M
+Analysised particles ~ 4264M
+Analysised particles ~ 4265M
+Analysised particles ~ 4266M
+Analysised particles ~ 4267M
+Analysised particles ~ 4268M
+Analysised particles ~ 4269M
+Analysised particles ~ 4270M
+Analysised particles ~ 4271M
+Analysised particles ~ 4272M
+Analysised particles ~ 4273M
+Analysised particles ~ 4274M
+Analysised particles ~ 4275M
 Number of particle: 423622261
 Analysised particles ~ 0M
 Analysised particles ~ 1M
@@ -3075,13 +4713,13 @@ Warning in <TH1D::Sumw2>: Sum of squares of weights structure already created
 Warning in <TH1D::Sumw2>: Sum of squares of weights structure already created
 Warning in <TH1D::Sumw2>: Sum of squares of weights structure already created
 Collection name='TList', class='TList', size=12
- TH1.Print Name  = hEvent, Entries= 1, Total sum= 6.00006e+08
- TH1.Print Name  = hJEvent, Entries= 1, Total sum= 1.61884e+06
- TH1.Print Name  = hFwdTrk, Entries= 600006000, Total sum= 6.00006e+08
- TH1.Print Name  = hJFwdTrk, Entries= 1618839, Total sum= 1.61884e+06
- TH1.Print Name  = hTrkEta, Entries= -2147483648, Total sum= 54.3291
- TH1.Print Name  = hdNfwddEta, Entries= 600008000, Total sum= 1
- TH1.Print Name  = hdNmiddEta, Entries= 600008000, Total sum= 1
+ TH1.Print Name  = hEvent, Entries= 1, Total sum= 9.8671e+08
+ TH1.Print Name  = hJEvent, Entries= 1, Total sum= 2.66168e+06
+ TH1.Print Name  = hFwdTrk, Entries= 986709867, Total sum= 9.8671e+08
+ TH1.Print Name  = hJFwdTrk, Entries= 2661675, Total sum= 2.66168e+06
+ TH1.Print Name  = hTrkEta, Entries= -2147483648, Total sum= 54.3283
+ TH1.Print Name  = hdNfwddEta, Entries= 986711867, Total sum= 1
+ TH1.Print Name  = hdNmiddEta, Entries= 986711867, Total sum= 1
  TH1.Print Name  = hevent, Entries= 1, Total sum= 1.00001e+08
  TH1.Print Name  = hfwdtrk, Entries= 100001000, Total sum= 1.00001e+08
  TH1.Print Name  = htrketa, Entries= -2147483648, Total sum= 54.3268
@@ -3089,712 +4727,712 @@ Collection name='TList', class='TList', size=12
  TH1.Print Name  = hdnmiddeta, Entries= 100003000, Total sum= 1
 Collection name='TList', class='TList', size=78
  TH1.Print Name  = Integral_Kshort_In, Entries= 29044241, Total sum= 4.48527
- TH1.Print Name  = Integral_Kshort_EtaIn, Entries= 175777807, Total sum= 4.54637
- TH1.Print Name  = Integral_Kshort_JC, Entries= 214161, Total sum= 1.17378
- TH1.Print Name  = Integral_Kshort_PC, Entries= 170068, Total sum= 0.853989
+ TH1.Print Name  = Integral_Kshort_EtaIn, Entries= 288121872, Total sum= 4.52238
+ TH1.Print Name  = Integral_Kshort_JC, Entries= 352434, Total sum= 1.17491
+ TH1.Print Name  = Integral_Kshort_PC, Entries= 278475, Total sum= 0.851421
  TH1.Print Name  = integral_Kshort_In, Entries= 31848646, Total sum= 1.37831
- TH1.Print Name  = integral_Kshort_EtaIn, Entries= 192714886, Total sum= 1.3955
- TH1.Print Name  = integral_Kshort_JC, Entries= 232138, Total sum= 0.40632
- TH1.Print Name  = integral_Kshort_PC, Entries= 182858, Total sum= 0.28389
+ TH1.Print Name  = integral_Kshort_EtaIn, Entries= 315899341, Total sum= 1.38888
+ TH1.Print Name  = integral_Kshort_JC, Entries= 381667, Total sum= 0.406474
+ TH1.Print Name  = integral_Kshort_PC, Entries= 299448, Total sum= 0.282971
  TH1.Print Name  = Kshort_In, Entries= 32732154, Total sum= 0.327317
- TH1.Print Name  = Kshort_EtaIn, Entries= 198069911, Total sum= 0.330112
- TH1.Print Name  = Kshort_JC, Entries= 237655, Total sum= 0.146668
- TH1.Print Name  = Kshort_dJP, Entries= 237655, Total sum= 0.146806
- TH1.Print Name  = Kshort_PC, Entries= 186805, Total sum= 0.115389
+ TH1.Print Name  = Kshort_EtaIn, Entries= 324675164, Total sum= 0.329047
+ TH1.Print Name  = Kshort_JC, Entries= 390851, Total sum= 0.146705
+ TH1.Print Name  = Kshort_dJP, Entries= 390851, Total sum= 0.146844
+ TH1.Print Name  = Kshort_PC, Entries= 305869, Total sum= 0.114912
  TH1.Print Name  = Kshort_In_010, Entries= 7885140, Total sum= 0.757991
- TH1.Print Name  = Kshort_EtaIn_010, Entries= 48123190, Total sum= 0.77085
- TH1.Print Name  = Kshort_JC_010, Entries= 111785, Total sum= 0.151266
- TH1.Print Name  = Kshort_PC_010, Entries= 109829, Total sum= 0.148726
- TH1.Print Name  = Kshort_dJP_010, Entries= 111785, Total sum= 0.151382
+ TH1.Print Name  = Kshort_EtaIn_010, Entries= 78630613, Total sum= 0.765888
+ TH1.Print Name  = Kshort_JC_010, Entries= 183700, Total sum= 0.151161
+ TH1.Print Name  = Kshort_PC_010, Entries= 179756, Total sum= 0.148025
+ TH1.Print Name  = Kshort_dJP_010, Entries= 183700, Total sum= 0.151279
  TH1.Print Name  = Kshort_In_1040, Entries= 13504499, Total sum= 0.44674
- TH1.Print Name  = Kshort_EtaIn_1040, Entries= 81777909, Total sum= 0.450896
- TH1.Print Name  = Kshort_JC_1040, Entries= 93281, Total sum= 0.133991
- TH1.Print Name  = Kshort_PC_1040, Entries= 63060, Total sum= 0.0906618
- TH1.Print Name  = Kshort_dJP_1040, Entries= 93281, Total sum= 0.134115
+ TH1.Print Name  = Kshort_EtaIn_1040, Entries= 133995658, Total sum= 0.449287
+ TH1.Print Name  = Kshort_JC_1040, Entries= 153325, Total sum= 0.134012
+ TH1.Print Name  = Kshort_PC_1040, Entries= 103239, Total sum= 0.0903269
+ TH1.Print Name  = Kshort_dJP_1040, Entries= 153325, Total sum= 0.134151
  TH1.Print Name  = Kshort_In_40100, Entries= 10459007, Total sum= 0.173573
- TH1.Print Name  = Kshort_EtaIn_40100, Entries= 62813787, Total sum= 0.173743
- TH1.Print Name  = Kshort_JC_40100, Entries= 27072, Total sum= 0.12064
- TH1.Print Name  = Kshort_PC_40100, Entries= 9969, Total sum= 0.0444875
- TH1.Print Name  = Kshort_dJP_40100, Entries= 27072, Total sum= 0.120823
+ TH1.Print Name  = Kshort_EtaIn_40100, Entries= 103273070, Total sum= 0.173696
+ TH1.Print Name  = Kshort_JC_40100, Entries= 44642, Total sum= 0.120898
+ TH1.Print Name  = Kshort_PC_40100, Entries= 16453, Total sum= 0.0446086
+ TH1.Print Name  = Kshort_dJP_40100, Entries= 44642, Total sum= 0.121044
  TH1.Print Name  = Kshort_In_0.000.95, Entries= 925476, Total sum= 0.935196
- TH1.Print Name  = Kshort_EtaIn_0.000.95, Entries= 5659784, Total sum= 0.953632
- TH1.Print Name  = Kshort_JC_0.000.95, Entries= 20310, Total sum= 0.158714
- TH1.Print Name  = Kshort_PC_0.000.95, Entries= 22419, Total sum= 0.175334
- TH1.Print Name  = Kshort_dJP_0.000.95, Entries= 20310, Total sum= 0.158847
+ TH1.Print Name  = Kshort_EtaIn_0.000.95, Entries= 9233289, Total sum= 0.94591
+ TH1.Print Name  = Kshort_JC_0.000.95, Entries= 33161, Total sum= 0.157612
+ TH1.Print Name  = Kshort_PC_0.000.95, Entries= 36813, Total sum= 0.17513
+ TH1.Print Name  = Kshort_dJP_0.000.95, Entries= 33161, Total sum= 0.157765
  TH1.Print Name  = Kshort_In_0.954.70, Entries= 2980125, Total sum= 0.766124
- TH1.Print Name  = Kshort_EtaIn_0.954.70, Entries= 18200073, Total sum= 0.779855
- TH1.Print Name  = Kshort_JC_0.954.70, Entries= 45158, Total sum= 0.141904
- TH1.Print Name  = Kshort_PC_0.954.70, Entries= 45505, Total sum= 0.143064
- TH1.Print Name  = Kshort_dJP_0.954.70, Entries= 45158, Total sum= 0.141976
+ TH1.Print Name  = Kshort_EtaIn_0.954.70, Entries= 29724775, Total sum= 0.774596
+ TH1.Print Name  = Kshort_JC_0.954.70, Entries= 74253, Total sum= 0.141918
+ TH1.Print Name  = Kshort_PC_0.954.70, Entries= 74658, Total sum= 0.142771
+ TH1.Print Name  = Kshort_dJP_0.954.70, Entries= 74253, Total sum= 0.141998
  TH1.Print Name  = Kshort_In_4.709.50, Entries= 2956508, Total sum= 0.608543
- TH1.Print Name  = Kshort_EtaIn_4.709.50, Entries= 18024176, Total sum= 0.618218
- TH1.Print Name  = Kshort_JC_4.709.50, Entries= 34318, Total sum= 0.125292
- TH1.Print Name  = Kshort_PC_4.709.50, Entries= 31328, Total sum= 0.114476
- TH1.Print Name  = Kshort_dJP_4.709.50, Entries= 34318, Total sum= 0.125409
+ TH1.Print Name  = Kshort_EtaIn_4.709.50, Entries= 29470661, Total sum= 0.614614
+ TH1.Print Name  = Kshort_JC_4.709.50, Entries= 56730, Total sum= 0.125924
+ TH1.Print Name  = Kshort_PC_4.709.50, Entries= 50968, Total sum= 0.113226
+ TH1.Print Name  = Kshort_dJP_4.709.50, Entries= 56730, Total sum= 0.126033
  TH1.Print Name  = Kshort_In_9.5014.00, Entries= 2224797, Total sum= 0.485957
- TH1.Print Name  = Kshort_EtaIn_9.5014.00, Entries= 13555122, Total sum= 0.493257
- TH1.Print Name  = Kshort_JC_9.5014.00, Entries= 21644, Total sum= 0.110025
- TH1.Print Name  = Kshort_PC_9.5014.00, Entries= 17586, Total sum= 0.0894666
- TH1.Print Name  = Kshort_dJP_9.5014.00, Entries= 21644, Total sum= 0.110111
+ TH1.Print Name  = Kshort_EtaIn_9.5014.00, Entries= 22163413, Total sum= 0.490511
+ TH1.Print Name  = Kshort_JC_9.5014.00, Entries= 35588, Total sum= 0.110161
+ TH1.Print Name  = Kshort_PC_9.5014.00, Entries= 28669, Total sum= 0.0888163
+ TH1.Print Name  = Kshort_dJP_9.5014.00, Entries= 35588, Total sum= 0.110251
  TH1.Print Name  = Kshort_In_14.0019.00, Entries= 2489812, Total sum= 0.43426
- TH1.Print Name  = Kshort_EtaIn_14.0019.00, Entries= 15115124, Total sum= 0.439132
- TH1.Print Name  = Kshort_JC_14.0019.00, Entries= 20707, Total sum= 0.108248
- TH1.Print Name  = Kshort_PC_14.0019.00, Entries= 15590, Total sum= 0.0815577
- TH1.Print Name  = Kshort_dJP_14.0019.00, Entries= 20707, Total sum= 0.108327
+ TH1.Print Name  = Kshort_EtaIn_14.0019.00, Entries= 24746228, Total sum= 0.437181
+ TH1.Print Name  = Kshort_JC_14.0019.00, Entries= 34193, Total sum= 0.10869
+ TH1.Print Name  = Kshort_PC_14.0019.00, Entries= 25532, Total sum= 0.0812278
+ TH1.Print Name  = Kshort_dJP_14.0019.00, Entries= 34193, Total sum= 0.108782
  TH1.Print Name  = Kshort_In_19.0028.00, Entries= 3576043, Total sum= 0.396047
- TH1.Print Name  = Kshort_EtaIn_19.0028.00, Entries= 21652004, Total sum= 0.399765
- TH1.Print Name  = Kshort_JC_19.0028.00, Entries= 24479, Total sum= 0.113822
- TH1.Print Name  = Kshort_PC_19.0028.00, Entries= 16067, Total sum= 0.0748042
- TH1.Print Name  = Kshort_dJP_19.0028.00, Entries= 24479, Total sum= 0.113976
+ TH1.Print Name  = Kshort_EtaIn_19.0028.00, Entries= 35472541, Total sum= 0.398278
+ TH1.Print Name  = Kshort_JC_19.0028.00, Entries= 40175, Total sum= 0.113515
+ TH1.Print Name  = Kshort_PC_19.0028.00, Entries= 26237, Total sum= 0.0742426
+ TH1.Print Name  = Kshort_dJP_19.0028.00, Entries= 40175, Total sum= 0.113687
  TH1.Print Name  = Kshort_In_28.0038.00, Entries= 3241036, Total sum= 0.315068
- TH1.Print Name  = Kshort_EtaIn_28.0038.00, Entries= 19574813, Total sum= 0.31713
- TH1.Print Name  = Kshort_JC_28.0038.00, Entries= 17331, Total sum= 0.106154
- TH1.Print Name  = Kshort_PC_28.0038.00, Entries= 9586, Total sum= 0.0587496
- TH1.Print Name  = Kshort_dJP_28.0038.00, Entries= 17331, Total sum= 0.106227
+ TH1.Print Name  = Kshort_EtaIn_28.0038.00, Entries= 32111209, Total sum= 0.31636
+ TH1.Print Name  = Kshort_JC_28.0038.00, Entries= 28557, Total sum= 0.106472
+ TH1.Print Name  = Kshort_PC_28.0038.00, Entries= 15891, Total sum= 0.0592941
+ TH1.Print Name  = Kshort_dJP_28.0038.00, Entries= 28557, Total sum= 0.106562
  TH1.Print Name  = Kshort_In_38.0048.00, Entries= 2786863, Total sum= 0.243742
- TH1.Print Name  = Kshort_EtaIn_38.0048.00, Entries= 16794871, Total sum= 0.244761
- TH1.Print Name  = Kshort_JC_38.0048.00, Entries= 11835, Total sum= 0.101016
- TH1.Print Name  = Kshort_PC_38.0048.00, Entries= 5615, Total sum= 0.0479951
- TH1.Print Name  = Kshort_dJP_38.0048.00, Entries= 11835, Total sum= 0.101162
+ TH1.Print Name  = Kshort_EtaIn_38.0048.00, Entries= 27574100, Total sum= 0.24436
+ TH1.Print Name  = Kshort_JC_38.0048.00, Entries= 19569, Total sum= 0.101772
+ TH1.Print Name  = Kshort_PC_38.0048.00, Entries= 9206, Total sum= 0.0479314
+ TH1.Print Name  = Kshort_dJP_38.0048.00, Entries= 19569, Total sum= 0.101887
  TH1.Print Name  = Kshort_In_48.0068.00, Entries= 4049105, Total sum= 0.184406
- TH1.Print Name  = Kshort_EtaIn_48.0068.00, Entries= 24357098, Total sum= 0.184877
- TH1.Print Name  = Kshort_JC_48.0068.00, Entries= 12745, Total sum= 0.107497
- TH1.Print Name  = Kshort_PC_48.0068.00, Entries= 4796, Total sum= 0.0405195
- TH1.Print Name  = Kshort_dJP_48.0068.00, Entries= 12745, Total sum= 0.1077
+ TH1.Print Name  = Kshort_EtaIn_48.0068.00, Entries= 40024859, Total sum= 0.18474
+ TH1.Print Name  = Kshort_JC_48.0068.00, Entries= 20917, Total sum= 0.107231
+ TH1.Print Name  = Kshort_PC_48.0068.00, Entries= 7891, Total sum= 0.0405025
+ TH1.Print Name  = Kshort_dJP_48.0068.00, Entries= 20917, Total sum= 0.107375
  TH1.Print Name  = Kshort_In_68.00100.00, Entries= 3814476, Total sum= 0.115913
- TH1.Print Name  = Kshort_EtaIn_68.00100.00, Entries= 22844742, Total sum= 0.115714
- TH1.Print Name  = Kshort_JC_68.00100.00, Entries= 5634, Total sum= 0.0999378
- TH1.Print Name  = Kshort_PC_68.00100.00, Entries= 1576, Total sum= 0.0279854
- TH1.Print Name  = Kshort_dJP_68.00100.00, Entries= 5634, Total sum= 0.100044
+ TH1.Print Name  = Kshort_EtaIn_68.00100.00, Entries= 37600797, Total sum= 0.115807
+ TH1.Print Name  = Kshort_JC_68.00100.00, Entries= 9291, Total sum= 0.10046
+ TH1.Print Name  = Kshort_PC_68.00100.00, Entries= 2610, Total sum= 0.0282513
+ TH1.Print Name  = Kshort_dJP_68.00100.00, Entries= 9291, Total sum= 0.100568
 Collection name='TList', class='TList', size=78
  TH1.Print Name  = Integral_Lambda_In, Entries= 9219841, Total sum= 1.54821
- TH1.Print Name  = Integral_Lambda_EtaIn, Entries= 53720712, Total sum= 1.51817
- TH1.Print Name  = Integral_Lambda_JC, Entries= 57962, Total sum= 0.311085
- TH1.Print Name  = Integral_Lambda_PC, Entries= 48276, Total sum= 0.237445
+ TH1.Print Name  = Integral_Lambda_EtaIn, Entries= 89403245, Total sum= 1.53037
+ TH1.Print Name  = Integral_Lambda_JC, Entries= 95385, Total sum= 0.310785
+ TH1.Print Name  = Integral_Lambda_PC, Entries= 79434, Total sum= 0.237955
  TH1.Print Name  = integral_Lambda_In, Entries= 10086741, Total sum= 0.467953
- TH1.Print Name  = integral_Lambda_EtaIn, Entries= 58757709, Total sum= 0.457831
- TH1.Print Name  = integral_Lambda_JC, Entries= 62617, Total sum= 0.10651
- TH1.Print Name  = integral_Lambda_PC, Entries= 51864, Total sum= 0.0779259
+ TH1.Print Name  = integral_Lambda_EtaIn, Entries= 97799446, Total sum= 0.461939
+ TH1.Print Name  = integral_Lambda_JC, Entries= 102952, Total sum= 0.106312
+ TH1.Print Name  = integral_Lambda_PC, Entries= 85275, Total sum= 0.078014
  TH1.Print Name  = Lambda_In, Entries= 10365142, Total sum= 0.10365
- TH1.Print Name  = Lambda_EtaIn, Entries= 60376693, Total sum= 0.100626
- TH1.Print Name  = Lambda_JC, Entries= 64137, Total sum= 0.0395679
- TH1.Print Name  = Lambda_dJP, Entries= 64137, Total sum= 0.0396191
- TH1.Print Name  = Lambda_PC, Entries= 52878, Total sum= 0.0326642
+ TH1.Print Name  = Lambda_EtaIn, Entries= 100492477, Total sum= 0.101846
+ TH1.Print Name  = Lambda_JC, Entries= 105476, Total sum= 0.0395781
+ TH1.Print Name  = Lambda_dJP, Entries= 105476, Total sum= 0.0396277
+ TH1.Print Name  = Lambda_PC, Entries= 87009, Total sum= 0.0326892
  TH1.Print Name  = Lambda_In_010, Entries= 2865846, Total sum= 0.275491
- TH1.Print Name  = Lambda_EtaIn_010, Entries= 16957625, Total sum= 0.271632
- TH1.Print Name  = Lambda_JC_010, Entries= 32268, Total sum= 0.0436602
- TH1.Print Name  = Lambda_PC_010, Entries= 33572, Total sum= 0.045464
- TH1.Print Name  = Lambda_dJP_010, Entries= 32268, Total sum= 0.0436981
+ TH1.Print Name  = Lambda_EtaIn_010, Entries= 28050375, Total sum= 0.27322
+ TH1.Print Name  = Lambda_JC_010, Entries= 53282, Total sum= 0.0438355
+ TH1.Print Name  = Lambda_PC_010, Entries= 55095, Total sum= 0.0453714
+ TH1.Print Name  = Lambda_dJP_010, Entries= 53282, Total sum= 0.0438783
  TH1.Print Name  = Lambda_In_1040, Entries= 4405442, Total sum= 0.145736
- TH1.Print Name  = Lambda_EtaIn_1040, Entries= 25686513, Total sum= 0.141627
- TH1.Print Name  = Lambda_JC_1040, Entries= 24010, Total sum= 0.0344716
- TH1.Print Name  = Lambda_PC_1040, Entries= 16255, Total sum= 0.0233707
- TH1.Print Name  = Lambda_dJP_1040, Entries= 24010, Total sum= 0.0345204
+ TH1.Print Name  = Lambda_EtaIn_1040, Entries= 42729696, Total sum= 0.143273
+ TH1.Print Name  = Lambda_JC_1040, Entries= 39338, Total sum= 0.0343741
+ TH1.Print Name  = Lambda_PC_1040, Entries= 26784, Total sum= 0.0234337
+ TH1.Print Name  = Lambda_dJP_1040, Entries= 39338, Total sum= 0.0344187
  TH1.Print Name  = Lambda_In_40100, Entries= 2815453, Total sum= 0.046724
- TH1.Print Name  = Lambda_EtaIn_40100, Entries= 16113571, Total sum= 0.04457
- TH1.Print Name  = Lambda_JC_40100, Entries= 6339, Total sum= 0.0282019
- TH1.Print Name  = Lambda_PC_40100, Entries= 2037, Total sum= 0.00909119
- TH1.Print Name  = Lambda_dJP_40100, Entries= 6339, Total sum= 0.0282912
+ TH1.Print Name  = Lambda_EtaIn_40100, Entries= 27019375, Total sum= 0.0454441
+ TH1.Print Name  = Lambda_JC_40100, Entries= 10332, Total sum= 0.0279414
+ TH1.Print Name  = Lambda_PC_40100, Entries= 3396, Total sum= 0.00920804
+ TH1.Print Name  = Lambda_dJP_40100, Entries= 10332, Total sum= 0.0280146
  TH1.Print Name  = Lambda_In_0.000.95, Entries= 346745, Total sum= 0.350385
- TH1.Print Name  = Lambda_EtaIn_0.000.95, Entries= 2064670, Total sum= 0.347883
- TH1.Print Name  = Lambda_JC_0.000.95, Entries= 6061, Total sum= 0.0473803
- TH1.Print Name  = Lambda_PC_0.000.95, Entries= 7272, Total sum= 0.0568752
- TH1.Print Name  = Lambda_dJP_0.000.95, Entries= 6061, Total sum= 0.0474038
+ TH1.Print Name  = Lambda_EtaIn_0.000.95, Entries= 3406285, Total sum= 0.34896
+ TH1.Print Name  = Lambda_JC_0.000.95, Entries= 9929, Total sum= 0.047209
+ TH1.Print Name  = Lambda_PC_0.000.95, Entries= 11970, Total sum= 0.0569477
+ TH1.Print Name  = Lambda_dJP_0.000.95, Entries= 9929, Total sum= 0.0472375
  TH1.Print Name  = Lambda_In_0.954.70, Entries= 1095164, Total sum= 0.281542
- TH1.Print Name  = Lambda_EtaIn_0.954.70, Entries= 6486380, Total sum= 0.277935
- TH1.Print Name  = Lambda_JC_0.954.70, Entries= 13117, Total sum= 0.0411989
- TH1.Print Name  = Lambda_PC_0.954.70, Entries= 13975, Total sum= 0.0439373
- TH1.Print Name  = Lambda_dJP_0.954.70, Entries= 13117, Total sum= 0.0412397
+ TH1.Print Name  = Lambda_EtaIn_0.954.70, Entries= 10721249, Total sum= 0.279384
+ TH1.Print Name  = Lambda_JC_0.954.70, Entries= 21747, Total sum= 0.041544
+ TH1.Print Name  = Lambda_PC_0.954.70, Entries= 22983, Total sum= 0.0439516
+ TH1.Print Name  = Lambda_dJP_0.954.70, Entries= 21747, Total sum= 0.0415879
  TH1.Print Name  = Lambda_In_4.709.50, Entries= 1059454, Total sum= 0.218069
- TH1.Print Name  = Lambda_EtaIn_4.709.50, Entries= 6251759, Total sum= 0.214432
- TH1.Print Name  = Lambda_JC_4.709.50, Entries= 9701, Total sum= 0.0354105
- TH1.Print Name  = Lambda_PC_4.709.50, Entries= 9139, Total sum= 0.0333969
- TH1.Print Name  = Lambda_dJP_4.709.50, Entries= 9701, Total sum= 0.0354507
+ TH1.Print Name  = Lambda_EtaIn_4.709.50, Entries= 10352908, Total sum= 0.215911
+ TH1.Print Name  = Lambda_JC_4.709.50, Entries= 16066, Total sum= 0.0356506
+ TH1.Print Name  = Lambda_PC_4.709.50, Entries= 14934, Total sum= 0.0331779
+ TH1.Print Name  = Lambda_dJP_4.709.50, Entries= 16066, Total sum= 0.0356928
  TH1.Print Name  = Lambda_In_9.5014.00, Entries= 777627, Total sum= 0.169855
- TH1.Print Name  = Lambda_EtaIn_9.5014.00, Entries= 4578493, Total sum= 0.166607
- TH1.Print Name  = Lambda_JC_9.5014.00, Entries= 5927, Total sum= 0.0300969
- TH1.Print Name  = Lambda_PC_9.5014.00, Entries= 4992, Total sum= 0.0253962
- TH1.Print Name  = Lambda_dJP_9.5014.00, Entries= 5927, Total sum= 0.0301529
+ TH1.Print Name  = Lambda_EtaIn_9.5014.00, Entries= 7591822, Total sum= 0.168019
+ TH1.Print Name  = Lambda_JC_9.5014.00, Entries= 9853, Total sum= 0.0304718
+ TH1.Print Name  = Lambda_PC_9.5014.00, Entries= 8155, Total sum= 0.0252641
+ TH1.Print Name  = Lambda_dJP_9.5014.00, Entries= 9853, Total sum= 0.0305245
  TH1.Print Name  = Lambda_In_14.0019.00, Entries= 847803, Total sum= 0.147869
- TH1.Print Name  = Lambda_EtaIn_14.0019.00, Entries= 4965855, Total sum= 0.144271
- TH1.Print Name  = Lambda_JC_14.0019.00, Entries= 5431, Total sum= 0.0283856
- TH1.Print Name  = Lambda_PC_14.0019.00, Entries= 4040, Total sum= 0.0211349
- TH1.Print Name  = Lambda_dJP_14.0019.00, Entries= 5431, Total sum= 0.0284118
+ TH1.Print Name  = Lambda_EtaIn_14.0019.00, Entries= 8246549, Total sum= 0.145688
+ TH1.Print Name  = Lambda_JC_14.0019.00, Entries= 8906, Total sum= 0.028305
+ TH1.Print Name  = Lambda_PC_14.0019.00, Entries= 6705, Total sum= 0.0213314
+ TH1.Print Name  = Lambda_dJP_14.0019.00, Entries= 8906, Total sum= 0.0283336
  TH1.Print Name  = Lambda_In_19.0028.00, Entries= 1171540, Total sum= 0.129748
- TH1.Print Name  = Lambda_EtaIn_19.0028.00, Entries= 6831392, Total sum= 0.126129
- TH1.Print Name  = Lambda_JC_19.0028.00, Entries= 6286, Total sum= 0.0292168
- TH1.Print Name  = Lambda_PC_19.0028.00, Entries= 4124, Total sum= 0.0192016
- TH1.Print Name  = Lambda_dJP_19.0028.00, Entries= 6286, Total sum= 0.029268
+ TH1.Print Name  = Lambda_EtaIn_19.0028.00, Entries= 11359960, Total sum= 0.127547
+ TH1.Print Name  = Lambda_JC_19.0028.00, Entries= 10158, Total sum= 0.028697
+ TH1.Print Name  = Lambda_PC_19.0028.00, Entries= 6841, Total sum= 0.0193587
+ TH1.Print Name  = Lambda_dJP_19.0028.00, Entries= 10158, Total sum= 0.0287451
  TH1.Print Name  = Lambda_In_28.0038.00, Entries= 1010224, Total sum= 0.0982059
- TH1.Print Name  = Lambda_EtaIn_28.0038.00, Entries= 5857025, Total sum= 0.0948893
- TH1.Print Name  = Lambda_JC_28.0038.00, Entries= 4266, Total sum= 0.0261232
- TH1.Print Name  = Lambda_PC_28.0038.00, Entries= 2249, Total sum= 0.0137849
- TH1.Print Name  = Lambda_dJP_28.0038.00, Entries= 4266, Total sum= 0.0261477
+ TH1.Print Name  = Lambda_EtaIn_28.0038.00, Entries= 9764388, Total sum= 0.096199
+ TH1.Print Name  = Lambda_JC_28.0038.00, Entries= 7025, Total sum= 0.0261879
+ TH1.Print Name  = Lambda_PC_28.0038.00, Entries= 3716, Total sum= 0.0138627
+ TH1.Print Name  = Lambda_dJP_28.0038.00, Entries= 7025, Total sum= 0.0262141
  TH1.Print Name  = Lambda_In_38.0048.00, Entries= 824899, Total sum= 0.0721466
- TH1.Print Name  = Lambda_EtaIn_38.0048.00, Entries= 4755583, Total sum= 0.0693059
- TH1.Print Name  = Lambda_JC_38.0048.00, Entries= 2862, Total sum= 0.0244378
- TH1.Print Name  = Lambda_PC_38.0048.00, Entries= 1260, Total sum= 0.0107701
- TH1.Print Name  = Lambda_dJP_38.0048.00, Entries= 2862, Total sum= 0.0244634
+ TH1.Print Name  = Lambda_EtaIn_38.0048.00, Entries= 7949384, Total sum= 0.070447
+ TH1.Print Name  = Lambda_JC_38.0048.00, Entries= 4674, Total sum= 0.0243146
+ TH1.Print Name  = Lambda_PC_38.0048.00, Entries= 2094, Total sum= 0.0109025
+ TH1.Print Name  = Lambda_dJP_38.0048.00, Entries= 4674, Total sum= 0.0243354
  TH1.Print Name  = Lambda_In_48.0068.00, Entries= 1120664, Total sum= 0.0510378
- TH1.Print Name  = Lambda_EtaIn_48.0068.00, Entries= 6448240, Total sum= 0.048944
- TH1.Print Name  = Lambda_JC_48.0068.00, Entries= 3009, Total sum= 0.0253511
- TH1.Print Name  = Lambda_PC_48.0068.00, Entries= 946, Total sum= 0.00799405
- TH1.Print Name  = Lambda_dJP_48.0068.00, Entries= 3009, Total sum= 0.0254272
+ TH1.Print Name  = Lambda_EtaIn_48.0068.00, Entries= 10796050, Total sum= 0.0498305
+ TH1.Print Name  = Lambda_JC_48.0068.00, Entries= 4911, Total sum= 0.0251485
+ TH1.Print Name  = Lambda_PC_48.0068.00, Entries= 1561, Total sum= 0.00801322
+ TH1.Print Name  = Lambda_dJP_48.0068.00, Entries= 4911, Total sum= 0.0252101
  TH1.Print Name  = Lambda_In_68.00100.00, Entries= 965721, Total sum= 0.0293461
- TH1.Print Name  = Lambda_EtaIn_68.00100.00, Entries= 5481315, Total sum= 0.027764
- TH1.Print Name  = Lambda_JC_68.00100.00, Entries= 1302, Total sum= 0.0230312
- TH1.Print Name  = Lambda_PC_68.00100.00, Entries= 279, Total sum= 0.00495428
- TH1.Print Name  = Lambda_dJP_68.00100.00, Entries= 1302, Total sum= 0.02312
+ TH1.Print Name  = Lambda_EtaIn_68.00100.00, Entries= 9214650, Total sum= 0.0283803
+ TH1.Print Name  = Lambda_JC_68.00100.00, Entries= 2116, Total sum= 0.0228392
+ TH1.Print Name  = Lambda_PC_68.00100.00, Entries= 475, Total sum= 0.00514153
+ TH1.Print Name  = Lambda_dJP_68.00100.00, Entries= 2116, Total sum= 0.0229042
 Collection name='TList', class='TList', size=78
  TH1.Print Name  = Integral_Xi_In, Entries= 786064, Total sum= 0.130385
- TH1.Print Name  = Integral_Xi_EtaIn, Entries= 4558614, Total sum= 0.12769
- TH1.Print Name  = Integral_Xi_JC, Entries= 14057, Total sum= 0.0764472
- TH1.Print Name  = Integral_Xi_PC, Entries= 3948, Total sum= 0.0193401
+ TH1.Print Name  = Integral_Xi_EtaIn, Entries= 7604600, Total sum= 0.128901
+ TH1.Print Name  = Integral_Xi_JC, Entries= 23284, Total sum= 0.0766747
+ TH1.Print Name  = Integral_Xi_PC, Entries= 6486, Total sum= 0.0193612
  TH1.Print Name  = integral_Xi_In, Entries= 860573, Total sum= 0.0395424
- TH1.Print Name  = integral_Xi_EtaIn, Entries= 4986347, Total sum= 0.0385453
- TH1.Print Name  = integral_Xi_JC, Entries= 15248, Total sum= 0.0262995
- TH1.Print Name  = integral_Xi_PC, Entries= 4239, Total sum= 0.0063794
+ TH1.Print Name  = integral_Xi_EtaIn, Entries= 8319501, Total sum= 0.0389718
+ TH1.Print Name  = integral_Xi_JC, Entries= 25162, Total sum= 0.0263657
+ TH1.Print Name  = integral_Xi_PC, Entries= 6948, Total sum= 0.00636424
  TH1.Print Name  = Xi_In, Entries= 884367, Total sum= 0.00884356
- TH1.Print Name  = Xi_EtaIn, Entries= 5124375, Total sum= 0.0085405
- TH1.Print Name  = Xi_JC, Entries= 15635, Total sum= 0.00964827
- TH1.Print Name  = Xi_dJP, Entries= 15635, Total sum= 0.00965816
- TH1.Print Name  = Xi_PC, Entries= 4317, Total sum= 0.00266673
+ TH1.Print Name  = Xi_EtaIn, Entries= 8549525, Total sum= 0.00866464
+ TH1.Print Name  = Xi_JC, Entries= 25774, Total sum= 0.00967135
+ TH1.Print Name  = Xi_dJP, Entries= 25774, Total sum= 0.00968338
+ TH1.Print Name  = Xi_PC, Entries= 7084, Total sum= 0.00266148
  TH1.Print Name  = Xi_In_010, Entries= 240211, Total sum= 0.0230913
- TH1.Print Name  = Xi_EtaIn_010, Entries= 1418618, Total sum= 0.0227237
- TH1.Print Name  = Xi_JC_010, Entries= 7581, Total sum= 0.0102542
- TH1.Print Name  = Xi_PC_010, Entries= 2748, Total sum= 0.00372141
- TH1.Print Name  = Xi_dJP_010, Entries= 7581, Total sum= 0.0102664
+ TH1.Print Name  = Xi_EtaIn_010, Entries= 2350496, Total sum= 0.0228946
+ TH1.Print Name  = Xi_JC_010, Entries= 12575, Total sum= 0.0103433
+ TH1.Print Name  = Xi_PC_010, Entries= 4490, Total sum= 0.00369757
+ TH1.Print Name  = Xi_dJP_010, Entries= 12575, Total sum= 0.0103557
  TH1.Print Name  = Xi_In_1040, Entries= 373406, Total sum= 0.0123526
- TH1.Print Name  = Xi_EtaIn_1040, Entries= 2166548, Total sum= 0.0119456
- TH1.Print Name  = Xi_JC_1040, Entries= 6011, Total sum= 0.00863514
- TH1.Print Name  = Xi_PC_1040, Entries= 1321, Total sum= 0.00189927
- TH1.Print Name  = Xi_dJP_1040, Entries= 6011, Total sum= 0.00864233
+ TH1.Print Name  = Xi_EtaIn_1040, Entries= 3613044, Total sum= 0.0121145
+ TH1.Print Name  = Xi_JC_1040, Entries= 9866, Total sum= 0.00861998
+ TH1.Print Name  = Xi_PC_1040, Entries= 2177, Total sum= 0.00190476
+ TH1.Print Name  = Xi_dJP_1040, Entries= 9866, Total sum= 0.00863223
  TH1.Print Name  = Xi_In_40100, Entries= 246956, Total sum= 0.00409838
- TH1.Print Name  = Xi_EtaIn_40100, Entries= 1401181, Total sum= 0.00387566
- TH1.Print Name  = Xi_JC_40100, Entries= 1656, Total sum= 0.00738185
- TH1.Print Name  = Xi_PC_40100, Entries= 170, Total sum= 0.000758715
- TH1.Print Name  = Xi_dJP_40100, Entries= 1656, Total sum= 0.00739078
+ TH1.Print Name  = Xi_EtaIn_40100, Entries= 2355961, Total sum= 0.00396251
+ TH1.Print Name  = Xi_JC_40100, Entries= 2721, Total sum= 0.00736969
+ TH1.Print Name  = Xi_PC_40100, Entries= 281, Total sum= 0.000761914
+ TH1.Print Name  = Xi_dJP_40100, Entries= 2721, Total sum= 0.00737782
  TH1.Print Name  = Xi_In_0.000.95, Entries= 28830, Total sum= 0.0291329
- TH1.Print Name  = Xi_EtaIn_0.000.95, Entries= 172956, Total sum= 0.0291414
- TH1.Print Name  = Xi_JC_0.000.95, Entries= 1359, Total sum= 0.0106133
- TH1.Print Name  = Xi_PC_0.000.95, Entries= 587, Total sum= 0.00459099
- TH1.Print Name  = Xi_dJP_0.000.95, Entries= 1359, Total sum= 0.0106289
+ TH1.Print Name  = Xi_EtaIn_0.000.95, Entries= 285106, Total sum= 0.0292075
+ TH1.Print Name  = Xi_JC_0.000.95, Entries= 2241, Total sum= 0.0106426
+ TH1.Print Name  = Xi_PC_0.000.95, Entries= 957, Total sum= 0.00455296
+ TH1.Print Name  = Xi_dJP_0.000.95, Entries= 2241, Total sum= 0.0106616
  TH1.Print Name  = Xi_In_0.954.70, Entries= 91647, Total sum= 0.0235603
- TH1.Print Name  = Xi_EtaIn_0.954.70, Entries= 542897, Total sum= 0.0232625
- TH1.Print Name  = Xi_JC_0.954.70, Entries= 3057, Total sum= 0.00959861
- TH1.Print Name  = Xi_PC_0.954.70, Entries= 1104, Total sum= 0.00347097
- TH1.Print Name  = Xi_dJP_0.954.70, Entries= 3057, Total sum= 0.00961118
+ TH1.Print Name  = Xi_EtaIn_0.954.70, Entries= 898670, Total sum= 0.0234183
+ TH1.Print Name  = Xi_JC_0.954.70, Entries= 5137, Total sum= 0.0098142
+ TH1.Print Name  = Xi_PC_0.954.70, Entries= 1834, Total sum= 0.00350726
+ TH1.Print Name  = Xi_dJP_0.954.70, Entries= 5137, Total sum= 0.00982376
  TH1.Print Name  = Xi_In_4.709.50, Entries= 88752, Total sum= 0.0182681
- TH1.Print Name  = Xi_EtaIn_4.709.50, Entries= 522294, Total sum= 0.0179143
- TH1.Print Name  = Xi_JC_4.709.50, Entries= 2336, Total sum= 0.00852555
- TH1.Print Name  = Xi_PC_4.709.50, Entries= 807, Total sum= 0.00294904
- TH1.Print Name  = Xi_dJP_4.709.50, Entries= 2336, Total sum= 0.00853651
+ TH1.Print Name  = Xi_EtaIn_4.709.50, Entries= 867419, Total sum= 0.0180901
+ TH1.Print Name  = Xi_JC_4.709.50, Entries= 3896, Total sum= 0.0086466
+ TH1.Print Name  = Xi_PC_4.709.50, Entries= 1306, Total sum= 0.00290145
+ TH1.Print Name  = Xi_dJP_4.709.50, Entries= 3896, Total sum= 0.00865549
  TH1.Print Name  = Xi_In_9.5014.00, Entries= 65664, Total sum= 0.0143429
- TH1.Print Name  = Xi_EtaIn_9.5014.00, Entries= 383936, Total sum= 0.0139711
- TH1.Print Name  = Xi_JC_9.5014.00, Entries= 1450, Total sum= 0.00737669
- TH1.Print Name  = Xi_PC_9.5014.00, Entries= 378, Total sum= 0.00192303
- TH1.Print Name  = Xi_dJP_9.5014.00, Entries= 1450, Total sum= 0.00737669
+ TH1.Print Name  = Xi_EtaIn_9.5014.00, Entries= 636983, Total sum= 0.0140975
+ TH1.Print Name  = Xi_JC_9.5014.00, Entries= 2340, Total sum= 0.0072493
+ TH1.Print Name  = Xi_PC_9.5014.00, Entries= 630, Total sum= 0.00195173
+ TH1.Print Name  = Xi_dJP_9.5014.00, Entries= 2340, Total sum= 0.0072493
  TH1.Print Name  = Xi_In_14.0019.00, Entries= 71367, Total sum= 0.0124473
- TH1.Print Name  = Xi_EtaIn_14.0019.00, Entries= 417398, Total sum= 0.0121264
- TH1.Print Name  = Xi_JC_14.0019.00, Entries= 1396, Total sum= 0.00729782
- TH1.Print Name  = Xi_PC_14.0019.00, Entries= 309, Total sum= 0.00161651
- TH1.Print Name  = Xi_dJP_14.0019.00, Entries= 1396, Total sum= 0.00730305
+ TH1.Print Name  = Xi_EtaIn_14.0019.00, Entries= 693886, Total sum= 0.0122586
+ TH1.Print Name  = Xi_JC_14.0019.00, Entries= 2270, Total sum= 0.00721544
+ TH1.Print Name  = Xi_PC_14.0019.00, Entries= 530, Total sum= 0.00168615
+ TH1.Print Name  = Xi_dJP_14.0019.00, Entries= 2270, Total sum= 0.0072218
  TH1.Print Name  = Xi_In_19.0028.00, Entries= 99440, Total sum= 0.011013
- TH1.Print Name  = Xi_EtaIn_19.0028.00, Entries= 574735, Total sum= 0.0106114
- TH1.Print Name  = Xi_JC_19.0028.00, Entries= 1499, Total sum= 0.00697012
- TH1.Print Name  = Xi_PC_19.0028.00, Entries= 357, Total sum= 0.00166221
- TH1.Print Name  = Xi_dJP_19.0028.00, Entries= 1499, Total sum= 0.00697943
+ TH1.Print Name  = Xi_EtaIn_19.0028.00, Entries= 958968, Total sum= 0.010767
+ TH1.Print Name  = Xi_JC_19.0028.00, Entries= 2526, Total sum= 0.0071226
+ TH1.Print Name  = Xi_PC_19.0028.00, Entries= 572, Total sum= 0.00161864
+ TH1.Print Name  = Xi_dJP_19.0028.00, Entries= 2526, Total sum= 0.00714807
  TH1.Print Name  = Xi_In_28.0038.00, Entries= 86191, Total sum= 0.00837882
- TH1.Print Name  = Xi_EtaIn_28.0038.00, Entries= 496773, Total sum= 0.00804821
- TH1.Print Name  = Xi_JC_28.0038.00, Entries= 1107, Total sum= 0.00678517
- TH1.Print Name  = Xi_PC_28.0038.00, Entries= 207, Total sum= 0.00126877
- TH1.Print Name  = Xi_dJP_28.0038.00, Entries= 1107, Total sum= 0.00678517
+ TH1.Print Name  = Xi_EtaIn_28.0038.00, Entries= 830422, Total sum= 0.00818134
+ TH1.Print Name  = Xi_JC_28.0038.00, Entries= 1826, Total sum= 0.00681006
+ TH1.Print Name  = Xi_PC_28.0038.00, Entries= 323, Total sum= 0.00120529
+ TH1.Print Name  = Xi_dJP_28.0038.00, Entries= 1826, Total sum= 0.00681379
  TH1.Print Name  = Xi_In_38.0048.00, Entries= 70489, Total sum= 0.00616507
- TH1.Print Name  = Xi_EtaIn_38.0048.00, Entries= 407361, Total sum= 0.00593673
- TH1.Print Name  = Xi_JC_38.0048.00, Entries= 702, Total sum= 0.00600046
- TH1.Print Name  = Xi_PC_38.0048.00, Entries= 97, Total sum= 0.000829124
- TH1.Print Name  = Xi_dJP_38.0048.00, Entries= 702, Total sum= 0.00600046
+ TH1.Print Name  = Xi_EtaIn_38.0048.00, Entries= 682542, Total sum= 0.00604865
+ TH1.Print Name  = Xi_JC_38.0048.00, Entries= 1166, Total sum= 0.00607083
+ TH1.Print Name  = Xi_PC_38.0048.00, Entries= 172, Total sum= 0.000895525
+ TH1.Print Name  = Xi_dJP_38.0048.00, Entries= 1166, Total sum= 0.00607083
  TH1.Print Name  = Xi_In_48.0068.00, Entries= 98637, Total sum= 0.00449219
- TH1.Print Name  = Xi_EtaIn_48.0068.00, Entries= 557371, Total sum= 0.0042306
- TH1.Print Name  = Xi_JC_48.0068.00, Entries= 775, Total sum= 0.00654059
- TH1.Print Name  = Xi_PC_48.0068.00, Entries= 84, Total sum= 0.000709831
- TH1.Print Name  = Xi_dJP_48.0068.00, Entries= 775, Total sum= 0.00654904
+ TH1.Print Name  = Xi_EtaIn_48.0068.00, Entries= 937454, Total sum= 0.00432693
+ TH1.Print Name  = Xi_JC_48.0068.00, Entries= 1290, Total sum= 0.00661181
+ TH1.Print Name  = Xi_PC_48.0068.00, Entries= 125, Total sum= 0.000641674
+ TH1.Print Name  = Xi_dJP_48.0068.00, Entries= 1290, Total sum= 0.00662207
  TH1.Print Name  = Xi_In_68.00100.00, Entries= 85047, Total sum= 0.00258439
- TH1.Print Name  = Xi_EtaIn_68.00100.00, Entries= 482893, Total sum= 0.00244596
- TH1.Print Name  = Xi_JC_68.00100.00, Entries= 376, Total sum= 0.00665897
- TH1.Print Name  = Xi_PC_68.00100.00, Entries= 18, Total sum= 0.000319631
- TH1.Print Name  = Xi_dJP_68.00100.00, Entries= 376, Total sum= 0.00667673
+ TH1.Print Name  = Xi_EtaIn_68.00100.00, Entries= 813150, Total sum= 0.00250443
+ TH1.Print Name  = Xi_JC_68.00100.00, Entries= 592, Total sum= 0.00639714
+ TH1.Print Name  = Xi_PC_68.00100.00, Entries= 37, Total sum= 0.000400498
+ TH1.Print Name  = Xi_dJP_68.00100.00, Entries= 592, Total sum= 0.00640797
 Collection name='TList', class='TList', size=78
  TH1.Print Name  = Integral_Omega_In, Entries= 41959, Total sum= 0.00755308
- TH1.Print Name  = Integral_Omega_EtaIn, Entries= 240652, Total sum= 0.00729463
- TH1.Print Name  = Integral_Omega_JC, Entries= 749, Total sum= 0.00387608
- TH1.Print Name  = Integral_Omega_PC, Entries= 242, Total sum= 0.00124759
+ TH1.Print Name  = Integral_Omega_EtaIn, Entries= 402893, Total sum= 0.0073957
+ TH1.Print Name  = Integral_Omega_JC, Entries= 1184, Total sum= 0.00375207
+ TH1.Print Name  = Integral_Omega_PC, Entries= 392, Total sum= 0.00119329
  TH1.Print Name  = integral_Omega_In, Entries= 45748, Total sum= 0.00224657
- TH1.Print Name  = integral_Omega_EtaIn, Entries= 263121, Total sum= 0.00217517
- TH1.Print Name  = integral_Omega_JC, Entries= 809, Total sum= 0.00132447
- TH1.Print Name  = integral_Omega_PC, Entries= 261, Total sum= 0.000402489
+ TH1.Print Name  = integral_Omega_EtaIn, Entries= 440237, Total sum= 0.00220555
+ TH1.Print Name  = integral_Omega_JC, Entries= 1273, Total sum= 0.00126981
+ TH1.Print Name  = integral_Omega_PC, Entries= 421, Total sum= 0.00039262
  TH1.Print Name  = Omega_In, Entries= 47050, Total sum= 0.000470495
- TH1.Print Name  = Omega_EtaIn, Entries= 270405, Total sum= 0.000450669
- TH1.Print Name  = Omega_JC, Entries= 827, Total sum= 0.000510242
- TH1.Print Name  = Omega_dJP, Entries= 827, Total sum= 0.00051086
- TH1.Print Name  = Omega_PC, Entries= 265, Total sum= 0.000163698
+ TH1.Print Name  = Omega_EtaIn, Entries= 452448, Total sum= 0.000458541
+ TH1.Print Name  = Omega_JC, Entries= 1308, Total sum= 0.000491044
+ TH1.Print Name  = Omega_dJP, Entries= 1308, Total sum= 0.00049142
+ TH1.Print Name  = Omega_PC, Entries= 427, Total sum= 0.000160425
  TH1.Print Name  = Omega_In_010, Entries= 14386, Total sum= 0.00138292
- TH1.Print Name  = Omega_EtaIn_010, Entries= 84633, Total sum= 0.00135568
- TH1.Print Name  = Omega_JC_010, Entries= 459, Total sum= 0.000621589
- TH1.Print Name  = Omega_PC_010, Entries= 181, Total sum= 0.000245115
- TH1.Print Name  = Omega_dJP_010, Entries= 459, Total sum= 0.000621589
+ TH1.Print Name  = Omega_EtaIn_010, Entries= 140643, Total sum= 0.00136992
+ TH1.Print Name  = Omega_JC_010, Entries= 716, Total sum= 0.000589634
+ TH1.Print Name  = Omega_PC_010, Entries= 278, Total sum= 0.000228936
+ TH1.Print Name  = Omega_dJP_010, Entries= 716, Total sum= 0.000589634
  TH1.Print Name  = Omega_In_1040, Entries= 20817, Total sum= 0.000688646
- TH1.Print Name  = Omega_EtaIn_1040, Entries= 118570, Total sum= 0.000653758
- TH1.Print Name  = Omega_JC_1040, Entries= 284, Total sum= 0.000408322
- TH1.Print Name  = Omega_PC_1040, Entries= 66, Total sum= 9.48917e-05
- TH1.Print Name  = Omega_dJP_1040, Entries= 284, Total sum= 0.000408322
+ TH1.Print Name  = Omega_EtaIn_1040, Entries= 198516, Total sum= 0.000665626
+ TH1.Print Name  = Omega_JC_1040, Entries= 452, Total sum= 0.000395476
+ TH1.Print Name  = Omega_PC_1040, Entries= 122, Total sum= 0.000106744
+ TH1.Print Name  = Omega_dJP_1040, Entries= 452, Total sum= 0.000395476
  TH1.Print Name  = Omega_In_40100, Entries= 10545, Total sum= 0.000175001
- TH1.Print Name  = Omega_EtaIn_40100, Entries= 59918, Total sum= 0.00016573
- TH1.Print Name  = Omega_JC_40100, Entries= 66, Total sum= 0.000290097
- TH1.Print Name  = Omega_PC_40100, Entries= 14, Total sum= 6.24824e-05
- TH1.Print Name  = Omega_dJP_40100, Entries= 66, Total sum= 0.00029456
+ TH1.Print Name  = Omega_EtaIn_40100, Entries= 101078, Total sum= 0.000170003
+ TH1.Print Name  = Omega_JC_40100, Entries= 105, Total sum= 0.00028199
+ TH1.Print Name  = Omega_PC_40100, Entries= 21, Total sum= 5.69402e-05
+ TH1.Print Name  = Omega_dJP_40100, Entries= 105, Total sum= 0.000284701
  TH1.Print Name  = Omega_In_0.000.95, Entries= 1778, Total sum= 0.00179668
- TH1.Print Name  = Omega_EtaIn_0.000.95, Entries= 10481, Total sum= 0.00176599
- TH1.Print Name  = Omega_JC_0.000.95, Entries= 79, Total sum= 0.000617868
- TH1.Print Name  = Omega_PC_0.000.95, Entries= 42, Total sum= 0.000328487
- TH1.Print Name  = Omega_dJP_0.000.95, Entries= 79, Total sum= 0.000617868
+ TH1.Print Name  = Omega_EtaIn_0.000.95, Entries= 17406, Total sum= 0.00178318
+ TH1.Print Name  = Omega_JC_0.000.95, Entries= 123, Total sum= 0.000585176
+ TH1.Print Name  = Omega_PC_0.000.95, Entries= 59, Total sum= 0.000280694
+ TH1.Print Name  = Omega_dJP_0.000.95, Entries= 123, Total sum= 0.000585176
  TH1.Print Name  = Omega_In_0.954.70, Entries= 5565, Total sum= 0.00143065
- TH1.Print Name  = Omega_EtaIn_0.954.70, Entries= 32668, Total sum= 0.0013998
- TH1.Print Name  = Omega_JC_0.954.70, Entries= 189, Total sum= 0.000594214
- TH1.Print Name  = Omega_PC_0.954.70, Entries= 70, Total sum= 0.000220079
- TH1.Print Name  = Omega_dJP_0.954.70, Entries= 189, Total sum= 0.000594214
+ TH1.Print Name  = Omega_EtaIn_0.954.70, Entries= 54249, Total sum= 0.00141368
+ TH1.Print Name  = Omega_JC_0.954.70, Entries= 297, Total sum= 0.000567969
+ TH1.Print Name  = Omega_PC_0.954.70, Entries= 109, Total sum= 0.000208446
+ TH1.Print Name  = Omega_dJP_0.954.70, Entries= 297, Total sum= 0.000567969
  TH1.Print Name  = Omega_In_4.709.50, Entries= 5180, Total sum= 0.00106621
- TH1.Print Name  = Omega_EtaIn_4.709.50, Entries= 30783, Total sum= 0.00105584
- TH1.Print Name  = Omega_JC_4.709.50, Entries= 141, Total sum= 0.00051526
- TH1.Print Name  = Omega_PC_4.709.50, Entries= 48, Total sum= 0.000175408
- TH1.Print Name  = Omega_dJP_4.709.50, Entries= 141, Total sum= 0.00051526
+ TH1.Print Name  = Omega_EtaIn_4.709.50, Entries= 51227, Total sum= 0.00106835
+ TH1.Print Name  = Omega_JC_4.709.50, Entries= 219, Total sum= 0.000486538
+ TH1.Print Name  = Omega_PC_4.709.50, Entries= 82, Total sum= 0.000182174
+ TH1.Print Name  = Omega_dJP_4.709.50, Entries= 219, Total sum= 0.000486538
  TH1.Print Name  = Omega_In_9.5014.00, Entries= 3926, Total sum= 0.000857549
- TH1.Print Name  = Omega_EtaIn_9.5014.00, Entries= 22163, Total sum= 0.000806493
- TH1.Print Name  = Omega_JC_9.5014.00, Entries= 61, Total sum= 0.00031033
- TH1.Print Name  = Omega_PC_9.5014.00, Entries= 19, Total sum= 9.66601e-05
- TH1.Print Name  = Omega_dJP_9.5014.00, Entries= 61, Total sum= 0.00031033
+ TH1.Print Name  = Omega_EtaIn_9.5014.00, Entries= 36970, Total sum= 0.000818207
+ TH1.Print Name  = Omega_JC_9.5014.00, Entries= 111, Total sum= 0.000343877
+ TH1.Print Name  = Omega_PC_9.5014.00, Entries= 32, Total sum= 9.91357e-05
+ TH1.Print Name  = Omega_dJP_9.5014.00, Entries= 111, Total sum= 0.000343877
  TH1.Print Name  = Omega_In_14.0019.00, Entries= 4196, Total sum= 0.000731848
- TH1.Print Name  = Omega_EtaIn_14.0019.00, Entries= 23514, Total sum= 0.000683144
- TH1.Print Name  = Omega_JC_14.0019.00, Entries= 63, Total sum= 0.000329579
- TH1.Print Name  = Omega_PC_14.0019.00, Entries= 17, Total sum= 8.8934e-05
- TH1.Print Name  = Omega_dJP_14.0019.00, Entries= 63, Total sum= 0.000329579
+ TH1.Print Name  = Omega_EtaIn_14.0019.00, Entries= 39269, Total sum= 0.000693752
+ TH1.Print Name  = Omega_JC_14.0019.00, Entries= 113, Total sum= 0.000359499
+ TH1.Print Name  = Omega_PC_14.0019.00, Entries= 28, Total sum= 8.90795e-05
+ TH1.Print Name  = Omega_dJP_14.0019.00, Entries= 113, Total sum= 0.000359499
  TH1.Print Name  = Omega_In_19.0028.00, Entries= 5575, Total sum= 0.000617432
- TH1.Print Name  = Omega_EtaIn_19.0028.00, Entries= 31613, Total sum= 0.000583679
- TH1.Print Name  = Omega_JC_19.0028.00, Entries= 82, Total sum= 0.000381797
- TH1.Print Name  = Omega_PC_19.0028.00, Entries= 19, Total sum= 8.84651e-05
- TH1.Print Name  = Omega_dJP_19.0028.00, Entries= 82, Total sum= 0.000381797
+ TH1.Print Name  = Omega_EtaIn_19.0028.00, Entries= 52960, Total sum= 0.000594626
+ TH1.Print Name  = Omega_JC_19.0028.00, Entries= 118, Total sum= 0.000333916
+ TH1.Print Name  = Omega_PC_19.0028.00, Entries= 37, Total sum= 0.000104703
+ TH1.Print Name  = Omega_dJP_19.0028.00, Entries= 118, Total sum= 0.000333916
  TH1.Print Name  = Omega_In_28.0038.00, Entries= 4531, Total sum= 0.000440469
- TH1.Print Name  = Omega_EtaIn_28.0038.00, Entries= 25980, Total sum= 0.000420901
- TH1.Print Name  = Omega_JC_28.0038.00, Entries= 52, Total sum= 0.000318725
- TH1.Print Name  = Omega_PC_28.0038.00, Entries= 11, Total sum= 6.74226e-05
- TH1.Print Name  = Omega_dJP_28.0038.00, Entries= 52, Total sum= 0.000318725
+ TH1.Print Name  = Omega_EtaIn_28.0038.00, Entries= 43723, Total sum= 0.000430761
+ TH1.Print Name  = Omega_JC_28.0038.00, Entries= 73, Total sum= 0.000272402
+ TH1.Print Name  = Omega_PC_28.0038.00, Entries= 22, Total sum= 8.20938e-05
+ TH1.Print Name  = Omega_dJP_28.0038.00, Entries= 73, Total sum= 0.000272402
  TH1.Print Name  = Omega_In_38.0048.00, Entries= 3584, Total sum= 0.000313462
- TH1.Print Name  = Omega_EtaIn_38.0048.00, Entries= 20408, Total sum= 0.000297418
- TH1.Print Name  = Omega_JC_38.0048.00, Entries= 38, Total sum= 0.000324811
- TH1.Print Name  = Omega_PC_38.0048.00, Entries= 4, Total sum= 3.41907e-05
- TH1.Print Name  = Omega_dJP_38.0048.00, Entries= 38, Total sum= 0.000324811
+ TH1.Print Name  = Omega_EtaIn_38.0048.00, Entries= 34326, Total sum= 0.000304196
+ TH1.Print Name  = Omega_JC_38.0048.00, Entries= 61, Total sum= 0.000317599
+ TH1.Print Name  = Omega_PC_38.0048.00, Entries= 6, Total sum= 3.12393e-05
+ TH1.Print Name  = Omega_dJP_38.0048.00, Entries= 61, Total sum= 0.000317599
  TH1.Print Name  = Omega_In_48.0068.00, Entries= 4428, Total sum= 0.000201663
- TH1.Print Name  = Omega_EtaIn_48.0068.00, Entries= 25086, Total sum= 0.000190403
- TH1.Print Name  = Omega_JC_48.0068.00, Entries= 32, Total sum= 0.000261962
- TH1.Print Name  = Omega_PC_48.0068.00, Entries= 7, Total sum= 5.91526e-05
- TH1.Print Name  = Omega_dJP_48.0068.00, Entries= 32, Total sum= 0.000270412
+ TH1.Print Name  = Omega_EtaIn_48.0068.00, Entries= 42223, Total sum= 0.000194882
+ TH1.Print Name  = Omega_JC_48.0068.00, Entries= 46, Total sum= 0.000231003
+ TH1.Print Name  = Omega_PC_48.0068.00, Entries= 12, Total sum= 6.16007e-05
+ TH1.Print Name  = Omega_dJP_48.0068.00, Entries= 46, Total sum= 0.000236136
  TH1.Print Name  = Omega_In_68.00100.00, Entries= 3196, Total sum= 9.71194e-05
- TH1.Print Name  = Omega_EtaIn_68.00100.00, Entries= 17956, Total sum= 9.09511e-05
- TH1.Print Name  = Omega_JC_68.00100.00, Entries= 12, Total sum= 0.000213087
- TH1.Print Name  = Omega_PC_68.00100.00, Entries= 5, Total sum= 8.87863e-05
- TH1.Print Name  = Omega_dJP_68.00100.00, Entries= 12, Total sum= 0.000213087
+ TH1.Print Name  = Omega_EtaIn_68.00100.00, Entries= 30540, Total sum= 9.40607e-05
+ TH1.Print Name  = Omega_JC_68.00100.00, Entries= 23, Total sum= 0.000248958
+ TH1.Print Name  = Omega_PC_68.00100.00, Entries= 5, Total sum= 5.41213e-05
+ TH1.Print Name  = Omega_dJP_68.00100.00, Entries= 23, Total sum= 0.000248958
 Collection name='TList', class='TList', size=78
  TH1.Print Name  = Integral_Phi_In, Entries= 2641597, Total sum= 0.404434
- TH1.Print Name  = Integral_Phi_EtaIn, Entries= 15521674, Total sum= 0.399821
- TH1.Print Name  = Integral_Phi_JC, Entries= 17505, Total sum= 0.0964485
- TH1.Print Name  = Integral_Phi_PC, Entries= 13381, Total sum= 0.066656
+ TH1.Print Name  = Integral_Phi_EtaIn, Entries= 25735754, Total sum= 0.40169
+ TH1.Print Name  = Integral_Phi_JC, Entries= 28628, Total sum= 0.0958925
+ TH1.Print Name  = Integral_Phi_PC, Entries= 21881, Total sum= 0.0666418
  TH1.Print Name  = integral_Phi_In, Entries= 2897581, Total sum= 0.124574
- TH1.Print Name  = integral_Phi_EtaIn, Entries= 17021598, Total sum= 0.122799
- TH1.Print Name  = integral_Phi_JC, Entries= 18956, Total sum= 0.0332953
- TH1.Print Name  = integral_Phi_PC, Entries= 14281, Total sum= 0.0220576
+ TH1.Print Name  = integral_Phi_EtaIn, Entries= 28224131, Total sum= 0.12349
+ TH1.Print Name  = integral_Phi_JC, Entries= 31020, Total sum= 0.0331139
+ TH1.Print Name  = integral_Phi_PC, Entries= 23424, Total sum= 0.0220172
  TH1.Print Name  = Phi_In, Entries= 2977883, Total sum= 0.0297781
- TH1.Print Name  = Phi_EtaIn, Entries= 17494750, Total sum= 0.0291572
- TH1.Print Name  = Phi_JC, Entries= 19405, Total sum= 0.011953
- TH1.Print Name  = Phi_dJP, Entries= 19405, Total sum= 0.011987
- TH1.Print Name  = Phi_PC, Entries= 14591, Total sum= 0.00901201
+ TH1.Print Name  = Phi_EtaIn, Entries= 29008766, Total sum= 0.0293991
+ TH1.Print Name  = Phi_JC, Entries= 31741, Total sum= 0.0118873
+ TH1.Print Name  = Phi_dJP, Entries= 31741, Total sum= 0.0119252
+ TH1.Print Name  = Phi_PC, Entries= 23919, Total sum= 0.00898532
  TH1.Print Name  = Phi_In_010, Entries= 709574, Total sum= 0.0682088
- TH1.Print Name  = Phi_EtaIn_010, Entries= 4228309, Total sum= 0.0677292
- TH1.Print Name  = Phi_JC_010, Entries= 9130, Total sum= 0.0123302
- TH1.Print Name  = Phi_PC_010, Entries= 8616, Total sum= 0.0116653
- TH1.Print Name  = Phi_dJP_010, Entries= 9130, Total sum= 0.0123641
+ TH1.Print Name  = Phi_EtaIn_010, Entries= 6974356, Total sum= 0.0679315
+ TH1.Print Name  = Phi_JC_010, Entries= 14909, Total sum= 0.0122431
+ TH1.Print Name  = Phi_PC_010, Entries= 14104, Total sum= 0.0116123
+ TH1.Print Name  = Phi_dJP_010, Entries= 14909, Total sum= 0.0122777
  TH1.Print Name  = Phi_In_1040, Entries= 1216343, Total sum= 0.0402373
- TH1.Print Name  = Phi_EtaIn_1040, Entries= 7163004, Total sum= 0.039494
- TH1.Print Name  = Phi_JC_1040, Entries= 7577, Total sum= 0.0108622
- TH1.Print Name  = Phi_PC_1040, Entries= 4923, Total sum= 0.00707806
- TH1.Print Name  = Phi_dJP_1040, Entries= 7577, Total sum= 0.0108939
+ TH1.Print Name  = Phi_EtaIn_1040, Entries= 11858498, Total sum= 0.0397611
+ TH1.Print Name  = Phi_JC_1040, Entries= 12441, Total sum= 0.0108423
+ TH1.Print Name  = Phi_PC_1040, Entries= 8096, Total sum= 0.00708357
+ TH1.Print Name  = Phi_dJP_1040, Entries= 12441, Total sum= 0.0108852
  TH1.Print Name  = Phi_In_40100, Entries= 971664, Total sum= 0.0161253
- TH1.Print Name  = Phi_EtaIn_40100, Entries= 5630285, Total sum= 0.0155732
- TH1.Print Name  = Phi_JC_40100, Entries= 2249, Total sum= 0.0100106
- TH1.Print Name  = Phi_PC_40100, Entries= 742, Total sum= 0.00331157
- TH1.Print Name  = Phi_dJP_40100, Entries= 2249, Total sum= 0.0100374
+ TH1.Print Name  = Phi_EtaIn_40100, Entries= 9391277, Total sum= 0.0157952
+ TH1.Print Name  = Phi_JC_40100, Entries= 3670, Total sum= 0.00992929
+ TH1.Print Name  = Phi_PC_40100, Entries= 1224, Total sum= 0.0033188
+ TH1.Print Name  = Phi_dJP_40100, Entries= 3670, Total sum= 0.00995098
  TH1.Print Name  = Phi_In_0.000.95, Entries= 83030, Total sum= 0.0838953
- TH1.Print Name  = Phi_EtaIn_0.000.95, Entries= 499017, Total sum= 0.0840783
- TH1.Print Name  = Phi_JC_0.000.95, Entries= 1666, Total sum= 0.0129987
- TH1.Print Name  = Phi_PC_0.000.95, Entries= 1702, Total sum= 0.0133115
- TH1.Print Name  = Phi_dJP_0.000.95, Entries= 1666, Total sum= 0.01303
+ TH1.Print Name  = Phi_EtaIn_0.000.95, Entries= 820943, Total sum= 0.0840999
+ TH1.Print Name  = Phi_JC_0.000.95, Entries= 2702, Total sum= 0.0128215
+ TH1.Print Name  = Phi_PC_0.000.95, Entries= 2910, Total sum= 0.0138444
+ TH1.Print Name  = Phi_dJP_0.000.95, Entries= 2702, Total sum= 0.0128549
  TH1.Print Name  = Phi_In_0.954.70, Entries= 268495, Total sum= 0.0690227
- TH1.Print Name  = Phi_EtaIn_0.954.70, Entries= 1600341, Total sum= 0.0685719
- TH1.Print Name  = Phi_JC_0.954.70, Entries= 3704, Total sum= 0.0116076
- TH1.Print Name  = Phi_PC_0.954.70, Entries= 3658, Total sum= 0.0114976
- TH1.Print Name  = Phi_dJP_0.954.70, Entries= 3704, Total sum= 0.0116453
+ TH1.Print Name  = Phi_EtaIn_0.954.70, Entries= 2638838, Total sum= 0.0687641
+ TH1.Print Name  = Phi_JC_0.954.70, Entries= 5964, Total sum= 0.0113709
+ TH1.Print Name  = Phi_PC_0.954.70, Entries= 5889, Total sum= 0.0112599
+ TH1.Print Name  = Phi_dJP_0.954.70, Entries= 5964, Total sum= 0.0114053
  TH1.Print Name  = Phi_In_4.709.50, Entries= 265964, Total sum= 0.054743
- TH1.Print Name  = Phi_EtaIn_4.709.50, Entries= 1581139, Total sum= 0.0542317
- TH1.Print Name  = Phi_JC_4.709.50, Entries= 2757, Total sum= 0.0100604
- TH1.Print Name  = Phi_PC_4.709.50, Entries= 2446, Total sum= 0.00893484
- TH1.Print Name  = Phi_dJP_4.709.50, Entries= 2757, Total sum= 0.010075
+ TH1.Print Name  = Phi_EtaIn_4.709.50, Entries= 2610714, Total sum= 0.0544461
+ TH1.Print Name  = Phi_JC_4.709.50, Entries= 4598, Total sum= 0.0101929
+ TH1.Print Name  = Phi_PC_4.709.50, Entries= 3976, Total sum= 0.00882878
+ TH1.Print Name  = Phi_dJP_4.709.50, Entries= 4598, Total sum= 0.0102151
  TH1.Print Name  = Phi_In_9.5014.00, Entries= 199339, Total sum= 0.0435404
- TH1.Print Name  = Phi_EtaIn_9.5014.00, Entries= 1188284, Total sum= 0.0432399
- TH1.Print Name  = Phi_JC_9.5014.00, Entries= 1762, Total sum= 0.00894361
- TH1.Print Name  = Phi_PC_9.5014.00, Entries= 1435, Total sum= 0.00730038
- TH1.Print Name  = Phi_dJP_9.5014.00, Entries= 1762, Total sum= 0.00896396
+ TH1.Print Name  = Phi_EtaIn_9.5014.00, Entries= 1961118, Total sum= 0.0434019
+ TH1.Print Name  = Phi_JC_9.5014.00, Entries= 2894, Total sum= 0.0089315
+ TH1.Print Name  = Phi_PC_9.5014.00, Entries= 2325, Total sum= 0.00720283
+ TH1.Print Name  = Phi_dJP_9.5014.00, Entries= 2894, Total sum= 0.00896558
  TH1.Print Name  = Phi_In_14.0019.00, Entries= 223958, Total sum= 0.0390611
- TH1.Print Name  = Phi_EtaIn_14.0019.00, Entries= 1325442, Total sum= 0.0385068
- TH1.Print Name  = Phi_JC_14.0019.00, Entries= 1696, Total sum= 0.00885155
- TH1.Print Name  = Phi_PC_14.0019.00, Entries= 1202, Total sum= 0.00628816
- TH1.Print Name  = Phi_dJP_14.0019.00, Entries= 1696, Total sum= 0.00887247
+ TH1.Print Name  = Phi_EtaIn_14.0019.00, Entries= 2190025, Total sum= 0.0386896
+ TH1.Print Name  = Phi_JC_14.0019.00, Entries= 2790, Total sum= 0.00884432
+ TH1.Print Name  = Phi_PC_14.0019.00, Entries= 2016, Total sum= 0.00641372
+ TH1.Print Name  = Phi_dJP_14.0019.00, Entries= 2790, Total sum= 0.00887613
  TH1.Print Name  = Phi_In_19.0028.00, Entries= 322845, Total sum= 0.0357549
- TH1.Print Name  = Phi_EtaIn_19.0028.00, Entries= 1895456, Total sum= 0.0349957
- TH1.Print Name  = Phi_JC_19.0028.00, Entries= 1975, Total sum= 0.00914915
- TH1.Print Name  = Phi_PC_19.0028.00, Entries= 1300, Total sum= 0.00605287
- TH1.Print Name  = Phi_dJP_19.0028.00, Entries= 1975, Total sum= 0.00919571
+ TH1.Print Name  = Phi_EtaIn_19.0028.00, Entries= 3137175, Total sum= 0.0352231
+ TH1.Print Name  = Phi_JC_19.0028.00, Entries= 3238, Total sum= 0.0091261
+ TH1.Print Name  = Phi_PC_19.0028.00, Entries= 2099, Total sum= 0.00593975
+ TH1.Print Name  = Phi_dJP_19.0028.00, Entries= 3238, Total sum= 0.00916289
  TH1.Print Name  = Phi_In_28.0038.00, Entries= 292284, Total sum= 0.0284133
- TH1.Print Name  = Phi_EtaIn_28.0038.00, Entries= 1713777, Total sum= 0.0277646
- TH1.Print Name  = Phi_JC_28.0038.00, Entries= 1452, Total sum= 0.0088814
- TH1.Print Name  = Phi_PC_28.0038.00, Entries= 766, Total sum= 0.00469507
- TH1.Print Name  = Phi_dJP_28.0038.00, Entries= 1452, Total sum= 0.00889979
+ TH1.Print Name  = Phi_EtaIn_28.0038.00, Entries= 2843038, Total sum= 0.0280094
+ TH1.Print Name  = Phi_JC_28.0038.00, Entries= 2405, Total sum= 0.00892584
+ TH1.Print Name  = Phi_PC_28.0038.00, Entries= 1237, Total sum= 0.00461591
+ TH1.Print Name  = Phi_dJP_28.0038.00, Entries= 2405, Total sum= 0.00897435
  TH1.Print Name  = Phi_In_38.0048.00, Entries= 252560, Total sum= 0.0220888
- TH1.Print Name  = Phi_EtaIn_38.0048.00, Entries= 1474009, Total sum= 0.0214814
- TH1.Print Name  = Phi_JC_38.0048.00, Entries= 951, Total sum= 0.00810319
- TH1.Print Name  = Phi_PC_38.0048.00, Entries= 377, Total sum= 0.00322247
- TH1.Print Name  = Phi_dJP_38.0048.00, Entries= 951, Total sum= 0.00812883
+ TH1.Print Name  = Phi_EtaIn_38.0048.00, Entries= 2450105, Total sum= 0.0217125
+ TH1.Print Name  = Phi_JC_38.0048.00, Entries= 1516, Total sum= 0.00787229
+ TH1.Print Name  = Phi_PC_38.0048.00, Entries= 614, Total sum= 0.00319682
+ TH1.Print Name  = Phi_dJP_38.0048.00, Entries= 1516, Total sum= 0.00789312
  TH1.Print Name  = Phi_In_48.0068.00, Entries= 371117, Total sum= 0.0169016
- TH1.Print Name  = Phi_EtaIn_48.0068.00, Entries= 2156256, Total sum= 0.0163665
- TH1.Print Name  = Phi_JC_48.0068.00, Entries= 1047, Total sum= 0.00882219
- TH1.Print Name  = Phi_PC_48.0068.00, Entries= 370, Total sum= 0.00312664
- TH1.Print Name  = Phi_dJP_48.0068.00, Entries= 1047, Total sum= 0.00884754
+ TH1.Print Name  = Phi_EtaIn_48.0068.00, Entries= 3592784, Total sum= 0.0165829
+ TH1.Print Name  = Phi_JC_48.0068.00, Entries= 1712, Total sum= 0.00876783
+ TH1.Print Name  = Phi_PC_48.0068.00, Entries= 613, Total sum= 0.00314677
+ TH1.Print Name  = Phi_dJP_48.0068.00, Entries= 1712, Total sum= 0.00878837
  TH1.Print Name  = Phi_In_68.00100.00, Entries= 362005, Total sum= 0.0110005
- TH1.Print Name  = Phi_EtaIn_68.00100.00, Entries= 2087953, Total sum= 0.0105759
- TH1.Print Name  = Phi_JC_68.00100.00, Entries= 495, Total sum= 0.00878984
- TH1.Print Name  = Phi_PC_68.00100.00, Entries= 125, Total sum= 0.00221966
- TH1.Print Name  = Phi_dJP_68.00100.00, Entries= 495, Total sum= 0.00878984
+ TH1.Print Name  = Phi_EtaIn_68.00100.00, Entries= 3491014, Total sum= 0.010752
+ TH1.Print Name  = Phi_JC_68.00100.00, Entries= 809, Total sum= 0.00875683
+ TH1.Print Name  = Phi_PC_68.00100.00, Entries= 202, Total sum= 0.0021865
+ TH1.Print Name  = Phi_dJP_68.00100.00, Entries= 809, Total sum= 0.00875683
 Collection name='TList', class='TList', size=78
  TH1.Print Name  = Integral_Pion_In, Entries= 273729469, Total sum= 42.3736
- TH1.Print Name  = Integral_Pion_EtaIn, Entries= 1731271714, Total sum= 44.7087
- TH1.Print Name  = Integral_Pion_JC, Entries= 3128496, Total sum= 17.146
- TH1.Print Name  = Integral_Pion_PC, Entries= 1959694, Total sum= 9.90624
+ TH1.Print Name  = Integral_Pion_EtaIn, Entries= -2147483648, Total sum= 43.795
+ TH1.Print Name  = Integral_Pion_JC, Entries= 5135471, Total sum= 17.1181
+ TH1.Print Name  = Integral_Pion_PC, Entries= 3205324, Total sum= 9.85384
  TH1.Print Name  = integral_Pion_In, Entries= 300042262, Total sum= 13.0146
- TH1.Print Name  = integral_Pion_EtaIn, Entries= 1897666498, Total sum= 13.728
- TH1.Print Name  = integral_Pion_JC, Entries= 3385708, Total sum= 5.92994
- TH1.Print Name  = integral_Pion_PC, Entries= 2108640, Total sum= 3.30273
+ TH1.Print Name  = integral_Pion_EtaIn, Entries= -2147483648, Total sum= 13.4484
+ TH1.Print Name  = integral_Pion_JC, Entries= 5557035, Total sum= 5.91891
+ TH1.Print Name  = integral_Pion_PC, Entries= 3448743, Total sum= 3.28484
  TH1.Print Name  = Pion_In, Entries= 308360989, Total sum= 3.08358
- TH1.Print Name  = Pion_EtaIn, Entries= 1950294842, Total sum= 3.25046
- TH1.Print Name  = Pion_JC, Entries= 3468116, Total sum= 2.14149
- TH1.Print Name  = Pion_dJP, Entries= 3468116, Total sum= 2.14235
- TH1.Print Name  = Pion_PC, Entries= 2154982, Total sum= 1.33119
+ TH1.Print Name  = Pion_EtaIn, Entries= -2147483648, Total sum= 3.18502
+ TH1.Print Name  = Pion_JC, Entries= 5692180, Total sum= 2.13772
+ TH1.Print Name  = Pion_dJP, Entries= 5692180, Total sum= 2.13857
+ TH1.Print Name  = Pion_PC, Entries= 3524453, Total sum= 1.32415
  TH1.Print Name  = Pion_In_010, Entries= 74582717, Total sum= 7.16959
- TH1.Print Name  = Pion_EtaIn_010, Entries= 472505917, Total sum= 7.56876
- TH1.Print Name  = Pion_JC_010, Entries= 1632830, Total sum= 2.21055
- TH1.Print Name  = Pion_PC_010, Entries= 1245935, Total sum= 1.68727
- TH1.Print Name  = Pion_dJP_010, Entries= 1632830, Total sum= 2.21122
+ TH1.Print Name  = Pion_EtaIn_010, Entries= 761005125, Total sum= 7.41247
+ TH1.Print Name  = Pion_JC_010, Entries= 2680025, Total sum= 2.20635
+ TH1.Print Name  = Pion_PC_010, Entries= 2038067, Total sum= 1.67837
+ TH1.Print Name  = Pion_dJP_010, Entries= 2680025, Total sum= 2.20703
  TH1.Print Name  = Pion_In_1040, Entries= 127589888, Total sum= 4.22079
- TH1.Print Name  = Pion_EtaIn_1040, Entries= 806934702, Total sum= 4.44918
- TH1.Print Name  = Pion_JC_1040, Entries= 1356710, Total sum= 1.94974
- TH1.Print Name  = Pion_PC_1040, Entries= 738718, Total sum= 1.06209
- TH1.Print Name  = Pion_dJP_1040, Entries= 1356710, Total sum= 1.95061
+ TH1.Print Name  = Pion_EtaIn_1040, Entries= 1300173462, Total sum= 4.35949
+ TH1.Print Name  = Pion_JC_1040, Entries= 2226505, Total sum= 1.94724
+ TH1.Print Name  = Pion_PC_1040, Entries= 1208006, Total sum= 1.05694
+ TH1.Print Name  = Pion_dJP_1040, Entries= 2226505, Total sum= 1.94807
  TH1.Print Name  = Pion_In_40100, Entries= 97869657, Total sum= 1.62421
- TH1.Print Name  = Pion_EtaIn_40100, Entries= 618225879, Total sum= 1.71001
- TH1.Print Name  = Pion_JC_40100, Entries= 396168, Total sum= 1.76697
- TH1.Print Name  = Pion_PC_40100, Entries= 123987, Total sum= 0.553358
- TH1.Print Name  = Pion_dJP_40100, Entries= 396168, Total sum= 1.76811
+ TH1.Print Name  = Pion_EtaIn_40100, Entries= 996722380, Total sum= 1.6764
+ TH1.Print Name  = Pion_JC_40100, Entries= 650505, Total sum= 1.76266
+ TH1.Print Name  = Pion_PC_40100, Entries= 202670, Total sum= 0.549527
+ TH1.Print Name  = Pion_dJP_40100, Entries= 650505, Total sum= 1.7638
  TH1.Print Name  = Pion_In_0.000.95, Entries= 8744721, Total sum= 8.83657
- TH1.Print Name  = Pion_EtaIn_0.000.95, Entries= 55431240, Total sum= 9.33981
- TH1.Print Name  = Pion_JC_0.000.95, Entries= 290526, Total sum= 2.27164
- TH1.Print Name  = Pion_PC_0.000.95, Entries= 252890, Total sum= 1.97787
- TH1.Print Name  = Pion_dJP_0.000.95, Entries= 290526, Total sum= 2.27224
+ TH1.Print Name  = Pion_EtaIn_0.000.95, Entries= 89266547, Total sum= 9.14502
+ TH1.Print Name  = Pion_JC_0.000.95, Entries= 475671, Total sum= 2.26243
+ TH1.Print Name  = Pion_PC_0.000.95, Entries= 413383, Total sum= 1.96668
+ TH1.Print Name  = Pion_dJP_0.000.95, Entries= 475671, Total sum= 2.26302
  TH1.Print Name  = Pion_In_0.954.70, Entries= 28190359, Total sum= 7.24715
- TH1.Print Name  = Pion_EtaIn_0.954.70, Entries= 178595640, Total sum= 7.65268
- TH1.Print Name  = Pion_JC_0.954.70, Entries= 662621, Total sum= 2.08261
- TH1.Print Name  = Pion_PC_0.954.70, Entries= 516842, Total sum= 1.62495
- TH1.Print Name  = Pion_dJP_0.954.70, Entries= 662621, Total sum= 2.08327
+ TH1.Print Name  = Pion_EtaIn_0.954.70, Entries= 287575009, Total sum= 7.49392
+ TH1.Print Name  = Pion_JC_0.954.70, Entries= 1088323, Total sum= 2.0806
+ TH1.Print Name  = Pion_PC_0.954.70, Entries= 845126, Total sum= 1.61618
+ TH1.Print Name  = Pion_dJP_0.954.70, Entries= 1088323, Total sum= 2.08126
  TH1.Print Name  = Pion_In_4.709.50, Entries= 27965328, Total sum= 5.75617
- TH1.Print Name  = Pion_EtaIn_4.709.50, Entries= 177128397, Total sum= 6.07542
- TH1.Print Name  = Pion_JC_4.709.50, Entries= 505202, Total sum= 1.84558
- TH1.Print Name  = Pion_PC_4.709.50, Entries= 353239, Total sum= 1.29085
- TH1.Print Name  = Pion_dJP_4.709.50, Entries= 505202, Total sum= 1.84617
+ TH1.Print Name  = Pion_EtaIn_4.709.50, Entries= 285345101, Total sum= 5.95093
+ TH1.Print Name  = Pion_JC_4.709.50, Entries= 830597, Total sum= 1.84468
+ TH1.Print Name  = Pion_PC_4.709.50, Entries= 579565, Total sum= 1.28758
+ TH1.Print Name  = Pion_dJP_4.709.50, Entries= 830597, Total sum= 1.84528
  TH1.Print Name  = Pion_In_9.5014.00, Entries= 21044161, Total sum= 4.59663
- TH1.Print Name  = Pion_EtaIn_9.5014.00, Entries= 133316101, Total sum= 4.85125
- TH1.Print Name  = Pion_JC_9.5014.00, Entries= 319691, Total sum= 1.62584
- TH1.Print Name  = Pion_PC_9.5014.00, Entries= 204720, Total sum= 1.04148
- TH1.Print Name  = Pion_dJP_9.5014.00, Entries= 319691, Total sum= 1.62639
+ TH1.Print Name  = Pion_EtaIn_9.5014.00, Entries= 214699565, Total sum= 4.75165
+ TH1.Print Name  = Pion_JC_9.5014.00, Entries= 522711, Total sum= 1.6188
+ TH1.Print Name  = Pion_PC_9.5014.00, Entries= 334462, Total sum= 1.03615
+ TH1.Print Name  = Pion_dJP_9.5014.00, Entries= 522711, Total sum= 1.61935
  TH1.Print Name  = Pion_In_14.0019.00, Entries= 23530341, Total sum= 4.10405
- TH1.Print Name  = Pion_EtaIn_14.0019.00, Entries= 148874530, Total sum= 4.32519
- TH1.Print Name  = Pion_JC_14.0019.00, Entries= 301966, Total sum= 1.57903
- TH1.Print Name  = Pion_PC_14.0019.00, Entries= 180697, Total sum= 0.945295
- TH1.Print Name  = Pion_dJP_14.0019.00, Entries= 301966, Total sum= 1.57971
+ TH1.Print Name  = Pion_EtaIn_14.0019.00, Entries= 239862998, Total sum= 4.23757
+ TH1.Print Name  = Pion_JC_14.0019.00, Entries= 496896, Total sum= 1.58022
+ TH1.Print Name  = Pion_PC_14.0019.00, Entries= 295033, Total sum= 0.938618
+ TH1.Print Name  = Pion_dJP_14.0019.00, Entries= 496896, Total sum= 1.58083
  TH1.Print Name  = Pion_In_19.0028.00, Entries= 33804034, Total sum= 3.7438
- TH1.Print Name  = Pion_EtaIn_19.0028.00, Entries= 213639655, Total sum= 3.94448
- TH1.Print Name  = Pion_JC_19.0028.00, Entries= 353376, Total sum= 1.64467
- TH1.Print Name  = Pion_PC_19.0028.00, Entries= 187846, Total sum= 0.874612
- TH1.Print Name  = Pion_dJP_19.0028.00, Entries= 353376, Total sum= 1.64534
+ TH1.Print Name  = Pion_EtaIn_19.0028.00, Entries= 344217059, Total sum= 3.86481
+ TH1.Print Name  = Pion_JC_19.0028.00, Entries= 579956, Total sum= 1.64049
+ TH1.Print Name  = Pion_PC_19.0028.00, Entries= 307495, Total sum= 0.870143
+ TH1.Print Name  = Pion_dJP_19.0028.00, Entries= 579956, Total sum= 1.64116
  TH1.Print Name  = Pion_In_28.0038.00, Entries= 30618194, Total sum= 2.97646
- TH1.Print Name  = Pion_EtaIn_28.0038.00, Entries= 193555354, Total sum= 3.13578
- TH1.Print Name  = Pion_JC_28.0038.00, Entries= 253463, Total sum= 1.55279
- TH1.Print Name  = Pion_PC_28.0038.00, Entries= 116923, Total sum= 0.71666
- TH1.Print Name  = Pion_dJP_28.0038.00, Entries= 253463, Total sum= 1.55356
+ TH1.Print Name  = Pion_EtaIn_28.0038.00, Entries= 311925035, Total sum= 3.0731
+ TH1.Print Name  = Pion_JC_28.0038.00, Entries= 416554, Total sum= 1.5536
+ TH1.Print Name  = Pion_PC_28.0038.00, Entries= 190942, Total sum= 0.712507
+ TH1.Print Name  = Pion_dJP_28.0038.00, Entries= 416554, Total sum= 1.55439
  TH1.Print Name  = Pion_In_38.0048.00, Entries= 26304535, Total sum= 2.30063
- TH1.Print Name  = Pion_EtaIn_38.0048.00, Entries= 166272487, Total sum= 2.42319
- TH1.Print Name  = Pion_JC_38.0048.00, Entries= 171804, Total sum= 1.46781
- TH1.Print Name  = Pion_PC_38.0048.00, Entries= 67732, Total sum= 0.578951
- TH1.Print Name  = Pion_dJP_38.0048.00, Entries= 171804, Total sum= 1.46852
+ TH1.Print Name  = Pion_EtaIn_38.0048.00, Entries= 268028315, Total sum= 2.37525
+ TH1.Print Name  = Pion_JC_38.0048.00, Entries= 282004, Total sum= 1.4675
+ TH1.Print Name  = Pion_PC_38.0048.00, Entries= 110358, Total sum= 0.574584
+ TH1.Print Name  = Pion_dJP_38.0048.00, Entries= 282004, Total sum= 1.46827
  TH1.Print Name  = Pion_In_48.0068.00, Entries= 38119129, Total sum= 1.73604
- TH1.Print Name  = Pion_EtaIn_48.0068.00, Entries= 240862164, Total sum= 1.82822
- TH1.Print Name  = Pion_JC_48.0068.00, Entries= 184913, Total sum= 1.56144
- TH1.Print Name  = Pion_PC_48.0068.00, Entries= 58432, Total sum= 0.493772
- TH1.Print Name  = Pion_dJP_48.0068.00, Entries= 184913, Total sum= 1.56258
+ TH1.Print Name  = Pion_EtaIn_48.0068.00, Entries= 388305769, Total sum= 1.79228
+ TH1.Print Name  = Pion_JC_48.0068.00, Entries= 303638, Total sum= 1.55763
+ TH1.Print Name  = Pion_PC_48.0068.00, Entries= 95683, Total sum= 0.491178
+ TH1.Print Name  = Pion_dJP_48.0068.00, Entries= 303638, Total sum= 1.55869
  TH1.Print Name  = Pion_In_68.00100.00, Entries= 35408667, Total sum= 1.07599
- TH1.Print Name  = Pion_EtaIn_68.00100.00, Entries= 223596146, Total sum= 1.13256
- TH1.Print Name  = Pion_JC_68.00100.00, Entries= 84934, Total sum= 1.50732
- TH1.Print Name  = Pion_PC_68.00100.00, Entries= 20373, Total sum= 0.361769
- TH1.Print Name  = Pion_dJP_68.00100.00, Entries= 84934, Total sum= 1.50819
+ TH1.Print Name  = Pion_EtaIn_68.00100.00, Entries= 360531563, Total sum= 1.11041
+ TH1.Print Name  = Pion_JC_68.00100.00, Entries= 139121, Total sum= 1.5049
+ TH1.Print Name  = Pion_PC_68.00100.00, Entries= 33277, Total sum= 0.360199
+ TH1.Print Name  = Pion_dJP_68.00100.00, Entries= 139121, Total sum= 1.50588
 Collection name='TList', class='TList', size=78
  TH1.Print Name  = Integral_Kion_In, Entries= 25469309, Total sum= 3.93825
- TH1.Print Name  = Integral_Kion_EtaIn, Entries= 154369686, Total sum= 3.99847
- TH1.Print Name  = Integral_Kion_JC, Entries= 396737, Total sum= 2.19599
- TH1.Print Name  = Integral_Kion_PC, Entries= 149635, Total sum= 0.754278
+ TH1.Print Name  = Integral_Kion_EtaIn, Entries= 252871542, Total sum= 3.97554
+ TH1.Print Name  = Integral_Kion_JC, Entries= 652203, Total sum= 2.19448
+ TH1.Print Name  = Integral_Kion_PC, Entries= 245768, Total sum= 0.753767
  TH1.Print Name  = integral_Kion_In, Entries= 27927774, Total sum= 1.21024
- TH1.Print Name  = integral_Kion_EtaIn, Entries= 169231817, Total sum= 1.22703
- TH1.Print Name  = integral_Kion_JC, Entries= 429457, Total sum= 0.761997
- TH1.Print Name  = integral_Kion_PC, Entries= 160878, Total sum= 0.250156
+ TH1.Print Name  = integral_Kion_EtaIn, Entries= 277230379, Total sum= 1.22053
+ TH1.Print Name  = integral_Kion_JC, Entries= 706338, Total sum= 0.762044
+ TH1.Print Name  = integral_Kion_PC, Entries= 264234, Total sum= 0.249999
  TH1.Print Name  = Kion_In, Entries= 28702674, Total sum= 0.287023
- TH1.Print Name  = Kion_EtaIn, Entries= 173936770, Total sum= 0.28989
- TH1.Print Name  = Kion_JC, Entries= 440092, Total sum= 0.271561
- TH1.Print Name  = Kion_dJP, Entries= 440092, Total sum= 0.271857
- TH1.Print Name  = Kion_PC, Entries= 164273, Total sum= 0.101475
+ TH1.Print Name  = Kion_EtaIn, Entries= 284933533, Total sum= 0.28877
+ TH1.Print Name  = Kion_JC, Entries= 723765, Total sum= 0.27162
+ TH1.Print Name  = Kion_dJP, Entries= 723765, Total sum= 0.271921
+ TH1.Print Name  = Kion_PC, Entries= 269783, Total sum= 0.101356
  TH1.Print Name  = Kion_In_010, Entries= 6934114, Total sum= 0.666569
- TH1.Print Name  = Kion_EtaIn_010, Entries= 42372313, Total sum= 0.67873
- TH1.Print Name  = Kion_JC_010, Entries= 201927, Total sum= 0.273199
- TH1.Print Name  = Kion_PC_010, Entries= 96745, Total sum= 0.131013
- TH1.Print Name  = Kion_dJP_010, Entries= 201927, Total sum= 0.273454
+ TH1.Print Name  = Kion_EtaIn_010, Entries= 69203399, Total sum= 0.674063
+ TH1.Print Name  = Kion_JC_010, Entries= 332391, Total sum= 0.273472
+ TH1.Print Name  = Kion_PC_010, Entries= 158828, Total sum= 0.130793
+ TH1.Print Name  = Kion_dJP_010, Entries= 332391, Total sum= 0.273728
  TH1.Print Name  = Kion_In_1040, Entries= 11844962, Total sum= 0.391841
- TH1.Print Name  = Kion_EtaIn_1040, Entries= 71841246, Total sum= 0.396109
- TH1.Print Name  = Kion_JC_1040, Entries= 174176, Total sum= 0.250123
- TH1.Print Name  = Kion_PC_1040, Entries= 55230, Total sum= 0.0794056
- TH1.Print Name  = Kion_dJP_1040, Entries= 174176, Total sum= 0.250422
+ TH1.Print Name  = Kion_EtaIn_1040, Entries= 117635109, Total sum= 0.39443
+ TH1.Print Name  = Kion_JC_1040, Entries= 286208, Total sum= 0.250114
+ TH1.Print Name  = Kion_PC_1040, Entries= 90716, Total sum= 0.07937
+ TH1.Print Name  = Kion_dJP_1040, Entries= 286208, Total sum= 0.250417
  TH1.Print Name  = Kion_In_40100, Entries= 9148698, Total sum= 0.151828
- TH1.Print Name  = Kion_EtaIn_40100, Entries= 55018258, Total sum= 0.15218
- TH1.Print Name  = Kion_JC_40100, Entries= 53354, Total sum= 0.237799
- TH1.Print Name  = Kion_PC_40100, Entries= 8903, Total sum= 0.0397344
- TH1.Print Name  = Kion_dJP_40100, Entries= 53354, Total sum= 0.238121
+ TH1.Print Name  = Kion_EtaIn_40100, Entries= 90391871, Total sum= 0.152031
+ TH1.Print Name  = Kion_JC_40100, Entries= 87739, Total sum= 0.237565
+ TH1.Print Name  = Kion_PC_40100, Entries= 14690, Total sum= 0.039831
+ TH1.Print Name  = Kion_dJP_40100, Entries= 87739, Total sum= 0.237899
  TH1.Print Name  = Kion_In_0.000.95, Entries= 812639, Total sum= 0.821174
- TH1.Print Name  = Kion_EtaIn_0.000.95, Entries= 4985534, Total sum= 0.840024
- TH1.Print Name  = Kion_JC_0.000.95, Entries= 34988, Total sum= 0.273395
- TH1.Print Name  = Kion_PC_0.000.95, Entries= 20133, Total sum= 0.157463
- TH1.Print Name  = Kion_dJP_0.000.95, Entries= 34988, Total sum= 0.273645
+ TH1.Print Name  = Kion_EtaIn_0.000.95, Entries= 8133042, Total sum= 0.833193
+ TH1.Print Name  = Kion_JC_0.000.95, Entries= 57458, Total sum= 0.273087
+ TH1.Print Name  = Kion_PC_0.000.95, Entries= 33103, Total sum= 0.157484
+ TH1.Print Name  = Kion_dJP_0.000.95, Entries= 57458, Total sum= 0.273358
  TH1.Print Name  = Kion_In_0.954.70, Entries= 2620235, Total sum= 0.673603
- TH1.Print Name  = Kion_EtaIn_0.954.70, Entries= 16025007, Total sum= 0.686656
- TH1.Print Name  = Kion_JC_0.954.70, Entries= 81706, Total sum= 0.256688
- TH1.Print Name  = Kion_PC_0.954.70, Entries= 39645, Total sum= 0.124644
- TH1.Print Name  = Kion_dJP_0.954.70, Entries= 81706, Total sum= 0.256883
+ TH1.Print Name  = Kion_EtaIn_0.954.70, Entries= 26162033, Total sum= 0.681753
+ TH1.Print Name  = Kion_JC_0.954.70, Entries= 134667, Total sum= 0.257307
+ TH1.Print Name  = Kion_PC_0.954.70, Entries= 65466, Total sum= 0.12519
+ TH1.Print Name  = Kion_dJP_0.954.70, Entries= 134667, Total sum= 0.257531
  TH1.Print Name  = Kion_In_4.709.50, Entries= 2601092, Total sum= 0.535386
- TH1.Print Name  = Kion_EtaIn_4.709.50, Entries= 15869016, Total sum= 0.544296
- TH1.Print Name  = Kion_JC_4.709.50, Entries= 63230, Total sum= 0.230796
- TH1.Print Name  = Kion_PC_4.709.50, Entries= 27612, Total sum= 0.1009
- TH1.Print Name  = Kion_dJP_4.709.50, Entries= 63230, Total sum= 0.231063
+ TH1.Print Name  = Kion_EtaIn_4.709.50, Entries= 25935293, Total sum= 0.540883
+ TH1.Print Name  = Kion_JC_4.709.50, Entries= 104156, Total sum= 0.231163
+ TH1.Print Name  = Kion_PC_4.709.50, Entries= 44998, Total sum= 0.0999669
+ TH1.Print Name  = Kion_dJP_4.709.50, Entries= 104156, Total sum= 0.231397
  TH1.Print Name  = Kion_In_9.5014.00, Entries= 1956141, Total sum= 0.427274
- TH1.Print Name  = Kion_EtaIn_9.5014.00, Entries= 11923256, Total sum= 0.433874
- TH1.Print Name  = Kion_JC_9.5014.00, Entries= 40293, Total sum= 0.204762
- TH1.Print Name  = Kion_PC_9.5014.00, Entries= 15631, Total sum= 0.0795208
- TH1.Print Name  = Kion_dJP_9.5014.00, Entries= 40293, Total sum= 0.204986
+ TH1.Print Name  = Kion_EtaIn_9.5014.00, Entries= 19482315, Total sum= 0.431173
+ TH1.Print Name  = Kion_JC_9.5014.00, Entries= 65857, Total sum= 0.203817
+ TH1.Print Name  = Kion_PC_9.5014.00, Entries= 25457, Total sum= 0.0788624
+ TH1.Print Name  = Kion_dJP_9.5014.00, Entries= 65857, Total sum= 0.204024
  TH1.Print Name  = Kion_In_14.0019.00, Entries= 2185943, Total sum= 0.381261
- TH1.Print Name  = Kion_EtaIn_14.0019.00, Entries= 13287968, Total sum= 0.386049
- TH1.Print Name  = Kion_JC_14.0019.00, Entries= 38957, Total sum= 0.203544
- TH1.Print Name  = Kion_PC_14.0019.00, Entries= 13332, Total sum= 0.0697452
- TH1.Print Name  = Kion_dJP_14.0019.00, Entries= 38957, Total sum= 0.2038
+ TH1.Print Name  = Kion_EtaIn_14.0019.00, Entries= 21742705, Total sum= 0.384119
+ TH1.Print Name  = Kion_JC_14.0019.00, Entries= 63676, Total sum= 0.202322
+ TH1.Print Name  = Kion_PC_14.0019.00, Entries= 22056, Total sum= 0.0701692
+ TH1.Print Name  = Kion_dJP_14.0019.00, Entries= 63676, Total sum= 0.202579
  TH1.Print Name  = Kion_In_19.0028.00, Entries= 3137581, Total sum= 0.347486
- TH1.Print Name  = Kion_EtaIn_19.0028.00, Entries= 19026063, Total sum= 0.351282
- TH1.Print Name  = Kion_JC_19.0028.00, Entries= 45324, Total sum= 0.210789
- TH1.Print Name  = Kion_PC_19.0028.00, Entries= 14000, Total sum= 0.0651848
- TH1.Print Name  = Kion_dJP_19.0028.00, Entries= 45324, Total sum= 0.211031
+ TH1.Print Name  = Kion_EtaIn_19.0028.00, Entries= 31153130, Total sum= 0.349781
+ TH1.Print Name  = Kion_JC_19.0028.00, Entries= 74846, Total sum= 0.211556
+ TH1.Print Name  = Kion_PC_19.0028.00, Entries= 23090, Total sum= 0.0653401
+ TH1.Print Name  = Kion_dJP_19.0028.00, Entries= 74846, Total sum= 0.211799
  TH1.Print Name  = Kion_In_28.0038.00, Entries= 2840486, Total sum= 0.276129
- TH1.Print Name  = Kion_EtaIn_28.0038.00, Entries= 17182101, Total sum= 0.278366
- TH1.Print Name  = Kion_JC_28.0038.00, Entries= 33011, Total sum= 0.202084
- TH1.Print Name  = Kion_PC_28.0038.00, Entries= 8660, Total sum= 0.05308
- TH1.Print Name  = Kion_dJP_28.0038.00, Entries= 33011, Total sum= 0.202335
+ TH1.Print Name  = Kion_EtaIn_28.0038.00, Entries= 28163620, Total sum= 0.277469
+ TH1.Print Name  = Kion_JC_28.0038.00, Entries= 54314, Total sum= 0.202432
+ TH1.Print Name  = Kion_PC_28.0038.00, Entries= 14080, Total sum= 0.0525401
+ TH1.Print Name  = Kion_dJP_28.0038.00, Entries= 54314, Total sum= 0.202675
  TH1.Print Name  = Kion_In_38.0048.00, Entries= 2438313, Total sum= 0.213258
- TH1.Print Name  = Kion_EtaIn_38.0048.00, Entries= 14728240, Total sum= 0.214643
- TH1.Print Name  = Kion_JC_38.0048.00, Entries= 22639, Total sum= 0.193331
- TH1.Print Name  = Kion_PC_38.0048.00, Entries= 4965, Total sum= 0.0424392
- TH1.Print Name  = Kion_dJP_38.0048.00, Entries= 22639, Total sum= 0.193511
+ TH1.Print Name  = Kion_EtaIn_38.0048.00, Entries= 24161415, Total sum= 0.214117
+ TH1.Print Name  = Kion_JC_38.0048.00, Entries= 37247, Total sum= 0.193637
+ TH1.Print Name  = Kion_PC_38.0048.00, Entries= 8184, Total sum= 0.0426104
+ TH1.Print Name  = Kion_dJP_38.0048.00, Entries= 37247, Total sum= 0.193928
  TH1.Print Name  = Kion_In_48.0068.00, Entries= 3542844, Total sum= 0.16135
- TH1.Print Name  = Kion_EtaIn_48.0068.00, Entries= 21324549, Total sum= 0.16186
- TH1.Print Name  = Kion_JC_48.0068.00, Entries= 24819, Total sum= 0.209451
- TH1.Print Name  = Kion_PC_48.0068.00, Entries= 4207, Total sum= 0.0355507
- TH1.Print Name  = Kion_dJP_48.0068.00, Entries= 24819, Total sum= 0.20973
+ TH1.Print Name  = Kion_EtaIn_48.0068.00, Entries= 35023269, Total sum= 0.161655
+ TH1.Print Name  = Kion_JC_48.0068.00, Entries= 40780, Total sum= 0.209068
+ TH1.Print Name  = Kion_PC_48.0068.00, Entries= 6931, Total sum= 0.0355795
+ TH1.Print Name  = Kion_dJP_48.0068.00, Entries= 40780, Total sum= 0.20934
  TH1.Print Name  = Kion_In_68.00100.00, Entries= 3334035, Total sum= 0.101314
- TH1.Print Name  = Kion_EtaIn_68.00100.00, Entries= 20017952, Total sum= 0.101395
- TH1.Print Name  = Kion_JC_68.00100.00, Entries= 11770, Total sum= 0.208737
- TH1.Print Name  = Kion_PC_68.00100.00, Entries= 1450, Total sum= 0.025748
- TH1.Print Name  = Kion_dJP_68.00100.00, Entries= 11770, Total sum= 0.209003
+ TH1.Print Name  = Kion_EtaIn_68.00100.00, Entries= 32914720, Total sum= 0.101375
+ TH1.Print Name  = Kion_JC_68.00100.00, Entries= 19202, Total sum= 0.207523
+ TH1.Print Name  = Kion_PC_68.00100.00, Entries= 2403, Total sum= 0.0260107
+ TH1.Print Name  = Kion_dJP_68.00100.00, Entries= 19202, Total sum= 0.207848
 Collection name='TList', class='TList', size=78
  TH1.Print Name  = Integral_Proton_In, Entries= 24267169, Total sum= 3.97878
- TH1.Print Name  = Integral_Proton_EtaIn, Entries= 142118857, Total sum= 3.91733
- TH1.Print Name  = Integral_Proton_JC, Entries= 369916, Total sum= 2.00093
- TH1.Print Name  = Integral_Proton_PC, Entries= 126034, Total sum= 0.623736
+ TH1.Print Name  = Integral_Proton_EtaIn, Entries= 235972604, Total sum= 3.94206
+ TH1.Print Name  = Integral_Proton_JC, Entries= 607379, Total sum= 1.99849
+ TH1.Print Name  = Integral_Proton_PC, Entries= 206859, Total sum= 0.622379
  TH1.Print Name  = integral_Proton_In, Entries= 26558753, Total sum= 1.20848
- TH1.Print Name  = integral_Proton_EtaIn, Entries= 155518168, Total sum= 1.18741
- TH1.Print Name  = integral_Proton_JC, Entries= 399561, Total sum= 0.688513
- TH1.Print Name  = integral_Proton_PC, Entries= 135110, Total sum= 0.204509
+ TH1.Print Name  = integral_Proton_EtaIn, Entries= 258235408, Total sum= 1.19574
+ TH1.Print Name  = integral_Proton_JC, Entries= 656312, Total sum= 0.68744
+ TH1.Print Name  = integral_Proton_PC, Entries= 221843, Total sum= 0.204163
  TH1.Print Name  = Proton_In, Entries= 27292815, Total sum= 0.272925
- TH1.Print Name  = Proton_EtaIn, Entries= 159815501, Total sum= 0.266356
- TH1.Print Name  = Proton_JC, Entries= 409282, Total sum= 0.252672
- TH1.Print Name  = Proton_dJP, Entries= 409282, Total sum= 0.252824
- TH1.Print Name  = Proton_PC, Entries= 137987, Total sum= 0.085237
+ TH1.Print Name  = Proton_EtaIn, Entries= 265373794, Total sum= 0.268948
+ TH1.Print Name  = Proton_JC, Entries= 672150, Total sum= 0.252374
+ TH1.Print Name  = Proton_dJP, Entries= 672150, Total sum= 0.252529
+ TH1.Print Name  = Proton_PC, Entries= 226522, Total sum= 0.0851036
  TH1.Print Name  = Proton_In_010, Entries= 7254729, Total sum= 0.697392
- TH1.Print Name  = Proton_EtaIn_010, Entries= 43077602, Total sum= 0.69003
- TH1.Print Name  = Proton_JC_010, Entries= 199610, Total sum= 0.270203
- TH1.Print Name  = Proton_PC_010, Entries= 85096, Total sum= 0.115238
- TH1.Print Name  = Proton_dJP_010, Entries= 199610, Total sum= 0.270317
+ TH1.Print Name  = Proton_EtaIn_010, Entries= 71142526, Total sum= 0.692954
+ TH1.Print Name  = Proton_JC_010, Entries= 328592, Total sum= 0.270484
+ TH1.Print Name  = Proton_PC_010, Entries= 140002, Total sum= 0.115292
+ TH1.Print Name  = Proton_dJP_010, Entries= 328592, Total sum= 0.270599
  TH1.Print Name  = Proton_In_1040, Entries= 11569333, Total sum= 0.382724
- TH1.Print Name  = Proton_EtaIn_1040, Entries= 67828344, Total sum= 0.373984
- TH1.Print Name  = Proton_JC_1040, Entries= 156743, Total sum= 0.225208
- TH1.Print Name  = Proton_PC_1040, Entries= 44275, Total sum= 0.0636551
- TH1.Print Name  = Proton_dJP_1040, Entries= 156743, Total sum= 0.225358
+ TH1.Print Name  = Proton_EtaIn_1040, Entries= 112568399, Total sum= 0.377442
+ TH1.Print Name  = Proton_JC_1040, Entries= 256877, Total sum= 0.224606
+ TH1.Print Name  = Proton_PC_1040, Entries= 72441, Total sum= 0.0633803
+ TH1.Print Name  = Proton_dJP_1040, Entries= 256877, Total sum= 0.224754
  TH1.Print Name  = Proton_In_40100, Entries= 7734691, Total sum= 0.128362
- TH1.Print Name  = Proton_EtaIn_40100, Entries= 44612222, Total sum= 0.123397
- TH1.Print Name  = Proton_JC_40100, Entries= 43208, Total sum= 0.192602
- TH1.Print Name  = Proton_PC_40100, Entries= 5739, Total sum= 0.0256133
- TH1.Print Name  = Proton_dJP_40100, Entries= 43208, Total sum= 0.192839
+ TH1.Print Name  = Proton_EtaIn_40100, Entries= 74524483, Total sum= 0.125343
+ TH1.Print Name  = Proton_JC_40100, Entries= 70843, Total sum= 0.191829
+ TH1.Print Name  = Proton_PC_40100, Entries= 9400, Total sum= 0.0254848
+ TH1.Print Name  = Proton_dJP_40100, Entries= 70843, Total sum= 0.192086
  TH1.Print Name  = Proton_In_0.000.95, Entries= 866279, Total sum= 0.875378
- TH1.Print Name  = Proton_EtaIn_0.000.95, Entries= 5172327, Total sum= 0.871501
- TH1.Print Name  = Proton_JC_0.000.95, Entries= 35937, Total sum= 0.280927
- TH1.Print Name  = Proton_PC_0.000.95, Entries= 18298, Total sum= 0.143111
- TH1.Print Name  = Proton_dJP_0.000.95, Entries= 35937, Total sum= 0.281067
+ TH1.Print Name  = Proton_EtaIn_0.000.95, Entries= 8527502, Total sum= 0.873608
+ TH1.Print Name  = Proton_JC_0.000.95, Entries= 59268, Total sum= 0.28185
+ TH1.Print Name  = Proton_PC_0.000.95, Entries= 29955, Total sum= 0.142512
+ TH1.Print Name  = Proton_dJP_0.000.95, Entries= 59268, Total sum= 0.281969
  TH1.Print Name  = Proton_In_0.954.70, Entries= 2761717, Total sum= 0.709978
- TH1.Print Name  = Proton_EtaIn_0.954.70, Entries= 16413980, Total sum= 0.703325
- TH1.Print Name  = Proton_JC_0.954.70, Entries= 81841, Total sum= 0.257197
- TH1.Print Name  = Proton_PC_0.954.70, Entries= 35341, Total sum= 0.111109
- TH1.Print Name  = Proton_dJP_0.954.70, Entries= 81841, Total sum= 0.257307
+ TH1.Print Name  = Proton_EtaIn_0.954.70, Entries= 27086376, Total sum= 0.705843
+ TH1.Print Name  = Proton_JC_0.954.70, Entries= 134395, Total sum= 0.256896
+ TH1.Print Name  = Proton_PC_0.954.70, Entries= 58153, Total sum= 0.111207
+ TH1.Print Name  = Proton_dJP_0.954.70, Entries= 134395, Total sum= 0.257011
  TH1.Print Name  = Proton_In_4.709.50, Entries= 2695495, Total sum= 0.554819
- TH1.Print Name  = Proton_EtaIn_4.709.50, Entries= 15975746, Total sum= 0.54796
- TH1.Print Name  = Proton_JC_4.709.50, Entries= 61141, Total sum= 0.223342
- TH1.Print Name  = Proton_PC_4.709.50, Entries= 23556, Total sum= 0.0860814
- TH1.Print Name  = Proton_dJP_4.709.50, Entries= 61141, Total sum= 0.223429
+ TH1.Print Name  = Proton_EtaIn_4.709.50, Entries= 26409915, Total sum= 0.550783
+ TH1.Print Name  = Proton_JC_4.709.50, Entries= 100639, Total sum= 0.223488
+ TH1.Print Name  = Proton_PC_4.709.50, Entries= 38820, Total sum= 0.0862439
+ TH1.Print Name  = Proton_dJP_4.709.50, Entries= 100639, Total sum= 0.223583
  TH1.Print Name  = Proton_In_9.5014.00, Entries= 1996509, Total sum= 0.436093
- TH1.Print Name  = Proton_EtaIn_9.5014.00, Entries= 11806822, Total sum= 0.429639
- TH1.Print Name  = Proton_JC_9.5014.00, Entries= 37851, Total sum= 0.192466
- TH1.Print Name  = Proton_PC_9.5014.00, Entries= 13073, Total sum= 0.0665073
- TH1.Print Name  = Proton_dJP_9.5014.00, Entries= 37851, Total sum= 0.192562
+ TH1.Print Name  = Proton_EtaIn_9.5014.00, Entries= 19532109, Total sum= 0.432277
+ TH1.Print Name  = Proton_JC_9.5014.00, Entries= 62247, Total sum= 0.192766
+ TH1.Print Name  = Proton_PC_9.5014.00, Entries= 21434, Total sum= 0.0664023
+ TH1.Print Name  = Proton_dJP_9.5014.00, Entries= 62247, Total sum= 0.192841
  TH1.Print Name  = Proton_In_14.0019.00, Entries= 2196524, Total sum= 0.383106
- TH1.Print Name  = Proton_EtaIn_14.0019.00, Entries= 12925847, Total sum= 0.375529
- TH1.Print Name  = Proton_JC_14.0019.00, Entries= 35918, Total sum= 0.187782
- TH1.Print Name  = Proton_PC_14.0019.00, Entries= 11104, Total sum= 0.0580896
- TH1.Print Name  = Proton_dJP_14.0019.00, Entries= 35918, Total sum= 0.187902
+ TH1.Print Name  = Proton_EtaIn_14.0019.00, Entries= 21419424, Total sum= 0.378409
+ TH1.Print Name  = Proton_JC_14.0019.00, Entries= 58638, Total sum= 0.18644
+ TH1.Print Name  = Proton_PC_14.0019.00, Entries= 18235, Total sum= 0.0580098
+ TH1.Print Name  = Proton_dJP_14.0019.00, Entries= 58638, Total sum= 0.186552
  TH1.Print Name  = Proton_In_19.0028.00, Entries= 3076944, Total sum= 0.340771
- TH1.Print Name  = Proton_EtaIn_19.0028.00, Entries= 18016309, Total sum= 0.332639
- TH1.Print Name  = Proton_JC_19.0028.00, Entries= 40397, Total sum= 0.18797
- TH1.Print Name  = Proton_PC_19.0028.00, Entries= 11228, Total sum= 0.0522736
- TH1.Print Name  = Proton_dJP_19.0028.00, Entries= 40397, Total sum= 0.188091
+ TH1.Print Name  = Proton_EtaIn_19.0028.00, Entries= 29897850, Total sum= 0.335687
+ TH1.Print Name  = Proton_JC_19.0028.00, Entries= 66461, Total sum= 0.18795
+ TH1.Print Name  = Proton_PC_19.0028.00, Entries= 18222, Total sum= 0.0515618
+ TH1.Print Name  = Proton_dJP_19.0028.00, Entries= 66461, Total sum= 0.188071
  TH1.Print Name  = Proton_In_28.0038.00, Entries= 2692759, Total sum= 0.261769
- TH1.Print Name  = Proton_EtaIn_28.0038.00, Entries= 15720302, Total sum= 0.254684
- TH1.Print Name  = Proton_JC_28.0038.00, Entries= 28456, Total sum= 0.174269
- TH1.Print Name  = Proton_PC_28.0038.00, Entries= 6397, Total sum= 0.0392093
- TH1.Print Name  = Proton_dJP_28.0038.00, Entries= 28456, Total sum= 0.174416
+ TH1.Print Name  = Proton_EtaIn_28.0038.00, Entries= 26137710, Total sum= 0.257509
+ TH1.Print Name  = Proton_JC_28.0038.00, Entries= 46481, Total sum= 0.17327
+ TH1.Print Name  = Proton_PC_28.0038.00, Entries= 10522, Total sum= 0.0392632
+ TH1.Print Name  = Proton_dJP_28.0038.00, Entries= 46481, Total sum= 0.173446
  TH1.Print Name  = Proton_In_38.0048.00, Entries= 2233208, Total sum= 0.19532
- TH1.Print Name  = Proton_EtaIn_38.0048.00, Entries= 12987452, Total sum= 0.189274
- TH1.Print Name  = Proton_JC_38.0048.00, Entries= 19111, Total sum= 0.163192
- TH1.Print Name  = Proton_PC_38.0048.00, Entries= 3537, Total sum= 0.0302331
- TH1.Print Name  = Proton_dJP_38.0048.00, Entries= 19111, Total sum= 0.163354
+ TH1.Print Name  = Proton_EtaIn_38.0048.00, Entries= 21636074, Total sum= 0.191738
+ TH1.Print Name  = Proton_JC_38.0048.00, Entries= 31074, Total sum= 0.161627
+ TH1.Print Name  = Proton_PC_38.0048.00, Entries= 5808, Total sum= 0.0302344
+ TH1.Print Name  = Proton_dJP_38.0048.00, Entries= 31074, Total sum= 0.161788
  TH1.Print Name  = Proton_In_48.0068.00, Entries= 3093282, Total sum= 0.140876
- TH1.Print Name  = Proton_EtaIn_48.0068.00, Entries= 17865710, Total sum= 0.135606
- TH1.Print Name  = Proton_JC_48.0068.00, Entries= 20076, Total sum= 0.169413
- TH1.Print Name  = Proton_PC_48.0068.00, Entries= 2690, Total sum= 0.0227315
- TH1.Print Name  = Proton_dJP_48.0068.00, Entries= 20076, Total sum= 0.16965
+ TH1.Print Name  = Proton_EtaIn_48.0068.00, Entries= 29822817, Total sum= 0.137651
+ TH1.Print Name  = Proton_JC_48.0068.00, Entries= 33078, Total sum= 0.169556
+ TH1.Print Name  = Proton_PC_48.0068.00, Entries= 4371, Total sum= 0.0224381
+ TH1.Print Name  = Proton_dJP_48.0068.00, Entries= 33078, Total sum= 0.169802
  TH1.Print Name  = Proton_In_68.00100.00, Entries= 2654452, Total sum= 0.0806629
- TH1.Print Name  = Proton_EtaIn_68.00100.00, Entries= 15234362, Total sum= 0.0771654
- TH1.Print Name  = Proton_JC_68.00100.00, Entries= 9188, Total sum= 0.162994
- TH1.Print Name  = Proton_PC_68.00100.00, Entries= 810, Total sum= 0.0143834
- TH1.Print Name  = Proton_dJP_68.00100.00, Entries= 9188, Total sum= 0.163154
+ TH1.Print Name  = Proton_EtaIn_68.00100.00, Entries= 25502827, Total sum= 0.0785466
+ TH1.Print Name  = Proton_JC_68.00100.00, Entries= 15098, Total sum= 0.16323
+ TH1.Print Name  = Proton_PC_68.00100.00, Entries= 1339, Total sum= 0.0144937
+ TH1.Print Name  = Proton_dJP_68.00100.00, Entries= 15098, Total sum= 0.163425
 Collection name='TList', class='TList', size=78
  TH1.Print Name  = Integral_Kstar_In, Entries= 10875357, Total sum= 1.65534
- TH1.Print Name  = Integral_Kstar_EtaIn, Entries= 64028574, Total sum= 1.63773
- TH1.Print Name  = Integral_Kstar_JC, Entries= 73886, Total sum= 0.406607
- TH1.Print Name  = Integral_Kstar_PC, Entries= 54421, Total sum= 0.272899
+ TH1.Print Name  = Integral_Kstar_EtaIn, Entries= 106066764, Total sum= 1.6446
+ TH1.Print Name  = Integral_Kstar_JC, Entries= 120996, Total sum= 0.40456
+ TH1.Print Name  = Integral_Kstar_PC, Entries= 89226, Total sum= 0.271927
  TH1.Print Name  = integral_Kstar_In, Entries= 11926915, Total sum= 0.510031
- TH1.Print Name  = integral_Kstar_EtaIn, Entries= 70216963, Total sum= 0.503795
- TH1.Print Name  = integral_Kstar_JC, Entries= 80034, Total sum= 0.141135
- TH1.Print Name  = integral_Kstar_PC, Entries= 58437, Total sum= 0.0902877
+ TH1.Print Name  = integral_Kstar_EtaIn, Entries= 116330473, Total sum= 0.506276
+ TH1.Print Name  = integral_Kstar_JC, Entries= 130963, Total sum= 0.140288
+ TH1.Print Name  = integral_Kstar_PC, Entries= 95738, Total sum= 0.0898865
  TH1.Print Name  = Kstar_In, Entries= 12259187, Total sum= 0.12259
- TH1.Print Name  = Kstar_EtaIn, Entries= 72168259, Total sum= 0.120278
- TH1.Print Name  = Kstar_JC, Entries= 81899, Total sum= 0.0504825
- TH1.Print Name  = Kstar_dJP, Entries= 81899, Total sum= 0.0505912
- TH1.Print Name  = Kstar_PC, Entries= 59683, Total sum= 0.0368653
+ TH1.Print Name  = Kstar_EtaIn, Entries= 119562465, Total sum= 0.121172
+ TH1.Print Name  = Kstar_JC, Entries= 134084, Total sum= 0.0502672
+ TH1.Print Name  = Kstar_dJP, Entries= 134084, Total sum= 0.0503758
+ TH1.Print Name  = Kstar_PC, Entries= 97806, Total sum= 0.0367445
  TH1.Print Name  = Kstar_In_010, Entries= 2884085, Total sum= 0.277242
- TH1.Print Name  = Kstar_EtaIn_010, Entries= 17219246, Total sum= 0.27582
- TH1.Print Name  = Kstar_JC_010, Entries= 38245, Total sum= 0.0516799
- TH1.Print Name  = Kstar_PC_010, Entries= 35261, Total sum= 0.04775
- TH1.Print Name  = Kstar_dJP_010, Entries= 38245, Total sum= 0.0517923
+ TH1.Print Name  = Kstar_EtaIn_010, Entries= 28381072, Total sum= 0.276439
+ TH1.Print Name  = Kstar_JC_010, Entries= 62760, Total sum= 0.0515749
+ TH1.Print Name  = Kstar_PC_010, Entries= 57881, Total sum= 0.0476649
+ TH1.Print Name  = Kstar_dJP_010, Entries= 62760, Total sum= 0.0516836
  TH1.Print Name  = Kstar_In_1040, Entries= 5017436, Total sum= 0.16598
- TH1.Print Name  = Kstar_EtaIn_1040, Entries= 29617453, Total sum= 0.1633
- TH1.Print Name  = Kstar_JC_1040, Entries= 32117, Total sum= 0.0460886
- TH1.Print Name  = Kstar_PC_1040, Entries= 20130, Total sum= 0.028942
- TH1.Print Name  = Kstar_dJP_1040, Entries= 32117, Total sum= 0.0461763
+ TH1.Print Name  = Kstar_EtaIn_1040, Entries= 49015532, Total sum= 0.164348
+ TH1.Print Name  = Kstar_JC_1040, Entries= 52450, Total sum= 0.045793
+ TH1.Print Name  = Kstar_PC_1040, Entries= 32903, Total sum= 0.0287884
+ TH1.Print Name  = Kstar_dJP_1040, Entries= 52450, Total sum= 0.045891
  TH1.Print Name  = Kstar_In_40100, Entries= 4025394, Total sum= 0.0668035
- TH1.Print Name  = Kstar_EtaIn_40100, Entries= 23380264, Total sum= 0.0646695
- TH1.Print Name  = Kstar_JC_40100, Entries= 9672, Total sum= 0.0430504
- TH1.Print Name  = Kstar_PC_40100, Entries= 3046, Total sum= 0.013581
- TH1.Print Name  = Kstar_dJP_40100, Entries= 9672, Total sum= 0.0431664
+ TH1.Print Name  = Kstar_EtaIn_40100, Entries= 38933869, Total sum= 0.0654831
+ TH1.Print Name  = Kstar_JC_40100, Entries= 15753, Total sum= 0.0426102
+ TH1.Print Name  = Kstar_PC_40100, Entries= 4954, Total sum= 0.0134243
+ TH1.Print Name  = Kstar_dJP_40100, Entries= 15753, Total sum= 0.0427133
  TH1.Print Name  = Kstar_In_0.000.95, Entries= 337462, Total sum= 0.341001
- TH1.Print Name  = Kstar_EtaIn_0.000.95, Entries= 2019052, Total sum= 0.340192
- TH1.Print Name  = Kstar_JC_0.000.95, Entries= 6833, Total sum= 0.0533244
- TH1.Print Name  = Kstar_PC_0.000.95, Entries= 7320, Total sum= 0.0572427
- TH1.Print Name  = Kstar_dJP_0.000.95, Entries= 6833, Total sum= 0.0534417
+ TH1.Print Name  = Kstar_EtaIn_0.000.95, Entries= 3322840, Total sum= 0.340407
+ TH1.Print Name  = Kstar_JC_0.000.95, Entries= 11166, Total sum= 0.0530179
+ TH1.Print Name  = Kstar_PC_0.000.95, Entries= 11988, Total sum= 0.0570285
+ TH1.Print Name  = Kstar_dJP_0.000.95, Entries= 11166, Total sum= 0.0531226
  TH1.Print Name  = Kstar_In_0.954.70, Entries= 1087491, Total sum= 0.279568
- TH1.Print Name  = Kstar_EtaIn_0.954.70, Entries= 6504777, Total sum= 0.278721
- TH1.Print Name  = Kstar_JC_0.954.70, Entries= 15590, Total sum= 0.0488985
- TH1.Print Name  = Kstar_PC_0.954.70, Entries= 14813, Total sum= 0.0465719
- TH1.Print Name  = Kstar_dJP_0.954.70, Entries= 15590, Total sum= 0.0490148
+ TH1.Print Name  = Kstar_EtaIn_0.954.70, Entries= 10714655, Total sum= 0.279209
+ TH1.Print Name  = Kstar_JC_0.954.70, Entries= 25508, Total sum= 0.0486579
+ TH1.Print Name  = Kstar_PC_0.954.70, Entries= 24185, Total sum= 0.0462503
+ TH1.Print Name  = Kstar_dJP_0.954.70, Entries= 25508, Total sum= 0.0487803
  TH1.Print Name  = Kstar_In_4.709.50, Entries= 1083730, Total sum= 0.223064
- TH1.Print Name  = Kstar_EtaIn_4.709.50, Entries= 6459715, Total sum= 0.221563
- TH1.Print Name  = Kstar_JC_4.709.50, Entries= 11766, Total sum= 0.0429091
- TH1.Print Name  = Kstar_PC_4.709.50, Entries= 9834, Total sum= 0.0359367
- TH1.Print Name  = Kstar_dJP_4.709.50, Entries= 11766, Total sum= 0.0429968
+ TH1.Print Name  = Kstar_EtaIn_4.709.50, Entries= 10654743, Total sum= 0.222204
+ TH1.Print Name  = Kstar_JC_4.709.50, Entries= 19444, Total sum= 0.0431153
+ TH1.Print Name  = Kstar_PC_4.709.50, Entries= 16334, Total sum= 0.0362882
+ TH1.Print Name  = Kstar_dJP_4.709.50, Entries= 19444, Total sum= 0.0431975
  TH1.Print Name  = Kstar_In_9.5014.00, Entries= 818679, Total sum= 0.178821
- TH1.Print Name  = Kstar_EtaIn_9.5014.00, Entries= 4868920, Total sum= 0.177174
- TH1.Print Name  = Kstar_JC_9.5014.00, Entries= 7384, Total sum= 0.0374634
- TH1.Print Name  = Kstar_PC_9.5014.00, Entries= 5597, Total sum= 0.028474
- TH1.Print Name  = Kstar_dJP_9.5014.00, Entries= 7384, Total sum= 0.0375652
+ TH1.Print Name  = Kstar_EtaIn_9.5014.00, Entries= 8032004, Total sum= 0.17776
+ TH1.Print Name  = Kstar_JC_9.5014.00, Entries= 12129, Total sum= 0.0374826
+ TH1.Print Name  = Kstar_PC_9.5014.00, Entries= 9201, Total sum= 0.0285046
+ TH1.Print Name  = Kstar_dJP_9.5014.00, Entries= 12129, Total sum= 0.0375755
  TH1.Print Name  = Kstar_In_14.0019.00, Entries= 916042, Total sum= 0.15977
- TH1.Print Name  = Kstar_EtaIn_14.0019.00, Entries= 5444701, Total sum= 0.158182
- TH1.Print Name  = Kstar_JC_14.0019.00, Entries= 6975, Total sum= 0.0364159
- TH1.Print Name  = Kstar_PC_14.0019.00, Entries= 4983, Total sum= 0.0260681
- TH1.Print Name  = Kstar_dJP_14.0019.00, Entries= 6975, Total sum= 0.0364891
+ TH1.Print Name  = Kstar_EtaIn_14.0019.00, Entries= 8997161, Total sum= 0.158948
+ TH1.Print Name  = Kstar_JC_14.0019.00, Entries= 11468, Total sum= 0.0363953
+ TH1.Print Name  = Kstar_PC_14.0019.00, Entries= 8087, Total sum= 0.0257281
+ TH1.Print Name  = Kstar_dJP_14.0019.00, Entries= 11468, Total sum= 0.0364844
  TH1.Print Name  = Kstar_In_19.0028.00, Entries= 1329576, Total sum= 0.14725
- TH1.Print Name  = Kstar_EtaIn_19.0028.00, Entries= 7834291, Total sum= 0.144646
- TH1.Print Name  = Kstar_JC_19.0028.00, Entries= 8419, Total sum= 0.0391155
- TH1.Print Name  = Kstar_PC_19.0028.00, Entries= 5113, Total sum= 0.0238064
- TH1.Print Name  = Kstar_dJP_19.0028.00, Entries= 8419, Total sum= 0.0391993
+ TH1.Print Name  = Kstar_EtaIn_19.0028.00, Entries= 12965835, Total sum= 0.145577
+ TH1.Print Name  = Kstar_JC_19.0028.00, Entries= 13819, Total sum= 0.0390173
+ TH1.Print Name  = Kstar_PC_19.0028.00, Entries= 8408, Total sum= 0.0237929
+ TH1.Print Name  = Kstar_dJP_19.0028.00, Entries= 13819, Total sum= 0.039105
  TH1.Print Name  = Kstar_In_28.0038.00, Entries= 1214250, Total sum= 0.118039
- TH1.Print Name  = Kstar_EtaIn_28.0038.00, Entries= 7128417, Total sum= 0.115487
- TH1.Print Name  = Kstar_JC_28.0038.00, Entries= 6136, Total sum= 0.0375544
- TH1.Print Name  = Kstar_PC_28.0038.00, Entries= 3132, Total sum= 0.0191971
- TH1.Print Name  = Kstar_dJP_28.0038.00, Entries= 6136, Total sum= 0.0376096
+ TH1.Print Name  = Kstar_EtaIn_28.0038.00, Entries= 11819168, Total sum= 0.116442
+ TH1.Print Name  = Kstar_JC_28.0038.00, Entries= 9963, Total sum= 0.0371027
+ TH1.Print Name  = Kstar_PC_28.0038.00, Entries= 5060, Total sum= 0.0188816
+ TH1.Print Name  = Kstar_dJP_28.0038.00, Entries= 9963, Total sum= 0.0371773
  TH1.Print Name  = Kstar_In_38.0048.00, Entries= 1052846, Total sum= 0.0920828
- TH1.Print Name  = Kstar_EtaIn_38.0048.00, Entries= 6161334, Total sum= 0.0897924
- TH1.Print Name  = Kstar_JC_38.0048.00, Entries= 4191, Total sum= 0.0357549
- TH1.Print Name  = Kstar_PC_38.0048.00, Entries= 1667, Total sum= 0.014249
- TH1.Print Name  = Kstar_dJP_38.0048.00, Entries= 4191, Total sum= 0.0358233
+ TH1.Print Name  = Kstar_EtaIn_38.0048.00, Entries= 10229590, Total sum= 0.0906537
+ TH1.Print Name  = Kstar_JC_38.0048.00, Entries= 6796, Total sum= 0.0353212
+ TH1.Print Name  = Kstar_PC_38.0048.00, Entries= 2800, Total sum= 0.0145783
+ TH1.Print Name  = Kstar_dJP_38.0048.00, Entries= 6796, Total sum= 0.0353837
  TH1.Print Name  = Kstar_In_48.0068.00, Entries= 1549804, Total sum= 0.0705818
- TH1.Print Name  = Kstar_EtaIn_48.0068.00, Entries= 9018496, Total sum= 0.0684528
- TH1.Print Name  = Kstar_JC_48.0068.00, Entries= 4576, Total sum= 0.0385506
- TH1.Print Name  = Kstar_PC_48.0068.00, Entries= 1450, Total sum= 0.0122361
- TH1.Print Name  = Kstar_dJP_48.0068.00, Entries= 4576, Total sum= 0.0386689
+ TH1.Print Name  = Kstar_EtaIn_48.0068.00, Entries= 15001884, Total sum= 0.0692429
+ TH1.Print Name  = Kstar_JC_48.0068.00, Entries= 7401, Total sum= 0.0378844
+ TH1.Print Name  = Kstar_PC_48.0068.00, Entries= 2349, Total sum= 0.0120481
+ TH1.Print Name  = Kstar_dJP_48.0068.00, Entries= 7401, Total sum= 0.0379922
  TH1.Print Name  = Kstar_In_68.00100.00, Entries= 1485477, Total sum= 0.0451402
- TH1.Print Name  = Kstar_EtaIn_68.00100.00, Entries= 8588871, Total sum= 0.0435045
- TH1.Print Name  = Kstar_JC_68.00100.00, Entries= 2016, Total sum= 0.0357098
- TH1.Print Name  = Kstar_PC_68.00100.00, Entries= 512, Total sum= 0.00909172
- TH1.Print Name  = Kstar_dJP_68.00100.00, Entries= 2016, Total sum= 0.0357986
+ TH1.Print Name  = Kstar_EtaIn_68.00100.00, Entries= 14328884, Total sum= 0.0441317
+ TH1.Print Name  = Kstar_JC_68.00100.00, Entries= 3302, Total sum= 0.0356876
+ TH1.Print Name  = Kstar_PC_68.00100.00, Entries= 814, Total sum= 0.00881095
+ TH1.Print Name  = Kstar_dJP_68.00100.00, Entries= 3302, Total sum= 0.0357417
