@@ -3,7 +3,8 @@
 #include "TUtilHisto.h"
 #include "TH1D.h"
 
-const TString path("/home/cuipengyao/PythiaOutput");
+//const TString path("/home/cuipengyao/PythiaOutput");
+const TString path("/media/cuipengyao/My\ Passport/PythiaOutput");
 //const TString path("/home/cuipengyao/Phenomenon/StrinJet");
 //=============================================================================
 const Double_t dIn[] = { 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 1.8, 2.0, 2.2, 2.4, 2.6, 2.8, 3.2, 3.7, 4.2, 5.0, 6.0, 8.0, 12., 18. };
