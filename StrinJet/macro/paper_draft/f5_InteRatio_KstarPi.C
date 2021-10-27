@@ -2,8 +2,8 @@
 
 void f5_InteRatio_KstarPi(){
 //=============================================================================
-    //auto hD(GetDataC("data/HEPData_1807.11321v2.root", 97)); 
-    //auto gD = GetDataE("data/HEPData_1807.11321v2.root", 97); 
+    auto hD(GetDataC("data/HEPData_1807.11321v2.root", 96)); 
+    auto gD = GetDataE("data/HEPData_1807.11321v2.root", 96); 
     TGraph* g[3];
     g[0] = RatioToPi(1, 0, 8);    //Para1: "pp13TeV", "pp7TeV" 
     g[1] = RatioToPi(1, 1, 8);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
@@ -12,7 +12,7 @@ void f5_InteRatio_KstarPi(){
 //  =============================================================================
     //auto y = (Double_t)hD->GetMaximum();
     auto dflx(0.), dfux(25.);
-    auto dfly(0.035), dfuy(0.054);
+    auto dfly(0.025), dfuy(0.068);
     
     auto dlsx(0.05), dlsy(0.05);
     auto dtsx(0.05), dtsy(0.05);
@@ -34,21 +34,21 @@ void f5_InteRatio_KstarPi(){
     g[0]->SetLineStyle(0);
     g[1]->SetLineStyle(1);
     g[2]->SetLineStyle(2);
-    //DrawHisto(hD, wcl[0], wmk[0], "same");
-    //DrawGraph(gD, wcl[0], "E2");
+    DrawHisto(hD, wcl[0], wmk[0], "same");
+    DrawGraph(gD, wcl[0], "E2");
     DrawGraph(g[0], wcl[0], "L");
     DrawGraph(g[1], wcl[1], "L");
     DrawGraph(g[2], wcl[2], "L");
 
     auto leg(new TLegend(0.73, 0.70, 0.95, 0.95)); SetupLegend(leg);
-    //auto Leg(new TLegend(0.16, 0.75, 0.5, 0.85)); SetupLegend(Leg);
+    auto Leg(new TLegend(0.16, 0.75, 0.5, 0.85)); SetupLegend(Leg);
     //Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 7 TeV",  "PF")->SetTextSizePixels(24);
-    //Leg->AddEntry(hD, "Exp data",  "PF")->SetTextSizePixels(24);
+    Leg->AddEntry(hD, "Exp data",  "PF")->SetTextSizePixels(24);
     leg->AddEntry(g[0], "BLC",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[2], "BLC + Rope",  "L")->SetTextSizePixels(24);
     leg->Draw();
-    //Leg->Draw();
+    Leg->Draw();
 
     auto tex(new TLatex());
     tex->SetNDC();

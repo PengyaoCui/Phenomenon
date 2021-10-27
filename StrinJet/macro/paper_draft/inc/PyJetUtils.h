@@ -234,7 +234,7 @@ TGraph* RatioToPi(const int s,
                   const int p,
 		  bool j = kFALSE,
 		  bool u = kFALSE,
-		  const int t = 1)
+		  const double t = 1.)
 {
  
   const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));

@@ -5,9 +5,9 @@ void f5_InteRatio_LPi(){
     auto hD(GetDataC("data/HEPData_1606.07424v2.root", 37)); 
     auto gD = GetDataE("data/HEPData_1606.07424v2.root", 37); 
     TGraph* g[3];
-    g[0] = RatioToPi(1, 0, 1);    //Para1: "pp13TeV", "pp7TeV" 
-    g[1] = RatioToPi(1, 1, 1);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
-    g[2] = RatioToPi(1, 2, 1);    //Para3:"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"
+    g[0] = RatioToPi(1, 0, 1, kFALSE, kFALSE, 0.5);    //Para1: "pp13TeV", "pp7TeV" 
+    g[1] = RatioToPi(1, 1, 1, kFALSE, kFALSE, 0.5);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
+    g[2] = RatioToPi(1, 2, 1, kFALSE, kFALSE, 0.5);    //Para3:"Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton"
 
 //  =============================================================================
     auto y = (Double_t)hD->GetMaximum();

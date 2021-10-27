@@ -102,9 +102,9 @@ void InteSpect_JE(){
   //can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   //can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));
   //can->SaveAs(Form("./figure/png/%s.png", can->GetName()));
-  can->Print(Form("./figure/pdf/%s.eps", can->GetName()));
+  can->Print(Form("./figure/eps/%s.eps", can->GetName()));
   can->Print(Form("./figure/pdf/%s.pdf", can->GetName()));
-  can->Print(Form("./figure/pdf/%s.png", can->GetName()));
+  can->Print(Form("./figure/png/%s.png", can->GetName()));
   CanvasEnd(can);
     
   return;

@@ -121,7 +121,6 @@ void RatiowR(){
   tex->SetNDC();
   tex->SetTextSizePixels(24);
   tex->DrawLatex(0.16, 0.91, "pp #sqrt{#it{s}} = 7 TeV  Strange particle to K^{0}_{S} ratio in jets");
-  //tex->DrawLatex(0.16, 0.7, Form("Inclusive %s", stny.Data()));
 
   tex->DrawLatex(0.74, 0.75, "#color[799]{K*^{0}/K^{0}_{S}}");
   tex->DrawLatex(0.44, 0.32, "#color[617]{#phi/K^{0}_{S}}");

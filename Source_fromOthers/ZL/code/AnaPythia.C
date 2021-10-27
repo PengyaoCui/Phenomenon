@@ -63,7 +63,7 @@ int main(int argc, char* argv[])
   Pythia8::Event& event = pythia.event;//固定的写法
   Pythia8::Info&  info  = pythia.info;//固定的写法
 
-  pythia.readString("Main:numberOfEvents = 100000");//对一组参数做了设定
+  pythia.readString("Main:numberOfEvents = 1000");//对一组参数做了设定
 
   //mode  Tune:pp (default = 5; minimum = -1; maximum = 14)
   pythia.readString("Tune:pp = 5"); //tune 4C
