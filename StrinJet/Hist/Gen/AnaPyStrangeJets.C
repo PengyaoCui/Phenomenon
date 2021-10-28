@@ -1,7 +1,7 @@
 #include "utils.h"
 //=============================================================================
 const auto bsQCD(kTRUE);
-const auto bCR(kFALSE);
+const auto bCR(kTRUE);
 const auto bRope(kFALSE);
 const auto bhQCD = !bsQCD;
 
@@ -153,6 +153,10 @@ int main(int argc, char *argv[])
 //=============================================================================
 
   auto list_results(new TList());
+  auto list_I(new TList());
+  auto list_J(new TList());
+  auto list_P(new TList());
+
   auto hPtHat(new TH2D("hPtHat", "", 1000, 0., 1000., 2000, -0.5, 1999.5));
   list_results->Add(hPtHat);
 
@@ -206,114 +210,196 @@ int main(int argc, char *argv[])
   TH1D *hMidTrEta     = new TH1D("hMidTrEta", ";#eta; N_{trig}", 1000, -5., 5.);
   list_results->Add(hMidTrEta);
   
+//-----------------------------------------------------------------------------
   TH1D *hKshortFwd  = new TH1D("hKshortFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hKshortFwd);
+  list_I->Add(hKshortFwd);
   
   TH1D *hLambdaFwd  = new TH1D("hLambdaFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hLambdaFwd);
+  list_I->Add(hLambdaFwd);
   
   TH1D *hXiFwd  = new TH1D("hXiFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hXiFwd);
+  list_I->Add(hXiFwd);
 
   TH1D *hOmegaFwd  = new TH1D("hOmegaFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hOmegaFwd);
+  list_I->Add(hOmegaFwd);
   
   TH1D *hPhiFwd  = new TH1D("hPhiFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hPhiFwd);
+  list_I->Add(hPhiFwd);
   
   TH1D *hKstarFwd  = new TH1D("hKstarFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hKstarFwd);
+  list_I->Add(hKstarFwd);
   
   TH1D *hPionFwd  = new TH1D("hPionFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hPionFwd);
+  list_I->Add(hPionFwd);
   
   TH1D *hKionFwd  = new TH1D("hKionFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hKionFwd);
+  list_I->Add(hKionFwd);
   
   TH1D *hProtonFwd  = new TH1D("hProtonFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hProtonFwd);
+  list_I->Add(hProtonFwd);
 
+  TH2D *hKshortPtFwd  = new TH2D("hKshortPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_I->Add(hKshortPtFwd);
+  
+  TH2D *hLambdaPtFwd  = new TH2D("hLambdaPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_I->Add(hLambdaPtFwd);
+
+  TH2D *hXiPtFwd  = new TH2D("hXiPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_I->Add(hXiPtFwd);
+  
+  TH2D *hOmegaPtFwd  = new TH2D("hOmegaPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_I->Add(hOmegaPtFwd);
+  
+  TH2D *hPhiPtFwd  = new TH2D("hPhiPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_I->Add(hPhiPtFwd);
+  
+  TH2D *hKstarPtFwd  = new TH2D("hKstarPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_I->Add(hKstarPtFwd);
+  
+  TH2D *hPionPtFwd  = new TH2D("hPionPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_I->Add(hPionPtFwd);
+  
+  TH2D *hKionPtFwd  = new TH2D("hKionPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_I->Add(hKionPtFwd);
+  
+  TH2D *hProtonPtFwd  = new TH2D("hProtonPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_I->Add(hProtonPtFwd);
 //============================== 
   TH1D *hJCKshortFwd  = new TH1D("hJCKshortFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hJCKshortFwd);
+  list_J->Add(hJCKshortFwd);
 
   TH1D *hJCLambdaFwd  = new TH1D("hJCLambdaFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hJCLambdaFwd);
+  list_J->Add(hJCLambdaFwd);
 
   TH1D *hJCXiFwd  = new TH1D("hJCXiFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hJCXiFwd);
+  list_J->Add(hJCXiFwd);
 
   TH1D *hJCOmegaFwd  = new TH1D("hJCOmegaFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hJCOmegaFwd);
+  list_J->Add(hJCOmegaFwd);
   
   TH1D *hJCPhiFwd  = new TH1D("hJCPhiFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hJCPhiFwd);
+  list_J->Add(hJCPhiFwd);
 
   TH1D *hJCKstarFwd  = new TH1D("hJCKstarFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hJCKstarFwd);
+  list_J->Add(hJCKstarFwd);
 
   TH1D *hJCPionFwd  = new TH1D("hJCPionFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hJCPionFwd);
+  list_J->Add(hJCPionFwd);
 
   TH1D *hJCKionFwd  = new TH1D("hJCKionFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hJCKionFwd);
+  list_J->Add(hJCKionFwd);
 
   TH1D *hJCProtonFwd  = new TH1D("hJCProtonFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hJCProtonFwd);
-//============================== 
-  TH1D *hPCKshortFwd  = new TH1D("hPCKshortFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hPCKshortFwd);
+  list_J->Add(hJCProtonFwd);
 
-  TH1D *hPCLambdaFwd  = new TH1D("hPCLambdaFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hPCLambdaFwd);
+  TH2D *hJCKshortPtFwd  = new TH2D("hJCKshortPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_J->Add(hJCKshortPtFwd);
 
-  TH1D *hPCXiFwd  = new TH1D("hPCXiFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hPCXiFwd);
+  TH2D *hJCLambdaPtFwd  = new TH2D("hJCLambdaPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_J->Add(hJCLambdaPtFwd);
 
-  TH1D *hPCOmegaFwd  = new TH1D("hPCOmegaFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hPCOmegaFwd);
-  
-  TH1D *hPCPhiFwd  = new TH1D("hPCPhiFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hPCPhiFwd);
+  TH2D *hJCXiPtFwd  = new TH2D("hJCXiPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5); 
+  list_J->Add(hJCXiPtFwd);
 
-  TH1D *hPCKstarFwd  = new TH1D("hPCKstarFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hPCKstarFwd);
+  TH2D *hJCOmegaPtFwd  = new TH2D("hJCOmegaPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_J->Add(hJCOmegaPtFwd);
 
-  TH1D *hPCPionFwd  = new TH1D("hPCPionFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hPCPionFwd);
+  TH2D *hJCPhiPtFwd  = new TH2D("hJCPhiPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_J->Add(hJCPhiPtFwd);
 
-  TH1D *hPCKionFwd  = new TH1D("hPCKionFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hPCKionFwd);
+  TH2D *hJCKstarPtFwd  = new TH2D("hJCKstarPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_J->Add(hJCKstarPtFwd);
 
-  TH1D *hPCProtonFwd  = new TH1D("hPCProtonFwd", "N_{Fwd}", 2000, -0.5, 999.5);
-  list_results->Add(hPCProtonFwd);
-//============================== 
+  TH2D *hJCPionPtFwd  = new TH2D("hJCPionPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_J->Add(hJCPionPtFwd);
+
+  TH2D *hJCKionPtFwd  = new TH2D("hJCKionPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_J->Add(hJCKionPtFwd);
+
+  TH2D *hJCProtonPtFwd  = new TH2D("hJCProtonPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_J->Add(hJCProtonPtFwd);
+
   TH1D *hKshortPJ = new TH1D("hKshortPJ", "PJ", 25, 0., 2.5);
-  list_results->Add(hKshortPJ);
+  list_J->Add(hKshortPJ);
   
   TH1D *hLambdaPJ = new TH1D("hLambdaPJ", "PJ", 25, 0., 2.5);
-  list_results->Add(hLambdaPJ);
+  list_J->Add(hLambdaPJ);
 
   TH1D *hXiPJ = new TH1D("hXiPJ", "PJ", 25, 0., 2.5);
-  list_results->Add(hXiPJ);
+  list_J->Add(hXiPJ);
   
   TH1D *hOmegaPJ = new TH1D("hOmegaPJ", "PJ", 25, 0., 2.5);
-  list_results->Add(hOmegaPJ);
+  list_J->Add(hOmegaPJ);
   
   TH1D *hPhiPJ = new TH1D("hPhiPJ", "PJ", 25, 0., 2.5);
-  list_results->Add(hPhiPJ);
+  list_J->Add(hPhiPJ);
   
   TH1D *hKstarPJ = new TH1D("hKstarPJ", "PJ", 25, 0., 2.5);
-  list_results->Add(hKstarPJ);
+  list_J->Add(hKstarPJ);
   
   TH1D *hPionPJ = new TH1D("hPionPJ", "PJ", 25, 0., 2.5);
-  list_results->Add(hPionPJ);
+  list_J->Add(hPionPJ);
   
   TH1D *hKionPJ = new TH1D("hKionPJ", "PJ", 25, 0., 2.5);
-  list_results->Add(hKionPJ);
+  list_J->Add(hKionPJ);
   
   TH1D *hProtonPJ = new TH1D("hProtonPJ", "PJ", 25, 0., 2.5);
-  list_results->Add(hProtonPJ);
+  list_J->Add(hProtonPJ);
+//============================== 
+  TH1D *hPCKshortFwd  = new TH1D("hPCKshortFwd", "N_{Fwd}", 2000, -0.5, 999.5);
+  list_P->Add(hPCKshortFwd);
+
+  TH1D *hPCLambdaFwd  = new TH1D("hPCLambdaFwd", "N_{Fwd}", 2000, -0.5, 999.5);
+  list_P->Add(hPCLambdaFwd);
+
+  TH1D *hPCXiFwd  = new TH1D("hPCXiFwd", "N_{Fwd}", 2000, -0.5, 999.5);
+  list_P->Add(hPCXiFwd);
+
+  TH1D *hPCOmegaFwd  = new TH1D("hPCOmegaFwd", "N_{Fwd}", 2000, -0.5, 999.5);
+  list_P->Add(hPCOmegaFwd);
+  
+  TH1D *hPCPhiFwd  = new TH1D("hPCPhiFwd", "N_{Fwd}", 2000, -0.5, 999.5);
+  list_P->Add(hPCPhiFwd);
+
+  TH1D *hPCKstarFwd  = new TH1D("hPCKstarFwd", "N_{Fwd}", 2000, -0.5, 999.5);
+  list_P->Add(hPCKstarFwd);
+
+  TH1D *hPCPionFwd  = new TH1D("hPCPionFwd", "N_{Fwd}", 2000, -0.5, 999.5);
+  list_P->Add(hPCPionFwd);
+
+  TH1D *hPCKionFwd  = new TH1D("hPCKionFwd", "N_{Fwd}", 2000, -0.5, 999.5);
+  list_P->Add(hPCKionFwd);
+
+  TH1D *hPCProtonFwd  = new TH1D("hPCProtonFwd", "N_{Fwd}", 2000, -0.5, 999.5);
+  list_P->Add(hPCProtonFwd);
+
+  TH2D *hPCKshortPtFwd  = new TH2D("hPCKshortPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_P->Add(hPCKshortPtFwd);
+
+  TH2D *hPCLambdaPtFwd  = new TH2D("hPCLambdaPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_P->Add(hPCLambdaPtFwd);
+
+  TH2D *hPCXiPtFwd  = new TH2D("hPCXiPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_P->Add(hPCXiPtFwd);
+
+  TH2D *hPCOmegaPtFwd  = new TH2D("hPCOmegaPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_P->Add(hPCOmegaPtFwd);
+
+  TH2D *hPCPhiPtFwd  = new TH2D("hPCPhiPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_P->Add(hPCPhiPtFwd);
+
+  TH2D *hPCKstarPtFwd  = new TH2D("hPCKstarPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_P->Add(hPCKstarPtFwd);
+
+  TH2D *hPCPionPtFwd  = new TH2D("hPCPionPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_P->Add(hPCPionPtFwd);
+
+  TH2D *hPCKionPtFwd  = new TH2D("hPCKionPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_P->Add(hPCKionPtFwd);
+
+  TH2D *hPCProtonPtFwd  = new TH2D("hPCProtonPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 2000, 0., 20., 2000, -0.5, 999.5);
+  list_P->Add(hPCProtonPtFwd);
+
 //============================== 
  
   TProfile *hProfAcc = new TProfile("hProfAcc", "", 4, -0.5, 3.5); list_results->Add(hProfAcc);
@@ -338,9 +424,9 @@ int main(int argc, char *argv[])
     auto dFwdCh(0.);
     auto dMidCh(0.);
     for (auto i=0; i<pyReco.size(); i++) if (pyReco[i].isFinal()   &&
-                                          pyReco[i].isVisible() &&
-                                          //pyReco[i].isCharged() &&
-                                          (pyReco[i].pT()>dTrkPtCut)) {
+                                             pyReco[i].isVisible() &&
+                                           //pyReco[i].isCharged() &&
+                                            (pyReco[i].pT()>dTrkPtCut)) {
       const auto &ap(pyReco[i]);
       Double_t dEtaAbs = TMath::Abs(ap.eta());
       if( ap.isCharged() ){
@@ -362,9 +448,7 @@ int main(int argc, char *argv[])
         }
       }
     }
-    //fwdtrk=dFwdCh;
-    //midtrk=dMidCh;
-    //hFwdVsMid->Fill(dMidCh/(2.*dcEtaCut), dFwdCh/(2.*(dfEtaMax-dfEtaMin)));
+    if(dFwdCh == 0 && dMidCh == 0) continue;//MB event at least V0 or SPD
     hFwdVsMid->Fill(dMidCh, dFwdCh);
 //=============================================================================
 
@@ -384,22 +468,32 @@ int main(int argc, char *argv[])
 
       if (!(ap.isHadron())) continue;
      
+      const auto id(ap.id());
+      if ((dpRap>-0.5) && (dpRap<0.5)){
+        if(id == 310 ){hKshortFwd->Fill(dFwdCh); hKshortPtFwd->Fill(dpPt, dFwdCh);}
+        if(id == 3122){hLambdaFwd->Fill(dFwdCh); hLambdaPtFwd->Fill(dpPt, dFwdCh);}
+        if(id == 3312){hXiFwd    ->Fill(dFwdCh); hXiPtFwd    ->Fill(dpPt, dFwdCh);}
+        if(id == 3334){hOmegaFwd ->Fill(dFwdCh); hOmegaPtFwd ->Fill(dpPt, dFwdCh);}
+        if(id == 333 ){hPhiFwd   ->Fill(dFwdCh); hPhiPtFwd   ->Fill(dpPt, dFwdCh);}
+        if(id == 313 ){hKstarFwd ->Fill(dFwdCh); hKstarPtFwd ->Fill(dpPt, dFwdCh);}
+        if(id == 211 ){hPionFwd  ->Fill(dFwdCh); hPionPtFwd  ->Fill(dpPt, dFwdCh);}
+        if(id == 321 ){hKionFwd  ->Fill(dFwdCh); hKionPtFwd  ->Fill(dpPt, dFwdCh);}
+        if(id == 2212){hProtonFwd->Fill(dFwdCh); hProtonPtFwd->Fill(dpPt, dFwdCh);}
+      } 
       if ((dpEta<dStrgEtaMin) || (dpEta>dStrgEtaMax)) continue;
-      //if ((dpRap<-0.5) || (dpRap>0.5)) continue;
 //=============================================================================
 
       auto ks(EStrg::Undef);
-      const auto id(ap.id());
-      if(id==310) { ks = EStrg::Kshort; }//par = 1; }
-      if(TMath::Abs(id)==3122){ ks = EStrg::Lambda; }//par = 2; }
-      if(TMath::Abs(id)==3312){ ks = EStrg::Xi;     }//par = 3; }
-      if(TMath::Abs(id)==3334){ ks = EStrg::Omega;  }//par = 4; }
-      if(TMath::Abs(id)==333) { ks = EStrg::Phi;    }//par = 5; }
-      if(TMath::Abs(id)==313) { ks = EStrg::Kstar; } //par = 6; }
+      if(id==310) { ks = EStrg::Kshort; }//par = 1; 
+      if(TMath::Abs(id)==3122){ ks = EStrg::Lambda; }//par = 2; 
+      if(TMath::Abs(id)==3312){ ks = EStrg::Xi;     }//par = 3; 
+      if(TMath::Abs(id)==3334){ ks = EStrg::Omega;  }//par = 4; 
+      if(TMath::Abs(id)==333) { ks = EStrg::Phi;    }//par = 5; 
+      if(TMath::Abs(id)==313) { ks = EStrg::Kstar; } //par = 6; 
                                                  
-      if(TMath::Abs(id)==211) { ks=EStrg::Pion;     }//par = 7;}
-      if(TMath::Abs(id)==321) { ks=EStrg::Kion;     }//par = 8;}
-      if(TMath::Abs(id)==2212){ ks=EStrg::Proton;   }//par = 9;}
+      if(TMath::Abs(id)==211) { ks=EStrg::Pion;     }//par = 7;
+      if(TMath::Abs(id)==321) { ks=EStrg::Kion;     }//par = 8;
+      if(TMath::Abs(id)==2212){ ks=EStrg::Proton;   }//par = 9;
                                                  
       
       if(ks==EStrg::Undef) continue;
@@ -410,10 +504,7 @@ int main(int argc, char *argv[])
       vStrgs.back().set_user_info(new StrgInfo(ks));
 
       const auto ss(StrgName(ks));
-      //if (!ss.IsNull()) {pt = dpPt; eta = dpEta; }
       hParPtEta->Fill(dpPt, dpEta); 
-      
-      //tree->Fill();  
     }//end all particles loop in one event
 //=============================================================================
 
@@ -423,7 +514,7 @@ int main(int argc, char *argv[])
     const auto &vJets(aSelEta(acs.inclusive_jets(dJetPtMin)));
     for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) { hJet->Fill(aj.pt()); hJetEta->Fill(aj.eta()); }
     Bool_t IsJet = kFALSE;
-    for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) { 
+    for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) {
       const auto dJ(aj.pt());
       if (dJ<10.) continue; 
       IsJet = kTRUE;
@@ -475,19 +566,10 @@ int main(int argc, char *argv[])
       auto ps(av.user_info_shared_ptr());
       const auto ks((static_cast<StrgInfo*>(ps.get()))->GetType());
       const auto ss(StrgName(ks));
-      if(ss == "Kshort")hKshortFwd->Fill(dFwdCh); 
-      if(ss == "Lambda")hLambdaFwd->Fill(dFwdCh); 
-      if(ss == "Xi")hXiFwd->Fill(dFwdCh); 
-      if(ss == "Omega")hOmegaFwd->Fill(dFwdCh); 
-      if(ss == "Phi")hPhiFwd->Fill(dFwdCh); 
-      if(ss == "Kstar")hKstarFwd->Fill(dFwdCh); 
-      if(ss == "Pion")hPionFwd->Fill(dFwdCh); 
-      if(ss == "Kion")hKionFwd->Fill(dFwdCh); 
-      if(ss == "Proton")hProtonFwd->Fill(dFwdCh); 
 
       TVector3 strg, vj, vl1, vl2, vu1, vu2;
       strg.SetPtEtaPhi(av.pt(), av.eta(), av.phi());
-      //Pt = av.pt(); Eta = av.eta(); Rap = av.rapidity();
+      auto dpPt = av.pt(); //Eta = av.eta(); Rap = av.rapidity();
 
       bool bJC; bool bPC;
       const auto sj = gksJets;
@@ -516,28 +598,27 @@ int main(int argc, char *argv[])
         if (bJC){bPC = false;}
       
       }
-
       if(bJC){
-        if(ss == "Kshort"){hKshortPJ->Fill(dmin); hJCKshortFwd->Fill(dFwdCh);}
-        if(ss == "Lambda"){hLambdaPJ->Fill(dmin); hJCLambdaFwd->Fill(dFwdCh);}
-        if(ss == "Xi")    {hXiPJ->Fill(dmin);    hJCXiFwd->Fill(dFwdCh);    }
-        if(ss == "Omega") {hOmegaPJ->Fill(dmin); hJCOmegaFwd->Fill(dFwdCh); }
-        if(ss == "Phi")   {hPhiPJ->Fill(dmin);   hJCPhiFwd->Fill(dFwdCh);   }
-        if(ss == "Kstar") {hKstarPJ->Fill(dmin); hJCKstarFwd->Fill(dFwdCh); }
-        if(ss == "Pion")  {hPionPJ->Fill(dmin);  hJCPionFwd->Fill(dFwdCh);  }
-        if(ss == "Kion")  {hKionPJ->Fill(dmin);  hJCKionFwd->Fill(dFwdCh);  }
-        if(ss == "Proton"){hProtonPJ->Fill(dmin); hJCProtonFwd->Fill(dFwdCh);}
+        if(ss == "Kshort"){hKshortPJ->Fill(dmin); hJCKshortFwd->Fill(dFwdCh); hJCKshortPtFwd->Fill(dpPt, dFwdCh);}
+        if(ss == "Lambda"){hLambdaPJ->Fill(dmin); hJCLambdaFwd->Fill(dFwdCh); hJCLambdaPtFwd->Fill(dpPt, dFwdCh);}
+        if(ss == "Xi")    {hXiPJ->Fill(dmin);     hJCXiFwd->Fill(dFwdCh);     hJCXiPtFwd    ->Fill(dpPt, dFwdCh);}
+        if(ss == "Omega") {hOmegaPJ->Fill(dmin);  hJCOmegaFwd->Fill(dFwdCh);  hJCOmegaPtFwd ->Fill(dpPt, dFwdCh);}
+        if(ss == "Phi")   {hPhiPJ->Fill(dmin);    hJCPhiFwd->Fill(dFwdCh);    hJCPhiPtFwd   ->Fill(dpPt, dFwdCh);}
+        if(ss == "Kstar") {hKstarPJ->Fill(dmin);  hJCKstarFwd->Fill(dFwdCh);  hJCKstarPtFwd ->Fill(dpPt, dFwdCh);}
+        if(ss == "Pion")  {hPionPJ->Fill(dmin);   hJCPionFwd->Fill(dFwdCh);   hJCPionPtFwd  ->Fill(dpPt, dFwdCh);}
+        if(ss == "Kion")  {hKionPJ->Fill(dmin);   hJCKionFwd->Fill(dFwdCh);   hJCKionPtFwd  ->Fill(dpPt, dFwdCh);}
+        if(ss == "Proton"){hProtonPJ->Fill(dmin); hJCProtonFwd->Fill(dFwdCh); hJCProtonPtFwd->Fill(dpPt, dFwdCh);}
       }
       if(bPC){
-        if(ss == "Kshort")hPCKshortFwd->Fill(dFwdCh);
-        if(ss == "Lambda")hPCLambdaFwd->Fill(dFwdCh);
-        if(ss == "Xi")    hPCXiFwd->Fill(dFwdCh);
-        if(ss == "Omega") hPCOmegaFwd->Fill(dFwdCh);
-        if(ss == "Phi")   hPCPhiFwd->Fill(dFwdCh);
-        if(ss == "Kstar") hPCKstarFwd->Fill(dFwdCh);
-        if(ss == "Pion")  hPCPionFwd->Fill(dFwdCh);
-        if(ss == "Kion")  hPCKionFwd->Fill(dFwdCh);
-        if(ss == "Proton")hPCProtonFwd->Fill(dFwdCh);
+        if(ss == "Kshort"){hPCKshortFwd->Fill(dFwdCh); hPCKshortPtFwd->Fill(dpPt, dFwdCh);}
+        if(ss == "Lambda"){hPCLambdaFwd->Fill(dFwdCh); hPCLambdaPtFwd->Fill(dpPt, dFwdCh);}
+        if(ss == "Xi")    {hPCXiFwd->Fill(dFwdCh);     hPCXiPtFwd    ->Fill(dpPt, dFwdCh);}
+        if(ss == "Omega") {hPCOmegaFwd->Fill(dFwdCh);  hPCOmegaPtFwd ->Fill(dpPt, dFwdCh);}
+        if(ss == "Phi")   {hPCPhiFwd->Fill(dFwdCh);    hPCPhiPtFwd   ->Fill(dpPt, dFwdCh);}
+        if(ss == "Kstar") {hPCKstarFwd->Fill(dFwdCh);  hPCKstarPtFwd ->Fill(dpPt, dFwdCh);}
+        if(ss == "Pion")  {hPCPionFwd->Fill(dFwdCh);   hPCPionPtFwd  ->Fill(dpPt, dFwdCh);}
+        if(ss == "Kion")  {hPCKionFwd->Fill(dFwdCh);   hPCKionPtFwd  ->Fill(dpPt, dFwdCh);}
+        if(ss == "Proton"){hPCProtonFwd->Fill(dFwdCh); hPCProtonPtFwd->Fill(dpPt, dFwdCh);}
       }
     }
 //=============================================================================
@@ -556,11 +637,17 @@ int main(int argc, char *argv[])
 
   list_pyxsect->Print();
   list_results->Print();
+  list_I->Print();
+  list_J->Print();
+  list_P->Print();
 //=============================================================================
 
   file->cd();
   list_pyxsect->Write("list_pyxsect", TObject::kSingleKey);
   list_results->Write("list_results", TObject::kSingleKey);
+  list_I->Write("list_I", TObject::kSingleKey);
+  list_J->Write("list_J", TObject::kSingleKey);
+  list_P->Write("list_P", TObject::kSingleKey);
   file->Close();
 //=============================================================================
 

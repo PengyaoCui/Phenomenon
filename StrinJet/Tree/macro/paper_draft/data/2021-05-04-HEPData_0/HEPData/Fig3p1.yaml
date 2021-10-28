@@ -1,0 +1,83 @@
+independent_variables:
+- header: { name: '$p_{{\rm T},{\rm V}^{0}}$', units : 'GeV/$c$' }
+  values:
+  - { low:  0.6, high:  0.7 }
+  - { low:  0.7, high:  0.8 }
+  - { low:  0.8, high:  0.9 }
+  - { low:  0.9, high:  1.0 }
+  - { low:  1.0, high:  1.1 }
+  - { low:  1.1, high:  1.2 }
+  - { low:  1.2, high:  1.4 }
+  - { low:  1.4, high:  1.6 }
+  - { low:  1.6, high:  1.8 }
+  - { low:  1.8, high:  2.0 }
+  - { low:  2.0, high:  2.2 }
+  - { low:  2.2, high:  2.4 }
+  - { low:  2.4, high:  2.6 }
+  - { low:  2.6, high:  2.8 }
+  - { low:  2.8, high:  3.2 }
+  - { low:  3.2, high:  3.7 }
+  - { low:  3.7, high:  4.2 }
+  - { low:  4.2, high:  5.0 }
+  - { low:  5.0, high:  6.0 }
+  - { low:  6.0, high:  8.0 }
+  - { low:  8.0, high: 12.0 }
+dependent_variables:
+- header: { name: '${\rm d}\rho/{\rm d}p_{\rm T}$', units: '(GeV/$c$ rad)$^{-1}$' }
+  qualifiers:
+  - { name: 'RE',        value: 'P P --> V0 X' }
+  - { name: 'SQRT(S)',   value: '7000', units: 'GeV' }
+  - { name: 'YRAP',      value: '$-0.75 < \eta_{\rm lab} < 0.75$' }
+  - { name: 'PARTICLE',  value: '${\rm K}_{\rm S}^{0}$' }
+  - { name: 'SELECTION', value: 'Inclusive' }
+  values:
+  - { value: 3.45e-02, errors: [ {symerror: 1.04e-04, label: stat}, {symerror: 1.73e-03, label: sys} ] }
+  - { value: 3.08e-02, errors: [ {symerror: 9.39e-05, label: stat}, {symerror: 1.52e-03, label: sys} ] }
+  - { value: 2.65e-02, errors: [ {symerror: 8.15e-05, label: stat}, {symerror: 1.31e-03, label: sys} ] }
+  - { value: 2.25e-02, errors: [ {symerror: 7.29e-05, label: stat}, {symerror: 1.10e-03, label: sys} ] }
+  - { value: 1.89e-02, errors: [ {symerror: 6.36e-05, label: stat}, {symerror: 9.39e-04, label: sys} ] }
+  - { value: 1.58e-02, errors: [ {symerror: 5.63e-05, label: stat}, {symerror: 8.05e-04, label: sys} ] }
+  - { value: 1.21e-02, errors: [ {symerror: 3.27e-05, label: stat}, {symerror: 6.24e-04, label: sys} ] }
+  - { value: 8.49e-03, errors: [ {symerror: 2.55e-05, label: stat}, {symerror: 4.33e-04, label: sys} ] }
+  - { value: 6.04e-03, errors: [ {symerror: 2.05e-05, label: stat}, {symerror: 3.21e-04, label: sys} ] }
+  - { value: 4.29e-03, errors: [ {symerror: 1.63e-05, label: stat}, {symerror: 2.29e-04, label: sys} ] }
+  - { value: 3.05e-03, errors: [ {symerror: 1.31e-05, label: stat}, {symerror: 1.70e-04, label: sys} ] }
+  - { value: 2.22e-03, errors: [ {symerror: 1.08e-05, label: stat}, {symerror: 1.27e-04, label: sys} ] }
+  - { value: 1.65e-03, errors: [ {symerror: 9.10e-06, label: stat}, {symerror: 1.02e-04, label: sys} ] }
+  - { value: 1.22e-03, errors: [ {symerror: 7.69e-06, label: stat}, {symerror: 7.24e-05, label: sys} ] }
+  - { value: 8.08e-04, errors: [ {symerror: 4.23e-06, label: stat}, {symerror: 5.17e-05, label: sys} ] }
+  - { value: 4.50e-04, errors: [ {symerror: 2.73e-06, label: stat}, {symerror: 2.82e-05, label: sys} ] }
+  - { value: 2.45e-04, errors: [ {symerror: 1.93e-06, label: stat}, {symerror: 1.61e-05, label: sys} ] }
+  - { value: 1.24e-04, errors: [ {symerror: 1.07e-06, label: stat}, {symerror: 8.46e-06, label: sys} ] }
+  - { value: 5.18e-05, errors: [ {symerror: 5.94e-07, label: stat}, {symerror: 3.32e-06, label: sys} ] }
+  - { value: 1.74e-05, errors: [ {symerror: 2.50e-07, label: stat}, {symerror: 1.01e-06, label: sys} ] }
+  - { value: 3.24e-06, errors: [ {symerror: 7.73e-08, label: stat}, {symerror: 1.82e-07, label: sys} ] }
+- header: { name: '${\rm d}\rho/{\rm d}p_{\rm T}$', units: '(GeV/$c$ rad)$^{-1}$' }
+  qualifiers:
+  - { name: 'RE',        value: 'P P --> V0 X' }
+  - { name: 'SQRT(S)',   value: '7000', units: 'GeV' }
+  - { name: 'YRAP',      value: '$-0.75 < \eta_{\rm lab} < 0.75$' }
+  - { name: 'PARTICLE',  value: '$\Lambda + \overline{\Lambda}$' }
+  - { name: 'SELECTION', value: 'Inclusive' }
+  values:
+  - { value: 1.33e-02, errors: [ {symerror: 9.31e-05, label: stat}, {symerror: 1.39e-03, label: sys} ] }
+  - { value: 1.34e-02, errors: [ {symerror: 8.27e-05, label: stat}, {symerror: 1.41e-03, label: sys} ] }
+  - { value: 1.34e-02, errors: [ {symerror: 7.95e-05, label: stat}, {symerror: 1.38e-03, label: sys} ] }
+  - { value: 1.30e-02, errors: [ {symerror: 7.40e-05, label: stat}, {symerror: 1.39e-03, label: sys} ] }
+  - { value: 1.23e-02, errors: [ {symerror: 6.98e-05, label: stat}, {symerror: 1.33e-03, label: sys} ] }
+  - { value: 1.11e-02, errors: [ {symerror: 6.06e-05, label: stat}, {symerror: 1.18e-03, label: sys} ] }
+  - { value: 9.52e-03, errors: [ {symerror: 3.76e-05, label: stat}, {symerror: 1.06e-03, label: sys} ] }
+  - { value: 7.63e-03, errors: [ {symerror: 3.19e-05, label: stat}, {symerror: 7.75e-04, label: sys} ] }
+  - { value: 5.78e-03, errors: [ {symerror: 2.60e-05, label: stat}, {symerror: 5.85e-04, label: sys} ] }
+  - { value: 4.32e-03, errors: [ {symerror: 2.12e-05, label: stat}, {symerror: 4.50e-04, label: sys} ] }
+  - { value: 3.17e-03, errors: [ {symerror: 1.71e-05, label: stat}, {symerror: 3.43e-04, label: sys} ] }
+  - { value: 2.34e-03, errors: [ {symerror: 1.40e-05, label: stat}, {symerror: 2.56e-04, label: sys} ] }
+  - { value: 1.72e-03, errors: [ {symerror: 1.18e-05, label: stat}, {symerror: 1.89e-04, label: sys} ] }
+  - { value: 1.30e-03, errors: [ {symerror: 1.03e-05, label: stat}, {symerror: 1.42e-04, label: sys} ] }
+  - { value: 8.02e-04, errors: [ {symerror: 5.36e-06, label: stat}, {symerror: 8.67e-05, label: sys} ] }
+  - { value: 4.16e-04, errors: [ {symerror: 3.33e-06, label: stat}, {symerror: 4.38e-05, label: sys} ] }
+  - { value: 2.08e-04, errors: [ {symerror: 2.29e-06, label: stat}, {symerror: 2.27e-05, label: sys} ] }
+  - { value: 9.00e-05, errors: [ {symerror: 1.12e-06, label: stat}, {symerror: 1.02e-05, label: sys} ] }
+  - { value: 3.24e-05, errors: [ {symerror: 5.86e-07, label: stat}, {symerror: 3.96e-06, label: sys} ] }
+  - { value: 8.37e-06, errors: [ {symerror: 1.96e-07, label: stat}, {symerror: 1.04e-06, label: sys} ] }
+  - { value: 1.48e-06, errors: [ {symerror: 6.97e-08, label: stat}, {symerror: 2.93e-07, label: sys} ] }
