@@ -5,9 +5,9 @@ const Double_t dCent[] = { 0., 0.95, 4.7, 9.5, 14., 19., 28., 38., 48., 68., 100
 const auto nc(sizeof(dCent)/sizeof(Double_t));
 Double_t dFwd[nc]; Double_t dNdEta[nc-1];
 
-void AnaSinJ(){
+void AnaSinJ(const TString sm = "Monash"){
 
-  TString sm = "Monash";//"CR", "Rope", "CR+Rope", "Monash"
+  //sm = "CR", "Rope", "CR+Rope", "Monash"
 //==Read generated files=======================================================
   auto fs(TFile::Open(("sim/" + sm + ".root").Data() , "read"));//Open Monash output
   auto lresults(static_cast<TList*>(fs->Get("list_results")));
@@ -17,7 +17,8 @@ void AnaSinJ(){
   fs->Close();
 //=============================================================================
   
-  auto f(TFile::Open(("Results_" + sm + ".root").Data() , "recreate"));
+  //auto f(TFile::Open(("Results_" + sm + ".root").Data() , "recreate"));
+  auto f(TFile::Open("Results.root", "update"));
 
   auto l(new TList());
 
@@ -40,7 +41,11 @@ void AnaSinJ(){
   }
 //--Save the dNdEta and N_Fwd value-------------------------------------------------------------------
   ofstream OutFile;
-  OutFile.open(Form("CenttodNdEta_%s.txt", sm.Data()));
+  //OutFile.open(Form("CenttodNdEta_%s.txt", sm.Data()));
+  OutFile.open(Form("CenttodNdEta.txt"));
+  
+  
+  OutFile<<left<<"=========="<<sm<<"==================== "<<endl;
   //dNdEta larger->small
   for(Int_t i = 0; i< nc-1; i++){
     OutFile<<left<<setw(15)<<Form("%.1f--%.1f", dCent[i], dCent[i+1])<<Form("<dNdEta> = %.1f", dNdEta[i]);
@@ -71,92 +76,80 @@ void AnaSinJ(){
 
 //--Get NFwd track distribution------------------------------------------------
   auto hFwdTrk((TH1D*)hFwdVsMid->ProjectionY());hFwdTrk->SetName("hFwdTrk");
+  auto hJFwdVsMid((TH2D*)lresults->FindObject("hJFwdVsMid"));
+  auto hJFwdTrk((TH1D*)hJFwdVsMid->ProjectionY());hJFwdTrk->SetName("hJFwdTrk");
 
-//--Get integral yield of inclusive--------------------------------------------
-  auto hKshortFwd((TH1D*)lI->FindObject("hKshortFwd"));
-  TH1D* hKshortI = new TH1D("hKshortI", "", 400, 0., 40); 
-  for(Int_t i = 1; i< nc; i++){
-    auto Npar(hKshortFwd->Integral(hKshortFwd->FindBin(dFwd[i]), hKshortFwd->FindBin(dFwd[i-1])));
-    auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwd[i]), hFwdTrk->FindBin(dFwd[i-1]));
-    hKshortI->SetBinContent(hKshortI->FindBin(dNdEta[i-1]), Npar/dEvent);
-    hKshortI->SetBinError(hKshortI->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/dEvent);
-  } l->Add(hKshortI);
+  for(int p = 0; p<np; p++){
+    //--Get integral yield of inclusive----------------------------------
+    auto hFwd((TH1D*)lI->FindObject(Form("h%sFwd", sp[p].Data())));
+    TH1D* hI = new TH1D(Form("hIn%s", sp[p].Data()), "", 400, 0., 40); 
+    for(Int_t i = 1; i< nc; i++){
+      auto Npar(hFwd->Integral(hFwd->FindBin(dFwd[i]), hFwd->FindBin(dFwd[i-1])));
+      auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwd[i]), hFwdTrk->FindBin(dFwd[i-1]));
+      hI->SetBinContent(hI->FindBin(dNdEta[i-1]), Npar/(dEvent * 0.5 * 2.));
+      hI->SetBinError(hI->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/(dEvent * 0.5 *2.));
+    }
+    l->Add(hI);
 
-  auto hLambdaFwd((TH1D*)lI->FindObject("hLambdaFwd"));
-  TH1D* hLambdaI = new TH1D("hLambdaI", "", 400, 0., 40);
-  for(Int_t i = 1; i< nc; i++){
-    auto Npar(hLambdaFwd->Integral(hLambdaFwd->FindBin(dFwd[i]), hLambdaFwd->FindBin(dFwd[i-1])));
-    auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwd[i]), hFwdTrk->FindBin(dFwd[i-1]));
-    hLambdaI->SetBinContent(hLambdaI->FindBin(dNdEta[i-1]), Npar/dEvent);
-    hLambdaI->SetBinError(hLambdaI->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/dEvent);
-  } l->Add(hLambdaI);
+    //--Get integral yield of JC----------------------------------------
+    auto hJCFwd((TH1D*)lJ->FindObject(Form("hJC%sFwd", sp[p].Data())));
+    TH1D* hJC = new TH1D(Form("hJC%s", sp[p].Data()), "", 400, 0., 40);
+    for(Int_t i = 1; i< nc; i++){
+      auto Npar(hJCFwd->Integral(hJCFwd->FindBin(dFwd[i]), hJCFwd->FindBin(dFwd[i-1])));
+      auto dJEvent = hJFwdTrk->Integral(hJFwdTrk->FindBin(dFwd[i]), hJFwdTrk->FindBin(dFwd[i-1]));
+      hJC->SetBinContent(hJC->FindBin(dNdEta[i-1]), Npar/(dJEvent*2.*0.75*TMath::TwoPi()*0.06));
+      hJC->SetBinError(hJC->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/(dJEvent*2.*0.75*TMath::TwoPi()*0.06));
+    }
+    l->Add(hJC);
 
-  auto hXiFwd((TH1D*)lI->FindObject("hXiFwd"));
-  TH1D* hXiI = new TH1D("hXiI", "", 400, 0., 40);
-  for(Int_t i = 1; i< nc; i++){
-    auto Npar(hXiFwd->Integral(hXiFwd->FindBin(dFwd[i]), hXiFwd->FindBin(dFwd[i-1])));
-    auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwd[i]), hFwdTrk->FindBin(dFwd[i-1]));
-    hXiI->SetBinContent(hXiI->FindBin(dNdEta[i-1]), Npar/dEvent);
-    hXiI->SetBinError(hXiI->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/dEvent);
-  } l->Add(hXiI);
+    //--Get integral yield of PC----------------------------------------
+    auto hPCFwd((TH1D*)lP->FindObject(Form("hPC%sFwd", sp[p].Data())));
+    TH1D* hPC = new TH1D(Form("hPC%s", sp[p].Data()), "", 400, 0., 40);
+    for(Int_t i = 1; i< nc; i++){
+      auto Npar(hPCFwd->Integral(hPCFwd->FindBin(dFwd[i]), hPCFwd->FindBin(dFwd[i-1])));
+      auto dJEvent = hJFwdTrk->Integral(hJFwdTrk->FindBin(dFwd[i]), hJFwdTrk->FindBin(dFwd[i-1]));
+      hPC->SetBinContent(hPC->FindBin(dNdEta[i-1]), Npar/(dJEvent*2.*0.75*TMath::TwoPi()*0.06*4.));
+      hPC->SetBinError(hPC->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/(dJEvent*2.*0.75*TMath::TwoPi()*0.06*4.));
+    }
+    l->Add(hPC);
+    
+    //--Get integral yield of JE----------------------------------------
+    TH1D* hJE = (TH1D*)hJC->Clone(Form("hJE%s", sp[p].Data())); hJE->Add(hPC, -1.);
+    l->Add(hJE);
+  
+  }
+  
+//==Ratio to pi================================================================
+  for(int p = 0; p<np; p++){
+    if(sp[p] == "Pion") continue;
+    auto hIn((TH1D*)l->FindObject(Form("hIn%s", sp[p].Data())));
+    auto hJE((TH1D*)l->FindObject(Form("hJE%s", sp[p].Data())));
+    auto hPC((TH1D*)l->FindObject(Form("hPC%s", sp[p].Data())));
+    
+    auto hInPi((TH1D*)l->FindObject(Form("hInPion")));
+    auto hJEPi((TH1D*)l->FindObject(Form("hJEPion")));
+    auto hPCPi((TH1D*)l->FindObject(Form("hPCPion")));
 
-  auto hOmegaFwd((TH1D*)lI->FindObject("hOmegaFwd"));
-  TH1D* hOmegaI = new TH1D("hOmegaI", "", 400, 0., 40);
-  for(Int_t i = 1; i< nc; i++){
-    auto Npar(hOmegaFwd->Integral(hOmegaFwd->FindBin(dFwd[i]), hOmegaFwd->FindBin(dFwd[i-1])));
-    auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwd[i]), hFwdTrk->FindBin(dFwd[i-1]));
-    hOmegaI->SetBinContent(hOmegaI->FindBin(dNdEta[i-1]), Npar/dEvent);
-    hOmegaI->SetBinError(hOmegaI->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/dEvent);
-  } l->Add(hOmegaI);
+    TH1D* hInRtoPi = (TH1D*)hIn->Clone(Form("hIn%stoPi", sp[p].Data())); 
+    TH1D* hPCRtoPi = (TH1D*)hPC->Clone(Form("hPC%stoPi", sp[p].Data())); 
+    TH1D* hJERtoPi = (TH1D*)hJE->Clone(Form("hJE%stoPi", sp[p].Data())); 
+    hInRtoPi->Divide(hInPi); 
+    hPCRtoPi->Divide(hPCPi); 
+    hJERtoPi->Divide(hJEPi); 
+    l->Add(hInRtoPi); 
+    l->Add(hPCRtoPi); 
+    l->Add(hJERtoPi); 
+  }
 
-  auto hPhiFwd((TH1D*)lI->FindObject("hPhiFwd"));
-  TH1D* hPhiI = new TH1D("hPhiI", "", 400, 0., 40);
-  for(Int_t i = 1; i< nc; i++){
-    auto Npar(hPhiFwd->Integral(hPhiFwd->FindBin(dFwd[i]), hPhiFwd->FindBin(dFwd[i-1])));
-    auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwd[i]), hFwdTrk->FindBin(dFwd[i-1]));
-    hPhiI->SetBinContent(hPhiI->FindBin(dNdEta[i-1]), Npar/dEvent);
-    hPhiI->SetBinError(hPhiI->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/dEvent);
-  } l->Add(hPhiI);
-
-  auto hKstarFwd((TH1D*)lI->FindObject("hKstarFwd"));
-  TH1D* hKstarI = new TH1D("hKstarI", "", 400, 0., 40);
-  for(Int_t i = 1; i< nc; i++){
-    auto Npar(hKstarFwd->Integral(hKstarFwd->FindBin(dFwd[i]), hKstarFwd->FindBin(dFwd[i-1])));
-    auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwd[i]), hFwdTrk->FindBin(dFwd[i-1]));
-    hKstarI->SetBinContent(hKstarI->FindBin(dNdEta[i-1]), Npar/dEvent);
-    hKstarI->SetBinError(hKstarI->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/dEvent);
-  } l->Add(hKstarI);
-
-  auto hPionFwd((TH1D*)lI->FindObject("hPionFwd"));
-  TH1D* hPionI = new TH1D("hPionI", "", 400, 0., 40);
-  for(Int_t i = 1; i< nc; i++){
-    auto Npar(hPionFwd->Integral(hPionFwd->FindBin(dFwd[i]), hPionFwd->FindBin(dFwd[i-1])));
-    auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwd[i]), hFwdTrk->FindBin(dFwd[i-1]));
-    hPionI->SetBinContent(hPionI->FindBin(dNdEta[i-1]), Npar/dEvent);
-    hPionI->SetBinError(hPionI->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/dEvent);
-  } l->Add(hPionI);
-
-  auto hKionFwd((TH1D*)lI->FindObject("hKionFwd"));
-  TH1D* hKionI = new TH1D("hKionI", "", 400, 0., 40);
-  for(Int_t i = 1; i< nc; i++){
-    auto Npar(hKionFwd->Integral(hKionFwd->FindBin(dFwd[i]), hKionFwd->FindBin(dFwd[i-1])));
-    auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwd[i]), hFwdTrk->FindBin(dFwd[i-1]));
-    hKionI->SetBinContent(hKionI->FindBin(dNdEta[i-1]), Npar/dEvent);
-    hKionI->SetBinError(hKionI->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/dEvent);
-  } l->Add(hKionI);
-
-  auto hProtonFwd((TH1D*)lI->FindObject("hProtonFwd"));
-  TH1D* hProtonI = new TH1D("hProtonI", "", 400, 0., 40);
-  for(Int_t i = 1; i< nc; i++){
-    auto Npar(hProtonFwd->Integral(hProtonFwd->FindBin(dFwd[i]), hProtonFwd->FindBin(dFwd[i-1])));
-    auto dEvent = hFwdTrk->Integral(hFwdTrk->FindBin(dFwd[i]), hFwdTrk->FindBin(dFwd[i-1]));
-    hProtonI->SetBinContent(hProtonI->FindBin(dNdEta[i-1]), Npar/dEvent);
-    hProtonI->SetBinError(hProtonI->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/dEvent);
-  } l->Add(hProtonI);
-
-//--Get integral yield of JC--------------------------------------------
-
-
+//==Ratio to Kshort Vs Particle to Jet distance================================
+  for(int p = 0; p<np-3; p++){
+    if(sp[p] == "Kshort") continue;
+    auto hPJK((TH1D*)lJ->FindObject(Form("hKshortPJ")));
+    auto hPJP((TH1D*)lJ->FindObject(Form("h%sPJ", sp[p].Data())));
+    auto hJPRtoK = (TH1D*)hPJP->Clone(Form("hPJ%stoKshort", sp[p].Data()));
+    hJPRtoK->Divide(hPJK); 
+    l->Add(hJPRtoK);
+  }
 //=============================================================================
 
   CallSumw2(l);
