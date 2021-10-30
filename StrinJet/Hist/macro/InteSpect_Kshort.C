@@ -5,12 +5,18 @@ void InteSpect_Kshort(){
   auto hD(GetDataC("data/HEPData_1606.07424v2.root", 42)); 
   auto gD = GetDataE("data/HEPData_1606.07424v2.root", 42); 
 
-  int p = 0;//{0="Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton", "Kstar"};
-  int i = 0;
-  TGraph* g[3];
-  g[0] = InteSpectrum(1, 0, p);g[0]->SetName((sp[i] + sm[0]).Data());//Para1: "pp13TeV", "pp7TeV" 
-  g[1] = InteSpectrum(1, 1, p);g[1]->SetName((sp[i] + sm[1]).Data());//Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
-  g[2] = InteSpectrum(1, 2, p);g[2]->SetName((sp[i] + sm[2]).Data());
+  int p = 0;//{0="Kshort", "Lambda", "Xi", "Omega", "Phi", "Kstar", "Pion", "Kion", "Proton"};
+  TGraphErrors* h[4];
+  h[0] = InteSpectrum("Monash",  p, kFALSE, kFALSE, 1);//Para1: "Monash", "CR", "Rope", "CR+Rope" 
+  h[1] = InteSpectrum("CR",      p, kFALSE, kFALSE, 1);//Para2: particle 
+  h[2] = InteSpectrum("Rope",    p, kFALSE, kFALSE, 1);//Para3: Is JE? 
+  h[3] = InteSpectrum("CR+Rope", p, kFALSE, kFALSE, 1);//Para4: Is UE?
+                                                      //Para5: scale
+  
+  //TGraph* g[3];
+  //g[0] = InteSpectrum(1, 0, p);g[0]->SetName((sp[i] + sm[0]).Data());//Para1: "pp13TeV", "pp7TeV" 
+  //g[1] = InteSpectrum(1, 1, p);g[1]->SetName((sp[i] + sm[1]).Data());//Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
+  //g[2] = InteSpectrum(1, 2, p);g[2]->SetName((sp[i] + sm[2]).Data());
 
 //=============================================================================
   //Double_t x, y;
@@ -38,19 +44,24 @@ void InteSpect_Kshort(){
   hfm->GetXaxis()->SetNdivisions(505);
   hfm->GetYaxis()->SetNdivisions(505);
 
-  g[0]->SetLineStyle(0);
-  g[1]->SetLineStyle(1);
-  g[2]->SetLineStyle(2);
+  //g[0]->SetLineStyle(0);
+  //g[1]->SetLineStyle(1);
+  //g[2]->SetLineStyle(2);
   DrawHisto(hD, wcl[0], wmk[0], "same");
   DrawGraph(gD, wcl[0], "E2");
-  DrawGraph(g[0], wcl[0], "L");
-  DrawGraph(g[1], wcl[1], "L");
-  DrawGraph(g[2], wcl[2], "L");
+  DrawGraph(h[0], wcl[1], "E3 FL same");
+  DrawGraph(h[1], wcl[2], "E3 FL same");
+  DrawGraph(h[2], wcl[3], "E3 FL same");
+  DrawGraph(h[3], wcl[4], "E3 FL same");
+  //DrawGraph(g[0], wcl[0], "L");
+  //DrawGraph(g[1], wcl[1], "L");
+  //DrawGraph(g[2], wcl[2], "L");
 
   auto leg(new TLegend(0.7, 0.72, 1., 0.92)); SetupLegend(leg);
-  leg->AddEntry(g[0], "BLC",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(g[2], "BLC + Rope",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(h[0], "Monash",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(h[1], "CR",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(h[2], "Rope",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(h[3], "BLC + Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
   auto Leg(new TLegend(0.55, 0.2, 0.9, 0.3)); SetupLegend(Leg);
   Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 7 TeV",  "PF")->SetTextSizePixels(24);

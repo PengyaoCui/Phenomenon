@@ -7,15 +7,12 @@ rm CenttodNdEta.txt Results.root
 
 echo ========run models===================
 
-echo                                      
-
-echo ===========Monash====================
 
 for i in \
 "\"Monash\"" \
 "\"CR\"" \
-#"\"Rope\"" \
-#"\"CR+Rope\"" \
+"\"Rope\"" \
+"\"CR+Rope\"" \
 
 do
 
@@ -23,4 +20,6 @@ root -l -b -q AnaSinJ.C\(${i}\)
 
 done
 
+echo ========cp results to macro==========
+cp *.root *.txt ../macro/sim/
 exit

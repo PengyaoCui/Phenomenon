@@ -41,8 +41,7 @@ void AnaSinJ(const TString sm = "Monash"){
   }
 //--Save the dNdEta and N_Fwd value-------------------------------------------------------------------
   ofstream OutFile;
-  //OutFile.open(Form("CenttodNdEta_%s.txt", sm.Data()));
-  OutFile.open(Form("CenttodNdEta.txt"));
+  OutFile.open(Form("CenttodNdEta_%s.txt", sm.Data()));
   
   
   OutFile<<left<<"=========="<<sm<<"==================== "<<endl;

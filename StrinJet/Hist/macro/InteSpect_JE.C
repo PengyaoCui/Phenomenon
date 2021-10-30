@@ -5,43 +5,49 @@ void InteSpect_JE(){
   //auto hD(GetDataC("data/HEPData_1606.07424v2.root", 42)); 
   //auto gD = GetDataE("data/HEPData_1606.07424v2.root", 42); 
 
-  TGraph* g[3][6];
+  TGraphErrors* g[4][6];
   int p = 0;//{0="Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton", "Kstar"};
-  g[0][p] = InteSpectrum(1, 0, p, kTRUE, kFALSE, 4);g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: "pp13TeV", "pp7TeV" 
-  g[1][p] = InteSpectrum(1, 1, p, kTRUE, kFALSE, 4);g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
-  g[2][p] = InteSpectrum(1, 2, p, kTRUE, kFALSE, 4);g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 4); //g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: "pp13TeV", "pp7TeV" 
+  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 4); //g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
+  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 4); //g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 4); //g[2][0]->SetName((sp[p] + sm[2]).Data());
 
   p = 5;//Kstar
-  g[0][p] = InteSpectrum(1, 0, 8, kTRUE, kFALSE, 6);g[0][0]->SetName((sp[8] + sm[0]).Data());
-  g[1][p] = InteSpectrum(1, 1, 8, kTRUE, kFALSE, 6);g[1][0]->SetName((sp[8] + sm[1]).Data());
-  g[2][p] = InteSpectrum(1, 2, 8, kTRUE, kFALSE, 6);g[2][0]->SetName((sp[8] + sm[2]).Data());
+  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 4); //g[0][0]->SetName((sp[8] + sm[0]).Data());
+  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 4); //g[1][0]->SetName((sp[8] + sm[1]).Data());
+  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 4); //g[2][0]->SetName((sp[8] + sm[2]).Data());
+  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 4); //g[2][0]->SetName((sp[8] + sm[2]).Data());
 
 
   p = 4;//Phi
-  g[0][p] = InteSpectrum(1, 0, p, kTRUE, kFALSE, 12);g[0][0]->SetName((sp[p] + sm[0]).Data());
-  g[1][p] = InteSpectrum(1, 1, p, kTRUE, kFALSE, 12);g[1][0]->SetName((sp[p] + sm[1]).Data());
-  g[2][p] = InteSpectrum(1, 2, p, kTRUE, kFALSE, 12);g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 12);//g[0][0]->SetName((sp[p] + sm[0]).Data());
+  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 12);//g[1][0]->SetName((sp[p] + sm[1]).Data());
+  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 12);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 12);//g[2][0]->SetName((sp[p] + sm[2]).Data());
   
   p = 1;//Lambda
-  g[0][p] = InteSpectrum(1, 0, p, kTRUE, kFALSE, 1);g[0][0]->SetName((sp[p] + sm[0]).Data());
-  g[1][p] = InteSpectrum(1, 1, p, kTRUE, kFALSE, 1);g[1][0]->SetName((sp[p] + sm[1]).Data());
-  g[2][p] = InteSpectrum(1, 2, p, kTRUE, kFALSE, 1);g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 1); //g[0][0]->SetName((sp[p] + sm[0]).Data());
+  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 1); //g[1][0]->SetName((sp[p] + sm[1]).Data());
+  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 1); //g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 1); //g[2][0]->SetName((sp[p] + sm[2]).Data());
 
   p = 2;//Xi
-  g[0][p] = InteSpectrum(1, 0, p, kTRUE, kFALSE, 2);g[0][0]->SetName((sp[p] + sm[0]).Data());
-  g[1][p] = InteSpectrum(1, 1, p, kTRUE, kFALSE, 2);g[1][0]->SetName((sp[p] + sm[1]).Data());
-  g[2][p] = InteSpectrum(1, 2, p, kTRUE, kFALSE, 2);g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 2); //g[0][0]->SetName((sp[p] + sm[0]).Data());
+  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 2); //g[1][0]->SetName((sp[p] + sm[1]).Data());
+  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 2); //g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 2); //g[2][0]->SetName((sp[p] + sm[2]).Data());
 
   p = 3;//Omega
-  g[0][p] = InteSpectrum(1, 0, p, kTRUE, kFALSE, 12);g[0][0]->SetName((sp[p] + sm[0]).Data());
-  g[1][p] = InteSpectrum(1, 1, p, kTRUE, kFALSE, 12);g[1][0]->SetName((sp[p] + sm[1]).Data());
-  g[2][p] = InteSpectrum(1, 2, p, kTRUE, kFALSE, 12);g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 12);//g[0][0]->SetName((sp[p] + sm[0]).Data());
+  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 12);//g[1][0]->SetName((sp[p] + sm[1]).Data());
+  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 12);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 12);//g[2][0]->SetName((sp[p] + sm[2]).Data());
 //=============================================================================
   //Double_t x, y;
   //g[2]->GetPoint(nc-2, x, y);
   //auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(5e-3), dfuy(1.2);
+  auto dfly(5e-3), dfuy(2.2);
   
 
   auto dlsx(0.04), dlsy(0.04);
@@ -67,21 +73,24 @@ void InteSpect_JE(){
   //DrawHisto(hD, wcl[0], wmk[0], "same");
   //DrawGraph(gD, wcl[0], "E2");
   for(int i = 0; i < 6; i++ ){
-    g[0][i]->SetLineStyle(5);
-    g[1][i]->SetLineStyle(3);
-    g[2][i]->SetLineStyle(0);
-    DrawGraph(g[0][i], wcl[i], "L");
-    DrawGraph(g[1][i], wcl[i], "L");
-    DrawGraph(g[2][i], wcl[i], "L");
+    g[0][i]->SetLineStyle(0);
+    g[1][i]->SetLineStyle(2);
+    g[2][i]->SetLineStyle(3);
+    g[3][i]->SetLineStyle(5);
+    DrawGraphError(g[0][i], wcl[i], "E3");
+    DrawGraphError(g[1][i], wcl[i], "E3");
+    DrawGraphError(g[2][i], wcl[i], "E3");
+    DrawGraphError(g[3][i], wcl[i], "E3");
   }
 
 
   auto leg(new TLegend(0.15, 0.88, 0.8, 0.91)); SetupLegend(leg);
   leg->SetNColumns(3);
   //leg->AddEntry(hD, "Data(7 TeV Incl)",  "P")->SetTextSizePixels(24);
-  leg->AddEntry(g[0][0], "BLC",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(g[1][0], "Rope",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(g[2][0], "BLC + Rope",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[0][0], "Monash",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[1][0], "CR",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[2][0], "Rope",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[3][0], "CR + Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
 
 

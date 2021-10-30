@@ -39,6 +39,7 @@ void DrawGraph(TGraph* const g, const Color_t wc, const Option_t *opt)
   return;
 }
 
+
 //_____________________________________________________________________________
 void DrawGraph(TGraph* const g, const Color_t wc, const Style_t ws, const Option_t *opt)
 {
@@ -58,6 +59,18 @@ void DrawGraph(TGraphErrors* const g, const Color_t wc, const Option_t *opt)
   g->SetLineWidth(2);
   g->SetLineColor(wc);
   g->SetFillStyle(0);
+  g->SetFillColor(g->GetLineColor());
+  g->Draw(opt);
+
+  return;
+}
+
+//_____________________________________________________________________________
+void DrawGraphError(TGraphErrors* const g, const Color_t wc, const Option_t *opt)
+{
+  g->SetLineWidth(2);
+  g->SetLineColor(wc);
+  g->SetFillStyle(3144);
   g->SetFillColor(g->GetLineColor());
   g->Draw(opt);
 
@@ -127,6 +140,21 @@ void DrawHisto(TH1D* const h, const Color_t wc, const Style_t ws, const Option_t
 
   return;
 }
+
+//_____________________________________________________________________________
+void DrawHisto(TH1D* const h, const Color_t wc, const Style_t ws, const Style_t fs, const Option_t *opt)
+{
+  if (!h) return;
+  h->SetLineWidth(2);
+  h->SetLineColor(wc);
+  h->SetMarkerStyle(ws);
+  h->SetMarkerColor(wc);
+  h->SetFillStyle(fs);
+  h->DrawCopy(opt);
+
+  return;
+}
+
 
 //_____________________________________________________________________________
 void SetupFrame(TH1F* const f, const TString stnx="",   const TString stny="",

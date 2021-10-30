@@ -4,15 +4,17 @@ void TrkEta(){
 
   auto hD(GetDataC("data/HEPData_1004.3514v3.root", 6)); 
   auto gD = GetDataE("data/HEPData_1004.3514v3.root", 6); 
-  TH1D* h[3];
-  h[0] = TrkEta(1, 0);    //Para1: "pp13TeV", "pp7TeV"
-  h[1] = TrkEta(1, 1);    //Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
-  h[2] = TrkEta(1, 2);
+  TH1D* h[4];
+  h[0] = Trketa("Monash");    //Para1: "Monash", "CR", "Rope", "CR+Rope"
+  h[1] = Trketa("CR");    
+  h[2] = Trketa("Rope");    
+  h[3] = Trketa("CR+Rope");    
   
-  TGraph* g[3];
+  TGraph* g[4];
   g[0] = new TGraph(h[0]);  
   g[1] = new TGraph(h[1]); 
   g[2] = new TGraph(h[2]); 
+  g[3] = new TGraph(h[3]); 
 
 //=============================================================================
   auto dflx(-3.), dfux(3.);
@@ -36,19 +38,22 @@ void TrkEta(){
   hfm->GetYaxis()->SetNdivisions(505);
 
   g[0]->SetLineStyle(0);
-  g[1]->SetLineStyle(1);
-  g[2]->SetLineStyle(2);
+  g[1]->SetLineStyle(2);
+  g[2]->SetLineStyle(3);
+  g[3]->SetLineStyle(5);
   DrawHisto(hD, wcl[0], wmk[0], "same");
   DrawGraph(gD, wcl[0], "E2");
   DrawGraph(g[0], wcl[0], "L");
   DrawGraph(g[1], wcl[1], "L");
   DrawGraph(g[2], wcl[2], "L");
+  DrawGraph(g[3], wcl[3], "L");
 
   auto leg(new TLegend(0.65, 0.65, 0.9, 0.92)); SetupLegend(leg);
   leg->AddEntry(hD, "Exp data",  "PF")->SetTextSizePixels(24);
-  leg->AddEntry(g[0], "BLC",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(g[2], "BLC + Rope",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[0], "Monash",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[1], "CR",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[2], "Rope",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[3], "CR + Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
 
   auto tex(new TLatex());
