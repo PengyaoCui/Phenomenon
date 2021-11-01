@@ -208,12 +208,12 @@ TGraph* InteSpectrum(const int s,
   if(j){
     Double_t dPaU[nc-1]; IntegralVal(s, m, p, dNdEta, dPaU, kFALSE, kTRUE);
     for(int i = 0; i< nc-1; i++){
-      dPa[i] = t*(dPa[i] - 0.25*dPaU[i])/0.6;
+      dPa[i] = t*(dPa[i] - 0.25*dPaU[i])/0.06;
     } 
   }
   if(u){
     for(int i = 0; i< nc-1; i++){
-      dPa[i] = t*0.25*dPa[i]/0.6;
+      dPa[i] = t*0.25*dPa[i]/0.06;
     } 
   }
   
@@ -221,8 +221,8 @@ TGraph* InteSpectrum(const int s,
  
   auto g = new TGraph();
   //for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(acc*2.*TMath::TwoPi()));
-  if(!(p == 1 || p==2 || p==3))for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(Acc*2.));
-  if(p == 1 || p==2 || p==3)for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(Acc));//2.*dPa[i]/(Acc*2.)
+  if(!(p == 1 || p==2 || p==3))for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(Acc*2.*TMath::TwoPi()));
+  if(p == 1 || p==2 || p==3)for(Int_t i = 0; i<nc-1; i++) g->SetPoint(i, dNdEta[i], dPa[i]/(Acc*TMath::TwoPi()));//2.*dPa[i]/(Acc*2.)
 
   return g;
 }

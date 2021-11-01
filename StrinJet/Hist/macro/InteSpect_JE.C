@@ -7,16 +7,16 @@ void InteSpect_JE(){
 
   TGraphErrors* g[4][6];
   int p = 0;//{0="Kshort", "Lambda", "Xi", "Omega", "Phi", "Pion", "Kion", "Proton", "Kstar"};
-  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 4); //g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: "pp13TeV", "pp7TeV" 
-  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 4); //g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: "SoftQCD_CR", "SoftQCD_Rope", "SoftQCD_CRandRope"
-  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 4); //g[2][0]->SetName((sp[p] + sm[2]).Data());
-  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 4); //g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 4.); //g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: 
+  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 4.); //g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: 
+  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 4.); //g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 4.); //g[2][0]->SetName((sp[p] + sm[2]).Data());
 
   p = 5;//Kstar
-  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 4); //g[0][0]->SetName((sp[8] + sm[0]).Data());
-  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 4); //g[1][0]->SetName((sp[8] + sm[1]).Data());
-  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 4); //g[2][0]->SetName((sp[8] + sm[2]).Data());
-  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 4); //g[2][0]->SetName((sp[8] + sm[2]).Data());
+  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 3); //g[0][0]->SetName((sp[8] + sm[0]).Data());
+  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 3); //g[1][0]->SetName((sp[8] + sm[1]).Data());
+  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 3); //g[2][0]->SetName((sp[8] + sm[2]).Data());
+  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 3); //g[2][0]->SetName((sp[8] + sm[2]).Data());
 
 
   p = 4;//Phi
@@ -26,10 +26,10 @@ void InteSpect_JE(){
   g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 12);//g[2][0]->SetName((sp[p] + sm[2]).Data());
   
   p = 1;//Lambda
-  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 1); //g[0][0]->SetName((sp[p] + sm[0]).Data());
-  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 1); //g[1][0]->SetName((sp[p] + sm[1]).Data());
-  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 1); //g[2][0]->SetName((sp[p] + sm[2]).Data());
-  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 1); //g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 1.); //g[0][0]->SetName((sp[p] + sm[0]).Data());
+  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 1.); //g[1][0]->SetName((sp[p] + sm[1]).Data());
+  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 1.); //g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 1.); //g[2][0]->SetName((sp[p] + sm[2]).Data());
 
   p = 2;//Xi
   g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 2); //g[0][0]->SetName((sp[p] + sm[0]).Data());
@@ -77,20 +77,20 @@ void InteSpect_JE(){
     g[1][i]->SetLineStyle(2);
     g[2][i]->SetLineStyle(3);
     g[3][i]->SetLineStyle(5);
-    DrawGraphError(g[0][i], wcl[i], "E3");
-    DrawGraphError(g[1][i], wcl[i], "E3");
-    DrawGraphError(g[2][i], wcl[i], "E3");
-    DrawGraphError(g[3][i], wcl[i], "E3");
+    DrawGraphError(g[0][i], wcl[i], wmk[0], "E3 PML same");
+    DrawGraphError(g[1][i], wcl[i], wmk[1], "E3 PML same");
+    DrawGraphError(g[2][i], wcl[i], wmk[2], "E3 PML same");
+    DrawGraphError(g[3][i], wcl[i], wmk[3], "E3 PML same");
   }
 
 
-  auto leg(new TLegend(0.15, 0.88, 0.8, 0.91)); SetupLegend(leg);
-  leg->SetNColumns(3);
+  auto leg(new TLegend(0.15, 0.88, 0.99, 0.91)); SetupLegend(leg);
+  leg->SetNColumns(4);
   //leg->AddEntry(hD, "Data(7 TeV Incl)",  "P")->SetTextSizePixels(24);
-  leg->AddEntry(g[0][0], "Monash",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(g[1][0], "CR",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(g[2][0], "Rope",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(g[3][0], "CR + Rope",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[0][0], "Monash",  "LP")->SetTextSizePixels(24);
+  leg->AddEntry(g[1][0], "CR",  "LP")->SetTextSizePixels(24);
+  leg->AddEntry(g[2][0], "Rope",  "LP")->SetTextSizePixels(24);
+  leg->AddEntry(g[3][0], "CR + Rope",  "LP")->SetTextSizePixels(24);
   leg->Draw();
 
 

@@ -199,7 +199,7 @@ TGraphErrors* InteSpectrum(const TString sm,
                      const int p,
 		     bool j = kFALSE,
 		     bool u = kFALSE,
-		     const int t = 1)
+		     const double t = 1.)
 {
  
   auto file(TFile::Open("sim/Results.root", "read"));
@@ -232,53 +232,54 @@ TGraphErrors* InteSpectrum(const TString sm,
   
   return(new TGraphErrors(nc,dvx,dvy,dex,dey));
 }
-////_____________________________________________________________________________
-//
-////=============================================================================
-//TGraph* RatioToPi(const int s,
-//                  const int m,
-//                  const int p,
-//		  bool j = kFALSE,
-//		  bool u = kFALSE,
-//		  const double t = 1.)
-//{
-// 
-//  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
-//  if (gSystem->AccessPathName(sf)) {
-//    ::Error("utils::Spectrum", "No file: %s", sf.Data());
-//    exit(-1);
-//  }
-//  auto file(TFile::Open(sf, "read"));
-//  auto list(static_cast<TList*>(file->Get(sp[p])));
-//  file->Close();
-//
-//  if (list==nullptr) {
-//    ::Error("utils::Spectrum", "No list: list_results");
-//    exit(-2);
-//  }
-//
-//  Double_t dNdEta[nc-1];
-//  Double_t dPa[nc-1]; IntegralVal(s, m, p, dNdEta, dPa, j, u);
-//  Double_t dPi[nc-1]; IntegralVal(s, m, 5, dNdEta, dPi, j, u);
-//  //for(int i = 0; i< nc-1; i++) cout<<dPa[i]/dPi[i]<<endl;
-//  if(j){
-//    Double_t dPaU[nc-1]; IntegralVal(s, m, p, dNdEta, dPaU, kFALSE, kTRUE);
-//    Double_t dPiU[nc-1]; IntegralVal(s, m, 5, dNdEta, dPiU, kFALSE, kTRUE);
-//    for(int i = 0; i< nc-1; i++){
-//      dPa[i] = dPa[i] - 0.25*dPaU[i];
-//      dPi[i] = dPi[i] - 0.25*dPiU[i];
-//    } 
-//  }
-//  Double_t dR[nc-1];
-//  TGraph *gR = new TGraph();
-//  
-//  for(Int_t i = 1; i<nc; i++) { 
-//    if(!(p == 1 || p==2 || p==3)) dR[i-1] = t*dPa[i-1]/dPi[i-1]; 
-//    if(p == 1 || p==2 || p==3)  dR[i-1] = t*2.*dPa[i-1]/dPi[i-1]; 
-//    gR->SetPoint(i-1, dNdEta[i-1], dR[i-1]);
-//  }
-//  return gR;
-//}
+
+//_____________________________________________________________________________
+TGraphErrors* RatioToPi(const TString sm,
+                     const int p,
+                     bool j = kFALSE,
+                     bool u = kFALSE,
+                     const double t = 1.)
+{
+
+  auto file(TFile::Open("sim/Results.root", "read"));
+  auto list(static_cast<TList*>(file->Get(sm)));
+  auto h((TH1D*)list->FindObject(Form("hIn%s", sp[p].Data())));
+  if(j) h = (TH1D*)list->FindObject(Form("hJE%s", sp[p].Data()));
+  if(u) h = (TH1D*)list->FindObject(Form("hPC%s", sp[p].Data()));
+  h->Scale(t);
+  
+  auto hPi((TH1D*)list->FindObject(Form("hInPion")));
+  if(j) hPi = (TH1D*)list->FindObject(Form("hJEPion"));
+  if(u) hPi = (TH1D*)list->FindObject(Form("hPCPion"));
+
+  h->Divide(hPi);
+
+  int k = 0;
+  for(int i =1; i<= h->GetNbinsX(); i++){
+    if(h->GetBinContent(i) != 0.){
+      k++;
+    }
+  }
+  const int nc = k;
+  Double_t dvx[nc]; Double_t dvy[nc];
+  Double_t dex[nc]; Double_t dey[nc];
+
+  int c = 0;
+  for(int i =1; i<= h->GetNbinsX(); i++){
+    if(h->GetBinContent(i) != 0.){
+      dvx[c] = h->GetBinCenter(i);
+      dvy[c] = h->GetBinContent(i);
+      dex[c] = h->GetBinWidth(i);
+      dey[c] = h->GetBinError(i);
+      c++;
+    }
+  }
+
+  return(new TGraphErrors(nc,dvx,dvy,dex,dey));
+}
+
+
+
 ////=============================================================================
 //TGraph* InteRatio(const int s,
 //                  const int m,

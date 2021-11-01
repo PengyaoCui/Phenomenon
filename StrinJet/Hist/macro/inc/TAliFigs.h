@@ -66,11 +66,13 @@ void DrawGraph(TGraphErrors* const g, const Color_t wc, const Option_t *opt)
 }
 
 //_____________________________________________________________________________
-void DrawGraphError(TGraphErrors* const g, const Color_t wc, const Option_t *opt)
+void DrawGraphError(TGraphErrors* const g, const Color_t wc, const Style_t ws, const Option_t *opt)
 {
   g->SetLineWidth(2);
   g->SetLineColor(wc);
-  g->SetFillStyle(3144);
+  g->SetMarkerStyle(ws);
+  g->SetMarkerColor(wc);
+  g->SetFillStyle(3002);
   g->SetFillColor(g->GetLineColor());
   g->Draw(opt);
 

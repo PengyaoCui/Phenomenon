@@ -46,8 +46,8 @@ int main(int argc, char *argv[])
   if(!bCR && !bRope){
     pythia.readString("Tune:pp = 14");//Monash 2013 tune
   }
-  pythia.readString("Main:numberOfEvents = 100001");
-  //pythia.readString("Main:numberOfEvents = 10001");
+  //pythia.readString("Main:numberOfEvents = 100001");
+  pythia.readString("Main:numberOfEvents = 10001");
   pythia.readString("Beams:eCM = 7000.");
   if(bsQCD){ 
 	  //pythia.readString("SoftQCD:all = on");
@@ -471,14 +471,14 @@ int main(int argc, char *argv[])
       const auto id(ap.id());
       if ((dpRap>-0.5) && (dpRap<0.5)){
         if(id == 310 ){hKshortFwd->Fill(dFwdCh); hKshortPtFwd->Fill(dpPt, dFwdCh);}
-        if(id == 3122){hLambdaFwd->Fill(dFwdCh); hLambdaPtFwd->Fill(dpPt, dFwdCh);}
-        if(id == 3312){hXiFwd    ->Fill(dFwdCh); hXiPtFwd    ->Fill(dpPt, dFwdCh);}
-        if(id == 3334){hOmegaFwd ->Fill(dFwdCh); hOmegaPtFwd ->Fill(dpPt, dFwdCh);}
+        if(TMath::Abs(id) == 3122){hLambdaFwd->Fill(dFwdCh); hLambdaPtFwd->Fill(dpPt, dFwdCh);}
+        if(TMath::Abs(id) == 3312){hXiFwd    ->Fill(dFwdCh); hXiPtFwd    ->Fill(dpPt, dFwdCh);}
+        if(TMath::Abs(id) == 3334){hOmegaFwd ->Fill(dFwdCh); hOmegaPtFwd ->Fill(dpPt, dFwdCh);}
         if(id == 333 ){hPhiFwd   ->Fill(dFwdCh); hPhiPtFwd   ->Fill(dpPt, dFwdCh);}
         if(id == 313 ){hKstarFwd ->Fill(dFwdCh); hKstarPtFwd ->Fill(dpPt, dFwdCh);}
-        if(id == 211 ){hPionFwd  ->Fill(dFwdCh); hPionPtFwd  ->Fill(dpPt, dFwdCh);}
-        if(id == 321 ){hKionFwd  ->Fill(dFwdCh); hKionPtFwd  ->Fill(dpPt, dFwdCh);}
-        if(id == 2212){hProtonFwd->Fill(dFwdCh); hProtonPtFwd->Fill(dpPt, dFwdCh);}
+        if(TMath::Abs(id) == 211 ){hPionFwd  ->Fill(dFwdCh); hPionPtFwd  ->Fill(dpPt, dFwdCh);}
+        if(TMath::Abs(id) == 321 ){hKionFwd  ->Fill(dFwdCh); hKionPtFwd  ->Fill(dpPt, dFwdCh);}
+        if(TMath::Abs(id) == 2212){hProtonFwd->Fill(dFwdCh); hProtonPtFwd->Fill(dpPt, dFwdCh);}
       } 
       if ((dpEta<dStrgEtaMin) || (dpEta>dStrgEtaMax)) continue;
 //=============================================================================
@@ -488,9 +488,9 @@ int main(int argc, char *argv[])
       if(TMath::Abs(id)==3122){ ks = EStrg::Lambda; }//par = 2; 
       if(TMath::Abs(id)==3312){ ks = EStrg::Xi;     }//par = 3; 
       if(TMath::Abs(id)==3334){ ks = EStrg::Omega;  }//par = 4; 
-      if(TMath::Abs(id)==333) { ks = EStrg::Phi;    }//par = 5; 
-      if(TMath::Abs(id)==313) { ks = EStrg::Kstar; } //par = 6; 
-                                                 
+      if(id==333) { ks = EStrg::Phi;    }//par = 5; 
+      if(id==313) { ks = EStrg::Kstar; } //par = 6; 
+                                      
       if(TMath::Abs(id)==211) { ks=EStrg::Pion;     }//par = 7;
       if(TMath::Abs(id)==321) { ks=EStrg::Kion;     }//par = 8;
       if(TMath::Abs(id)==2212){ ks=EStrg::Proton;   }//par = 9;
