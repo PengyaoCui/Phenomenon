@@ -207,7 +207,7 @@ TGraphErrors* InteSpectrum(const TString sm,
   auto h((TH1D*)list->FindObject(Form("hIn%s", sp[p].Data())));
   if(j) h = (TH1D*)list->FindObject(Form("hJE%s", sp[p].Data()));
   if(u) h = (TH1D*)list->FindObject(Form("hPC%s", sp[p].Data()));
-  h->Scale(t);
+  h->Scale(t); h->SetName(sm);
 
   int k = 0;
   for(int i =1; i<= h->GetNbinsX(); i++){
@@ -224,7 +224,7 @@ TGraphErrors* InteSpectrum(const TString sm,
     if(h->GetBinContent(i) != 0.){
       dvx[c] = h->GetBinCenter(i);
       dvy[c] = h->GetBinContent(i);
-      dex[c] = h->GetBinWidth(i);
+      dex[c] = 0.;
       dey[c] = h->GetBinError(i);
       c++;
     }
@@ -243,16 +243,16 @@ TGraphErrors* RatioToPi(const TString sm,
 
   auto file(TFile::Open("sim/Results.root", "read"));
   auto list(static_cast<TList*>(file->Get(sm)));
-  auto h((TH1D*)list->FindObject(Form("hIn%s", sp[p].Data())));
-  if(j) h = (TH1D*)list->FindObject(Form("hJE%s", sp[p].Data()));
-  if(u) h = (TH1D*)list->FindObject(Form("hPC%s", sp[p].Data()));
-  h->Scale(t);
+  auto h((TH1D*)list->FindObject(Form("hIn%stoPi", sp[p].Data())));
+  if(j) h = (TH1D*)list->FindObject(Form("hJE%stoPi", sp[p].Data()));
+  if(u) h = (TH1D*)list->FindObject(Form("hPC%stoPi", sp[p].Data()));
+  //h->Scale(t); //h->SetName(sm);
   
-  auto hPi((TH1D*)list->FindObject(Form("hInPion")));
-  if(j) hPi = (TH1D*)list->FindObject(Form("hJEPion"));
-  if(u) hPi = (TH1D*)list->FindObject(Form("hPCPion"));
+  //auto hPi((TH1D*)list->FindObject(Form("hInPion")));
+  //if(j) hPi = (TH1D*)list->FindObject(Form("hJEPion"));
+  //if(u) hPi = (TH1D*)list->FindObject(Form("hPCPion"));
 
-  h->Divide(hPi);
+  //h->Divide(hPi);
 
   int k = 0;
   for(int i =1; i<= h->GetNbinsX(); i++){
@@ -269,7 +269,7 @@ TGraphErrors* RatioToPi(const TString sm,
     if(h->GetBinContent(i) != 0.){
       dvx[c] = h->GetBinCenter(i);
       dvy[c] = h->GetBinContent(i);
-      dex[c] = h->GetBinWidth(i);
+      dex[c] = 0.;
       dey[c] = h->GetBinError(i);
       c++;
     }

@@ -6,11 +6,11 @@ void InteSpect_Phi(){
   auto gD = GetDataE("data/HEPData_1910.14397v1.root", 42); 
 
   int p = 4;//{0="Kshort", "Lambda", "Xi", "Omega", "Phi", "Kstar", "Pion", "Kion", "Proton"};
-  TGraphErrors* h[4];
-  h[0] = InteSpectrum("Monash",  p, kFALSE, kFALSE, 1);//Para1: "Monash", "CR", "Rope", "CR+Rope" 
-  h[1] = InteSpectrum("CR",      p, kFALSE, kFALSE, 1);//Para2: particle 
-  h[2] = InteSpectrum("Rope",    p, kFALSE, kFALSE, 1);//Para3: Is JE? 
-  h[3] = InteSpectrum("CR+Rope", p, kFALSE, kFALSE, 1);//Para4: Is UE?
+  TGraphErrors* g[4];
+  g[0] = InteSpectrum("Monash",  p, kFALSE, kFALSE, 1);//Para1: "Monash", "CR", "Rope", "CR+Rope" 
+  g[1] = InteSpectrum("CR",      p, kFALSE, kFALSE, 1);//Para2: particle 
+  g[2] = InteSpectrum("Rope",    p, kFALSE, kFALSE, 1);//Para3: Is JE? 
+  g[3] = InteSpectrum("CR+Rope", p, kFALSE, kFALSE, 1);//Para4: Is UE?
                                                       //Para5: scale
   
   //TGraph* g[3];
@@ -44,24 +44,31 @@ void InteSpect_Phi(){
   hfm->GetXaxis()->SetNdivisions(503);
   hfm->GetYaxis()->SetNdivisions(503);
 
-  //g[0]->SetLineStyle(0);
-  //g[1]->SetLineStyle(1);
-  //g[2]->SetLineStyle(2);
+  g[0]->SetLineStyle(0);
+  g[1]->SetLineStyle(2);
+  g[2]->SetLineStyle(3);
+  g[3]->SetLineStyle(5);
+
+
+  g[0]->SetLineStyle(0);
+  g[1]->SetLineStyle(2);
+  g[2]->SetLineStyle(3);
+  g[3]->SetLineStyle(5);
   DrawHisto(hD, wcl[0], wmk[0], "same");
   DrawGraph(gD, wcl[0], "E2");
-  DrawGraph(h[0], wcl[1], "E3 FL same");
-  DrawGraph(h[1], wcl[2], "E3 FL same");
-  DrawGraph(h[2], wcl[3], "E3 FL same");
-  DrawGraph(h[3], wcl[4], "E3 FL same");
+  DrawGraph(g[0], wcl[0], "L");
+  DrawGraph(g[1], wcl[1], "L");
+  DrawGraph(g[2], wcl[2], "L");
+  DrawGraph(g[3], wcl[3], "L");
   //DrawGraph(g[0], wcl[0], "L");
   //DrawGraph(g[1], wcl[1], "L");
   //DrawGraph(g[2], wcl[2], "L");
 
   auto leg(new TLegend(0.7, 0.72, 1., 0.92)); SetupLegend(leg);
-  leg->AddEntry(h[0], "Monash",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(h[1], "CR",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(h[2], "Rope",  "L")->SetTextSizePixels(24);
-  leg->AddEntry(h[3], "BLC + Rope",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[0], "Monash",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[1], "CR",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[2], "Rope",  "L")->SetTextSizePixels(24);
+  leg->AddEntry(g[3], "CR + Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
   auto Leg(new TLegend(0.16, 0.75, 0.6, 0.85)); SetupLegend(Leg);
   Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 13 TeV",  "PF")->SetTextSizePixels(24);
