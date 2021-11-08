@@ -177,7 +177,7 @@ TGraphErrors* PartoJet(const TString sm,
       dey[i-1] = h->GetBinError(i);
   }
 
-  return ( new TGraphErrors(n,dvx,dvy,dex,dey));
+  return ( new TGraphErrors(4,dvx,dvy,dex,dey));
 }
 
 

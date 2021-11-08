@@ -63,7 +63,7 @@ void RatiowR(){
 
   auto dlsx(0.035), dlsy(0.035);
   auto dtsx(0.035), dtsy(0.035);
-  auto dtox(1.30), dtoy(1.30);
+  auto dtox(1.30), dtoy(1.60);
  
   TString stnx("#it{R}(p, jet)");
   TString stny("Ratio of yield to K^{0}_{S}");

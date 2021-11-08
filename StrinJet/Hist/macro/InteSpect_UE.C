@@ -52,7 +52,7 @@ void InteSpect_UE(){
 
   auto dlsx(0.04), dlsy(0.04);
   auto dtsx(0.04), dtsy(0.04);
-  auto dtox(1.30), dtoy(1.2);
+  auto dtox(1.30), dtoy(1.5);
 
   TString stnx("#LTd#it{N}_{ch}/d#eta#GT_{|#eta|<0.5}");
   //TString stny("#it{N}_{par} / (#it{N}_{ev} #Delta#eta #Delta#varphi)");
