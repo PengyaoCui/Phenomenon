@@ -13,41 +13,41 @@ void InteRatio_JE(){
   g[3][p] = RatioToPi("CR+Rope", p, kTRUE, kFALSE, 4);//g[2][0]->SetName((sp[p] + sm[2]).Data());
 
   p = 5;//Kstar
-  g[0][p] = RatioToPi("Monash",  p, kTRUE, kFALSE, 4);//g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: 
-  g[1][p] = RatioToPi("CR",      p, kTRUE, kFALSE, 4);//g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: 
-  g[2][p] = RatioToPi("Rope",    p, kTRUE, kFALSE, 4);//g[2][0]->SetName((sp[p] + sm[2]).Data());
-  g[3][p] = RatioToPi("CR+Rope", p, kTRUE, kFALSE, 4);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = RatioToPi("Monash",  p, kTRUE, kFALSE, 6);//g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: 
+  g[1][p] = RatioToPi("CR",      p, kTRUE, kFALSE, 6);//g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: 
+  g[2][p] = RatioToPi("Rope",    p, kTRUE, kFALSE, 6);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = RatioToPi("CR+Rope", p, kTRUE, kFALSE, 6);//g[2][0]->SetName((sp[p] + sm[2]).Data());
 
 
   p = 4;//Phi
-  g[0][p] = RatioToPi("Monash",  p, kTRUE, kFALSE, 4);//g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: 
-  g[1][p] = RatioToPi("CR",      p, kTRUE, kFALSE, 4);//g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: 
-  g[2][p] = RatioToPi("Rope",    p, kTRUE, kFALSE, 4);//g[2][0]->SetName((sp[p] + sm[2]).Data());
-  g[3][p] = RatioToPi("CR+Rope", p, kTRUE, kFALSE, 4);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = RatioToPi("Monash",  p, kTRUE, kFALSE, 12);//g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: 
+  g[1][p] = RatioToPi("CR",      p, kTRUE, kFALSE, 12);//g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: 
+  g[2][p] = RatioToPi("Rope",    p, kTRUE, kFALSE, 12);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = RatioToPi("CR+Rope", p, kTRUE, kFALSE, 12);//g[2][0]->SetName((sp[p] + sm[2]).Data());
   
   p = 1;//Lambda
-  g[0][p] = RatioToPi("Monash",  p, kTRUE, kFALSE, 4);//g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: 
-  g[1][p] = RatioToPi("CR",      p, kTRUE, kFALSE, 4);//g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: 
-  g[2][p] = RatioToPi("Rope",    p, kTRUE, kFALSE, 4);//g[2][0]->SetName((sp[p] + sm[2]).Data());
-  g[3][p] = RatioToPi("CR+Rope", p, kTRUE, kFALSE, 4);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = RatioToPi("Monash",  p, kTRUE, kFALSE, 1);//g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: 
+  g[1][p] = RatioToPi("CR",      p, kTRUE, kFALSE, 1);//g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: 
+  g[2][p] = RatioToPi("Rope",    p, kTRUE, kFALSE, 1);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = RatioToPi("CR+Rope", p, kTRUE, kFALSE, 1);//g[2][0]->SetName((sp[p] + sm[2]).Data());
 
   p = 2;//Xi
-  g[0][p] = RatioToPi("Monash",  p, kTRUE, kFALSE, 4);//g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: 
-  g[1][p] = RatioToPi("CR",      p, kTRUE, kFALSE, 4);//g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: 
-  g[2][p] = RatioToPi("Rope",    p, kTRUE, kFALSE, 4);//g[2][0]->SetName((sp[p] + sm[2]).Data());
-  g[3][p] = RatioToPi("CR+Rope", p, kTRUE, kFALSE, 4);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = RatioToPi("Monash",  p, kTRUE, kFALSE, 2);//g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: 
+  g[1][p] = RatioToPi("CR",      p, kTRUE, kFALSE, 2);//g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: 
+  g[2][p] = RatioToPi("Rope",    p, kTRUE, kFALSE, 2);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = RatioToPi("CR+Rope", p, kTRUE, kFALSE, 2);//g[2][0]->SetName((sp[p] + sm[2]).Data());
 
   p = 3;//Omega
-  g[0][p] = RatioToPi("Monash",  p, kTRUE, kFALSE, 4);//g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: 
-  g[1][p] = RatioToPi("CR",      p, kTRUE, kFALSE, 4);//g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: 
-  g[2][p] = RatioToPi("Rope",    p, kTRUE, kFALSE, 4);//g[2][0]->SetName((sp[p] + sm[2]).Data());
-  g[3][p] = RatioToPi("CR+Rope", p, kTRUE, kFALSE, 4);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[0][p] = RatioToPi("Monash",  p, kTRUE, kFALSE, 12);//g[0][0]->SetName((sp[p] + sm[0]).Data());//Para1: 
+  g[1][p] = RatioToPi("CR",      p, kTRUE, kFALSE, 12);//g[1][0]->SetName((sp[p] + sm[1]).Data());//Para2: 
+  g[2][p] = RatioToPi("Rope",    p, kTRUE, kFALSE, 12);//g[2][0]->SetName((sp[p] + sm[2]).Data());
+  g[3][p] = RatioToPi("CR+Rope", p, kTRUE, kFALSE, 12);//g[2][0]->SetName((sp[p] + sm[2]).Data());
 //=============================================================================
   //Double_t x, y;
   //g[2]->GetPoint(nc-2, x, y);
   //auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(3e-3), dfuy(0.7);
+  auto dfly(1.1e-3), dfuy(0.4);
   
 
   auto dlsx(0.04), dlsy(0.04);
@@ -102,11 +102,11 @@ void InteRatio_JE(){
   
   
   tex->DrawLatex(0.74, 0.82, "#color[1]{K^{0}_{S} (#times 4)}");
-  tex->DrawLatex(0.74, 0.72, "#color[799]{K*^{0} (#times 6)}");
+  tex->DrawLatex(0.74, 0.73, "#color[799]{K*^{0} (#times 6)}");
   tex->DrawLatex(0.74, 0.62, "#color[617]{#phi (#times 12)}"); 
   tex->DrawLatex(0.74, 0.53, "#color[633]{#Lambda + #bar{#Lambda}}");
-  tex->DrawLatex(0.72, 0.44, "#color[601]{#Xi^{-} + #bar{#Xi}^{+} (#times 2)}");
-  tex->DrawLatex(0.72, 0.34, "#color[419]{#Omega^{-} + #bar{#Omega}^{+} (#times 12)}");
+  tex->DrawLatex(0.72, 0.45, "#color[601]{#Xi^{-} + #bar{#Xi}^{+} (#times 2)}");
+  tex->DrawLatex(0.72, 0.33, "#color[419]{#Omega^{-} + #bar{#Omega}^{+} (#times 12)}");
 
   can->Print(Form("./figure/eps/%s.eps", can->GetName()));
   can->Print(Form("./figure/pdf/%s.pdf", can->GetName()));

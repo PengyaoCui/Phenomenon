@@ -11,9 +11,9 @@ void AnaSinJ(const TString sm = "Monash"){
 //==Read generated files=======================================================
   auto fs(TFile::Open(("sim/" + sm + ".root").Data() , "read"));//Open Monash output
   auto lresults(static_cast<TList*>(fs->Get("list_results")));
-  auto lI(static_cast<TList*>(fs->Get("list_I")));
-  auto lJ(static_cast<TList*>(fs->Get("list_J")));
-  auto lP(static_cast<TList*>(fs->Get("list_P")));
+  auto lI(static_cast<TList*>(fs->Get("list_I")));CallSumw2(lI);
+  auto lJ(static_cast<TList*>(fs->Get("list_J")));CallSumw2(lJ);
+  auto lP(static_cast<TList*>(fs->Get("list_P")));CallSumw2(lP);
   fs->Close();
 //=============================================================================
   
@@ -47,13 +47,13 @@ void AnaSinJ(const TString sm = "Monash"){
   OutFile<<left<<"=========="<<sm<<"==================== "<<endl;
   //dNdEta larger->small
   for(Int_t i = 0; i< nc-1; i++){
-    OutFile<<left<<setw(15)<<Form("%.1f--%.1f", dCent[i], dCent[i+1])<<Form("<dNdEta> = %.1f", dNdEta[i]);
+    OutFile<<left<<setw(15)<<Form("%.2f--%.2f", dCent[i], dCent[i+1])<<Form("<dNdEta> = %.2f", dNdEta[i]);
     OutFile<<endl;
   }
   OutFile<<left<<"================================ "<<endl;
   //N_Fwd larger->small
   for(Int_t i = 0; i< nc-1; i++){
-    OutFile<<left<<setw(15)<<Form("%.1f--%.1f", dCent[i], dCent[i+1])<<Form("N_Fwd = %.1f--%.1f", dFwd[i], dFwd[i+1]);
+    OutFile<<left<<setw(15)<<Form("%.2f--%.2f", dCent[i], dCent[i+1])<<Form("N_Fwd = %.2f--%.2f", dFwd[i], dFwd[i+1]);
     OutFile<<endl;
   }
   OutFile<<left<<"================================ "<<endl;

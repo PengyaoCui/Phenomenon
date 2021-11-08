@@ -73,127 +73,6 @@ TH1D* Trketa(const TString sm = "Monash")
 
   return h;
 }
-
-////=============================================================================
-//TH1D* dNfwddEta(const int s,
-//                const int m)
-//{
-//  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
-//  if (gSystem->AccessPathName(sf)) {
-//    ::Error("utils::Spectrum", "No file: %s", sf.Data());
-//    exit(-1);
-//  }
-//  auto file(TFile::Open(sf, "read"));
-//  auto list(static_cast<TList*>(file->Get("levent")));
-//  file->Close();
-//
-//  if (list==nullptr) {
-//    ::Error("utils::TrkEta", "No list: listevent");
-//    exit(-2);
-//  }
-//
-//  auto h((TH1D*)list->FindObject("hdNfwddEta"));
-//  h->Rebin(5);
-//
-//  return h;
-//}
-//
-//
-////=============================================================================
-//void dNdEtaVal(const int s,
-//	       const int m,
-//	       TH1D*h,
-//	       Double_t dNdEta[nc-1])
-//{
-//  auto dndeta = 0.; int k = 0;
-//  for(int i =1; i<= h->GetNbinsX(); i++){
-//    if(h->GetBinContent(i) != 0.){
-//      dNdEta[k] = h->GetBinCenter(i);
-//      k++;
-//    }
-//  }
-//}
-//
-////=============================================================================
-//void IntegralVal(const int s,
-//                 const int m,
-//                 const int p,
-//		 Double_t dNdEta[nc-1],
-//	         Double_t dVal[nc-1],
-//		 bool j = kFALSE,
-//		 bool u = kFALSE)
-//{
-//  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
-//  if (gSystem->AccessPathName(sf)) {
-//    ::Error("utils::Spectrum", "No file: %s", sf.Data());
-//    exit(-1);
-//  }
-//  auto file(TFile::Open(sf, "read"));
-//  auto list(static_cast<TList*>(file->Get(sp[p])));
-//  file->Close();
-//
-//  if (list==nullptr) {
-//    ::Error("utils::Spectrum", "No list: list_results");
-//    exit(-2);
-//  }
-//
-//  auto h((TH1D*)list->FindObject(Form("Integral_%s_In", sp[p].Data())));
-//  if(j) h=(TH1D*)list->FindObject(Form("Integral_%s_JC", sp[p].Data()));
-//  if(u) h=(TH1D*)list->FindObject(Form("Integral_%s_PC", sp[p].Data()));
-//  
-//  dNdEtaVal(s, m, h, dNdEta);
-//  for(int i = 0; i<nc-1; i++){dVal[i] = h->GetBinContent(h->FindBin(dNdEta[i]));}
-//
-//  return;
-//}
-//
-////=============================================================================
-//TH1D* InteSpect(const int s,
-//                 const int m,
-//                 const int p,
-//                 bool j = kFALSE,
-//                 bool u = kFALSE,
-//		 const int t = 1)
-//{
-//  auto Acc(acc); if(j || u) Acc = 0.75;
-//  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
-//  if (gSystem->AccessPathName(sf)) {
-//    ::Error("utils::Spectrum", "No file: %s", sf.Data());
-//    exit(-1);
-//  }
-//  auto file(TFile::Open(sf, "read"));
-//  auto list(static_cast<TList*>(file->Get(sp[p])));
-//  file->Close();
-//
-//  if (list==nullptr) {
-//    ::Error("utils::Spectrum", "No list: list_results");
-//    exit(-2);
-//  }
-//
-//  TH1D* h;
-//  if(!j && !u){
-//    h = ((TH1D*)list->FindObject(Form("Integral_%s_In", sp[p].Data())));
-//    h->Scale(t);
-//  }
-//  if(j){
-//    h=(TH1D*)list->FindObject(Form("Integral_%s_JC", sp[p].Data()));
-//    auto H=(TH1D*)list->FindObject(Form("Integral_%s_PC", sp[p].Data())); H->Scale(-1.*0.25);
-//    h->Add(H);
-//    h->Scale(1./0.6);
-//    h->Scale(t);
-//  }
-//  if(u){
-//    h=(TH1D*)list->FindObject(Form("Integral_%s_PC", sp[p].Data()));
-//    h->Scale(0.25/0.6);
-//    h->Scale(t);
-//  }
-//  
-//  if(!(p == 1 || p==2 || p==3)) h->Scale(1./(Acc*2.));
-//  if(p == 1 || p==2 || p==3) h->Scale(1./(Acc));//2.*dPa[i]/(Acc*2.)
-//
-//  return h;
-//}
-//
 //_____________________________________________________________________________
 TGraphErrors* InteSpectrum(const TString sm,
                      const int p,
@@ -246,7 +125,7 @@ TGraphErrors* RatioToPi(const TString sm,
   auto h((TH1D*)list->FindObject(Form("hIn%stoPi", sp[p].Data())));
   if(j) h = (TH1D*)list->FindObject(Form("hJE%stoPi", sp[p].Data()));
   if(u) h = (TH1D*)list->FindObject(Form("hPC%stoPi", sp[p].Data()));
-  //h->Scale(t); //h->SetName(sm);
+  h->Scale(t); //h->SetName(sm);
   
   //auto hPi((TH1D*)list->FindObject(Form("hInPion")));
   //if(j) hPi = (TH1D*)list->FindObject(Form("hJEPion"));
@@ -276,6 +155,29 @@ TGraphErrors* RatioToPi(const TString sm,
   }
 
   return(new TGraphErrors(nc,dvx,dvy,dex,dey));
+}
+//_____________________________________________________________________________
+TGraphErrors* PartoJet(const TString sm,
+                       const int p,
+                       const double t = 1.)
+{
+  auto file(TFile::Open("sim/Results.root", "read"));
+  auto list(static_cast<TList*>(file->Get(sm)));
+  auto h = (TH1D*)list->FindObject(Form("hPJ%stoKshort", sp[p].Data()));
+  h->Scale(t);
+
+  const int n = h->GetNbinsX();
+  
+  Double_t dvx[n]; Double_t dvy[n];
+  Double_t dex[n]; Double_t dey[n];
+  for(int i =1; i<= n; i++){
+      dvx[i-1] = h->GetBinCenter(i);
+      dvy[i-1] = h->GetBinContent(i);
+      dex[i-1] = h->GetBinWidth(i)*0.5;
+      dey[i-1] = h->GetBinError(i);
+  }
+
+  return ( new TGraphErrors(n,dvx,dvy,dex,dey));
 }
 
 
@@ -563,33 +465,6 @@ TH1D* GetDataC(TString sf = "data/HEPData.root",
 //}
 //
 //
-////=============================================================================
-//TH1D* PartoJet(const int s,
-//               const int m,
-//               const int p,
-//	       const int dCentMin,
-//               const int dCentMax)
-//{
-//
-//  const TString sf(Form("sim/%s/Results_%s_%s.root", ss[s].Data(), ss[s].Data(), sm[m].Data()));
-//  if (gSystem->AccessPathName(sf)) {
-//    ::Error("utils::Spectrum", "No file: %s", sf.Data());
-//    exit(-1);
-//  }
-//  auto file(TFile::Open(sf, "read"));
-//  auto list(static_cast<TList*>(file->Get(sp[p])));
-//  file->Close();
-//
-//  if (list==nullptr) {
-//    ::Error("utils::Spectrum", "No list: list_results");
-//    exit(-2);
-//  }
-//
-//  auto h((TH1D*)list->FindObject(Form("%s_dJP_%d%d", sp[p].Data(), dCentMin, dCentMax)));
-//
-//  h->Rebin(5);
-// return h;
-//}
 ////_____________________________________________________________________________
 //TH1D* RebinTH1D(TH1D const *hRaw, TH1D const *hRef)
 //{

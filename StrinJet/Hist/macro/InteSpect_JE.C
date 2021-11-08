@@ -13,10 +13,10 @@ void InteSpect_JE(){
   g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 4.); //g[2][0]->SetName((sp[p] + sm[2]).Data());
 
   p = 5;//Kstar
-  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 3); //g[0][0]->SetName((sp[8] + sm[0]).Data());
-  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 3); //g[1][0]->SetName((sp[8] + sm[1]).Data());
-  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 3); //g[2][0]->SetName((sp[8] + sm[2]).Data());
-  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 3); //g[2][0]->SetName((sp[8] + sm[2]).Data());
+  g[0][p] = InteSpectrum("Monash",  p, kTRUE, kFALSE, 6); //g[0][0]->SetName((sp[8] + sm[0]).Data());
+  g[1][p] = InteSpectrum("CR",      p, kTRUE, kFALSE, 6); //g[1][0]->SetName((sp[8] + sm[1]).Data());
+  g[2][p] = InteSpectrum("Rope",    p, kTRUE, kFALSE, 6); //g[2][0]->SetName((sp[8] + sm[2]).Data());
+  g[3][p] = InteSpectrum("CR+Rope", p, kTRUE, kFALSE, 6); //g[2][0]->SetName((sp[8] + sm[2]).Data());
 
 
   p = 4;//Phi
@@ -47,7 +47,7 @@ void InteSpect_JE(){
   //g[2]->GetPoint(nc-2, x, y);
   //auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(5e-3), dfuy(2.2);
+  auto dfly(7e-3), dfuy(2.5);
   
 
   auto dlsx(0.04), dlsy(0.04);
@@ -101,11 +101,11 @@ void InteSpect_JE(){
   //tex->DrawLatex(0.16, 0.88, "Strange particle in jets");
   
   
-  tex->DrawLatex(0.74, 0.85, "#color[1]{K^{0}_{S} (#times 4)}");
-  tex->DrawLatex(0.74, 0.74, "#color[799]{K*^{0} (#times 6)}");
-  tex->DrawLatex(0.74, 0.64, "#color[617]{#phi (#times 12)}"); 
+  tex->DrawLatex(0.74, 0.84, "#color[1]{K^{0}_{S} (#times 4)}");
+  tex->DrawLatex(0.74, 0.76, "#color[799]{K*^{0} (#times 6)}");
+  tex->DrawLatex(0.74, 0.65, "#color[617]{#phi (#times 12)}"); 
   tex->DrawLatex(0.74, 0.56, "#color[633]{#Lambda + #bar{#Lambda}}");
-  tex->DrawLatex(0.72, 0.46, "#color[601]{#Xi^{-} + #bar{#Xi}^{+} (#times 2)}");
+  tex->DrawLatex(0.72, 0.48, "#color[601]{#Xi^{-} + #bar{#Xi}^{+} (#times 2)}");
   tex->DrawLatex(0.72, 0.3, "#color[419]{#Omega^{-} + #bar{#Omega}^{+} (#times 12)}");
 
   //can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));

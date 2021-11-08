@@ -319,31 +319,31 @@ int main(int argc, char *argv[])
   TH2D *hJCProtonPtFwd  = new TH2D("hJCProtonPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 200, 0., 20., 500, -0.5, 499.5);
   list_J->Add(hJCProtonPtFwd);
   
-  TH1D *hKshortPJ = new TH1D("hKshortPJ", "PJ", 25, 0., 2.5);
+  TH1D *hKshortPJ = new TH1D("hKshortPJ", "PJ", 250, 0., 2.5);
   list_J->Add(hKshortPJ);
   
-  TH1D *hLambdaPJ = new TH1D("hLambdaPJ", "PJ", 25, 0., 2.5);
+  TH1D *hLambdaPJ = new TH1D("hLambdaPJ", "PJ", 250, 0., 2.5);
   list_J->Add(hLambdaPJ);
 
-  TH1D *hXiPJ = new TH1D("hXiPJ", "PJ", 25, 0., 2.5);
+  TH1D *hXiPJ = new TH1D("hXiPJ", "PJ", 250, 0., 2.5);
   list_J->Add(hXiPJ);
   
-  TH1D *hOmegaPJ = new TH1D("hOmegaPJ", "PJ", 25, 0., 2.5);
+  TH1D *hOmegaPJ = new TH1D("hOmegaPJ", "PJ", 250, 0., 2.5);
   list_J->Add(hOmegaPJ);
   
-  TH1D *hPhiPJ = new TH1D("hPhiPJ", "PJ", 25, 0., 2.5);
+  TH1D *hPhiPJ = new TH1D("hPhiPJ", "PJ", 250, 0., 2.5);
   list_J->Add(hPhiPJ);
   
-  TH1D *hKstarPJ = new TH1D("hKstarPJ", "PJ", 25, 0., 2.5);
+  TH1D *hKstarPJ = new TH1D("hKstarPJ", "PJ", 250, 0., 2.5);
   list_J->Add(hKstarPJ);
   
-  TH1D *hPionPJ = new TH1D("hPionPJ", "PJ", 25, 0., 2.5);
+  TH1D *hPionPJ = new TH1D("hPionPJ", "PJ", 250, 0., 2.5);
   list_J->Add(hPionPJ);
   
-  TH1D *hKionPJ = new TH1D("hKionPJ", "PJ", 25, 0., 2.5);
+  TH1D *hKionPJ = new TH1D("hKionPJ", "PJ", 250, 0., 2.5);
   list_J->Add(hKionPJ);
   
-  TH1D *hProtonPJ = new TH1D("hProtonPJ", "PJ", 25, 0., 2.5);
+  TH1D *hProtonPJ = new TH1D("hProtonPJ", "PJ", 250, 0., 2.5);
   list_J->Add(hProtonPJ);
 //============================== 
   TH1D *hPCKshortFwd  = new TH1D("hPCKshortFwd", "N_{Fwd}", 500, -0.5, 499.5);
@@ -407,6 +407,9 @@ int main(int argc, char *argv[])
 //=============================================================================
   
   CallSumw2(list_results);
+  CallSumw2(list_I);
+  CallSumw2(list_J);
+  CallSumw2(list_P);
 //=============================================================================
 
   TObject *p(nullptr);

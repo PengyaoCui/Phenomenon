@@ -39,10 +39,6 @@ void InteRatio_KPi(){
     g[3]->SetLineStyle(5);
 
 
-    g[0]->SetLineStyle(0);
-    g[1]->SetLineStyle(2);
-    g[2]->SetLineStyle(3);
-    g[3]->SetLineStyle(5);
     DrawHisto(hD, wcl[0], wmk[0], "same");
     DrawGraph(gD, wcl[0], "E2");
     DrawGraph(g[0], wcl[0], "L");
