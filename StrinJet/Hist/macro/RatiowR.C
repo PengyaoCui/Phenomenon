@@ -129,7 +129,7 @@ void RatiowR(){
 
 
   auto Can(MakeCanvas("MultiStrtoK", 700, 700));
-  dfuy = 0.22;
+  dfuy = 0.23;
   auto hFm(can->DrawFrame(dflx, dfly, dfux, dfuy));
 
   SetupFrame(hFm, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);

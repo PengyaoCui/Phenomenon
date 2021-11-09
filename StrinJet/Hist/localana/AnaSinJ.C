@@ -141,36 +141,49 @@ void AnaSinJ(const TString sm = "Monash"){
   }
 
 //==Ratio to Kshort Vs Particle to Jet distance================================
+  auto dJEvent = hJFwdTrk->GetEntries();
+  auto hPJK((TH1D*)lJ->FindObject(Form("hKshortPJ")));
+  auto hPCKFwd((TH1D*)lP->FindObject(Form("hPCKshortFwd")));
+  Double_t dKUE = hPCKFwd->GetEntries();
+  dKUE = dKUE/(dJEvent*2.*0.75*TMath::TwoPi()*0.06*4.);
+  hPJK->Scale(1./dJEvent); 
+  for(int i = 1; i<= hPJK->GetNbinsX(); i++){
+    auto dvK = hPJK->GetBinContent(i);
+    auto deK = hPJK->GetBinError(i);
+    
+    auto dLower(hPJK->GetXaxis()->GetBinLowEdge(i));
+    auto dUpper(hPJK->GetXaxis()->GetBinUpEdge(i) );
+    auto deltaR = (dUpper*dUpper - dLower*dLower); 
+    
+    dvK = (dvK - dKUE*TMath::Pi()*deltaR); deK = deK; 
+    hPJK->SetBinContent(i, dvK); hPJK->SetBinError(i, deK); 
+  }
+  l->Add(hPJK);
+  
   for(int p = 0; p<np-3; p++){
     if(sp[p] == "Kshort") continue;
-    auto hPJK((TH1D*)lJ->FindObject(Form("hKshortPJ")));
     auto hPJP((TH1D*)lJ->FindObject(Form("h%sPJ", sp[p].Data())));
-
-    auto dJEvent = hJFwdTrk->GetEntries();
     auto hPCFwd((TH1D*)lP->FindObject(Form("hPC%sFwd", sp[p].Data())));
     Double_t dUE = hPCFwd->GetEntries();
     dUE = dUE/(dJEvent*2.*0.75*TMath::TwoPi()*0.06*4.);
+    hPJP->Scale(1./dJEvent);
+    //dUE = dUE/(2.*0.75*TMath::TwoPi()*0.06*4.);
 
-    for(int i = 1; i<= hPJK->GetNbinsX(); i++){
-      auto dvK = hPJK->GetBinContent(i);
-      auto deK = hPJK->GetBinError(i);
+    for(int i = 1; i<= hPJP->GetNbinsX(); i++){
       
       auto dvP = hPJP->GetBinContent(i); 
       auto deP = hPJP->GetBinError(i);
       
-      auto dLower(hPJK->GetXaxis()->GetBinLowEdge(i));
-      auto dUpper(hPJK->GetXaxis()->GetBinUpEdge(i) );
+      auto dLower(hPJP->GetXaxis()->GetBinLowEdge(i));
+      auto dUpper(hPJP->GetXaxis()->GetBinUpEdge(i) );
       auto deltaR = (dUpper*dUpper - dLower*dLower); 
       
-      dvK = (dvK - dUE*TMath::Pi()*deltaR); deK = deK; 
       dvP = (dvP - dUE*TMath::Pi()*deltaR); deP = deP; 
-      hPJK->SetBinContent(i, dvK); hPJK->SetBinError(i, deK); 
       hPJP->SetBinContent(i, dvP); hPJP->SetBinError(i, deP); 
     }
     auto hJPRtoK = (TH1D*)hPJP->Clone(Form("hPJ%stoKshort", sp[p].Data()));
     hJPRtoK->Divide(hPJK); 
     l->Add(hPJP);
-    if(sp[p] == "Lambda")l->Add(hPJK);
     l->Add(hJPRtoK);
   }
 //=============================================================================
