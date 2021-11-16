@@ -264,3 +264,28 @@ TGraphErrors *ConvHistogramToGraphErrors(TH1D* const hVar, const Double_t dd=0.0
 
   return (new TGraphErrors(n,dvx,dvy,dex,dey));
 }
+
+//_____________________________________________________________________________
+TGraphErrors *ScaleGraphErrors(TGraphErrors* g, Double_t t)
+{
+  const auto n(g->GetN());
+
+  Double_t dvx[n]; Double_t dex[n]; Double_t dexl[n]; Double_t dexh[n];
+  Double_t dvy[n]; Double_t dey[n]; Double_t deyl[n]; Double_t deyh[n];
+  for (auto i=0; i<n; i++) {
+    dvx[i] = g->GetX()[i];
+    dvy[i] = g->GetY()[i]*t;
+    
+    dexl[i] = g->GetErrorXlow(i);
+    dexh[i] = g->GetErrorXhigh(i);
+    dex[i] = 0.5*(dexl[i]+dexh[i]);
+
+    deyl[i] = (g->GetErrorYlow(i))*t;
+    deyh[i] = (g->GetErrorYhigh(i))*t;
+    dey[i] = 0.5*(deyl[i]+deyh[i]);
+  }
+//=============================================================================
+
+  return (new TGraphErrors(n,dvx,dvy,dex,dey));
+}
+
