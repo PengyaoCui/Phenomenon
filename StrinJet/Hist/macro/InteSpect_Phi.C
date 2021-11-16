@@ -82,6 +82,7 @@ void InteSpect_Phi(){
   Tex->SetNDC();
   Tex->SetTextSizePixels(34);
   Tex->DrawLatex(0.2, 0.6, Form("#phi"));
+  Tex->DrawLatex(0.5, 0.05, "(c)");
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));

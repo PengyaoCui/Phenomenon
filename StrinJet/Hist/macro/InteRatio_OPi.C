@@ -28,6 +28,7 @@ void InteRatio_OPi(){
     gStyle->SetErrorX(0);
     
     auto can(MakeCanvas("Omega_PiRatio"));
+    can->SetTopMargin(0.06);
     //can->SetLogy();
     auto hfm(can->DrawFrame(dflx, dfly, dfux, dfuy));
     SetupFrame(hfm, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);
@@ -49,21 +50,25 @@ void InteRatio_OPi(){
     DrawGraph(g[1], wcl[1], "L");
     DrawGraph(g[2], wcl[2], "L");
     DrawGraph(g[3], wcl[3], "L");
-    auto leg(new TLegend(0.73, 0.70, 0.95, 0.95)); SetupLegend(leg);
+    auto leg(new TLegend(0.73, 0.68, 0.95, 0.9)); SetupLegend(leg);
     leg->AddEntry(g[0], "Monash",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[1], "CR",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[2], "Rope",  "L")->SetTextSizePixels(24);
     leg->AddEntry(g[3], "CR + Rope",  "L")->SetTextSizePixels(24);
     leg->Draw();
 
-    auto Leg(new TLegend(0.16, 0.75, 0.5, 0.85)); SetupLegend(Leg);
+    auto Leg(new TLegend(0.16, 0.73, 0.5, 0.85)); SetupLegend(Leg);
     Leg->AddEntry(hD, "Exp data",  "PF")->SetTextSizePixels(24);
     Leg->Draw();
 
     auto tex(new TLatex());
     tex->SetNDC();
     tex->SetTextSizePixels(24);
-    tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
+    tex->DrawLatex(0.16, 0.86, "pp #sqrt{#it{s}} = 7 TeV");
+    auto Tex(new TLatex());
+    Tex->SetNDC();
+    Tex->SetTextSizePixels(34);
+    Tex->DrawLatex(0.5, 0.05, "(f)");
 
 
     can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));

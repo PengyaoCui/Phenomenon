@@ -82,6 +82,7 @@ void InteSpect_Kshort(){
   Tex->SetNDC();
   Tex->SetTextSizePixels(34);
   Tex->DrawLatex(0.2, 0.6, Form("K^{0}_{S}"));
+  Tex->DrawLatex(0.5, 0.05, "(a)");
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));

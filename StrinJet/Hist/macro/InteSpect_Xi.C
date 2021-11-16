@@ -82,6 +82,7 @@ void InteSpect_Xi(){
   Tex->SetNDC();
   Tex->SetTextSizePixels(34);
   Tex->DrawLatex(0.2, 0.6, Form("#Xi + #bar{#Xi}"));
+  Tex->DrawLatex(0.5, 0.05, "(e)");
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));
