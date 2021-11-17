@@ -157,7 +157,7 @@ TGraphErrors* RatioToPi(const TString sm,
   return(new TGraphErrors(nc,dvx,dvy,dex,dey));
 }
 //_____________________________________________________________________________
-TGraphErrors* PartoJet(const TString sm,
+TGraphErrors* RatiotoJet(const TString sm,
                        const int p,
                        const double t = 1.)
 {
@@ -180,6 +180,29 @@ TGraphErrors* PartoJet(const TString sm,
   return ( new TGraphErrors(4,dvx,dvy,dex,dey));
 }
 
+//_____________________________________________________________________________
+TGraphErrors* PartoJet(const TString sm,
+                       const int p,
+                       const double t = 1.)
+{
+  auto file(TFile::Open("sim/Results.root", "read"));
+  auto list(static_cast<TList*>(file->Get(sm)));
+  auto h = (TH1D*)list->FindObject(Form("h%sPJ", sp[p].Data()));
+  h->Scale(t);
+
+  const int n = h->GetNbinsX();
+
+  Double_t dvx[n]; Double_t dvy[n];
+  Double_t dex[n]; Double_t dey[n];
+  for(int i =1; i<= n; i++){
+      dvx[i-1] = h->GetBinCenter(i);
+      dvy[i-1] = h->GetBinContent(i);
+      dex[i-1] = h->GetBinWidth(i)*0.5;
+      dey[i-1] = h->GetBinError(i);
+  }
+
+  return ( new TGraphErrors(4,dvx,dvy,dex,dey));
+}
 
 
 ////=============================================================================

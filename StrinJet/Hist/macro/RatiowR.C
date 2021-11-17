@@ -15,34 +15,34 @@ void RatiowR(){
   int p;//{0="Kshort", "Lambda", "Xi", "Omega", "Phi", "Kstar", "Pion", "Kion", "Proton"};
 
   p=1;
-  g[0][p-1] = (TGraphErrors*) PartoJet("Monash",  p, 0.5);
-  g[1][p-1] = (TGraphErrors*) PartoJet("CR",      p, 0.5);
-  g[2][p-1] = (TGraphErrors*) PartoJet("Rope",    p, 0.5);
-  g[3][p-1] = (TGraphErrors*) PartoJet("CR+Rope", p, 0.5);
+  g[0][p-1] = (TGraphErrors*) RatiotoJet("Monash",  p, 0.5);
+  g[1][p-1] = (TGraphErrors*) RatiotoJet("CR",      p, 0.5);
+  g[2][p-1] = (TGraphErrors*) RatiotoJet("Rope",    p, 0.5);
+  g[3][p-1] = (TGraphErrors*) RatiotoJet("CR+Rope", p, 0.5);
  
   p=2;
-  g[0][p-1] = (TGraphErrors*) PartoJet("Monash",  p, 0.5);
-  g[1][p-1] = (TGraphErrors*) PartoJet("CR",      p, 0.5);
-  g[2][p-1] = (TGraphErrors*) PartoJet("Rope",    p, 0.5);
-  g[3][p-1] = (TGraphErrors*) PartoJet("CR+Rope", p, 0.5);
+  g[0][p-1] = (TGraphErrors*) RatiotoJet("Monash",  p, 0.5);
+  g[1][p-1] = (TGraphErrors*) RatiotoJet("CR",      p, 0.5);
+  g[2][p-1] = (TGraphErrors*) RatiotoJet("Rope",    p, 0.5);
+  g[3][p-1] = (TGraphErrors*) RatiotoJet("CR+Rope", p, 0.5);
  
   p=3;
-  g[0][p-1] = (TGraphErrors*) PartoJet("Monash",  p, 5.);
-  g[1][p-1] = (TGraphErrors*) PartoJet("CR",      p, 5.);
-  g[2][p-1] = (TGraphErrors*) PartoJet("Rope",    p, 5.);
-  g[3][p-1] = (TGraphErrors*) PartoJet("CR+Rope", p, 5.);
+  g[0][p-1] = (TGraphErrors*) RatiotoJet("Monash",  p, 5.);
+  g[1][p-1] = (TGraphErrors*) RatiotoJet("CR",      p, 5.);
+  g[2][p-1] = (TGraphErrors*) RatiotoJet("Rope",    p, 5.);
+  g[3][p-1] = (TGraphErrors*) RatiotoJet("CR+Rope", p, 5.);
  
   p = 4; 
-  g[0][p-1] = (TGraphErrors*) PartoJet("Monash",  p, 1.);
-  g[1][p-1] = (TGraphErrors*) PartoJet("CR",      p, 1.);
-  g[2][p-1] = (TGraphErrors*) PartoJet("Rope",    p, 1.);
-  g[3][p-1] = (TGraphErrors*) PartoJet("CR+Rope", p, 1.);
+  g[0][p-1] = (TGraphErrors*) RatiotoJet("Monash",  p, 1.);
+  g[1][p-1] = (TGraphErrors*) RatiotoJet("CR",      p, 1.);
+  g[2][p-1] = (TGraphErrors*) RatiotoJet("Rope",    p, 1.);
+  g[3][p-1] = (TGraphErrors*) RatiotoJet("CR+Rope", p, 1.);
   
   p = 5; 
-  g[0][p-1] = (TGraphErrors*) PartoJet("Monash",  p, 1.);
-  g[1][p-1] = (TGraphErrors*) PartoJet("CR",      p, 1.);
-  g[2][p-1] = (TGraphErrors*) PartoJet("Rope",    p, 1.);
-  g[3][p-1] = (TGraphErrors*) PartoJet("CR+Rope", p, 1.);
+  g[0][p-1] = (TGraphErrors*) RatiotoJet("Monash",  p, 1.);
+  g[1][p-1] = (TGraphErrors*) RatiotoJet("CR",      p, 1.);
+  g[2][p-1] = (TGraphErrors*) RatiotoJet("Rope",    p, 1.);
+  g[3][p-1] = (TGraphErrors*) RatiotoJet("CR+Rope", p, 1.);
  
                                                   
   //for(int i=0; i<6; i++){                         
