@@ -69,7 +69,7 @@ void InteRatio_OPi(){
     auto Tex(new TLatex());
     Tex->SetNDC();
     Tex->SetTextSizePixels(34);
-    Tex->DrawLatex(0.5, 0.05, "(f)");
+    Tex->DrawLatex(0.5, 0.9, "(f)");
 
     auto T(new TLatex());
     T->SetNDC();

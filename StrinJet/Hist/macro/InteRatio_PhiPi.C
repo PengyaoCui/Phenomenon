@@ -67,7 +67,7 @@ void InteRatio_PhiPi(){
     auto Tex(new TLatex());
     Tex->SetNDC();
     Tex->SetTextSizePixels(34);
-    Tex->DrawLatex(0.5, 0.05, "(c)");
+    Tex->DrawLatex(0.5, 0.9, "(c)");
 
 
     can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));

@@ -82,7 +82,7 @@ void InteSpect_Omega(){
   Tex->SetNDC();
   Tex->SetTextSizePixels(34);
   Tex->DrawLatex(0.2, 0.6, Form("#Omega + #bar{#Omega}"));
-  Tex->DrawLatex(0.5, 0.05, "(f)");
+  Tex->DrawLatex(0.85, 0.45, "(f)");
 
   can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/pdf/%s.pdf", can->GetName()));

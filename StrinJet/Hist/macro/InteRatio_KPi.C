@@ -63,7 +63,7 @@ void InteRatio_KPi(){
     auto Tex(new TLatex());
     Tex->SetNDC();
     Tex->SetTextSizePixels(34);
-    Tex->DrawLatex(0.5, 0.05, "(a)");
+    Tex->DrawLatex(0.5, 0.9, "(a)");
 
 
     can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
