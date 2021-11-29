@@ -76,7 +76,7 @@ void RhowR(){
   SetStyle(kTRUE);
   gStyle->SetErrorX(0);
   
-  auto can(MakeCanvas("StrtoK", 700, 700));
+  auto can(MakeCanvas("StrtoJ", 700, 700));
   can->SetLogy();
   auto hfm(can->DrawFrame(dflx, dfly, dfux, dfuy));
   SetupFrame(hfm, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);
@@ -137,7 +137,7 @@ void RhowR(){
   auto Can(MakeCanvas("MultiStrtoJ", 700, 700));
   Can->SetLogy();
   dfly = 1e-4; dfuy = 4e0;
-  auto hFm(can->DrawFrame(dflx, dfly, dfux, dfuy));
+  auto hFm(Can->DrawFrame(dflx, dfly, dfux, dfuy));
 
   SetupFrame(hFm, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);
   hFm->GetXaxis()->SetNdivisions(505);
