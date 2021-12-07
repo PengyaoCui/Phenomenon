@@ -71,13 +71,13 @@ void InteSpect_Xi(){
   leg->AddEntry(g[3], "CR + Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
   auto Leg(new TLegend(0.16, 0.75, 0.6, 0.85)); SetupLegend(Leg);
-  Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 7 TeV",  "PF")->SetTextSizePixels(24);
+  Leg->AddEntry(hD, "Exp data",  "PF")->SetTextSizePixels(24);
   Leg->Draw();
 
   auto tex(new TLatex());
   tex->SetNDC();
   tex->SetTextSizePixels(24);
-  tex->DrawLatex(0.16, 0.9, "Models: pp #sqrt{#it{s}} = 7 TeV");
+  tex->DrawLatex(0.16, 0.9, " pp #sqrt{#it{s}} = 7 TeV");
   auto Tex(new TLatex());
   Tex->SetNDC();
   Tex->SetTextSizePixels(34);

@@ -23,7 +23,7 @@ void InteSpect_Phi(){
   //g[2]->GetPoint(nc-2, x, y);
   auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(0.), dfuy(0.34);
+  auto dfly(0.), dfuy(0.39);
   
 
   auto dlsx(0.05), dlsy(0.05);
@@ -64,20 +64,20 @@ void InteSpect_Phi(){
   //DrawGraph(g[1], wcl[1], "L");
   //DrawGraph(g[2], wcl[2], "L");
 
-  auto leg(new TLegend(0.7, 0.72, 1., 0.92)); SetupLegend(leg);
+  auto leg(new TLegend(0.7, 0.68, 1., 0.88)); SetupLegend(leg);
   leg->AddEntry(g[0], "Monash",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[1], "CR",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[2], "Rope",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[3], "CR + Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
-  auto Leg(new TLegend(0.16, 0.75, 0.6, 0.85)); SetupLegend(Leg);
-  Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 13 TeV",  "PF")->SetTextSizePixels(24);
+  auto Leg(new TLegend(0.16, 0.85, 0.6, 0.95)); SetupLegend(Leg);
+  Leg->AddEntry(hD, "Exp data: pp #sqrt{#it{s}} = 13 TeV",  "PF")->SetTextSizePixels(24);
   Leg->Draw();
 
   auto tex(new TLatex());
   tex->SetNDC();
   tex->SetTextSizePixels(24);
-  tex->DrawLatex(0.16, 0.9, "Models: pp #sqrt{#it{s}} = 7 TeV");
+  tex->DrawLatex(0.69, 0.91, "pp #sqrt{#it{s}} = 7 TeV");
   auto Tex(new TLatex());
   Tex->SetNDC();
   Tex->SetTextSizePixels(34);
