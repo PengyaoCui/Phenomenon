@@ -71,7 +71,7 @@ void InteSpect_Phi(){
   leg->AddEntry(g[3], "CR + Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
   auto Leg(new TLegend(0.16, 0.85, 0.6, 0.95)); SetupLegend(Leg);
-  Leg->AddEntry(hD, "Exp data: pp #sqrt{#it{s}} = 13 TeV",  "PF")->SetTextSizePixels(24);
+  Leg->AddEntry(hD, "ALICE: pp #sqrt{#it{s}} = 13 TeV",  "PF")->SetTextSizePixels(24);
   Leg->Draw();
 
   auto tex(new TLatex());

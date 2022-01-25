@@ -71,7 +71,7 @@ void InteSpect_Kshort(){
   leg->AddEntry(g[3], "CR + Rope",  "L")->SetTextSizePixels(24);
   leg->Draw();
   auto Leg(new TLegend(0.16, 0.75, 0.6, 0.85)); SetupLegend(Leg);
-  Leg->AddEntry(hD, "Exp data",  "PF")->SetTextSizePixels(24);
+  Leg->AddEntry(hD, "ALICE",  "PF")->SetTextSizePixels(24);
   Leg->Draw();
 
   auto tex(new TLatex());

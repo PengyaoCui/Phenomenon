@@ -49,7 +49,7 @@ void TrkEta(){
   DrawGraph(g[3], wcl[3], "L");
 
   auto leg(new TLegend(0.65, 0.65, 0.9, 0.92)); SetupLegend(leg);
-  leg->AddEntry(hD, "Exp data",  "PF")->SetTextSizePixels(24);
+  leg->AddEntry(hD, "ALICE",  "PF")->SetTextSizePixels(24);
   leg->AddEntry(g[0], "Monash",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[1], "CR",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[2], "Rope",  "L")->SetTextSizePixels(24);

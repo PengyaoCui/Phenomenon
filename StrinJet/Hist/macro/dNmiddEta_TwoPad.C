@@ -67,7 +67,7 @@ void dNmiddEta_TwoPad(){
   DrawGraph(g[2], wcl[2], "L");
 
   auto leg(new TLegend(0.65, 0.65, 0.9, 0.92)); SetupLegend(leg);
-  leg->AddEntry(hD, "Exp data",  "PF")->SetTextSizePixels(24);
+  leg->AddEntry(hD, "ALICE",  "PF")->SetTextSizePixels(24);
   leg->AddEntry(g[0], "BLC",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[1], "Rope",  "L")->SetTextSizePixels(24);
   leg->AddEntry(g[2], "BLC + Rope",  "L")->SetTextSizePixels(24);
