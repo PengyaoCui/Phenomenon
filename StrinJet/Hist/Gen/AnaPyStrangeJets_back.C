@@ -1,7 +1,7 @@
 #include "utils.h"
 //=============================================================================
 const auto bsQCD(kTRUE);
-const auto bCR(kFALSE);
+const auto bCR(kTRUE);
 const auto bRope(kFALSE);
 const auto bhQCD = !bsQCD;
 
@@ -46,8 +46,8 @@ int main(int argc, char *argv[])
   if(!bCR && !bRope){
     pythia.readString("Tune:pp = 14");//Monash 2013 tune
   }
-  pythia.readString("Main:numberOfEvents = 1000001");
-  //pythia.readString("Main:numberOfEvents = 10001");
+  //pythia.readString("Main:numberOfEvents = 100001");
+  pythia.readString("Main:numberOfEvents = 10001");
   pythia.readString("Beams:eCM = 7000.");
   if(bsQCD){ 
 	  //pythia.readString("SoftQCD:all = on");
@@ -128,7 +128,8 @@ int main(int argc, char *argv[])
   const auto dStrgEtaMin(-0.75 + dEtaShift);
   const auto dStrgEtaMax( 0.75 + dEtaShift);
 
-  const fastjet::GhostedAreaSpec aGhostSpec(1.5); const fastjet::AreaDefinition  aAreaDef(fastjet::active_area, aGhostSpec);
+  const fastjet::GhostedAreaSpec aGhostSpec(1.5);
+  const fastjet::AreaDefinition  aAreaDef(fastjet::active_area, aGhostSpec);
   const fastjet::JetDefinition   aJetDef(fastjet::antikt_algorithm, dJetR, fastjet::BIpt_scheme, fastjet::Best);
 
   const auto aSelEta(fastjet::SelectorEtaRange(dJetEtaMin,dJetEtaMax));
@@ -264,9 +265,6 @@ int main(int argc, char *argv[])
   TH2D *hProtonPtFwd  = new TH2D("hProtonPtFwd", "N_{Fwd} vs p_{T}; p_{T} [GeV]; N_{Fwd}", 200, 0., 20., 500, -0.5, 499.5);
   list_I->Add(hProtonPtFwd);
 //============================== 
-  TH1D *hJetFwd  = new TH1D("hJetFwd", "N_{Fwd}", 500, -0.5, 499.5);
-  list_J->Add(hJetFwd);
-  
   TH1D *hJCKshortFwd  = new TH1D("hJCKshortFwd", "N_{Fwd}", 500, -0.5, 499.5);
   list_J->Add(hJCKshortFwd);
 
@@ -524,7 +522,6 @@ int main(int argc, char *argv[])
       if (dJ<10.) continue; 
       IsJet = kTRUE;
       hjet->Fill(aj.pt()); hjetEta->Fill(aj.eta()); 
-      hJetFwd->Fill(dFwdCh);
       vJ.SetPtEtaPhi(aj.pt(), aj.eta(),aj.phi());
       vL1.SetPtEtaPhi(aj.pt(), aj.eta(),     aj.phi()); vL1.RotateZ(TMath::PiOver2());
       vL2.SetPtEtaPhi(aj.pt(), aj.eta(),     aj.phi()); vL2.RotateZ(-1.*TMath::PiOver2());
@@ -587,7 +584,6 @@ int main(int argc, char *argv[])
       for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) {//loop all jet to check particle-jet relations
         const auto dj(aj.pt());
         if (dj<dJetPtCut) continue;
-  
         vj.SetPtEtaPhi( dj, aj.eta(),     aj.phi());
         vl1.SetPtEtaPhi(dj, aj.eta(),     aj.phi()); vl1.RotateZ(TMath::PiOver2());
         vl2.SetPtEtaPhi(dj, aj.eta(),     aj.phi()); vl2.RotateZ(-1.*TMath::PiOver2());
