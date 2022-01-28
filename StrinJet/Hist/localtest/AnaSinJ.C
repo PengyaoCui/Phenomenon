@@ -103,8 +103,8 @@ void AnaSinJ(const TString sm = "Monash"){
       hJC->SetBinError(hJC->FindBin(dNdEta[i-1]), TMath::Sqrt(Npar)/(dJEvent*2.*0.75*TMath::TwoPi()*0.06));
       auto Njet(hJetFwd->Integral(hJetFwd->FindBin(dFwd[i]), hJetFwd->FindBin(dFwd[i-1])));
       cout<<dJEvent<<endl;
-      hJet->SetBinContent(hJet->FindBin(dNdEta[i-1]), Njet/(dEvent+1e-6));
-      hJet->SetBinError(hJet->FindBin(dNdEta[i-1]), TMath::Sqrt(Njet)/(dEvent+1e-6));
+      hJet->SetBinContent(hJet->FindBin(dNdEta[i-1]), Njet/(dJEvent+1e-6));
+      hJet->SetBinError(hJet->FindBin(dNdEta[i-1]), TMath::Sqrt(Njet)/(dJEvent+1e-6));
     }
     l->Add(hJC);
     l->Add(hJet);

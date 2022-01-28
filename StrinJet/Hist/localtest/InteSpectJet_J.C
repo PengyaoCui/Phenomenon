@@ -1,6 +1,6 @@
 #include "inc/PyJetUtils.h"
 
-void InteSpectJet(){
+void InteSpectJet_J(){
 //=============================================================================
   //auto hD(GetDataC("data/HEPData_1606.07424v2.root", 42)); 
   //auto gD = GetDataE("data/HEPData_1606.07424v2.root", 42); 
@@ -26,7 +26,7 @@ void InteSpectJet(){
   //g[2]->GetPoint(nc-2, x, y);
   //auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(0.), dfuy(2.04);
+  auto dfly(0.5), dfuy(2.);
   
 
   auto dlsx(0.05), dlsy(0.05);

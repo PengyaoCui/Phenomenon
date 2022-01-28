@@ -162,6 +162,9 @@ int main(int argc, char *argv[])
   auto hJet(new TH1D("hJet", "", 500, 0., 500.));
   list_results->Add(hJet);
   
+  auto hNJet(new TH1D("hNJet", "", 10, -0.5, 9.5));
+  list_results->Add(hNJet);
+  
   auto hJetEta(new TH1D("hJetEta", "", 1000, -5., 5.));
   list_results->Add(hJetEta);
   
@@ -519,9 +522,11 @@ int main(int argc, char *argv[])
     const auto &vJets(aSelEta(acs.inclusive_jets(dJetPtMin)));
     for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) { hJet->Fill(aj.pt()); hJetEta->Fill(aj.eta()); }
     Bool_t IsJet = kFALSE;
+    Int_t nJet = 0;
     for (const auto &aj : vJets) if (aj.area()>dJetAreaMin) {
       const auto dJ(aj.pt());
-      if (dJ<10.) continue; 
+      if (dJ<10.) continue;
+      nJet = nJet + 1; 
       IsJet = kTRUE;
       hjet->Fill(aj.pt()); hjetEta->Fill(aj.eta()); 
       hJetFwd->Fill(dFwdCh);
@@ -565,6 +570,7 @@ int main(int argc, char *argv[])
     }
     if(IsJet) {hJEvent->Fill(1.);} 
     if(IsJet) hJFwdVsMid->Fill(dMidCh, dFwdCh);
+    if(IsJet) {hNJet->Fill(nJet);} 
     
 //=============================================================================
 
