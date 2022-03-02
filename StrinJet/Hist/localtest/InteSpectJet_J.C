@@ -26,7 +26,7 @@ void InteSpectJet_J(){
   //g[2]->GetPoint(nc-2, x, y);
   //auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(30.);
-  auto dfly(0.5), dfuy(2.);
+  auto dfly(0.8), dfuy(1.3);
   
 
   auto dlsx(0.05), dlsy(0.05);
@@ -81,10 +81,10 @@ void InteSpectJet_J(){
   tex->SetNDC();
   tex->SetTextSizePixels(24);
   tex->DrawLatex(0.16, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-  tex->DrawLatex(0.16, 0.8, "Number of jets in each events");
+  tex->DrawLatex(0.16, 0.8, "Number of jets in events with at least one high #it{p}_{T} jet");
 
   //can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
-  can->SaveAs(Form("./figure/JetSpectra_Nev.pdf"));
+  can->SaveAs(Form("./figure/JetSpectra_NJev.pdf"));
   //can->SaveAs(Form("./figure/png/%s.png", can->GetName()));
   CanvasEnd(can);
     

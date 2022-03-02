@@ -437,9 +437,6 @@ int main(int argc, char *argv[])
         if (d>StrgJC(gksStrgJCs)) bOC = true;
         if (dl1<StrgJC(gksStrgJCs) || dl2<StrgJC(gksStrgJCs) || du1<StrgJC(gksStrgJCs) || du2<StrgJC(gksStrgJCs)) bPC = true; 
         if (bJC){bOC = bPC = false;}
-     
-
-      
       
       }
 

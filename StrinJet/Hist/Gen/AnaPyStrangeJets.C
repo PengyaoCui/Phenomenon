@@ -46,8 +46,8 @@ int main(int argc, char *argv[])
   if(!bCR && !bRope){
     pythia.readString("Tune:pp = 14");//Monash 2013 tune
   }
-  pythia.readString("Main:numberOfEvents = 1000001");
-  //pythia.readString("Main:numberOfEvents = 10001");
+  //pythia.readString("Main:numberOfEvents = 1000001");
+  pythia.readString("Main:numberOfEvents = 100001");
   pythia.readString("Beams:eCM = 7000.");
   if(bsQCD){ 
 	  //pythia.readString("SoftQCD:all = on");
@@ -164,6 +164,9 @@ int main(int argc, char *argv[])
   
   auto hNJet(new TH1D("hNJet", "", 10, -0.5, 9.5));
   list_results->Add(hNJet);
+  
+  TH2D *hNJetFwd  = new TH2D("hNJetFwd", "N_{Fwd} vs NJet; NJet; N_{Fwd}", 10, -0.5, 9.5, 500, -0.5, 499.5);
+  list_results->Add(hNJetFwd);
   
   auto hJetEta(new TH1D("hJetEta", "", 1000, -5., 5.));
   list_results->Add(hJetEta);
@@ -570,7 +573,7 @@ int main(int argc, char *argv[])
     }
     if(IsJet) {hJEvent->Fill(1.);} 
     if(IsJet) hJFwdVsMid->Fill(dMidCh, dFwdCh);
-    if(IsJet) {hNJet->Fill(nJet);} 
+    if(IsJet) {hNJet->Fill(nJet); hNJetFwd->Fill(nJet, dFwdCh );} 
     
 //=============================================================================
 
@@ -608,7 +611,7 @@ int main(int argc, char *argv[])
         double du2(vu2.DeltaR(strg));
         if (d<StrgJC(gksStrgJCs)) bJC = true;
         if (dl1<StrgJC(gksStrgJCs) || dl2<StrgJC(gksStrgJCs) || du1<StrgJC(gksStrgJCs) || du2<StrgJC(gksStrgJCs)) bPC = true; 
-        if (bJC){bPC = false;}
+        if (bJC || nJet >2){bPC = false;}
       
       }
       if(bJC){

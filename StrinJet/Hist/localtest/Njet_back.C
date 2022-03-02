@@ -6,22 +6,13 @@ void Njet(){
   //auto gD = GetDataE("data/HEPData_1606.07424v2.root", 42); 
   auto file(TFile::Open("sim/Monash.root", "read"));
   auto list(static_cast<TList*>(file->Get("list_results")));
-  auto H((TH2D*)list->FindObject(Form("hNJetFwd")));
-  Int_t nFwd =(Int_t)H->GetYaxis()->FindBin(97.); 
-  Int_t nBin = (Int_t)H->GetNbinsY(); 
-
-  //auto h((TH1D*)H->ProjectionX("h", nFwd, nBin));
-  //auto h((TH1D*)H->ProjectionX("h", 1, nFwd));
-  //auto h((TH1D*)H->ProjectionX("h", 0, nBin));
   auto h((TH1D*)list->FindObject(Form("hNJet")));
-  h->Scale(1./h->Integral());
-  auto hHigh((TH1D*)H->ProjectionX("hHigh", nFwd, nBin));
-  hHigh->Scale(1./hHigh->Integral());
+  h->Scale(1./h->GetEntries());
 
 //=============================================================================
   //auto y = (Double_t)hD->GetMaximum();
   auto dflx(0.), dfux(5.);
-  auto dfly(3e-4), dfuy(2.);
+  auto dfly(1e-4), dfuy(4.3);
   
 
   auto dlsx(0.05), dlsy(0.05);
@@ -36,30 +27,24 @@ void Njet(){
   
   auto can(MakeCanvas(Form("Njet")));
   can->SetLogy();
-  TLegend *leg = nullptr;
-  leg = new TLegend(0.7,0.85,1.0,0.6); SetupLegend(leg);
-
   auto hfm(can->DrawFrame(dflx, dfly, dfux, dfuy));
   SetupFrame(hfm, stnx, stny, dlsx, dlsy, dtsx, dtsy, dtox, dtoy);
   hfm->GetXaxis()->SetNdivisions(505);
   hfm->GetYaxis()->SetNdivisions(505);
 
   DrawHisto(h, wcl[0], wmk[0], "same");
-  DrawHisto(hHigh, wcl[1], wmk[1], "same");
-  leg->AddEntry(h, "Inclusive",  "lp");
-  leg->AddEntry(hHigh, "HM event",  "lp");
 
-  leg->Draw();
   auto tex(new TLatex());
   tex->SetNDC();
   tex->SetTextSizePixels(24);
-  tex->DrawLatex(0.68, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
-  tex->DrawLatex(0.16, 0.2, "Number of jet distribution");
+  tex->DrawLatex(0.66, 0.9, "pp #sqrt{#it{s}} = 7 TeV");
+  tex->DrawLatex(0.56, 0.8, "Number of jet distribution");
 
   //can->SaveAs(Form("./figure/eps/%s.eps", can->GetName()));
   can->SaveAs(Form("./figure/Njet.pdf"));
   //can->SaveAs(Form("./figure/png/%s.png", can->GetName()));
   CanvasEnd(can);
+    
   return;
 }
 
